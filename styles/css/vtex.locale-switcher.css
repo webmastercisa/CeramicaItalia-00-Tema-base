@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.globeIcon{
+    width: 45px;
+    height: 45px;
+}
+
+.buttonText{
+    font-size: 1rem;
+}
+
+
+.buttonText{
+    background-color: #ED1B24;
+}

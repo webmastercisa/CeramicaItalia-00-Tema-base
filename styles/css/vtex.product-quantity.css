@@ -1,0 +1,131 @@
+.quantitySelectorContainer--cantidad{
+    width: 100%;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper-container){
+    display: flex;
+    width: 100%;
+    border-style: solid;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: space-between;
+    border: 1px solid #000000;
+}
+
+.quantitySelectorContainer{
+    font-size: 0;
+}
+
+.quantitySelectorInputContainer{
+    border-style: none;
+}
+
+.numeric-stepper{
+    border-radius: 30px;
+    width: 2.2em;
+    transition: opacity 150ms ease 0s;
+    border-style: none;
+    background-color: gray;
+}
+
+.quantitySelectorStepper--cantidad :global(.vtex-numeric-stepper__minus-button){
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    width: 2em !important;
+    height: 2em !important;
+    background-color: #C5BEC3;
+    border: none !important;
+    margin: 7px;
+}
+
+.quantitySelectorStepper--cantidad :global(.vtex-numeric-stepper__plus-button){
+    color: #ffffff!important;
+    border-radius: 50px!important;
+    width: 2em!important;
+    height: 2em!important;
+    background-color: #777777;
+    border: none!important;
+    margin: 7px;
+}
+
+.quantitySelectorStepper--cantidad :global(.vtex-numeric-stepper__input){
+    font-family: Arial;
+    border: none!important;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* vitrina general */
+.quantitySelectorContainer,
+.quantitySelectorContainer--cantidad,
+.quantitySelectorContainer--cantidad-general {
+    width: 100%;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input),
+.quantitySelectorContainer--cantidad :global(.vtex-numeric-stepper__input),
+.quantitySelectorContainer--cantidad-general :global(.vtex-numeric-stepper__input) {
+    /* font-family: Arial; */
+    font-family: 'NeutraTextAltBold';
+    border: none!important;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorContainer--cantidad :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorContainer--cantidad-general :global(.vtex-numeric-stepper__plus-button){
+    background: none;
+    border: none;
+    background-image: url(assets/ico/home/Button-Add.svg);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
+
+.quantitySelectorContainer  :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorContainer--cantidad :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorContainer--cantidad-general :global(.vtex-numeric-stepper__minus-button) {
+    background: none;
+    border: none;
+    background-image: url(assets/ico/home/Buttonless.svg);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button__text),
+.quantitySelectorContainer--cantidad :global(.vtex-numeric-stepper__plus-button__text),
+.quantitySelectorContainer--cantidad-general :global(.vtex-numeric-stepper__plus-button__text) {
+    color: transparent;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button__text), 
+.quantitySelectorContainer--cantidad :global(.vtex-numeric-stepper__minus-button__text), 
+.quantitySelectorContainer--cantidad-general :global(.vtex-numeric-stepper__minus-button__text) {
+    color: transparent;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper-container),
+.quantitySelectorContainer--cantidad :global(.vtex-numeric-stepper-container),
+.quantitySelectorContainer--cantidad-general :global(.vtex-numeric-stepper-container) {
+    height: 42px;
+}
+
+.quantitySelectorTitle{
+    display: none;
+}
+
+@media (max-width:1024px) {
+    .quantitySelectorContainer :global(.vtex-numeric-stepper__input),
+    .quantitySelectorContainer--cantidad-general :global(.vtex-numeric-stepper__input),
+    .quantitySelectorStepper--cantidad :global(.vtex-numeric-stepper__input) {
+        margin: 0px;
+        font-size: 13px;
+    }
+  }

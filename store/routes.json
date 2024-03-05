@@ -1,0 +1,109 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us",
+    "title": "Acerca de nosotros"
+  },
+  "store.custom#faq": {
+    "path": "/faq",
+    "title": "Preguntas Frecuentes"
+  },
+  "store.custom#contact-us": {
+    "path": "/contact-us",
+    "title": "Contáctenos Xtrategik"
+  },
+  "store.custom#ResultadoBusqueda":{
+    "path": "/search-custom",
+    "title": "Search custom",
+    "isSitemapEntry": true
+  },
+  "store.custom#formulario-contacto-pqrs":{
+    "path":"/contacto"
+  },
+  "store.custom#terminos-legales":{
+    "path":"/terminos-legales"
+  },
+  "store.custom#preguntas-frecuentes":{
+    "path":"/preguntas-frecuentes"
+  },
+  "store.custom#quienes-somos":{
+    "path":"/quienes-somos"
+  },
+  "store.wishlist": {
+    "path": "/favoritos"
+  },
+  "store.custom#Instatile":{
+    "path": "/Instatile",
+    "title": "Instatile",
+    "isSitemapEntry": true
+  },
+  "store.custom#muestra":{
+    "path": "/muestras",
+    "title": "Solicita tu muestra",
+    "isSitemapEntry": true
+  },
+  "store.custom#imperdibles":{
+    "path": "/imperdibles",
+    "title": "Imperdibles",
+    "isSitemapEntry": true
+  },
+
+  "store.custom#compras-exterior":{
+    "path": "/compras-exterior",
+    "title": "Compra desde el exterior",
+    "isSitemapEntry": true
+  },
+
+  "store.custom#mapa-ceramicaitalia": {
+    "path": "/nuestras-tiendas",
+    "title": "Nuestro Mapa | Ceramica Italia",
+    "isSitemapEntry": false
+  },
+  "store.custom#centro-de-ayuda": {
+    "path": "/centro-de-ayuda",
+    "title": "Centro de ayuda | Ceramica Italia",
+    "isSitemapEntry": false
+  },
+
+  "store.custom#trabaja-con-nosotros": {
+    "path": "/trabaja-con-nosotros",
+    "title": "Trabaja con nosotros| Ceramica Italia",
+    "isSitemapEntry": false
+  },
+
+
+  "store.custom#sostenibilidad": {
+    "path": "/sostenibilidad",
+    "title": "Sostenibilidad| Ceramica Italia",
+    "isSitemapEntry": false
+  },
+
+  "store.custom#Aplicativos": {
+    "path": "/aplicativos",
+    "title": "Aplicativos| Ceramica Italia"
+  },
+
+  "store.custom#garantia": {
+    "path": "/garantia",
+    "title": "Garantía| Ceramica Italia"
+  },
+  "store.custom#ResultadoBusquedaconBloqueSEOyPasillos":{
+    "path": "/ResultadoBusquedaconBloqueSEOyPasillos",
+    "title": "ResultadoBusquedaconBloqueSEOyPasillos",
+    "isSitemapEntry": true
+  },
+
+  "store.custom#template-categoria":{
+    "path": "/template-categoria",
+    "title": "template categoria",
+    "isSitemapEntry": true
+  },
+  "store.custom#form-products": {
+    "path": "/form-products",
+    "title": "Formulario de productos"
+  },
+  "store.custom#perfilamiento": {
+    "path": "/perfilamiento",
+    "title": "Perfilamiento de Proyectos"
+  }
+
+}

@@ -1,0 +1,116 @@
+{
+    "responsive-layout.mobile#visualize-yourSpace": {
+        "children": [
+            "flex-layout.row#visualize-yourSpace-mobile"
+        ]
+    },
+    "flex-layout.row#visualize-yourSpace-mobile": {
+        "children": [
+            "flex-layout.col#visualize-yourSpace-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "section-visualize-yourSpace"
+            ]
+        }
+    },
+    "flex-layout.col#visualize-yourSpace-mobile": {
+        "children": [
+            "rich-text#title-visualize-yourSpace-mobile",
+            "image#img-visualizeyourSpace-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "box-visualize-yourSpace"
+            ]
+        }
+    },
+    "rich-text#title-visualize-yourSpace-mobile": {
+        "props": {
+            "blockClass": "title-visualize-yourSpace",
+            "preventVerticalStretch": false,
+            "text": "Visualíza en tu espacio <br> Instatile",
+            "textAlignment": "CENTER"
+        }
+    },
+    "image#img-visualizeyourSpace-mobile": {
+        "props": {
+            "src": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHomeVisualizaTuEspacio.png",
+            "alt": "Visualiza tu espacio en Instatile",
+            "height": "auto",
+            "blockClass": "img-visualizeYourSpace",
+            "link": {
+                "url": "/",
+                "openNewTab": true,
+                "title": "Visualiza tu espacio en Instatile"
+            }
+        }
+    },
+    // Section -Solicita tu muestra
+    "responsive-layout.mobile#request-yourSample": {
+        "children": [
+            "flex-layout.row#request-yourSample-mobile"
+        ]
+    },
+    "flex-layout.row#request-yourSample-mobile": {
+        "children": [
+            "flex-layout.col#request-yourSample-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "section-request-yourSample"
+            ]
+        }
+    },
+    "flex-layout.col#request-yourSample-mobile": {
+        "children": [
+            "list-context.image-list#request-yourSample-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "box-request-yourSample"
+            ]
+        }
+    },
+    "list-context.image-list#request-yourSample-mobile": {
+        "children": [
+            "slider-layout#request-yourSample-images-mobile"
+        ],
+        "props": {
+            "height": 390,
+            "preload": true,
+            "images": [
+                {
+                    "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png",
+                    "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png"
+                },
+                {
+                    "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png",
+                    "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png"
+                },
+                {
+                    "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png",
+                    "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#request-yourSample-images-mobile": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "always",
+            // "navigationStep": 1,
+            "blockClass": "slider-request-yourSample",
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+              } 
+        }
+    }
+}

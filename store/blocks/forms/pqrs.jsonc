@@ -1,0 +1,302 @@
+{
+  "store.custom#formulario-contacto-pqrs": {
+    "blocks": ["flex-layout.row#contenedor-seccion-contacto-pqrs"]
+  },
+
+  //CONTENEDOR SECCION PQRS
+  "flex-layout.row#contenedor-seccion-contacto-pqrs": {
+    "children": ["flex-layout.col#contenedor-seccion-contacto-pqrs"],
+    "props":{
+      "blockClass":"contenedor-seccion-contacto-pqrs"
+    }
+  },
+  "flex-layout.col#contenedor-seccion-contacto-pqrs": {
+    "children": [
+      "rich-text#titulo-seccion-contacto-pqrs",
+      "list-context.image-list#banner-seccion-contacto-pqrs",
+      "rich-text#texto1-seccion-contacto-pqrs",
+      "tab-layout#tab-seccion-contacto-pqrs"
+    ],
+    "props":{
+      "blockClass":"contenedor-seccion-contacto-pqrs"
+    }
+  },
+
+  // TITULO SECCION PQRS
+  "rich-text#titulo-seccion-contacto-pqrs": {
+    "props": {
+      "blockClass": ["titulo-seccion-contacto-pqrs"],
+      "text": "Contacto"
+    }
+  },
+
+  // BANNER SECCION PQRS
+  "list-context.image-list#banner-seccion-contacto-pqrs": {
+    "children": ["slider-layout#slider-seccion-contacto-pqrs"],
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "preload": true,
+      "blockClass": "slider-header-image",
+      "images": [
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/banner-seccion-pqrs-desktop.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner-seccion-pqrs-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-seccion-contacto-pqrs": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "slider-seccion-pqrss",
+      "fullWidth": false,
+      "arrowSize": 20
+    }
+  },
+
+  //TEXTO ABAJO DEL BANNER
+  "rich-text#texto1-seccion-contacto-pqrs": {
+    "props": {
+      "blockClass": ["texto1-search-categoria"],
+      "text": "En Cerámica Italia queremos que sientas la vida a través del cambio porque entendemos que el éxito es vivir la vida a tu manera; por eso, a continuación encontrarás nuestro canal de comunicación directa con nuestro equipo de experiencia.\nIndícanos tus datos personales, tu situación y permítenos acompañarte en este proceso de PQRS"
+    }
+  },
+
+  // TAB CONTACTO -PQRS
+  "tab-layout#tab-seccion-contacto-pqrs": {
+    "children": [
+      "tab-list#tab-seccion-contacto-pqrs",
+      "tab-content#tab-seccion-contacto-pqrs"
+    ],
+    "props": {
+      "blockClass": "tab-seccion-contacto-pqrs",
+      "defaultActiveTabId": "tab-contacto"
+    }
+  },
+
+  // Listado de pestañas
+  "tab-list#tab-seccion-contacto-pqrs": {
+    "children": ["tab-list.item#tab-contacto", "tab-list.item#tab-pqrs"],
+    "props": {
+      "blockClass": "list-tab-contacto-pqrs"
+    }
+  },
+  "tab-list.item#tab-contacto": {
+    "props": {
+      "tabId": "tab-contacto",
+      "blockClass": "item-contacto",
+      "label": "CONTACTO",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tab-pqrs": {
+    "props": {
+      "tabId": "tab-pqrs",
+      "blockClass": "item-pqrs",
+      "label": "PQRS"
+    }
+  },
+
+  //Listado de los contenidos de las pestañas
+  "tab-content#tab-seccion-contacto-pqrs": {
+    "children": ["tab-content.item#tab-contacto", "tab-content.item#tab-pqrs"],
+    "props": {
+      "blockClass": "content-tab-contacto-pqrs"
+    }
+  },
+
+  // Detalle de cada contenido de las pestañas
+  "tab-content.item#tab-contacto": {
+    "children": [
+      "flex-layout.col#contenedor-formulario-contacto"
+    ],
+    "props": {
+      "tabId": "tab-contacto",
+      "blockClass": "content-contacto"
+    }
+  },
+  "tab-content.item#tab-pqrs": {
+    "children": ["flex-layout.col#contenedor-formulario-pqrs"],
+    "props": {
+      "tabId": "tab-pqrs",
+      "blockClass": "content-pqrs"
+    }
+  },
+
+  // CONTENEDOR FORMULARIO PQRS
+  "flex-layout.col#contenedor-formulario-pqrs": {
+    "children": ["form#pqrs"],
+    "props": {
+      "blockClass": ["contenedor-formulario-pqrs"]
+    }
+  },
+  "form#pqrs": {
+    "props": {
+      "entity": "PQ",
+      "schema": "PQRS",
+      "blockClass": "formulario-pqrs"
+    },
+    "children": [
+      "flex-layout.row#fila1-campos-formulario-pqrs",
+      "rich-text#texto-detalles-formulario-pqrs",
+      "tab-layout#tab-detalles-formulario-pqrs",
+      "rich-text#texto-preguntas-formulario-pqrs",
+      "flex-layout.row#contenedor-preguntas-formulario-pqrs",
+      "flex-layout.row#contenedor-submit-formulario-pqrs"
+    ],
+    "blocks": ["form-success#pqrs"]
+  },
+  "form-success#pqrs": {
+    "children": ["rich-text#success-submit-pqrs"]
+  },
+  "rich-text#success-submit-pqrs": {
+    "props": {
+      "text": "¡Gracias por escribirnos a **Cerámica Italia!** daremos respuesta a tu \n solicitud lo más pronto posible, queremos hacer inolvidable tu experiencia.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  // CONTENEDOR COLUMNAS FORMULARIO PQRS
+
+  "flex-layout.row#fila1-campos-formulario-pqrs": {
+    "children": [
+      "flex-layout.col#col1-fila1-campos-formulario-pqrs",
+      "flex-layout.col#col2-fila1-campos-formulario-pqrs",
+      "flex-layout.col#col3-fila1-campos-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": "fila1-campos-formulario-pqrs"
+    }
+  },
+
+  //COLUMNA 1 FILA 1
+
+  "flex-layout.col#col1-fila1-campos-formulario-pqrs": {
+    "children": [
+      "form-input.text#nameAndLastname-formulario-pqrs",
+      "form-input.text#cellPhone-formulario-pqrs",
+      "form-input.text#addres-formulario-pqrs",
+      "form-input.text#shoppingCity-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": "col-fila1-campos-formulario-pqrs"
+    }
+  },
+  "form-input.text#nameAndLastname-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/nameAndLastname",
+      "placeholder": "Nombres y apellidos"
+    }
+  },
+
+  "form-input.text#cellPhone-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "placeholder": "Celular"
+    }
+  },
+  "form-input.text#cellPhone2-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/cellPhone2",
+      "placeholder": "Celular"
+    }
+  },
+  "form-input.text#addres-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/address",
+      "placeholder": "Dirección"
+    }
+  },
+  "form-input.text#shoppingCity-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/shoppingCity",
+      "placeholder": "Ciudad dónde realizó la compra"
+    }
+  },
+
+  //COLUMNA 2 FILA 1
+
+  "flex-layout.col#col2-fila1-campos-formulario-pqrs": {
+    "children": [
+      "form-input.text#buys-formulario-pqrs",
+      "form-input.text#invoiceNumber-formulario-pqrs",
+      "form-input.dropdown#requestType-formulario-pqrs",
+      "form-input.dropdown#productType-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": "col-fila1-campos-formulario-pqrs"
+    }
+  },
+  "form-input.text#buys-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/buys",
+      "placeholder": "Compra"
+    }
+  },
+  "form-input.text#invoiceNumber-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/invoiceNumber",
+      "placeholder": "Número de factura"
+    }
+  },
+  "form-input.dropdown#requestType-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/requestType/properties/Tipo",
+      "placeholder": "Tipo de solicitud",
+      "blockClass": "requestType"
+    }
+  },
+  "form-input.dropdown#productType-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/productType/properties/Tipo",
+      "placeholder": "Tipo de producto",
+      "blockClass": "productType"
+    }
+  },
+
+  //COLUMNA 3 FILA 1
+
+  "flex-layout.col#col3-fila1-campos-formulario-pqrs": {
+    "children": ["form-input.textarea#requestDescription-formulario-pqrs"],
+    "props": {
+      "blockClass": "col-fila1-campos-formulario-pqrs"
+    }
+  },
+  "form-input.textarea#requestDescription-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/requestDescription",
+      "placeholder": "Descripción de la solicitud"
+    }
+  },
+
+  //FILA SUBMIT
+  "flex-layout.row#contenedor-submit-formulario-pqrs": {
+    "children": [
+      "form-input.checkbox#agreement-formulario-pqrs",
+      "form-submit#boton-submit-formulario-pqrs"
+    ],
+    "props":{
+      "blockClass":"contenedor-submit-formulario-pqrs"
+    }
+  },
+  "form-submit#boton-submit-formulario-pqrs": {
+    "props": {
+      "label": "ENVIAR"
+    }
+  },
+  "form-input.checkbox#agreement-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "He leído y acepto la política de datos personales",
+      "blockClass": "agreement-formulario-pqr"
+    }
+  }
+}

@@ -1,0 +1,575 @@
+.listContainer--list-tab-contacto-pqrs {
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.listItemActive--item-pqrs,
+.listItemActive--item-contacto,
+.listItem--item-pqrs,
+.listItem--item-contacto {
+  padding: 0;
+  margin: 0;
+}
+
+.listItem--item-pqrs,
+.listItem--item-contacto {
+  width: 40%;
+}
+
+.listItemActive--item-pqrs {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.listItemActive--item-pqrs :global(.vtex-button),
+.listItemActive--item-contacto :global(.vtex-button){
+  background: #ED1B24;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+}
+
+.listItem--item-pqrs :global(.vtex-button),
+.listItem--item-contacto :global(.vtex-button) {
+  width: 100%;
+}
+
+.listItem--item-pqrs :global(.vtex-button):hover,
+.listItem--item-contacto :global(.vtex-button):hover,
+.listItem--item-pqrs :global(.vtex-button):hover,
+.listItem--item-contacto :global(.vtex-button):hover{
+  border: none;
+  background: #d6d6d6;
+  color: #a1a1a1;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.contentContainer--content-tab-detalles-formulario-pqrs {
+  height: 185px;
+}
+
+.listItemActive--item-griferia :global(.vtex-button__label),
+.listItemActive--item-banos :global(.vtex-button__label),
+.listItemActive--item-ceramica :global(.vtex-button__label),
+.listItemActive--item-contacto :global(.vtex-button__label),
+.listItemActive--item-pqrs :global(.vtex-button__label) {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.listItemActive--item-griferia :global(.vtex-button),
+.listItemActive--item-banos :global(.vtex-button),
+.listItemActive--item-ceramica :global(.vtex-button),
+.listItemActive--item-contacto :global(.vtex-button),
+.listItemActive--item-pqrs :global(.vtex-button) {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.listItem--item-griferia :global(.vtex-button__label),
+.listItem--item-banos :global(.vtex-button__label),
+.listItem--item-ceramica :global(.vtex-button__label),
+.listItem--item-contacto :global(.vtex-button__label),
+.listItem--item-pqrs :global(.vtex-button__label) {
+  color: #000;
+  font-weight: 700;
+  font-family: 'NeutraTextAltBold';
+}
+
+.container--tab-seccion-terminos-legales {
+  display: flex;
+  gap: 20px;
+}
+
+.listContainer--list-tab-terminos-legales{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.listItem--item-politica-tratamiento-datos-personales,
+.listItem--item-como-comprar,
+.listItem--item-medios-pago,
+.listItem--item-condiciones-entrega-transporte,
+.listItem--item-garantias,
+.listItem--item-politica-cambios-devoluciones,
+.listItem--item-contacto-quejas-reclamos,
+.listItem--item-estatuto-consumidor,
+.listItem--item-politica-tratamiento-datos,
+.listItem--item-politica-precios,
+.listItem--item-politica-entregas,
+.listItem--item-terminos-condiciones {
+  height: fit-content;
+  background: #DAD8D8;
+  width: -webkit-fill-available;
+}
+
+.listItemActive--item-politica-tratamiento-datos-personales,
+.listItemActive--item-como-comprar,
+.listItemActive--item-medios-pago,
+.listItemActive--item-condiciones-entrega-transporte,
+.listItemActive--item-garantias,
+.listItemActive--item-politica-cambios-devoluciones,
+.listItemActive--item-contacto-quejas-reclamos,
+.listItemActive--item-estatuto-consumidor,
+.listItemActive--item-politica-tratamiento-datos,
+.listItemActive--item-politica-precios,
+.listItemActive--item-politica-entregas,
+.listItemActive--item-terminos-condiciones {
+  height: fit-content;
+  background: #ED1B24;
+  width: -webkit-fill-available;
+}
+
+.listItem--item-politica-tratamiento-datos-personales :global(.vtex-button__label),
+.listItem--item-como-comprar :global(.vtex-button__label),
+.listItem--item-medios-pago :global(.vtex-button__label),
+.listItem--item-condiciones-entrega-transporte :global(.vtex-button__label),
+.listItem--item-garantias :global(.vtex-button__label),
+.listItem--item-politica-cambios-devoluciones :global(.vtex-button__label),
+.listItem--item-contacto-quejas-reclamos :global(.vtex-button__label),
+.listItem--item-estatuto-consumidor :global(.vtex-button__label),
+.listItem--item-politica-tratamiento-datos :global(.vtex-button__label),
+.listItem--item-politica-precios :global(.vtex-button__label),
+.listItem--item-politica-entregas :global(.vtex-button__label),
+.listItem--item-terminos-condiciones :global(.vtex-button__label) {
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+  font-weight: bolder;
+  justify-content: flex-start;
+  font-family: 'NeutraTextAltBold';
+}
+
+.listItem--item-politica-tratamiento-datos-personales :global(.vtex-button),
+.listItem--item-como-comprar :global(.vtex-button),
+.listItem--item-medios-pago :global(.vtex-button),
+.listItem--item-condiciones-entrega-transporte :global(.vtex-button),
+.listItem--item-garantias :global(.vtex-button),
+.listItem--item-politica-cambios-devoluciones :global(.vtex-button),
+.listItem--item-contacto-quejas-reclamos :global(.vtex-button),
+.listItem--item-estatuto-consumidor :global(.vtex-button),
+.listItem--item-politica-tratamiento-datos :global(.vtex-button),
+.listItem--item-politica-precios :global(.vtex-button),
+.listItem--item-politica-entregas :global(.vtex-button),
+.listItem--item-terminos-condiciones :global(.vtex-button) {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.listItemActive--item-politica-tratamiento-datos-personales :global(.vtex-button__label),
+.listItemActive--item-como-comprar :global(.vtex-button__label),
+.listItemActive--item-medios-pago :global(.vtex-button__label),
+.listItemActive--item-condiciones-entrega-transporte :global(.vtex-button__label),
+.listItemActive--item-garantias :global(.vtex-button__label),
+.listItemActive--item-politica-cambios-devoluciones :global(.vtex-button__label),
+.listItemActive--item-contacto-quejas-reclamos :global(.vtex-button__label),
+.listItemActive--item-estatuto-consumidor :global(.vtex-button__label),
+.listItemActive--item-politica-tratamiento-datos :global(.vtex-button__label),
+.listItemActive--item-politica-precios :global(.vtex-button__label),
+.listItemActive--item-politica-entregas :global(.vtex-button__label),
+.listItemActive--item-terminos-condiciones :global(.vtex-button__label) {
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+  font-weight: bolder;
+  font-family: 'NeutraTextAltBold';
+}
+
+
+.container--tab-pdp :global(.vtex-store-components-3-x-container) {
+  width: auto;
+}
+
+.listContainer--list-tab-pdp{
+  justify-content: space-between;
+}
+
+.listItem--item-tab-detalles-pdp :global(.vtex-button),
+.listItem--item-tab-descargas-pdp :global(.vtex-button),
+.listItem--item-tab-descripcion-pdp :global(.vtex-button){
+  background: none;
+  width: 100%;
+  border: none;
+}
+
+
+.listItem--item-tab-detalles-pdp :global(.vtex-button__label),
+.listItem--item-tab-descargas-pdp :global(.vtex-button__label),
+.listItem--item-tab-descripcion-pdp :global(.vtex-button__label){
+  color:  #686868;
+  text-align: center;
+  font-family: 'NeutraTextBook';
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.listItem--item-tab-detalles-pdp{
+  width: 35%;
+padding: 0px;
+}
+.listItem--item-tab-descargas-pdp,
+.listItem--item-tab-descripcion-pdp{
+width: 30%;
+padding: 0px;
+}
+
+.listItem--item-tab-detalles-pdp {
+  border-left: solid 1px  #686868;
+  border-right: solid 1px  #686868;
+}
+
+.listItemActive--item-tab-detalles-pdp :global(.vtex-button__label),
+.listItemActive--item-tab-descargas-pdp :global(.vtex-button__label),
+.listItemActive--item-tab-descripcion-pdp :global(.vtex-button__label){
+  color:  #000;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.container--tab-pdp{
+  border-radius: 0px 0px 8px 8px;
+/* border-right: 0.8px solid var(--Color2, #EEE);
+border-bottom: 0.8px solid var(--Color2, #EEE);
+border-left: 0.8px solid var(--Color2, #EEE); */
+border: 0.8px solid #EEE;
+padding: 8px 16px;
+margin-top: 15px;
+}
+
+.listContainer--list-tab-pdp{
+  padding-bottom: 15px;
+}
+
+.listItem--item-tab-sostenibilidad{
+  padding: 0px;
+    margin: 0px;
+    width: 50%;
+}
+
+.listItem--item-tab-sostenibilidad :global(.vtex-button){
+  border: none;
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid  #A1A1A1;
+  background: none;
+}
+
+.listItemActive--item-tab-sostenibilidad :global(.vtex-button){
+  border: none;
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid  #A1A1A1;
+  background:  #ED1B24;
+}
+
+.listItem--item-tab-sostenibilidad  :global(.vtex-button):hover{
+  border: none;
+  border-bottom: 1px solid  #A1A1A1;
+}
+
+
+.listItem--item-tab-sostenibilidad :global(.vtex-button__label){
+  color:  #3D3C3C;
+text-align: center;
+/* font-family: 'NeutraText'; */
+font-family: 'NeutraTextAltBold';
+font-size: 16px;
+font-weight: 700;
+text-transform: capitalize;
+}
+
+.listItemActive--item-tab-sostenibilidad :global(.vtex-button__label){
+  color: #FFF;
+text-align: center;
+/* font-family: 'NeutraText'; */
+font-family: 'NeutraTextAltBold';
+font-size: 16px;
+font-weight: 700;
+text-transform: capitalize;
+}
+
+.container--garantia1 {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 30px 30px 30px;
+}
+
+.container--garantia2 {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin: 0px 15px 45px 15px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.listContainer--tab-list-garantia1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.listContainer--tab-list-garantia2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.listItem--item-garantia2,
+.listItem--item-garantia1 {
+  width: 100%;
+}
+
+
+.listItem--item-garantia2 :global(.vtex-button),
+.listItem--item-garantia1 :global(.vtex-button) {
+  border-radius: 0px;
+  width: 100%;
+  background: #DAD8D8;
+  height: 45px;
+}
+
+.listItemActive--item-garantia2 :global(.vtex-button),
+.listItemActive--item-garantia1 :global(.vtex-button) {
+  border-radius: 0px;
+  width: 100%;
+  background:  #ED1B24;
+  border: none;
+}
+
+.listItem--item-garantia2 :global(.vtex-button__label),
+.listItem--item-garantia1 :global(.vtex-button__label){
+  padding: 10px;
+  color: #3D3C3C;
+  /* font-family: 'NeutraText'; */
+  font-family: 'NeutraTextAltBold';
+font-size: 16px;
+font-weight: 700;
+text-transform: capitalize;
+justify-content: flex-start;
+text-align: start;
+}
+
+.listItemActive--item-garantia2 :global(.vtex-button__label),
+.listItemActive--item-garantia1 :global(.vtex-button__label){
+  color: #fff;
+}
+
+.contentContainer--tab-content-garantia2{
+  display: flex;
+  align-items: flex-start;
+}
+.contentContainer--tab-content-garantia1{
+  align-items: center;
+  display: flex;
+}
+
+.listItemChildren--tab-item-children {
+  width: 25%;
+  margin: 0px;
+  padding: 0px;
+  height: 45px;
+  align-items: center;
+    display: flex;
+}
+
+.listItemChildren--tab-item-children:hover{
+  background-color: #eeeeee;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.listContainer--tab-list-vitrina {
+  border-bottom: 1px solid #a1a1a1;
+}
+
+
+.listItemChildrenActive--tab-item-children {
+  border-radius: 10px 10px 0px 0px;
+  /* border: solid 1px #ccc; */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  background: #DAD8D8;
+}
+
+.listItemChildrenActive--tab-item-children:hover{
+  background: #DAD8D8;
+}
+
+/* .listItemChildrenActive--tab-item-children :global(.vtex-rich-text-0-x-paragraph--tab1-name){
+  color: #FFF;
+} */
+
+.contentItem--content-tab-descargas-pdp{
+    justify-content: center;
+    padding: 10px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    justify-content: center;
+    grid-column-gap: 30px;
+  
+}
+
+.contentContainer--content-tab-pdp {
+  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width:1024px) {
+
+
+.listItemChildren--tab-item-children {
+  width: 20%;
+  justify-content: center;
+}
+
+.listItemChildrenActive--tab-item-children {
+  width: 40%;
+  justify-content: flex-start;
+ }
+
+ .listItemChildren--tab-item-children :global(.vtex-flex-layout-0-x-flexRowContent--tab1-name) :global(.vtex-rich-text-0-x-container--tab1-name) {
+  display: none;
+}
+
+.listItemChildrenActive--tab-item-children :global(.vtex-flex-layout-0-x-flexRowContent--tab1-name) :global(.vtex-rich-text-0-x-container--tab1-name) {
+  display: flex;
+}
+
+.listItemChildren--tab-item-children :global(.vtex-flex-layout-0-x-flexRowContent--tab1-name){
+  margin: 0px;
+}
+
+.listItemChildrenActive--tab-item-children :global(.vtex-flex-layout-0-x-flexRowContent--tab1-name){
+  margin-left: 20px;
+}
+
+  .container--garantia2 {
+    margin: 0px;
+    padding: 0px;
+    max-width: 90vw;
+    margin: auto;
+}
+
+  .listContainer--tab-list-garantia2 {
+    width: 100%;
+}
+
+  .container--garantia2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+}
+
+  .listItem--item-garantia2,
+  .listItem--item-garantia1 {
+    margin: 0px;
+    padding: 4px 0px;
+}
+
+.listItem--item-garantia2 :global(.vtex-button__label),
+.listItem--item-garantia1 :global(.vtex-button__label){
+  padding: 0px 0px 0px 15px !important;
+}
+
+  .listContainer--tab-list-garantia1{
+      width: 100%;
+  }
+
+  .container--garantia1 {
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: auto;
+}
+
+  .listItem :global(.vtex-button__label){
+    padding: 0px;
+  }
+
+  .listContainer {
+    max-width: 90vw;
+    margin: auto;
+}
+
+
+  .contentContainer--content-tab-detalles-formulario-pqrs {
+    height: auto;
+  }
+
+  .listContainer--list-tab-detalles-formulario-pqrs {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .listItemActive--item-griferia,
+  .listItemActive--item-griferia,
+  .listItemActive--item-ceramica {
+    padding: 0;
+    height: fit-content;
+  }
+
+  .listItemActive--item-banos :global(.vtex-button__label),
+  .listItemActive--item-griferia :global(.vtex-button__label),
+  .listItemActive--item-ceramica :global(.vtex-button__label) {
+    padding: 0;
+  }
+
+  .listItemActive--item-banos :global(.vtex-button),
+  .listItemActive--item-griferia :global(.vtex-button),
+  .listItemActive--item-ceramica :global(.vtex-button) {
+    width: 100%;
+  }
+
+  .listItem--item-banos :global(.vtex-button):hover,
+  .listItem--item-griferia :global(.vtex-button):hover,
+  .listItem--item-ceramica :global(.vtex-button):hover {
+    background: transparent;
+    width: 100%;
+  }
+
+  .listItemActive--item-banos :global(.vtex-button):hover,
+  .listItemActive--item-griferia :global(.vtex-button):hover,
+  .listItemActive--item-ceramica :global(.vtex-button):hover {
+    background: #a1a1a1;
+    width: 100%;
+    border: none;
+  }
+
+  .listItem--item-banos,
+  .listItem--item-griferia,
+  .listItem--item-ceramica {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .container--tab-seccion-terminos-legales {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .listContainer--list-tab-terminos-legales {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+}

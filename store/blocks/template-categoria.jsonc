@@ -1,0 +1,99 @@
+{
+    "store.custom#template-categoria": {
+        "blocks": [
+            "flex-layout.row#miga-pan-trabaja-con-nosotros",
+            "flex-layout.row#container-title-template",
+            "flex-layout.row#container-banner-temmplate",
+            // "flex-layout.row#titulo-texto-search",
+            "responsive-layout.desktop#texto-desktop-template-categoria",
+            "search-result-layout.customQuery#template-categoria",
+            "responsive-layout.mobile#texto-mobile-template-categoria"
+        ]
+    },
+
+
+    
+     "responsive-layout.desktop#texto-desktop-template-categoria": {
+        "children": [ "flex-layout.row#titulo-texto-search"]
+      },
+      
+       "responsive-layout.mobile#texto-mobile-template-categoria": {
+          "children": ["rich-text#texto-seo-search-categoria-mobile"]
+        },
+        
+      
+    
+
+    "flex-layout.row#container-title-template": {
+      "children": [ "rich-text#template-title"],
+      "props": {
+        "blockClass": ["container-title"]
+      }
+    },
+
+    "rich-text#template-title": {
+        "props": {
+                 "text": "Titulo Template",
+                 "blockClass": "template-title",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.row#container-banner-temmplate": {
+      "children": ["list-context.image-list#banners-search"],
+      "props": {
+        "blockClass": ["container-banner-temmplate"]
+      }
+    },
+
+    "search-result-layout.customQuery#template-categoria": {
+        "props": {
+            "querySchema": {
+                // "orderByField": "OrderByReleaseDateDESC",
+                "orderByField": "OrderByTopSaleDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 20,
+                "queryField": "166", //Valores de los campos a buscar (separados por //)
+                "mapField": "productClusterIds", //Campos a buscar (separados por comas, tambien se puede buscar por coleccion productClusterIds)
+                "facetsBehavior": "dynamic"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#template-categoria",
+            // "search-result-layout.mobile",
+            "search-result-layout.mobile#template-categoria-mobile",
+            "search-not-found-layout"
+        ]
+    },
+
+    "search-result-layout.mobile#template-categoria-mobile": {
+        "children": [
+        //   "flex-layout.row#searchbread",
+          "flex-layout.row#searchinfomobile",
+          "flex-layout.row#contentmobile",
+          "flex-layout.row#fetchmore"
+        ],
+        "props": {
+          "pagination": "show-more",
+          "mobileLayout": {
+            "mode1": "small",
+            "mode2": "normal"
+          },
+          "defaultGalleryLayout": "grid",
+          "blockClass": "ResultadoMobile"
+        }
+      },
+
+    "search-result-layout.desktop#template-categoria": {
+        "children": [
+            // "flex-layout.row#searchbread",
+            "flex-layout.row#result-custom-search-2"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": false,
+            "defaultGalleryLayout": "grid"
+        }
+    }
+}

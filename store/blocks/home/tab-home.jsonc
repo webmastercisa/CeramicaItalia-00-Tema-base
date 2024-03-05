@@ -1,0 +1,246 @@
+{
+
+    "flex-layout.row#container-tab-home": {
+      "children": ["tab-layout#tab-vitrina"],
+      "title": "tab-vitrinas-colores",
+      "props": {
+        "blockClass": ["container-tab-tab-vitrina-"]
+      }
+    },
+    "tab-layout#tab-vitrina":{ 
+    "children": [
+      "tab-list#tab-vitrina",
+      "tab-content#tab-vitrina"
+    ],
+    "props": {
+      "blockClass": "tab-vitrina",
+      "defaultActiveTabId": "tab-vitrina-1"
+    }
+  },
+  "tab-list#tab-vitrina": {
+    "children": [
+        "tab-list.item.children#tab1",
+        "tab-list.item.children#tab2",
+        "tab-list.item.children#tab3",
+        "tab-list.item.children#tab4"
+    ],
+    "props": {
+        "blockClass": "tab-list-vitrina"
+    }
+  },
+  "tab-list.item.children#tab1": {
+    "title": "title-tab-1",
+    "props": {
+      "tabId": "tab-vitrina-1",
+      "defaultActiveTab": true,
+      "blockClass": "tab-item-children"
+    },
+    "children": [
+        "flex-layout.row#tab1-name"
+    ]
+  },
+  "tab-list.item.children#tab2": {
+    "title": "title-tab-2",
+    "props": {
+      "tabId": "tab-vitrina-2",
+      "blockClass": "tab-item-children"
+    },
+    "children": [
+        "flex-layout.row#tab2-name"
+    ]
+  },
+
+  "tab-list.item.children#tab3": {
+    "title": "title-tab-3",
+    "props": {
+      "tabId": "tab-vitrina-3",
+      "blockClass": "tab-item-children"
+    },
+    "children": [
+        "flex-layout.row#tab3-name"
+    ]
+  },
+
+  "tab-list.item.children#tab4": {
+    "title": "title-tab-4",
+    "props": {
+      "tabId": "tab-vitrina-4",
+      "blockClass": "tab-item-children"
+    },
+    "children": [
+        "flex-layout.row#tab4-name"
+    ]
+  },
+
+
+  
+ "tab-content#tab-vitrina": {
+   "children": [
+     "tab-content.item#tab-vitrina-1",
+     "tab-content.item#tab-vitrina-2",
+     "tab-content.item#tab-vitrina-3",
+     "tab-content.item#tab-vitrina-4"
+   ]
+ },
+ "tab-content.item#tab-vitrina-1": {
+  "title": "content-tab-color-1",
+   "children": [
+    "flex-layout.row#miniShelf-col",
+    "flex-layout.row#botonConoceMas"
+   ],
+   "props": {
+     "tabId": "tab-vitrina-1"
+   }
+ },
+ "tab-content.item#tab-vitrina-2": {
+  "title": "content-tab-color-2",
+   "children": [
+    "flex-layout.row#miniShelf-col-2",
+    "flex-layout.row#botonConoceMas"
+   ],
+   "props": {
+     "tabId": "tab-vitrina-2"
+   }
+},
+
+"tab-content.item#tab-vitrina-3": {
+  "title": "content-tab-color-3",
+    "children": [
+     "flex-layout.row#miniShelf-col-3",
+     "flex-layout.row#botonConoceMas"
+    ],
+    "props": {
+      "tabId": "tab-vitrina-3"
+    }
+ },
+
+ "tab-content.item#tab-vitrina-4": {
+  "title": "content-tab-color-4",
+    "children": [
+     "flex-layout.row#miniShelf-col-4",
+      "flex-layout.row#botonConoceMas"
+    ],
+    "props": {
+      "tabId": "tab-vitrina-4"
+    }
+ },
+
+//  tab1 
+"flex-layout.row#tab1-name": {
+  "title": "titulo-vitrina-color1",
+  "children": ["image#tab1-name","rich-text#tab1-name"],
+  "props": {
+    "blockClass": ["tab1-name"],
+    "preventHorizontalStretch": true,
+    "preserveLayoutOnMobile": true
+  }
+},
+
+"image#tab1-name": {
+    "props": {
+             "src": "assets/ico/home/color1.svg",
+             "alt": "alt",
+             "height": "30px",
+             "blockClass": "tab1-name"
+    }
+},
+
+"rich-text#tab1-name": {
+    "props": {
+             "text": "Color1",
+             "blockClass": "tab1-name",
+             "textAlignment": "CENTER",
+             "textPosition": "CENTER"
+    }
+},
+
+// tab 2
+
+"flex-layout.row#tab2-name": {
+  "title": "titulo-vitrina-color2",
+    "children": ["image#tab2-name","rich-text#tab2-name"],
+    "props": {
+      "blockClass": ["tab1-name"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  
+  "image#tab2-name": {
+      "props": {
+               "src": "assets/ico/home/color2.svg",
+               "alt": "alt",
+               "height": "30px",
+               "blockClass": "tab1-name"
+      }
+  },
+  
+  "rich-text#tab2-name": {
+      "props": {
+               "text": "Color2",
+               "blockClass": "tab1-name",
+               "textAlignment": "CENTER",
+               "textPosition": "CENTER"
+      }
+  },
+
+  // tab 3
+
+"flex-layout.row#tab3-name": {
+  "title": "titulo-vitrina-color3",
+    "children": ["image#tab3-name","rich-text#tab3-name"],
+    "props": {
+      "blockClass": ["tab1-name"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  
+  "image#tab3-name": {
+      "props": {
+               "src": "assets/ico/home/color3.svg",
+               "alt": "alt",
+               "height": "30px",
+               "blockClass": "tab1-name"
+      }
+  },
+  
+  "rich-text#tab3-name": {
+      "props": {
+               "text": "Color3",
+               "blockClass": "tab1-name",
+               "textAlignment": "CENTER",
+               "textPosition": "CENTER"
+      }
+  },
+
+    // tab 4
+
+"flex-layout.row#tab4-name": {
+  "title": "titulo-vitrina-color4",
+    "children": ["image#tab4-name","rich-text#tab4-name"],
+    "props": {
+      "blockClass": ["tab1-name"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  
+  "image#tab4-name": {
+      "props": {
+               "src": "assets/ico/home/color4.svg",
+               "alt": "alt",
+               "height": "30px",
+               "blockClass": "tab1-name"
+      }
+  },
+  
+  "rich-text#tab4-name": {
+      "props": {
+               "text": "Color4",
+               "blockClass": "tab1-name",
+               "textAlignment": "CENTER",
+               "textPosition": "CENTER"
+      }
+  }
+}

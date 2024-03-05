@@ -1,0 +1,211 @@
+{
+    "store.custom#Instatile": {
+        "blocks": [
+            "flex-layout.row#miga-pan-instatile",
+            "flex-layout.row#container-instatile",
+            "flex-layout.row#container-newsletter2"
+        ]
+    },
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-instatile": {
+        "children": [
+            "image#icono-miga-pan",
+            "rich-text#texto-1-miga-pan",
+            "rich-text#texto-2-miga-pan-instatile"
+        ],
+        "props": {
+            "blockClass": [
+                "miga-pan-terminos-legales"
+            ]
+        }
+    },
+    // TEXTO 2 MIGA DE PAN 
+    "rich-text#texto-2-miga-pan-instatile": {
+        "props": {
+            "blockClass": [
+                "texto-2-miga-pan"
+            ],
+            "text": "[Instatile](/Instatile)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#container-instatile": {
+        "children": [
+            "flex-layout.col#container-texts",
+            "flex-layout.col#container-video"
+        ],
+        "props": {
+            "blockClass": "container-instatile",
+            "fulwidth": false
+        }
+    },
+    "flex-layout.col#container-texts": {
+        "children": [
+            "rich-text#instatile-title",
+            "rich-text#texto1-instatile",
+            "rich-text#texto2-instatile",
+            "rich-text#texto3-instatile",
+            "rich-text#texto4-instatile",
+            "rich-text#texto5-instatile",
+            "rich-text#btn-instatile"
+        ],
+        "props": {
+            "blockClass": "container-texts",
+            "fulwidth": false,
+            "preventVerticalStretch": true,
+            "width": "40%"
+        }
+    },
+    "rich-text#instatile-title": {
+        "props": {
+            "text": "INSTATILE",
+            "blockClass": "instatile-title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#texto1-instatile": {
+        "props": {
+            "text": "¡Tu estilo perfecto con nuestros productos!",
+            "blockClass": "texto1-instatile",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#texto2-instatile": {
+        "props": {
+            "text": "Así de fácil podrás convertir tu hogar en Tu espacio perfecto con el visualizador interactivo de Cerámica Italia",
+            "blockClass": "texto2-instatile",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#texto3-instatile": {
+        "props": {
+            "text": "1 - Sube la foto de tu espacio\n2- Selecciona tu producto favorito\n3- Y Listo",
+            "blockClass": "texto3-instatile",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#texto4-instatile": {
+        "props": {
+            "text": "Añade los productos a tu carrito para pagar fácilmente",
+            "blockClass": "texto4-instatile",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#texto5-instatile": {
+        "props": {
+            "text": "¡InstaTile - El visualizador de Cerámica Italia!",
+            "blockClass": "texto5-instatile",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#btn-instatile": {
+        "props": {
+            "text": "[Ingresa a Instatile](#)",
+            "blockClass": "btn-instatile",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.col#container-video": {
+        "children": [
+            "video#instatile-video"
+        ],
+        "props": {
+            "blockClass": [
+                "container-video"
+            ]
+        }
+    },
+    "video#instatile-video": {
+        "props": {
+            "width": "100%",
+            "height": "600px",
+            "loop": false,
+            "autoPlay": true,
+            "muted": false,
+            "src": "https://www.youtube.com/watch?v=wygFqZXMIco",
+            "blockClass": "instatile-video"
+        }
+    },
+    //   "newsletter-form"
+    "flex-layout.row#container-newsletter2": {
+        "children": [
+            "newsletter-form#newsletter2"
+        ],
+        "props": {
+            "blockClass": [
+                "container-newsletter2"
+            ]
+        }
+    },
+    "newsletter-form#newsletter2": {
+        "children": [
+            "flex-layout.row#container-input-newsletter2",
+            "rich-text#text-newsletter2"
+        ]
+    },
+"flex-layout.row#container-input-newsletter2": {
+  "children": [
+      "flex-layout.row#input-name-newsletter2",
+    "flex-layout.row#input-email-newsletter2",
+    "flex-layout.row#btn-enviar-newsletter2"
+  ],
+  "props": {
+    "blockClass": ["container-input-newsletter2"]
+  }
+},
+"flex-layout.row#input-email-newsletter2": {
+  "children": ["newsletter-input-email#newsletter2"],
+  "props": {
+    "blockClass": ["input-email-newsletter2"],
+    "width": "42%"
+  }
+},
+
+"flex-layout.row#input-name-newsletter2": {
+  "children": ["newsletter-input-name#newsletter2"],
+  "props": {
+    "blockClass": ["input-name-newsletter2"],
+    "width": "42%"
+  }
+},
+
+"flex-layout.row#btn-enviar-newsletter2": {
+  "children": ["newsletter-submit#newsletter2"],
+  "props": {
+    "blockClass": ["btn-enviar-newsletter2"]
+  }
+},
+    "newsletter-input-email#newsletter2": {
+        "props": {
+            "placeholderText": "Tu correo"
+        }
+    },
+
+    "newsletter-input-name#newsletter2": {
+        "props": {
+            "placeholderText": "Nombre completo"
+        }
+    },
+
+    "newsletter-submit#newsletter2": {
+        "props": {
+            "submitButtonLabel": "Subscribirme"
+        }
+    },
+    "rich-text#text-newsletter2": {
+        "props": {
+                 "text": "Al suscribirte a nuestro boletin aceptas nuestra politica de datos personales",
+                 "blockClass": "text-newsletter2",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    }
+}

@@ -1,0 +1,574 @@
+{
+    "store.custom#sostenibilidad": {
+        "blocks": [
+            "flex-layout.row#miga-pan-sostenibilidad",
+            "flex-layout.row#container-banner1-sostenibilidad",
+            "flex-layout.row#section1-sostenibilidad",
+            "rich-text#texts-sostenibilidad",
+            "flex-layout.row#section2-sostenibilidad",
+            "flex-layout.row#container-banner2-sostenibilidad",
+            "flex-layout.row#section3-sostenibilidad"
+        ]
+    },
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-sostenibilidad": {
+        "children": [
+            "image#icono-miga-pan",
+            "rich-text#texto-1-miga-pan",
+            "rich-text#texto-2-miga-pan-sostenibilidad"
+        ],
+        "props": {
+            "blockClass": [
+                "miga-pan-terminos-legales"
+            ]
+        }
+    },
+    // TEXTO 2 MIGA DE PAN 
+    "rich-text#texto-2-miga-pan-sostenibilidad": {
+        "props": {
+            "blockClass": [
+                "texto-2-miga-pan"
+            ],
+            // "text": "Sostenibilidad",
+            "text": "[Sostenibilidad](/Sostenibilidad)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // slider 1
+    "flex-layout.row#container-banner1-sostenibilidad": {
+        "children": [
+            "list-context.image-list#banner1Slider-sostenibilidad"
+        ],
+        "props": {
+            "blockClass": [
+                // "container-banner1-trabaja-con-nosotros-slider"
+                "container-banner1-sostenibilidad"
+            ]
+        }
+    },
+    "list-context.image-list#banner1Slider-sostenibilidad": {
+        "children": [
+            "slider-layout#banner1-sostenibilidad"
+        ],
+        "props": {
+            "height": 570,
+            "preload": true,
+            "images": [
+                {
+                    "image": "arquivos/banner-trabaja-con-nosotros.png",
+                    "mobileImage": "arquivos/banner1-muestra-mobile.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#banner1-sostenibilidad": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": [
+                // "banner1-trabaja-con-nosotros-slider"
+                "banner1-sostenibilidad"
+            ]
+            // "autoplay": {
+            //   "timeout": 3000,
+            //   "stopOnHover": true
+            // }
+        }
+    },
+    "flex-layout.row#section1-sostenibilidad": {
+        "children": [
+            "flex-layout.col#texto1-section1",
+            "flex-layout.row#img-section1"
+        ],
+        "props": {
+            "blockClass": [
+                "section1-sostenibilidad"
+            ]
+        }
+    },
+    "flex-layout.col#texto1-section1": {
+        "children": [
+            "rich-text#title-section1",
+            "rich-text#text1-section1",
+            "rich-text#text2-section1"
+        ],
+        "props": {
+            "blockClass": [
+                "texto1-section1"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#title-section1": {
+        "props": {
+            "text": "Bienvenido, llegaste al lugar correcto",
+            "blockClass": "title-section1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#text1-section1": {
+        "props": {
+            "text": "En Cerámica Italia confiamos firmemente en tu deseo de Sentir la vida a través del cambio, por eso desde nuestras diferentes áreas de trabajo impactamos positivamente en tu vida con diseños que inspiran al cambio y te acompañamos a construir tu sueño de tener el mejor hogar",
+            "blockClass": "texto1-section1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#text2-section1": {
+        "props": {
+            "text": "Así mismo, como organización reconocemos que un hogar es todo aquello que nos rodea, cada espacio, cada hábitat y cada familia, por eso, como organización trabajamos firmemente con el propósito de construir un mejor hogar para ti.",
+            "blockClass": "text02-section1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#img-section1": {
+        "children": [
+            "image#img-section1"
+        ],
+        "props": {
+            "blockClass": [
+                "img-section1"
+            ]
+        }
+    },
+    "image#img-section1": {
+        "props": {
+            "src": "arquivos/banner1-sostenibilidad.png",
+            "alt": "alt",
+            "height": "hight",
+            "blockClass": "img-section1",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    },
+    "rich-text#texts-sostenibilidad": {
+        "props": {
+            "text": "Y un hogar se construye desde:",
+            "blockClass": "texts-sostenibilidad",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // slider 2
+    "flex-layout.row#container-banner2-sostenibilidad": {
+        "children": [
+            "list-context.image-list#banner2Slider-sostenibilidad"
+        ],
+        "props": {
+            "blockClass": [
+                // "container-banner1-trabaja-con-nosotros-slider"
+                "container-banner2-sostenibilidad"
+            ]
+        }
+    },
+    "list-context.image-list#banner2Slider-sostenibilidad": {
+        "children": [
+            "slider-layout#banner2-sostenibilidad"
+        ],
+        "props": {
+            "height": 570,
+            "preload": true,
+            "images": [
+                {
+                    "image": "arquivos/banner2-sostenibilidad.png",
+                    "mobileImage": "arquivos/banner1-muestra-mobile.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#banner2-sostenibilidad": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": [
+                // "banner1-trabaja-con-nosotros-slider"
+                "banner2-sostenibilidad"
+            ]
+            // "autoplay": {
+            //   "timeout": 3000,
+            //   "stopOnHover": true
+            // }
+        }
+    },
+    "flex-layout.row#section3-sostenibilidad": {
+        "children": [
+            "list-context.media-list#section3-sostenibilidad"
+        ],
+        "props": {
+            "blockClass": [
+                "section3-sostenibilidad"
+            ]
+        }
+    },
+    "list-context.media-list#section3-sostenibilidad": {
+        "children": [
+            "slider-layout#section3-videos"
+        ],
+        "props": {
+            "height": 720,
+            "mediaList": [
+                {
+                    "video": "https://www.youtube.com/embed/JgkrlaF52WQ"
+                },
+                {
+                    "video": "https://www.youtube.com/embed/JgkrlaF52WQ"
+                },
+                {
+                    "video": "https://www.youtube.com/embed/JgkrlaF52WQ"
+                },
+                {
+                    "video": "https://www.youtube.com/embed/JgkrlaF52WQ"
+                },
+                {
+                    "video": "https://www.youtube.com/embed/JgkrlaF52WQ"
+                },
+                {
+                    "video": "https://www.youtube.com/embed/JgkrlaF52WQ"
+                }
+            ]
+        }
+    },
+    "slider-layout#section3-videos": {
+        "props": {
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "always",
+            "blockClass": [
+                "carousel-video"
+            ],
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 1,
+                "phone": 1
+            },
+            "navigationStep": "page",
+            "usePagination": true,
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+              }
+        }
+    },
+    // tabs
+    "flex-layout.row#section2-sostenibilidad": {
+        "children": [
+            "tab-layout#sostenibilidad"
+        ],
+        "props": {
+            "blockClass": [
+                "section2-sostenibilidad"
+            ]
+        }
+    },
+    "tab-layout#sostenibilidad": {
+        "children": [
+            "tab-list#sostenibilidad",
+            "tab-content#sostenibilidad"
+        ],
+        "props": {
+            "blockClass": "sostenibilidad",
+            "defaultActiveTabId": "sostenibilidad1"
+        }
+    },
+    "tab-list#sostenibilidad": {
+        "children": [
+            "tab-list.item#sostenibilidad1",
+            "tab-list.item#sostenibilidad2"
+        ]
+    },
+    "tab-list.item#sostenibilidad1": {
+        "props": {
+            "tabId": "sostenibilidad1",
+            "label": "Un ambiente sostenible",
+            "blockClass": "item-tab-sostenibilidad",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#sostenibilidad2": {
+        "props": {
+            "tabId": "sostenibilidad2",
+            "label": "Las comunidades",
+            "blockClass": "item-tab-sostenibilidad"
+        }
+    },
+    "tab-content#sostenibilidad": {
+        "children": [
+            "tab-content.item#sostenibilidad1",
+            "tab-content.item#sostenibilidad2"
+        ]
+    },
+    "tab-content.item#sostenibilidad1": {
+        "children": [
+            "flex-layout.col#text-tab1",
+            "flex-layout.row#container-tab1"
+        ],
+        "props": {
+            "tabId": "sostenibilidad1"
+        }
+    },
+    "tab-content.item#sostenibilidad2": {
+        "children": [
+            "flex-layout.row#container-tab2",
+            "flex-layout.row#container-btn-tab2"
+        ],
+        "props": {
+            "tabId": "sostenibilidad2"
+        }
+    },
+    "flex-layout.col#text-tab1": {
+        "children": [
+            "rich-text#text1-tab1",
+            "rich-text#text2-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "text-tab1"
+            ]
+        }
+    },
+    "rich-text#text1-tab1": {
+        "props": {
+            "text": "Nos comprometemos a reducir nuestro impacto ambiental, un reto que nos hace reinventarnos en nuestros procesos.",
+            "blockClass": "text1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#text2-tab1": {
+        "props": {
+            "text": "¡SIEMPRE PENSANDO EN UN FUTURO SOSTENIBLE PARA TODOS!",
+            "blockClass": "text2-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // infocard tab1 
+    "flex-layout.row#container-tab1": {
+        "children": [
+            "list-context.info-card-list#infocards-tab1-sostenibilidad"
+        ],
+        "props": {
+            "blockClass": [
+                "container-tab1"
+            ]
+        }
+    },
+    //INFOCARDS BLOQUE 4 QUIENES SOMOS
+    "list-context-renderer#wrapped-tab1-sostenibilidad": {
+        "props": {
+            "listElement": "div",
+            "itemElement": "div",
+            "blockClass": "infocards-tab1-sostenibilidad"
+        }
+    },
+    "list-context.info-card-list#infocards-tab1-sostenibilidad": {
+        "children": [
+            "list-context-renderer#wrapped-tab1-sostenibilidad"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "infocard-tab1-sostenibilidad-1",
+                    "title": "infocard-tab1-sostenibilidad-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "/arquivos/infocard-sostenibilidad1.png",
+                    "imageActionUrl": "",
+                    "headline": "Empaques 100% Reciclados",
+                    "subhead": "Nuestros empaques están fabricados con cartón 100% reciclado así optimizamos los recursos de nuestro planeta",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-tab1-sostenibilidad"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-sostenibilidad-2",
+                    "title": "infocard-tab1-sostenibilidad-2",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "/arquivos/infocard-sostenibilidad2.png",
+                    "imageActionUrl": "",
+                    "headline": "Botellitas de amor",
+                    "subhead": "Gracias a las diferentes acciones de recolección de envases y empaques durante 2022 se recolectaron Más de 4 toneladas de productos plásticos con el programa botellitas de amor",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-tab1-sostenibilidad"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-sostenibilidad-3",
+                    "title": "infocard-tab1-sostenibilidad-4",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "/arquivos/infocard-sostenibilidad3.png",
+                    "imageActionUrl": "",
+                    "headline": "Recirculación de agua",
+                    "subhead": "Anualmente se recircula más de  91.941 metros cúbicos/año de agua los cuales son utilizados en el area de pasta",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-tab1-sostenibilidad"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-sostenibilidad-4",
+                    "title": "infocard-tab1-sostenibilidad-4",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "/arquivos/infocard-sostenibilidad4.png",
+                    "imageActionUrl": "",
+                    "headline": "Huerta Cerámica Italia",
+                    "subhead": "Cómo adaptamos la industria al cambio climáticoAdaptabilidad al cambio - Biodiversidad en la planta",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-tab1-sostenibilidad"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-sostenibilidad-5",
+                    "title": "infocard-tab1-sostenibilidad-5",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "/arquivos/infocard-sostenibilidad5.png",
+                    "imageActionUrl": "",
+                    "headline": "# Carbono Neutro",
+                    "subhead": "Pensar en un ambiente sostenible es devolver a ecosistema acciones que nos permitan conservar los bosques y páramos del Norte de Santander\n\nEn 2022 conservamos 3.178,2 hectáreas de bosques en áreas como PNR Santurbán Arboledas, PNR Sisavita, PNR Santurbán Salazar de las Palmas\nProtección del área DRMI bosque seco tropical Pozo Azul - Graficar en imagen.\nDesde el años 2019 hasta el 2021 la reducción en un 37 % de nuestra huella de carbono en la actualidad seguimos trabajando por ser más sostenibles para el territorio - Graficar en imagen.",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-tab1-sostenibilidad"
+                    ]
+                }
+            ]
+        }
+    },
+    // infocard tab2
+    "flex-layout.row#container-tab2": {
+        "children": [
+            "list-context.info-card-list#infocards-tab2-sostenibilidad"
+        ],
+        "props": {
+            "blockClass": [
+                "container-tab2"
+            ]
+        }
+    },
+    //INFOCARDS 2
+    "list-context-renderer#wrapped-tab2-sostenibilidad": {
+        "props": {
+            "listElement": "div",
+            "itemElement": "div",
+            "blockClass": "infocards-tab2-sostenibilidad"
+        }
+    },
+    "list-context.info-card-list#infocards-tab2-sostenibilidad": {
+        "children": [
+            "list-context-renderer#wrapped-tab2-sostenibilidad"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "infocard-tab2-sostenibilidad-1",
+                    "title": "infocard-tab2-sostenibilidad-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "/arquivos/infocard-sostenibilidad6.png",
+                    "imageActionUrl": "",
+                    "headline": "Construyendo un mejor hogar para ti",
+                    "subhead": "Aquí trabajamos por contribuir a mejorar la calidad de vida de las familias de colaboradores, zonas de atención comunitaria y entornos laborales, a través de la generación de espacios idóneos para el buen vivir y la sana convivencia.",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-tab2-sostenibilidad"
+                    ]
+                },
+                {
+                    "id": "infocard-tab2-sostenibilidad-2",
+                    "title": "infocard-tab2-sostenibilidad-2",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "/arquivos/infocard-sostenibilidad7.png",
+                    "imageActionUrl": "",
+                    "headline": "Generación Cisa",
+                    "subhead": "Contribuir al desarrollo económico y social de comunidades directas e indirectas de cerámica Italia a través del diseño de proyectos que respondan a las necesidades / problemáticas existentes.Aquí reforzamos el don de servir en los colaboradores y transformando las vidas de los cucuteños",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-tab2-sostenibilidad"
+                    ]
+                }
+            ]
+        }
+    },
+    "flex-layout.row#container-btn-tab2": {
+        "children": [
+            "rich-text#btn1-tab2",
+            "rich-text#btn2-tab2",
+            "rich-text#btn3-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "container-btn-tab2"
+            ]
+        }
+    },
+    "rich-text#btn1-tab2": {
+        "props": {
+            "text": "[Quienes somos](urlHipervinculo?target=_blank)",
+            "blockClass": "btn-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#btn2-tab2": {
+        "props": {
+            "text": "[Fundación Cerámica Italia](urlHipervinculo?target=_blank)",
+            "blockClass": "btn-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#btn3-tab2": {
+        "props": {
+            "text": "[Trabaja con nosotros](urlHipervinculo?target=_blank)",
+            "blockClass": "btn-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+}

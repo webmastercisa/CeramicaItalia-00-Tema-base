@@ -1,0 +1,217 @@
+{
+    "responsive-layout.desktop#orderPlaced": {
+        "children": [
+            "flex-layout.row#orderplaced-desktop"
+        ]
+    },
+    "flex-layout.row#orderplaced-desktop": {
+        "title": "ContainerOrderPlaced-desktop",
+        "children": [
+            "flex-layout.col#order-placed-col-desktop",
+            "flex-layout.col#order-placed-col2-desktop"
+        ],
+        "props": {
+            "blockClass": [
+                "orderplaced-desktop"
+            ]
+        }
+    },
+    "flex-layout.col#order-placed-col-desktop": {
+        "title": "ColumnOrderPlaced-desktop",
+        "children": [
+            "flex-layout.col#container-orderPlaced-desktop"
+        ],
+        "props": {
+            "blockClass": [
+                "order-placed-col-desktop"
+            ]
+        }
+    },
+    "flex-layout.col#container-orderPlaced-desktop": {
+        "title": "texts-OrderPlaced-desktop",
+        "children": [
+            "rich-text#thankyou-text-desktop",
+            "rich-text#thankyou-text2-desktop",
+            "rich-text#thankyou-text3-desktop",
+            "PaymentMethod",
+            "rich-text#thankyou-text4-desktop"
+        ],
+        "props": {
+            "blockClass": [
+                "container-orderPlaced-desktop"
+            ]
+        }
+    },
+    "rich-text#thankyou-text-desktop": {
+        "title": "title-OrderPlaced-desktop",
+        "props": {
+            "blockClass": "thankyou-text1-desktop",
+            "preventVerticalStretch": false,
+            "text": "!Muchas gracias!",
+            "textAlignment": "LEFT"
+        }
+    },
+    "rich-text#thankyou-text2-desktop": {
+        "title": "text1-OrderPlaced-desktop",
+        "props": {
+            "blockClass": "thankyou-text2-desktop",
+            "preventVerticalStretch": false,
+            "text": "Tu pedido está siendo procesado.",
+            "textAlignment": "LEFT"
+        }
+    },
+    "rich-text#thankyou-text3-desktop": {
+        "title": "text2-OrderPlaced-desktop",
+        "props": {
+            "blockClass": "thankyou-text3-desktop",
+            "preventVerticalStretch": false,
+            "text": "Recibirás un correo electrónico con el detalle de tu pedido en los próximos minutos.",
+            "textAlignment": "LEFT"
+        }
+    },
+    "rich-text#thankyou-text4-desktop": {
+        "title": "btn-OrderPlaced-desktop",
+        "props": {
+            "blockClass": "thankyou-text4-desktop",
+            "preventVerticalStretch": false,
+            "text": "[Volver a la tienda](https://www.ceramicaitalia.com/)",
+            "textAlignment": "LEFT"
+        }
+    },
+    "flex-layout.col#order-placed-col2-desktop": {
+        "title": "containImage-OrderPlaced-desktop",
+        "children": [
+            "image#banner-orderPlaced-desktop"
+        ],
+        "props": {
+            "blockClass": [
+                "order-placed-col-desktop"
+            ]
+        }
+    },
+    "image#banner-orderPlaced-desktop": {
+        "title": "image-OrderPlaced-desktop",
+        "props": {
+            "src": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerOrderPlaced.png",
+            "alt": "Imagen Order Placed",
+            "blockClass": "bannerOrderPlaced"
+        }
+    },
+    // Mobile Order Placed //
+    "responsive-layout.mobile#orderPlaced": {
+        "children": [
+            "flex-layout.row#orderplaced-mobile"
+        ]
+    },
+    "flex-layout.row#orderplaced-mobile": {
+        "title": "ContainerOrderPlaced-mobile",
+        "children": [
+            "flex-layout.col#order-placed-col2-mobile",
+            "flex-layout.col#order-placed-col-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "orderplaced-desktop",
+                "orderplaced-mobile"
+            ]
+        }
+    },
+    "flex-layout.col#order-placed-col-mobile": {
+        "title": "ColumnOrderPlaced-mobile",
+        "children": [
+            "flex-layout.col#container-orderPlaced-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "order-placed-col-desktop",
+                "order-placed-col-mobile"
+            ]
+        }
+    },
+    "flex-layout.col#container-orderPlaced-mobile": {
+        "title": "texts-OrderPlaced-mobile",
+        "children": [
+            "rich-text#thankyou-text-mobile",
+            "rich-text#thankyou-text2-mobile",
+            "rich-text#thankyou-text3-mobile",
+            // "FormularioPago",
+            "rich-text#thankyou-text4-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "container-orderPlaced-desktop",
+                "container-orderPlaced-mobile"
+            ]
+        }
+    },
+    "rich-text#thankyou-text-mobile": {
+        "title": "title-OrderPlaced-mobile",
+        "props": {
+            "blockClass": [
+                "thankyou-text1-desktop",
+                "thankyou-text1-mobile"
+            ],
+            "preventVerticalStretch": false,
+            "text": "!Muchas gracias!",
+            "textAlignment": "LEFT"
+        }
+    },
+    "rich-text#thankyou-text2-mobile": {
+        "title": "text1-OrderPlaced-mobile",
+        "props": {
+            "blockClass": [
+                "thankyou-text2-desktop",
+                "thankyou-text2-mobile"
+            ],
+            "preventVerticalStretch": false,
+            "text": "Tu pedido está siendo procesado.",
+            "textAlignment": "LEFT"
+        }
+    },
+    "rich-text#thankyou-text3-mobile": {
+        "title": "text2-OrderPlaced-mobile",
+        "props": {
+            "blockClass": [
+                "thankyou-text3-desktop",
+                "thankyou-text3-mobile"
+            ],
+            "preventVerticalStretch": false,
+            "text": "Recibirás un correo electrónico con el detalle de tu pedido en los próximos minutos.",
+            "textAlignment": "LEFT"
+        }
+    },
+    "rich-text#thankyou-text4-mobile": {
+        "title": "btn-OrderPlaced-mobile",
+        "props": {
+            "blockClass": [
+                "thankyou-text4-desktop",
+                "thankyou-text4-mobile"
+            ],
+            "preventVerticalStretch": false,
+            "text": "[Volver a la tienda](https://www.ceramicaitalia.com/)",
+            "textAlignment": "LEFT"
+        }
+    },
+    "flex-layout.col#order-placed-col2-mobile": {
+        "title": "containImage-OrderPlaced-mobile",
+        "children": [
+            "image#banner-orderPlaced-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "order-placed-col-desktop",
+                "order-placed-col-mobile"
+            ]
+        }
+    },
+    "image#banner-orderPlaced-mobile": {
+        "title": "image-OrderPlaced-mobile",
+        "props": {
+            "src": "https://ceramicaitalia.vteximg.com.br/arquivos/orderPlacedMobile.png",
+            "alt": "Imagen Order Placed",
+            "blockClass": [
+                "bannerOrderMobile"
+            ]
+        }
+    }
+}

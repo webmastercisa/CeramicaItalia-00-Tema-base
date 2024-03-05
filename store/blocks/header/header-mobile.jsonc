@@ -1,0 +1,322 @@
+{
+  "header-layout.mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#preHeader-mobile",
+      "sticky-layout#1-mobile",
+      "flex-layout.row#btnWhatsApp"
+      // "flex-layout.row#btnCallCenter",
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer#mobile-major",
+      "logo#mobile",
+      "image#ico-favoritos",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer#mobile-major": {
+    "props":{
+      "customPixelEventId": "ModalMenu",
+      "customPixelEventName": "openDrawer"
+    },
+    "children": [
+      "drawer-header#my-drawer",
+      "search-bar",
+      // "search-bar#modificado",
+      // "flex-layout.row#storeLocator",
+      // "flex-layout.row#container-nuestras-tiendas",
+      // "login",
+      "flex-layout.row#icon-usa-login-mobile",
+      "flex-layout.row#category-menu-header-mobile",
+      // "flex-layout.col#category-menu-header-mobile",
+      "menu#drawer-mobile"
+    ]
+  },
+  "drawer-header#my-drawer": {
+    "children": [
+      "flex-layout.row#logoMobileContainer",
+      "drawer-close-button"
+    ]
+  },
+
+  "flex-layout.row#icon-usa-login-mobile": {
+    "children": [
+      "flex-layout.row#container-logoUSA",
+      "login"
+    ],
+    "props": {
+      "blockClass": ["icon-usa-login-mobile"],
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#logoMobileContainer": {
+    "children": [
+      "image#icoDrawer"
+    ],
+    "props": {
+      "blockClass": "logoMobileContainer",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "bottom",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+  "image#icoDrawer": {
+    "props": {
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/LogoCeramicaItalia.png",
+      "alt": "alt",
+      "height": "35px",
+      "blockClass": "icoDrawer"
+    }
+  },
+  "menu#drawer-mobile": {
+    "title": "menu mobile",
+    "children": [
+      "menu-custom-mobile"
+      // "flex-layout.row#menu-mobile-pisos",
+      // "flex-layout.row#menu-mobile-paredes",
+      // "flex-layout.row#menu-mobile-baños",
+      // "flex-layout.row#menu-mobile-porcelanatos",
+      // "flex-layout.row#menu-mobile-muebles-bano",
+      // "flex-layout.row#menu-mobile-griferia",
+      // "flex-layout.row#menu-mobile-complementarios",
+      // "flex-layout.row#menu-mobile-servicios",
+      // "vtex.menu@2.x:menu#category-items-extra-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://ceramicaitalia.vteximg.com.br/arquivos/ceramicaItaliaIcon.png",
+      "width": "77.5",
+      "height": "27.5"
+    }
+  },
+  "search-bar": {
+    "props": {
+      "maxWidth": 600,
+      // "maxTopSearches": 5,
+      // "historyFirst": false,
+      "displayMode": "search-button",
+      "placeholder": "Busca tus productos",
+      "blockClass": "searchBarIcon",
+      // "autoFocus": false,
+      "autocompleteFullWidth": false,
+      "openAutocompleteOnFocus": true
+      // "searchBarIcon": "telemarketing",
+      // "productLayout": "VERTICAL"
+    },
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ]
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
+      "product-summary.shelf#general"
+    ],
+    "props": {
+      "blockClass": "inteliSearch",
+      "maxSuggestedProducts": 2,
+      "maxSuggestedTerms": 10
+    }
+  },
+  //VERSION 2 SEARCH BAR
+  "search-bar#modificado": {
+    "props": {
+      "maxWidth": 600,
+      "maxTopSearches": 5,
+      "historyFirst": false,
+      "displayMode": "search-button",
+      "placeholder": "Busca tus productos",
+      "blockClass": "search-bar-modificado",
+      "autoFocus": false,
+      "autocompleteFullWidth": false,
+      "openAutocompleteOnFocus": true,
+      "searchBarIcon": "telemarketing",
+      "productLayout": "VERTICAL"
+    },
+    "blocks": [
+      "autocomplete-result-list.v2#modificado"
+    ]
+  },
+  "autocomplete-result-list.v2#modificado": {
+    "blocks": [
+      "product-summary.shelf#general"
+    ],
+    "props": {
+      "blockClass": "inteliSearch",
+      "maxSuggestedProducts": 2,
+      "maxSuggestedTerms": 10
+    }
+  },
+  // logos mobile
+  "flex-layout.row#category-menu-header-mobile": {
+    "children": [
+      "drawer#mobile-pisos-iconos",
+      "drawer#mobile-paredes-iconos",
+      "drawer#mobile-colores-iconos"
+    ],
+    "props": {
+      "blockClass": [
+        "category-menu-header-mobile-drawer"
+      ],
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#category-menu-header-mobile": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu-header-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-menu-header-mobile": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "main-header"
+    },
+    "children": [
+      // "disclosure-layout#header1",
+      // "disclosure-layout#header2",
+      //   "disclosure-layout-group#header",
+      // "disclosure-layout-group#header",
+      // "drawer#mobile-pisos-iconos",
+      "flex-layout.col#menu-iconPisos-mobile",
+      "flex-layout.col#menu-iconParedes-mobile",
+      "flex-layout.col#menu-iconColores"
+    ]
+  },
+  "flex-layout.col#menu-iconPisos-mobile": {
+    "children": [
+      "logo#iconMenuPisos-mobile",
+      // "menu-item#pisos-mobile"
+      "rich-text#item-pisos-drawer"
+    ],
+    "props": {
+      "blockClass": "iconMenu-header",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#item-pisos-drawer": {
+    "props": {
+         "text": "Pisos",
+         "blockClass": "opciones-colores",
+         "textAlignment": "CENTER",
+         "textPosition": "CENTER"
+    }
+  },
+  "logo#iconMenuPisos-mobile": {
+    "props": {
+      "title": "iconMenuPisos",
+      // "href": "/pisos",
+      "url": "assets/ico/plain.svg",
+      "width": "30px",
+      "blockClass": "iconMenuPisos"
+    }
+  },
+  "menu-item#pisos-mobile": {
+    "props": {
+      "id": "menu-item-pisos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "pisos-header",
+      "itemProps": {
+        "type": "internal",
+        "href": "/pisos",
+        "noFollow": false,
+        "tagTitle": "pisos",
+        "text": "Pisos"
+      }
+    }
+  },
+  "flex-layout.col#menu-iconParedes-mobile": {
+    "children": [
+      "logo#iconMenuParedes-mobile",
+      // "menu-item#paredes-mobile"
+      "rich-text#item-paredes-drawer"
+    ],
+    "props": {
+      "blockClass": "iconMenu-header",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#item-paredes-drawer": {
+    "props": {
+         "text": "Paredes",
+         "blockClass": "opciones-colores",
+         "textAlignment": "CENTER",
+         "textPosition": "CENTER"
+    }
+  },
+  "logo#iconMenuParedes-mobile": {
+    "props": {
+      "title": "iconMenuParedes",
+      // "href": "/",
+      "url": "assets/ico/plain.svg",
+      "width": "27px",
+      "blockClass": "iconMenuParedes"
+    }
+  },
+  "menu-item#paredes-mobile": {
+    "props": {
+      "id": "menu-item-paredes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "paredes-header",
+      "itemProps": {
+        "type": "internal",
+        // "href": "/paredes/",
+        "noFollow": false,
+        "tagTitle": "paredes",
+        "text": "Paredes"
+      }
+    }
+  },
+  "flex-layout.col#menu-iconColores": {
+    "children": [
+      "logo#iconMenuColores",
+      "rich-text#opciones-colores"
+      // "menu-item#colores"
+    ],
+    "props": {
+      "blockClass": "iconMenu-header",
+      "preventVerticalStretch": true
+    }
+  },
+  "logo#iconMenuColores": {
+    "props": {
+      "title": "iconMenuColores",
+      // "href": "/",
+      "url": "assets/ico/plain.svg",
+      "width": "27px",
+      "blockClass": "iconMenuColores"
+    }
+  }
+
+
+}

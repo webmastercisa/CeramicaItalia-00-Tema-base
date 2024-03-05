@@ -1,0 +1,82 @@
+{
+  "rich-text#Resultado": {
+    "props": {
+      "text": "--- Esto es un resultado ---",
+      "blockClass": "alerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#Departamento": {
+    "props": {
+      "text": "--- Esto es un Departamento CI ---",
+      "blockClass": "alerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#Categoria": {
+    "props": {
+      "text": "--- Esto es una Categoria ---",
+      "blockClass": "alerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#Subcategoria": {
+    "props": {
+      "text": "--- Esto es una Subcategoria ---",
+      "blockClass": "alerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#Marca": {
+    "props": {
+      "text": "--- Esto es una marca ---",
+      "blockClass": "alerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#x-Resultado": {
+    "props": {
+      "text": "--- Esto es un resultado bloque interno ---",
+      "blockClass": "xalerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#x-Depto": {
+    "props": {
+      "text": "--- Esto es un Departamento bloque interno---",
+      "blockClass": "xalerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#x-Categoria": {
+    "props": {
+      "text": "--- Esto es una Categoria bloque interno ---",
+      "blockClass": "xalerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#x-Subcategoria": {
+    "props": {
+      "text": "--- Esto es una Subcategoria bloque interno ---",
+      "blockClass": "xalerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#x-Marca": {
+    "props": {
+      "text": "--- Esto es una marca bloque interno ---",
+      "blockClass": "xalerta",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  }
+}

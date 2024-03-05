@@ -1,0 +1,38 @@
+.product-identifier--productReference {
+  margin-bottom: 1rem;
+}
+
+.product-identifier--productReference {
+  color:  #686868;
+  font-family: "NeutraText";
+  font-size: 16px;
+  font-weight: 550;
+}
+
+
+
+.product-identifier__label {
+  font-size: 0px;
+  color:  #686868;
+  font-family: "NeutraText";
+  font-weight: 550;
+}
+
+.product-identifier__label::after {
+  content: "Código";
+  color:  #686868;
+font-family: "NeutraText";
+font-size: 18px;
+font-weight: 550;
+}
+
+.product-identifier__value {
+  color:  #686868;
+  font-family: "NeutraText";
+  font-size: 18px;
+  font-weight: 550;
+}
+
+
+
+

@@ -1,0 +1,61 @@
+.tileList :global(.vtex-product-summary-2-x-containerNormal) {
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px 5px 15px;
+}
+
+.tileListList {
+    gap: 20px;
+    padding: 0px 20px !important;
+}
+
+.tileListItem :global(.vtex-button) {
+    background: #FFF;
+    color: #ED1B24;
+    border: 1px solid #ED1B24;
+}
+
+.tileListItem :global(.vtex-button):hover {
+    background: #ED1B24;
+    color: #FFF;
+}
+
+.tileListItem :global(.vtex-button):hover ::before {
+    content: '';
+    display: flex;
+    padding: 0;
+    background-image: url(assets/ico/cartShelfWhite.svg);
+
+}
+
+.tileListItem :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
+    background-size: contain !important;
+}
+
+
+.tileListItem :global(.vtex-button__label) {
+    padding: 5px;
+}
+
+.tileListItem :global(.vtex-add-to-cart-button-0-x-buttonText--btn-general) {
+    gap: 10px;
+}
+
+.biggy-autocomplete {
+    margin-top: 1px;
+    top: 8px;
+    right: 32%;
+}
+
+.tileListItem :global(.vtex-wish-list-1-x-wishlistIconContainer--wishlistHeart-general){
+    top: -187px;
+    right: 11px;
+}
+
+@media (max-width: 1024px){
+    .biggy-autocomplete {
+        top: 0;
+        right: 0;
+    }   
+}

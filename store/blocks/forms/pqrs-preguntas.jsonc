@@ -1,0 +1,240 @@
+{
+  // CONTENEDOR DE PREGUNTAS FORMULARIO PQRS
+
+   //TEXTO DESPUES DE TABS
+  "rich-text#texto-preguntas-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-preguntas-formulario-pqrs"],
+      "text": "Para mejorar la atención por favor valide si se siguieron las recomendaciones descritas en cada uno de los empaques (cajas) "
+    }
+  },
+
+  "flex-layout.row#contenedor-preguntas-formulario-pqrs": {
+    "children": [
+      "flex-layout.col#col1-preguntas-formulario-pqrs",
+      "flex-layout.col#col2-preguntas-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": "contenedor-preguntas-formulario-pqrs"
+    }
+  },
+
+  //COL 1 PREGUNTAS
+  "flex-layout.col#col1-preguntas-formulario-pqrs": {
+    "children": [
+      "flex-layout.row#question1-formulario-pqrs",
+      "flex-layout.row#question2-formulario-pqrs",
+      "flex-layout.row#question3-formulario-pqrs",
+      "flex-layout.row#question4-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": "col-preguntas-formulario-pqrs",
+      "preventHorizontalStretch":false
+    }
+  },
+  // PREGUNTA 1
+  "flex-layout.row#question1-formulario-pqrs": {
+    "children": [
+      "rich-text#texto-question1-formulario-pqrs",
+      "form-input.dropdown#question1-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["question-formulario-pqrs"]
+    }
+  },
+  "rich-text#texto-question1-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-question-formulario-pqrs"],
+      "text": "¿El instalador utiliza herramientas recomendadas como llana dentada, niveladores, martillo de goma, etc?",
+      "width":"87%"
+    }
+  },
+  "form-input.dropdown#question1-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/question1/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "question-formulario-pqrs"
+    }
+  },
+  // PREGUNTA 2
+  "flex-layout.row#question2-formulario-pqrs": {
+    "children": [
+      "rich-text#texto-question2-formulario-pqrs",
+      "form-input.dropdown#question2-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["question-formulario-pqrs"]
+    }
+  },
+  "rich-text#texto-question2-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-question-formulario-pqrs"],
+      "text": "¿Utilizo dilatadores plásticos recomendados para el formato del producto?",
+      "width":"87%"
+    }
+  },
+  "form-input.dropdown#question2-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/question2/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "question-formulario-pqrs"
+    }
+  },
+  // PREGUNTA 3
+  "flex-layout.row#question3-formulario-pqrs": {
+    "children": [
+      "rich-text#texto-question3-formulario-pqrs",
+      "form-input.dropdown#question3-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["question-formulario-pqrs"]
+    }
+  },
+  "rich-text#texto-question3-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-question-formulario-pqrs"],
+      "text": "¿Si instaló productos en forma traslapada o tipo ladrillo ¿lo hizo al 25% o 75% como es lo recomendado?",
+      "width":"87%"
+    }
+  },
+  "form-input.dropdown#question3-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/question3/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "question-formulario-pqrs"
+    }
+  },
+  // PREGUNTA 4
+  "flex-layout.row#question4-formulario-pqrs": {
+    "children": [
+      "rich-text#texto-question4-formulario-pqrs",
+      "form-input.dropdown#question4-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["question-formulario-pqrs"]
+    }
+  },
+  "rich-text#texto-question4-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-question-formulario-pqrs"],
+      "text": "¿Se dio el tiempo de fraguado o secado adecuado al pegante  (Entre 24 horas y 48 horas) antes de boquillar?",
+      "width":"87%"
+    }
+  },
+  "form-input.dropdown#question4-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/question4/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "question-formulario-pqrs"
+    }
+  },
+
+  //COL 2 PREGUNTAS
+  "flex-layout.col#col2-preguntas-formulario-pqrs": {
+    "children": [
+      "flex-layout.row#question5-formulario-pqrs",
+      "flex-layout.row#question6-formulario-pqrs",
+      "flex-layout.row#question7-formulario-pqrs",
+      "flex-layout.row#question8-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": "col-preguntas-formulario-pqrs"
+    }
+  },
+  // PREGUNTA 5
+  "flex-layout.row#question5-formulario-pqrs": {
+    "children": [
+      "rich-text#texto-question5-formulario-pqrs",
+      "form-input.dropdown#question5-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["question-formulario-pqrs"]
+    }
+  },
+  "rich-text#texto-question5-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-question-formulario-pqrs"],
+      "text": "¿Se dio el tiempo de fraguado o secado necesario al mortero de nivelación (mínimo 7 días)?",
+      "width":"87%"
+    }
+  },
+  "form-input.dropdown#question5-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/question5/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "question-formulario-pqrs"
+    }
+  },
+  // PREGUNTA 6
+  "flex-layout.row#question6-formulario-pqrs": {
+    "children": [
+      "rich-text#texto-question6-formulario-pqrs",
+      "form-input.dropdown#question6-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["question-formulario-pqrs"]
+    }
+  },
+  "rich-text#texto-question6-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-question-formulario-pqrs"],
+      "text": "¿Generó las juntas de movimiento adecuadas para una correcta instalación (perimetrales, dilatación y colocación)?",
+      "width":"87%"
+    }
+  },
+  "form-input.dropdown#question6-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/question6/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "question-formulario-pqrs"
+    }
+  },
+  // PREGUNTA 7
+  "flex-layout.row#question7-formulario-pqrs": {
+    "children": [
+      "rich-text#texto-question7-formulario-pqrs",
+      "form-input.dropdown#question7-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["question-formulario-pqrs"]
+    }
+  },
+  "rich-text#texto-question7-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-question-formulario-pqrs"],
+      "text": "¿Su instalador o empresa de remodelación cuenta con certificación de instalación?",
+      "width":"87%"
+    }
+  },
+  "form-input.dropdown#question7-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/question7/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "question-formulario-pqrs"
+    }
+  },
+  // PREGUNTA 4
+  "flex-layout.row#question8-formulario-pqrs": {
+    "children": [
+      "rich-text#texto-question8-formulario-pqrs",
+      "form-input.dropdown#question8-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["question-formulario-pqrs"]
+    }
+  },
+  "rich-text#texto-question8-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-question-formulario-pqrs"],
+      "text": "¿Se dio el tiempo de fraguado o secado adecuado al pegante  (Entre 24 horas y 48 horas) antes de boquillar?",
+      "width":"87%"
+    }
+  },
+  "form-input.dropdown#question8-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/question8/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "question-formulario-pqrs"
+    }
+  }
+}

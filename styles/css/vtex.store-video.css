@@ -1,0 +1,45 @@
+.videoContainer {
+  width: 100%;
+  height: auto;
+  margin-left: 180px;
+  border-color: white;
+}
+
+.videoElement{
+  width: 100%;
+  height: auto;
+}
+
+.videoElement--banner-quienes-somos {
+  height: 350px;
+}
+
+.videoContainer--banner-quienes-somos {
+  height: 350px !important;
+}
+
+.videoContainer--instatile-video {
+  margin-left: 0px;
+}
+
+.videoElement--instatile-video{
+  height: 400px;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .videoContainer {
+    height: 700px;
+  }
+
+  .videoContainer--instatile-video {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .videoElement--instatile-video{
+    height: 300px;
+    border-radius: 0px;
+  }
+}

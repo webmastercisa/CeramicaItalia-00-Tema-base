@@ -1,0 +1,988 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#homeBanners",
+      "__fold__.desktop",
+      "flex-layout.row#product-featured",
+      "__fold__.mobile",
+      "flex-layout.row#shelf",
+      "responsive-layout.desktop#seasonProduct",
+      "responsive-layout.mobile#seasonProduct",
+      "responsive-layout.desktop#section-inspireInfocard-2",
+      "responsive-layout.mobile#section-inspireInfocard-2-mobile",
+      "responsive-layout.desktop#colorPalette-section",
+      "responsive-layout.mobile#colorPalette-section",
+      "flex-layout.row#container-tab-home",
+      "responsive-layout.desktop#visualize-yourSpace",
+      "responsive-layout.mobile#visualize-yourSpace",
+      "rich-text#titleProductNew",
+      "flex-layout.row#newProductSection",
+      "responsive-layout.desktop#request-yourSample",
+      "responsive-layout.mobile#request-yourSample",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  // *Home  Slide*
+  "list-context.image-list#homeBanners": {
+    "children": [
+      "slider-layout#home-images"
+    ],
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "preload": true,
+      "blockClass": "slider-header-image",
+      "images": [
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome-ceramicaItalia.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerMobileSlider.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome-ceramicaItalia.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerMobileSlider.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome-ceramicaItalia.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerMobileSlider.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "carousel",
+      "autoplay": {
+              "timeout": 3000,
+              "stopOnHover": true
+            }
+    }
+  },
+  "flex-layout.row#product-featured": {
+    "children": [
+      "flex-layout.col#product-featured"
+    ],
+    "props": {
+      "blockClass": [
+        "product-featured-desktop",
+        "product-featured-mobile"
+      ]
+    }
+  },
+  "flex-layout.col#product-featured": {
+    "children": [
+      "rich-text#titleProduct",
+      "rich-text#textProducts"
+    ],
+    "props": {
+      "blockClass": [
+        "product-featured"
+      ]
+    }
+  },
+  // Title Slide Products
+  "rich-text#titleProduct": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Productos destacados",
+      "font": "NeutraText",
+      "blockClass": "title-product"
+    }
+  },
+  // Text Products
+  "rich-text#textProducts": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+      "blockClass": "title-product"
+    }
+  },
+  // Botón whatsapp
+  "flex-layout.row#btnWhatsApp": {
+    "children": [
+      "image#ico-btn-whatsapp"
+    ],
+    "props": {
+      "blockClass": "btnWhatsApp",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+  "image#ico-btn-whatsapp": {
+    "props": {
+      "src": "assets/ico/whatsappIcon.svg",
+      "alt": "whatsapp",
+      "height": "59.7px",
+      "blockClass": ["class", "ico-btn-whatsapp"],
+      "link": {
+        "url": "https://wa.me/5715141167",
+        "openNewTab": true,
+        "title": "title"
+      }
+    }
+  },
+  /* Btn Call Center */
+  "flex-layout.row#btnCallCenter": {
+    "children": [
+      "image#ico-btn-CallCenter"
+    ],
+    "props": {
+      "blockClass": "btnCallCenter",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+  "image#ico-btn-CallCenter": {
+    "props": {
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/call-center-icon.png",
+      "alt": "CallCenter",
+      "height": "60px",
+      "blockClass":[ "class", "ico-btn-CallCenter"],
+      "link": {
+        "url": "https://wa.me/5715141167",
+        "openNewTab": true,
+        "title": "title"
+      }
+    }
+  },
+  // *Info Section ¿Cuál es tu proyecto?*
+  "flex-layout.row#serviceSection": {
+    "props": {
+      "blockClass": "service-Section"
+    },
+    "children": [
+      "rich-text#titleServices",
+      "rich-text#textServices"
+    ]
+  },
+  // Title Slide Services
+  "rich-text#titleServices": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**¿Cuál es tu proyecto?**",
+      "blockClass": "title-product-services"
+    }
+  },
+  // Text Services
+  "rich-text#textServices": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**Nuestras soluciones te acompañan**",
+      "blockClass": "paragraph-product-services"
+    }
+  },
+  // Info Card Slider Services
+  "flex-layout.row#optionService": {
+    "props": {
+      "blockClass": "optionService"
+    },
+    "children": [
+      "list-context.info-card-list#optionService-Home"
+    ]
+  },
+  // slider service info cards
+  "list-context.info-card-list#optionService-Home": {
+    "children": [
+      "slider-layout#optionService"
+    ],
+    "props": {
+      "infoCards": [
+        {
+          "id": "info-card-optionService",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img297x382-1.png",
+          "callToActionText": "Decoración",
+          "callToActionUrl": "/sale/d",
+          "blockClass": [
+            "info-card-optionService",
+            "decorationService"
+          ],
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-optionService",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img297x382-2.png",
+          "callToActionText": "Remodelación",
+          "callToActionUrl": "/sale/d",
+          "blockClass": [
+            "info-card-optionService",
+            "remodelationService"
+          ],
+          "textAlignment": "center"
+        },
+        {
+          "id": "info-card-optionService",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img297x382-3.png",
+          "callToActionText": "Construcción",
+          "callToActionUrl": "/sale/d",
+          "blockClass": [
+            "info-card-optionService",
+            "constructionService"
+          ],
+          "textAlignment": "center"
+        }
+      ]
+    }
+  },
+  "slider-layout#optionService": {
+    "title": "InfoCardSlider",
+    "props": {
+      "blockClass": "optionService-slider",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "desktop": 3,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#shelf-general"
+    ],
+    "title": "vitrina-destacados-desktop",
+    "props": {
+      "blockClass": "row-shelf-container"
+    }
+  },
+  "list-context.product-list#demo1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "title": "vitrina-destacados-desktop",
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "row-shelf-product"
+    }
+  },
+  "slider-layout#demo-products": {
+    "title": "slider-vitrina-destacados-desktop",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "never",
+      "blockClass": "shelf-destacados",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  /* Season product section -COCINAS*/
+  "responsive-layout.desktop#seasonProduct": {
+    "children": [
+      "flex-layout.row#seasonProduct"
+    ]
+  },
+  "flex-layout.row#seasonProduct": {
+    "children": [
+      "image#seasonProductImg",
+      "flex-layout.col#text-seasonProduct"
+    ],
+    "title": "seccion-productoDeTemporada-desktop",
+    "props": {
+      "blockClass": "section-seasonProduct",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false
+    }
+  },
+  "flex-layout.col#text-seasonProduct": {
+    "children": [
+      "rich-text#title-seasonProduct",
+      "rich-text#seasonProduct",
+      "rich-text#conoce-mas",
+      // "list-context.product-list#shelf-general"
+      "list-context.product-list#cocinas"
+    ],
+    "title": "textos-productoDeTemporada-desktop",
+    "props": {
+      "blockclass": "textColumnSesonProduct",
+      "preventVerticalStretch": true,
+      "width": "50%"
+    }
+  },
+  "rich-text#title-seasonProduct": {
+    "title": "titulo-productoDeTemporada-desktop",
+    "props": {
+      "text": "# Temporada de cocinas",
+      "blockClass": "titleSesonProducts"
+    }
+  },
+  "image#seasonProductImg": {
+    "title": "imagen-productoDeTemporada-desktop",
+    "props": {
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/banner-temporada-cocinas.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "imageSesonProduct"
+    }
+  },
+  "rich-text#seasonProduct": {
+    "title": "parrafo-productoDeTemporada-desktop",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.",
+      "blockClass": "textParagraphSesonProduct"
+    }
+  },
+  /* Bottom for season section */
+  "rich-text#conoce-mas": {
+    "title": "boton-productoDeTemporada-desktop",
+    "props": {
+      "text": "[Conoce más](https://www.ceramicaitalia.com/como-comprar)",
+      "blockClass": "conoce-mas",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "slider-layout#productsCocinas": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "shelf-cocinas",
+      "navigationStep": 1,
+      "autoplay": {
+              "timeout": 3000,
+              "stopOnHover": true
+            }
+    }
+  },
+  "list-context.product-list#cocinas": {
+    "blocks": [
+      // "product-summary.shelf"
+      "product-summary.shelf#general"
+    ],
+    "children": [
+      "slider-layout#productsCocinas"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  /* Store in season products COCINAS*/
+  "flex-layout.row#storeSeasonProduct": {
+    "children": [
+      "flex-layout.row#shelf"
+    ],
+    "title": "vitrina-productoDeTemporada-desktop",
+    "props": {
+      "blockclass": "shelf-seasonProduct"
+    }
+  },
+  // *Inspire Section -Inspírate*
+  "flex-layout.row#inspireInfoCard": {
+    "props": {
+      "blockClass": "optioninspire"
+    },
+    "children": [
+      "info-card#inspireRomant",
+      "info-card#inspireIndust",
+      "info-card#inspireMinimal"
+      // "info-card#inspireOriental"
+    ]
+  },
+  "info-card#inspireRomant": {
+    "props": {
+      "id": "info-card-inspire",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img2285x437-1.png",
+      "callToActionText": "Romántico",
+      "callToActionUrl": "/sale/d",
+      "blockClass": [
+        "info-card-inspire",
+        "romaticStyle"
+      ],
+      "textAlignment": "center"
+    }
+  },
+  "info-card#inspireIndust": {
+    "props": {
+      "id": "info-card-inspire",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img2285x437-2.png",
+      "callToActionText": "Industrial",
+      "callToActionUrl": "/sale/d",
+      "blockClass": [
+        "info-card-inspire",
+        "industrialStyle"
+      ],
+      "textAlignment": "center"
+    }
+  },
+  "info-card#inspireMinimal": {
+    "props": {
+      "id": "info-card-inspire",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img2285x437-3.png",
+      "callToActionText": "Minimalista",
+      "callToActionUrl": "/sale/d",
+      "blockClass": [
+        "info-card-inspire",
+        "minimalStyle"
+      ],
+      "textAlignment": "center"
+    }
+  },
+  "info-card#inspireOriental": {
+    "props": {
+      "id": "info-card-inspire",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img2285x437-4.png",
+      "callToActionText": "Oriental",
+      "callToActionUrl": "/sale/d",
+      "blockClass": [
+        "info-card-inspire",
+        "minimalStyle"
+      ],
+      "textAlignment": "center"
+    }
+  },
+  // *Palette  Carousel*
+  "responsive-layout.desktop#colorPalette-section": {
+    "children": [
+      "flex-layout.row#colorPalette-section"
+    ]
+  },
+  "flex-layout.row#colorPalette-section": {
+    "title": "seccion-colorPalette-desktop",
+    "props": {
+      "blockClass": "color-palette-section",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#colorPalette-section"
+    ]
+  },
+  "flex-layout.col#colorPalette-section": {
+    "title": "seccion-colorPalette-desktop",
+    "props": {
+      "blockClass": "color-palette-carousel",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#title-color-palette",
+      "rich-text#text-color-palette",
+      "list-context.image-list#colorPalette"
+    ]
+  },
+  "rich-text#title-color-palette": {
+    "title": "title-colorPalette-desktop",
+    "props": {
+      "text": "Paleta de colores y texturas",
+      "blockClass": "title-color-palette",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "htmlId":"title-colorPalette-desktop"
+    }
+  },
+  "rich-text#text-color-palette": {
+    "title": "parrafo-colorPalette-desktop",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+      "blockClass": "text-color-palette",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "list-context.image-list#colorPalette": {
+    "children": [
+      "slider-layout#colorPalette-images"
+    ],
+    "title": "slider-colorPalette-desktop",
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2011.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2011.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2012.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2012.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2013.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2013.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2014.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2014.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2015.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2015.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2016.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2016.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2017.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2017.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2018.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2018.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2011.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2011.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2012.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2012.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2013.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2013.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2014.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2014.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2015.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2015.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2016.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2016.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2017.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2017.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2018.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2018.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2011.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2011.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2012.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2012.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2013.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2013.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2014.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2014.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2015.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2015.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2016.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2016.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2017.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2017.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2018.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/Ellipse%2018.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#colorPalette-images": {
+    "title": "slider-colorPalette-desktop",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 8,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "navigationStep": 1,
+      "blockClass": "img-color-palette",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    }
+  },
+
+  // Sección Vitrina especial
+  "flex-layout.row#botonConoceMas": {
+    "title": "btn-conoce-mas",
+    "props": {
+      "blockClass": ["botonConoceMas", "botonConoceMasShelf"],
+      "colSizing": "auto",
+      "fullWidth": false,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false
+    },
+    "children": [
+      "rich-text#conoce-mas-shelf"
+    ]
+  },
+
+  "rich-text#conoce-mas-shelf": {
+    "title": "boton-conoceMas-desktop",
+    "props": {
+      "text": "[Conoce más](https://www.ceramicaitalia.com/como-comprar)",
+      "blockClass": "conoce-mas",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // Section -Visualizalo en tu espacio Instatile
+  "responsive-layout.desktop#visualize-yourSpace": {
+    "children": [
+      "flex-layout.row#visualize-yourSpace"
+    ]
+  },
+  "flex-layout.row#visualize-yourSpace": {
+    "children": [
+      "flex-layout.col#visualize-yourSpace"
+    ],
+    "props": {
+      "blockClass": [
+        "section-visualize-yourSpace"
+      ]
+    }
+  },
+  "flex-layout.col#visualize-yourSpace": {
+    "children": [
+      "rich-text#title-visualize-yourSpace",
+      "image#img-visualizeYourSpace"
+    ],
+    "props": {
+      "blockClass": [
+        "box-visualize-yourSpace"
+      ]
+    }
+  },
+  "rich-text#title-visualize-yourSpace": {
+    "props": {
+      "blockClass": "title-visualize-yourSpace",
+      "preventVerticalStretch": false,
+      "text": "Visualíza en tu espacio <br> Instatile",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#img-visualizeYourSpace": {
+    "props": {
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHomeVisualizaTuEspacio.png",
+      "alt": "Visualiza tu espacio en Instatile",
+      "height": "548px",
+      "blockClass": "img-visualizeYourSpace",
+      "link": {
+        "url": "/",
+        "openNewTab": true,
+        "title": "Visualiza tu espacio en Instatile"
+      }
+    }
+  },
+  // Vitrina de producto -Lo Nuevo
+  "rich-text#titleProductNew": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Lo nuevo",
+      "font": "NeutraText",
+      "blockClass": "title-product-new"
+    }
+  },
+  //Slider Product -Lo Nuevo
+  "flex-layout.row#newProductSection": {
+    "title": "vitrina-seccion-nuevo",
+    "props": {
+      "blockClass": [
+        "row-shelf-container",
+        "productNewList"
+      ]
+    },
+    "children": [
+      // "list-context.product-list#loNuevo"
+      "list-context.product-list#shelf-general"
+    ]
+  },
+  "list-context.product-list#loNuevo": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#productsLoNuevo"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "row-shelf-product"
+    }
+  },
+  "slider-layout#productsLoNuevo": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "never",
+      "blockClass": [
+        "shelf-destacados",
+        "shelf-lo-nuevo"
+      ],
+      "autoplay": {
+              "timeout": 3000,
+              "stopOnHover": true
+            }
+    }
+  },
+  // Section -Solicita tu muestra
+  "responsive-layout.desktop#request-yourSample": {
+    "children": [
+      "flex-layout.row#request-yourSample"
+    ]
+  },
+  "flex-layout.row#request-yourSample": {
+    "children": [
+      "flex-layout.col#request-yourSample"
+    ],
+    "props": {
+      "blockClass": [
+        "section-request-yourSample"
+      ]
+    }
+  },
+  "flex-layout.col#request-yourSample": {
+    "children": [
+      "list-context.image-list#request-yourSample"
+    ],
+    "props": {
+      "blockClass": [
+        "box-request-yourSample"
+      ]
+    }
+  },
+  "list-context.image-list#request-yourSample": {
+    "children": [
+      "slider-layout#request-yourSample-images"
+    ],
+    "props": {
+      "height": 348,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png"
+        },
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerHome1280x348.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#request-yourSample-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      // "navigationStep": 1,
+      "blockClass": "slider-request-yourSample",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    }
+
+  },
+  // Newsletter
+  "flex-layout.row#newsletter": {
+    "props": {
+      "blockClass": "containerNewsletter",
+      "colSizing": "auto"
+    },
+    "children": [
+      "newsletter-form#newsletterHome"
+    ]
+  },
+  "newsletter-form#newsletterHome": {
+    "children": [
+      "flex-layout.row#textNewsletter",
+      "flex-layout.row#emailAndBtn",
+      "flex-layout.row#termsandconditions"
+    ]
+  },
+  "flex-layout.row#textNewsletter": {
+    "props": {
+      "blockClass": "textNewsletter",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#columTextNewsletter"
+    ]
+  },
+  "flex-layout.col#columTextNewsletter": {
+    "props": {
+      "blockClass": "columTextNewsletter",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#titleNewsletter",
+      "rich-text#textRegistration",
+      "rich-text#textDiscount"
+    ]
+  },
+  "rich-text#titleNewsletter": {
+    "props": {
+      "text": "## Suscríbete a nuestro boletín y visita nuestro blog",
+      "blockClass": "titleNewsletter",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#textRegistration": {
+    "props": {
+      "text": "Regístrate para conocer paso a paso y tips para iniciar o potenciar tus proyectos",
+      "blockClass": "textRegistration",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#textDiscount": {
+    "props": {
+      "text": "**Obtén -10% de descuento en tu primera compra**",
+      "blockClass": "textDiscount",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "blockClass": [
+        "inputNewsLetter-input"
+      ],
+      "placeholderText": "Tu Correo"
+    }
+  },
+  "flex-layout.row#emailAndBtn": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ],
+    "props": {
+      "blockClass": [
+        "emailAndBtn"
+      ],
+      "preventHorizontalStretch": false,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#termsandconditions": {
+    "props": {
+      "blockClass": "termsandconditions",
+      "colSizing": "auto"
+    },
+    "children": [
+      "newsletter-checkbox-confirmation",
+      "rich-text#TextoPoliticaTratamiento"
+    ]
+  },
+  "newsletter-checkbox-confirmation": {
+    "props": {
+      "blockClass": [
+        "inputNewsLetter"
+      ],
+      "checkboxLabel": " "
+    }
+  },
+  "rich-text#TextoPoliticaTratamiento": {
+    "props": {
+      "text": "Al Suscribirme acepto [Términos y Condiciones](/terminos-legales) y [Habeas Data.](/terminos-legales)",
+      "blockClass": "textTermsAndConditions"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "blockClass": [
+        "inputNewsLetter"
+      ],
+      "submitButtonLabel": "Suscribirme",
+      "width": "40%"
+    }
+  }
+}

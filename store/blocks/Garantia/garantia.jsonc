@@ -1,0 +1,188 @@
+{
+    "store.custom#garantia": {
+        "blocks": [
+            "flex-layout.row#miga-pan-garantia",
+            "flex-layout.row#title-garantia",
+            "responsive-layout.mobile#text-mobile-garantia",
+            "flex-layout.row#container-banner1-garantia",
+            "flex-layout.row#container-text1-garantia",
+            "flex-layout.row#container-tab1-garantia",
+            "flex-layout.row#container-banner2-garantia",
+            "flex-layout.row#container-text2-garantia",
+            "flex-layout.row#container-tab2-garantia"
+        ]
+    },
+
+     //MIGA DE PAN PREGUNTAS FRECUENTES
+     "flex-layout.row#miga-pan-garantia": {
+        "children": [
+            "image#icono-miga-pan",
+            "rich-text#texto-1-miga-pan",
+            "rich-text#texto-2-miga-pan-garantia"
+        ],
+        "props": {
+            "blockClass": [
+                "miga-pan-terminos-legales"
+            ]
+        }
+    },
+    // TEXTO 2 MIGA DE PAN 
+    "rich-text#texto-2-miga-pan-garantia": {
+        "props": {
+            "blockClass": [
+                "texto-2-miga-pan"
+            ],
+            "text": "[Garantía](/garantia)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+
+    // titulo
+
+ "flex-layout.row#title-garantia": {
+    "children": [ "rich-text#title-garantia"],
+    "props": {
+      "blockClass": ["title-imperdibles" ]
+    }
+  },
+  "rich-text#title-garantia": {
+      "props": {
+               "text": "Garantía",
+               "blockClass": "garantia",
+               "textAlignment": "CENTER",
+               "textPosition": "CENTER"
+      }
+  },
+
+  // texto mobile
+
+   "responsive-layout.mobile#text-mobile-garantia": {
+      "children": ["rich-text#text-mobile-garantia"]
+    },
+
+
+    "rich-text#text-mobile-garantia": {
+      "props": {
+           "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.",
+           "blockClass": "text-mobile-garantia",
+           "textAlignment": "CENTER",
+           "textPosition": "CENTER"
+      }
+    },
+    
+  
+
+     // slider 1
+   "flex-layout.row#container-banner1-garantia": {
+    "children": ["list-context.image-list#banner1Slider-garantia"],
+    "props": {
+      "blockClass": ["container-banner1-garantia-slider"]
+    }
+  },
+
+  "list-context.image-list#banner1Slider-garantia": {
+      "children": ["slider-layout#banner1-garantia"],
+      "props": {
+        "height": 570,
+        "preload": true,
+        "images": [
+          {
+            "image": "arquivos/banner-garantia.png",
+            "mobileImage": "arquivos/banner-centro-mobile.png"
+          }
+        ]
+      }
+    },
+    "slider-layout#banner1-garantia": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never", 
+        "blockClass": ["banner1-garantia-slider"]
+        // "autoplay": {
+        //   "timeout": 3000,
+        //   "stopOnHover": true
+        // }
+      }
+    },
+
+    // texto 1
+    "flex-layout.row#container-text1-garantia": {
+      "children": ["rich-text#text1-garantia"],
+      "props": {
+        "blockClass": ["container-text1-garantia"]
+      }
+    },
+
+    "rich-text#text1-garantia": {
+        "props": {
+                 "text": "Cerámica Italia siempre te ofrece la mejor garantía, por eso al comprar nuestros productos ten presente la siguiente información:",
+                 "blockClass": "text1-garantia",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+
+      // slider 1
+   "flex-layout.row#container-banner2-garantia": {
+    "children": ["list-context.image-list#banner2Slider-garantia"],
+    "props": {
+      "blockClass": ["container-banner2-garantia-slider"]
+    }
+  },
+
+  "list-context.image-list#banner2Slider-garantia": {
+      "children": ["slider-layout#banner2-garantia"],
+      "props": {
+        // "height": 570,
+        "preload": true,
+        "images": [
+          {
+            "image": "arquivos/banner2-garantia.png",
+            "mobileImage": "arquivos/banner-garantia-mobile.png"
+          }
+        ]
+      }
+    },
+    "slider-layout#banner2-garantia": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never", 
+        "blockClass": ["banner2-garantia-slider"]
+        // "autoplay": {
+        //   "timeout": 3000,
+        //   "stopOnHover": true
+        // }
+      }
+    },
+
+    // texto 2
+    "flex-layout.row#container-text2-garantia": {
+        "children": ["rich-text#text2-garantia"],
+        "props": {
+          "blockClass": ["container-text2-garantia"]
+        }
+      },
+  
+      "rich-text#text2-garantia": {
+          "props": {
+                   "text": "Para Cerámica Italia es un gusto que hayas decidido transformar tus espacios en compañía de nuestra organización. Por tanto, en aquí te presentamos la garantía que respaldan nuestros productos:",
+                   "blockClass": "text2-garantia",
+                   "textAlignment": "CENTER",
+                   "textPosition": "CENTER"
+          }
+      }
+}

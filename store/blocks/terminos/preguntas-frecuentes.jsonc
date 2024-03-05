@@ -1,0 +1,644 @@
+{
+  "store.custom#preguntas-frecuentes": {
+    "blocks": [
+      "flex-layout.row#contenedor-seccion-preguntas-frecuentes"
+    ]
+  },
+
+    //CONTENEDOR SECCION PREGUNTAS FRECUENTES
+    "flex-layout.row#contenedor-seccion-preguntas-frecuentes": {
+      "children": ["flex-layout.col#contenedor-seccion-preguntas-frecuentes"],
+      "props":{
+        "blockClass":"contenedor-seccion-terminos-legales"
+      }
+    },
+    "flex-layout.col#contenedor-seccion-preguntas-frecuentes": {
+      "children": [
+        "flex-layout.row#miga-pan-preguntas-frecuentes",
+        "rich-text#titulo-seccion-preguntas-frecuentes",
+        "rich-text#texto-seccion-preguntas-frecuentes",
+        "tab-layout#tab-seccion-preguntas-frecuentes"
+      ],
+      "props":{
+        "blockClass":"contenedor-seccion-terminos-legales"
+      }
+    },
+
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-preguntas-frecuentes": {
+      "children": [
+        "image#icono-miga-pan",
+        "rich-text#texto-1-miga-pan",
+        "rich-text#texto-2-miga-pan-preguntas-frecuentes"
+      ],
+      "props": {
+        "blockClass": ["miga-pan-terminos-legales"]
+      }
+    },
+    //ICONO MIGA DE PAN
+    "image#icono-miga-pan": {
+      "props": {
+        "blockClass": ["icono-miga-pan"],
+        "maxHeight": 24,
+        "src": "assets/ico/IconoHOMEMigaPan.svg"
+      }
+    },
+
+    // TEXTO MIGA DE PAN
+    "rich-text#texto-1-miga-pan": {
+      "props": {
+        "blockClass": ["texto-1-miga-pan"],
+        "text": "[Inicio](/)",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+
+    // TEXTO 2 MIGA DE PAN PREGUNTAS FRECUENTES
+    "rich-text#texto-2-miga-pan-preguntas-frecuentes": {
+      "props": {
+        "blockClass": ["texto-2-miga-pan"],
+        // "text": "Preguntas frecuentes",
+        "text": "[Preguntas frecuentes](/preguntas-frecuentes)",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    // TITULO SECCION PREGUNTAS FRECUENTES
+    "rich-text#titulo-seccion-preguntas-frecuentes": {
+      "props": {
+        "blockClass": ["titulo-seccion-terminos-legales"],
+        "text": "Preguntas frecuentes"
+      }
+    },
+
+    //TEXTO SECCION PREGUNTAS FRECUENTES
+    "rich-text#texto-seccion-preguntas-frecuentes": {
+      "props": {
+        "blockClass": ["texto-seccion-terminos-legales"],
+        "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. ."
+      }
+    },
+
+    //SECCION TAB TERMINOS LEGALES
+  "tab-layout#tab-seccion-preguntas-frecuentes": {
+    "children": [
+      "tab-list#tab-seccion-preguntas-frecuentes",
+      "tab-content#tab-seccion-preguntas-frecuentes"
+    ],
+    "props": {
+      "blockClass": "tab-seccion-terminos-legales",
+      "defaultActiveTabId": "tab-como-comprar"
+    }
+  },
+
+  // Listado de pestañas
+  "tab-list#tab-seccion-preguntas-frecuentes": {
+    "children": [
+      "tab-list.item#tab-como-comprar",
+      "tab-list.item#tab-medios-pago",
+      "tab-list.item#tab-condiciones-entrega-transporte",
+      "tab-list.item#tab-garantias",
+      "tab-list.item#tab-politica-cambios-devoluciones",
+      "tab-list.item#tab-politica-tratamiento-datos-personales",
+      "tab-list.item#tab-contacto-quejas-reclamos",
+      "tab-list.item#tab-estatuto-consumidor"
+    ],
+    "props": {
+      "blockClass": "list-tab-terminos-legales"
+    }
+  },
+  "tab-list.item#tab-como-comprar": {
+    "props": {
+      "tabId": "tab-como-comprar",
+      "blockClass": "item-como-comprar",
+      "label": "¿Cómo comprar?",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tab-medios-pago": {
+    "props": {
+      "tabId": "tab-medios-pago",
+      "blockClass": "item-medios-pago",
+      "label": "Medios de pago (Mercado pago)"
+    }
+  },
+  "tab-list.item#tab-condiciones-entrega-transporte": {
+    "props": {
+      "tabId": "tab-condiciones-entrega-transporte",
+      "blockClass": "item-condiciones-entrega-transporte",
+      "label": "Condiciones de entrega y transporte"
+    }
+  },
+  "tab-list.item#tab-garantias": {
+    "props": {
+      "tabId": "tab-garantias",
+      "blockClass": "item-garantias",
+      "label": "Garantias"
+    }
+  },
+  "tab-list.item#tab-politica-cambios-devoluciones": {
+    "props": {
+      "tabId": "tab-politica-cambios-devoluciones",
+      "blockClass": "item-politica-cambios-devoluciones",
+      "label": "Política de cambios y devoluciones"
+    }
+  },
+  "tab-list.item#tab-politica-tratamiento-datos-personales": {
+    "props": {
+      "tabId": "tab-politica-tratamiento-datos-personales",
+      "blockClass": "item-politica-tratamiento-datos-personales",
+      "label": "Política de tratamiento de datos personales"
+    }
+  },
+  "tab-list.item#tab-contacto-quejas-reclamos": {
+    "props": {
+      "tabId": "tab-contacto-quejas-reclamos",
+      "blockClass": "item-contacto-quejas-reclamos",
+      "label": "Contacto, Quejas y Reclamos"
+    }
+  },
+  "tab-list.item#tab-estatuto-consumidor": {
+    "props": {
+      "tabId": "tab-estatuto-consumidor",
+      "blockClass": "item-estatuto-consumidor",
+      "label": "Estatuto del consumidor"
+    }
+  },
+
+  //Listado de los contenidos de las pestañas
+  "tab-content#tab-seccion-preguntas-frecuentes": {
+    "children": [
+      "tab-content.item#tab-como-comprar",
+      "tab-content.item#tab-medios-pago",
+      "tab-content.item#tab-condiciones-entrega-transporte",
+      "tab-content.item#tab-garantias",
+      "tab-content.item#tab-politica-cambios-devoluciones",
+      "tab-content.item#tab-politica-tratamiento-datos-personales",
+      "tab-content.item#tab-contacto-quejas-reclamos",
+      "tab-content.item#tab-estatuto-consumidor"
+    ],
+    "props": {
+      "blockClass": "content-tab-terminos-legales"
+    }
+  },
+
+  // Detalle de cada contenido de las pestañas
+  "tab-content.item#tab-como-comprar": {
+    "children": [
+      "flex-layout.col#contenido-como-comprar"
+    ],
+    "props": {
+      "tabId": "tab-como-comprar",
+      "blockClass": "content-como-comprar"
+    }
+  },
+  "tab-content.item#tab-medios-pago": {
+    "children": [
+      "flex-layout.col#contenido-medios-pago"
+    ],
+    "props": {
+      "tabId": "tab-medios-pago",
+      "blockClass": "content-medios-pago"
+    }
+  },
+  "tab-content.item#tab-condiciones-entrega-transporte": {
+    "children": [
+      "flex-layout.col#contenido-condiciones-entrega-transporte"
+    ],
+    "props": {
+      "tabId": "tab-condiciones-entrega-transporte",
+      "blockClass": "content-condiciones-entrega-transporte"
+    }
+  },
+  "tab-content.item#tab-garantias": {
+    "children": [
+      "flex-layout.col#contenido-garantias"
+    ],
+    "props": {
+      "tabId": "tab-garantias",
+      "blockClass": "content-garantias"
+    }
+  },
+  "tab-content.item#tab-politica-cambios-devoluciones": {
+    "children": [
+      "flex-layout.col#contenido-politica-cambios-devoluciones"
+    ],
+    "props": {
+      "tabId": "tab-politica-cambios-devoluciones",
+      "blockClass": "content-politica-cambios-devoluciones"
+    }
+  },
+  "tab-content.item#tab-politica-tratamiento-datos-personales": {
+    "children": [
+      "flex-layout.col#contenido-politica-tratamiento-datos-personales"
+    ],
+    "props": {
+      "tabId": "tab-politica-tratamiento-datos-personales",
+      "blockClass": "content-politica-tratamiento-datos-personales"
+    }
+  },
+  "tab-content.item#tab-contacto-quejas-reclamos": {
+    "children": [
+      "flex-layout.col#contenido-contacto-quejas-reclamos"
+    ],
+    "props": {
+      "tabId": "tab-contacto-quejas-reclamos",
+      "blockClass": "content-contacto-quejas-reclamos"
+    }
+  },
+  "tab-content.item#tab-estatuto-consumidor": {
+    "children": [
+      "flex-layout.col#contenido-estatuto-consumidor"
+    ],
+    "props": {
+      "tabId": "tab-estatuto-consumidor",
+      "blockClass": "content-estatuto-consumidor"
+    }
+  },
+
+  //TEXTO CONTENIDO COMO COMPRAR
+  "flex-layout.col#contenido-como-comprar": {
+    "children": [
+      "rich-text#titulo-contenido-como-comprar",
+      "rich-text#texto-1-como-comprar"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-como-comprar": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "¿Cómo comprar?"
+    }
+  },
+  "rich-text#texto-1-como-comprar": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Para realizar compras en línea será necesario que los usuarios, faciliten información personal y confidencial. Esta información será de uso exclusivo de Cerámica Italia S.A. y no será revelada a terceros, salvo la información que requieran las entidades financieras para efectos de procesar las transacciones electrónicas de pago, o en entidades gubernamentales en casos de procesos de investigación.\n\nBuscando la seguridad en las transacciones, queda expresamente prohibido a los usuarios el compartir con terceros su contraseña o el password; esta información es de uso exclusivo del usuario y no se podrá utilizar para fines no autorizados.\n\nEl Proceso se llevará a cabo de la siguiente forma:\n\n1. El Usuario deberá acceder a www.ceramicaitalia.com.\n2. El usuario podrá navegar en el sitio web por todas las categorías en busca del producto de su preferencia.\n3. Dando clic sobre el producto, el usuario accede al detalle de este para conocer más información como precio, características, atributos, etc.\n4. Si el ‘Usuario’ desea añadir un producto a su carrito de compras , el sistema mostrará un cuadro de diálogo en el cual podrá seleccionar una de nuestras salas de ventas.\n5. Segun la previa selección del usuario el sistema procederá a realizar la consulta del inventario disponible en dicho almacén.\n6. De encontrarse disponible el producto éste será agregado a su carrito de compra(este proceso se repetirá por la cantidad de productos que el usuario desee comprar).\n7. Una vez el usuario esté seguro de su compra debera hacer clic sobre el icono del carrito de compras ubicado en la parte superior derecha del sitio, con el fin de revisar el resumen de su pedido y proceder a confirmar el mismo.\n8. Si el usuario posee una cuenta de acceso deberá iniciar sesion en el sitio o de lo contrario deberá crear una, diligenciando en su totalidad los campos del formulario.\n9. Una vez logueado el usuario deberá aceptar: Nuestra politica de garantia, terminos y condiciones. 10. El usuario deberá hacer clic sobre el botón 'paga con  Mercado Pago', el cual lo redirigirá a un sitio seguro de nuestra pasarela de pagos.\n11. El usuario deberá ingresar los datos del pagador, posteriormente seleccionar alguno de los métodos de pago ofrecidos por la pasarela, diligenciar la información bancaria pertinente y esperar la confirmación del pago.\n12. Una vez su pago sea aprobado será redireccionado hacia una pagina de respuesta en www.ceramicaitalia.com , donde encontrará información detallada acerca de su transacción y el estado de su pedido.\n13. El sistema le notificará vía correo electrónico los cambios de estado de su pedido.\n14. Cuando se notique que su pedido está listo para ser despachado, el usuario deberá acercarse a la sala de venta previamente seleccionada con su documento de identidad para proceder con el retiro de la mercancía."
+    }
+  },
+
+  //TEXTO CONTENIDO MEDIOS DE PAGO
+  "flex-layout.col#contenido-medios-pago": {
+    "children": [
+      "rich-text#titulo-contenido-medios-pago",
+      "rich-text#texto-1-medios-pago",
+      "rich-text#subtitulo-2-medios-pago",
+      "rich-text#texto-2-medios-pago",
+      "rich-text#subtitulo-3-medios-pago",
+      "rich-text#texto-3-medios-pago",
+      "rich-text#subtitulo-4-medios-pago",
+      "rich-text#texto-4-medios-pago",
+      "rich-text#subtitulo-5-medios-pago",
+      "rich-text#texto-5-medios-pago",
+      "rich-text#subtitulo-6-medios-pago",
+      "rich-text#texto-6-medios-pago",
+      "rich-text#subtitulo-7-medios-pago",
+      "rich-text#texto-7-medios-pago",
+      "rich-text#subtitulo-8-medios-pago",
+      "rich-text#texto-8-medios-pago",
+      "rich-text#link-descargar-terminos-legales"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-medios-pago": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "Medios de pago (Mercado pago)"
+    }
+  },
+  "rich-text#texto-1-medios-pago": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "1 . Pasarela de pagos MERCADO PAGO Mercado Pago es la plataforma de pagos electrónicos que usa CERAMICA ITALIA S.A para procesar en línea las transacciones generadas en la tienda virtual con las formas de pago habilitadas para tal fin."
+    }
+  },
+  "rich-text#subtitulo-2-medios-pago": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "2 . ¿Cómo puedo pagar?"
+    }
+  },
+  "rich-text#texto-2-medios-pago": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "En la tienda virtual de CERAMICA ITALIA S.A usted podrá realizar su pago con los medios habilitados para tal fin. Usted, de acuerdo a las opciones de pago escogidas por el comercio, podrá pagar a traves de PSE (débitos desde cuentas de ahorros y corrientes en Colombia), tarjetas de crédito Visa, MasterCard, y recaudos en efectivo en puntos via Baloto ,Efecty y 472."
+    }
+  },
+  "rich-text#subtitulo-3-medios-pago": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "3 . ¿Es seguro ingresar mis datos bancarios en este sitio web?"
+    }
+  },
+  "rich-text#texto-3-medios-pago": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Para proteger tus datos CERAMICA ITALIA S.A delega en MERCADO PAGO COLOMBIA la captura de la información sensible. Nuestra plataforma de pagos cumple con los más altos estándares exigidos por la norma internacional PCI DSS de seguridad en transacciones con tarjeta de crédito. Protegemos tu información personal con los más altos estándares de seguridad. No comercializamos tus datos.\nDurante el proceso de pago, en el navegador se muestra el nombre de la organización autenticada, la autoridad que lo certifica y la barra de dirección cambia a color verde. Estas características son visibles de inmediato y dan garantía y confianza para completar la transacción en MERCADO PAGO. Mercado pago también cuenta con el monitoreo constante de y la firma de mensajes electrónicos con Certicámara."
+    }
+  },
+  "rich-text#subtitulo-4-medios-pago": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "4 . ¿Puedo realizar el pago cualquier día y a cualquier hora?"
+    }
+  },
+  "rich-text#texto-4-medios-pago": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Sí, en CERAMICA ITALIA S.A podrás realizar tus compras en línea los 7 días de la semana, las 24 horas del día a sólo un clic de distancia."
+    }
+  },
+  "rich-text#subtitulo-5-medios-pago": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "5 . ¿Puedo cambiar la forma de pago?"
+    }
+  },
+  "rich-text#texto-5-medios-pago": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Si aún no has finalizado tu pago, podrás volver al paso inicial y elegir la forma de pago que prefieras. Una vez finalizada la compra no es posible cambiar la forma de pago."
+    }
+  },
+  "rich-text#subtitulo-6-medios-pago": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "6 . ¿Pagar electrónicamente tiene algún valor para mí como comprador?"
+    }
+  },
+  "rich-text#texto-6-medios-pago": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "No, los pagos electrónicos realizados a través de Mercado pago no generan costos adicionales para el comprador."
+    }
+  },
+  "rich-text#subtitulo-7-medios-pago": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "7 . ¿Qué debo hacer si mi transacción no concluyó?"
+    }
+  },
+  "rich-text#texto-7-medios-pago": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "En primera instancia, revisar si llegó un email de confirmación de la transacción a la cuenta de correo electrónico inscrita en el momento de realizar el pago, en caso de no haberlo recibido, deberás contactarte a la linea 018000111568 ó al correo electrónico lid.ecommerce@ceramicaitalia.com, para confirmar el estado de la transacción."
+    }
+  },
+  "rich-text#subtitulo-8-medios-pago": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "8 . ¿Qué debo hacer si no recibí el comprobante de pago?"
+    }
+  },
+  "rich-text#texto-8-medios-pago": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Por cada transacción aprobada a través de Mercado Pago, recibirás un comprobante del pago con la referencia de compra en la dirección de correo electrónico que indicaste al momento de pagar. Si no lo recibes, podrás contactarte a la línea 018000111568 o al correo electrónico lid.ecommerce@ceramicaitalia.com, para solicitar el reenvío del comprobante a la misma dirección de correo electrónico registrada al momento de pagar."
+    }
+  },
+
+
+  //TEXTO CONTENIDO CONDICIONES DE ENTREGA Y TRANSPORTE
+  "flex-layout.col#contenido-condiciones-entrega-transporte": {
+    "children": [
+      "rich-text#titulo-contenido-condiciones-entrega-transporte",
+      "rich-text#texto-1-condiciones-entrega-transporte",
+      "rich-text#texto-2-condiciones-entrega-transporte",
+      "rich-text#texto-3-condiciones-entrega-transporte",
+      "rich-text#texto-4-condiciones-entrega-transporte",
+      "rich-text#texto-5-condiciones-entrega-transporte",
+      "rich-text#texto-6-condiciones-entrega-transporte"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-condiciones-entrega-transporte": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "Condiciones de entrega y transporte"
+    }
+  },
+  "rich-text#texto-1-condiciones-entrega-transporte": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "La Promesa general de entrega en sala es máxima de 30 días calendario como lo menciona la Ley 1480 de 2011 del capítulo VI en el numeral h."
+    }
+  },
+  "rich-text#texto-2-condiciones-entrega-transporte": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "El Transporte será totalmente gratuito siempre y cuando cumpla las siguientes condiciones:"
+    }
+  },
+  "rich-text#texto-3-condiciones-entrega-transporte": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "a. cuando la venta sea superior a un valor de 1.6 SMLV."
+    }
+  },
+  "rich-text#texto-4-condiciones-entrega-transporte": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "b. La dirección de entrega se encuentre en el área metropolitana o perímetro urbano alrededor de la sala de compra o tienda donde compro."
+    }
+  },
+  "rich-text#texto-5-condiciones-entrega-transporte": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "c. La entrega del pedido se realizará en un primer piso y no se asume el descargue."
+    }
+  },
+  "rich-text#texto-6-condiciones-entrega-transporte": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "El valor del transporte debe ser tramitado y asumido por el cliente, cuando no cumpla las anteriores condiciones.\nAl momento de la entrega del producto sea en la dirección indicada para la “Entrega a Domicilio” o para la entrega en la sala de ventas en la opción “Reclamar en Tienda”, deberá presentar la cédula de ciudadanía, la cual debe coincidir con lo registrado al momento de la compra en el sitio web.\nEl cliente debe firmar la remisión como constancia de entrega del producto y formato de entrega de Mercado pago."
+    }
+  },
+
+  //TEXTO CONTENIDO GARANTIAS
+  "flex-layout.col#contenido-garantias": {
+    "children": [
+      "rich-text#titulo-contenido-garantias",
+      "rich-text#texto-1-garantias",
+      "rich-text#subtitulo-2-garantias",
+      "rich-text#texto-2-garantias",
+      "rich-text#texto-3-garantias",
+      "rich-text#texto-4-garantias",
+      "rich-text#texto-5-garantias",
+      "rich-text#texto-6-garantias"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-garantias": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "Garantias"
+    }
+  },
+  "rich-text#texto-1-garantias": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Para hacer efectiva la Garantía es necesario que se cumplan las siguientes condiciones:\nComuníquese dentro de los términos de la garantía con la línea de SATISFACCIÓN Y FELICIDAD AL CLIENTE: 01-8000-111568 en los horarios de atención de oficina dispuestos para este propósito. (Lunes-Viernes 7:00 a.m. – 12:00 m / 2:00 p.m. – 6:00 p.m.) o ingresar a www.ceramicaitalia.com o a través del chat virtual de esta misma página en el horario indicado anteriormente, o en el link contáctanos y déjanos la solicitud lo atenderemos a la mayor brevedad posible.\nPara hacer la reclamación debe mostrar la factura de compra original o comprobante de compra que nos permita identificar y/o verificar la fecha de compra del producto, una de las etiquetas que se encuentran adheridas en el empaque donde se indica el nombre, lote, tamaño y calidad del producto."
+    }
+  },
+  "rich-text#subtitulo-2-garantias": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "Tenga en cuenta:"
+    }
+  },
+  "rich-text#texto-2-garantias": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "La garantía de los productos de Cerámica Italia S.A. están sujetos a un diagnóstico técnico.nLas solicitudes se atenderán en un tiempo máximo de 15 días hábiles, tenga en cuenta que según la solicitud que se haga se debe hacer un análisis técnico de causas, por lo tanto de aplicar la garantía, se realizará en 30 días hábiles siempre y cuando Ud. Como usuario tenga la disponibilidad o en el momento en que Ud. Lo determine.\nLa garantía y manual de uso e instrucciones será entregado al momento del retiro de la mercancía en sala o puede ser consultado en www.ceramiciatalia.com"
+    }
+  },
+  "rich-text#texto-3-garantias": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "La GARANTIA CERÁMICA ITALIA S.A. cubre defectos relacionados con la calidad intrínseca del producto, y no tiene cobertura en los siguientes casos, por lo tanto los gastos y costos derivados de los mismos no serán asumidos por CERÁMICA ITALIA S.A. aun cuando sucedan durante el tiempo de garantía, El productor o proveedor se exonera de la responsabilidad que se deriva de la garantía, cuando demuestre que el defecto proviene de:"
+    }
+  },
+  "rich-text#texto-4-garantias": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "b. La dirección de entrega se encuentre en el área metropolitana o perímetro urbano alrededor de la sala de compra o tienda donde compro."
+    }
+  },
+  "rich-text#texto-5-garantias": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Fuerza mayor o caso fortuito;\n\nEl hecho de un tercero;\n\nEl uso indebido del bien por parte del consumidor, y"
+    }
+  },
+  "rich-text#texto-6-garantias": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Que el consumidor no atendió las instrucciones de instalación, uso o mantenimiento indicadas en el manual del producto y en la garantía. El contenido del manual de instrucciones deberá estar acorde con la complejidad del producto. Esta causal no podrá ser alegada si no se ha suministrado manual de instrucciones de instalación, uso o mantenimiento en idioma castellano."
+    }
+  },
+
+  //TEXTO CONTENIDO POLITICA CAMBIOS Y DEVOLUCIONES
+  "flex-layout.col#contenido-politica-cambios-devoluciones": {
+    "children": [
+      "rich-text#titulo-contenido-politica-cambios-devoluciones",
+      "rich-text#texto-1-politica-cambios-devoluciones",
+      "rich-text#texto-2-politica-cambios-devoluciones",
+      "rich-text#texto-3-politica-cambios-devoluciones"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-politica-cambios-devoluciones": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "Política de cambios y devoluciones"
+    }
+  },
+  "rich-text#texto-1-politica-cambios-devoluciones": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "CERAMICA ITALIA S.A., con domicilio en Cúcuta; Colombia, es responsable del tratamiento de los datos personales de acuerdo a la Ley 1581 de 2012 y el Decreto 1377 de 2013, según nuestras políticas de tratamiento de datos personales, los mecanismos a través de los cuales hacemos uso de éstos son seguros y confidenciales, pues contamos con los medios tecnológicos idóneos para asegurar que sean almacenados de manera tal que se impida el acceso indeseado por parte de terceras personas, y en ese mismo orden aseguramos la confidencialidad de los mismos.\n¿Cómo contactarnos?:\nDirección oficinas: Av3 cll23 AN Zona Industrial, Cúcuta, Colombia.\nCorreo electrónico: correspondencia@ceramicaitalia.com\nTeléfono: 5829800 en Cúcuta y 018000111568 en el resto del país\nSus datos personales serán incluidos en una base de datos y serán utilizados para las siguientes finalidades:"
+    }
+  },
+  "rich-text#texto-2-politica-cambios-devoluciones": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "•Lograr una eficiente comunicación relacionada con nuestros productos, ofertas, promociones, alianzas, estudios, concursos, contenidos, así como los de nuestras compañías vinculadas, y para facilitarle el acceso general a la información de éstos.\n\n•Proveer nuestros productos.\n\n•Informar sobre nuevos productos que estén relacionados con el o los contratado(s) o adquirido(s).\n\n•Dar cumplimiento a obligaciones contraídas con nuestros clientes, proveedores, y empleados .\n\n•Informar sobre cambios de nuestros productos o servicios.\n\n•Evaluar la calidad del servicio.\n\n•Realizar estudios internos sobre hábitos de consumo."
+    }
+  },
+  "rich-text#texto-3-politica-cambios-devoluciones": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Se le informa a los titulares de información que pueden consultar el Manual Interno de Políticas y Procedimientos de Datos personales de CERÁMICA ITALIA S.A, que contiene nuestras políticas para el tratamiento de la información recogida, así como los procedimientos de consulta y reclamación que le permitirán hacer efectivos sus derechos al acceso, consulta, rectificación, actualización y supresión de los datos, haciendo click en el siguiente enlace: Politica de Privacidad"
+    }
+  },
+
+  //TEXTO CONTENIDO POLITICA DE TRATAMIENTO DE DATOS PERSONALES
+  "flex-layout.col#contenido-politica-tratamiento-datos-personales": {
+    "children": [
+      "rich-text#titulo-contenido-politica-tratamiento-datos-personales",
+      "rich-text#texto-1-politica-tratamiento-datos-personales"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-politica-tratamiento-datos-personales": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "Política de tratamiento de datos personales"
+    }
+  },
+  "rich-text#texto-1-politica-tratamiento-datos-personales": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "CERAMICA ITALIA S.A., con domicilio en Cúcuta; Colombia, es responsable del tratamiento de los datos personales de acuerdo a la Ley 1581 de 2012 y el Decreto 1377 de 2013, según nuestras políticas de tratamiento de datos personales, los mecanismos a través de los cuales hacemos uso de éstos son seguros y confidenciales, pues contamos con los medios tecnológicos idóneos para asegurar que sean almacenados de manera tal que se impida el acceso indeseado por parte de terceras personas, y en ese mismo orden aseguramos la confidencialidad de los mismos.\n\n¿Cómo contactarnos?:\n\nDirección oficinas: Av3 cll23 AN Zona Industrial, Cúcuta, Colombia.\nCorreo electrónico: correspondencia@ceramicaitalia.com\nTeléfono: 5829800 en Cúcuta y 018000111568 en el resto del país\n\nSus datos personales serán incluidos en una base de datos y serán utilizados para las siguientes finalidades:\n\n• Lograr una eficiente comunicación relacionada con nuestros productos, ofertas, promociones, alianzas, estudios, concursos, contenidos, así como los de nuestras compañías vinculadas, y para facilitarle el acceso general a la información de éstos.\n• Proveer nuestros productos.\n• Informar sobre nuevos productos que estén relacionados con el o los contratado(s) o adquirido(s).\n•Dar cumplimiento a obligaciones contraídas con nuestros clientes, proveedores, y empleados.\n• Informar sobre cambios de nuestros productos o servicios.\n• Evaluar la calidad del servicio.\n• Realizar estudios internos sobre hábitos de consumo.\n\nSe le informa a los titulares de información que pueden consultar el Manual Interno de Políticas y Procedimientos de Datos personales de CERÁMICA ITALIA S.A, que contiene nuestras políticas para el tratamiento de la información recogida, así como los procedimientos de consulta y reclamación que le permitirán hacer efectivos sus derechos al acceso, consulta, rectificación, actualización y supresión de los datos, haciendo click en el siguiente enlace: Politica de Privacidad"
+    }
+  },
+
+  //TEXTO CONTENIDO CONTACTO, QUEJAS Y RECLAMOS
+  "flex-layout.col#contenido-contacto-quejas-reclamos": {
+    "children": [
+      "rich-text#titulo-contenido-contacto-quejas-reclamos",
+      "rich-text#texto-1-contacto-quejas-reclamos"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-contacto-quejas-reclamos": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "Contacto, Quejas y Reclamos"
+    }
+  },
+  "rich-text#texto-1-contacto-quejas-reclamos": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Queremos estar más cerca de tí, por eso colocamos a tu disposición nuestro canal de contacto, para que nos dejas tus inquietudes, comentarios, quejas y/o reclamos, puedes ingresar haciendo Click Aqui"
+    }
+  },
+
+  //TEXTO CONTENIDO ESTATUTO DEL CONSUMIDOR
+  "flex-layout.col#contenido-estatuto-consumidor": {
+    "children": [
+      "rich-text#titulo-contenido-estatuto-consumidor",
+      "rich-text#texto-1-estatuto-consumidor"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-estatuto-consumidor": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "Estatuto del consumidor"
+    }
+  },
+  "rich-text#texto-1-estatuto-consumidor": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Para resolver mas dudas y conocer tus derechos como consumidor, puedes consultar el Estatuto del Consumidor"
+    }
+  },
+
+  //BOTON DESCARGAR TERMINOS LEGALES
+  "rich-text#link-descargar-terminos-legales": {
+    "props": {
+      "blockClass": ["link-descargar-terminos-legales"],
+      "text": "Descargar"
+    }
+  }
+}

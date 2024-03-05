@@ -1,0 +1,79 @@
+{
+    "flex-layout.row#resultado-busqueda-landing": {
+      "children": ["search-result-layout.customQuery#ResultadoBusqueda-landing"],
+      "props": {
+        "blockClass": ["resultado-busqueda-landing"]
+      }
+    },
+    
+    "search-result-layout.customQuery#ResultadoBusqueda-landing": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": false,
+            "maxItemsPerPage": 8,
+            "queryField": "1", //Valores de los campos a buscar (separados por //)
+            "mapField": "category-1", //Campos a buscar (separados por comas, tambien se puede buscar por coleccion productClusterIds)
+            "facetsBehavior": "dynamic"
+        }
+    },
+    "blocks": [
+        "search-result-layout.desktop#landing",
+        "search-result-layout.mobile#landing",
+        "search-not-found-layout"
+    ]
+},
+
+"search-result-layout.desktop#landing": {
+    "children": [
+        "flex-layout.row#result-landing"
+    ],
+    "props": {
+      "pagination": "show-more",
+      // "preventRouteChange": false,
+      "defaultGalleryLayout": "grid",
+      "preventRouteChange": true,
+      "maxItemsPerPage": 6,
+      "blockClass": "result-landing"
+    
+    }
+  },
+
+  "flex-layout.row#result-landing": {
+    "children": [
+      "flex-layout.col#content-landing"
+    ],
+    "props": {
+      "preventHorizontalStretch": false,
+      "fullWidth": true,
+      "blockClass": "contenido-busqueda"
+    }
+  },
+
+  "flex-layout.col#content-landing": {
+    "children": [
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "100%",
+      "preventVerticalStretch": true,
+      "blockClass": "content-landing"
+    }
+  },
+
+  "search-result-layout.mobile#landing": {
+    "children": [
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  }
+}

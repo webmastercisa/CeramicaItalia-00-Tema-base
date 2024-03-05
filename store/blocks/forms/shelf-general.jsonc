@@ -1,0 +1,41 @@
+{
+      "product-summary-name#general": {
+        "props": {
+            "blockClass": "section-name-general"
+        }
+      },
+
+
+      "product-quantity#quantity-general": {
+        "props": {
+          "blockClass": "cantidad-general"
+        }
+      },
+
+      "add-to-cart-button#general": {
+        "props": {
+          "addToCartFeedback": "customEvent",
+          "customPixelEventId": "add-to-cart-button",
+          "blockClass": "btn-general"
+        }
+      },
+
+
+      "list-context.product-list#shelf-general": {
+        "blocks": [
+            "product-summary.shelf#general"
+        ],
+        "children": [
+            "slider-layout#shelf-general"
+        ]
+      },
+
+      "flex-layout.row#shelf-general": {
+        "children": [
+            "list-context.product-list#shelf-general"
+        ],
+        "props": {
+          "blockClass": "shelf-general"
+        }
+      }
+}

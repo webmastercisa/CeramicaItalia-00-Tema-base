@@ -1,0 +1,336 @@
+{
+    "store.custom#compras-exterior": {
+        "blocks": [
+            "flex-layout.row#miga-pan-compras-exterior",
+            "flex-layout.row#title-compras-exterior",
+            "flex-layout.row#container-banner1-compras-exterior",
+            "flex-layout.row#container-texts-compras-exterior",
+            "flex-layout.row#container-banners-compras-exterior",
+            // "responsive-layout.desktop#banner-grilla-imperdibles",
+            // "responsive-layout.mobile#banner-grilla-imperdibles",
+            // "flex-layout.row#title-search-muestras",
+            "flex-layout.row#title-search-compra-exterior",
+            "flex-layout.row#resultado-busqueda-landing-imperdibles",
+            "flex-layout.row#container-banner2-compras-exterior"
+        ]
+    },
+
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-compras-exterior": {
+        "children": [
+            "image#icono-miga-pan",
+            "rich-text#texto-1-miga-pan",
+            "rich-text#texto-2-miga-pan-compras-exterior"
+        ],
+        "props": {
+            "blockClass": [
+                "miga-pan-terminos-legales"
+            ]
+        }
+    },
+    // TEXTO 2 MIGA DE PAN 
+    "rich-text#texto-2-miga-pan-compras-exterior": {
+        "props": {
+            "blockClass": [
+                "texto-2-miga-pan"
+            ],
+            // "text": "Compra desde el exterior",
+            "text": "[Compra desde el exterior](/compras-exterior)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // titulo
+
+    "flex-layout.row#title-compras-exterior": {
+      "children": [ "rich-text#title-compras-exterior"],
+      "props": {
+        "blockClass": ["title-compras-exterior"]
+      }
+    },
+    "rich-text#title-compras-exterior": {
+        "props": {
+                 "text": "Compra desde el exterior",
+                 "blockClass": "title-imperdibles",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+     // slider 1
+     "flex-layout.row#container-banner1-compras-exterior": {
+        "children": ["list-context.image-list#banner1Slider-compras-exterior"],
+        "props": {
+          "blockClass": ["container-banner1-compras-exterior-slider"]
+        }
+      },
+  
+      "list-context.image-list#banner1Slider-compras-exterior": {
+          "children": ["slider-layout#banner1-imperdibles"],
+          "props": {
+            "height": 570,
+            "preload": true,
+            "images": [
+              {
+                "image": "arquivos/banner1-imperdibles.png",
+                "mobileImage": "arquivos/banner1-muestra-mobile.png"
+              },
+              {
+                  "image":"arquivos/banner1-muestra.png",
+                  "mobileImage": "arquivos/banner1-muestra-mobile.png"
+                }
+            ]
+          }
+        },
+        "slider-layout#banner1-imperdibles": {
+          "props": {
+            "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never", 
+            "blockClass": [ "banner1-compras-exterior-slider"]
+            // "autoplay": {
+            //   "timeout": 3000,
+            //   "stopOnHover": true
+            // }
+          }
+        },
+
+        "flex-layout.row#container-texts-compras-exterior": {
+          "children": ["rich-text#texts-compras-exterior"],
+          "props": {
+            "blockClass": [ "container-texts-compras-exterior"]
+          }
+        },
+        "rich-text#texts-compras-exterior": {
+            "props": {
+                     "text": "En Cerámica Italia queremos ayudarte a cumplir tu sueño de remodelar tu hogar en Colombia, por eso, hemos diseñado un programa exclusivo para todos “Colombianos en el exterior”.",
+                     "blockClass": ["texts-imperdibles", "texts-compras-exterior"],
+                     "textAlignment": "CENTER",
+                     "textPosition": "CENTER"
+            }
+        },
+
+        //  "responsive-layout.desktop#banner-grilla-imperdibles": {
+        //     "children": ["flex-layout.row#container-banners-compras-exterior"]
+        //   },
+
+        //    "responsive-layout.mobile#banner-grilla-imperdibles": {
+        //       "children": ["flex-layout.row#container-banners-imperdibles-mobile"]
+        //     },
+            
+          
+    
+        "flex-layout.row#container-banners-compras-exterior": {
+          "children": [
+            "image#banner1-compras-exterior",
+            "image#banner2-compras-exterior",
+            "image#banner3-compras-exterior",
+            "image#banner4-compras-exterior"
+          ],
+          "props": {
+            "blockClass": ["container-banners-compras-exterior"]
+          }
+        },
+
+        "image#banner1-compras-exterior": {
+            "props": {
+                     "src": "arquivos/banner-comprar-exterior.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-compra-exterior",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+        "image#banner2-compras-exterior": {
+            "props": {
+                     "src": "arquivos/banner-comprar-exterior-2.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-compra-exterior",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+        "image#banner3-compras-exterior": {
+            "props": {
+                     "src": "arquivos/banner-comprar-exterior-3.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-compra-exterior",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+        "image#banner4-compras-exterior": {
+          "props": {
+                   "src": "arquivos/banner-comprar-exterior-4.png",
+                   "alt": "alt",
+                   "height": "hight",
+                   "blockClass": "banner1-compra-exterior",
+                   "link": {
+                           "url": "#",
+                           "openNewTab": false,
+                           "title": "title"
+              }
+          }
+      },
+
+        "flex-layout.row#container-banners-imperdibles-mobile": {
+          "children": ["flex-layout.col#container-banners-imperdibles-mobile"],
+          "props": {
+            "blockClass": ["container-banners-imperdibles-mobile"]
+          }
+        },
+
+        "flex-layout.col#container-banners-imperdibles-mobile": {
+          "children": [
+            "image#banner1-imperdible-mobile",
+            "image#banner2-imperdible-mobile",
+            "image#banner3-imperdible-mobile"
+          ],
+          "props": {
+            "blockClass": ["container-banners-imperdibles-mobile"]
+          }
+        },
+
+        "image#banner1-imperdible-mobile": {
+            "props": {
+                     "src": "arquivos/banner2.imperdibles-mobile.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdible-mobile",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+        "image#banner2-imperdible-mobile": {
+            "props": {
+                     "src": "arquivos/banner2.imperdibles-mobile.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdible-mobile",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+        "image#banner3-imperdible-mobile": {
+            "props": {
+                     "src": "arquivos/banner2.imperdibles-mobile.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdible-mobile",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+          // textos
+
+    "flex-layout.row#title-search-compra-exterior": {
+      "children": ["flex-layout.row#container-title-search-compra-exterior", "image#linea-search-compra-exterior"],
+      "props": {
+        "blockClass": ["title-search-muestras" , "title-search-compra-exterior"],
+        "preserveLayoutOnMobile": true
+      }
+    },
+
+    "flex-layout.row#container-title-search-compra-exterior": {
+      "children": ["rich-text#title-search-compra-exterior"],
+      "props": {
+        "blockClass": ["container-title-search-muestras"],
+        "width": "25%"
+      }
+    },
+    "rich-text#title-search-compra-exterior": {
+      "props": {
+           "text": "Tu nuevo hogar podria necesitar...",
+           "blockClass": "title-search-muestras",
+           "textAlignment": "CENTER",
+           "textPosition": "CENTER"
+      }
+    },
+
+    
+    "image#linea-search-compra-exterior": {
+      "props": {
+           "src": "assets/ico/linea-muestra.svg",
+           "alt": "alt",
+          //  "height": "hight",
+           "blockClass": ["linea-search", "compra-exterior"],
+           "link": {
+               "url": "url",
+               "openNewTab": false,
+               "title": "title"
+        }
+      }
+    },
+
+     // slider 1
+     "flex-layout.row#container-banner2-compras-exterior": {
+      "children": [ "list-context.image-list#banner2Slider-compras-exterior"],
+      "props": {
+        "blockClass": ["container-banner2-compras-exterior-slider"]
+      }
+    }, 
+
+    "list-context.image-list#banner2Slider-compras-exterior": {
+        "children": [ "slider-layout#banner2-compra-exterior"],
+        "props": {
+          "height": 570,
+          "preload": true,
+          "images": [
+            {
+              "image": "arquivos/banner3-compra-exterior.png",
+              "mobileImage": "arquivos/banner1-muestra-mobile.png"
+            }
+          ]
+        }
+      },
+      "slider-layout#banner2-compra-exterior": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "showPaginationDots": "never", 
+          "blockClass": [ "banner1-compras-exterior-slider", "banner2-compras-exterior-slider"]
+          // "autoplay": {
+          //   "timeout": 3000,
+          //   "stopOnHover": true
+          // }
+        }
+      }
+
+       
+}

@@ -1,0 +1,91 @@
+{
+    "vtex.menu@2.x:menu#menu-pdp": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "acordeon-menu-pdp"
+        },
+        "children": [
+            "menu-item#menu-descripcion",
+            "menu-item#menu-detalles-pdp",
+            "menu-item#menu-descargas-pdp"
+        ]
+    },
+
+
+    "menu-item#menu-descripcion": {
+        "props": {
+            "id": "menu-description-pdp",
+            "blockClass": ["menu-description-pdp"],
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "",
+                "text": "Descripción"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#descripcion-pdp"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#descripcion-pdp": {
+        "children": [
+            "product-description"
+        ]
+    },
+
+    "menu-item#menu-detalles-pdp": {
+        "props": {
+            "id": "menu-detalles-pdp",
+            "blockClass": ["menu-detalles-pdp"],
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "",
+                "text": "Detalle de producto"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#detalles-pdp"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#detalles-pdp": {
+        "children": [
+            "product-specification-group#table"
+        ]
+    },
+
+    "menu-item#menu-descargas-pdp": {
+        "props": {
+            "id": "menu-descargas-pdp",
+            "blockClass": ["menu-descargas-pdp"],
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "",
+                "text": "Descargas"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#descargas-pdp"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#descargas-pdp": {
+        "children": [
+            "DownloadGarantiaProducto",
+            "DownloadFichaTecnica",
+            "DownloadManualInstalacion",
+            "DownloadManualManipulacion",
+            "DownloadBIMZIP" 
+        ]
+    }
+
+}

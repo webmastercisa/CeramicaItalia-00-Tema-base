@@ -1,0 +1,308 @@
+{
+    // //PRUEBA CON TABS Y CHECKS A CAMBIO DE LOS RADIO BUTTON
+    // "tab-layout#tab-detalles-formulario-pqrs-check": {
+    //   "children": [
+    //     "tab-list#tab-detalles-formulario-pqrs-check",
+    //     "tab-content#tab-detalles-formulario-pqrs-check"
+    //   ],
+    //   "props": {
+    //     "blockClass": "tab-detalles-formulario-pqrs",
+    //     "defaultActiveTabId": "tab-contacto"
+    //   }
+    // },
+
+    // // Listado de pestañas
+    // "tab-list#tab-detalles-formulario-pqrs-check": {
+    //   "children": ["tab-list.item#tab-ceramica", "tab-list.item#tab-baños","tab-list.item#tab-griferia"],
+    //   "props": {
+    //     "blockClass": "list-tab-detalles-formulario-pqrs"
+    //   }
+    // },
+    // "tab-list.item#tab-ceramica": {
+    //   "props": {
+    //     "tabId": "tab-ceramica",
+    //     "blockClass": "item-ceramica",
+    //     "label": "CERAMICA",
+    //     "defaultActiveTab": true
+    //   }
+    // },
+    // "tab-list.item#tab-baños": {
+    //   "props": {
+    //     "tabId": "tab-baños",
+    //     "blockClass": "item-baños",
+    //     "label": "BAÑOS"
+    //   }
+    // },
+    // "tab-list.item#tab-griferia": {
+    //   "props": {
+    //     "tabId": "tab-griferia",
+    //     "blockClass": "item-griferia",
+    //     "label": "GRIFERIA"
+    //   }
+    // },
+
+    // //Listado de los contenidos de las pestañas
+    // "tab-content#tab-detalles-formulario-pqrs-check": {
+    //   "children": ["tab-content.item#tab-ceramica-check", "tab-content.item#tab-baños","tab-content.item#tab-griferia"],
+    //   "props": {
+    //     "blockClass": "content-tab-detalles-formulario-pqrs"
+    //   }
+    // },
+
+    // // Detalle de cada contenido de las pestañas
+    // "tab-content.item#tab-ceramica-check": {
+    //   "children": [
+    //     "flex-layout.col#contenedor-opciones-detalle-ceramica-check"
+    //   ],
+    //   "props": {
+    //     "tabId": "tab-ceramica",
+    //     "blockClass": "content-ceramica"
+    //   }
+    // },
+    // "tab-content.item#tab-baños": {
+    //   "children": [
+    //     "flex-layout.col#contenedor-opciones-detalle-baños"
+    //   ],
+    //   "props": {
+    //     "tabId": "tab-baños",
+    //     "blockClass": "content-baños"
+    //   }
+    // },
+    // "tab-content.item#tab-griferia": {
+    //   "children": [
+    //     "flex-layout.col#contenedor-opciones-detalle-griferia"
+    //   ],
+    //   "props": {
+    //     "tabId": "tab-griferia",
+    //     "blockClass": "content-griferia"
+    //   }
+    // },
+
+    // // FLEX OPCIONES CERAMICA
+    // "flex-layout.col#contenedor-opciones-detalle-ceramica-check": {
+    //   "children": [
+    //     "flex-layout.row#contenedor-opciones-detalle-ceramica-1-check",
+    //     "flex-layout.row#contenedor-opciones-detalle-ceramica-2",
+    //     "flex-layout.row#contenedor-opciones-detalle-ceramica-3"
+    //   ],
+    //   "props":{
+    //     "blockClass":"contenedor-opciones-detalle-ceramica"
+    //   }
+    // },
+    // "flex-layout.row#contenedor-opciones-detalle-ceramica-1-check": {
+    //   "children": [
+    //     "form-input.checkbox#ceramics1Check-formulario-pqrs",
+    //     "form-input.radiogroup#ceramics2-formulario-pqrs",
+    //     "form-input.radiogroup#ceramics3-formulario-pqrs"
+    //   ],
+    //   "props":{
+    //     "blockClass":"contenedor-opciones-detalle-ceramica"
+    //   }
+    // },
+
+    // "form-input.checkbox#ceramics1Check-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics1Check",
+    //     "label": "Diferencia de tamaño",
+    //     "blockClass": "checkbox-ceramics"
+    //   }
+    // },
+
+    // "form-input.radiogroup#ceramics1-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics1/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#ceramics2-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics2/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#ceramics3-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics3/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "flex-layout.row#contenedor-opciones-detalle-ceramica-2": {
+    //   "children": [
+    //     "form-input.radiogroup#ceramics4-formulario-pqrs",
+    //     "form-input.radiogroup#ceramics5-formulario-pqrs",
+    //     "form-input.radiogroup#ceramics6-formulario-pqrs"
+    //   ],
+    //   "props":{
+    //     "blockClass":"contenedor-opciones-detalle-ceramica"
+    //   }
+    // },
+
+    // "form-input.radiogroup#ceramics4-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics4/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#ceramics5-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics5/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#ceramics6-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics6/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "flex-layout.row#contenedor-opciones-detalle-ceramica-3": {
+    //   "children": [
+    //     "form-input.text#ceramics7-formulario-pqrs"
+    //   ]
+    // },
+    // "form-input.text#ceramics7-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics7",
+    //     "placeholder": "Otro: Describa su necesidad"
+    //   }
+    // },
+
+    // // FLEX OPCIONES BAÑOS
+    // "flex-layout.col#contenedor-opciones-detalle-baños": {
+    //   "children": [
+    //     "flex-layout.row#contenedor-opciones-detalle-baños-1",
+    //     "flex-layout.row#contenedor-opciones-detalle-baños-2"
+    //   ],
+    //   "props":{
+    //     "blockClass":"contenedor-opciones-detalle-ceramica"
+    //   }
+    // },
+    // "flex-layout.row#contenedor-opciones-detalle-baños-1": {
+    //   "children": [
+    //     "form-input.radiogroup#bathrooms1-formulario-pqrs",
+    //     "form-input.radiogroup#bathrooms2-formulario-pqrs",
+    //     "form-input.radiogroup#bathrooms3-formulario-pqrs",
+    //     "form-input.radiogroup#bathrooms4-formulario-pqrs"
+    //   ],
+    //   "props":{
+    //     "blockClass":"contenedor-opciones-detalle-ceramica"
+    //   }
+    // },
+
+    // "form-input.radiogroup#bathrooms1-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/bathrooms1/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#bathrooms2-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/bathrooms2/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#bathrooms3-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/bathrooms3/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#bathrooms4-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/bathrooms4/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+
+    // "flex-layout.row#contenedor-opciones-detalle-baños-2": {
+    //   "children": [
+    //     "form-input.text#bathrooms5-formulario-pqrs"
+    //   ]
+    // },
+
+    // "form-input.text#bathrooms5-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics7",
+    //     "placeholder": "Otro: Describa su necesidad"
+    //   }
+    // },
+
+    // // FLEX OPCIONES GRIFERIA
+    // "flex-layout.col#contenedor-opciones-detalle-griferia": {
+    //   "children": [
+    //     "flex-layout.row#contenedor-opciones-detalle-griferia-1",
+    //     "flex-layout.row#contenedor-opciones-detalle-griferia-2"
+    //   ],
+    //   "props":{
+    //     "blockClass":"contenedor-opciones-detalle-ceramica"
+    //   }
+    // },
+    // "flex-layout.row#contenedor-opciones-detalle-griferia-1": {
+    //   "children": [
+    //     "form-input.radiogroup#taps1-formulario-pqrs",
+    //     "form-input.radiogroup#taps2-formulario-pqrs",
+    //     "form-input.radiogroup#taps3-formulario-pqrs"
+    //   ],
+    //   "props":{
+    //     "blockClass":"contenedor-opciones-detalle-ceramica"
+    //   }
+    // },
+
+    // "form-input.radiogroup#taps1-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/taps1/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#taps2-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/taps2/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+    // "form-input.radiogroup#taps3-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/taps3/properties/Tipo",
+    //     "placeholder": "",
+    //     "label": "",
+    //     "blockClass": "opciones-ceramica"
+    //   }
+    // },
+
+    // "flex-layout.row#contenedor-opciones-detalle-griferia-2": {
+    //   "children": [
+    //     "form-input.text#taps4-formulario-pqrs"
+    //   ]
+    // },
+
+    // "form-input.text#taps4-formulario-pqrs": {
+    //   "props": {
+    //     "pointer": "#/properties/ceramics7",
+    //     "placeholder": "Otro: Describa su necesidad"
+    //   }
+    // }
+}

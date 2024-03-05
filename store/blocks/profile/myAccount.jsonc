@@ -1,0 +1,98 @@
+{
+    "responsive-layout.desktop#textAndLine": {
+        "title": "TextAndLine-Desktop",
+        "children": [
+          "flex-layout.row#textAndLine-desktop"
+        ]
+      },
+      "flex-layout.row#textAndLine-desktop": {
+        "children": ["flex-layout.col#column-2-textAndLine"],
+        "props": {
+          "blockClass": ["textAndLine-desktop"]
+        }
+      },
+ 
+    "flex-layout.col#column-2-textAndLine": {
+      "children": [
+        "rich-text#colum-2-text1__textAndLine",
+        "image#banner-textAndLine-line"
+      ],
+      "props": {
+        "fullWidth": true,
+        "blockClass": "column-2-404"
+      }
+    },
+    "rich-text#colum-2-text1__textAndLine": {
+      "props": {
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "text": "Te puede interesar",
+        "blockClass": "colum-text1"
+      }
+    },
+
+    "image#banner-textAndLine-line": {
+        "title": "line-desktop",
+        "props": {
+          "src": "assets/ico/line-Icon404.svg",
+          "blockClass": "404Banner-line"
+        }
+      },
+
+
+// **Mobile** //
+    "responsive-layout.mobile#textAndLine": {
+        "title": "TextAndLine-Mobile",
+        "children": [
+          "flex-layout.row#textAndLine-mobile"
+        ]
+      },
+
+      "flex-layout.row#textAndLine-mobile": {
+        "children": ["flex-layout.col#column-2-textAndLine-mobile"],
+        "props": {
+          "blockClass": ["textAndLine-mobile"]
+        }
+      },
+ 
+    "flex-layout.col#column-2-textAndLine-mobile": {
+      "title": "textAndLine-mobile",
+      "children": [
+        "rich-text#colum-2-text1__textAndLine-mobile",
+        "image#banner-textAndLine-line-mobile"
+      ],
+      "props": {
+        "fullWidth": true,
+        "blockClass": "column-2-404"
+      }
+    },
+    "rich-text#colum-2-text1__textAndLine-mobile": {
+      "title": "text-mobile",
+      "props": {
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "text": "Te puede interesar",
+        "blockClass": "colum-text1"
+      }
+    },
+
+    "image#banner-textAndLine-line-mobile": {
+        "title": "line-mobile",
+        "props": {
+          "src": "assets/ico/lineMobile.svg",
+          "blockClass": ["404Banner-line", "ImgLineMobile"]
+        }
+      },
+
+  // **Shelf**//
+
+"flex-layout.row#shelfOther": {
+  "title": "shelf-others",
+  "children": ["flex-layout.row#shelf"],
+  "props": {
+    "blockClass": ["shelfOther"]
+  }
+}
+ 
+      
+}

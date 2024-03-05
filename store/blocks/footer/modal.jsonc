@@ -1,0 +1,65 @@
+{
+    "modal-trigger#how-to-buy-footer": {
+        "children": [
+            "flex-layout.row#how-to-buy-footer",
+            "modal-layout#how-to-buy-footer"
+        ],
+        "props": {
+            "blockClass": "slider-modal"
+        }
+    },
+
+    "modal-layout#how-to-buy-footer": {
+        "children": [
+            "list-context.image-list#modal-footer"
+        ],
+        "props": {
+            "blockClass": "slider-modal"
+        }
+    },
+
+    // *slider footer modal
+    "list-context.image-list#modal-footer": {
+        "children": [
+            "slider-layout#modal"
+        ],
+        "props": {
+            "width": "100%",
+            "height": "auto",
+            "preload": true,
+            "blockClass": "slider-modal",
+            "images": [
+                {
+                    "image": "/arquivos/info-comprar1.png"
+                },
+                {
+                    "image": "/arquivos/info-comprar2.png"
+                },
+                {
+                    "image": "/arquivos/info-comprar3.png"
+                },
+                {
+                    "image": "/arquivos/info-comprar4.png"
+                },
+                {
+                    "image": "/arquivos/info-comprar5.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#modal": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "mobileOnly",
+            "blockClass": "slider-modal",
+            "fullWidth": false,
+            "arrowSize": 20
+        }
+    }
+}

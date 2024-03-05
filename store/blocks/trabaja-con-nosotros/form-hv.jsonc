@@ -1,0 +1,227 @@
+{
+        //Formulario de contáctenos
+      
+        "flex-layout.row#Formulario-hv": {
+           "children": [
+               "form#Formulario-hv"
+        ],
+           "props": {
+               "blockClass": "Formulario-hv",
+               "fulwidth": true,
+               "preventHorizontalStretch": false,
+               "preventVerticalStretch": true,
+               "preserveLayoutOnMobile": true,
+               "horizontalAlign": "center",
+               "verticalAlign": "middle",
+               "paddingTop": 0,
+               "paddingBottom": 0
+          }
+        },
+      
+        "form#Formulario-hv": {
+          "props": {
+            "entity": "HV",
+            "schema": "Curriculum",
+            "blockClass": "formulario-hv"
+          },
+          "children": [
+            "rich-text#title-form-hv",
+            "flex-layout.row#container-input-hv",
+            // "flex-layout.col#col1-form-hv",
+            // "flex-layout.col#col2-form-hv",
+            // "flex-layout.col#col3-form-hv",
+            // "form-input.text#document",
+            // "form-input.textarea#comments-hv",
+            // "form-input.checkbox#agreement",
+            "flex-layout.row#btn-adjuntar"
+      
+          ],
+          "blocks": ["form-success"]
+        },
+
+        "flex-layout.row#btn-adjuntar": {
+          "children": [
+            "form-input.upload#attachFile-hv",
+            "form-submit#-hv"
+          ],
+          "props": {
+            "blockClass": ["btn-adjuntar"],
+            "preventHorizontalStretch": true
+          }
+        },
+        "flex-layout.row#container-input-hv": {
+          "children": [
+            "flex-layout.col#col1-form-hv",
+            "flex-layout.col#col2-form-hv",
+            "flex-layout.col#col3-form-hv"
+          ],
+          "props": {
+            "blockClass": ["container-input-hv"]
+          }
+        },
+
+        "flex-layout.col#col1-form-hv": {
+          "children": [
+
+            "form-input.text#name-hv",
+            "form-input.text#email-hv",
+            "form-input.text#phone-hv",
+            "form-input.text#phone2-hv"
+          ],
+          "props": {
+            "blockClass": ["col1-form-hv"]
+          }
+        },
+
+        "flex-layout.col#col2-form-hv": {
+            "children": [
+              "form-input.text#address2-hv",
+                "form-input.text#city-hv",
+                "form-input.text#address-hv",
+                "form-input.text#job-hv"
+            ],
+            "props": {
+              "blockClass": ["col2-form-hv"]
+            }
+          },
+
+          "flex-layout.col#col3-form-hv": {
+            "children": [
+                "form-input.text#vacant-hv",
+                "form-input.textarea#comments-hv"
+            ],
+            "props": {
+              "blockClass": ["col3-form-hv"]
+            }
+          },
+        "form-success": {
+          "children": ["rich-text#successSubmit-hv"]
+        },
+        "rich-text#successSubmit-hv": {
+          "props": {
+            "text": "¡Gracias por escribirnos, muy pronto daremos respuesta a tu solicitud.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "mss-form-hv"
+          }
+        },
+        "form-input.text#name-hv": {
+          "props": {
+            "pointer": "#/properties/name",
+            "placeholder": "Nombres y Apellidos",
+            "label": false,
+            "blockClass": "CampoFormulario" 
+          }
+        },
+        "form-input.text#email-hv": {
+          "props": {
+            "pointer": "#/properties/email",
+            "placeholder": "Correo electrónico",
+            "label": false,
+            "blockClass": "CampoFormulario"
+          }
+        },
+        "form-input.text#document": {
+          "props": {
+            "pointer": "#/properties/document",
+            "placeholder": "Nro. documento de identidad",
+            "label": false,
+            "blockClass": "CampoFormulario"
+          }
+        },
+
+        "form-input.textarea#comments-hv": {
+          "props": {
+            "pointer": "#/properties/comments",
+            "placeholder": "Haz una breve descripción de tu perfil",
+            "label": false,
+            "blockClass": "CampoFormulario"
+      
+          }
+        },
+       
+        "form-input.text#phone-hv": {
+          "props": {
+            "pointer": "#/properties/phone",
+            "placeholder": "Teléfono fijo",
+            "label": false,
+            "blockClass": "CampoFormulario"
+          }
+        },
+
+        "form-input.text#phone2-hv": {
+            "props": {
+              "pointer": "#/properties/phone2",
+              "placeholder": "Celular",
+              "label": false,
+              "blockClass": "CampoFormulario"
+            }
+          },
+
+          "form-input.text#city-hv": {
+            "props": {
+              "pointer": "#/properties/city",
+              "placeholder": "Ciudad",
+              "label": false,
+              "blockClass": "CampoFormulario"
+            }
+          },
+
+          "form-input.text#address-hv": {
+            "props": {
+              "pointer": "#/properties/address",
+              "placeholder": "Dirección de residencia",
+              "label": false,
+              "blockClass": "CampoFormulario"
+            }
+          },
+
+          "form-input.text#address2-hv": {
+            "props": {
+              "pointer": "#/properties/address2",
+              "placeholder": "Departamento",
+              "label": false,
+              "blockClass": "CampoFormulario"
+            }
+          },
+
+          "form-input.text#job-hv": {
+            "props": {
+              "pointer": "#/properties/job",
+              "placeholder": "¿Cual es tu profesión?",
+              "label": false,
+              "blockClass": "CampoFormulario"
+            }
+          },
+
+          "form-input.text#vacant-hv": {
+            "props": {
+              "pointer": "#/properties/vacant",
+              "placeholder": "Vacante a la que aspiras",
+              "label": false,
+              "blockClass": "CampoFormulario"
+            }
+          },
+
+          "form-input.upload#attachFile-hv": {
+            "props": {
+              "pointer": "#/properties/attachFile",
+              "placeholder": "Haga clic aquí y adjunte su documento",
+              "label": "Adjunta tu HDV",
+              "blockClass": "CampoFormularioFile"
+            }
+          },
+        
+
+        "form-submit#-hv": {
+          "props": {
+            "label": "Enviar"
+          }
+        },
+        "rich-text#title-form-hv": {
+          "props": {
+            "text": "Envía tu hoja de vida",
+            "blockClass": "title-form-hv"
+          }
+        }
+      }

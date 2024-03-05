@@ -1,0 +1,399 @@
+{
+    "footer#templateLanding": {
+        "blocks": [
+            "footer-layout.desktop#templateLanding",
+            "footer-layout.mobile#templateLanding"
+        ]
+    },
+    "footer-layout.desktop#templateLanding": {
+        "children": [
+            "flex-layout.row#contact-info-templateLanding"
+        ]
+    },
+    "footer-layout.mobile#templateLanding": {
+        "children": [
+            "flex-layout.row#contact-info-templateLanding-mobile"
+        ]
+    },
+    "flex-layout.row#contact-info-templateLanding": {
+        "children": [
+            // "flex-layout.row#how-to-buy-footer",
+            "modal-trigger#how-to-buy-footer",
+            "flex-layout.row#whatsapp-footer",
+            "flex-layout.row#delivery-times-footer",
+            "flex-layout.row#payment-methods-footer"
+        ],
+        "props": {
+            "blockClass": [
+                "contact-footer",
+                "bloquePrincipal"
+            ],
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    // Sección ¿Cómo Comprar? footer
+    "flex-layout.row#how-to-buy-footer": {
+        "children": [
+            "image#how-to-buy-footer",
+            "rich-text#how-to-bye-text"
+        ],
+        "props": {
+            "blockClass": "how-to-buy-footer",
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "image#how-to-buy-footer": {
+        "props": {
+            "src": "assets/ico/howToByIconStroke.svg",
+            "alt": "¿Cómo comprar?",
+            "height": "20px",
+            "blockClass": "how-to-buy-footer-img"
+            // "link": {
+            //     "url": "/",
+            //     "openNewTab": true,
+            //     "title": "¿Cómo comprar?"
+            // }
+        }
+    },
+    "rich-text#how-to-bye-text": {
+        "props": {
+            "text": "¿Cómo comprar?",
+            "blockClass": "how-to-buy-footer-text",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+
+    // Sección Whatsapp footer
+    "flex-layout.row#whatsapp-footer": {
+        "children": [
+            "image#whatsapp-img-footer",
+            "rich-text#whatsapp-text-footer"
+        ],
+        "props": {
+            "blockClass": "whatsapp-footer",
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "image#whatsapp-img-footer": {
+        "props": {
+            "src": "assets/ico/whatsapp-icon-footer.svg",
+            "alt": "WhatsApp",
+            "height": "20px",
+            "blockClass": "contact-info-img",
+            "link": {
+                "url": "https://api.whatsapp.com/send/?phone=5715141167&text&type=phone_number&app_absent=0",
+                "openNewTab": true,
+                "title": "WhatsApp"
+            }
+        }
+    },
+    "rich-text#whatsapp-text-footer": {
+        "props": {
+            "text": "[Escríbenos](https://wa.me/5715141167?target=_blank)",
+            "blockClass": "whatsapp-text-footer",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // Sección Tiempos de entrega footer
+    "flex-layout.row#delivery-times-footer": {
+        "children": [
+            "image#delivery-times-footer",
+            "rich-text#delivery-times-text-footer"
+        ],
+        "props": {
+            "blockClass": "delivery-times-footer",
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "image#delivery-times-footer": {
+        "props": {
+            "src": "assets/ico/timeToDelivery.svg",
+            "alt": "Tiempos de entrega",
+            "height": "20px",
+            "blockClass": "delivery-times-img",
+            "link": {
+                "url": "/",
+                "openNewTab": true,
+                "title": "Tiempos de entrega"
+            }
+        }
+    },
+    "rich-text#delivery-times-text-footer": {
+        "props": {
+            "text": "[Tiempos de entrega](https://www.ceramicaitalia.com/tiempos-de-entrega)",
+            "blockClass": "delivery-times-text-footer",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // Sección Metodos de pago footer
+    "flex-layout.row#payment-methods-footer": {
+        "children": [
+            "rich-text#payment-methods-text-footer",
+            "image#payment-methods-footer"
+        ],
+        "props": {
+            "blockClass": "payment-methods-footer",
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "rich-text#payment-methods-text-footer": {
+        "props": {
+            "text": "[Medios de Pago](https://www.ceramicaitalia.com/medios-de-pago)",
+            "blockClass": "payment-methods-text-footer",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#payment-methods-footer": {
+        "props": {
+            "src": "assets/ico/MediosPagoCeramicaItalia.svg",
+            "alt": "Medios de pago",
+            "height": "30px",
+            "blockClass": "payment-methods-img",
+            "link": {
+                "url": "/",
+                "openNewTab": true,
+                "title": "Medios de pago"
+            }
+        }
+    },
+    // ** Footer Mobile **
+    "flex-layout.row#contact-info-templateLanding-mobile": {
+        "children": [
+            "flex-layout.col#buyAndDelivery-mobile",
+            "flex-layout.col#whatsappPayment-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "contact-footer",
+                "bloquePrincipal",
+                "bloquePrincipal-mobile"
+            ],
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "flex-layout.col#buyAndDelivery-mobile": {
+        "children": [
+            // "flex-layout.row#how-to-buy-footer-mobile",
+            "modal-trigger#how-to-buy-footer",
+            "flex-layout.row#delivery-times-footer-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "section-buyAndDelivery-mobile"
+            ]
+        }
+    },
+    "flex-layout.col#whatsappPayment-mobile": {
+        "children": [
+            "flex-layout.row#whatsapp-footer-mobile",
+            "flex-layout.row#payment-methods-footer-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "contenedor-whatsappPayment-mobile"
+            ]
+        }
+    },
+    // Sección ¿Cómo Comprar? footer
+    "flex-layout.row#how-to-buy-footer-mobile": {
+        "children": [
+            "image#how-to-buy-footer-mobile",
+            "rich-text#how-to-bye-text-mobile"
+        ],
+        "props": {
+            "blockClass": "how-to-buy-footer",
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "image#how-to-buy-footer-mobile": {
+        "props": {
+            "src": "assets/ico/howToByIconStroke.svg",
+            "alt": "¿Cómo comprar?",
+            "height": "20px",
+            "blockClass": "how-to-buy-footer-img",
+            "link": {
+                "url": "/",
+                "openNewTab": true,
+                "title": "¿Cómo comprar?"
+            }
+        }
+    },
+    "rich-text#how-to-bye-text-mobile": {
+        "props": {
+            "text": "[¿Cómo comprar?](https://www.ceramicaitalia.com/como-comprar)",
+            "blockClass": "how-to-buy-footer-text",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // Sección Whatsapp footer
+    "flex-layout.row#whatsapp-footer-mobile": {
+        "children": [
+            "image#whatsapp-img-footer",
+            "rich-text#whatsapp-text-footer"
+        ],
+        "props": {
+            "blockClass": "whatsapp-footer",
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "image#whatsapp-img-footer-mobile": {
+        "props": {
+            "src": "assets/ico/whatsapp-icon-footer.svg",
+            "alt": "WhatsApp",
+            "height": "20px",
+            "blockClass": "contact-info-img",
+            "link": {
+                "url": "https://api.whatsapp.com/send/?phone=5715141167&text&type=phone_number&app_absent=0",
+                "openNewTab": true,
+                "title": "WhatsApp"
+            }
+        }
+    },
+    "rich-text#whatsapp-text-footer-mobile": {
+        "props": {
+            "text": "[Escríbenos](https://api.whatsapp.com/send/?phone=5715141167&text&type=phone_number&app_absent=0)",
+            "blockClass": "whatsapp-text-footer",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // Sección Tiempos de entrega footer
+    "flex-layout.row#delivery-times-footer-mobile": {
+        "children": [
+            "image#delivery-times-footer",
+            "rich-text#delivery-times-text-footer"
+        ],
+        "props": {
+            "blockClass": "delivery-times-footer",
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "image#delivery-times-footer-mobile": {
+        "props": {
+            "src": "assets/ico/timeToDelivery.svg",
+            "alt": "Tiempos de entrega",
+            "height": "20px",
+            "blockClass": "delivery-times-img",
+            "link": {
+                "url": "/",
+                "openNewTab": true,
+                "title": "Tiempos de entrega"
+            }
+        }
+    },
+    "rich-text#delivery-times-text-footer-mobile": {
+        "props": {
+            "text": "[Tiempos de entrega](https://www.ceramicaitalia.com/tiempos-de-entrega)",
+            "blockClass": "delivery-times-text-footer",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // Sección Metodos de pago footer
+    "flex-layout.row#payment-methods-footer-mobile": {
+        "children": [
+            "rich-text#payment-methods-text-footer",
+            "image#payment-methods-footer"
+        ],
+        "props": {
+            "blockClass": "payment-methods-footer",
+            "fulwidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "paddingTop": 0,
+            "paddingBottom": 0
+        }
+    },
+    "rich-text#payment-methods-text-footer-mobile": {
+        "props": {
+            "text": "[Medios de Pago](https://www.ceramicaitalia.com/medios-de-pago)",
+            "blockClass": "payment-methods-text-footer",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#payment-methods-footer-mobile": {
+        "props": {
+            "src": "assets/ico/MediosPagoCeramicaItalia.svg",
+            "alt": "Medios de pago",
+            "height": "30px",
+            "blockClass": "payment-methods-img",
+            "link": {
+                "url": "/",
+                "openNewTab": true,
+                "title": "Medios de pago"
+            }
+        }
+    }
+}

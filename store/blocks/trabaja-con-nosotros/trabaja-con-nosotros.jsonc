@@ -1,0 +1,506 @@
+{
+  "store.custom#trabaja-con-nosotros": {
+    "blocks": [
+      "flex-layout.row#miga-pan-trabaja-con-nosotros",
+      "flex-layout.row#title-trabaja-con-nosotros",
+      "flex-layout.row#textos-trabaja-con-nosotros",
+      "flex-layout.row#container-banner1-trabaja-con-nosotros",
+      "flex-layout.row#section-anuncios-trabajo",
+      "flex-layout.row#container-banner2-trabaja-con-nosotros",
+      "flex-layout.row#textos2-trabaja-con-nosotros",
+      "flex-layout.row#container-infocards-trabaja-con-nosotros",
+      "flex-layout.row#contianer-slider-end-trabaja-con-nosotros"
+    ]
+  },
+  //MIGA DE PAN PREGUNTAS FRECUENTES
+  "flex-layout.row#miga-pan-trabaja-con-nosotros": {
+    "children": [
+      "image#icono-miga-pan",
+      "rich-text#texto-1-miga-pan",
+      "rich-text#texto-2-miga-pan-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": [
+        "miga-pan-terminos-legales"
+      ]
+    }
+  },
+  // TEXTO 2 MIGA DE PAN 
+  "rich-text#texto-2-miga-pan-trabaja-con-nosotros": {
+    "props": {
+      "blockClass": [
+        "texto-2-miga-pan"
+      ],
+      // "text": "Trabaja con nosotros",
+      "text": "[Trabaja con nosotros](/trabaja-con-nosotros)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // titulo
+  "flex-layout.row#title-trabaja-con-nosotros": {
+    "children": [
+      "rich-text#title-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": [
+        "title-trabaja-con-nosotros"
+      ]
+    }
+  },
+  "rich-text#title-trabaja-con-nosotros": {
+    "props": {
+      "text": "Trabaja con nosotros",
+      "blockClass": "title-trabaja-con-nosotros",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  // textos
+  "flex-layout.row#textos-trabaja-con-nosotros": {
+    "children": [
+      "rich-text#textos-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": [
+        "textos-trabaja-con-nosotros"
+      ]
+    }
+  },
+  "rich-text#textos-trabaja-con-nosotros": {
+    "props": {
+      "text": "¿Eres apasionado a la mejora contínua y quieres ayudar a las personas a construir su espacio perfecto?",
+      "blockClass": "textos-trabaja-con-nosotros",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  // slider 1
+  "flex-layout.row#container-banner1-trabaja-con-nosotros": {
+    "children": [
+      "list-context.image-list#banner1Slider-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": [
+        "container-banner1-trabaja-con-nosotros-slider"
+      ]
+    }
+  },
+  "list-context.image-list#banner1Slider-trabaja-con-nosotros": {
+    "children": [
+      "slider-layout#banner1-trabaja-con-nosotros"
+    ],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "arquivos/banner-trabaja-con-nosotros.png",
+          "mobileImage": "arquivos/banner1-muestra-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner1-trabaja-con-nosotros": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": [
+        "banner1-trabaja-con-nosotros-slider"
+      ]
+      // "autoplay": {
+      //   "timeout": 3000,
+      //   "stopOnHover": true
+      // }
+    }
+  },
+  // section trabajos
+  "flex-layout.row#section-anuncios-trabajo": {
+    "title": "anuncios de empleos",
+    "children": [
+      "flex-layout.col#section-anuncios-trabajo"
+    ],
+    "props": {
+      "blockClass": "section-anuncios-trabajo",
+      "fulwidth": false
+    }
+  },
+  "flex-layout.col#section-anuncios-trabajo": {
+    "title": "anuncios de empleos",
+    "children": [
+      "rich-text#title-section-anuncios",
+      // "flex-layout.row#container-slider-vacantes",
+      "custom-Search",
+      "rich-text#text1-anuncios",
+      "rich-text#text2-anuncios",
+      "flex-layout.row#btns-anuncios",
+      "flex-layout.row#separador-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": "section-anuncios-trabajo",
+      "fulwidth": false
+    }
+  },
+  "rich-text#title-section-anuncios": {
+    "props": {
+      "text": "Algunas vacantes disponibles",
+      "blockClass": "title-section-anuncios",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#text1-anuncios": {
+    "props": {
+      "text": "¡Nuestro equipo de Atracción desea conocerte!",
+      "blockClass": "text1-anuncios",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#text2-anuncios": {
+    "props": {
+      "text": "¡Regístrate aquí, anexa tu hoja de vida y atrévete a ser parte de nuestro equipo de Guardianes Cisa!",
+      "blockClass": "text2-anuncios",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  // section btns
+  "flex-layout.row#btns-anuncios": {
+    "children": [
+      "disclosure-layout-group#group",
+      // "rich-text#btn1-postularme",
+      "rich-text#btn2-computrabajo"
+    ],
+    "props": {
+      "blockClass": [
+        "btns-anuncios"
+      ],
+      "preventHorizontalStretch": false
+    }
+  },
+  "rich-text#btn1-postularme": {
+    "props": {
+      "text": "Quiero postularme",
+      "blockClass": "btn1-postularme",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#btn2-computrabajo": {
+    "props": {
+      "text": "[Aplicar con Computrabajo](#)",
+      "blockClass": "btn2-computrabajo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#separador-trabaja-con-nosotros": {
+    "children": [
+      "image#linea-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": [
+        "separador-trabaja-con-nosotros"
+      ]
+    }
+  },
+  "image#linea-trabaja-con-nosotros": {
+    "props": {
+      "src": "assets/ico/linea-trabajo.svg",
+      "alt": "alt",
+      //  "height": "hight",
+      "blockClass": "linea-trabaja-con-nosotros"
+    }
+  },
+  // slider vacantes
+  "flex-layout.row#container-slider-vacantes": {
+    "children": [
+      "list-context.image-list#slider-vacantes"
+    ],
+    "props": {
+      "blockClass": [
+        "container-slider-vacana"
+      ]
+    }
+  },
+  "list-context.image-list#slider-vacantes": {
+    "children": [
+      "slider-layout#vacantes"
+    ],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "arquivos/banner2-slider-tn.png",
+          "mobileImage": "arquivos/banner2-slider-tn-mobile.png"
+        },
+        {
+          "image": "arquivos/banner-slider-tn.png",
+          "mobileImage": "arquivos/banner-slider-tn-mobile.png"
+        },
+        {
+          "image": "arquivos/banner2-slider-tn.png",
+          "mobileImage": "arquivos/prueba-slider-1.png"
+        },
+        {
+          "image": "arquivos/banner-slider-tn.png",
+          "mobileImage": "arquivos/prueba-slider-2.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#vacantes": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": [
+        "slider-vacantes"
+      ]
+      // "autoplay": {
+      //   "timeout": 3000,
+      //   "stopOnHover": true
+      // }
+    }
+  },
+
+  // slider 1
+  "flex-layout.row#container-banner2-trabaja-con-nosotros": {
+    "children": [
+      "list-context.image-list#banner2Slider-trabaja-con-nosotros"
+    ],
+    "props": {
+      "blockClass": [
+        "container-banner2-trabaja-con-nosotros-slider"
+      ]
+    }
+  },
+  "list-context.image-list#banner2Slider-trabaja-con-nosotros": {
+    "children": [
+      "slider-layout#banner1-trabaja-con-nosotros"
+    ],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "arquivos/banner-trabaja-con-nosotros.png",
+          "mobileImage": "arquivos/banner1-muestra-mobile.png"
+        }
+      ]
+    }
+  },
+
+    // textos
+    "flex-layout.row#textos2-trabaja-con-nosotros": {
+      "children": [
+        "rich-text#textos2-trabaja-con-nosotros"
+      ],
+      "props": {
+        "blockClass": [
+          "textos2-trabaja-con-nosotros"
+        ]
+      }
+    },
+    "rich-text#textos2-trabaja-con-nosotros": {
+      "props": {
+        "text": "¡Aquí sentimos la vida a través del cambio, por eso te presentamos el perfil que nos caracteriza como Guardianes Cisa!",
+        "blockClass": "textos2-trabaja-con-nosotros",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    // infocards trabaja con nosotros
+
+
+     "flex-layout.row#container-infocards-trabaja-con-nosotros": {
+       "children": ["list-context.info-card-list#trabaja-con-nosotros-infocards"],
+       "props": {
+         "blockClass": ["container-infocards-trabaja-con-nosotros"]
+       }
+     },
+  "list-context-renderer#trabaja-con-nosotros-infocards": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": "infocards-trabaja-con-nosotros"
+    }
+  },
+  "list-context.info-card-list#trabaja-con-nosotros-infocards": {
+    "children": [
+        "list-context-renderer#trabaja-con-nosotros-infocards"
+    ],
+    "props": {
+        "infoCards": [
+            {
+                "id": "infocard-trabaja-con-nosotros-1",
+                "title": "infocard-trabaja-con-nosotros-1",
+                "isFullModeStyle": true,
+                "textPosition": "left",
+                "imageUrl": "/arquivos/banner-infocard-tn.png",
+                "imageActionUrl": "",
+                "headline": "Trabajamos en equipo",
+                "subhead": "Sabemos que juntos llegaremos lejos, por eso nos integramos y colaboramos de forma activa en el logro de metas comunes",
+                "callToActionMode":"link",
+                "callToActionText": "",
+                "callToActionUrl": "#",
+                "blockClass": [
+                    "infocard-trabaja-con-nosotros"
+                ]
+            },
+            {
+              "id": "infocard-trabaja-con-nosotros-2",
+              "title": "infocard-trabaja-con-nosotros-2",
+              "isFullModeStyle": true,
+              "textPosition": "left",
+              "imageUrl": "/arquivos/banner-infocard-tn.png",
+              "imageActionUrl": "",
+              "headline": "Somos Innovadores",
+              "subhead": "Buscamos la mejora contínua en nuestra vida, generando estrategias que aporten valor a nuestro proceso",
+              "callToActionMode":"link",
+              "callToActionText": "",
+              "callToActionUrl": "#",
+              "blockClass": [
+                  "infocard-trabaja-con-nosotros"
+              ]
+          },
+          {
+            "id": "infocard-trabaja-con-nosotros-3",
+            "title": "infocard-trabaja-con-nosotros-4",
+            "isFullModeStyle": true,
+            "textPosition": "left",
+            "imageUrl": "/arquivos/banner-infocard-tn.png",
+            "imageActionUrl": "",
+            "headline": "Efectivos",
+            "subhead": "Somos capaces de lograr los objetivos propuestos usando los recursos disponibles y en el tiempo establecido con la intención de mejorar nuestros procesos internos",
+            "callToActionMode":"link",
+            "callToActionText": "",
+            "callToActionUrl": "#",
+            "blockClass": [
+                "infocard-trabaja-con-nosotros"
+            ]
+        },
+        {
+          "id": "infocard-trabaja-con-nosotros-4",
+          "title": "infocard-trabaja-con-nosotros-4",
+          "isFullModeStyle": true,
+          "textPosition": "left",
+          "imageUrl": "/arquivos/banner-infocard-tn.png",
+          "imageActionUrl": "",
+          "headline": "Pensamiento estratégico",
+          "subhead": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+          "callToActionMode":"link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": [
+              "infocard-trabaja-con-nosotros"
+          ]
+        },
+        {
+          "id": "infocard-trabaja-con-nosotros-5",
+          "title": "infocard-trabaja-con-nosotros-5",
+          "isFullModeStyle": true,
+          "textPosition": "left",
+          "imageUrl": "/arquivos/banner-infocard-tn.png",
+          "imageActionUrl": "",
+          "headline": "La comunicación es el centro",
+          "subhead": "Contamos con la capacidad y habilidad de comunicar o expresar claramente las ideas, asegurando que sean comprendidas de forma efectiva y logremos asi el cambio esperado.",
+          "callToActionMode":"link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": [
+              "infocard-trabaja-con-nosotros"
+          ]
+        },
+        {
+          "id": "infocard-trabaja-con-nosotros-6",
+          "title": "infocard-trabaja-con-nosotros-6",
+          "isFullModeStyle": true,
+          "textPosition": "left",
+          "imageUrl": "/arquivos/banner-infocard-tn.png",
+          "imageActionUrl": "",
+          "headline": "Somos guardianes",
+          "subhead": "Sentimos orgullo, pertenencia y plena disposición por cumplir nuestro propósito de vida a su vez que aportamos al propósito global de nuestra compañía",
+          "callToActionMode":"link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": [
+              "infocard-trabaja-con-nosotros"
+          ]
+        }
+        ]
+    }
+},
+
+// section slider final 
+
+"flex-layout.row#contianer-slider-end-trabaja-con-nosotros": {
+  "children": ["list-context.image-list#slider-layout#slider-end-trabaja-con-nosotros"],
+  "props": {
+    "blockClass": ["contianer-slider-end-trabaja-con-nosotros"]
+  }
+},
+
+"list-context.image-list#slider-layout#slider-end-trabaja-con-nosotros": {
+  "children": [
+    "slider-layout#slider-end-trabaja-con-nosotros"
+  ],
+  "props": {
+    // "height": 344,
+    "preload": true,
+    "images": [
+      {
+        "image": "arquivos/slider-tn-1.png",
+        "mobileImage": "arquivos/slider-tn-1.png"
+      },
+      {
+        "image": "arquivos/slider-tn-2.png",
+        "mobileImage": "arquivos/slider-tn-2.png"
+      },
+      {
+        "image": "arquivos/slider-tn-3.png",
+        "mobileImage": "arquivos/slider-tn-3.png"
+      },
+      {
+        "image": "arquivos/slider-tn-4.png",
+        "mobileImage": "arquivos/slider-tn-4.png"
+      },{
+        "image": "arquivos/slider-tn-1.png",
+        "mobileImage": "arquivos/slider-tn-1.png"
+      }
+    ]
+  }
+},
+"slider-layout#slider-end-trabaja-con-nosotros": {
+  "title": "slider-end-trabaja-con-nosotros",
+  "props": {
+    "itemsPerPage": {
+      "desktop": 4,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "always",
+    "showPaginationDots": "always",
+    "blockClass": "slider-end-trabaja-con-nosotros",
+    "arrowSize": 12,
+    "centerMode": "disabled"
+  }
+}
+
+}

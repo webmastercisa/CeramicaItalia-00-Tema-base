@@ -1,0 +1,99 @@
+{
+  "flex-layout.row#Footer-Xtrategik-mobile": {
+    "children": ["flex-layout.row#Footer-Xtrategik-CT-mobile"],
+    "props": {
+      "blockClass": "Footer-Xtrategik",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+  "flex-layout.row#Footer-Xtrategik-CT-mobile": {
+    "children": [
+      "rich-text#TextoDerechos-mobile",
+      "flex-layout.row#xtrategik-brand-mobile",
+      "flex-layout.row#vtex-brand-mobile"
+    ],
+    "props": {
+      "blockClass": "Footer-Xtrategik-CT",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": false,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 6,
+      "paddingBottom": 6
+    }
+  },
+  "rich-text#TextoDerechos-mobile": {
+    "props": {
+      "text": "© Copyright 2023 Cerámica Italia S.A. - Todos los derechos reservados",
+      "blockClass": "CopyrigthTextoXtrategik",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+
+  "flex-layout.row#xtrategik-brand-mobile": {
+    "children": ["rich-text#TextoXtrategik-mobile", "image#xtrategik-logo-mobile"],
+    "props": {
+      "blockClass": ["xtrategik-brand"]
+    }
+  },
+  "rich-text#TextoXtrategik-mobile": {
+    "props": {
+      "text": "Sitio desarrollador por",
+      "blockClass": "TextoXtrategik",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#xtrategik-logo-mobile": {
+    "props": {
+        "src": "assets/ico/logoXtrategik.svg",
+        "alt": "Xtrategik S.A.S",
+        "height": "25px",
+        "blockClass": "xtrategik-logo-img",
+        "link": {
+            "url": "https://www.xtrategik.com/",
+            "openNewTab": true,
+            "title": "Xtrategik"
+        }
+    }
+},
+
+"flex-layout.row#vtex-brand-mobile": {
+  "children": ["rich-text#TextoTecnologiaVTEX-mobile", "image#vtex-logo-mobile"],
+  "props": {
+    "blockClass": ["vtex-brand"]
+  }
+},
+  "rich-text#TextoTecnologiaVTEX-mobile": {
+    "props": {
+      "text": "Tecnología",
+      "blockClass": "TextoTecnologiaVTEX",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "image#vtex-logo-mobile": {
+    "props": {
+        "src": "assets/ico/vtexLogo.svg",
+        "alt": "Vtex logo",
+        "height": "13px",
+        "blockClass": "vtex-logo-img",
+        "link": {
+            "url": "https://vtex.com/es-es/",
+            "openNewTab": true,
+            "title": "Vtex"
+        }
+    }
+}
+
+}

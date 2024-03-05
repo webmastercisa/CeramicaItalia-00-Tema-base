@@ -1,0 +1,20 @@
+.groupName {
+  font-size: 1.25rem;
+}
+
+.specificationName {
+  font-weight: bold;
+}
+
+
+/* .specificationValue{
+  color: #666666;
+} */
+
+.specificationValue::after {
+  content: ", ";
+}
+
+.specificationValue--last::after {
+  content: "";
+}

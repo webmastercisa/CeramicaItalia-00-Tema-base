@@ -1,0 +1,286 @@
+{
+  "store.custom#quienes-somos": {
+    "blocks": [
+      "flex-layout.row#contenedor-seccion-quienes-somos"
+    ]
+  },
+
+    //CONTENEDOR SECCION QUIENES SOMOS
+    "flex-layout.row#contenedor-seccion-quienes-somos": {
+      "children": ["flex-layout.col#contenedor-seccion-quienes-somos"],
+      "props":{
+        "blockClass":"contenedor-seccion-terminos-legales"
+      }
+    },
+    "flex-layout.col#contenedor-seccion-quienes-somos": {
+      "children": [
+        "flex-layout.row#miga-pan-quienes-somos",
+        "rich-text#titulo-seccion-quienes-somos",
+        "rich-text#texto-1-seccion-quienes-somos",
+        "video#banner-quienes-somos",
+        "rich-text#texto-2-seccion-quienes-somos",
+        "list-context.info-card-list#infocard-bloque-3-quienes-somos",
+        "list-context.info-card-list#infocards-bloque-4-quienes-somos"
+      ],
+      "props":{
+        "blockClass":"contenedor-seccion-terminos-legales"
+      }
+    },
+
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-quienes-somos": {
+      "children": [
+        "image#icono-miga-pan",
+        "rich-text#texto-1-miga-pan",
+        "rich-text#texto-2-miga-pan-quienes-somos"
+      ],
+      "props": {
+        "blockClass": ["miga-pan-terminos-legales"]
+      }
+    },
+    // TEXTO 2 MIGA DE PAN PREGUNTAS FRECUENTES
+    "rich-text#texto-2-miga-pan-quienes-somos": {
+      "props": {
+        "blockClass": ["texto-2-miga-pan"],
+        // "text": "Quienes Somos",
+        "text": "[Quienes Somos](/quienes-somos)",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    // TITULO SECCION QUIENES SOMOS
+    "rich-text#titulo-seccion-quienes-somos": {
+      "props": {
+        "blockClass": ["titulo-seccion-terminos-legales"],
+        "text": "¿Quiénes somos?"
+      }
+    },
+
+    //TEXTO SECCION QUIENES SOMOS
+    "rich-text#texto-1-seccion-quienes-somos": {
+      "props": {
+        "blockClass": ["texto-seccion-terminos-legales"],
+        "text": "Así sentimos la vida a través del cambio"
+      }
+    },
+
+    //VIDEO SECCION QUIENES SOMOS
+    "video#banner-quienes-somos": {
+      "props": {
+        "width": "100%",
+        "height": "600px",
+        "loop": false,
+        "autoPlay": true,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=wygFqZXMIco",
+        "blockClass": "banner-quienes-somos"
+      }
+    },
+
+    //TEXTO 2 SECCION QUIENES SOMOS
+    "rich-text#texto-2-seccion-quienes-somos": {
+      "props": {
+        "blockClass": ["texto-2-seccion-quienes-somos"],
+        "text": "En Cerámica Italia queremos que sientas la vida a través del cambio porque entendemos que el éxito es vivir la vida a tu manera; construimos valor por medio de la innovación, la búsqueda de nuevas tendencias y diseños, inspirando cambios y transformando la vida de todos nuestros grupos de interés.\n\nFabricamos revestimientos cerámicos y comercializamos  acabados para la construcción ofreciéndote una solución integral para que construyas tu estilo de vida perfecto\n\n#Sientelavida"
+      }
+    },
+
+    //BLOQUE 3 SLIDER DE INFOCARDS
+    "list-context.info-card-list#infocard-bloque-3-quienes-somos": {
+      "children": [
+          "slider-layout#slider-bloque-3-quienes-somos"
+      ],
+      "props": {
+          "infoCards": [
+              {
+                  "id": "infocard-bloque-3-quienes-somos-1",
+                  "title": "infocard-bloque-3-quienes-somos-1",
+                  "isFullModeStyle": false,
+                  "textPosition": "right",
+                  "imageUrl": "/arquivos/img1-infocard-bloque-3-QS.png",
+                  "imageActionUrl": "/",
+                  "headline": "",
+                  "subhead": "Hacia finales de los años 70, comisiones internacionales llevaron a cabo estudios de caracterización de las arcillas de la región del Norte de Santander.Estos análisis arrojaron como resultado, la identificación de arcillas rojas tipo caolítica y Lítica, que presentaban propiedades físicas aptas para la producción de revestimientos de alta calidad a través de procesos sencillos y con menor uso y aplicación de aditivos industriales.Este resultado presentó como una oportunidad clara, la generación de un proyecto empresarial dirigido a aprovechar los beneficios de estos recursos naturales, en una cadena productiva eficaz y de alto desempeño.",
+                  "callToActionUrl": "#",
+                  "blockClass": [
+                      "infocard-bloque-3-quienes-somos"
+                  ]
+              },
+              {
+                "id": "infocard-bloque-3-quienes-somos-2",
+                "title": "infocard-bloque-3-quienes-somos-2",
+                "isFullModeStyle": false,
+                "textPosition": "right",
+                "imageUrl": "/arquivos/img2-infocard-bloque-3-QS.png",
+                "imageActionUrl": "/",
+                "headline": "",
+                "subhead": "El 17 de junio de 1.983 se consolida en San José de Cúcuta, la idea de un grupo de empresarios locales de fabricar una baldosa esmaltada que diera un vuelco total a la fabricación tradicional de tabletas. Inaugurada por el entonces presidente Belisario Betancourt, se presenta como una respuesta natural a las bondades extraordinarias de las arcillas de la región. En el transcurso de su historia, la planta de revestimiento cerámico ha crecido de forma constante, pasando de una capacidad de un millón de metros cuadrados en el año de 1985 a cerca de doce millones de metros cuadrados en la actualidad",
+                "callToActionUrl": "#",
+                "blockClass": [
+                    "infocard-bloque-3-quienes-somos"
+                ]
+            },
+            {
+              "id": "infocard-bloque-3-quienes-somos-3",
+              "title": "infocard-bloque-3-quienes-somos-3",
+              "isFullModeStyle": false,
+              "textPosition": "right",
+              "imageUrl": "/arquivos/img3-infocard-bloque-3-QS.png",
+              "imageActionUrl": "/",
+              "headline": "Crecimiento constante",
+              "subhead": "La compañía ha tenido una constante evolución basada en una planta de producción moderna y vanguardista, de alta tecnología, acompañadas de un proceso de producción eficiente, el cual se complementa con más de 400 empleados directos que convierten a la firma cucuteña en líder de su ramo en Sudamérica",
+              "callToActionUrl": "#",
+              "blockClass": [
+                  "infocard-bloque-3-quienes-somos"
+              ]
+            }
+          ]
+      }
+  },
+  "slider-layout#slider-bloque-3-quienes-somos": {
+    "title": "lista de infocards bloque 3 quienes somos",
+    "props": {
+        "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "always",
+        "blockClass": "slider-bloque-3-quienes-somos",
+        "arrowSize": 12
+    }
+  },
+
+  //INFOCARDS BLOQUE 4 QUIENES SOMOS
+  "list-context-renderer#wrapped-bloque-4-quienes-somos": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": "infocards-bloque-4-quienes-somos"
+    }
+  },
+  "list-context.info-card-list#infocards-bloque-4-quienes-somos": {
+    "children": [
+        "list-context-renderer#wrapped-bloque-4-quienes-somos"
+    ],
+    "props": {
+        "infoCards": [
+            {
+                "id": "infocard-bloque-4-quienes-somos-1",
+                "title": "infocard-bloque-4-quienes-somos-1",
+                "isFullModeStyle": true,
+                "textPosition": "left",
+                "imageUrl": "/arquivos/img1-infocard-bloque-4-QS.png",
+                "imageActionUrl": "",
+                "headline": "Diseño",
+                "subhead": "Siempre estamos en búsqueda de nuevas tendencias para estar en línea con la innovación y el diseño",
+                "callToActionMode":"link",
+                "callToActionText": "",
+                "callToActionUrl": "#",
+                "blockClass": [
+                    "infocard-bloque-4-quienes-somos"
+                ]
+            },
+            {
+              "id": "infocard-bloque-4-quienes-somos-2",
+              "title": "infocard-bloque-4-quienes-somos-2",
+              "isFullModeStyle": true,
+              "textPosition": "left",
+              "imageUrl": "/arquivos/img2-infocard-bloque-4-QS.png",
+              "imageActionUrl": "",
+              "headline": "Expertos",
+              "subhead": "Somos una marca cercana, con alto involucramiento con nuestro cliente.",
+              "callToActionMode":"link",
+              "callToActionText": "",
+              "callToActionUrl": "#",
+              "blockClass": [
+                  "infocard-bloque-4-quienes-somos"
+              ]
+          },
+          {
+            "id": "infocard-bloque-4-quienes-somos-3",
+            "title": "infocard-bloque-4-quienes-somos-4",
+            "isFullModeStyle": true,
+            "textPosition": "left",
+            "imageUrl": "/arquivos/img3-infocard-bloque-4-QS.png",
+            "imageActionUrl": "",
+            "headline": "Reconocemos tu esfuerzo",
+            "subhead": "Nuestro compromiso es crear y entregarte lo que mereces para tu hogar",
+            "callToActionMode":"link",
+            "callToActionText": "",
+            "callToActionUrl": "#",
+            "blockClass": [
+                "infocard-bloque-4-quienes-somos"
+            ]
+        },
+        {
+          "id": "infocard-bloque-4-quienes-somos-4",
+          "title": "infocard-bloque-4-quienes-somos-4",
+          "isFullModeStyle": true,
+          "textPosition": "left",
+          "imageUrl": "/arquivos/img4-infocard-bloque-4-QS.png",
+          "imageActionUrl": "",
+          "headline": "Autorealización",
+          "subhead": "Somos parte del proceso para que logres alcanzar la satisfacción de tener un nuevo espacio",
+          "callToActionMode":"link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": [
+              "infocard-bloque-4-quienes-somos"
+          ]
+        },
+        {
+          "id": "infocard-bloque-4-quienes-somos-5",
+          "title": "infocard-bloque-4-quienes-somos-5",
+          "isFullModeStyle": true,
+          "textPosition": "left",
+          "imageUrl": "/arquivos/img5-infocard-bloque-4-QS.png",
+          "imageActionUrl": "",
+          "headline": "Impulsamos el cambio",
+          "subhead": "Logramos inspirar y fomentar el cambio a través de nuestra propuesta de valor",
+          "callToActionMode":"link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": [
+              "infocard-bloque-4-quienes-somos"
+          ]
+        },
+        {
+          "id": "infocard-bloque-4-quienes-somos-6",
+          "title": "infocard-bloque-4-quienes-somos-6",
+          "isFullModeStyle": true,
+          "textPosition": "left",
+          "imageUrl": "/arquivos/img6-infocard-bloque-4-QS.png",
+          "imageActionUrl": "",
+          "headline": "Triunfo",
+          "subhead": "Te impulsamos a sentirte pleno y victorioso al tenernos instalados en cada espacio",
+          "callToActionMode":"link",
+          "callToActionText": "",
+          "callToActionUrl": "#",
+          "blockClass": [
+              "infocard-bloque-4-quienes-somos"
+          ]
+        }
+        ]
+    }
+},
+"slider-layout#slider-bloque-4-quienes-somos": {
+  "title": "lista cards bloque-4-quienes-somos",
+  "props": {
+      "itemsPerPage": {
+          "desktop": 50,
+          "tablet": 50,
+          "phone": 50
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "slider-infocards-bloque-4-quienes-somos",
+      "arrowSize": 12
+  }
+}
+
+}

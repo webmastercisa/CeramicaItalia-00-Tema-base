@@ -1,0 +1,160 @@
+{
+    "store.custom#muestra": {
+        "blocks": [
+            "flex-layout.row#miga-pan-muestras",
+            "flex-layout.row#container-banner1",
+            "flex-layout.row#texts-muestra",
+            "flex-layout.row#title-search-muestras",
+            // "search-result-layout.customQuery#ResultadoBusqueda-landing",
+            "flex-layout.row#resultado-busqueda-landing"
+        ]
+    },
+
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-muestras": {
+        "children": [
+            "image#icono-miga-pan",
+            "rich-text#texto-1-miga-pan",
+            "rich-text#texto-2-miga-pan-muestras"
+        ],
+        "props": {
+            "blockClass": [
+                "miga-pan-terminos-legales"
+            ]
+        }
+    },
+    // TEXTO 2 MIGA DE PAN 
+    "rich-text#texto-2-miga-pan-muestras": {
+        "props": {
+            "blockClass": [
+                "texto-2-miga-pan"
+            ],
+            // "text": "Solicita tu muestra",
+            "text": "[Solicita tu muestra](/muestras)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // slider 1
+    "flex-layout.row#container-banner1": {
+      "children": ["list-context.image-list#banner1Slider"],
+      "props": {
+        "blockClass": ["container-banner1"]
+      }
+    },
+
+    "list-context.image-list#banner1Slider": {
+        "children": ["slider-layout#banner1-muestras"],
+        "props": {
+          "height": 570,
+          "preload": true,
+          "images": [
+            {
+              "image": "arquivos/banner1-muestra.png",
+              "mobileImage": "arquivos/banner1-muestra-mobile.png"
+            },
+            {
+                "image":"arquivos/banner1-muestra.png",
+                "mobileImage": "arquivos/banner1-muestra-mobile.png"
+              }
+          ]
+        }
+      },
+      "slider-layout#banner1-muestras": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "showPaginationDots": "always", 
+          "blockClass": ["banner1-muestras"],
+          "autoplay": {
+            "timeout": 3000,
+            "stopOnHover": true
+          }
+        }
+      },
+
+    //   textos muestra
+
+    "flex-layout.row#texts-muestra": {
+         "children": [
+             "flex-layout.col#texts-muestra"
+    ],
+         "props": {
+             "blockClass": "texts-muestra",
+             "fulwidth": false
+        }
+    },
+    "flex-layout.col#texts-muestra": {
+         "children": [
+            "rich-text#texts1-muestra",
+            "rich-text#texts2-muestra"
+    ],
+         "props": {
+             "blockClass": "texts-muestra",
+             "fulwidth": false
+        }
+    },
+
+    "rich-text#texts1-muestra": {
+        "props": {
+                 "text": "En Cerámica Italia  entendemos que el proceso de remodelar puede ser difícil e incluso agotador…Por eso, con estas muestras queremos facilitar tu proceso de elección y despejar cualquier duda que tengas con tus nuevos acabados.",
+                 "blockClass": "texts1-muestra",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#texts2-muestra": {
+        "props": {
+                 "text": "¡Esperamos que te gusten! ¡Te aseguramos que valdrá la pena!",
+                 "blockClass": "texts2-muestra",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    // textos
+
+    "flex-layout.row#title-search-muestras": {
+      "children": ["flex-layout.row#container-title-search-muestras", "image#linea-search-muestras"],
+      "props": {
+        "blockClass": ["title-search-muestras"],
+        "preserveLayoutOnMobile": true
+      }
+    },
+
+    "flex-layout.row#container-title-search-muestras": {
+      "children": ["rich-text#title-search-muestras"],
+      "props": {
+        "blockClass": ["container-title-search-muestras"],
+        "width": "25%"
+      }
+    },
+    "rich-text#title-search-muestras": {
+      "props": {
+           "text": "lo más nuevo de nuestra colección",
+           "blockClass": "title-search-muestras",
+           "textAlignment": "CENTER",
+           "textPosition": "CENTER"
+      }
+    },
+
+    "image#linea-search-muestras": {
+      "props": {
+           "src": "assets/ico/linea-muestra.svg",
+           "alt": "alt",
+          //  "height": "hight",
+           "blockClass": "linea-search",
+           "link": {
+               "url": "url",
+               "openNewTab": false,
+               "title": "title"
+        }
+      }
+    }
+} 

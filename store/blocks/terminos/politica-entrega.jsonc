@@ -1,0 +1,36 @@
+{
+    //TEXTO CONTENIDO POLITICA DE ENTREGA
+    "flex-layout.col#contenido-politica-entregas": {
+      "children": [
+        "rich-text#titulo-contenido-politica-entregas",
+        "rich-text#texto-11-terminos-condiciones",
+        "image#tabla-centros-logisticos",
+        "rich-text#texto-11-1-terminos-condiciones",
+        "image#boton-descargar-politica-entregas"
+      ],
+      "props": {
+        "blockClass": ["contenedor-textos-terminos-legales"]
+      }
+    },
+    "rich-text#titulo-contenido-politica-entregas": {
+      "props": {
+        "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+        "text": "POLÍTICA DE ENTREGA - CONDICIONES DE ENTREGA Y TRANSPORTE"
+      }
+    },
+
+    //BOTON DESCARGAR ARCHIVO
+    "image#boton-descargar-politica-entregas": {
+      "props": {
+               "src": "assets/imgs/boton-descargar.svg",
+               "alt": "alt",
+               "height": "30px",
+               "blockClass": "boton-descargar-terminos-preguntas",
+               "link": {
+                       "url": "https://ceramicaitalia.vteximg.com.br/arquivos/politica-entregas.pdf",
+                       "openNewTab": true,
+                       "title": "boton-descargar"
+          }
+      }
+   }
+}

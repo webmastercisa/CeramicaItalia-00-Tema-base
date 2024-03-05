@@ -1,0 +1,1110 @@
+{
+  //Sección Menu Mobile Baños
+  "flex-layout.row#menu-mobile-baños": {
+    "children": [
+      "flex-layout.col#menu-mobile-baños"
+    ],
+    "props": {
+      "blockClass": "section-menu-mobile-drawer",
+      "fulwidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#menu-mobile-baños": {
+    "children": [
+      "drawer#mobile-baños"
+    ],
+    "props": {
+      "blockClass": "container-mobile-drawer",
+      "fulwidth": true
+    }
+  },
+  //Drawer mobile baños
+  "drawer#mobile-baños": {
+    "children": [
+      "menu#drawer-mobile-baños"
+    ],
+    "blocks": [
+      "drawer-trigger#mobile-baños"
+    ],
+    "props": {
+      "blockClass": "drawer-mobile"
+    }
+  },
+  "drawer-trigger#mobile-baños": {
+    "children": [
+      "rich-text#link-drawer-mobile-baños"
+    ],
+    "props": {
+      "blockClass": "trigger-mobile-baños"
+    }
+  },
+  "image#flecha-drawer-mobile-baños": {
+    "props": {
+      "src": "assets/ico/icono-flecha-negra.svg",
+      "width": "17px",
+      "blockClass": "arrow-drawer-mobile"
+    }
+  },
+  "rich-text#link-drawer-mobile-baños": {
+    "props": {
+      "text": "Baños",
+      "blockClass": "link-drawer-mobile-baños"
+    }
+  },
+  "menu#drawer-mobile-baños": {
+    "children": [
+      "drawer-header#my-drawer",
+      "flex-layout.row#section-return",
+      "vtex.menu@2.x:menu#section-banos-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "drawer-interno-mobile"
+      ]
+    }
+  },
+  "flex-layout.row#section-return": {
+    "props": {
+      "blockClass": "section-return-mobile",
+      "colSizing": "auto",
+      "fullWidth": false,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false
+    },
+    "children": [
+      "drawer-close-button"
+    ]
+  },
+  "vtex.menu@2.x:menu#section-banos-mobile": {
+    "title": "Menú bano mobile autogestionable",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "MenuBanos-Mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item-category-items-combos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/banos/Combos",
+            "noFollow": false,
+            "tagTitle": "Combos",
+            "text": "Combos"
+          }
+        },
+        {
+          "id": "menu-item-category-items-muebles-de-bano",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/muebles-de-bano",
+            "noFollow": false,
+            "tagTitle": "Muebles de baño",
+            "text": "Muebles de baño"
+          }
+        },
+        {
+          "id": "menu-item-category-items-lavamanos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/banos/Lavamanos",
+            "noFollow": false,
+            "tagTitle": "Lavamanos",
+            "text": "Lavamanos"
+          }
+        },
+        {
+          "id": "menu-item-category-items-sanitario",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/banos/Sanitario",
+            "noFollow": false,
+            "tagTitle": "Sanitario",
+            "text": "Sanitario"
+          }
+        },
+        {
+          "id": "menu-item-category-items-hidromasajes-tinas",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/banos/Hidromasajes-y-tinas",
+            "noFollow": false,
+            "tagTitle": "Hidromasajes y tinas",
+            "text": "Hidromasajes y tinas"
+          }
+        },
+        {
+          "id": "menu-item-category-items-repuestos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/banos/Repuestos",
+            "noFollow": false,
+            "tagTitle": "Repuestos",
+            "text": "Repuestos"
+          }
+        }
+      ]
+    }
+  },
+
+
+  //Sección Menu Mobile Pisos
+  "flex-layout.row#menu-mobile-pisos": {
+    "children": [
+      "flex-layout.col#menu-mobile-pisos"
+    ],
+    "props": {
+      "blockClass": "section-menu-mobile-drawer",
+      "fulwidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#menu-mobile-pisos": {
+    "children": [
+      "drawer#mobile-pisos"
+    ],
+    "props": {
+      "blockClass": "container-mobile-drawer",
+      "fulwidth": true
+    }
+  },
+  //Drawer mobile pisos
+  "drawer#mobile-pisos": {
+    "children": [
+      "menu#drawer-mobile-pisos"
+    ],
+    "blocks": [
+      "drawer-trigger#mobile-pisos"
+    ],
+    "props": {
+      "blockClass": "drawer-mobile"
+    }
+  },
+  "drawer-trigger#mobile-pisos": {
+    "children": [
+      "rich-text#link-drawer-mobile-pisos"
+    ],
+    "props": {
+      "blockClass": "trigger-mobile-pisos"
+    }
+  },
+  "image#flecha-drawer-mobile-pisos": {
+    "props": {
+      "src": "assets/ico/icono-flecha-negra.svg",
+      "width": "17px",
+      "blockClass": "arrow-drawer-mobile"
+    }
+  },
+  "rich-text#link-drawer-mobile-pisos": {
+    "props": {
+      "text": "Pisos",
+      "blockClass": "link-drawer-mobile-pisos"
+    }
+  },
+  "menu#drawer-mobile-pisos": {
+    "children": [
+      "drawer-header#my-drawer",
+      "flex-layout.row#section-return",
+      "vtex.menu@2.x:menu#section-pisos-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "drawer-interno-mobile"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#section-pisos-mobile": {
+      "title": "Menú pisos mobile autogestionable",
+      "props": {
+        "orientation": "vertical",
+        "blockClass": [
+          "MenuPisos-Mobile"
+        ],
+        "items": [
+          {
+            "id": "menu-item-category-items-interior",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/pisos/interior",
+              "noFollow": false,
+              "tagTitle": "Interior",
+              "text": "Interior"
+            }
+          },
+          {
+            "id": "menu-item-category-items-exterior",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/pisos/exterior",
+              "noFollow": false,
+              "tagTitle": "Exterior",
+              "text": "Exterior"
+            }
+          }
+        ]
+      }
+  },
+
+
+  //Sección Menu Mobile paredes
+  "flex-layout.row#menu-mobile-paredes": {
+    "children": [
+      "flex-layout.col#menu-mobile-paredes"
+    ],
+    "props": {
+      "blockClass": "section-menu-mobile-drawer",
+      "fulwidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#menu-mobile-paredes": {
+    "children": [
+      "drawer#mobile-paredes"
+    ],
+    "props": {
+      "blockClass": "container-mobile-drawer",
+      "fulwidth": true
+    }
+  },
+  //Drawer mobile paredes
+  "drawer#mobile-paredes": {
+    "children": [
+      "menu#drawer-mobile-paredes"
+    ],
+    "blocks": [
+      "drawer-trigger#mobile-paredes"
+    ],
+    "props": {
+      "blockClass": "drawer-mobile"
+    }
+  },
+  "drawer-trigger#mobile-paredes": {
+    "children": [
+      "rich-text#link-drawer-mobile-paredes"
+    ],
+    "props": {
+      "blockClass": "trigger-mobile-paredes"
+    }
+  },
+  "image#flecha-drawer-mobile-paredes": {
+    "props": {
+      "src": "assets/ico/icono-flecha-negra.svg",
+      "width": "17px",
+      "blockClass": "arrow-drawer-mobile"
+    }
+  },
+  "rich-text#link-drawer-mobile-paredes": {
+    "props": {
+      "text": "Paredes",
+      "blockClass": "link-drawer-mobile-paredes"
+    }
+  },
+  "menu#drawer-mobile-paredes": {
+    "children": [
+      "drawer-header#my-drawer",
+      "flex-layout.row#section-return",
+      "vtex.menu@2.x:menu#section-paredes-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "drawer-interno-mobile"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#section-paredes-mobile": {
+    "title": "Menú paredes mobile autogestionable",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "Menuparedes-Mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item-category-items-fachaletas",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/exterior?map=diseno",
+            "noFollow": false,
+            "tagTitle": "Fachaletas",
+            "text": "Fachaletas"
+          }
+        },
+        {
+          "id": "menu-item-category-items-acentos-decorados",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/decorado?map=diseno",
+            "noFollow": false,
+            "tagTitle": "Acentos decorados",
+            "text": "Acentos decorados"
+          }
+        },
+        {
+          "id": "menu-item-category-items-cementos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/cemento?map=diseno",
+            "noFollow": false,
+            "tagTitle": "Cementos",
+            "text": "Cementos"
+          }
+        },
+        {
+          "id": "menu-item-category-items-marmolizados",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/marmolizado?map=diseno",
+            "noFollow": false,
+            "tagTitle": "marmolizados",
+            "text": "Marmolizados"
+          }
+        },
+        {
+          "id": "menu-item-category-items-naturales",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/paredes-natural",
+            "noFollow": false,
+            "tagTitle": "Natural",
+            "text": "Natural"
+          }
+        },
+        {
+          "id": "menu-item-category-items-oxidos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/oxido?map=diseno",
+            "noFollow": false,
+            "tagTitle": "Óxidos",
+            "text": "Óxidos"
+          }
+        },
+        {
+          "id": "menu-item-category-items-planos-y-lisos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/plano?map=diseno",
+            "noFollow": false,
+            "tagTitle": "Planos y lisos",
+            "text": "Planos y lisos"
+          }
+        },
+        {
+          "id": "menu-item-category-items-hidraulico",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/hidraulico?map=diseno",
+            "noFollow": false,
+            "tagTitle": "Hidráulico",
+            "text": "Hidráulico"
+          }
+        },
+        {
+          "id": "menu-item-category-items-maderas",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/madera?map=diseno",
+            "noFollow": false,
+            "tagTitle": "Maderas",
+            "text": "Maderas"
+          }
+        }
+      ]
+    }
+  },
+
+
+  //Sección Menu Mobile Porcelanatos
+  "flex-layout.row#menu-mobile-porcelanatos": {
+    "children": [
+      "flex-layout.col#menu-mobile-porcelanatos"
+    ],
+    "props": {
+      "blockClass": "section-menu-mobile-drawer",
+      "fulwidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#menu-mobile-porcelanatos": {
+    "children": [
+      "drawer#mobile-porcelanatos"
+    ],
+    "props": {
+      "blockClass": "container-mobile-drawer",
+      "fulwidth": true
+    }
+  },
+  //Drawer mobile porcelanatos
+  "drawer#mobile-porcelanatos": {
+    "children": [
+      "menu#drawer-mobile-porcelanatos"
+    ],
+    "blocks": [
+      "drawer-trigger#mobile-porcelanatos"
+    ],
+    "props": {
+      "blockClass": "drawer-mobile"
+    }
+  },
+  "drawer-trigger#mobile-porcelanatos": {
+    "children": [
+      "rich-text#link-drawer-mobile-porcelanatos"
+    ],
+    "props": {
+      "blockClass": "trigger-mobile-porcelanatos"
+    }
+  },
+  "image#flecha-drawer-mobile-porcelanatos": {
+    "props": {
+      "src": "assets/ico/icono-flecha-negra.svg",
+      "width": "17px",
+      "blockClass": "arrow-drawer-mobile"
+    }
+  },
+  "rich-text#link-drawer-mobile-porcelanatos": {
+    "props": {
+      "text": "Porcelanatos",
+      "blockClass": "link-drawer-mobile-porcelanatos"
+    }
+  },
+  "menu#drawer-mobile-porcelanatos": {
+    "children": [
+      "drawer-header#my-drawer",
+      "flex-layout.row#section-return",
+      "vtex.menu@2.x:menu#section-porcelanatos-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "drawer-interno-mobile"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#section-porcelanatos-mobile": {
+    "title": "Menú porcelanatos mobile autogestionable",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "Menuporcelanatos-Mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item-category-items-madera",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/porcelanatos/madera",
+            "noFollow": false,
+            "tagTitle": "Madera",
+            "text": "Madera"
+          }
+        },
+        {
+          "id": "menu-item-category-items-marmolizados",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/porcelanatos/marmolizados",
+            "noFollow": false,
+            "tagTitle": "Marmolizados",
+            "text": "Marmolizados"
+          }
+        },
+        {
+          "id": "menu-item-category-items-cementos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/porcelanatos/cementos",
+            "noFollow": false,
+            "tagTitle": "Cementos",
+            "text": "Cementos"
+          }
+        },
+        {
+          "id": "menu-item-category-items-planos-y-lisos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/porcelanatos/planos-y-lisos",
+            "noFollow": false,
+            "tagTitle": "Planos y lisos",
+            "text": "Planos y lisos"
+          }
+        }
+      ]
+    }
+  },
+
+
+  //Sección Menu Mobile Muebles de Baño
+  "flex-layout.row#menu-mobile-muebles-bano": {
+    "children": [
+      "flex-layout.col#menu-mobile-muebles-bano"
+    ],
+    "props": {
+      "blockClass": "section-menu-mobile-drawer",
+      "fulwidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#menu-mobile-muebles-bano": {
+    "children": [
+      "drawer#mobile-muebles-bano"
+    ],
+    "props": {
+      "blockClass": "container-mobile-drawer",
+      "fulwidth": true
+    }
+  },
+  //Drawer mobile muebles-bano
+  "drawer#mobile-muebles-bano": {
+    "children": [
+      "menu#drawer-mobile-muebles-bano"
+    ],
+    "blocks": [
+      "drawer-trigger#mobile-muebles-bano"
+    ],
+    "props": {
+      "blockClass": "drawer-mobile"
+    }
+  },
+  "drawer-trigger#mobile-muebles-bano": {
+    "children": [
+      "rich-text#link-drawer-mobile-muebles-bano"
+    ],
+    "props": {
+      "blockClass": "trigger-mobile-muebles-bano"
+    }
+  },
+  "image#flecha-drawer-mobile-muebles-bano": {
+    "props": {
+      "src": "assets/ico/icono-flecha-negra.svg",
+      "width": "17px",
+      "blockClass": "arrow-drawer-mobile"
+    }
+  },
+  "rich-text#link-drawer-mobile-muebles-bano": {
+    "props": {
+      "text": "Muebles de baño",
+      "blockClass": "link-drawer-mobile-muebles-bano"
+    }
+  },
+  "menu#drawer-mobile-muebles-bano": {
+    "children": [
+      "drawer-header#my-drawer",
+      "flex-layout.row#section-return",
+      "vtex.menu@2.x:menu#section-muebles-bano-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "drawer-interno-mobile"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#section-muebles-bano-mobile": {
+    "title": "Menú muebles de baño mobile autogestionable",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "Menumuebles-bano-Mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item-category-items-piso",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/muebles-de-bano/piso",
+            "noFollow": false,
+            "tagTitle": "Piso",
+            "text": "Piso"
+          }
+        },
+        {
+          "id": "menu-item-category-items-elevados",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/muebles-de-bano/elevados", 
+            "noFollow": false,
+            "tagTitle": "Elevados",
+            "text": "Elevados"
+          }
+        },
+        {
+          "id": "menu-item-category-items-espejos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/muebles-de-bano/espejos",
+            "noFollow": false,
+            "tagTitle": "Espejos",
+            "text": "Espejos"
+          }
+        }
+      ]
+    }
+  },
+
+  //Sección Menu Mobile Griferia
+  "flex-layout.row#menu-mobile-griferia": {
+    "children": [
+      "flex-layout.col#menu-mobile-griferia"
+    ],
+    "props": {
+      "blockClass": "section-menu-mobile-drawer",
+      "fulwidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#menu-mobile-griferia": {
+    "children": [
+      "drawer#mobile-griferia"
+    ],
+    "props": {
+      "blockClass": "container-mobile-drawer",
+      "fulwidth": true
+    }
+  },
+  //Drawer mobile griferia
+  "drawer#mobile-griferia": {
+    "children": [
+      "menu#drawer-mobile-griferia"
+    ],
+    "blocks": [
+      "drawer-trigger#mobile-griferia"
+    ],
+    "props": {
+      "blockClass": "drawer-mobile"
+    }
+  },
+  "drawer-trigger#mobile-griferia": {
+    "children": [
+      "rich-text#link-drawer-mobile-griferia"
+    ],
+    "props": {
+      "blockClass": "trigger-mobile-griferia"
+    }
+  },
+  "image#flecha-drawer-mobile-griferia": {
+    "props": {
+      "src": "assets/ico/icono-flecha-negra.svg",
+      "width": "17px",
+      "blockClass": "arrow-drawer-mobile"
+    }
+  },
+  "rich-text#link-drawer-mobile-griferia": {
+    "props": {
+      "text": "Grifería",
+      "blockClass": "link-drawer-mobile-griferia"
+    }
+  },
+  "menu#drawer-mobile-griferia": {
+    "children": [
+      "drawer-header#my-drawer",
+      "flex-layout.row#section-return",
+      "vtex.menu@2.x:menu#section-griferia-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "drawer-interno-mobile"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#section-griferia-mobile": {
+    "title": "Menú griferia mobile autogestionable",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "Menugriferia-Mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item-category-items-cocina",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/griferia/lavaplatos", 
+            "noFollow": false,
+            "tagTitle": "Lavaplatos",
+            "text": "Lavaplatos"
+          }
+        },
+        {
+          "id": "menu-item-category-items-lavamanos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/griferia/lavamanos",
+            "noFollow": false,
+            "tagTitle": "Lavamanos",
+            "text": "Lavamanos"
+          }
+        },
+        {
+          "id": "menu-item-category-items-ducha",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/griferia/ducha",
+            "noFollow": false,
+            "tagTitle": "Ducha",
+            "text": "Ducha"
+          }
+        },
+        {
+          "id": "menu-item-category-items-accesorios",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/griferia/accesorios",
+            "noFollow": false,
+            "tagTitle": "Accesorios",
+            "text": "Accesorios"
+          }
+        }
+      ]
+    }
+  },
+
+
+
+  //Sección Menu Mobile complementarios
+  "flex-layout.row#menu-mobile-complementarios": {
+    "children": [
+      "flex-layout.col#menu-mobile-complementarios"
+    ],
+    "props": {
+      "blockClass": "section-menu-mobile-drawer",
+      "fulwidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#menu-mobile-complementarios": {
+    "children": [
+      "drawer#mobile-complementarios"
+    ],
+    "props": {
+      "blockClass": "container-mobile-drawer",
+      "fulwidth": true
+    }
+  },
+  //Drawer mobile complementarios
+  "drawer#mobile-complementarios": {
+    "children": [
+      "menu#drawer-mobile-complementarios"
+    ],
+    "blocks": [
+      "drawer-trigger#mobile-complementarios"
+    ],
+    "props": {
+      "blockClass": "drawer-mobile"
+    }
+  },
+  "drawer-trigger#mobile-complementarios": {
+    "children": [
+      "rich-text#link-drawer-mobile-complementarios"
+    ],
+    "props": {
+      "blockClass": "trigger-mobile-complementarios"
+    }
+  },
+  "image#flecha-drawer-mobile-complementarios": {
+    "props": {
+      "src": "assets/ico/icono-flecha-negra.svg",
+      "width": "17px",
+      "blockClass": "arrow-drawer-mobile"
+    }
+  },
+  "rich-text#link-drawer-mobile-complementarios": {
+    "props": {
+      "text": "Complementarios",
+      "blockClass": "link-drawer-mobile-complementarios"
+    }
+  },
+  "menu#drawer-mobile-complementarios": {
+    "children": [
+      "drawer-header#my-drawer",
+      "flex-layout.row#section-return",
+      "vtex.menu@2.x:menu#section-complementarios-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "drawer-interno-mobile"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#section-complementarios-mobile": {
+    "title": "Menú complementarios mobile autogestionable",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "Menucomplementarios-Mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item-category-items-pegantes",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/complementarios/pegantes", 
+            "noFollow": false,
+            "tagTitle": "Pegantes",
+            "text": "Pegantes"
+          }
+        },
+        {
+          "id": "menu-item-category-items-boquillas",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/complementarios/boquillas", 
+            "noFollow": false,
+            "tagTitle": "Boquillas",
+            "text": "Boquillas"
+          }
+        },
+        {
+          "id": "menu-item-category-items-limpieza-mantenimiento",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/complementarios/complementos-de-obra",
+            "noFollow": false,
+            "tagTitle": "Complementos de obra",
+            "text": "Complementos de obra"
+          }
+        },
+        {
+          "id": "menu-item-category-items-herramientas",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/complementarios/herramientas", 
+            "noFollow": false,
+            "tagTitle": "Herramientas",
+            "text": "Herramientas"
+          }
+        },
+        {
+          "id": "menu-item-category-items-complementarios-accesorios",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/complementarios/accesorios",
+            "noFollow": false,
+            "tagTitle": "Accesorios",
+            "text": "Accesorios"
+          }
+        }
+      ]
+    }
+  },
+
+
+  //Sección Menu Mobile servicios
+  "flex-layout.row#menu-mobile-servicios": {
+    "children": [
+      "flex-layout.col#menu-mobile-servicios"
+    ],
+    "props": {
+      "blockClass": "section-menu-mobile-drawer",
+      "fulwidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#menu-mobile-servicios": {
+    "children": [
+      "drawer#mobile-servicios"
+    ],
+    "props": {
+      "blockClass": "container-mobile-drawer",
+      "fulwidth": true
+    }
+  },
+  //Drawer mobile servicios
+  "drawer#mobile-servicios": {
+    "children": [
+      "menu#drawer-mobile-servicios"
+    ],
+    "blocks": [
+      "drawer-trigger#mobile-servicios"
+    ],
+    "props": {
+      "blockClass": "drawer-mobile"
+    }
+  },
+  "drawer-trigger#mobile-servicios": {
+    "children": [
+      "rich-text#link-drawer-mobile-servicios"
+    ],
+    "props": {
+      "blockClass": "trigger-mobile-servicios"
+    }
+  },
+  "image#flecha-drawer-mobile-servicios": {
+    "props": {
+      "src": "assets/ico/icono-flecha-negra.svg",
+      "width": "17px",
+      "blockClass": "arrow-drawer-mobile"
+    }
+  },
+  "rich-text#link-drawer-mobile-servicios": {
+    "props": {
+      "text": "Servicios",
+      "blockClass": "link-drawer-mobile-servicios"
+    }
+  },
+  "menu#drawer-mobile-servicios": {
+    "children": [
+      "drawer-header#my-drawer",
+      "flex-layout.row#section-return",
+      "vtex.menu@2.x:menu#section-servicios-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "drawer-interno-mobile"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#section-servicios-mobile": {
+    "title": "Menú servicios mobile autogestionable",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "Menuservicios-Mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item-category-items-instalacion",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/servicios/instalacion",
+            "noFollow": false,
+            "tagTitle": "Instalación",
+            "text": "Instalación"
+          }
+        },{
+          "id": "menu-item-category-items-mantenimiento",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/servicios/mantenimiento",
+            "noFollow": false,
+            "tagTitle": "Mantenimiento",
+            "text": "Mantenimiento"
+          }
+        },{
+          "id": "menu-item-category-items-servicios-sesoria",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/servicios/asesoria", 
+            "noFollow": false,
+            "tagTitle": "Asesorias",
+            "text": "Asesoria"
+          }
+        }
+      ]
+    }
+  },
+
+  // menu extra
+
+  "vtex.menu@2.x:menu#category-items-extra-mobile": {
+    "title": "Menú EXTRA mobile autogestionable",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "MenuEXTRA-Mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item-category-items-instalacion",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "tagTitle": "extra",
+            "text": "Prueba"
+          }
+        }
+      ]
+    }
+  }
+}

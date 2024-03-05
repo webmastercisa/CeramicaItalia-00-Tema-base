@@ -1,0 +1,155 @@
+{
+    // CONTENEDOR FORMULARIO CONTACTO
+    "flex-layout.col#contenedor-formulario-contacto": {
+      "children": [
+        "form#contacto"
+      ],
+      "props": {
+        "blockClass": ["contenedor-formulario-contacto"]
+      }
+    },
+    "form#contacto": {
+      "props": {
+        "entity": "CO",
+        "schema": "CONTACTO",
+        "blockClass": "formulario-contacto"
+      },
+      "children": [
+        "flex-layout.row#fila1-campos-formulario-contacto"
+      ],
+      "blocks": ["form-success#contacto"]
+    },
+    "form-success#contacto": {
+      "children": ["rich-text#success-submit-contacto"]
+    },
+    "rich-text#success-submit-contacto": {
+      "props": {
+        "text": "¡Gracias por escribirnos a **Ceramica Italia!** daremos respuesta a tu \n solicitud lo más pronto posible, queremos hacer inolvidable tu experiencia.",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    // CONTENEDOR COLUMNAS FORMULARIO CONTACTO
+
+    "flex-layout.row#fila1-campos-formulario-contacto": {
+      "children": [
+        "flex-layout.col#col1-fila1-campos-formulario-contacto",
+        "flex-layout.col#col2-campos-formulario-contacto",
+        "flex-layout.col#col3-fila1-campos-formulario-contacto"
+      ],
+      "props": {
+        "blockClass": "fila1-campos-formulario-pqrs",
+        "preventHorizontalStretch":false
+      }
+    },
+
+    //COLUMNA 1 FILA 1
+
+    "flex-layout.col#col1-fila1-campos-formulario-contacto": {
+      "children": ["image#img-col1-fila1-formulario-contacto"],
+      "props": {
+        "blockClass": "col-fila1-campos-formulario-pqrs"
+      }
+    },
+    "image#img-col1-fila1-formulario-contacto": {
+      "props": {
+        "blockClass": ["img-col1-fila1-formulario-contacto"],
+        "src": "https://ceramicaitalia.vteximg.com.br/arquivos/img-col1-fila1-formulario-contacto.png"
+      }
+    },
+
+    //COLUMNA 2 FILA 1
+
+    "flex-layout.col#col2-campos-formulario-contacto": {
+      "children": [
+        "form-input.text#nameAndLastname-formulario-contacto",
+        "form-input.text#phone-formulario-contacto",
+        "form-input.text#taxNumber-formulario-contacto",
+        "form-input.text#shoppingCity-formulario-contacto"
+      ],
+      "props": {
+        "blockClass": "col2-fila1-campos-formulario-contacto",
+        "width":"25%"
+      }
+    },
+    "form-input.text#nameAndLastname-formulario-contacto": {
+      "props": {
+        "pointer": "#/properties/nameAndLastname",
+        "placeholder": "Nombres y apellidos"
+      }
+    },
+    "form-input.text#phone-formulario-contacto": {
+      "props": {
+        "pointer": "#/properties/phone",
+        "placeholder": "Teléfono"
+      }
+    },
+    "form-input.text#phone2-formulario-contacto": {
+      "props": {
+        "pointer": "#/properties/phone2",
+        "placeholder": "Teléfono 2"
+      }
+    },
+
+    "form-input.text#phone3-formulario-contacto": {
+      "props": {
+        "pointer": "#/properties/phone3",
+        "placeholder": "Teléfono"
+      }
+    },
+    "form-input.text#taxNumber-formulario-contacto": {
+      "props": {
+        "pointer": "#/properties/taxNumber",
+        "placeholder": "Número de identificación"
+      }
+    },
+    "form-input.text#shoppingCity-formulario-contacto": {
+      "props": {
+        "pointer": "#/properties/shoppingCity",
+        "placeholder": "Ciudad dónde realizó la compra"
+      }
+    },
+
+    //COLUMNA 3 FILA 1 CONTACTO
+
+    "flex-layout.col#col3-fila1-campos-formulario-contacto": {
+      "children": [
+        "form-input.textarea#comments-formulario-contacto",
+        "flex-layout.row#contenedor-submit-formulario-contacto"
+      ],
+      "props": {
+        "blockClass": "col3-fila1-campos-formulario-pqrs",
+        "width":"40%"
+      }
+    },
+    "form-input.textarea#comments-formulario-contacto": {
+      "props": {
+        "pointer": "#/properties/comments",
+        "placeholder": "Comentarios"
+      }
+    },
+
+      //FILA SUBMIT
+  "flex-layout.row#contenedor-submit-formulario-contacto": {
+    "children": [
+      "form-input.checkbox#agreement-formulario-contacto",
+      "form-submit#boton-submit-formulario-contacto"
+    ],
+    "props":{
+      "blockClass":"contenedor-submit-formulario-contacto"
+    }
+  },
+  "form-submit#boton-submit-formulario-contacto": {
+    "props": {
+      "label": "ENVIAR"
+    }
+  },
+  "form-input.checkbox#agreement-formulario-contacto": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "He leído y acepto la política de datos personales",
+      "blockClass": "agreement-formulario-contacto"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  //TEXTO CONTENIDO TRATAMIENTO DE DATOS
+  "flex-layout.col#contenido-politica-tratamiento-datos": {
+    "children": [
+      "rich-text#titulo-contenido-politica-tratamiento-datos",
+      "rich-text#texto-1-politica-tratamiento-datos",
+      "image#boton-descargar-politica-tratamiento-datos"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-politica-tratamiento-datos": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "POLITICA DE PRIVACIDAD"
+    }
+  },
+  "rich-text#texto-1-politica-tratamiento-datos": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "CERAMICA ITALIA S.A., con domicilio en Cúcuta; Colombia, es responsable del tratamiento de los datos personales de acuerdo a la Ley 1581 de 2012 y el Decreto 1377 de 2013, según nuestras políticas de tratamiento de datos personales, los mecanismos a través de los cuales hacemos uso de éstos son seguros y confidenciales, pues contamos con los medios tecnológicos idóneos para asegurar que sean almacenados de manera tal que se impida el acceso indeseado por parte de terceras personas, y en ese mismo orden aseguramos la confidencialidad de los mismos.\n\n¿Cómo contactarnos?:\nDirección oficinas: Av3 cll23 AN Zona Industrial, Cúcuta, Colombia. \nCorreo electrónico: correspondencia@ceramicaitalia.com \nTeléfono: 5829800 en Cúcuta y 018000111568 en el resto del país\n\nSus datos personales serán incluidos en una base de datos y serán utilizados para las siguientes finalidades:\n\n• Lograr una eficiente comunicación relacionada con nuestros productos, ofertas, promociones, alianzas, estudios, concursos, contenidos, así como los de nuestras compañías vinculadas, y para facilitarle el acceso general a la información de éstos\n• Proveer nuestros productos\n• Informar sobre nuevos productos que estén relacionados con el o los contratado(s) o adquirido(s)\n• Dar cumplimiento a obligaciones contraídas con nuestros clientes, proveedores, y empleados\n• Informar sobre cambios de nuestros productos o servicios\n• Evaluar la calidad del servicio\n• Realizar estudios internos sobre hábitos de consumo.\n\nSe le informa a los titulares de información que pueden consultar el Manual Interno de Políticas y Procedimientos de Datos personales de CERÁMICA ITALIA S.A, que contiene nuestras políticas para el tratamiento de la información recogida, así como los procedimientos de consulta y reclamación que le permitirán hacer efectivos sus derechos al acceso, consulta, rectificación, actualización y supresión de los datos, haciendo click en el siguiente enlace: Politica de Privacidad"
+    }
+  },
+
+    //BOTON DESCARGAR ARCHIVO
+    "image#boton-descargar-politica-tratamiento-datos": {
+      "props": {
+               "src": "assets/imgs/boton-descargar.svg",
+               "alt": "alt",
+               "height": "30px",
+               "blockClass": "boton-descargar-terminos-preguntas",
+               "link": {
+                       "url": "https://ceramicaitalia.vteximg.com.br/arquivos/tratamiento-datos.pdf",
+                       "openNewTab": true,
+                       "title": "boton-descargar-politica-precios"
+          }
+      }
+   }
+}

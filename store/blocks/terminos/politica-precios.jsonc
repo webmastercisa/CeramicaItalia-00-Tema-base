@@ -1,0 +1,61 @@
+{
+    //TEXTO CONTENIDO POLITICA DE PRECIOS
+  "flex-layout.col#contenido-politica-precios": {
+    "children": [
+      "rich-text#titulo-contenido-politica-precios",
+      "rich-text#subtitulo-1-politica-precios",
+      "rich-text#texto-1-politica-precios",
+      "rich-text#subtitulo-2-politica-precios",
+      "rich-text#texto-2-politica-precios",
+      "image#boton-descargar-politica-precios"
+    ],
+    "props": {
+      "blockClass": ["contenedor-textos-terminos-legales"]
+    }
+  },
+  "rich-text#titulo-contenido-politica-precios": {
+    "props": {
+      "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+      "text": "POLÍTICA DE PRECIOS"
+    }
+  },
+  "rich-text#subtitulo-1-politica-precios": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "1 . MONEDA E IMPUESTOS:"
+    }
+  },
+  "rich-text#texto-1-politica-precios": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Los precios enunciados en esta página web se muestran en pesos colombianos e incluyen impuestos. De acuerdo con lo anterior y en cumplimiento de la legislación colombiana vigente, Cerámica Italia S.A está obligada a incorporar al precio final de venta el impuesto a las ventas (IVA), si la tarifa de IVA cambia al momento del retiro del producto de la sala, esta será ajustada a cargo del comprador."
+    }
+  },
+  "rich-text#subtitulo-2-politica-precios": {
+    "props": {
+      "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+      "text": "2 . PRECIO DE LOS PRODUCTOS:"
+    }
+  },
+  "rich-text#texto-2-politica-precios": {
+    "props": {
+      "blockClass": ["texto-contenido-preguntas-frecuentes"],
+      "text": "Los precios de los productos ofrecidos en el Sitio están expresados en pesos colombianos salvo que se manifieste lo contrario. Los precios ofrecidos corresponden exclusivamente al valor del bien ofrecido, Precio Sugerido para la Venta al Público (PSVP).\n\nLos productos y sus precios, publicados en el sitio web, podrían no coincidir con la oferta o precios de las salas de venta directa de Cerámica Italia a nivel nacional. Es posible que algunos de los productos, así como los precios publicados en la página web sean exclusivos de este canal de comercialización y sólo podrán ser adquiridos a través de la página. Por lo anterior, los precios, productos y promociones ofrecidos por el canal digital pueden no aplicar para otros canales de venta de Cerámica Italia.\n\nLos precios de los productos en puntos de ventas de Distribuidores y/o aliados estratégicos aplican según política de precios definida por cada Distribuidor."
+    }
+  },
+
+    //BOTON DESCARGAR ARCHIVO
+    "image#boton-descargar-politica-precios": {
+      "props": {
+               "src": "assets/imgs/boton-descargar.svg",
+               "alt": "alt",
+               "height": "30px",
+               "blockClass": "boton-descargar-terminos-preguntas",
+               "link": {
+                       "url": "https://ceramicaitalia.vteximg.com.br/arquivos/politica-precios.pdf",
+                       "openNewTab": true,
+                       "title": "boton-descargar-politica-precios"
+          }
+      }
+   }
+}

@@ -1,0 +1,20 @@
+.summaryItemLabel {
+    font-family: 'Neutra Display';
+    font-size: 16px !important;
+}
+
+.price {
+    font-family: 'NeutraTextTF';
+    font-size: 16px !important;
+    color: #686868;
+    font-weight: 900;
+}
+
+.summarySmallDisclaimer {
+    display: none;
+}
+
+.summarySmallContent {
+    display: flex;
+    flex-direction: column;
+}

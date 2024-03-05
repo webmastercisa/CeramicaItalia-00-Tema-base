@@ -1,0 +1,156 @@
+{
+  "flex-layout.row#InfoExtraPDP": {
+    "children": [
+      "flex-layout.col#InfoExtraPDP"
+    ],
+    "props": {
+      "blockClass": "InfoExtraPDP",
+      "fulwidth": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 5
+    }
+  },
+  "flex-layout.col#InfoExtraPDP": {
+    "children": [
+      // "rich-text#InfoExtra",
+      "InfoExtraBannerD",
+      "InfoExtraBannerM",
+      "flex-layout.row#BloqueSecundario",
+      // "flex-layout.row#CompiladoImagenTexto",
+      "condition-layout.product#especificacion-InfoExtraActivo"
+    ],
+    "props": {
+      "blockClass": "InfoExtraPDP",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+
+  // condicional checkbox InfoExtraActivo
+"condition-layout.product#especificacion-InfoExtraActivo": {
+  "props": {
+      "conditions": [
+          {
+              "subject": "specificationProperties",
+              "arguments": {
+                  "name": "InfoExtraActivo",
+                  "value": "Sí"
+              }
+          }
+      ],
+      "Then": "flex-layout.row#CompiladoImagenTexto"
+  }
+},
+
+  "rich-text#InfoExtra": {
+    "props": {
+      "text": "Información extra del producto",
+      "blockClass": "InfoExtra",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#BloqueSecundario": {
+     "children": [
+      "flex-layout.col#BloqueSecundarioA",
+      "BloqueSecundarioVideo"
+  ],
+     "props": {
+       "blockClass": "BloqueSecundario",
+       "fulwidth": true,
+       "preventHorizontalStretch": true,
+       "preventVerticalStretch": true,
+       "preserveLayoutOnMobile": true,
+       "horizontalAlign": "center",
+       "verticalAlign": "middle",
+       "paddingTop": 0,
+       "paddingBottom": 0
+    }
+  },
+  "flex-layout.col#BloqueSecundarioA": {
+     "children": [
+      "BloqueSecundarioTitulo",
+      "BloqueSecundarioParrafo"
+  ],
+     "props": {
+       "blockClass": "BloqueSecundarioA",
+       "fulwidth": true,
+       "preventHorizontalStretch": true,
+       "preventVerticalStretch": true,
+       "preserveLayoutOnMobile": true,
+       "horizontalAlign": "center",
+       "verticalAlign": "middle",
+       "paddingTop": 0,
+       "paddingBottom": 0
+    }
+  },
+  "flex-layout.row#CompiladoImagenTexto": {
+     "children": [
+      "product-images#Extra",
+      //  "flex-layout.col#CompiladoImagen",
+       "flex-layout.col#CompiladoTexto"
+  ],
+     "props": {
+       "blockClass": "CompiladoImagenTexto",
+       "fulwidth": true,
+       "preventHorizontalStretch": false,
+       "preventVerticalStretch": true,
+       "preserveLayoutOnMobile": true,
+       "horizontalAlign": "center",
+       "verticalAlign": "middle",
+       "paddingTop": 0,
+       "paddingBottom": 0
+    }
+  },
+  "flex-layout.col#CompiladoImagen": {
+     "children": [
+      "product-images#Extra"
+      // "CompiladoTexto"
+  ],
+     "props": {
+       "blockClass": "CompiladoImagen",
+       "fulwidth": true,
+       "preventHorizontalStretch": true,
+       "preventVerticalStretch": true,
+       "preserveLayoutOnMobile": true,
+       "horizontalAlign": "center",
+       "verticalAlign": "middle",
+       "paddingTop": 0,
+       "paddingBottom": 0
+    }
+  },
+  "flex-layout.col#CompiladoTexto": {
+     "children": [
+       "CompiladoTexto"
+  ],
+     "props": {
+       "blockClass": "CompiladoTexto",
+       "fulwidth": true,
+       "preventHorizontalStretch": true,
+       "preventVerticalStretch": true,
+       "preserveLayoutOnMobile": true,
+       "horizontalAlign": "center",
+       "verticalAlign": "middle",
+       "paddingTop": 0,
+       "paddingBottom": 0
+    }
+  },
+  "product-images#Extra": {
+    "props": {
+      "hiddenImages": ["Vitrina", "Color", "PDP"],
+      "maxHeight": 1500,
+      "displayMode": "carousel"
+    }
+  }
+}

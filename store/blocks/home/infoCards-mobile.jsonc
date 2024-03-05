@@ -1,0 +1,262 @@
+{
+    // Section -Cuál es tu proyecto
+    "responsive-layout.mobile#section-inspireInfocard-1": {
+        "children": [
+            "flex-layout.row#section-service-project-mobile"
+        ]
+    },
+    "flex-layout.row#section-service-project-mobile": {
+        "children": [
+            "flex-layout.col#section-service-project-mobile"
+        ],
+        "title": "seccion-infocard-1-mobile",
+        "props": {
+            "blockClass": "section-service-project",
+            "fulwidth": false
+        }
+    },
+    "flex-layout.col#section-service-project-mobile": {
+        "children": [
+            "flex-layout.row#background-banner-service-project-mobile",
+            "flex-layout.row#optionService-mobile"
+        ],
+        "title": "contenedor-infocard-1-mobile",
+        "props": {
+            "blockClass": "section-service-project",
+            "fulwidth": false
+        }
+    },
+    "flex-layout.row#background-banner-service-project-mobile": {
+        "children": [
+            "image#banner-service-project-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "background-banner-service-project"
+            ]
+        }
+    },
+    "image#banner-service-project-mobile": {
+        "title": "imagen-infocard-1-mobile",
+        "props": {
+            "src": "http://ceramicaitalia.myvtex.com/arquivos/3500x100.png",
+            "alt": "alt",
+            "height": "hight",
+            "blockClass": "banner-service-project"
+        }
+    },
+    "flex-layout.row#optionService-mobile": {
+        "props": {
+            "blockClass": "optionService"
+        },
+        "children": [
+            "list-context.info-card-list#optionService-mobile"
+        ]
+    },
+    "list-context.info-card-list#optionService-mobile": {
+        "children": [
+            "slider-layout#optionService-mobile"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "info-card-optionService",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img297x382-1.png",
+                    "callToActionText": "Decoración",
+                    "callToActionUrl": "/sale/d",
+                    "blockClass": [
+                        "info-card-optionService",
+                        "decorationService"
+                    ],
+                    "textAlignment": "center"
+                },
+                {
+                    "id": "info-card-optionService",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img297x382-2.png",
+                    "callToActionText": "Remodelación",
+                    "callToActionUrl": "/sale/d",
+                    "blockClass": [
+                        "info-card-optionService",
+                        "remodelationService"
+                    ],
+                    "textAlignment": "center"
+                },
+                {
+                    "id": "info-card-optionService",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img297x382-3.png",
+                    "callToActionText": "Construcción",
+                    "callToActionUrl": "/sale/d",
+                    "blockClass": [
+                        "info-card-optionService",
+                        "constructionService"
+                    ],
+                    "textAlignment": "center"
+                }
+            ]
+        }
+    },
+    "slider-layout#optionService-mobile": {
+        "title": "InfoCardSlider",
+        "props": {
+            "blockClass": "optionService-slider",
+            "showNavigationArrows": "never",
+            "showPaginationDots": "always",
+            "itemsPerPage": {
+                "tablet": 2,
+                "desktop": 2,
+                "phone": 1
+            },
+            "infinite": true,
+
+        "autoplay": {
+            "timeout": 3000,
+            "stopOnHover": true
+          } }
+    },
+
+    // Inspire Section Mobile
+    "responsive-layout.mobile#section-inspireInfocard-2-mobile": {
+        "children": [
+            "flex-layout.row#section-inspireInfocard-mobile"
+        ]
+    },
+    "flex-layout.row#section-inspireInfocard-mobile": {
+        "children": [
+            "flex-layout.col#inspireInfocard-mobile"
+        ],
+        "title": "seccion-infocard-2-mobile",
+        "props": {
+            "blockClass": "section-inspireInfocard-mobile",
+            "fulwidth": false
+        }
+    },
+    "flex-layout.col#inspireInfocard-mobile": {
+        "children": [
+            "flex-layout.row#background-banner-inspire-mobile",
+            "flex-layout.row#infocard2-mobile"
+        ],
+        "title": "contenedor-infocard-2-mobile",
+        "props": {
+            "blockClass": "section-inspireInfocard-mobile",
+            "fulwidth": false
+        }
+    },
+    "flex-layout.row#background-banner-inspire-mobile": {
+        "children": [
+            "image#banner-inspire-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "background-banner-service-project",
+                "background-banner-inspire",
+                "background-banner-inspire-mobile"
+            ]
+        }
+    },
+    "image#banner-inspire-mobile": {
+        "title": "imagen-infocard-2-mobile",
+        "props": {
+            "src": "https://ceramicaitalia.vteximg.com.br/arquivos/homeImageSlide.png",
+            "alt": "alt",
+            "height": "hight",
+            "blockClass": [
+                "banner-service-project",
+                "banner-inspire",
+                "banner-inspire-mobile"
+            ]
+        }
+    },
+    "flex-layout.row#infocard2-mobile": {
+        "props": {
+            "blockClass": "contain-infocardInspire-mobile"
+        },
+        "title": "seccion-infocard-1-mobile",
+        "children": [
+            "list-context.info-card-list#infoCardInspire-mobile"
+        ]
+    },
+    "list-context.info-card-list#infoCardInspire-mobile": {
+        "children": [
+            "slider-layout#infoCardInspire-mobile"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "info-card-inspire-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img2285x437-1.png",
+                    "callToActionText": "Romántico",
+                    "callToActionUrl": "/sale/d",
+                    "blockClass": [
+                        "info-card-inspire",
+                        "romaticStyle"
+                    ],
+                    "textAlignment": "center"
+                },
+                {
+                    "id": "info-card-inspire-2",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img2285x437-2.png",
+                    "callToActionText": "Industrial",
+                    "callToActionUrl": "/sale/d",
+                    "blockClass": [
+                        "info-card-inspire",
+                        "industrialStyle"
+                    ],
+                    "textAlignment": "center"
+                },
+                {
+                    "id": "info-card-inspire-3",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img2285x437-3.png",
+                    "callToActionText": "Minimalista",
+                    "callToActionUrl": "/sale/d",
+                    "blockClass": [
+                        "info-card-inspire",
+                        "minimalStyle"
+                    ],
+                    "textAlignment": "center"
+                },
+                {
+                    "id": "info-card-inspire-4",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/img2285x437-4.png",
+                    "callToActionText": "Oriental",
+                    "callToActionUrl": "/sale/d",
+                    "blockClass": [
+                        "info-card-inspire",
+                        "minimalStyle"
+                    ],
+                    "textAlignment": "center"
+                }
+            ]
+        }
+    },
+    "slider-layout#infoCardInspire-mobile": {
+        "title": "InfoCardSlider",
+        "props": {
+            "blockClass": "infoCardInspire-mobile-slider",
+            "showNavigationArrows": "never",
+            "showPaginationDots": "always",
+            "itemsPerPage": {
+                "desktop": 2,
+                "phone": 1
+            },
+            "infinite": true,
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+              }
+        }
+    }
+}

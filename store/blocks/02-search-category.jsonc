@@ -1,0 +1,151 @@
+{
+  "search-result-layout.desktop#Categoria": {
+    "children": [
+      "flex-layout.row#searchbread",
+      // "flex-layout.row#result-categoria"
+      "flex-layout.row#searchtitle",
+      "list-context.image-list#banners-search",
+      // "rich-text#TituloLineaHorizontal",
+      // "flex-layout.row#vitrina1-imagen-search-departamento",
+      "flex-layout.row#titulo-texto-search", // Título con línea
+      "flex-layout.row#section-filters",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "flex-layout.row#result-categoria": {
+    "children": ["flex-layout.col#result-categoria"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#result-categoria": {
+    "children": [
+      "flex-layout.row#searchtitle",
+      "list-context.image-list#banners-search",
+      "rich-text#TituloLineaHorizontal",
+      "flex-layout.row#vitrina1-imagen-search-departamento",
+      "flex-layout.row#titulo-texto-search", // Título con línea
+      "flex-layout.row#section-filters",
+      "flex-layout.col#content-departamento"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "col-result-departamento"
+    }
+  },
+
+  "search-result-layout.mobile#Categoria": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle",
+      "list-context.image-list#banners-search",
+      // "rich-text#TituloLineaHorizontal",
+      // "flex-layout.row#Vitrina2elementos",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "rich-text#texto-seo-search-categoria-mobile"
+    ],
+    "props": {
+      "preventRouteChange": true,
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "rich-text#TituloLineaHorizontal": {
+    "props": {
+         "text": "Productos Recomendados",
+         "blockClass": "TituloLineaHorizontal",
+         "textAlignment": "LEFT",
+         "textPosition": "LEFT"
+    }
+  },
+
+  "flex-layout.row#vitrina1-imagen-search-categoria-mobile": {
+    "children": [
+      "list-context.product-list#vitrina-search-categoria-mobile"
+    ],
+    "props": {
+      "blockClass": ["vitrina-imagen-search-departamento-mobile"]
+    }
+  },
+  "list-context.product-list#vitrina-search-categoria-mobile": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#vitrina-search-categoria-mobile"],
+    "title": "vitrina-search",
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "row-shelf-product"
+    }
+  },
+  "slider-layout#vitrina-search-categoria-mobile": {
+    "title": "slider-vitrina-search-departamento-mobile",
+    "props": {
+      "itemsPerPage": {
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": ["shelf-destacados", "vitrina-search"]
+    }
+  },
+
+  "flex-layout.row#Vitrina2elementos": {
+    "children": [
+      "list-context.product-list#Vitrina2elementos"
+    ],
+    "title": "vitrina-destacados-desktop",
+    "props": {
+      "blockClass": "row-shelf-container"
+    }
+  },
+  "list-context.product-list#Vitrina2elementos": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#Vitrina2elementos"
+    ],
+    "title": "vitrina-destacados-desktop",
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "row-shelf-product"
+    }
+  },
+  "slider-layout#Vitrina2elementos": {
+    "title": "slider-vitrina-destacados-desktop",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "never",
+      "blockClass": ["shelf-destacados", "Vitrina2elementos"],
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+.openIconContainer--drawer-filter-navigator-v2 {
+  padding: 0;
+}
+
+.childrenContainer--drawer-filter-navigator-v2 {
+  padding: 0px 15px;
+}
+
+.drawerContent--drawer-filter-navigator-v2 .drawerHeader {
+  background: #ED1B24;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.drawerContent--drawer-filter-navigator-v2 :global(.vtex-search-result-3-x-filters--layout) {
+  width: 100%;
+}
+
+.childrenContainer--drawer-filter-navigator-v2 :global(.vtex-search-result-3-x-filterAvailable--filter-navigator-v2) {
+  border: 1px solid #ED1B24;
+  border-radius: 35px;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+}
+
+.childrenContainer--drawer-filter-navigator-v2 :global(.vtex-search-result-3-x-filterMessage--filter-navigator-v2) {
+  display: none;
+}
+
+.childrenContainer--drawer-filter-navigator-v2 {
+  padding-top: 20px;
+}
+.drawer--drawer-filter-navigator-v2{
+  z-index: 10000;
+}
+
+.drawer--drawer-filter-navigator-v2 :global(.vtex-store-drawer-0-x-closeIconButton)::before {
+  content: '';
+  height: 14px;
+  width: 14px;
+  display: flex;
+  padding: 0;
+  background-image: url(assets/ico/close-Icon-white.svg);
+  background-size: cover;
+}
+
+.drawer--drawer-filter-navigator-v2 :global(.vtex-store-drawer-0-x-closeIcon) {
+  width: 0 !important;
+}
+
+.closeIconButton {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+
+@media (max-width: 1024px) {
+
+  .drawerContent :global(.vtex-menu-2-x-menuContainerNav) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .drawerContent :global(.vtex-rich-text-0-x-paragraph) {
+    margin: 0;
+    font-family: 'NeutraTextTF';
+    font-size: 15px;
+    color: #828181;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .drawerContent :global(.vtex-menu-2-x-styledLinkContent) {
+    font-family: 'NeutraTextTF';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #828181;
+  }
+
+  .drawerContent :global(.vtex-menu-2-x-styledLinkContainer) {
+    padding: 13px 0;
+  }
+
+  .drawerContent :global(.vtex-menu-2-x-styledLinkContainer--MenuEXTRA-Mobile) {
+    margin: 0px 20px;
+  }
+
+  /* .drawerContent :global(.vtex-menu-2-x-styledLinkContent):hover,
+  .drawerContent :global(.vtex-rich-text-0-x-paragraph):hover {
+    font-size: 16.05px !important;
+    font-weight: bold !important;
+    transition: all .1s ease !important;
+  } */
+
+  .openIconContainer--drawer-mobile {
+    padding: 0 20px;
+  }
+
+  .drawerContent :global(.vtex-menu-2-x-menuItem) {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #BFBFBF;
+  }
+
+  .childrenContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drawerHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .closeIconContainer {
+    display: none;
+  }
+
+  .closeIcon {
+    width: 20px;
+  }
+
+  .closeIconButton {
+    padding: 3% 6%;
+  }
+
+  .closeIconButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .drawerContent :global(.vtex-rich-text-0-x-link){
+    text-decoration: none;
+    color: #3D3C3C;
+  }
+
+  .drawerTriggerContainer--trigger-mobile-iconos :global(.vtex-menu-2-x-menuItem) {
+   border: none;
+  }
+
+  .drawerTriggerContainer--trigger-mobile-iconos :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header) {
+    align-items: center;
+   }
+
+  .drawerTriggerContainer--trigger-mobile-iconos :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover :global(.vtex-store-components-3-x-logoImage--iconMenuPisos){
+    background-color: #ED1B24;
+    background-position: -53px -1px;
+    background-repeat: no-repeat;
+    border-color: #ED1B24;
+  }
+
+  .drawerTriggerContainer--trigger-mobile-iconos :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover :global(.vtex-store-components-3-x-logoImage--iconMenuParedes) {
+    background-color: #ED1B24;
+    background-position: -55px 0;
+    background-repeat: no-repeat;
+    border-color: #ED1B24;
+}
+
+.drawerTriggerContainer--trigger-mobile-iconos :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover :global(.vtex-store-components-3-x-logoImage--iconMenuColores) {
+  background-color: #ED1B24;
+  background-position: -83px -6px;
+  background-repeat: no-repeat;
+  border-color: #ED1B24;
+}
+
+  .drawerTriggerContainer--trigger-mobile-iconos :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover :global(.vtex-rich-text-0-x-paragraph--opciones-colores ){
+    color: #FF030E;
+  }
+
+  .openIconContainer--drawer-mobile-iconos {
+    padding: 20px 0px 0px 0px;
+}
+
+}

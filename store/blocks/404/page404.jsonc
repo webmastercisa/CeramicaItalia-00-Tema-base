@@ -1,0 +1,197 @@
+{
+    "responsive-layout.desktop#page404": {
+      "title": "page404-desktop",
+      "children": [
+        "flex-layout.row#page404",
+        "responsive-layout.desktop#textAndLine",
+        "flex-layout.row#shelfOther",
+        "responsive-layout.desktop#image-404",
+        "flex-layout.row#newsletter"
+      ]
+    },
+    "flex-layout.row#page404": {
+      "title": "container404-desktop",
+      "children": [
+        "image#banner-404-desktop"
+      ],
+      "props": {
+        "fullWidth": true,
+        "blockClass": "banner-not-found",
+        "marginBottom":9
+      }
+    },
+    "image#banner-404-desktop": {
+      "title": "banner404-desktop",
+      "props": {
+        "src": "https://ceramicaitalia.vteximg.com.br/arquivos/banner404.png",
+        "blockClass": "404Banner"
+      }
+    },
+ 
+      // Slider banner 404
+      "responsive-layout.desktop#image-404": {
+        "children": [
+          "flex-layout.row#image-404"
+        ]
+      },
+      "flex-layout.row#image-404": {
+        "children": [
+          "flex-layout.col#image-404"
+        ],
+        "props": {
+          "blockClass": [
+            "section-image-404"
+          ]
+        }
+      },
+      "flex-layout.col#image-404": {
+        "children": [
+          "list-context.image-list#image-404"
+        ],
+        "props": {
+          "blockClass": [
+            "box-image-404"
+          ]
+        }
+      },
+      "list-context.image-list#image-404": {
+        "children": [
+          "slider-layout#image-404-images"
+        ],
+        "props": {
+          "height": 344,
+          "preload": true,
+          "images": [
+            {
+              "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerImage.png",
+              "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner2Mobile404.png"
+            },
+            {
+              "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerImage.png",
+              "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner2Mobile404.png"
+            },
+            {
+              "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerImage.png",
+              "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner2Mobile404.png"
+            }
+          ]
+        }
+      },
+      "slider-layout#image-404-images": {
+        "title": "slider-404-desktop",
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "showPaginationDots": "always",
+          "blockClass": "slider-image-404"
+        }
+      },
+  
+
+    /* MOBILE */
+    "responsive-layout.mobile#page404": {
+        "title": "page404-mobile",
+        "children": [
+          "flex-layout.row#page404-mobile",
+          "responsive-layout.mobile#textAndLine",
+          "flex-layout.row#shelfOther",
+          "flex-layout.row#image-404",
+          "flex-layout.row#newsletter"
+        ]
+      },
+      "flex-layout.row#page404-mobile": {
+        "title": "container404-mobile",
+        "children": [
+          "image#banner-404-mobile"
+        ],
+        "props": {
+          "fullWidth": true,
+          "blockClass": "banner-not-found-mobile",
+          "marginBottom":9
+        }
+      },
+      "image#banner-404-mobile": {
+        "title": "banner-mobile404",
+        "props": {
+          "src": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerMobile404CI.png",
+          "blockClass": "404Banner"
+        }
+      },
+
+      // Slider banner Not Found Desktop//
+      "responsive-layout.desktop#not-found": {
+        "children": [
+          "flex-layout.row#not-found"
+        ]
+      },
+      "flex-layout.row#not-found": {
+        "children": [
+          "flex-layout.col#not-found"
+        ],
+        "props": {
+          "blockClass": [
+            "section-image-404",
+            "section-not-found"
+          ]
+        }
+      },
+      "flex-layout.col#not-found": {
+        "children": [
+          "list-context.image-list#not-found"
+        ],
+        "props": {
+          "blockClass": [
+            "box-image-404",
+            "box-not-found"
+          ]
+        }
+      },
+      "list-context.image-list#not-found": {
+        "children": [
+          "slider-layout#not-found-images"
+        ],
+        "props": {
+          "height": 344,
+          "preload": true,
+          "images": [
+            {
+              "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerImage.png",
+              "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner2Mobile404.png"
+            },
+            {
+              "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerImage.png",
+              "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner2Mobile404.png"
+            },
+            {
+              "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerImage.png",
+              "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner2Mobile404.png"
+            }
+          ]
+        }
+      },
+      "slider-layout#not-found-images": {
+        "title": "slider-404-desktop",
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "showPaginationDots": "always",
+          "blockClass": ["slider-image-404", "slider-not-found"]
+        }
+      },
+      // Slider banner Not Found Mobile//
+      "responsive-layout.mobile#not-found": {
+        "children": [
+          "flex-layout.row#not-found"
+        ]
+      }
+  }

@@ -1,0 +1,18 @@
+{
+    "store.custom#perfilamiento": {
+      "blocks": [
+        "custom-form-products"
+      ]
+    },
+    "custom-form-products": {
+      "props":{
+        "SummaryQuickView": "modal-trigger#quickview",
+        "SummaryHighlights": "vtex.product-highlights@2.x:product-highlights#collection",
+        "SummaryName": "product-summary-name",
+        "SummarySellingPrice":"flex-layout.row#selling-price-savings",
+        "SummaryPromotion":"condition-layout.product#text-hoy-promotion",
+        "SummaryQuantity":"condition-layout.product#cond-shelf-quantity",
+        "SummaryCondShelf":"condition-layout.product#cond-shelf"
+      }
+    }
+}

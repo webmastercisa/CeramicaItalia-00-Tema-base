@@ -1,0 +1,264 @@
+{
+    "store.custom#imperdibles": {
+        "blocks": [
+            "flex-layout.row#miga-pan-imperdibles",
+            "flex-layout.row#title-imperdibles",
+            "flex-layout.row#container-banner1-imperdibles",
+            "flex-layout.row#container-texts-imperdibles",
+            // "flex-layout.row#container-banners-imperdibles"
+            "responsive-layout.desktop#banner-grilla-imperdibles",
+            "responsive-layout.mobile#banner-grilla-imperdibles",
+            "flex-layout.row#title-search-imperdibles",
+            "flex-layout.row#resultado-busqueda-landing-imperdibles"
+        ]
+    },
+
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-imperdibles": {
+        "children": [
+            "image#icono-miga-pan",
+            "rich-text#texto-1-miga-pan",
+            "rich-text#texto-2-miga-pan-imperdible"
+        ],
+        "props": {
+            "blockClass": [
+                "miga-pan-terminos-legales"
+            ]
+        }
+    },
+    // TEXTO 2 MIGA DE PAN 
+    "rich-text#texto-2-miga-pan-imperdible": {
+        "props": {
+            "blockClass": [
+                "texto-2-miga-pan"
+            ],
+            // "text": "imperdibles", 
+            "text": "[Imperdibles](/imperdibles)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // titulo
+
+    "flex-layout.row#title-imperdibles": {
+      "children": [ "rich-text#title-imperdibles"],
+      "props": {
+        "blockClass": ["title-imperdibles" ]
+      }
+    },
+    "rich-text#title-imperdibles": {
+        "props": {
+                 "text": "Imperdibles",
+                 "blockClass": "title-imperdibles",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+     // slider 1
+     "flex-layout.row#container-banner1-imperdibles": {
+        "children": ["list-context.image-list#banner1Slider-imperdibles"],
+        "props": {
+          "blockClass": ["container-banner1-imperdibles-slider"]
+        }
+      },
+  
+      "list-context.image-list#banner1Slider-imperdibles": {
+          "children": ["slider-layout#banner1-imperdibles"],
+          "props": {
+            "height": 570,
+            "preload": true,
+            "images": [
+              {
+                "image": "arquivos/banner1-imperdibles.png",
+                "mobileImage": "arquivos/banner1-muestra-mobile.png"
+              },
+              {
+                  "image":"arquivos/banner1-muestra.png",
+                  "mobileImage": "arquivos/banner1-muestra-mobile.png"
+                }
+            ]
+          }
+        },
+        "slider-layout#banner1-imperdibles": {
+          "props": {
+            "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never", 
+            "blockClass": ["banner1-imperdibles-slider"]
+            // "autoplay": {
+            //   "timeout": 3000,
+            //   "stopOnHover": true
+            // }
+          }
+        },
+
+        "flex-layout.row#container-texts-imperdibles": {
+          "children": ["rich-text#texts-imperdibles"],
+          "props": {
+            "blockClass": ["container-texts-imperdibles"]
+          }
+        },
+        "rich-text#texts-imperdibles": {
+            "props": {
+                     "text": "Sabemos que encontrar el complemento ideal para tu hogar posiblemente no es tán fácil como parece, por eso aquí traemos para ti esos diseños imperdibles que combinarán perfectamente con cada espacio de tu hogar **3 clics y tu piso estará camino a tu hogar**",
+                     "blockClass": "texts-imperdibles",
+                     "textAlignment": "CENTER",
+                     "textPosition": "CENTER"
+            }
+        },
+
+         "responsive-layout.desktop#banner-grilla-imperdibles": {
+            "children": ["flex-layout.row#container-banners-imperdibles"]
+          },
+
+           "responsive-layout.mobile#banner-grilla-imperdibles": {
+              "children": ["flex-layout.row#container-banners-imperdibles-mobile"]
+            },
+            
+          
+    
+        "flex-layout.row#container-banners-imperdibles": {
+          "children": [
+            "image#banner1-imperdibles",
+            "image#banner2-imperdibles",
+            "image#banner3-imperdibles"
+          ],
+          "props": {
+            "blockClass": ["container-banners-imperdibles"]
+          }
+        },
+
+        "image#banner1-imperdibles": {
+            "props": {
+                     "src": "arquivos/banner2-imperdibles.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdibles",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+        "image#banner2-imperdibles": {
+            "props": {
+                     "src": "arquivos/banner2-imperdibles.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdibles",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+        "image#banner3-imperdibles": {
+            "props": {
+                     "src": "arquivos/banner2-imperdibles.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdibles",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+        "flex-layout.row#container-banners-imperdibles-mobile": {
+          "children": ["flex-layout.col#container-banners-imperdibles-mobile"],
+          "props": {
+            "blockClass": ["container-banners-imperdibles-mobile"]
+          }
+        },
+
+        "flex-layout.col#container-banners-imperdibles-mobile": {
+          "children": [
+            "image#banner1-imperdible-mobile",
+            "image#banner2-imperdible-mobile",
+            "image#banner3-imperdible-mobile"
+          ],
+          "props": {
+            "blockClass": ["container-banners-imperdibles-mobile"]
+          }
+        },
+
+        "image#banner1-imperdible-mobile": {
+            "props": {
+                     "src": "arquivos/banner2.imperdibles-mobile.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdible-mobile",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+        "image#banner2-imperdible-mobile": {
+            "props": {
+                     "src": "arquivos/banner2.imperdibles-mobile.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdible-mobile",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+
+        "image#banner3-imperdible-mobile": {
+            "props": {
+                     "src": "arquivos/banner2.imperdibles-mobile.png",
+                     "alt": "alt",
+                     "height": "hight",
+                     "blockClass": "banner1-imperdible-mobile",
+                     "link": {
+                             "url": "#",
+                             "openNewTab": false,
+                             "title": "title"
+                }
+            }
+        },
+          // textos
+
+    "flex-layout.row#title-search-imperdibles": {
+      "children": ["flex-layout.row#container-title-search-imperdibles", "image#linea-search"],
+      "props": {
+        "blockClass": ["title-search-muestras", "title-search-imperdibles"],
+        "preserveLayoutOnMobile": true
+      }
+    },
+
+    "flex-layout.row#container-title-search-imperdibles": {
+      "children": ["rich-text#title-search-imperdibles"],
+      "props": {
+        "blockClass": ["container-title-search-muestras"],
+        "width": "25%"
+      }
+    },
+    "rich-text#title-search-imperdibles": {
+      "props": {
+           "text": "lo más nuevo de nuestra colección",
+           "blockClass": "title-search-muestras",
+           "textAlignment": "CENTER",
+           "textPosition": "CENTER"
+      }
+    }
+
+       
+}

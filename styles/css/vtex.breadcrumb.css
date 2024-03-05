@@ -1,0 +1,54 @@
+.caretIcon {
+  background: pink;
+  font-size: 0;
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 90vw;
+  margin: auto;
+}
+
+.arrow {
+  font-size: 0px;
+  display: flex;
+  gap: 5px;
+}
+
+.arrow::before {
+  display: flex;
+  content: "|";
+  color: #000;
+  font-size: 20px;
+}
+
+:global(.vtex-breadcrumb-1-x-link--3),
+:global(.vtex-breadcrumb-1-x-link--2),
+:global(.vtex-breadcrumb-1-x-link--1){
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.link:hover{
+  color: #ED1B24;
+}
+
+
+.homeLink{
+  display: flex;
+}
+
+.homeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.term {
+  padding-top: 5px;
+}

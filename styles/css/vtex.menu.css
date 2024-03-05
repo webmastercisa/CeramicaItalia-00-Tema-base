@@ -1,0 +1,583 @@
+.menuContainerNav--Main .menuContainer--Main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menuContainerNav--btn-customized {
+  overflow: auto;
+}
+.menuContainerNav--btn-customized::-webkit-scrollbar{
+  -webkit-appearance: none;
+  width: 8px;
+  height: 5px;
+}
+.menuContainerNav--btn-customized::-webkit-scrollbar-thumb{
+  background-color: #ED1B24;
+  padding-left: 1px;
+  border-radius: 5px;
+}
+
+.menuContainerNav--Main .menuItem {
+  font-family: 'NeutraText';
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.menuContainerNav--Main .styledLinkContent .menuItem:hover {
+  color: #ffffff;
+  background-color: #ED1B24;
+}
+
+
+.styledLinkContainer--btn-customized :global(.vtex-menu-2-x-styledLinkContent):hover {
+  color: #FFFFFF;
+  min-width: 250px;
+}
+
+.submenuWrapper :global(.vtex-menu-2-x-menuItem--isOpen):hover {
+  background: linear-gradient(90deg, rgba(255, 253, 253, 1) 0%, rgba(205, 203, 203, 1) 100%);
+}
+
+.submenuWrapper :global(.vtex-menu-2-x-menuItem--isOpen):hover .styledLinkContent {
+  color: #555555 !important;
+  /* font-size: 16.05px !important; */
+  font-weight: bold !important;
+  transition: all .2s ease !important;
+}
+
+/* .submenuWrapper :global(.vtex-menu-2-x-menuItem) .styledLinkContent{
+  border-bottom: 1px solid #BFBFBF!important;
+} */
+
+.menuContainerNav--Main .styledLinkContent {
+  /* font-family: 'Neutra Display'; */
+  font-family: 'NeutraTextBook';
+  font-size: 18px;
+  color: #3D3C3C;
+  padding: 15px 10px;
+}
+
+.menuContainerNav--Main .menuItem .styledLinkContent .styledLinkIcon {
+  width: 36px;
+  height: 36px;
+  /* overflow: hidden; */
+  top: 5px;
+    position: relative;
+}
+
+/* .menuContainerNav--Main .menuItem .styledLinkContent .styledLinkIcon::before {
+  content: '';
+  background-image: url('assets/ico/hamburgermenu.svg');
+  width: 36px;
+  height: 36px;
+  display: flex;
+} */
+
+.styledLink--btn-customized:hover .styledLinkContent .styledLinkIcon::before {
+  background-position-y: 39px;
+}
+
+.styledLinkContent {
+  flex: 1;
+}
+
+.menuItem--btn-customized {
+  flex: 1;
+}
+
+.styledLinkContainer--btn-customized {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.styledLinkContent--btn-customized {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styledLink--btn-customized {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #DAD8D8;
+}
+
+.styledLink--btn-customized:hover
+ {
+  background: #FF030E;
+}
+
+
+.menuContainer--menuHeader :global(.vtex-menu-2-x-menuItem--btn-customized):nth-child(0n+1) :global(.vtex-menu-2-x-styledLink--btn-customized){
+  background: none;
+}
+
+.menuContainer--menuHeader :global(.vtex-menu-2-x-menuItem--btn-customized):nth-child(0n+1){
+  background: #DAD8D8;
+}
+
+.menuContainer--menuHeader :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1){
+  background: #FF030E;
+}
+
+.menuContainer--menuHeaderRed :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1) :global(.vtex-menu-2-x-styledLinkContent){
+  color: white;
+}
+
+.menuContainer--menuHeaderRed :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1) :global(.vtex-menu-2-x-menuContainer--mainSubMenu) :global(.vtex-menu-2-x-styledLinkContent){
+  color: #828181;
+}
+
+.styledLinkIcon--btn-customized {
+  margin-right: 0px;
+}
+
+/* Top Menu */
+.logoImage--iconTopMenu {
+  padding: 17px 0 16px 0;
+}
+
+.menuItem--textTopMenu {
+  padding: 8px 0;
+}
+
+.styledLinkContent--textTopMenu {
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.styledLinkContainer--textTopMenu {
+  padding: 0;
+  margin: -2px 12px;
+}
+
+.styledLinkContent--pisos-header {
+  color: #3D3C3C;
+}
+
+.styledLinkContent--paredes-header {
+  color: #3D3C3C;
+}
+
+.styledLinkContent--colores-header {
+  color: #3D3C3C;
+}
+
+.styledLinkContainer--pisos-header {
+  padding: 0;
+  margin: 0;
+}
+
+.styledLinkContainer--paredes-header {
+  padding: 0;
+  margin: 0;
+}
+
+.styledLinkContainer--colores-header {
+  padding: 0;
+  margin: 0;
+}
+
+.menuContainerNav--main-header {
+  margin: 0;
+}
+
+.menuContainerNav--menuHeader {
+  background: #DAD8D8;
+}
+
+.menuContainer--menuHeader {
+  width: 1280px;
+  margin: auto;
+}
+
+.styledLinkContent {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'NeutraText';
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.styledLinkContent--LinkFooter {
+  font-family: 'NeutraText';
+  font-size: 14px;
+  color: #3D3C3C;
+  font-weight: 300;
+  justify-content: flex-start;
+  letter-spacing: -0.10px;
+  white-space: break-spaces;
+}
+
+.styledLinkContainer--LinkFooter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
+
+.styledLinkContainer--LinkFooter::before {
+  content: '•';
+}
+
+.menuContainer--LinkFooter {
+  margin-top: 15px;
+}
+
+.menuContainerNav--main-header :global(.vtex-menu-2-x-styledLinkContent) {
+  font-weight: 400;
+  font-size: 16px;
+  color: #3D3C3C;
+}
+.menuContainerNav--main-header :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover :global(.vtex-rich-text-0-x-paragraph--opciones-colores),
+.menuContainerNav--main-header :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #FF030E;
+}
+
+
+
+.menuContainerNav--main-header :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover  :global(.vtex-store-components-3-x-logoImage--iconMenuPisos) {
+  background-color: #ED1B24;
+  background-position: -53px -1px;
+  background-repeat: no-repeat;
+  border-color: #ED1B24;
+}
+
+.menuContainerNav--main-header :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover :global(.vtex-store-components-3-x-logoImage--iconMenuParedes){
+  background-color: #ED1B24;
+  background-position: -55px 0;
+  background-repeat: no-repeat;
+  border-color: #ED1B24;
+}
+
+.menuContainerNav--main-header :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header):hover :global(.vtex-store-components-3-x-logoImage--iconMenuColores) {
+  background-color: #ED1B24;
+  background-position: -83px -6px;
+  background-repeat: no-repeat;
+  border-color: #ED1B24;
+}
+
+:global(.vtex-menu-2-x-menuContainer--main-header) {
+  gap: 20px !important;
+}
+
+
+.menuContainer--main-header :global(.vtex-flex-layout-0-x-flexCol) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* .menuContainerNav--main-header {
+  margin: 0 15px;
+} */
+
+.submenuWrapper--isOpen {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none;
+}
+
+.menuContainer--Main :global(.vtex-menu-2-x-styledLinkIcon--btn-customized) {
+  margin-left: -26px !important;
+  margin-right: 20px !important;
+}
+
+.menuContainerNav--mainSubMenu :global(.vtex-menu-2-x-styledLinkContent) {
+  font-family: 'NeutraTextTF';
+  font-size: 14px;
+  color: #828181;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -10px;
+  padding-left: 0px;
+  padding-right: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* .menuContainer--mainSubMenu :global(.vtex-menu-2-x-menuItem) {
+  border-bottom: 1px solid #BFBFBF !important;
+} */
+
+/* Solución submenu del menu desplegable */
+.menuContainer--mainSubMenu .submenuContainer .submenuWrapper {
+  left: 257px;
+  top: -35px;
+}
+
+.menuContainer--submenuHeader {
+  width: 256px;
+}
+
+
+/* menu nuevo */
+.menuContainer--menuHeaderRed :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1) :global(.vtex-flex-layout-0-x-flexCol--container-menu-new) :global(.vtex-menu-2-x-styledLinkContent){
+  color: #828181;
+  font-size: 16px;
+  padding: 9px 0px;
+  font-family: "NeutraText";
+  justify-content: flex-start;
+}
+
+.menuContainer--menuHeaderRed :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1) :global(.vtex-flex-layout-0-x-flexCol--container-menu-new) :global(.vtex-menu-2-x-styledLinkContent--menu-extra){
+  padding: 9px 10px;
+}
+
+.menuContainer--menuHeaderRed :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1) :global(.vtex-flex-layout-0-x-flexCol--container-menu-new)
+{
+  width: 256px;
+}
+
+
+.menuContainer--menuHeaderRed :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1) :global(.vtex-flex-layout-0-x-flexRowContent--container-menu-new) :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    justify-content: flex-start;
+}
+
+
+.menuItem--menu-descargas-pdp :global(.vtex-menu-2-x-submenuAccordion){
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menuContainer--btn-customized {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.menuContainerNav--btn-customized {
+  width: 80%;
+}
+
+.styledLinkContent--btn-customized {
+  text-transform: capitalize;
+}
+
+.menuItem--btn-customized {
+  min-width: 250px;
+}
+
+
+@media (max-width: 1024px) {
+
+  .menuContainerNav--acordeon-menu-pdp {
+    padding-top: 15px;
+}
+
+  .menuContainerNav--preHeader-mobile {
+    /* height: 40px; */
+    background: #ED1B24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .styledLinkContent--menuTopMenu-mobile {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'NeutraTextTF';
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFF;
+    padding: 8px 0;
+  }
+
+  .styledLinkContainer--menuTopMenu-mobile {
+    margin: 0 10px;
+  }
+
+  .menuContainer--preHeader-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .styledLinkContent--textTopMenu-mobile {
+    font-size: 12px;
+    color: #FFF;
+  }
+
+  .styledLinkContainer--textTopMenu-mobile {
+    margin: 0 8px !important;
+  }
+
+
+  .menuItem--Nosotros-FooterMobileItem,
+  .menuItem--de-tu-interes-FooterMobileItem,
+  .menuItem--legal-FooterMobileItem {
+    width: 100%;
+  }
+
+  .styledLinkContent--Nosotros-FooterMobileItem,
+  .styledLinkContent--de-tu-interes-FooterMobileItem,
+  .styledLinkContent--legal-FooterMobileItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'NeutraTextTF';
+    font-size: 16px;
+    color: #686868;
+    font-weight: 600;
+  }
+
+
+  .submenuAccordion--acordeonFooter-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .menuContainer--menu-footerMobile {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .menuContainer--menu-footerMobile :global(.vtex-menu-2-x-styledLinkContent) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .styledLinkContainer--Nosotros-FooterMobileItem,
+  .styledLinkContainer--de-tu-interes-FooterMobileItem,
+  .styledLinkContainer--legal-FooterMobileItem {
+    border-bottom: 1px solid #686868;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .styledLinkContainer--menu-footerMobile {
+    margin-left: 10px;
+  }
+
+  .accordionIcon--Nosotros-FooterMobileItem--isClosed,
+  .accordionIcon--de-tu-interes-FooterMobileItem--isClosed,
+  .accordionIcon--legal-FooterMobileItem--isClosed,
+  .accordionIcon--Nosotros-FooterMobileItem--isOpen,
+  .accordionIcon--de-tu-interes-FooterMobileItem--isOpen,
+  .accordionIcon--legal-FooterMobileItem--isOpen {
+    font-size: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .accordionIcon--Nosotros-FooterMobileItem--isClosed::before,
+  .accordionIcon--de-tu-interes-FooterMobileItem--isClosed::before,
+  .accordionIcon--legal-FooterMobileItem--isClosed::before {
+    content: '';
+    height: 6px;
+    width: 12px;
+    display: flex;
+    padding: 0;
+    background-image: url(assets/ico/arrowIcon.svg);
+    background-size: cover;
+  }
+
+  .accordionIcon--Nosotros-FooterMobileItem--isOpen::before,
+  .accordionIcon--de-tu-interes-FooterMobileItem--isOpen::before,
+  .accordionIcon--legal-FooterMobileItem--isOpen::before {
+    content: '';
+    height: 6px;
+    width: 12px;
+    display: flex;
+    padding: 0;
+    background-image: url(assets/ico/arrowIcon.svg);
+    background-size: cover;
+    rotate: 180deg;
+  }
+
+  .menuContainer--MenuBanos-Mobile {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .menuContainerNav--main-header {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 -3px 0 !important;
+  }
+
+  .menuContainer--main-header :global(.vtex-menu-2-x-menuItem) {
+    border-bottom: 0 !important;
+  }
+
+  .styledLinkContent--menu-descargas-pdp,
+.styledLinkContent--menu-detalles-pdp,
+.styledLinkContent--menu-description-pdp {
+    justify-content: flex-start;
+}
+
+.accordionIcon--menu-description-pdp--isClosed,
+.accordionIcon--menu-descargas-pdp--isClosed,
+.accordionIcon--menu-detalles-pdp--isClosed,
+.accordionIcon--menu-description-pdp--isOpen,
+.accordionIcon--menu-descargas-pdp--isOpen,
+.accordionIcon--menu-detalles-pdp--isOpen{
+font-size: 0px;
+align-items: center;
+    display: flex;
+}
+
+.accordionIcon--menu-description-pdp--isClosed::before,
+.accordionIcon--menu-descargas-pdp--isClosed::before,
+.accordionIcon--menu-detalles-pdp--isClosed::before{
+  content: url(assets/ico/arrowIcon.svg);
+}
+
+.accordionIcon--menu-description-pdp--isOpen::before,
+.accordionIcon--menu-descargas-pdp--isOpen::before,
+.accordionIcon--menu-detalles-pdp--isOpen::before{
+  content: url(assets/ico/arrowIcon.svg);
+}
+
+.accordionIcon--menu-description-pdp--isOpen,
+.accordionIcon--menu-descargas-pdp--isOpen,
+.accordionIcon--menu-detalles-pdp--isOpen{
+  transform: rotate(180deg);
+}
+
+.styledLinkContent--menu-descargas-pdp{
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.styledLinkContent--menu-description-pdp,
+.styledLinkContent--menu-detalles-pdp {
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-family: 'NeutraTextAltBold';
+}
+
+.styledLinkContainer--menu-detalles-pdp,
+.styledLinkContainer--menu-description-pdp,
+.styledLinkContainer--menu-descargas-pdp{
+  margin: 0px;
+  border-bottom: 1px solid  #BFBFBF;
+}
+.menuItem--menu-detalles-pdp :global(.vtex-menu-2-x-submenuAccordion){
+  display: flex;
+  flex-direction: column;
+}
+
+.styledLinkContent--MenuEXTRA-Mobile{
+  text-decoration: none;
+    color: #3D3C3C !important;
+}
+
+}

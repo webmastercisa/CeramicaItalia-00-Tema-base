@@ -1,0 +1,319 @@
+{
+    "store.custom#Aplicativos": {
+        "blocks": [
+            "flex-layout.row#miga-pan-aplicativos",
+            "flex-layout.row#section1-aplicativos",
+            "flex-layout.row#section2-aplicativos"
+        ]
+    },
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-aplicativos": {
+        "children": [
+            "image#icono-miga-pan",
+            "rich-text#texto-1-miga-pan",
+            "rich-text#texto-2-miga-pan-aplicativos"
+        ],
+        "props": {
+            "blockClass": [
+                "miga-pan-terminos-legales"
+            ]
+        }
+    },
+    // TEXTO 2 MIGA DE PAN 
+    "rich-text#texto-2-miga-pan-aplicativos": {
+        "props": {
+            "blockClass": [
+                "texto-2-miga-pan"
+            ],
+            "text": "[Aplicativos](/aplicativos)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    //INFOCARDS aplicativos
+    "flex-layout.row#section1-aplicativos": {
+        "children": [
+            "list-context.info-card-list#infocards-tab1-aplicativos"
+        ],
+        "props": {
+            "blockClass": [
+                "section1-aplicativos"
+            ]
+        }
+    },
+    "list-context-renderer#wrapped-tab1-aplicativos": {
+        "props": {
+            "listElement": "div",
+            "itemElement": "div",
+            "blockClass": "infocards-tab1-aplicativos"
+        }
+    },
+    "list-context.info-card-list#infocards-tab1-aplicativos": {
+        "children": [
+            "list-context-renderer#wrapped-tab1-aplicativos"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "infocard-tab1-aplicativos-1",
+                    "title": "infocard-tab1-aplicativos-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "/arquivos/img-aplicativo1.png",
+                    "imageActionUrl": "",
+                    "headline": "Portal Synergy",
+                    "subhead": "Torem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "blockClass": [
+                        "infocard-tab1-aplicativos"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-aplicativos-1",
+                    "title": "infocard-tab1-aplicativos-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "/arquivos/img-aplicativo2.png",
+                    "imageActionUrl": "",
+                    "headline": "Portal Transportadoras",
+                    "subhead": "Torem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "blockClass": [
+                        "infocard-tab1-aplicativos"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-aplicativos-1",
+                    "title": "infocard-tab1-aplicativos-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "/arquivos/img-aplicativo3.png",
+                    "imageActionUrl": "",
+                    "headline": "Portal Proveedores",
+                    "subhead": "Torem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "blockClass": [
+                        "infocard-tab1-aplicativos"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-aplicativos-1",
+                    "title": "infocard-tab1-aplicativos-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "/arquivos/img-aplicativo4.png",
+                    "imageActionUrl": "",
+                    "headline": "Portal Gerentes de Zona",
+                    "subhead": "Torem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "blockClass": [
+                        "infocard-tab1-aplicativos"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-aplicativos-1",
+                    "title": "infocard-tab1-aplicativos-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "/arquivos/img-aplicativo5.png",
+                    "imageActionUrl": "",
+                    "headline": "Órdenes de Compra",
+                    "subhead": "Torem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "blockClass": [
+                        "infocard-tab1-aplicativos"
+                    ]
+                },
+                {
+                    "id": "infocard-tab1-aplicativos-1",
+                    "title": "infocard-tab1-aplicativos-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "/arquivos/img-aplicativo6.png",
+                    "imageActionUrl": "",
+                    "headline": "Portal Clientes",
+                    "subhead": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Torem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "callToActionMode": "link",
+                    "callToActionText": "",
+                    "callToActionUrl": "#",
+                    "blockClass": [
+                        "infocard-tab1-aplicativos"
+                    ]
+                }
+            ]
+        }
+    },
+
+    "flex-layout.row#section2-aplicativos": {
+        "children": [
+            "flex-layout.row#column1-aplicativos",
+            "flex-layout.row#column2-aplicativos"
+        ],
+        "props": {
+            "blockClass": [
+                "section2-aplicativos"
+            ]
+        }
+    },
+    "flex-layout.row#column1-aplicativos": {
+        "children": [
+            "rich-text#text1-column1"
+        ],
+        "props": {
+            "blockClass": [
+                "column1-aplicativos"
+            ],
+            "width": "30%"
+        }
+    },
+    "rich-text#text1-column1": {
+        "props": {
+            "text": "De tu interes",
+            //  "text": "![AltImagen](urlImagen)",
+            //  "text": "[Texto del hipervinculo](urlHipervinculo?target=_blank)",
+            "blockClass": "text1-column1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#column2-aplicativos": {
+        "children": [
+            "flex-layout.col#column2-left",
+            "flex-layout.col#column2-right"
+        ],
+        "props": {
+            "blockClass": [
+                "column2-aplicativos"
+            ]
+        }
+    },
+
+ 
+    "flex-layout.col#column2-left": {
+        "children": [
+            "rich-text#t1-aplicativos",
+            "rich-text#t2-aplicativos",
+            "rich-text#t3-aplicativos",
+            "rich-text#t4-aplicativos",
+            "rich-text#t5-aplicativos"
+        ],
+        "props": {
+            "blockClass": [
+                "column2-left"
+            ],
+            "width": "60%"
+        }
+    },
+    "rich-text#t1-aplicativos": {
+        "props": {
+            "text": "[Aliados](/aliados)",
+            "blockClass": "t1-aplicativos",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#t2-aplicativos": {
+        "props": {
+                 "text": "[Fundación Cerámica Italia](/fundacion-Ceramica-italia)",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#t3-aplicativos": {
+        "props": {
+                 "text": "[SIC (superintendencia de industria y comercio) ](/sic)",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+    "rich-text#t4-aplicativos": {
+        "props": {
+                 "text": "[Estatuto del consumidor](/estatuto-del-consumidor))",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#t5-aplicativos": {
+        "props": {
+                 "text": "[Carta autorización entrega de producto a terceros](/carta))",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.col#column2-right": {
+        "children": [
+            "rich-text#t6-aplicativos",
+            "rich-text#t7-aplicativos",
+            "rich-text#t8-aplicativos",
+            "rich-text#t9-aplicativos",
+            "rich-text#t10-aplicativos"
+        ],
+        "props": {
+            "blockClass": [
+                "column2-right"
+            ]
+        }
+    },
+
+    "rich-text#t6-aplicativos": {
+        "props": {
+                 "text": "[Supermaestros](/supermaestros)",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#t7-aplicativos": {
+        "props": {
+                 "text": "[Es club](/es-club)",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+    "rich-text#t8-aplicativos": {
+        "props": {
+                 "text": "[Visualizador Instatile](/visualizador-instatile)",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#t9-aplicativos": {
+        "props": {
+                 "text": "[Pagos PSE](/Pagos-PSE)",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#t10-aplicativos": {
+        "props": {
+                 "text": "[Catálogo general](/Catalogo-general)",
+                 "blockClass": "t1-aplicativos",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    }
+}

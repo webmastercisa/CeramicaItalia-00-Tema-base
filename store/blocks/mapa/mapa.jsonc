@@ -1,0 +1,186 @@
+{
+    "store.custom#mapa-ceramicaitalia": {
+        "blocks": [
+            "flex-layout.row#miga-pan-nuestras-tiendas",
+            "flex-layout.row#section1-map",
+            "flex-layout.row#section2-map",
+            "flex-layout.row#container-map",
+            "flex-layout.row#section3-map",
+            "flex-layout.row#container-newsletter2-mapa"
+        ]
+    },
+
+ //MIGA DE PAN PREGUNTAS FRECUENTES
+ "flex-layout.row#miga-pan-nuestras-tiendas": {
+    "children": [
+        "image#icono-miga-pan",
+        "rich-text#texto-1-miga-pan",
+        "rich-text#texto-2-miga-pan-nuestras-tiendas"
+    ],
+    "props": {
+        "blockClass": [
+            "miga-pan-terminos-legales"
+        ]
+    }
+},
+// TEXTO 2 MIGA DE PAN 
+"rich-text#texto-2-miga-pan-nuestras-tiendas": {
+    "props": {
+        "blockClass": [
+            "texto-2-miga-pan"
+        ],
+        "text": "[Nuestras tiendas](/nuestras-tiendas)",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+
+
+// section 1 mapas
+
+"flex-layout.row#section1-map": {
+  "children": [
+    "flex-layout.row#linea-mapa",
+    "flex-layout.col#texts-nuestras-tiendas",
+    "flex-layout.row#linea-mapa"
+  ],
+  "props": {
+    "blockClass": ["section1-mapa"]
+  }
+},
+
+"flex-layout.col#texts-nuestras-tiendas": {
+  "children": [
+    "rich-text#title-nuestras-tiendas",
+    "rich-text#description-nuestras-tiendas"
+  ],
+  "props": {
+    "blockClass": ["texts-nuestras-tiendas"],
+    "width": "60%"
+  }},
+
+  "rich-text#title-nuestras-tiendas": {
+    "props": {
+             "text": "Bienvenido, llegaste al lugar correcto",
+             "blockClass": "title-nuestras-tiendas",
+             "textAlignment": "CENTER",
+             "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#description-nuestras-tiendas": {
+    "props": {
+             "text": "En Cerámica Italia queremos ayudarte a construir Tu estilo de vida perfecto.\nPor eso, nuestra misión es inspirar, promover, brindar servicio y celebrar un gran diseño para cada proyecto y cada presupuesto. Encuentra aquí tu sala de ventas más cercana y atrévete a dar el primer paso para iniciar la transformación de tu espacio.",
+             "blockClass": "description-nuestras-tiendas",
+             "textAlignment": "CENTER", 
+             "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#linea-mapa": {
+    "children": ["image#linea-mapa"],
+    "props": {
+      "blockClass": ["linea-mapa"]
+    }
+  },
+  "image#linea-mapa": {
+    "props": {
+             "src": "assets/ico/linea-mapa.svg",
+             "alt": "alt",
+             "height": "hight",
+             "blockClass": "linea-mapa"
+    }
+  },
+
+//   section 2 mapas
+  "flex-layout.row#section2-map": {
+     "children": [
+         "flex-layout.col#section2-nuestras-tiendas"
+  ],
+     "props": {
+         "blockClass": "section2-nuestras-tiendas",
+         "fulwidth": false
+    }
+  },
+  "flex-layout.col#section2-nuestras-tiendas": {
+     "children": [
+        "rich-text#texts1-section2",
+        "rich-text#texts2-section2"
+  ],
+     "props": {
+         "blockClass": "section2-nuestras-tiendas",
+         "fulwidth": false
+    }
+  },
+
+  "rich-text#texts1-section2": {
+    "props": {
+             "text": "Nuestras tiendas",
+             "blockClass": "texts1-section2",
+             "textAlignment": "CENTER",
+             "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#texts2-section2": {
+    "props": {
+             "text": "Encuentra Cerámica Italia cerca de ti",
+             "blockClass": "texts2-section2",
+             "textAlignment": "CENTER",
+             "textPosition": "CENTER"
+    }
+  },
+    "flex-layout.row#container-map": {
+        "children": [
+            // "rich-text#title-map",
+            "custom-app-map"
+        ],
+        "props": {
+            "blockClass": [
+                "container-map"
+            ]
+        }
+    },
+
+    // section 3 mapa
+
+    "flex-layout.row#section3-map": {
+         "children": [
+             "flex-layout.col#section3-map"
+    ],
+         "props": {
+             "blockClass": "section3-map",
+             "fulwidth": false
+        }
+    },
+    "flex-layout.col#section3-map": {
+         "children": [
+            "rich-text#title-section4",
+            "list-context.info-card-list#slider-infocard-mapa"
+    ],
+         "props": {
+             "blockClass": "section3-map",
+             "fulwidth": false
+        }
+    },
+
+    "rich-text#title-section4": {
+        "props": {
+                 "text": "Nuestras Salas de ventas",
+                 "blockClass": "title-section4",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.row#container-newsletter2-mapa": {
+      "children": [
+          "newsletter-form#newsletter2"
+      ],
+      "props": {
+          "blockClass": [
+              "container-newsletter2" , "newsletter-mapa"
+          ]
+      }
+  }
+}

@@ -1,0 +1,292 @@
+{
+    //TEXTO CONTENIDO TERMINOS Y CONDICIONES
+    "flex-layout.col#contenido-terminos-condiciones": {
+      "children": [
+        "rich-text#titulo-contenido-terminos-condiciones",
+        "rich-text#texto-1-terminos-condiciones",
+        "rich-text#subtitulo-2-terminos-condiciones",
+        "rich-text#texto-2-terminos-condiciones",
+        "rich-text#subtitulo-3-terminos-condiciones",
+        "rich-text#texto-3-terminos-condiciones",
+        "rich-text#subtitulo-4-terminos-condiciones",
+        "rich-text#texto-4-terminos-condiciones",
+        "rich-text#subtitulo-5-terminos-condiciones",
+        "rich-text#texto-5-terminos-condiciones",
+        "rich-text#subtitulo-6-terminos-condiciones",
+        "rich-text#texto-6-terminos-condiciones",
+        "rich-text#subtitulo-7-terminos-condiciones",
+        "rich-text#texto-7-terminos-condiciones",
+        "rich-text#subtitulo-8-terminos-condiciones",
+        "rich-text#texto-8-terminos-condiciones",
+        "rich-text#subtitulo-9-terminos-condiciones",
+        "rich-text#texto-9-terminos-condiciones",
+        "rich-text#subtitulo-10-terminos-condiciones",
+        "rich-text#texto-10-terminos-condiciones",
+        "rich-text#subtitulo-11-terminos-condiciones",
+        "rich-text#texto-11-terminos-condiciones",
+        "image#tabla-centros-logisticos",
+        "rich-text#texto-11-1-terminos-condiciones",
+        "rich-text#subtitulo-12-terminos-condiciones",
+        "rich-text#texto-12-terminos-condiciones",
+        "rich-text#subtitulo-13-terminos-condiciones",
+        "rich-text#texto-13-terminos-condiciones",
+        "rich-text#subtitulo-14-terminos-condiciones",
+        "rich-text#texto-14-terminos-condiciones",
+        "rich-text#subtitulo-15-terminos-condiciones",
+        "rich-text#texto-15-terminos-condiciones",
+        "rich-text#subtitulo-16-terminos-condiciones",
+        "rich-text#texto-16-terminos-condiciones",
+        "rich-text#subtitulo-17-terminos-condiciones",
+        "rich-text#texto-17-terminos-condiciones",
+        "rich-text#subtitulo-18-terminos-condiciones",
+        "rich-text#texto-18-terminos-condiciones",
+        "image#boton-descargar-terminos-condiciones"
+      ],
+      "props": {
+        "blockClass": ["contenedor-textos-terminos-legales"]
+      }
+    },
+    "rich-text#titulo-contenido-terminos-condiciones": {
+      "props": {
+        "blockClass": ["titulo-contenido-texto-preguntas-frecuentes"],
+        "text": "TERMINOS Y CONDICIONES"
+      }
+    },
+    "rich-text#texto-1-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Bienvenidos a CERÁMICA ITALIA ONLINE, nuestra TIENDA OFICIAL, desde donde puede realizar sus pedidos en cualquier momento y desde la comodidad de su hogar o trabajo. 100% seguro y con el respaldo de Cerámica Italia S.A.\n\nEl presente documento tiene por objeto presentar los términos y condiciones (en adelante los “Términos y Condiciones”) aplicables al acceso y uso por parte de usuarios o clientes, de los productos y servicios ofrecidos por CERÁMICA ITALIA dentro del sitio web www.ceramicaitalia.com; los cuales se entenderán aceptados por el cliente en su totalidad una vez tomé la decisión de realizar una compra por este medio.\n\nCerámica Italia S.A. se reserva el derecho de actualizar, cambiar modificar y/o suprimir la política de términos, condiciones y restricciones en cualquier momento sin previo aviso, razón por la cual cada vez que elija esta opción deberá revisar la política, ya que al realizar la compra se entiende aceptada la misma en su totalidad.\n\nLas compras podrán realizarse desde cualquier país, sin embargo, el alcance para la distribución y entrega de las mismas será exclusivamente en el territorio colombiano en las ciudades de Cúcuta, Bogotá, Medellín, Barranquilla, Cali, Pereira, y Bucaramanga."
+      }
+    },
+    "rich-text#subtitulo-2-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "¿Quiénes Somos?"
+      }
+    },
+    "rich-text#texto-2-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "El Sitio Web visitado por usted, es propiedad de Cerámica Italia S.A. Identificada con Nit. 890503314-6, su dirección de notificación es Av. 3 calle 23 AN Zona industrial Cúcuta, Norte de Santander, Colombia."
+      }
+    },
+    "rich-text#subtitulo-3-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "1 . CONTENIDO DE LA PÁGINA"
+      }
+    },
+    "rich-text#texto-3-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Se autoriza la revisión, consulta, solicitud de pedido y pago de productos nacionales e importados, producidos o comercializados, que tengamos disponibles en nuestras bodegas o centro logísticos para entrega a nuestros clientes, la información de usos, beneficios y bondades de nuestros productos, los cuales tienen como único objetivo dar a conocer las características y el correcto uso de nuestros productos.\n\nSe prohíbe que la información publicada en nuestra página web sea objeto de comercialización, distribución, copia o modificación. No está autorizado el acceso a cuentas o información confidencial de los usuarios, así como la violación de la red y/o servidores o cualquier otro acto que atente contra la seguridad y disponibilidad de las transacciones y de la página web.\n\nLa información que el usuario registre debe ser veraz y completa; se prohíbe todo acto de suplantación de identidad y/o información incorrecta que no corresponda a la persona natural o jurídica que hace uso de la página web.\n\nEn todo caso, únicamente se permitirá a personas mayores de edad, debidamente identificadas con cédula de ciudadanía o cédula de extranjería registrarse y efectuar operaciones de compra a través de esta página."
+      }
+    },
+    "rich-text#subtitulo-4-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "2 . REGISTRO"
+      }
+    },
+    "rich-text#texto-4-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Será requisito completar el registro con datos válidos para convertirse en Usuario autorizado de www.ceramicaitalia.com y adquirir los productos y/o servicios ofrecidos en este sitio. El usuario registrado de Cerámica Italia deberá completar el formulario de registro con su información personal de manera exacta, precisa y verdadera y asume el compromiso de actualizar los Datos Personales conforme resulte necesario. Cerámica Italia NO se responsabiliza por la certeza de los Datos Personales provistos por sus Usuarios. Si se verificará o sospechará de un uso fraudulento y/o malintencionado y/o contrario a estos Términos y Condiciones y/o contrarios a la buena fe, Cerámica Italia tendrá el derecho inapelable de dar de baja las cuentas y hasta de perseguir judicialmente a los infractores.\n\nEl Usuario, una vez registrado, dispondrá de su dirección de email y una clave secreta (en adelante la 'Clave') que le permitirá el acceso personalizado, confidencial y seguro. En caso de poseer estos datos, el Usuario tendrá la posibilidad de cambiar la Clave de acceso, para lo cual deberá sujetarse al procedimiento establecido en el sitio respectivo. El Usuario se obliga a mantener la confidencialidad de su Clave de acceso, asumiendo totalmente la responsabilidad por el mantenimiento de la confidencialidad de su Clave secreta registrada en este sitio web, la cual lepermite efectuar compras, solicitar servicios y obtener información. Dicha Clave es de uso personal, y su entrega a terceros no involucra responsabilidad de Cerámica Italia en caso deutilización indebida, negligente y/o incorrecta."
+      }
+    },
+    "rich-text#subtitulo-5-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "3 . PROCEDIMIENTO DE COMPRA"
+      }
+    },
+    "rich-text#texto-5-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Por medio de este sitio web, el usuario podrá realizar compras siempre que sea una persona natural que cuente con plena capacidad legal para hacerlo o por medio de una persona debidamente facultada para actuar en su nombre y representación, en caso de ser una persona jurídica. En todo caso, únicamente se permitirá el registro y la realización de operaciones en la página a personas mayores de edad, debidamente identificadas con cédula de ciudadanía, cédula de extranjería o, en caso de ser una persona jurídica, se requiere el número de Identificación Tributaria.\n\nDebido a que la información sobre productos, precios y demás condiciones de compra se encuentran dirigidas a personas indeterminadas, el perfeccionamiento de cada operación de compra realizada a través del Sitio deberá contar con una confirmación y aceptación por parte de Cerámica Italia de cada orden de compra que hagan los Usuarios, así como de la confirmación del pago correspondiente. Una vez se acepte la respectiva orden de compra y se verifique el pago de ésta, Cerámica Italia enviará un correo electrónico a la dirección registrada por el Usuario con la información detallada de su compra, en algunos casos este proceso también se hará por medio del teléfono o Whatsapp para asegurar que el cliente reciba la información.\n\nActualmente el sitio de Cerámica Italia cuenta con dos modalidades de compra distintas:\n● Vía Checkout: para los usuarios cuyo despacho se realizará en la zona urbana de las ciudades de Bogotá, Barranquilla, Medellín, Bucaramanga, Cali, Pereira y Cúcuta, quienes podrán realizar el proceso de compra completo, desde la selección de los productos en el sitio hasta su pago final.\n● Vía Chat: para los Usuarios que desean realizar el proceso de compra asistida con uno de los asesores digitales de Cerámica Italia disponibles en el siguiente horario: lunes a viernes de 8:00 a.m a 7:00 p.m, sábados de 9:00 a 5:00 pm y domingos de 10:00 am a 5:00 pm por medio de Whatsapp, quienes de forma virtual generarán la cotización y revalidarán con el Usuario, la orden de pedido según disponibilidad de los productos deseados, para entrega inmediata o para bajo pedido, costos de envío y métodos de pago disponibles para finalizar la compra.\n\nPara realizar compras en línea será necesario que los usuarios, faciliten información personal y confidencial. Esta información será de uso exclusivo de Cerámica Italia S.A. y no será revelada a terceros, salvo la información que requieran las entidades financieras para efectos de procesar las transacciones electrónicas de pago, o entidades gubernamentales en casos de procesos de investigación.\n\nBuscando la seguridad en las transacciones, queda expresamente prohibido a los usuarios el compartir con terceros su contraseña o el password; esta información es de uso exclusivo del usuario y no se podrá utilizar para fines no autorizados.\n\nEl Proceso para compra vía Checkout se llevará a cabo de la siguiente forma:\n\nEl Usuario deberá acceder a www.ceramicaitalia.com.\n\n1. El usuario podrá navegar en el sitio web por todas las categorías en busca del producto de su preferencia.\n2. Dando clic sobre el producto, el usuario accede al detalle de este para conocer más información como precio, características, atributos, etc.\n3. Si el ‘Usuario’ desea añadir un producto a su carrito de compras, el sistema mostrará un cuadro de diálogo en el cual deberá seleccionar una de las ciudades donde se encuentran nuestros centros logísticos.\n4. Según la previa selección del usuario el sistema procederá a realizar la consulta del inventario disponible en dicho centro logístico en tiempo real.\n5. De encontrarse disponible el producto será agregado a su carrito de compra (este proceso se repetirá por la cantidad de productos que el usuario desee comprar).\n6. El usuario podrá la cantidad de metros que requiere para su espacio, en el campo 'Cuantos Metros necesitas remodelar' y este a su vez le calculará el total de cajas y los metros cuadrados que debe llevar de acuerdo al formato del producto seleccionado.\n7. El usuario puede continuar agregando productos al carrito o proceder a finalizar la compra en el checkout.\n8. Si el usuario ya se encuentra registrado en el sitio puede darle en la opción “Ya estás registrado” para continuar su proceso, de lo contrario continúa el registro de los datos solicitados del formulario.\n9. Una vez diligenciada la información el usuario deberá aceptar: Nuestra política de términosy condiciones; así como rechazar o aceptar la política de tratamientos de datos personales.\n10. El usuario de acuerdo al método de pago que desee utilizar seleccionará la opción correspondiente. Si selecciona Pago por transferencia bancaria, le aparecerá una ventana con la opción de “Confirmar mi Pedido” luego de esto aparecerán las indicaciones para realizar la transferencia o consignación.Si selecciona Pago con tarjeta de crédito o PSE, será redireccionado a un sitio seguro de nuestra pasarela de pagos.\n11. El usuario deberá ingresar los datos del pagador, posteriormente seleccionar alguno de los métodos de pago ofrecidos por la pasarela, diligenciar la información bancaria pertinente y esperar la confirmación del pago.\n12. Una vez su pago sea aprobado será redireccionado hacia una página de respuesta en www.ceramicaitalia.com, donde encontrará información detallada acerca de su transacción y el estado de su pedido.\n13. El sistema le notificará vía correo electrónico la confirmación del pedido.\n14. Cuando el pedido se encuentre listo para ser entregado, Cerámica Italia a través del equipo logístico se comunicará con el cliente para agendar la fecha de entrega del material."
+      }
+    },
+    "rich-text#subtitulo-6-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "4 . MONEDA E IMPUESTOS:"
+      }
+    },
+    "rich-text#texto-6-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Los precios enunciados en esta página web se muestran en pesos colombianos e incluyen impuestos. De acuerdo con lo anterior y en cumplimiento de la legislación colombiana vigente, Cerámica Italia S.A. está obligada a incorporar al precio final de venta el impuesto a las ventas IVA, si la tarifa de IVA cambia al momento del retiro del producto de la sala, esta será ajustada a cargo del comprador."
+      }
+    },
+    "rich-text#subtitulo-7-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "5 . PRECIOS DE LOS PRODUCTOS:"
+      }
+    },
+    "rich-text#texto-7-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Los precios de los productos ofrecidos en el Sitio están expresados en Pesos colombianos salvo que se manifieste lo contrario. Los precios ofrecidos corresponden exclusivamente al valor del bien ofrecido, Precio Sugerido para la Venta al Público (PSVP).\n\nLos productos y sus precios, publicados en el sitio web, podrían no coincidir con la oferta o precios de las salas de venta directa de Cerámica Italia a nivel nacional.\n\nEs posible que algunos de los productos, así como los precios publicados en la página web sean exclusivos de este canal de comercialización y sólo podrán ser adquiridos a través de la página. Por lo anterior, los precios, productos y promociones ofrecidos por el canal digital pueden no aplicar para otros canales de venta de Cerámica Italia.\n\nLos precios publicados en el sitio podrán sufrir cambios sin previo aviso.\n\nLos precios de los productos en puntos de ventas de Distribuidores y/o aliados estratégicos aplican según política de precios definida por cada Distribuidor"
+      }
+    },
+    "rich-text#subtitulo-8-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "6 . VALIDEZ DE LAS OFERTAS O DESCUENTOS"
+      }
+    },
+    "rich-text#texto-8-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "El plazo de validez de la oferta es aquel que coincide con la fecha de vigencia indicada en la promoción o hasta agotar el inventario de productos disponibles para esa promoción debidamente informados al Usuario o mientras la oferta se mantenga disponible. En todo caso la vigencia coincidirá con el menor de estos plazos."
+      }
+    },
+    "rich-text#subtitulo-9-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "7 . DISPONIBILIDAD DE PRODUCTO"
+      }
+    },
+    "rich-text#texto-9-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "La disponibilidad de los productos está sujeta al inventario disponible de cada una de los Centros Logísticos de Cerámica Italia ubicadas en las ciudades de Cúcuta, Bogotá, Medellín, Barranquilla, Cali, Pereira, y Bucaramanga, más el inventario disponible asignado a Ecommerce ubicado en la Planta principal de la ciudad de Cúcuta, al momento de realizar la compra. Proceso de validación que se realiza de manera automática entre nuestro CMS y el ERP de acuerdo a la ciudad seleccionada por el cliente.\n\nCuando el proceso de compra se realiza por medio de la venta asistida (Chat o Teléfono) las encargadas de validar la disponibilidad de producto de acuerdo a la ciudad del cliente son lasejecutivas digitales."
+      }
+    },
+    "rich-text#subtitulo-10-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "8 . FORMA DE PAGO:"
+      }
+    },
+    "rich-text#texto-10-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Los Usuarios concluirán la formalización de la compra a través del pago de los productos y servicios seleccionados, para esto Cerámica Italia S.A. aceptará pagos realizados por los siguientes medios:\n\n● PSE (débitos desde cuentas de ahorros y corrientes en Colombia),\n● Nequi y Daviplata\n● Tarjetas de crédito Visa, MasterCard, American Express, Diners Club, Codensa.\n● Recaudos en efectivo en puntos Efecty, Paga Todo, Apuestas Cucuta 75, Su Chance, acertemos, apuestas unidas, Jer.\n● Transferencia Bancaria a nombre de Cerámica Italia S.A NIT. 890503314-6 (Davivienda y Bancolombia)\n\nEstas opciones serán visibles para el usuario en la página de Checkout, y en la asesoría por medio del chat, y/o llamada telefónica.\n\nEn el momento que formaliza la compra el Usuario deberá proporcionar todos los datos que le sean requeridos durante el proceso y que variarán en función del medio de pago seleccionado. La información proporcionada por el Usuario durante el proceso de pago será tramitada a través de 'pasarelas seguras de pago on-line' y por tanto en ningún caso Cerámica Italia va a tener acceso ni va a guardar en modo alguno ninguno de estos datos.\n\nEl Usuario se compromete a comunicar por cualquiera de los medios indicados y en el menor tiempo posible cualquier cargo indebido o fraudulento en la tarjeta utilizada para la formalización de sus compras. Cerámica Italia a partir de ese momento realizará las comprobaciones oportunas comprometiéndose a mantener informado al Usuario en todo momento de la evolución de la cuestión comunicada.\n\nEs responsabilidad de cada tarjeta habiente el uso de estas, Cerámica Italia no se hace responsable, se exime de cualquier responsabilidad si personas ajenas a usted realiza compras con sus tarjetas."
+      }
+    },
+    "rich-text#subtitulo-11-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "9 . CONDICIONES DE ENTREGA Y TRANSPORTE:"
+      }
+    },
+    "rich-text#texto-11-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Los productos adquiridos a través del sitio www.ceramicaitalia.com, por medio de la asesoría vía chat, o por llamada telefónica, cuentan con las siguientes modalidades de entrega:\n\n● Entrega a Domicilio: Cerámica Italia realizará la entrega a domicilio de forma gratuita cuando la dirección de entrega se encuentre dentro del perímetro urbano de las siguientes ciudades: Bogotá, Bucaramanga, Barranquilla, Medellín, Cali, Pereira y Cúcuta.\n\nCuando no cumpla las anteriores condiciones, el valor del transporte debe ser asumido por el cliente, esté costo podrá ser consultado por medio del chat online y si el cliente está de acuerdo con adquirir el servicio de transporte, este será relacionado en el pedido de venta con el nombre 'Otros'; de acuerdo a los indicado en numeral c) del artículo 50 de la Ley 1480 de 2011.\n\n● Recogida en Tienda: El cliente podrá retirar el material directamente en nuestros puntos logísticos de las siguientes ciudades: Bogotá, Bucaramanga, Barranquilla, Medellín, Cali, Pereira y Cúcuta.\n\nLas direcciones y horario de atención son los siguientes:"
+      }
+    },
+    "image#tabla-centros-logisticos": {
+      "props": {
+        "blockClass": ["tabla-centros-logisticos"],
+        "src": "assets/imgs/tabla-centros-logisticos.png"
+      }
+    },
+    "rich-text#texto-11-1-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "**Tiempos de Entrega:**\n\nLa promesa de entrega para los productos comprados directamente en www.ceramicaitalia.com o alguna de las otras modalidades de compra para productos con disponibilidad inmediata tienen un tiempo de entrega de 24 horas en el perímetro urbano.\n\nCuando la entrega corresponde a despachos nacionales o municipios fuera del casco urbano el tiempo de entrega es de 72 horas para productos con disponibilidad inmediata.\n\nCuando el producto se encuentre en la bodega principal (Planta de Producción) de Cerámica Italia el tiempo máximo de entrega será de 10 días, esta información será comunicada al cliente.\n\nPara los productos porcelanatos el tiempo de entrega es de máximo 10 días.\n\nDebe tenerse en cuenta que al realizar una compra en un día no hábil (domingo o festivo) u horario no hábil, el tiempo de entrega debe contemplarse desde el día hábil siguiente.\n\nEstas entregas tienen un tiempo máximo de entrega de 30 días calendario como lo menciona el numeral h) del artículo 50 de la Ley 1480 de 2011.\n\n**Condiciones de la entrega:**\n\nAl momento de la entrega del producto sea en la dirección indicada para la 'Entrega a Domicilio' o para la entrega en el centro logístico en la opción “Recogida en Tienda”, deberá presentar la cédula de ciudadanía, que debe coincidir con lo registrado al momento de la compra en el sitio web.\n\nPara la Entrega a Domicilio, CERÁMICA ITALIA se hace responsable de enviar el pedido a la dirección suministrada por el Usuario dentro de la fecha indicada al cliente, previa comunicación del equipo logístico, pero sin establecer una hora exacta o cita de entrega. Los productos serán entregados al comprador según consta en la factura y/o a la persona que este haya designado como responsable de recibir en la dirección de despacho. La persona que recibe será el encargado de revisar el producto antes de firmar la remisión y el formato de entrega de producto como constancia de entrega.\n\nLa entrega se realizará hasta donde el vehículo le sea permitido ingresar, en portería o registro de entrada y puesto en primer piso.\n\nPara la recogida en Centro logístico: La mercancía puede ser recogida directamente por el cliente en nuestros Centros Logísticos, o autorizar a un tercero para que lo haga, siempre y cuando de manera escrita se autorice retirar el pedido indicando nombre completo y número de cédula.\n\nLos productos serán entregados al comprador y/o persona que este haya designado como responsable de recibir durante el proceso de checkout o durante la conversación vía chat o teléfono con el ejecutivo de venta. La persona que recibe será el encargado de revisar el producto antes de firmar la remisión y el formato de entrega de producto como constancia de entrega."
+      }
+    },
+    "rich-text#subtitulo-12-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "10 . RETRACTO DE LA COMPRA"
+      }
+    },
+    "rich-text#texto-12-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Los usuarios de ceramicaitalia.com están en todo su derecho de hacer devolución de los productos, de tal forma que los usuarios devuelvan la mercancía en perfectas condiciones aptas para una nueva venta y Cerámica Italia S.A. realizará la devolución del dinero pagado por el producto, siempre y cuando se cumplan las siguientes condiciones:\n\n1. La devolución del bien se deberá realizar durante los siguientes cinco (5) días hábiles contados a partir de la entrega del bien.\n2. El producto debe ser devuelto en perfectas condiciones, sin ser usado, en sus cajas originales, apto para la venta y con cada una de sus unidades.\n3. El valor de transporte deberá ser asumido por el Usuario y los demás costos que conlleven la devolución del bien.\n4. El Producto deberá ser entregado en el centro logístico de la ciudad desde la cual recibió el producto.\n5. La devolución del dinero lo realizará Cerámica Italia S.A. a través de transferencia electrónica, dentro de los 30 días calendario siguientes desde el momento en que ejerció el derecho, para este procedimiento el ejecutivo de ventas dependiendo del tipo de cliente deberá solicitar la siguiente documentación:\n**Persona Natural**\n- Copia de la Cédula del Solicitante y/o comprador. (Representante legal)\n- De autorizar a un tercero copia de la cédula del autorizado.\n- Certificación Bancaria\n**Sociedad o Persona Jurídico**\n- Copia de la Cédula del Solicitante y/o comprador.(aparece en la cámara de comercio)\n- Copia cámara de comercio\n- Copia del RUT\n- Certificación Bancaria\n- Verifique el correcto diligenciamiento del formato."
+      }
+    },
+    "rich-text#subtitulo-13-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "11 . REVERSIÓN DEL PAGO"
+      }
+    },
+    "rich-text#texto-13-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "La reversión del pago se podrá solicitar en los siguientes casos: cuando el cliente sea objeto de fraude, el pago corresponda a una operación no solicitada por el cliente, el producto adquirido no sea el recibido o no corresponda al solicitado, no cumpla con las características inherentes o el producto entregado se encuentre defectuoso (previa confirmación según manual de garantía, estos defectos están sujetos a diagnóstico técnico).\n\nPara solicitar la reversión del pago, el cliente deberá presentar una queja ante Cerámica Italia S.A. dentro de los cinco (5) días hábiles siguientes a la fecha en que tuvo conocimiento del fraude, de la operación no solicitada o se presentó el inconveniente con el producto adquirido.\n\nLa reclamación se podrá presentar a través de los siguientes canales: Líneas de Atención Nacional: 018000111568 y por medio del chat o Whatsapp que se encuentra habilitado en www.ceramicaitalia.com\n\nEn caso que el cliente desee la reversión del pago y no sea el mismo titular del instrumento de pago, la solicitud al emisor deberá ser presentada por el titular del producto financiero.\n\nEn el mismo término de 5 días hábiles el cliente deberá indicar a Cerámica Italia S.A. que el bien objeto de reversión estará a su disposición, Cerámica Italia S.A. Cuando el pago corresponda a varios productos, el cliente podrá solicitar la reversión parcial del pago de aquellos respecto de los cuales realiza la solicitud, el cliente en este caso deberá expresar de manera clara cuál es el producto y el valor por el cual solicita la reversión.\n\nUna vez presentada la queja ante Cerámica Italia S.A. Se debe notificar de la reclamación al emisor del instrumento de pago electrónico utilizado para realizar la compra, quien junto Cerámica Italia S.A. contarán con un término de treinta (30) días calendario para hacer efectiva la reversión.\n\nEn caso que el cliente haya solicitado la reversión del pago y se determine mala fe por parte de este, se cargará definitivamente la transacción reclamada al consumidor y la Superintendencia de Industria y Comercio podrá imponer sanciones de hasta cincuenta (50) salarios mínimos mensuales legales vigentes"
+      }
+    },
+    "rich-text#subtitulo-14-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "12 . GARANTÍA"
+      }
+    },
+    "rich-text#texto-14-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Para hacer efectiva la Garantía es necesario que se cumplan las siguientes condiciones:\n\nComuníquese dentro de los términos de la garantía con la línea de SATISFACCIÓN Y FELICIDAD AL CLIENTE: 01-8000-111568 en los horarios de atención de oficina dispuestos para este propósito. (Lunes-Viernes 7:00 a.m. – 12:00 m / 2:00 p.m. – 6:00 p.m.) o ingresar a www.ceramicaitalia.com o a través del chat virtual o Whatsapp de esta misma página en el horario indicado anteriormente, o en el link contáctanos.\n\nPara agilizar la reclamación el cliente puede acercarse con la factura de compra original o el comprobante de compra que nos permita identificar y/o verificar la fecha de compra del producto y una de las etiquetas que se encuentran adheridas en el empaque donde se indica el nombre, lote, tamaño y calidad del producto. Sin embargo, en caso de no contar con la factura o el comprobante de compra también podrá acercarse sin estos para hacer efectiva la garantía.\n\nTenga en cuenta:\n\n● La garantía de los productos de Cerámica Italia S.A. están sujetos a un diagnóstico técnico.\n● Las solicitudes se atenderán en un tiempo máximo de 15 días hábiles, tenga en cuenta que según la solicitud que se haga se debe hacer un análisis técnico de causas, por lo tanto, de aplicar la garantía, se realizará en 30 días hábiles siempre y cuando usted como usuario tenga la disponibilidad o en el momento en que usted lo determine.\n● La garantía y manual de uso e instrucciones será entregado al momento del retiro de la mercancía en bodega o centro logistico o puede ser consultado en www.ceramiciatalia.com\n● La GARANTÍA CERÁMICA ITALIA S.A. cubre defectos relacionados con la calidad intrínseca del producto, y no tiene cobertura en los siguientes casos, por lo tanto, los gastos y costos derivados de los mismos no serán asumidos por CERÁMICA ITALIA S.A. aun cuando sucedan durante el tiempo de garantía, El productor o proveedor se exonera de la responsabilidad que se deriva de la garantía, cuando demuestre que el defecto proviene de:\n\n○ Fuerza mayor o caso fortuito;\n○ El hecho de un tercero;\n○ El uso indebido del bien por parte del consumidor, y\n○ Que el consumidor no atendió las instrucciones de instalación, uso o mantenimiento indicadas en el manual del producto y en la garantía. El contenido del manual de instrucciones deberá estar acorde con la complejidad del producto. Esta causal no podrá ser alegada si no se ha suministrado manual de instrucciones de instalación, uso o mantenimiento en idioma castellano.\nUna vez se entregue el producto para hacer efectiva la garantía, se expedirá una constancia de recibo conforme con las reglas previstas para la prestación de servicios que suponen la entrega de un bien y se indicarán los motivos de la reclamación.\nPara más información sobre la garantía de Cerámica Italia consultar en https://www.ceramicaitalia.com/corporativo/garantia.php"
+      }
+    },
+    "rich-text#subtitulo-15-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "13 . DERECHOS DEL USUARIO"
+      }
+    },
+    "rich-text#texto-15-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "El usuario gozará de todos los derechos que le reconoce la legislación colombiana sobre Protección al Consumidor y Protección de Datos personales, por tal razón, podrá radicar sus peticiones, quejas, reclamos y sugerencias (PQR) a través de la página web, de igual forma lo puede hacer a través de nuestra línea 01 8000 111568, en el chat o directamente en nuestras salas de ventas propias.\n\nLos presente términos y condiciones se encuentran conforme a lo establecido por la Ley 1581 de 2012 por la cual se dictan disposiciones generales para la protección de datos personales y la Ley 1480 de 2011 Por medio de la cual se expide el Estatuto del Consumidor y se dictan otras disposiciones y demás disposiciones y normativas de carácter comercial que contemple la ley para este tipo de comercialización."
+      }
+    },
+    "rich-text#subtitulo-16-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "14 . PROPIEDAD INTELECTUAL E INDUSTRIAL."
+      }
+    },
+    "rich-text#texto-16-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Los textos, imágenes, sonidos, animaciones, software y el resto de contenidos incluidos en www.ceramicaitalia.com, susceptibles de ser objeto de protección a través de la normativa de propiedad intelectual e industrial están sujetos a los derechos de propiedad intelectual e industrial y, son titularidad exclusiva de la Compañía o de las personas físicas o jurídicas autoras o licenciantes, en su caso y consecuentemente el Usuario declara conocer que no tiene ningún tipo de derecho sobre los mismos y que el hecho de visitar www.ceramicaitalia.com no le otorga ningún derecho en este sentido.\n\nEstá prohibida su reproducción total o parcial, su traducción, inclusión, transmisión, almacenamiento o acceso a través de medios analógicos, digitales o de cualquier otro sistema o tecnología creada o por crearse, la copia, modificación, eliminación del Contenido, la transferencia, venta, arrendamiento o alquiler, o la creación de trabajos derivados o en modo alguno la explotación comercial del contenido de la página, en forma total o parcial, sin autorización previa y escrita de Cerámica Italia S.A. No obstante, es posible descargar material para uso personal y NO comercial, siempre y cuando se haga expresa mención de la propiedad del contenido en la misma página."
+      }
+    },
+    "rich-text#subtitulo-17-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "15 . CONDICIONES GENERALES"
+      }
+    },
+    "rich-text#texto-17-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Cerámica Italia S.A trabaja día a día para que el ingreso a esta página sea seguro y su información personal se encuentre protegida; de igual forma, no podemos hacernos responsables por virus, demoras en la operación, errores tecnológicos, manipulación por terceros no autorizados, cualquier evento de invasión o manipulación tecnológica o algún otro error en el funcionamiento de la página web.\n\nRecuerde que únicamente podrán comprar a través de esta página web, y generar documentos de venta si y sólo si a personas mayores de edad, debidamente identificadas con cédula de ciudadanía o cédula de extranjería para efectuar operaciones de compra a través de esta página. Si en algún caso ceramicaitalia.com presentara errores involuntarios y usted los detecta le agradecemos que los ponga nuestro conocimiento escribiendo al correo electrónico lid.ecommerce@ceramicaitalia.com o a través de la línea 01800011568."
+      }
+    },
+    "rich-text#subtitulo-18-terminos-condiciones": {
+      "props": {
+        "blockClass": ["subtitulo-contenido-preguntas-frecuentes"],
+        "text": "16 . SEGURIDAD Y CONFIDENCIALIDAD DE DATOS"
+      }
+    },
+    "rich-text#texto-18-terminos-condiciones": {
+      "props": {
+        "blockClass": ["texto-contenido-preguntas-frecuentes"],
+        "text": "Cerámica Italia S.A. Identificada con NIT. 890503314-6 domiciliada en la ciudad de Cúcuta (Norte de Santander) es responsable del tratamiento de los datos personales aportados por sus clientes.\n\nAcorde con nuestras políticas de tratamiento de datos personales, la cual puede ser consultada en el siguiente link (https://www.ceramicaitalia.com/contenido/habeas-data), cumplimos en forma integral con la normativa sobre el tratamiento de los mismos, observando reglas de seguridad y confiabilidad; para ello empleamos medios tecnológicos idóneos con el fin de asegurar que en su recolección, almacenamiento y disposición terceras personas no accedan de forma indebida a dicha información, manteniendo siempre los datos personales en estricta confidencialidad y dando uso exclusivo a los mismos únicamente para los fines establecidos en la política."
+      }
+    },
+
+    //BOTON DESCARGAR ARCHIVO
+    "image#boton-descargar-terminos-condiciones": {
+      "props": {
+               "src": "assets/imgs/boton-descargar.svg",
+               "alt": "alt",
+               "height": "30px",
+               "blockClass": "boton-descargar-terminos-preguntas",
+               "link": {
+                       "url": "https://ceramicaitalia.vteximg.com.br/arquivos/terminos-condiciones.pdf",
+                       "openNewTab": true,
+                       "title": "boton-descargar-politica-precios"
+          }
+      }
+   }
+}

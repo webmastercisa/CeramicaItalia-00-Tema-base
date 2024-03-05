@@ -1,0 +1,325 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      // "flex-layout.row#3-desktop",
+      "flex-layout.row#simular-sticky",
+      // "sticky-layout#4-desktop"
+      "flex-layout.row#btnWhatsApp"
+      // "flex-layout.row#btnCallCenter",
+    ],
+    "props": {
+      "blockClass": "header-layout-desktop"
+    }
+  },
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#2-desktop": {
+    "children": [
+      "flex-layout.col#category-menu"
+    ],
+    "props": {
+      "blockClass": "sticky-header",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.row#simular-sticky": {
+    "children": ["flex-layout.col#simular-sticky"],
+    "props": {
+      "blockClass": ["simular-sticky"]
+    }
+  },
+"flex-layout.col#simular-sticky": {
+  "title": "header-sticky",
+  "children": [
+    "flex-layout.row#3-desktop",
+    "flex-layout.row#4-desktop",
+    "vtex.menu@2.x:menu#category-menu"
+  ],
+  "props": {
+    "blockClass": ["simular-sticky"]
+  }
+},
+
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#3-desktop",
+      "flex-layout.row#4-desktop",
+      "vtex.menu@2.x:menu#category-menu"
+    ]
+  },
+  // Header 1
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      // "flex-layout.col#spacer",
+      "search-bar",
+      // "search-bar#modificado",
+      "flex-layout.col#category-menu-header",
+      // "flex-layout.row#selector",
+      // "flex-layout.row#container-selector", //selector final de ciudades
+      // "flex-layout.row#storeLocator",
+      // "flex-layout.row#container-fav-nuestras-tiendas",
+      "flex-layout.row#container-iconoes-header"
+    ]
+  },
+
+  "flex-layout.row#container-iconoes-header": {
+    "children": [
+      "flex-layout.row#container-logoUSA",
+      "login", 
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": ["container-iconoes-header"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#container-logoUSA": {
+    "children": ["image#logoUSA"],
+    "props": {
+      "blockClass": ["container-logoUSA"]
+    }
+  },
+
+  "image#logoUSA": {
+    "props": {
+         "src": "assets/imgs/banderaUSA.svg",
+         "alt": "USA",
+        //  "height": "45px",
+         "blockClass": "logoUSA",
+         "link": {
+             "url": "url",
+             "openNewTab": true,
+             "title": "LogoUSA"
+      }
+    }
+  },
+
+
+  "flex-layout.row#container-fav-nuestras-tiendas": {
+    "children": ["flex-layout.row#container-nuestras-tiendas", "flex-layout.row#container-favoritos"],
+    "props": {
+      "blockClass": ["container-fav-nuestras-tiendas"],
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.row#container-nuestras-tiendas": {
+    "children": ["image#ico-nuestras-tiendas", "rich-text#texto-nuestras-tiendas"],
+    "props": {
+      "blockClass": ["container-nuestras-tiendas"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "image#ico-nuestras-tiendas": {
+    "props": {
+         "src": "assets/ico/home/ico-nuestras-tiendas.svg",
+         "alt": "alt",
+        //  "height": "hight",
+         "blockClass": "ico-nuestras-tiendas",
+         "link": {
+             "url": "/nuestras-tiendas",
+             "openNewTab": false,
+             "title": "title"
+      }
+    }
+  },
+
+  "rich-text#texto-nuestras-tiendas": {
+    "props": {
+         "text": "[Nuestras Tiendas](/nuestras-tiendas)",
+         "blockClass": "texto-nuestras-tiendas",
+         "textAlignment": "CENTER",
+         "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#container-favoritos": {
+    "children": [ "image#ico-favoritos", "rich-text#texto-favoritos"],
+    "props": {
+      "blockClass": ["container-favoritos"],
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "image#ico-favoritos": {
+    "props": {
+         "src": "assets/ico/home/Rectangle363.svg",
+         "alt": "alt",
+        //  "height": "hight",
+         "blockClass": "ico-favoritos",
+         "link": {
+             "url": "/favoritos",
+             "openNewTab": false,
+             "title": "title"
+      }
+    }
+  },
+
+  "rich-text#texto-favoritos": {
+    "props": {
+         "text": "[Favoritos](/favoritos)",
+         "blockClass": "texto-favoritos",
+         "textAlignment": "CENTER",
+         "textPosition": "CENTER"
+    }
+  },
+  //** Fake store location **
+  "flex-layout.row#storeLocator": {
+    "props": {
+      "blockClass": "storeLocator",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#icon-storeLocator",
+      "flex-layout.col#text-storeLocator"
+    ]
+  },
+  "flex-layout.col#icon-storeLocator": {
+    "props": {
+      "blockClass": "box-storeLocator",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#icon-storeLocator"
+    ]
+  },
+  "image#icon-storeLocator": {
+    "props": {
+      "src": "assets/ico/icon-storeLocator.svg",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "image-storeLocator"
+    }
+  },
+  "flex-layout.col#text-storeLocator": {
+    "props": {
+      "blockClass": "text-storeLocator",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#title-storeLocator",
+      "rich-text#text-storeLocator"
+    ]
+  },
+  "rich-text#title-storeLocator": {
+    "props": {
+      "blockClass": "title-storeLocator",
+      "preventVerticalStretch": false,
+      "text": "Medellín",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  "rich-text#text-storeLocator": {
+    "props": {
+      "blockClass": "text-storeLocator",
+      "preventVerticalStretch": false,
+      "text": "Cambiar",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  //** Fake store location **
+  "flex-layout.col#category-menu-header": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu-header"
+    ]
+  },
+  // Logo Cerámica
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://ceramicaitalia.vteximg.com.br/arquivos/ceramicaItaliaIcon.png",
+      "width": "200px"
+    }
+  },
+  // Header 1 fin
+
+  // Header 2
+  "flex-layout.row#5-desktop": {
+    "props": {
+      "blockClass": ["menu-header-main", "section-menu-dropdown"],
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#category-menu"
+    ]
+  },
+  // Category-menu header 2
+  "flex-layout.col#category-menu": {
+    "props": {
+      "blockClass": ["menu-row-container", "container-menu-dropdown"],
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
+  }
+}

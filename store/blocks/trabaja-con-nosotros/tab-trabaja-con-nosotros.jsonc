@@ -1,0 +1,85 @@
+// {
+//     "tab-layout#form-postulate": {
+//     "children": [
+//       "tab-list#form-postulate",
+//       "tab-content#form-postulate"
+//     ],
+//     "props": {
+//       "blockClass": "form-postulate"
+//     //   "defaultActiveTabId": "form-postulate1"
+//     }
+//   },
+//   "tab-list#form-postulate": {
+//     "children": [
+//       "tab-list.item#form-postulate1"
+//     ]
+//   },
+//   "tab-list.item#form-postulate1": {
+//     "props": {
+//       "tabId": "form-postulate1",
+//       "label": "form-postulate 1",
+//       "defaultActiveTab": false
+//     }
+//   },
+//  "tab-content#form-postulate": {
+//    "children": [
+//      "tab-content.item#form-postulate1"
+//    ]
+//  },
+//  "tab-content.item#form-postulate1": {
+//    "children": [
+//     "rich-text#form-prueba"
+//    ],
+//    "props": {
+//      "tabId": "form-postulate1"
+//    }
+//  },
+
+//  "rich-text#form-prueba": {
+//     "props": {
+//              "text": "aqui va el form postulate",
+//              "blockClass": "form-prueba",
+//              "textAlignment": "CENTER",
+//              "textPosition": "CENTER"
+//     }
+//  }
+// }
+
+
+{
+    "disclosure-layout-group#group": {
+        "children": ["disclosure-layout#simple"]
+      },
+
+    "disclosure-layout#simple": {
+      "children": ["disclosure-trigger#simple", "disclosure-content#simple"],
+      "props": {
+        
+      }
+    },
+    "disclosure-trigger#simple": {
+      "children": ["rich-text#btn1-postularme"]
+    },
+
+    "flex-layout.row#container-btn1-postularme": {
+      "children": ["rich-text#btn1-postularme"],
+      "props": {
+        "blockClass": ["container-btn1"]
+      }
+    },
+    "disclosure-content#simple": {
+      "children": ["flex-layout.row#container-form"]
+    },
+
+    "flex-layout.row#container-form": {
+      "children": ["flex-layout.row#Formulario-hv"],
+      "props": {
+        "blockClass": ["container-form"]
+      }
+    },
+    "rich-text#answer": {
+      "props": {
+        "text": "Call us at the number (212) 1234-1234 Call us at the number (212) 1234-1234 Call us at the number (212) 1234-1234 Call us at the number (212) 1234-1234 Call us at the number (212) 1234-1234 Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234Call us at the number (212) 1234-1234"
+      }
+    }
+  }

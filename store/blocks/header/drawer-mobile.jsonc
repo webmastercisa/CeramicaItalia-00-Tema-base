@@ -1,0 +1,172 @@
+{ 
+    // drawer  1
+    "drawer#mobile-pisos-iconos": {
+        "children": [
+            "drawer-header#my-drawer",
+            "flex-layout.row#section-return",
+            "flex-layout.row#container-infocards"
+        ],
+        "blocks": [
+          "drawer-trigger#mobile-pisos-iconos"
+        ],
+        "props": {
+          "blockClass": "drawer-mobile-iconos"
+        }
+      },
+      "drawer-trigger#mobile-pisos-iconos": {
+        "children": [
+            "flex-layout.col#menu-iconPisos-mobile"
+        ],
+        "props": {
+          "blockClass": "trigger-mobile-iconos"
+        }
+      },
+
+      "rich-text#drawerpiso": {
+        "props": {
+                 "text": "drawerpiso",
+                 "blockClass": "drawerpiso",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+      },
+
+        // drawer  2
+    "drawer#mobile-paredes-iconos": {
+        "children": [
+            "drawer-header#my-drawer",
+            "flex-layout.row#section-return",
+            "flex-layout.row#container-infocards"
+        ],
+        "blocks": [
+            "drawer-trigger#mobile-paredes-iconos"
+        ],
+        "props": {
+          "blockClass": "drawer-mobile-iconos"
+        }
+      },
+      "drawer-trigger#mobile-paredes-iconos": {
+        "children": [
+            "flex-layout.col#menu-iconParedes-mobile"
+        ],
+        "props": {
+          "blockClass": "trigger-mobile-iconos"
+        }
+      },
+
+              // drawer  3
+    "drawer#mobile-colores-iconos": {
+        "children": [
+            "drawer-header#my-drawer",
+            "flex-layout.row#section-return",
+            "flex-layout.row#container-infocards"
+        ],
+        "blocks": [
+            "drawer-trigger#mobile-colores-iconos"
+        ],
+        "props": {
+          "blockClass": "drawer-mobile-iconos"
+        }
+      },
+      "drawer-trigger#mobile-colores-iconos": {
+        "children": [
+            "flex-layout.col#menu-iconColores"
+        ],
+        "props": {
+          "blockClass": "trigger-mobile-iconos"
+        }
+      },
+
+    //   infocards en el drawer
+
+    "flex-layout.row#container-infocards": {
+      "children": ["list-context.info-card-list#infocards-drawer"],
+      "props": {
+        "blockClass": ["container-infocards"]
+      }
+    },
+
+    "list-context-renderer#wrapped-infocards-drawer": {
+        "props": {
+          "listElement": "div",
+          "itemElement": "div",
+          "blockClass": "infocard-drawer-iconos"
+        }
+      },
+      "list-context.info-card-list#infocards-drawer": {
+        "children": [
+            // "slider-layout#slider-terms-conditionst"
+            "list-context-renderer#wrapped-infocards-drawer"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "infocard-drawer-iconos1",
+                    "title": "infocard-drawer-iconos1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+                    "imageActionUrl": "/interiores",
+                    // "headline": "Interiores",
+                    "callToActionText": "Interiores",
+                    "blockClass": [
+                        "infocard-drawer-iconos"
+                    ]
+                },
+                {
+                    "id": "infocard-drawer-iconos2",
+                    "title": "infocard-drawer-iconos2",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+                    "imageActionUrl": "/Exteriores",
+                    "callToActionText": "Exteriores",
+                    // "headline": "Exteriores",
+                    "blockClass": [
+                        "infocard-drawer-iconos"
+                    ]
+                },
+                {
+                    "id": "infocard-drawer-iconos1",
+                    "title": "infocard-drawer-iconos1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+                    "imageActionUrl": "/interiores",
+                    // "headline": "Interiores",
+                    "callToActionText": "Interiores",
+                    "blockClass": [
+                        "infocard-drawer-iconos"
+                    ]
+                },
+                {
+                    "id": "infocard-drawer-iconos2",
+                    "title": "infocard-drawer-iconos2",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+                    "imageActionUrl": "/Exteriores",
+                    "callToActionText": "Exteriores",
+                    // "headline": "Exteriores",
+                    "blockClass": [
+                        "infocard-drawer-iconos"
+                    ]
+                },
+                {
+                    "id": "infocard-drawer-iconos1",
+                    "title": "infocard-drawer-iconos1",
+                    "isFullModeStyle": false,
+                    "textPosition": "left",
+                    "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+                    "imageActionUrl": "/interiores",
+                    // "headline": "Interiores",
+                    "callToActionText": "Interiores",
+                    "blockClass": [
+                        "infocard-drawer-iconos"
+                    ]
+                }
+            ]
+        }
+    }
+     
+}

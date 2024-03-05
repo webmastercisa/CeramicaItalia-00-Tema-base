@@ -1,0 +1,33 @@
+.stackItem--product {
+  width: 100%;
+  min-height: 257px
+}
+
+.stackItem--quickview {
+  right: 0;
+  top: 0;
+  left: auto;
+  z-index: 9999!important;
+}
+
+.stackItem--wishlistHeart-general {
+  z-index: 200 !important;
+  position: relative;
+}
+
+/* .stackItem--wishlistHeart-general :global(.vtex-wish-list-1-x-wishlistIconContainer--wishlistHeart-general){
+  position: absolute;
+  right: 14px;
+  top: -286px;
+} */
+
+
+@media (max-width: 360px) {
+  .flexRow--miniShelf-two :global(.vtex-stack-layout-0-x-stackItem--wishlistHeart),
+  .flexRow--miniShelf-one :global(.vtex-stack-layout-0-x-stackItem--wishlistHeart) {
+    z-index: 9999!important;
+    left: 128px!important;
+    top: 21px!important;
+}
+
+}

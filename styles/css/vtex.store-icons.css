@@ -1,0 +1,9 @@
+.expandIcon {
+  width: 40px!important;
+  height: 40px!important;
+  color: #727273;
+  position: absolute;
+  left: -20px;
+  z-index: 99999;
+}
+

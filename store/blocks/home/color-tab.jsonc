@@ -1,0 +1,88 @@
+{
+     // *slider de colores en search*
+
+     "flex-layout.row#shelf-picture": {
+        "title": "BannerTAB-1",
+        "props": {
+          "blockClass": "shelf-picture"
+        },
+        "children": [
+          // "list-context.product-list#shelf-picture"
+          "list-context.image-list#section-colors-tab"
+        ]
+      },
+
+      "flex-layout.row#shelf-picture-2": {
+        "title": "BannerTAB-2",
+        "props": {
+          "blockClass": "shelf-picture"
+        },
+        "children": [
+          // "list-context.product-list#shelf-picture"
+          "list-context.image-list#section-colors-tab"
+        ]
+      },
+
+
+      "flex-layout.row#shelf-picture-3": {
+        "title": "BannerTAB-3",
+        "props": {
+          "blockClass": "shelf-picture"
+        },
+        "children": [
+          // "list-context.product-list#shelf-picture"
+          "list-context.image-list#section-colors-tab"
+        ]
+      },
+
+      "flex-layout.row#shelf-picture-4": {
+        "title": "BannerTAB-4",
+        "props": {
+          "blockClass": "shelf-picture"
+        },
+        "children": [
+          // "list-context.product-list#shelf-picture"
+          "list-context.image-list#section-colors-tab"
+        ]
+      },
+  "list-context.image-list#section-colors-tab": {
+    "children": [
+        "slider-layout#section-colors-tab"
+    ],
+    "props": {
+      "width": "100%",
+      // "height": "auto",
+      "preload": true,
+      "blockClass": "slider-colors-tab",
+      "images": [
+        {
+            "image": "arquivos/1000x1000px.png",
+            "mobileImage": "arquivos/1000x1000px.png"
+          },
+          {
+            "image": "arquivos/1000x1000px.png",
+            "mobileImage": "arquivos/1000x1000px.png"
+          }
+      ]
+    }
+  },
+  "slider-layout#section-colors-tab": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 1000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "slider-colors-tab",
+      "fullWidth": false,
+      "arrowSize": 20
+    }
+  }
+}

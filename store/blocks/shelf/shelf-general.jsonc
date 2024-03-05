@@ -1,0 +1,163 @@
+{
+    "product-summary.shelf#general": {
+        "children": [
+          "stack-layout#general",
+          "product-summary-name#general",
+          "flex-layout.row#selling-price-savings-general",
+          "condition-layout.product#cond-shelf-quantity",
+          "condition-layout.product#cond-shelf"
+        ]
+      },
+
+      "flex-layout.col#name-sku": {
+        "children": [
+          "product-summary-name#general",
+          "flex-layout.row#sku-selector"
+        ],
+        "props": {
+          "blockClass": ["name-sku"],
+          "preventVerticalStretch": true
+        }
+      },
+
+      "stack-layout#general": {
+        "children": [
+          "product-summary-image#shelf-general",
+          "vtex.product-highlights@2.x:product-highlights#collection",
+          // "add-to-list-btn#wishlistHeart-general"
+          "modal-trigger#quickview"
+        ]
+      },
+
+      "add-to-list-btn#wishlistHeart-general": {
+        "props": {
+          "toastURL": "/favoritos",
+          "blockClass": "wishlistHeart-general",
+          "icon": "IconCart"
+        }
+      },
+
+      "product-summary-image#shelf-general": {
+        "props": {
+          "showBadge": true,
+          "aspectRatio": "1:1",
+          "maxHeight": 300,
+          "mainImageLabel": {
+            "label": "Vitrina",
+            "labelMatchCriteria": "exact"
+          },
+          "hoverImage": {
+            "criteria": "index",
+            "index": 1
+          },
+          "blockClass": "section-image-general"
+
+        }
+      },
+
+      "product-summary-name#general": {
+        "props": {
+            "blockClass": "section-name-general",
+            "showFieldsProps": {
+              "showSku": true
+            }
+        }
+      },
+
+      "product-summary-name": {
+        "props": {
+            // "blockClass": "section-name-general",
+            "showFieldsProps": {
+              "showSku": true
+            }
+        }
+      },
+
+      "flex-layout.row#selling-price-savings-general": {
+        "props": {
+          "blockClass": "selling-price-shelf-general",
+          "colGap": 2,
+          "preserveLayoutOnMobile": true,
+          "preventHorizontalStretch": true,
+          "marginBottom": 4
+        },
+        "children": [
+          "ListPriceWithTax", // CustomApp
+          // "product-list-price#summary"
+          "SellingPriceWithTax" //CustomApp
+          // "product-selling-price#summary"
+        ]
+      },
+
+      "product-quantity#quantity-general": {
+        "props": {
+          "blockClass": "cantidad-general"
+        }
+      },
+
+      "add-to-cart-button#general": {
+        "props": {
+          "addToCartFeedback": "customEvent",
+          "customPixelEventId": "add-to-cart-button",
+          "blockClass": "btn-general"
+        }
+      },
+
+
+      "slider-layout#shelf-general": {
+        "title": "slider-vitrina-general",
+        "props": {
+          "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "showPaginationDots": "always",
+          "showNavigationArrows": "never",
+          "blockClass": "shelf-general"
+        }
+      },
+
+
+      "flex-layout.row#shelf-general": {
+        "children": [
+            "list-context.product-list#shelf-general"
+        ],
+        "props": {
+          "blockClass": "shelf-general"
+        }
+      },
+
+      "flex-layout.row#sku-selector": {
+        "children": [
+          // "sku-selector"
+          "product-summary-sku-selector"
+        ],
+        "props": {
+          "blockClass": "sku-selector-shelf"
+        }
+      },
+
+      "product-summary-sku-selector": {
+        "props": {
+          "blockClass": ["sku", "bloqueSKUSelector"],
+          "variationsSpacing": 0,
+          "showValueForVariation": "all",
+          "showValueNameForImageVariation": true,
+          "hideImpossibleCombinations": false,
+          "disableUnavailableSelectOptions": false,
+          // "showVariationsLabels": ["false"],
+          // "displayMode": "slider",
+          // "displayMode": "select",
+          "initialSelection": "empty",
+          "sortVariarionsByLabel": true,
+          "sliderDisplayThreshold": 2,
+          "sliderArrowSize": 12,
+          "thumbnailImage": "Color",
+          "maxItems": 14
+        }
+      }
+
+}

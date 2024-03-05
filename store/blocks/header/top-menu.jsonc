@@ -1,0 +1,46 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "image#icono-porcentaje-preHeader",
+      "menu-item#discount"
+    ]
+  },
+
+  "logo#topMenu": {
+    "props": {
+      "title": "icon",
+      "href": "/",
+      "url": "",
+      "width": "27px",
+      "blockClass": "iconTopMenu"
+    }
+  },
+  "image#icono-porcentaje-preHeader": {
+    "props": {
+      "blockClass": ["icono-porcentaje-preHeader"],
+      "src": "assets/imgs/icono-porcentaje.svg"
+    }
+  },
+
+  "menu-item#discount": {
+    "props": {
+      "id": "menu-item-discount",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "textTopMenu",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Discount",
+        "text": "Temporada de cocinas 5% de descuento"
+      }
+    }
+  },
+  "notification.bar#descuentos":{
+    "props": {
+      "content": "Temporada de cocinas 5% de descuento"
+    }
+  }
+}

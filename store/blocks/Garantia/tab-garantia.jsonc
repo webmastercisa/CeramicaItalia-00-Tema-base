@@ -1,0 +1,361 @@
+{
+    "flex-layout.row#container-tab1-garantia": {
+        "children": [
+            "tab-layout#garantia1"
+        ],
+        "props": {
+            "blockClass": [
+                "container-tab1-garantia"
+            ]
+        }
+    },
+    "tab-layout#garantia1": {
+        "children": [
+            "tab-list#garantia1",
+            "tab-content#garantia1"
+        ],
+        "props": {
+            "blockClass": "garantia1",
+            "defaultActiveTabId": "item1-garantia1"
+        }
+    },
+    "tab-list#garantia1": {
+        "children": [
+            "tab-list.item#garantia1-1",
+            "tab-list.item#garantia1-2",
+            "tab-list.item#garantia1-3",
+            "tab-list.item#garantia1-4"
+        ],
+        "props": {
+            "blockClass": "tab-list-garantia1"
+        }
+    },
+    "tab-list.item#garantia1-1": {
+        "props": {
+            "tabId": "item1-garantia1",
+            "label": "Tiempo de la garantía",
+            "defaultActiveTab": true,
+            "blockClass": "item-garantia1"
+        }
+    },
+    "tab-list.item#garantia1-2": {
+        "props": {
+            "tabId": "item2-garantia1",
+            "label": "Recomendaciones antes de la instalación",
+            "blockClass": "item-garantia1"
+        }
+    },
+    "tab-list.item#garantia1-3": {
+        "props": {
+            "tabId": "item3-garantia1",
+            "label": "Condiciones para hacer efectiva la garantía",
+            "blockClass": "item-garantia1"
+        }
+    },
+    "tab-list.item#garantia1-4": {
+        "props": {
+            "tabId": "item4-garantia1",
+            "label": "Como hacer efectiva la garantia:",
+            "blockClass": "item-garantia1"
+        }
+    },
+    "tab-content#garantia1": {
+        "children": [
+            "tab-content.item#garantia1-1",
+            "tab-content.item#garantia1-2",
+            "tab-content.item#garantia1-3",
+            "tab-content.item#garantia1-4"
+        ],
+        "props": {
+            "blockClass": "tab-content-garantia1"
+        }
+    },
+    "tab-content.item#garantia1-1": {
+        "children": [
+            "flex-layout.col#content-tab1-item1"
+        ],
+        "props": {
+            "tabId": "item1-garantia1"
+        }
+    },
+    "tab-content.item#garantia1-2": {
+        "children": [
+            "flex-layout.col#content-tab1-item2"
+        ],
+        "props": {
+            "tabId": "item2-garantia1"
+        }
+    },
+    "tab-content.item#garantia1-3": {
+        "children": [
+            "flex-layout.col#content-tab1-item3"
+        ],
+        "props": {
+            "tabId": "item3-garantia1"
+        }
+    },
+    "tab-content.item#garantia1-4": {
+        "children": [
+            "flex-layout.col#content-tab1-item4"
+        ],
+        "props": {
+            "tabId": "item4-garantia1"
+        }
+    },
+
+    // contenido tab 1
+    "flex-layout.col#content-tab1-item1": {
+        "children": [
+            "rich-text#title-item1-tab1",
+            "rich-text#description-item1-tab1",
+            "flex-layout.row#descarga-item1-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "content-tab1-item1"
+            ]
+        }
+    },
+    "rich-text#title-item1-tab1": {
+        "props": {
+            "text": "Tiempo de la garantía ",
+            "blockClass": "title-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#description-item1-tab1": {
+        "props": {
+            "text": "El término de la garantía de la marca Cerámica Italia S.A en revestimientos de pisos y paredes será de 10 años para productos de primera calidad, contando a partir de la fecha de expedición de la respectiva factura cambiaria de compraventa",
+            "blockClass": "description-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#descarga-item1-tab1": {
+        "children": [
+            "rich-text#text-descarga-item1-tab1",
+            "image#img-descarga-item1-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "descarga-item1-tab1"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-descarga-item1-tab1": {
+        "props": {
+            "text": "[Descargar](#)",
+            "blockClass": "text-descarga-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#img-descarga-item1-tab1": {
+        "props": {
+            "src": "assets/ico/descarga-ico.svg",
+            "alt": "alt",
+            //  "height": "hight",
+            "blockClass": "img-descarga-item1-tab1",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    },
+
+    // contenido tab 2
+    "flex-layout.col#content-tab1-item2": {
+        "children": [
+            "rich-text#title-item2-tab1",
+            "rich-text#description-item2-tab1",
+            "flex-layout.row#descarga-item2-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "content-tab1-item1"
+            ]
+        }
+    },
+    "rich-text#title-item2-tab1": {
+        "props": {
+            "text": "Recomendaciones antes de la instalación",
+            "blockClass": "title-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#description-item2-tab1": {
+        "props": {
+            "text": "• Asegúrate que las cajas compradas estén marcadas con el mismo número de lote, nombre del producto y condición de calidad. \n• Ten presentante que el tráfico del producto adquirido es apto para la zona donde lo desee instalar. \n• No se aceptarán reclamos después de la instalación total del producto. \n• En los productos con caras diferenciadas todas las piezas son diferentes en tono y producto. \n• Utilice crucetas plásticas para asegurar una dilatación adecuada del 1% del tamaño de la baldosa por su lado más largo. \n• Después de instalado el producto deje fraguar por lo menos 24 horas antes de emboquillar. \n• Verifique todas las recomendaciones de instalación en los empaque",
+            "blockClass": "description-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#descarga-item2-tab1": {
+        "children": [
+            "rich-text#text-descarga-item2-tab1",
+            "image#img-descarga-item2-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "descarga-item1-tab1"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-descarga-item2-tab1": {
+        "props": {
+            "text": "[Descargar](#)",
+            "blockClass": "text-descarga-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#img-descarga-item2-tab1": {
+        "props": {
+            "src": "assets/ico/descarga-ico.svg",
+            "alt": "alt",
+            //  "height": "hight",
+            "blockClass": "img-descarga-item1-tab1",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    },
+
+     // contenido tab 3
+     "flex-layout.col#content-tab1-item3": {
+        "children": [
+            "rich-text#title-item3-tab1",
+            "rich-text#description-item3-tab1",
+            "flex-layout.row#descarga-item3-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "content-tab1-item1"
+            ]
+        }
+    },
+    "rich-text#title-item3-tab1": {
+        "props": {
+            "text": "Condiciones para hacer efectiva la garantía",
+            "blockClass": "title-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#description-item3-tab1": {
+        "props": {
+            "text": "Con el propósito de dar validez a tu garantía te solicitamos tener en cuenta lo siguiente: Conserva tu factura, y la etiqueta del empaque donde se especifica el nombre, lote, tañamo y calidad para realizar cualquier cambio o devolucion.",
+            "blockClass": "description-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#descarga-item3-tab1": {
+        "children": [
+            "rich-text#text-descarga-item3-tab1",
+            "image#img-descarga-item3-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "descarga-item1-tab1"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-descarga-item3-tab1": {
+        "props": {
+            "text": "[Descargar](#)",
+            "blockClass": "text-descarga-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#img-descarga-item3-tab1": {
+        "props": {
+            "src": "assets/ico/descarga-ico.svg",
+            "alt": "alt",
+            //  "height": "hight",
+            "blockClass": "img-descarga-item1-tab1",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    },
+
+     // contenido tab 3
+     "flex-layout.col#content-tab1-item4": {
+        "children": [
+            "rich-text#title-item4-tab1",
+            "rich-text#description-item4-tab1",
+            "flex-layout.row#descarga-item4-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "content-tab1-item1"
+            ]
+        }
+    },
+    "rich-text#title-item4-tab1": {
+        "props": {
+            "text": "Como hacer efectiva la garantia:",
+            "blockClass": "title-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#description-item4-tab1": {
+        "props": {
+            "text": "• Comunícate con la línea 01-8000-111568 en los horarios de atención de oficina dispuestos para este propósito. Lunes a viernes: 8:00 am – 12:00 m / 2:00 pm – 6:00 pm • Ingresa a www. Ceramicaitalia.com haz clic en “Contactenos” que se encuentra en la parte superior de la pagina web.",
+            "blockClass": "description-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#descarga-item4-tab1": {
+        "children": [
+            "rich-text#text-descarga-item4-tab1",
+            "image#img-descarga-item4-tab1"
+        ],
+        "props": {
+            "blockClass": [
+                "descarga-item1-tab1"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-descarga-item4-tab1": {
+        "props": {
+            "text": "[Descargar](#)",
+            "blockClass": "text-descarga-item1-tab1",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#img-descarga-item4-tab1": {
+        "props": {
+            "src": "assets/ico/descarga-ico.svg",
+            "alt": "alt",
+            //  "height": "hight",
+            "blockClass": "img-descarga-item1-tab1",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    }
+}

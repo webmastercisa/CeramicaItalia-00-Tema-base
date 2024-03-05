@@ -1,0 +1,67 @@
+.fill {
+    background: url(assets/ico/fill.svg)!important;
+    background-size: 30px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 2px 4px 0px #00000026;
+    border-radius: 50%;
+    position: relative;
+    top: -2px;
+}
+
+
+.outline {
+    background: url(assets/ico/outline.svg)!important;
+    background-size: 30px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 2px 4px 0px #00000026;
+    border-radius: 50%;
+    position: relative;
+    top: -2px;
+}
+
+
+.iconSize {
+    display: block !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+.wishlistIconContainer--wishlistHeart-general :global(.vtex-button){
+border: none !important;
+background: none;
+}
+
+.wishlistIconContainer--wishlistHeart-general :global(.vtex-button):hover{
+    background: none;
+}
+
+.wishlistIconContainer--wishlistHeart-general {
+    position: absolute;
+    right: 16px;
+    /* top: -286px */
+    top: -277px;
+}
+
+
+.wishlistIconContainer--wishlistHeart-general :global(.vtex-button__label){
+    padding: 0px !important;
+}
+
+@media (max-width:1024px) {
+    .wishlistIconContainer--wishlistHeart-general {
+        position: absolute;
+        right: 7px;
+        top: -184px !important;
+    }
+}
+
+
+@media (max-width:360px) {
+  .wishlistIconContainer--wishlistHeart-general {
+      position: absolute;
+      right: 7px;
+      top: -173px !important;
+  }
+}
+

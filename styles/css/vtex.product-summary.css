@@ -1,0 +1,134 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+.listLayout {
+  display: flex;
+  align-items: center;
+}
+
+/* Search */
+.nameContainer--summaryListDesktop {
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
+  justify-content: start;
+}
+
+.nameContainer--summaryListMobile {
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+  justify-content: start;
+}
+
+.brandName--summaryListMobile {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #3D3C3C;
+}
+
+.container--listLayout {
+  max-width: none !important;
+}
+
+.image--summaryListDesktop {
+  width: 180px !important;
+}
+
+.image--summaryListMobile {
+  width: 140px !important;
+  min-width: 140px;
+  height: inherit !important;
+}
+
+/* Search */
+
+.nameWrapper {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  text-align: center;
+}
+
+.nameContainer {
+  height: 50px !important;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.brandName {
+  font-family: 'NeutraTextTF';
+  font-size: 16px;
+  color: #3D3C3C;
+  font-weight: 600;
+  margin: 0px;
+}
+.skuName,
+.skuName--section-name-general{
+  font-family: 'NeutraTextTF';
+  font-size: 16px;
+  color: #3D3C3C;
+  font-weight: 600;
+  margin: 0px;
+}
+
+
+
+/* .container {
+  max-width: 2000px !important;
+  text-align: start;
+} */
+
+.element {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+}
+
+.image--section-image-shelf,
+.mainImageHovered--section-image-shelf {
+  border-radius: 12px;
+}
+
+.hoverImage {
+  z-index: 199;
+}
+
+@media (max-width:1024px) {
+
+  .imageContainer {
+    min-height: 162px;
+  }
+  .brandName {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}

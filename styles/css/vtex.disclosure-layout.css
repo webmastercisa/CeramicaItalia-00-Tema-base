@@ -1,0 +1,85 @@
+.trigger--question {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.trigger--question :global(.vtex-rich-text-0-x-paragraph) {
+  font-weight: bold;
+}
+
+.trigger--question:focus,
+.trigger--question:focus :global(.vtex-rich-text-0-x-paragraph) {
+  color: #0F3E99;
+}
+
+.trigger :global(.vtex-store-icons-0-x-caretIcon) {
+  margin-right: 1rem;
+}
+
+.content--answer {
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out, transform 250ms ease-in-out;
+  opacity: 0;
+  height: 0;
+  transform: translate3d(0, -10%, 0);
+}
+
+.content--answer[data-enter] {
+  opacity: 1;
+  height: fit-content;
+  transform: translate3d(0, 0, 0);
+}
+
+.content--answer[data-leave] {
+  height: 0;
+  overflow: hidden;
+}
+.content--content-header3,
+.content--content-header2,
+.content--content-header1{
+  position: absolute;
+  background: #fff;
+  transform: translate(0, 86px);
+  width: 99.9%;
+  z-index: 10;
+  right: 0;
+}
+
+.trigger--trigger-header3,
+.trigger--trigger-header2,
+.trigger--trigger-header1{
+  background: none;
+    border: none;
+    width: 60px;
+    padding: 0px;
+}
+
+.trigger--trigger-header3 :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header),
+.trigger--trigger-header2 :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header),
+.trigger--trigger-header1 :global(.vtex-flex-layout-0-x-flexCol--iconMenu-header){
+  width: 60px;
+}
+
+
+.content--content-header3 :global(.vtex-flex-layout-0-x-flexCol--color-palette-carousel){
+  max-width: 1200px;
+  margin: auto;
+  padding: 32px 0px 40px 0px;
+}
+
+.content--content-header3 :global(.vtex-rich-text-0-x-container--title-color-palette),
+.content--content-header3 :global(.vtex-rich-text-0-x-container--text-color-palette),
+.content--content-header3 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--img-color-palette){
+max-width: 1280px;
+margin: auto;
+}
+
+.content--content-header3 :global(.vtex-rich-text-0-x-container--title-color-palette){
+  margin-top: 30px;
+}
+
+.content--content-header3 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--img-color-palette){
+  margin-bottom: 30px;
+}
+

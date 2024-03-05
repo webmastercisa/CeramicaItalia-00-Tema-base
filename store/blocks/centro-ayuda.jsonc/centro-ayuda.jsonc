@@ -1,0 +1,169 @@
+{"store.custom#centro-de-ayuda": {
+    "blocks": [
+        "flex-layout.row#miga-pan-centro-ayuda",
+        "flex-layout.row#title-centro-de-ayuda",
+        "flex-layout.row#container-banner1-centro-ayuda",
+        "flex-layout.row#section1-centro-ayuda",
+        "flex-layout.row#section2-centro-ayuda"
+    ]
+},
+
+//MIGA DE PAN PREGUNTAS FRECUENTES
+"flex-layout.row#miga-pan-centro-ayuda": {
+    "children": [
+        "image#icono-miga-pan",
+        "rich-text#texto-1-miga-pan",
+        "rich-text#texto-2-miga-pan-centro-ayuda"
+    ],
+    "props": {
+        "blockClass": [
+            "miga-pan-terminos-legales"
+        ]
+    }
+},
+// TEXTO 2 MIGA DE PAN 
+"rich-text#texto-2-miga-pan-centro-ayuda": {
+    "props": {
+        "blockClass": [
+            "texto-2-miga-pan"
+        ],
+        "text": "[Centro de ayuda](/centro-de-ayuda)",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+ // titulo
+
+ "flex-layout.row#title-centro-de-ayuda": {
+    "children": [ "rich-text#title-centro-de-ayuda"],
+    "props": {
+      "blockClass": ["title-imperdibles" ]
+    }
+  },
+  "rich-text#title-centro-de-ayuda": {
+      "props": {
+               "text": "Centro de ayuda",
+               "blockClass": "centro-de-ayuda",
+               "textAlignment": "CENTER",
+               "textPosition": "CENTER"
+      }
+  },
+
+   // slider 1
+   "flex-layout.row#container-banner1-centro-ayuda": {
+    "children": ["list-context.image-list#banner1Slider-centro-ayuda"],
+    "props": {
+      "blockClass": ["container-banner1-centro-ayuda-slider"]
+    }
+  },
+
+  "list-context.image-list#banner1Slider-centro-ayuda": {
+      "children": ["slider-layout#banner1-centro-ayuda"],
+      "props": {
+        "height": 570,
+        "preload": true,
+        "images": [
+          {
+            "image": "arquivos/banner-centro-ayuda.png",
+            "mobileImage": "arquivos/banner-centro-mobile.png"
+          },
+          {
+              "image":"arquivos/banner-centro-ayuda.png",
+              "mobileImage": "arquivos/banner-centro-mobile.png"
+            }
+        ]
+      }
+    },
+    "slider-layout#banner1-centro-ayuda": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never", 
+        "blockClass": ["banner1-centro-ayuda-slider"]
+        // "autoplay": {
+        //   "timeout": 3000,
+        //   "stopOnHover": true
+        // }
+      }
+    },
+
+    "flex-layout.row#section1-centro-ayuda": {
+      "children": ["rich-text#text1-centro-ayuda"],
+      "props": {
+        "blockClass": ["section1-centro-ayuda"]
+      }
+    },
+
+    "rich-text#text1-centro-ayuda": {
+        "props": {
+                 "text": "Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\n\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.",
+                 "blockClass": "text1-centro-ayuda",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    // section 2
+
+    "flex-layout.row#section2-centro-ayuda": {
+      "children": [ "flex-layout.row#container-descarga","flex-layout.row#container-text2-ayuda"],
+      "props": {
+        "blockClass": ["section2-centro-ayuda"]
+      }
+    },
+
+    "flex-layout.row#container-text2-ayuda": {
+      "children": ["rich-text#text2-centro-ayuda"],
+      "props": {
+        "blockClass": ["container-text2-ayuda"],
+        "width": "65%"
+      }
+    },
+
+    "rich-text#text2-centro-ayuda": {
+        "props": {
+                 "text": "Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\n\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. ",
+                 "blockClass": "text2-centro-ayuda",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.row#container-descarga": {
+      "children": ["rich-text#text-descarga", "image#ico-descarga"],
+      "props": {
+        "blockClass": ["container-descarga"],
+        "preserveLayoutOnMobile": true
+      }
+    },
+
+    "rich-text#text-descarga": {
+        "props": {
+                 "text": "[Descarga el formato de carta de autorizacion de entrega de producto aqui](#)",
+                 "blockClass": "text-descarga",
+                 "textAlignment": "CENTER",
+                 "textPosition": "CENTER",
+                 "width":"85%"
+        }
+    },
+    
+
+    "image#ico-descarga": {
+        "props": {
+                 "src": "assets/ico/centro-ayuda.svg",
+                 "alt": "alt",
+                 "height": "hight",
+                 "blockClass": "ico-descarga",
+                 "link": {
+                         "url": "url",
+                         "openNewTab": false,
+                         "title": "title"
+            }
+        }
+    }
+}

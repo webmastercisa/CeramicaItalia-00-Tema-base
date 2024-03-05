@@ -1,0 +1,336 @@
+.list--infocards-bloque-4-quienes-somos,
+.list--infocards-trabaja-con-nosotros {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.infoCardContainer--infocards-bloque-4-quienes-somos {
+  height: 403px;
+  border-radius: 8px;
+}
+
+.infoCardSubhead--infocards-bloque-4-quienes-somos {
+  color: #fff;
+  font-size: 16px;
+}
+
+.infoCardHeadline--infocards-bloque-4-quienes-somos {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'NeutraTextBook';
+}
+
+.infoCardTextContainer--infocards-bloque-4-quienes-somos {
+  width: 100% !important;
+  height: 100% !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+}
+
+.infoCardHeadline--infocards-trabaja-con-nosotros {
+  color:  #FFF;
+  /* font-family: 'NeutraText'; */
+  font-family: 'NeutraTextBook';
+font-size: 16px;
+font-weight: 700;
+text-transform: capitalize;
+}
+
+.infoCardSubhead--infocards-trabaja-con-nosotros{
+  color: #FFF;
+  font-family: 'NeutraTextTF';
+font-size: 16px;
+font-weight: 550;
+}
+
+
+.infoCardContainer--infocards-trabaja-con-nosotros {
+  height: 250px;
+  border-radius: 8px;
+}
+
+.infoCardCallActionContainer--infocards-trabaja-con-nosotros {
+  display: none;
+}
+
+.infoCardTextContainer--infocards-trabaja-con-nosotros {
+  margin: 20px;
+  padding-bottom: 30px;
+  width: 100% !important;
+  height: 100% !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+}
+
+.container--infocards-tab1-sostenibilidad:first-child :global(.vtex-list-context-0-x-paragraph--infocards-tab1-sostenibilidad),
+.container--infocards-tab1-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel1--infocards-tab1-sostenibilidad),
+.container--infocards-tab1-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel2--infocards-tab1-sostenibilidad),
+.container--infocards-tab1-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel3--infocards-tab1-sostenibilidad),
+.container--infocards-tab1-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel4--infocards-tab1-sostenibilidad),
+.container--infocards-tab1-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel5--infocards-tab1-sostenibilidad){
+  color:  #3D3C3C;
+  /* font-family: 'NeutraText'; */
+  font-family: 'NeutraTextBook';
+font-size: 16px;
+font-weight: 700;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.container--infocards-tab2-sostenibilidad:first-child :global(.vtex-list-context-0-x-paragraph--infocards-tab2-sostenibilidad),
+.container--infocards-tab2-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel1--infocards-tab2-sostenibilidad),
+.container--infocards-tab2-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel2--infocards-tab2-sostenibilidad),
+.container--infocards-tab2-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel3--infocards-tab2-sostenibilidad),
+.container--infocards-tab2-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel4--infocards-tab2-sostenibilidad),
+.container--infocards-tab2-sostenibilidad:first-child :global(.vtex-list-context-0-x-headingLevel5--infocards-tab2-sostenibilidad){
+  color:  #3D3C3C;
+  font-family: 'NeutraText';
+font-size: 16px;
+font-weight: 700;
+text-transform: capitalize;
+margin: 0px;
+}
+
+
+.headingLevel1--infocards-tab1-sostenibilidad,
+.headingLevel2--infocards-tab1-sostenibilidad,
+.headingLevel3--infocards-tab1-sostenibilidad,
+.headingLevel4--infocards-tab1-sostenibilidad,
+.headingLevel5--infocards-tab1-sostenibilidad,
+.paragraph--infocards-tab1-sostenibilidad{
+  color:  #828181;
+  text-align: justify;
+  font-family: 'NeutraText';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.headingLevel1--infocards-tab2-sostenibilidad,
+.headingLevel2--infocards-tab2-sostenibilidad,
+.headingLevel3--infocards-tab2-sostenibilidad,
+.headingLevel4--infocards-tab2-sostenibilidad,
+.headingLevel5--infocards-tab2-sostenibilidad,
+.paragraph--infocards-tab2-sostenibilidad{
+  color:  #828181;
+  text-align: justify;
+  /* font-family: 'NeutraText'; */
+  font-family: 'NeutraTextBook';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.list--infocards-tab2-sostenibilidad,
+.list--infocards-tab1-sostenibilidad {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.infoCardContainer--infocards-tab2-sostenibilidad,
+.infoCardContainer--infocards-tab1-sostenibilidad {
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.12);
+  height: 100%;
+  justify-content: flex-end;
+  padding: 0px;
+}
+.item--infocards-tab1-sostenibilidad:nth-child(0n+5){
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+
+.item--infocards-tab1-sostenibilidad:nth-child(0n+5) .infoCardContainer--infocards-tab1-sostenibilidad{
+  display: flex;
+  flex-direction: row-reverse !important;
+}
+
+.infoCardTextContainer--infocards-tab2-sostenibilidad,
+.infoCardTextContainer--infocards-tab1-sostenibilidad{
+  width: 100%;
+  padding: 0px 15px;
+}
+
+.item--infocards-tab1-sostenibilidad:nth-child(0n+5) .infoCardTextContainer--infocards-tab1-sostenibilidad{
+  padding: 0px 30px;
+}
+
+.item--infocards-tab1-sostenibilidad:nth-child(0n+5) .infoCardImageContainer--infocards-tab1-sostenibilidad{
+  padding: 15px;
+}
+
+.infoCardImageContainer--infocards-tab2-sostenibilidad,
+.infoCardImageContainer--infocards-tab1-sostenibilidad{
+  width: 100%;
+  padding: 15px 15px 0px 15px;
+}
+
+.infoCardImage--infocards-tab2-sostenibilidad,
+.infoCardImage--infocards-tab1-sostenibilidad {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.infoCardCallActionContainer--infocards-tab2-sostenibilidad,
+.infoCardCallActionContainer--infocards-tab1-sostenibilidad {
+  display: none;
+}
+
+/* .infocard-tab2-sostenibilidad,
+.infocard-tab1-sostenibilidad {
+  height: 100% !important;
+} */
+
+.item--infocards-tab1-sostenibilidad :global(.vtex-info-card-list-0-x-infocard-tab1-sostenibilidad),
+.item--infocards-tab1-sostenibilidad :global(.vtex-info-card-list-0-x-infocard-tab2-sostenibilidad){
+  height: 100%;
+}
+
+.list--infocards-tab1-aplicativos {
+  display: grid;
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.infoCardHeadline--infocards-tab1-aplicativos{
+  color:  #3D3C3C;
+  /* font-family: 'NeutraText'; */
+  font-family: 'NeutraTextAltBold';
+font-size: 16px;
+font-weight: 700;
+text-transform: capitalize;
+width: 100%;
+border-bottom: 0.5px solid  #ED1B24;
+}
+
+.infoCardSubhead--infocards-tab1-aplicativos {
+  color:  #828181;
+font-family: 'NeutraText';
+font-size: 14px;
+font-weight: 500;
+margin-top: 10px;
+}
+
+.infoCardContainer--infocards-tab1-aplicativos {
+  border-radius: 8px;
+  border: 1px solid  #A1A1A1;
+  background:  #FFF;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+
+.infoCardTextContainer--infocards-tab1-aplicativos{
+  width: 100% !important;
+}
+
+
+.infoCardCallActionContainer--infocards-tab1-aplicativos{
+  display: none;
+}
+
+.infoCardImage--infocards-tab1-aplicativos {
+  border-radius: 6px;
+  position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+.infoCardImageContainer--infocards-tab1-aplicativos {
+  position: relative;
+  height: 120px;
+  width: 100%;
+}
+
+.item--infocards-tab1-aplicativos :global(.vtex-info-card-list-0-x-infocard-tab1-aplicativos){
+  height: 100% ;
+}
+
+
+.infoCardContainer--infocards-tab1-aplicativos:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media (max-width: 1024px) {
+
+  .list--infocards-tab1-aplicativos {
+    display: grid;
+    gap: 20px;
+    max-width: 90vw;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+  .list--infocards-tab2-sostenibilidad,
+  .list--infocards-tab1-sostenibilidad {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .item--infocards-tab1-sostenibilidad:nth-child(0n+5) .infoCardContainer--infocards-tab1-sostenibilidad{
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+  .item--infocards-tab1-sostenibilidad:nth-child(0n+5) .infoCardTextContainer--infocards-tab1-sostenibilidad{
+    padding: 0px 15px;
+  }
+
+
+  .list--infocards-trabaja-con-nosotros,
+  .list--infocards-bloque-4-quienes-somos {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+
+  .infoCardContainer--infocard-drawer-iconos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.infoCardCallActionContainer--infocard-drawer-iconos :global(.vtex-button__label){
+  color: #3d3c3c;
+  font-family: 'NeutraTextAltBold';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.infoCardCallActionContainer--infocard-drawer-iconos :global(.vtex-button){
+  background: none;
+  border: none;
+}
+
+
+.infoCardCallActionContainer--infocard-drawer-iconos {
+  margin: 0px;
+}
+
+.list--infocard-drawer-iconos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 15px;
+}
+
+.infoCardImage--infocard-drawer-iconos {
+  border-radius: 8px;
+}
+
+}

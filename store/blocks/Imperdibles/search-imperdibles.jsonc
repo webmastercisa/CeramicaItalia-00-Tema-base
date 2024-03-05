@@ -1,0 +1,27 @@
+{
+    "flex-layout.row#resultado-busqueda-landing-imperdibles": {
+      "children": ["search-result-layout.customQuery#ResultadoBusqueda-landing-imperdibles"],
+      "props": {
+        "blockClass": ["resultado-busqueda-landing"]
+      }
+    },
+    
+    "search-result-layout.customQuery#ResultadoBusqueda-landing-imperdibles": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": false,
+            "maxItemsPerPage": 20,
+            "queryField": "1", //Valores de los campos a buscar (separados por //)
+            "mapField": "category-1", //Campos a buscar (separados por comas, tambien se puede buscar por coleccion productClusterIds)
+            "facetsBehavior": "dynamic"
+        }
+    },
+    "blocks": [
+        "search-result-layout.desktop#landing",
+        "search-result-layout.mobile#landing",
+        "search-not-found-layout"
+    ]
+}
+
+}

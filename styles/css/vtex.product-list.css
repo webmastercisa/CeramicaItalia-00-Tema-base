@@ -1,0 +1,191 @@
+.productImage {
+    width: 140px;
+    height: 128px;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+.productBrandName {
+    font-size: 0;
+}
+
+.price {
+    font-family: 'Neutra Display';
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.quantitySelectoContainer--cantidad {
+    width: 100%;
+}
+
+.quantitySelectorDecrease--cantidad {
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    width: 2em !important;
+    height: 2em !important;
+    background-color: #777777 !important;
+    border: none !important;
+    margin: 7px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.quantitySelectorIncrease--cantidad {
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    width: 2em !important;
+    height: 2em !important;
+    background-color: #777777 !important;
+    border: none !important;
+    margin: 7px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.quantitySelectorWrapper--cantidad {
+    border: 1px solid #666;
+    border-radius: 25px;
+    margin: 10px 0 0 48px;
+}
+
+.inputContainer {
+    border: none;
+    padding: 0 24px 0 10px;
+    font-family: arial;
+    font-size: 13px;
+    color: #000000;
+}
+
+.removeButtonContainer {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+.removeButton :global(.vtex-product-list-0-x-deleteIcon){
+    display: none;
+}
+.removeButton::before {
+    content: '';
+    height: 20px;
+    width: 16px;
+    display: flex;
+    padding: 0;
+    background-image: url(assets/ico/deleteIconMiniCart.svg);
+    background-size: contain;
+}
+
+.removeButton {
+    position: absolute;
+    top: -26px;
+    right: -26px;
+}
+
+.productVariationsContainer {
+    display: none;
+}
+
+.productImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.quantitySelectorDecrease--cantidad:hover {
+    background: #777777 !important;
+}
+
+.quantitySelectorIncrease--cantidad:hover {
+  background: #777777 !important;
+}
+
+.productPriceCurrency {
+    font-size: 14px;
+    color: #ED1B24;
+    font-weight: 600;
+}
+
+.productName {
+    padding: 10% 3% 2% 0;
+    line-height: 1 !important;
+}
+
+
+.unitPriceContainer,
+.unitPrice {
+    display: none;
+}
+
+.quantity-stepper-8 {
+    padding: 0;
+}
+
+.productImageContainer {
+    width: 130px !important;
+    margin: 12px;
+}
+
+.productImageAnchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1024px) {
+
+    .productName {
+        height: 43px;
+    }
+    .quantitySelectorContainer--cantidad {
+        width: 8rem;
+    }
+
+    .quantitySelectorWrapper--cantidad {
+        margin: 0 !important;
+    }
+
+    .quantitySelectorDecrease--cantidad {
+        padding: 2px;
+        font-size: 4px;
+        width: 20px!important;
+        height: 20px !important;
+    }
+    .quantitySelectorIncrease--cantidad {
+        padding: 2px;
+        font-size: 4px;
+        width: 20px!important;
+        height: 20px !important;
+    }
+    .inputContainer {
+        width: 58px !important;
+        padding: 0 0px 0 0;
+        font-size: 11.5px;
+    }
+
+    .removeButtonContainer {
+        position: absolute;
+        bottom: 24px;
+        right: 33px;
+    }
+
+    .quantitySelectorContainer--cantidad {
+        width: 10rem;
+        margin-top: 5px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .removeButtonContainer {
+        bottom: 24px;
+        right: 7vw;
+    }
+}
+
+@media (max-width: 370px) {
+    .removeButtonContainer {
+        bottom: 21px;
+        right: 6px;
+    }
+}

@@ -1,0 +1,322 @@
+{
+    // Menu Footer Mobile -Nosotros Mobile
+    "vtex.menu@2.x:menu#nosotrosfooter-mobile": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#footerNosotros-mobile"
+        ]
+    },
+    "vtex.menu@2.x:menu#footerNosotros-mobile": {
+        "title": "Menú Mobile Nosotros",
+        "props": {
+            "blockClass": "menu-footerMobile",
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-nosotros-footer-mobile",
+                    "type": "custom",
+                    "iconId": null,
+                    "blockClass": "linkFooterMobile",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/corporativo",
+                        "noFollow": false,
+                        "tagTitle": "Corporativo",
+                        "text": "• Corporativo"
+                    }
+                },
+                {
+                    "id": "menu-item-contactanos-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/contactanos",
+                        "noFollow": false,
+                        "tagTitle": "Contáctanos",
+                        "text": "• Contáctanos"
+                    }
+                },
+                {
+                    "id": "menu-item-aplicativos-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/aplicativos",
+                        "noFollow": false,
+                        "tagTitle": "Aplicativos",
+                        "text": "• Aplicativos"
+                    }
+                },
+                {
+                    "id": "menu-item-nuestros-distribuidores-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/nuestros-distribuidores",
+                        "noFollow": false,
+                        "tagTitle": "Nuestros distribuidores",
+                        "text": "• Nuestros distribuidores"
+                    }
+                },
+                {
+                    "id": "menu-item-puntos-fabrica-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/puntos-fabrica",
+                        "noFollow": false,
+                        "tagTitle": "Puntos de fábrica",
+                        "text": "• Puntos de fábrica"
+                    }
+                },
+                {
+                    "id": "menu-item-es-club-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/es-club",
+                        "noFollow": false,
+                        "tagTitle": "ES CLUB",
+                        "text": "• ES CLUB"
+                    }
+                },
+                {
+                    "id": "menu-item-recomendaciones-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/recomendaciones",
+                        "noFollow": false,
+                        "tagTitle": "Recomendaciones",
+                        "text": "• Recomendaciones"
+                    }
+                }
+            ]
+        }
+    },
+    // Menu footer Mobile -De tu interés
+    "vtex.menu@2.x:menu#de-tu-interes-footer-mobile": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#footerDeTuInteres-mobile"
+        ]
+    },
+    "vtex.menu@2.x:menu#footerDeTuInteres-mobile": {
+        "title": "Menú Mobile Nosotros",
+        "props": {
+            "blockClass": "menu-footerMobile",
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-nosotros-footer-mobile",
+                    "type": "custom",
+                    "iconId": null,
+                    "blockClass": "linkFooterMobile",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/garantias",
+                        "noFollow": false,
+                        "tagTitle": "Garantías",
+                        "text": "• Garantías"
+                    }
+                },
+                {
+                    "id": "menu-item-preguntas-frecuentes-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/preguntas-frecuentes",
+                        "noFollow": false,
+                        "tagTitle": "Preguntas frecuentes",
+                        "text": "• Preguntas frecuentes"
+                    }
+                },
+                {
+                    "id": "menu-item-pagos-PSE-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/pagos-PSE",
+                        "noFollow": false,
+                        "tagTitle": "Pagos PSE",
+                        "text": "• Pagos PSE"
+                    }
+                },
+                {
+                    "id": "menu-item-super-maestro-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/super-maestro",
+                        "noFollow": false,
+                        "tagTitle": "Super maestro",
+                        "text": "• Super maestro"
+                    }
+                },
+                {
+                    "id": "menu-item-Italradio-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/Italradio",
+                        "noFollow": false,
+                        "tagTitle": "Italradio",
+                        "text": "• Italradio"
+                    }
+                },
+                {
+                    "id": "menu-item-catalogo-general-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/catalogo-general",
+                        "noFollow": false,
+                        "tagTitle": "Catálogo general",
+                        "text": "• Catálogo general"
+                    }
+                },
+                {
+                    "id": "menu-item-entrega-producto-terceros-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/entrega-producto-terceros",
+                        "noFollow": false,
+                        "tagTitle": "Entrega de producto a terceros",
+                        "text": "• Entrega de producto a terceros"
+                    }
+                }
+            ]
+        }
+    },
+    // Menu Footer Mobile -Legal 
+    "vtex.menu@2.x:menu#legal-footer-mobile": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#footerLegal-mobile"
+        ]
+    },
+    "vtex.menu@2.x:menu#footerLegal-mobile": {
+        "title": "Menú Mobile Nosotros",
+        "props": {
+            "blockClass": "menu-footerMobile",
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-politica-privacidad-footer-mobile",
+                    "type": "custom",
+                    "iconId": null,
+                    "blockClass": "linkFooterMobile",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/politica-privacidad",
+                        "noFollow": false,
+                        "tagTitle": "Política privacidad",
+                        "text": "• Política privacidad"
+                    }
+                },
+                {
+                    "id": "menu-item-politica-precios-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/politica-precios",
+                        "noFollow": false,
+                        "tagTitle": "Política de precios",
+                        "text": "• Política de precios"
+                    }
+                },
+                {
+                    "id": "menu-item-politica-de-entregas-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/politica-de-entregas",
+                        "noFollow": false,
+                        "tagTitle": "Política de entregas",
+                        "text": "• Política de entregas"
+                    }
+                },
+                {
+                    "id": "menu-item-politica-devoluciones-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/politica-devoluciones",
+                        "noFollow": false,
+                        "tagTitle": "Política de devoluciones",
+                        "text": "• Política de devoluciones"
+                    }
+                },
+                {
+                    "id": "menu-item-superintendencia-industria-comercio-footer-mobile",
+                    "type": "custom",
+                    "blockClass": "linkFooterMobile",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/superintendencia-industria-comercio",
+                        "noFollow": false,
+                        "tagTitle": "Superintendencia de industria y comercio",
+                        "text": "• Superintendencia de industria y comercio"
+                    }
+                }
+            ]
+        }
+    }
+}

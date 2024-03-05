@@ -1,0 +1,16 @@
+
+.container--sticky-header{
+    background-color: #FFFFFF;
+}
+
+.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck :global(.vtex-sticky-layout-0-x-container--sticky-header) {
+    left: -24px;
+}
+
+.container--sticky-header {
+    z-index: 900 !important;
+}
+
+.container {
+    z-index: 900 !important;
+}

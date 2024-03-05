@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 0;
+  margin-left: -10px;
+  margin-right: -20px;
+  margin-bottom: -1px;
+}
+
+/* .container :global(.vtex-button):hover {
+  background: transparent;
+} */
+
+.label {
+  font-size: 0;
+  padding: 0;
+  margin-bottom: -10px;
+}
+
+.label::before {
+  content: '';
+  height: 37px;
+  width: 37px;
+  padding: 0;
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://ceramicaitalia.vteximg.com.br/arquivos/loginIcon.png);
+  margin-bottom: 3px;
+}
+
+/* Tamaño login */
+.profile {
+  font-size: 0;
+  max-width: 70px;
+  margin-bottom: -10px;
+}
+
+.profile::before {
+  content: '';
+  height: 32px;
+  width: 36px;
+  padding: 0;
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/arquivos/loginIcon.png);
+}
+
+.container :global(.vtex-button__label){
+  padding: 10px;
+}
+
+
+.box {
+  /* top: 100%;
+  visibility: visible;
+  min-width: 19.375rem; */
+  right: 92px !important; 
+}
+
+@media (max-width: 1024px) {
+
+  .label {
+    padding: 0;
+    margin: 0 6px 0 6px;
+    display: flex !important;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .profile {
+    padding: 0;
+    margin: 0 6px 0 6px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 8px;
+    overflow: inherit;
+  }
+
+  .label::after {
+    content: 'Ingresar';
+    font-family: 'NeutraTextTF';
+    font-size: 15px;
+    color: #3D3C3C;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .profile::after {
+    content: 'Ingresar';
+    font-family: 'NeutraTextTF';
+    font-size: 15px;
+    color: #3D3C3C;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .container {
+    /* width: 81vw; */
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0px;
+    margin: 0 auto;
+    /* border-bottom: 0.8px solid #3D3C3C; */
+  }
+
+  .label::before {
+    height: 25px;
+    width: 22px;
+  }
+  .profile::before {
+    height: 25px;
+    width: 22px;
+  }
+  .container :global(.vtex-button__label) {
+    margin: 0;
+    padding: 11px 6px;
+  }
+
+
+}

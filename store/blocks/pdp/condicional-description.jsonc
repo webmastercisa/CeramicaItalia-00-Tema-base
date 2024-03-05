@@ -1,0 +1,239 @@
+{
+    "condition-layout.product#cond-description-product": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "9"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "10"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "12"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "13"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "14"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "15"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "16"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "17"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "18"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "19"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "20"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "21"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "22"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "23"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "25"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "26"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "27"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "28"
+                    }
+                }
+            ],
+            "matchType": "any",
+            "Then": "flex-layout.row#container-descripcion-corta",
+            "Else": "flex-layout.row#description"
+        }
+    },
+
+    // condicional para la columna de descripcion de pdp
+
+    "condition-layout.product#cond-description-product-pdp": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "9"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "10"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "12"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "13"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "14"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "15"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "16"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "17"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "18"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "19"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "20"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "21"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "22"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "23"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "25"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "26"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "27"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "28"
+                    }
+                }
+            ],
+            "matchType": "any",
+            // "Then": "flex-layout.row#container-descripcion-corta",
+            "Else": "flex-layout.row#container-descripcion-corta"
+        }
+    }
+}

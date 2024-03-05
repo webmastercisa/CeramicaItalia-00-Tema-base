@@ -1,0 +1,221 @@
+{
+  "search-result-layout.desktop#Depto": {
+    "children": [
+      "flex-layout.row#searchbread",
+      // "rich-text#x-Depto",
+      "flex-layout.row#texto-img-search-departamento",
+      "list-context.info-card-list#slider-departamentos-search",
+      // "flex-layout.row#vitrina1-imagen-search-departamento",
+      // "flex-layout.row#vitrina-imagen-search",
+      "flex-layout.row#section-filters",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+      // "flex-layout.row#result-departamento"
+    ],
+    "props": {
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "flex-layout.row#result-departamento": {
+    "children": ["flex-layout.col#result-departamento"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#result-departamento": {
+    "children": [
+      "flex-layout.row#section-filters",
+      "list-context.info-card-list#slider-departamentos-search",
+      "flex-layout.row#vitrina1-imagen-search-departamento",
+      "flex-layout.col#content-departamento",
+      "flex-layout.row#vitrina2-imagen-search-departamento"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "col-result-departamento"
+    }
+  },
+
+  "flex-layout.row#texto-img-search-departamento": {
+    "children": [
+      // "search-title.v2#Departamento",
+      "rich-text#titulo-textos-search-departamento-desktop",
+      // "flex-layout.col#col-textos-search-departamento",
+      "image#img-row-textos-img-search-departamento"
+    ],
+    "props": {
+      "blockClass": ["texto-img-search-departamento"]
+    }
+  },
+  "flex-layout.col#col-textos-search-departamento": {
+    "children": [
+      "search-title.v2#Departamento",
+      // "rich-text#titulo-textos-search-departamento",
+      "rich-text#texto-textos-search-departamento"
+    ],
+    "props": {
+      "blockClass": ["col-textos-search-departamento"],
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "LEFT",
+      "verticalAlign": "middle"
+    }
+  },
+  "search-title.v2#Departamento": {
+    "props": {
+      "blockClass": "TituloDepartamento"
+    }
+  },
+  "rich-text#titulo-textos-search-departamento-desktop": {
+    "title": "SEO-Desktop",
+    "props": {
+      "blockClass": ["titulo-textos-search-departamento"],
+      "text": "# DEPARTAMENTO \n lorem ipsum"
+    }
+  },
+  "rich-text#texto-textos-search-departamento": {
+    "props": {
+      "blockClass": ["texto-textos-search-departamento"],
+      "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. ."
+    }
+  },
+
+
+
+
+  "search-result-layout.mobile#Depto": {
+    "children": [
+      "list-context.image-list#banners-search",
+      "list-context.info-card-list#slider-departamentos-search",
+      "flex-layout.row#searchbread",
+      // "flex-layout.row#vitrina1-imagen-search-departamento-mobile",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      // "flex-layout.row#vitrina2-imagen-search-departamento-mobile",
+      "rich-text#titulo-textos-search-departamento-mobile"
+    ],
+    "props": {
+      "preventRouteChange": true,
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      "blockClass": "ResultadoMobile"
+    }
+  },
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#searchinfomobile": {
+    "children": [
+      "flex-layout.col#filterMobile",
+      "flex-layout.col#productCount",
+      "flex-layout.col#orderByMobile"
+      // "flex-layout.col#switcherMobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "around",
+      "blockClass": "searchinfomobile"
+    }
+  },
+
+  // VITRINA 1 SEARCH DEPARTAMENTO MOBILE
+  "flex-layout.row#vitrina1-imagen-search-departamento-mobile": {
+    "children": [
+      "list-context.product-list#vitrina-search-departamento-mobile",
+      "image#img-vitrina1-search-departamento-mobile"
+    ],
+    "props": {
+      "blockClass": ["vitrina-imagen-search-departamento-mobile"]
+    }
+  },
+  "image#img-vitrina1-search-departamento-mobile": {
+    "props": {
+      "blockClass": ["img-vitrina-search-departamento-mobile"],
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/img-vitrina1-search-departamento-mobile.png"
+    }
+  },
+  // VITRINA CON SOLO 1 PRODUCTO MOBILE
+  "list-context.product-list#vitrina-search-departamento-mobile": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#vitrina-search-departamento-mobile"],
+    "title": "vitrina-search",
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "row-shelf-product"
+    }
+  },
+  "slider-layout#vitrina-search-departamento-mobile": {
+    "title": "slider-vitrina-search-departamento-mobile",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": ["shelf-destacados", "vitrina-search"]
+    }
+  },
+  // VITRINA 2 DEPARTAMENTO MOBILE
+  "flex-layout.row#vitrina2-imagen-search-departamento-mobile": {
+    "children": [
+      "image#img-vitrina2-search-departamento-mobile",
+      "list-context.product-list#vitrina-search-departamento-mobile"
+    ],
+    "props": {
+      "blockClass": ["vitrina2-imagen-search-departamento-mobile"],
+      "preventHorizontalStretch": false
+    }
+  },
+  "image#img-vitrina2-search-departamento-mobile": {
+    "props": {
+      "blockClass": ["img-vitrina-search-departamento-mobile"],
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/img-vitrina2-search-departamento-mobile.png"
+    }
+  },
+
+  "rich-text#titulo-textos-search-departamento-mobile": {
+    "title": "SEO-Mobile",
+    "props": {
+      "blockClass": ["titulo-textos-search-departamento"],
+      "text": "# DEPARTAMENTO \n lorem ipsum"
+    }
+  },
+
+  "search-result-layout#dep-1": {
+    "blocks": [
+      "search-result-layout.desktop#departamento",
+      "search-result-layout.mobile#departamento",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#departamento": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#texto-img-search-departamento",
+      "flex-layout.row#result-departamento"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid"
+    }
+  }
+}

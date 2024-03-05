@@ -1,0 +1,510 @@
+.ContentPage {
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+}
+
+.ContentMap {
+  width: 70%;
+}
+
+.ContentList {
+  width: 30%;
+  padding: 0 10px;
+}
+
+.selectContent {
+  width: 100%;
+  position: relative;
+}
+
+.selectBtn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  border: 1px solid #3D3C3C;
+  padding: 8px 15px;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 10px;
+  justify-content: space-between;
+  border-radius: 100px;
+}
+
+.selectContentList {
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  width: 100%;
+  inset: 0 auto auto 0;
+  transform: translateY(45px);
+  border-radius: 10px;
+  max-height: 0px;
+  overflow-y: auto;
+}
+
+.selectContentList--show {
+  max-height: 315px;
+  z-index: 1;
+  border: 1px solid #585858;
+}
+
+.contentQuestionSpan {
+  padding-right: 17px;
+}
+
+.selectListUl {
+  margin: 0;
+  padding: 0;
+}
+
+.selectContentList::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.selectContentList::-webkit-scrollbar-button {
+  display: none;
+}
+
+.selectContentList::-webkit-scrollbar {
+  height: 4px;
+  width: 6px;
+}
+
+.selectContentList::-webkit-scrollbar-thumb {
+  background-color: rgba(83, 82, 82, 0.44);
+  border-radius: 20px;
+  border: 1px solid rgba(68, 69, 71, 0.34);
+}
+
+.selectContentList::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.selectListLi {
+  border-bottom: 1px solid #58585880;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.selectListLi:last-child {
+  border-bottom: none;
+}
+
+.ListStoreUl {
+  margin: 10px 0 0 0;
+  padding: 0 10px;
+  /* border-top: 1px solid #e3e4e6;
+    border-bottom: 1px solid #e3e4e6; */
+  max-height: 446px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ListStoreUl::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.ListStoreUl::-webkit-scrollbar-button {
+  display: none;
+}
+
+.ListStoreUl::-webkit-scrollbar {
+  height: 4px;
+  width: 6px;
+}
+
+.ListStoreUl::-webkit-scrollbar-thumb {
+  background-color: rgba(83, 82, 82, 0.44);
+  border-radius: 20px;
+  border: 1px solid rgba(68, 69, 71, 0.34);
+}
+
+.ListStoreUl::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.ListStoreLi {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  /* padding: 16px 8px; */
+  cursor: pointer;
+  /* border-top: 1px solid #e3e4e6;
+    border-bottom: 1px solid #e3e4e6; */
+  /* background-color: pink; */
+  border-radius: 6px;
+  padding-bottom: 10px;
+  gap: 4px;
+}
+
+
+/* tarjetas pares o impares */
+
+/* .ListStoreLi:nth-child(odd) {
+  border: 1px solid #ED1B24;
+  background: #FFF;
+}
+
+.ListStoreLi:nth-child(even) {
+  border: 1px solid #686868;
+  background: #FFF;
+} */
+
+
+
+.ListStoreLi {
+  border: 1px solid #686868;
+  background: #FFF;
+}
+
+.CardRed{
+  border: 1px solid #ED1B24;
+  background: #FFF; 
+}
+
+.ListStoreName {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 2px 0px 2px 10px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  border-radius: 5px 5px 0px 0px;
+  justify-content: flex-start;
+  /* padding-bottom: 10px; */
+}
+
+/* tarjetas pares o impares */
+
+/* .ListStoreLi:nth-child(odd) .ListStoreName {
+  color: #fff;
+  background: #ED1B24;
+}
+
+.ListStoreLi:nth-child(even) .ListStoreName {
+  color: #3D3C3C;
+  border-bottom: 1px solid #686868;
+} */
+
+.ListStoreLi .ListStoreName {
+  color: #3D3C3C;
+  border-bottom: 1px solid #686868;
+}
+
+.CardRed .ListStoreName{
+  color: #fff;
+  background: #ED1B24;
+  border-bottom: 1px solid #ED1B24;
+}
+
+/* tarjetas pares o impares */
+
+/* .ListStoreLi:nth-child(odd) .ListStoreName::before {
+  content: url("assets/ico/logo-map.svg");
+}
+
+.ListStoreLi:nth-child(even) .ListStoreName::before {
+  content: url(" assets/ico/logo-map2.svg");
+} */
+
+.ListStoreLi .ListStoreName::before {
+  content: url(" assets/ico/logo-map2.svg");
+}
+
+.CardRed .ListStoreName::before {
+  content: url("assets/ico/logo-map.svg");
+}
+
+
+.ListStoreDirection {
+  font-size: 12px;
+  padding: 0px 10px;
+  font-weight: 400;
+  /* justify-content: space-between; */
+    display: flex;
+    gap: inherit;
+    text-align: justify;
+}
+
+.ListStoreHorary {
+  font-size: 12px;
+  padding: 0px 10px;
+  font-weight: 400;
+  /* justify-content: space-between; */
+  display: flex;
+  gap: inherit;
+  text-align: justify;
+}
+
+.ListStoreContactPerson {
+  font-size: 12px;
+  padding: 0px 10px;
+  font-weight: 400;
+}
+
+.ListStorePhone {
+  font-size: 12px;
+  padding: 0px 10px;
+  font-weight: 400;
+  /* justify-content: space-between; */
+  display: flex;
+  gap: inherit;
+  text-align: justify;
+}
+
+.ListStoreDepartment {
+  font-size: 12px;
+  padding: 0px 10px;
+  font-weight: 400;
+  /* justify-content: space-between; */
+  display: flex;
+  gap: inherit;
+  text-align: justify;
+}
+
+.ListStoreCity {
+  font-size: 12px;
+  padding: 0px 10px;
+  font-weight: 400;
+  /* justify-content: space-between; */
+  display: flex;
+  gap: inherit;
+  text-align: justify;
+}
+
+.ListStoreUrl1 {
+  font-size: 12px;
+  padding: 0px 10px;
+  font-weight: 400;
+}
+
+.ListStoreUrlTitle1 {
+  font-size: 12px;
+  /* padding: 2px 10px; */
+  font-weight: 400;
+}
+
+.ListStoreUrl2 {
+  font-size: 12px;
+  padding: 0px 10px;
+  font-weight: 400;
+}
+
+.ListStoreUrlTitle2 {
+  font-size: 12px;
+  /* padding: 2px 10px; */
+  font-weight: 400;
+}
+
+.ListStoreImgContent {
+  height: 175px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.ListStoreShowMore {
+  font-size: 1rem;
+  letter-spacing: 0;
+  vertical-align: middle;
+  line-height: 1;
+  color: #fff;
+  min-height: 2.5rem;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-width: 0.125rem;
+  border-radius: 0.25rem;
+  border-color: #ED1B24;
+  border-style: solid;
+  background-color: #ED1B24;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ListStoreShowMoreContent {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.ListStoreSearch {
+  width: 97%;
+  font-weight: normal;
+  font-size: 1rem;
+  text-transform: initial;
+  letter-spacing: 0;
+  outline: 0;
+  color: #3f3f40;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  border-radius: 0.25rem;
+  border-style: none;
+  border-width: 0;
+  background-color: #fff;
+  overflow: visible;
+  line-height: 1.15;
+  padding: 1px 2px;
+}
+
+.ListStoreSearchContent {
+  padding: 5px 3px 5px 10px;
+  height: 39px;
+  box-sizing: border-box;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  border-width: 0.125rem;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: #3D3C3C;
+  margin-top: 5px;
+}
+
+.ListStoreSearchContent::after {
+  content: url(assets/ico/IconSearch2.svg);
+  height: 27px;
+}
+
+.ListStoreContactPersonSpan {
+  display: none;
+}
+
+.ListStorePhoneSpan {
+  display: none;
+}
+
+.ListStoreHorarySpan {
+  display: none;
+}
+
+.ListStoreDepartmentSpan {
+  display: none;
+}
+
+.ListStoreCitySpan {
+  display: none;
+}
+
+.ListStoreDirectionSpan {
+  display: none;
+}
+
+.ListStoreImg {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.InfoWindowDescription {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.ListStoreCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.titleStore {
+  justify-content: flex-start;
+  display: flex;
+  margin-bottom: 5px;
+  color: #3D3C3C;
+  /* font-family: 'NeutraText'; */
+  font-family: 'NeutraTextBook';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+
+.titleStoreMobile {
+  display: none;
+}
+
+.ListStoreDirection::before{
+  content: "Dirección:";
+  min-width: 90px;
+}
+
+.ListStoreCity::before{
+  content: "Ciudad:";
+  min-width: 90px;
+}
+
+.ListStoreDepartment::before{
+  content: "Departamento:";
+  min-width: 90px;
+}
+
+.ListStoreHorary::before{
+  content: "Horario:";
+  min-width: 90px;
+}
+
+.ListStorePhone::before{
+  content: "Teléfono:";
+  min-width: 90px;
+}
+@media (max-width: 1023px) {
+
+  .ListStoreSearchContent::after {
+    padding-right: 3px;
+}
+
+  .titleStoreMobile{
+    margin-bottom: 30px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5px;
+    color: #3D3C3C;
+    /* font-family: 'NeutraText'; */
+    font-family: 'NeutraTextAltBold';
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: flex;
+  }
+
+  .ContentPage {
+    flex-direction: column;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+
+  .ContentMap {
+    width: 100%;
+  }
+
+  .ContentList {
+    width: 100%;
+    padding: 0px;
+    max-width: 90vw;
+    margin: 20px auto 0px auto
+  }
+}

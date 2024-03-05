@@ -1,0 +1,152 @@
+.minicartWrapperContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-right: 30px !important;
+    padding-left: 0px;
+    margin-bottom: -12px;
+    width: 50px;
+}
+
+
+.cartIcon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: -7px;
+}
+
+.minicartQuantityBadge {
+    width: 27px;
+    height: 27px;
+    background-color: #ED1B24;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 4px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.openIconContainer {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.closeIconContainer {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    z-index: 99;
+}
+
+.minicartTitle {
+    font-size: 0;
+    position: absolute;
+    top: 10px;
+    left: 147px;
+}
+
+
+.closeIcon {
+    width: 0;
+}
+
+.closeIconButton {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.closeIconButton::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    display: flex;
+    padding: 0;
+    background-image: url(assets/ico/close-Icon-white.svg);
+    background-size: cover;
+}
+
+.minicartSummary {
+    padding-top: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+    font-size: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button)::before {
+    content: "Ir a pagar";
+    font-family: 'NeutraTextTF';
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 13px;
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover {
+    background: #FFFFFF;
+    border: .125rem solid #ED1B24;
+    color: #ED1B24;
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover:global(.vtex-button)::before {
+    color: #ED1B24;
+}
+
+.drawerStyles {
+    height: 85vh !important;
+    justify-content: flex-start;
+}
+
+.minicartProductListContainer {
+    max-height: 50vh;
+}
+
+.minicartSideBarContentWrapper {
+    height: 100vh !important;
+}
+
+.drawerContent {
+    height: 100vh !important;
+}
+
+.drawer {
+  z-index: 9999999 !important;
+}
+
+@media (max-width: 1024px) {
+    .minicartSideBarContentWrapper {
+        height: 680px;
+    }
+
+    .drawer {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+
+    .openIconContainer :global(.vtex-button){
+      height: 60px !important;
+    }
+}
+
+@media (max-width: 700px) {
+  .minicartProductListContainer {
+    max-height: 50vh !important;
+    height: fit-content;
+    min-height: 50vh !important;
+  }
+
+  .drawer {
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  .drawerStyles {
+    height: 85vh!important;
+  }
+}

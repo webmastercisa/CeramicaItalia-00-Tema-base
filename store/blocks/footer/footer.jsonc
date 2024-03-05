@@ -1,0 +1,225 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "footer#templateLanding",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footerTexts",
+      "flex-layout.row#Footer-Xtrategik"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#logo-ceramica-footer",
+      "vtex.menu@2.x:menu#de-tu-interes",
+      "vtex.menu@2.x:menu#nosotros",
+      "vtex.menu@2.x:menu#legal",
+      "flex-layout.col#columna5"
+    ],
+    "props": {
+      "blockClass": "menu-footer",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "preventHorizontalStretch": false
+    }
+  },
+  //Columna mobile
+  "flex-layout.col#columna-mobile": {
+    "children": [
+      "flex-layout.row#logos-footer-mobile",
+      "rich-text#visita-nuestro-blog",
+      "rich-text#ver-salas"
+    ],
+    "props": {
+      "blockClass": [
+        "columna4",
+        "colMobile"
+      ],
+      // "width": "25%",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#logos-footer-mobile": {
+    "children": [
+      "logo#logoRedes1",
+      "logo#logoRedes2",
+      "logo#logoRedes3",
+      "logo#logoRedes4",
+      "logo#logoRedes5",
+      "logo#logoRedes6"
+    ],
+    "props": {
+      "blockClass": [
+        "logos-footer-mobile"
+      ],
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "logo#logoRedes1": {
+    "props": {
+      "title": "logoRedes1",
+      // "href": "/",
+      "url": "assets/imgs/ico-fc.jpg",
+      "width": "30px",
+      "blockClass": "logoRedes1",
+      "href": "https://www.facebook.com/CeramicaItaliaSA"
+    }
+  },
+
+  "logo#logoRedes2": {
+    "props": {
+      "title": "logoRedes2",
+      // "href": "/",
+      "url": "assets/imgs/ico-insta.jpg",
+      "width": "30px",
+      "blockClass": "logoRedes1",
+      "href": "https://www.instagram.com/ceramicaitalia/"
+    }
+  },
+
+  "logo#logoRedes3": {
+    "props": {
+      "title": "logoRedes3",
+      // "href": "/",
+      "url": "assets/imgs/ico-link.jpg",
+      "width": "30px",
+      "blockClass": "logoRedes1",
+      "href": "https://www.linkedin.com/company/ceramica-italia-sa/"
+    }
+  },
+
+  "logo#logoRedes4": {
+    "props": {
+      "title": "logoRedes4",
+      // "href": "/",
+      "url": "assets/imgs/ico-pint.jpg",
+      "width": "30px",
+      "blockClass": "logoRedes1",
+      "href":"https://www.pinterest.es/ceramica_italia/"
+    }
+  },
+
+  "logo#logoRedes5": {
+    "props": {
+      "title": "logoRedes5",
+      // "href": "/",
+      "url": "assets/imgs/ico-tw.jpg",
+      "width": "30px",
+      "blockClass": "logoRedes1",
+      "href": "https://twitter.com/ceramicaitalia"
+    }
+  },
+
+  "logo#logoRedes6": {
+    "props": {
+      "title": "logoRedes5",
+      // "href": "/",
+      "url": "assets/imgs/ico-youtube.jpg",
+      "width": "30px",
+      "blockClass": "logoRedes1",
+      "href": "https://www.youtube.com/@CeramicaItaliaSA"
+    }
+  },
+
+  "flex-layout.row#footerTexts": {
+    "children": [
+      // "flex-layout.row#footerText-1",
+      // "flex-layout.row#footerText-2",
+      // "flex-layout.row#sitio-seguro",
+      // "flex-layout.row#superintendencia"
+    ],
+    "props": {
+      "blockClass": "footerTexts",
+      "fulwidth": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+  // Footer Mobile
+  "footer-layout.mobile": {
+    "children": [
+      "footer#templateLanding",
+      "flex-layout.row#footer-1-mobile",
+      "flex-layout.row#Footer-Xtrategik-mobile"
+    ]
+  },
+  "flex-layout.row#footer-1-mobile": {
+    "children": [
+      "flex-layout.col#logo-ceramica-footer",
+      "flex-layout.row#container-footer-mobile",
+      // "flex-layout.col#imgSuperIntendencia",
+      // "logo#logoSic",
+      // "flex-layout.col#columna-mobile"
+      "flex-layout.row#imgSuperIntendencia", 
+      "flex-layout.col#columna5"
+    ],
+    "props": {
+      "blockClass": "contenedor-footer-mobile",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#imgSuperIntendencia": {
+    "props": {
+      "blockClass": "imgSuperIntendencia",
+      "colSizing": "auto",
+      "fullWidth": false,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false
+    },
+    "children": [
+      "image#superIntendencia-footer-mobile"
+    ]
+  },
+  "flex-layout.col#imgSuperIntendencia": {
+    "props": {
+      "blockClass": "imgSuperIntendencia",
+      "colSizing": "auto",
+      "fullWidth": false,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false
+    },
+    "children": [
+      "image#superIntendencia-footer-mobile"
+    ]
+  },
+  "logo#logoSic": {
+    "props": {
+      "title": "logoSic",
+      // "href": "/",
+      "url": "assets/imgs/logo-sic-footer1.jpg",
+      "width": "30px",
+      "blockClass": "logoSic"
+    }
+  },
+  "image#superIntendencia-footer-mobile": {
+    "props": {
+      "src": "arquivos/logo-sic-mobile.jpg",
+      "alt": "alt",
+      "height": "42px",
+      "blockClass": "img-superIntendencia-footerMobile",
+      "link": {
+        "url": "https://www.sic.gov.co/",
+        "openNewTab": false,
+        "title": "title"
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+    // contenedor de tabs
+    "tab-layout#tab-pdp": {
+        "children": [
+            "tab-list#tab-pdp",
+            "tab-content#tab-pdp"
+        ],
+        "props": {
+            "blockClass": "tab-pdp",
+            "defaultActiveTabId": "tab-descripcion-pdp"
+        }
+    },
+    //   listado de pestañas
+    "tab-list#tab-pdp": {
+        "children": [
+            "tab-list.item#tab-descripcion-pdp",
+            "tab-list.item#tab-detalles-pdp",
+            "tab-list.item#tab-descargas-pdp"
+        ],
+        "props": {
+            "blockClass": "list-tab-pdp"
+        }
+    },
+    "tab-list.item#tab-descripcion-pdp": {
+        "props": {
+            "tabId": "tab-descripcion-pdp",
+            "blockClass": "item-tab-descripcion-pdp",
+            "label": "Descripción",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#tab-detalles-pdp": {
+        "props": {
+            "tabId": "tab-detalles-pdp",
+            "blockClass": "item-tab-detalles-pdp",
+            "label": "Detalle de producto",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#tab-descargas-pdp": {
+        "props": {
+            "tabId": "tab-descargas-pdp",
+            "blockClass": "item-tab-descargas-pdp",
+            "label": "Descargas",
+            "defaultActiveTab": true
+        }
+    },
+    //Listado de los contenidos de las pestañas
+    "tab-content#tab-pdp": {
+        "children": [
+            "tab-content.item#tab-descripcion-pdp",
+            "tab-content.item#tab-detalles-pdp",
+            "tab-content.item#tab-descargas-pdp"
+        ],
+        "props": {
+            "blockClass": "content-tab-pdp"
+        }
+    },
+    "tab-content.item#tab-descripcion-pdp": {
+        "children": [
+          "condition-layout.product#cond-description-product"
+          // "flex-layout.row#description"
+        ],
+        "props": {
+            "tabId": "tab-descripcion-pdp",
+            "blockClass": "content-tab-descripcion-pdp"
+        }
+    },
+    "tab-content.item#tab-detalles-pdp": {
+        "children": [
+            "product-specification-group#table"
+        ],
+        "props": {
+            "tabId": "tab-detalles-pdp",
+            "blockClass": "content-tab-detalles-pdp"
+        }
+    },
+    "tab-content.item#tab-descargas-pdp": {
+        "children": [
+          // "rich-text#Pruebas",
+          "DownloadGarantiaProducto",
+          "DownloadFichaTecnica",
+          "DownloadManualInstalacion",
+          "DownloadManualManipulacion",
+          "DownloadBIMZIP"
+        ],
+        "props": {
+            "tabId": "tab-descargas-pdp",
+            "blockClass": "content-tab-descargas-pdp"
+        }
+    }
+}

@@ -1,0 +1,139 @@
+{
+    //Search custom template
+    "store.custom#ResultadoBusquedaconBloqueSEOyPasillos": {
+        "blocks": [
+            "responsive-layout.desktop#container-desktop-search-custom",
+            "responsive-layout.mobile#container-mobile-search-custom",
+            // "flex-layout.row#texto-img-search-departamento",
+            // "list-context.info-card-list#slider-departamentos-search",
+            // "list-context.image-list#banners-search",
+            // "list-context.info-card-list#slider-departamentos-search",
+            "search-result-layout.customQuery#ResultadoBusqueda-2"
+        ]
+    },
+
+     "responsive-layout.desktop#container-desktop-search-custom": {
+        "children": [
+            "flex-layout.row#texto-img-search-departamento",
+            "list-context.info-card-list#slider-departamentos-search"
+        ]
+      },
+
+       "responsive-layout.mobile#container-mobile-search-custom": {
+          "children": [
+            "list-context.image-list#banners-search",
+            "list-context.info-card-list#slider-departamentos-search"
+          ]
+        },
+        
+      
+      
+    
+    "search-result-layout.customQuery#ResultadoBusqueda-2": {
+        "props": {
+            "querySchema": {
+                // "orderByField": "OrderByReleaseDateDESC",
+                "orderByField": "OrderByTopSaleDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 20,
+                "queryField": "166", //Valores de los campos a buscar (separados por //)
+                "mapField": "productClusterIds", //Campos a buscar (separados por comas, tambien se puede buscar por coleccion productClusterIds)
+                "facetsBehavior": "dynamic"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#custom-search-2",
+            // "search-result-layout.mobile",
+            "search-result-layout.mobile#custom-search-2",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#custom-search-2": {
+        "children": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#result-custom-search-2"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": false,
+            "defaultGalleryLayout": "grid"
+        }
+    },
+    "flex-layout.row#result-custom-search-2": {
+        "children": [
+            "flex-layout.col#result-custom-search-2"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.col#result-custom-search-2": {
+        "children": [
+            "flex-layout.row#section-filters-custom-search-2",
+            "flex-layout.col#content-custom-search-2"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.row#section-filters-custom-search-2": {
+        "children": [
+            "flex-layout.col#filter-2",
+            "drawer#filter-navigator-v2"
+            //   "list-context.image-list#section-filters-colors"
+        ],
+        "props": {
+            "blockClass": [
+                "section-filters" , "section-filters-2"
+            ],
+            "preventHorizontalStretch": false
+        }
+    },
+
+    "flex-layout.col#content-custom-search-2": {
+        "children": [
+        //   "flex-layout.row#searchinfo",
+        //   "flex-layout.row#fetchprevious",
+          "flex-layout.row#products",
+          "flex-layout.row#fetchmore"
+        ],
+        "props": {
+          "width": "grow",
+          "preventVerticalStretch": true
+        }
+      },
+
+    "flex-layout.col#filter-2": {
+        "children": ["filter-navigator.v3"],
+        "props": {
+          "blockClass": ["filterCol","filterCol-2"],
+          "width": "78%"
+        }
+      },
+
+
+      "search-result-layout.mobile#custom-search-2": {
+        "children": [
+        //   "list-context.image-list#banners-search",
+        //   "list-context.info-card-list#slider-departamentos-search",
+          "flex-layout.row#searchbread",
+          // "flex-layout.row#vitrina1-imagen-search-departamento-mobile",
+          "flex-layout.row#searchinfomobile",
+          "flex-layout.row#contentmobile",
+          "flex-layout.row#fetchmore"
+          // "flex-layout.row#vitrina2-imagen-search-departamento-mobile",
+        //   "rich-text#titulo-textos-search-departamento-mobile"
+        ],
+        "props": {
+          "pagination": "show-more",
+          "mobileLayout": {
+            "mode1": "small",
+            "mode2": "normal"
+          },
+          "defaultGalleryLayout": "grid",
+          "blockClass": "ResultadoMobile"
+        }
+      }
+}

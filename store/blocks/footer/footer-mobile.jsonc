@@ -1,0 +1,109 @@
+{
+    "flex-layout.row#container-footer-mobile": {
+        "props": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "blockClass": "container-footer-Mobile"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#menuFooter-mobile"
+        ]
+    },
+    "vtex.menu@2.x:menu#menuFooter-mobile": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "LinksFooterMobile"
+        },
+        "children": [
+            "menu-item#nosotros-footer-mobile",
+            "menu-item#de-tu-interes-footer-mobile",
+            "menu-item#legal-footer-mobile"
+        ]
+    },
+    //Nosotros footer mobile
+    "menu-item#nosotros-footer-mobile": {
+        "props": {
+            "blockClass": "Nosotros-FooterMobileItem",
+            "id": "menu-item-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Nosotros",
+                "text": "Nosotros"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#nosotros-footer-mobile"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#nosotros-footer-mobile": {
+        "children": [
+            "vtex.menu@2.x:menu#nosotrosfooter-mobile"
+        ],
+        "props": {
+            "blockClass": "acordeonFooter-mobile"
+        }
+    },
+
+    //De tu interés footer mobile
+    "menu-item#de-tu-interes-footer-mobile": {
+        "props": {
+            "blockClass": "de-tu-interes-FooterMobileItem",
+            "id": "menu-item-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "De tu interés",
+                "text": "De tu interés"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#de-tu-interes-footer-mobile"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#de-tu-interes-footer-mobile": {
+        "children": [
+            "vtex.menu@2.x:menu#de-tu-interes-footer-mobile"
+        ],
+        "props": {
+            "blockClass": "acordeonFooter-mobile"
+        }
+    },
+
+    // Legal footer mobile
+    "menu-item#legal-footer-mobile": {
+        "props": {
+            "blockClass": "legal-FooterMobileItem",
+            "id": "menu-item-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Legal",
+                "text": "Legal"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#legal-footer-mobile"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#legal-footer-mobile": {
+        "children": [
+            "vtex.menu@2.x:menu#legal-footer-mobile"
+        ],
+        "props": {
+            "blockClass": "acordeonFooter-mobile"
+        }
+    }
+}

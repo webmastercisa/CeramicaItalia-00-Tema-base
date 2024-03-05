@@ -1,0 +1,198 @@
+{
+     // *Palette  Carousel*
+  "responsive-layout.mobile#colorPalette-section": {
+    "children": [
+      "flex-layout.row#colorPalette-section-mobile"
+    ]
+  },
+  "flex-layout.row#colorPalette-section-mobile": {
+    "title": "seccion-colorPalette-mobile",
+    "props": {
+      "blockClass": "color-palette-section",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#colorPalette-section-mobile"
+    ]
+  },
+  "flex-layout.col#colorPalette-section-mobile": {
+    "title": "seccion-colorPalette-mobile",
+    "props": {
+      "blockClass": "color-palette-carousel",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#title-color-palette-mobile",
+      "rich-text#text-color-palette-mobile",
+      "list-context.info-card-list#Lista-colores",
+      "list-context.info-card-list#Lista-colores-2"
+      // "list-context.info-card-list#colorPalette-mobile"
+    ]
+  },
+  "rich-text#title-color-palette-mobile": {
+    "title": "title-colorPalette-mobile",
+    "props": {
+      "text": "Paleta de colores y texturas",
+      "blockClass": "title-color-palette",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#text-color-palette-mobile": {
+    "title": "parrafo-colorPalette-mobile",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+      "blockClass": "text-color-palette",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+
+  "list-context.info-card-list#Lista-colores": {
+    "children": [
+        "slider-layout#infocards-colores"
+    ],
+    "props": {
+        "infoCards": [
+            {
+                "id": "color-1",
+                "title": "infocard-color1",
+                "isFullModeStyle": false,
+                "textPosition": "right",
+                "imageUrl": "assets/ico/home/color1.svg",
+                "callToActionText": "Color X",
+                "callToActionUrl": "#",
+                "blockClass": "lista-infocard-colores"
+            },
+            {
+                "id": "color-1",
+                "title": "infocard-color1",
+                "isFullModeStyle": false,
+                "textPosition": "right",
+                "imageUrl": "assets/ico/home/color2.svg",
+                "callToActionText": "Color X",
+                "callToActionUrl": "#",
+                "blockClass": "lista-infocard-colores"
+            },
+            {
+                "id": "color-1",
+                "title": "infocard-color1",
+                "isFullModeStyle": false,
+                "textPosition": "right",
+                "imageUrl": "assets/ico/home/color3.svg",
+                "callToActionText": "Color X",
+                "callToActionUrl": "#",
+                "blockClass": "lista-infocard-colores"
+            },
+            {
+                "id": "color-1",
+                "title": "infocard-color1",
+                "isFullModeStyle": false,
+                "textPosition": "right",
+                "imageUrl": "assets/ico/home/color4.svg",
+                "callToActionText": "Color X",
+                "callToActionUrl": "#",
+                "blockClass": "lista-infocard-colores"
+            }
+        ]
+    }
+},
+"slider-layout#infocards-colores": {
+    "title": "infocard colores",
+    "props": {
+        "itemsPerPage": {
+            "desktop": 7,
+            "tablet": 5,
+            "phone": 4
+        },
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        // "centerMode": "to-the-left",
+        "blockClass": ["slider-infocards-colors", "slider-infocards-colors-1"],
+        "arrowSize": 10,
+        "navigationStep":1,
+        "autoplay": {
+          "timeout": 3000,
+          "stopOnHover": true
+        }
+        //   "blockClass": [ "btns"]
+    }
+},
+// slider 2 colores
+
+"list-context.info-card-list#Lista-colores-2": {
+  "children": [
+      "slider-layout#infocards-colores-2"
+  ],
+  "props": {
+      "infoCards": [
+          {
+              "id": "color-1",
+              "title": "infocard-color1",
+              "isFullModeStyle": false,
+              "textPosition": "right",
+              "imageUrl": "assets/ico/home/color5.svg",
+              "callToActionText": "Color X",
+              "callToActionUrl": "#",
+              "blockClass": "lista-infocard-colores"
+          },
+          {
+              "id": "color-1",
+              "title": "infocard-color1",
+              "isFullModeStyle": false,
+              "textPosition": "right",
+              "imageUrl": "assets/ico/home/color6.svg",
+              "callToActionText": "Color X",
+              "callToActionUrl": "#",
+              "blockClass": "lista-infocard-colores"
+          },
+          {
+              "id": "color-1",
+              "title": "infocard-color1",
+              "isFullModeStyle": false,
+              "textPosition": "right",
+              "imageUrl": "assets/ico/home/color7.svg",
+              "callToActionText": "Color X",
+              "callToActionUrl": "#",
+              "blockClass": "lista-infocard-colores"
+          },
+          {
+              "id": "color-1",
+              "title": "infocard-color1",
+              "isFullModeStyle": false,
+              "textPosition": "right",
+              "imageUrl": "assets/ico/home/color8.svg",
+              "callToActionText": "Color X",
+              "callToActionUrl": "#",
+              "blockClass": "lista-infocard-colores"
+          }
+      ]
+  }
+},
+"slider-layout#infocards-colores-2": {
+  "title": "infocard colores 2",
+  "props": {
+      "itemsPerPage": {
+          "desktop": 7,
+          "tablet": 4,
+          "phone": 4
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      // "centerMode": "to-the-left",
+      "blockClass": ["slider-infocards-colors","slider-infocards-colors-2"],
+      "arrowSize": 10,
+      "navigationStep":1,
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+      //   "blockClass": [ "btns"]
+  }
+}
+
+
+}

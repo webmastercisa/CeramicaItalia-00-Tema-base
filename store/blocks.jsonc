@@ -1,0 +1,76 @@
+
+{
+  "store.orderplaced": {
+    "children": [
+      "order-placed"
+      // "responsive-layout.desktop#orderPlaced",
+      // "responsive-layout.mobile#orderPlaced",
+      // "responsive-layout.desktop#textAndLine",
+      // "responsive-layout.mobile#textAndLine",
+      // "flex-layout.row#shelfOther"
+    ]
+  },
+  "store.account": {
+    "blocks": [
+      "my-account",
+      "responsive-layout.desktop#textAndLine",
+      "responsive-layout.mobile#textAndLine",
+      "flex-layout.row#shelfOther"
+    ],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": [
+      "login-content#default"
+    ]
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "store.product-review-form": {
+    "blocks": [
+      "product-review-form"
+    ]
+  },
+ // Vista producto no encontrado
+  "store.not-found#product": {
+    "blocks": [
+      "rich-text#not-found",
+      "responsive-layout.desktop#textAndLine",
+      "responsive-layout.mobile#textAndLine",
+      "flex-layout.row#shelfOther",
+      "responsive-layout.desktop#not-found",
+      "responsive-layout.mobile#not-found"
+    ]
+  },
+  // Página 404
+  "store.not-found#search": {
+    "blocks": [
+      "flex-layout.row#notfound"
+      // "responsive-layout.desktop#page404",
+      // "responsive-layout.mobile#page404"
+    ]
+  },
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**Lo sentimos, no encontramos resultados para tu búsqueda**",
+      "font": "t-heading-1",
+      "blockClass": "text-notFound"
+    }
+  }
+  // "search-not-found-layout": {
+  //   "children": [
+  //     "responsive-layout.desktop#page404",
+  //     "responsive-layout.mobile#page404"
+  //   ]
+  // }
+}

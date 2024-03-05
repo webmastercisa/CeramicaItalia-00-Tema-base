@@ -1,0 +1,424 @@
+{
+  //PQRS DETALLES
+
+  //TEXTO DESPUES DEL FORM
+  "rich-text#texto-detalles-formulario-pqrs": {
+    "props": {
+      "blockClass": ["texto-detalles-formulario-pqrs"],
+      "text": "Indique el tipo de defecto percibido según su categoría "
+    }
+  },
+
+  //PRUEBA CON TABS
+  "tab-layout#tab-detalles-formulario-pqrs": {
+    "children": [
+      "tab-list#tab-detalles-formulario-pqrs",
+      "tab-content#tab-detalles-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": "tab-detalles-formulario-pqrs",
+      "defaultActiveTabId": "tab-ceramica"
+    }
+  },
+
+  // Listado de pestañas
+  "tab-list#tab-detalles-formulario-pqrs": {
+    "children": ["tab-list.item#tab-ceramica", "tab-list.item#tab-baños","tab-list.item#tab-griferia"],
+    "props": {
+      "blockClass": "list-tab-detalles-formulario-pqrs"
+    }
+  },
+  "tab-list.item#tab-ceramica": {
+    "props": {
+      "tabId": "tab-ceramica",
+      "blockClass": "item-ceramica",
+      "label": "CERÁMICA",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tab-baños": {
+    "props": {
+      "tabId": "tab-baños",
+      "blockClass": "item-banos",
+      "label": "BAÑOS"
+    }
+  },
+  "tab-list.item#tab-griferia": {
+    "props": {
+      "tabId": "tab-griferia",
+      "blockClass": "item-griferia",
+      "label": "GRIFERÍA"
+    }
+  },
+
+  //Listado de los contenidos de las pestañas
+  "tab-content#tab-detalles-formulario-pqrs": {
+    "children": ["tab-content.item#tab-ceramica", "tab-content.item#tab-baños","tab-content.item#tab-griferia"],
+    "props": {
+      "blockClass": "content-tab-detalles-formulario-pqrs"
+    }
+  },
+
+  // Detalle de cada contenido de las pestañas
+  "tab-content.item#tab-ceramica": {
+    "children": [
+      "flex-layout.col#contenedor-opciones-detalle-ceramica"
+    ],
+    "props": {
+      "tabId": "tab-ceramica",
+      "blockClass": "content-ceramica"
+    }
+  },
+  "tab-content.item#tab-baños": {
+    "children": [
+      "flex-layout.col#contenedor-opciones-detalle-baños"
+    ],
+    "props": {
+      "tabId": "tab-baños",
+      "blockClass": "content-baños"
+    }
+  },
+  "tab-content.item#tab-griferia": {
+    "children": [
+      "flex-layout.col#contenedor-opciones-detalle-griferia"
+    ],
+    "props": {
+      "tabId": "tab-griferia",
+      "blockClass": "content-griferia"
+    }
+  },
+
+  // FLEX OPCIONES CERAMICA
+  "flex-layout.col#contenedor-opciones-detalle-ceramica": {
+    "children": [
+      "flex-layout.row#contenedor-opciones-detalle-ceramica-1",
+      "flex-layout.row#contenedor-opciones-detalle-ceramica-2",
+      "flex-layout.row#contenedor-opciones-detalle-ceramica-3"
+    ],
+    "props":{
+      "blockClass":"contenedor-opciones-detalle-ceramica"
+    }
+  },
+  "flex-layout.row#contenedor-opciones-detalle-ceramica-1": {
+    "children": [
+      "form-input.radiogroup#ceramics1-formulario-pqrs",
+      "form-input.radiogroup#ceramics2-formulario-pqrs",
+      "form-input.radiogroup#ceramics3-formulario-pqrs"
+    ],
+    "props":{
+      "blockClass":"contenedor-opciones-detalle-ceramica"
+    }
+  },
+
+  "form-input.radiogroup#ceramics1-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics1/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#ceramics2-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics2/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#ceramics3-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics3/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "flex-layout.row#contenedor-opciones-detalle-ceramica-2": {
+    "children": [
+      "form-input.radiogroup#ceramics4-formulario-pqrs",
+      "form-input.radiogroup#ceramics5-formulario-pqrs",
+      "form-input.radiogroup#ceramics6-formulario-pqrs"
+    ],
+    "props":{
+      "blockClass":"contenedor-opciones-detalle-ceramica"
+    }
+  },
+
+  "form-input.radiogroup#ceramics4-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics4/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#ceramics5-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics5/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#ceramics6-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics6/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "flex-layout.row#contenedor-opciones-detalle-ceramica-3": {
+    "children": [
+      "form-input.text#ceramics7-formulario-pqrs"
+    ]
+  },
+  "form-input.text#ceramics7-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics7",
+      "placeholder": "Otro: Describa el defecto percibido de la categoría cerámica"
+    }
+  },
+
+  // FLEX OPCIONES BAÑOS
+  "flex-layout.col#contenedor-opciones-detalle-baños": {
+    "children": [
+      "flex-layout.row#contenedor-opciones-detalle-baños-1",
+      "flex-layout.row#contenedor-opciones-detalle-baños-2"
+    ],
+    "props":{
+      "blockClass":"contenedor-opciones-detalle-ceramica"
+    }
+  },
+  "flex-layout.row#contenedor-opciones-detalle-baños-1": {
+    "children": [
+      "form-input.radiogroup#bathrooms1-formulario-pqrs",
+      "form-input.radiogroup#bathrooms2-formulario-pqrs",
+      "form-input.radiogroup#bathrooms3-formulario-pqrs",
+      "form-input.radiogroup#bathrooms4-formulario-pqrs"
+    ],
+    "props":{
+      "blockClass":"contenedor-opciones-detalle-ceramica"
+    }
+  },
+
+  "form-input.radiogroup#bathrooms1-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/bathrooms1/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#bathrooms2-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/bathrooms2/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#bathrooms3-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/bathrooms3/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#bathrooms4-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/bathrooms4/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+
+  "flex-layout.row#contenedor-opciones-detalle-baños-2": {
+    "children": [
+      "form-input.text#bathrooms5-formulario-pqrs"
+    ]
+  },
+
+  "form-input.text#bathrooms5-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics7",
+      "placeholder": "Otro: Describa el defecto percibido de la categoría baños"
+    }
+  },
+
+  // FLEX OPCIONES GRIFERIA
+  "flex-layout.col#contenedor-opciones-detalle-griferia": {
+    "children": [
+      "flex-layout.row#contenedor-opciones-detalle-griferia-1",
+      "flex-layout.row#contenedor-opciones-detalle-griferia-2"
+    ],
+    "props":{
+      "blockClass":"contenedor-opciones-detalle-ceramica"
+    }
+  },
+  "flex-layout.row#contenedor-opciones-detalle-griferia-1": {
+    "children": [
+      "form-input.radiogroup#taps1-formulario-pqrs",
+      "form-input.radiogroup#taps2-formulario-pqrs",
+      "form-input.radiogroup#taps3-formulario-pqrs"
+    ],
+    "props":{
+      "blockClass":"contenedor-opciones-detalle-ceramica"
+    }
+  },
+
+  "form-input.radiogroup#taps1-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/taps1/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#taps2-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/taps2/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+  "form-input.radiogroup#taps3-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/taps3/properties/Tipo",
+      "placeholder": "",
+      "label": "",
+      "blockClass": "opciones-ceramica"
+    }
+  },
+
+  "flex-layout.row#contenedor-opciones-detalle-griferia-2": {
+    "children": [
+      "form-input.text#taps4-formulario-pqrs"
+    ]
+  },
+
+  "form-input.text#taps4-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/ceramics7",
+      "placeholder": "Otro: Describa el defecto percibido de la categoría grifería"
+    }
+  },
+
+  //
+  "flex-layout.row#menu-detalles-formulario-pqrs": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-detalles-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["menu-detalles-formulario-pqrs"]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-detalles-formulario-pqrs": {
+    "props": {
+        "orientation": "horizontal",
+        "blockClass": "acordeon-menu-detalles-formulario-pqrs"
+    },
+    "children": [
+        "menu-item#menu-ceramica-formulario-pqrs",
+        "menu-item#menu-baños-formulario-pqrs",
+        "menu-item#menu-griferia-formulario-pqrs"
+    ]
+  },
+  "menu-item#menu-ceramica-formulario-pqrs": {
+      "props": {
+          "id": "menu-ceramica-formulario-pqrs",
+          "blockClass": ["menu-ceramica-formulario-pqrs"],
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "",
+              "text": "CERAMICA"
+          }
+      },
+      "blocks": [
+          "vtex.menu@2.x:submenu.accordion#ceramica-formulario-pqrs"
+      ]
+  },
+  "vtex.menu@2.x:submenu.accordion#ceramica-formulario-pqrs": {
+      "children": [
+        "flex-layout.row#detalles-ceramicas-1",
+        "flex-layout.row#detalles-ceramicas-1",
+        "flex-layout.row#detalles-ceramicas-1"
+      ]
+  },
+
+  // ESPACIO PARA EL CONTENIDO DE ACORDENOS CERAMICA
+
+  "flex-layout.row#detalles-ceramicas-1": {
+    "children": [
+      "form-input.radiogroup#ceramics1-formulario-pqrs"
+    ],
+    "props": {
+      "blockClass": ["detalles-ceramicas-1"]
+    }
+  },
+
+  "menu-item#menu-baños-formulario-pqrs": {
+      "props": {
+          "id": "menu-baños-formulario-pqrs",
+          "blockClass": ["menu-baños-formulario-pqrs"],
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "",
+              "text": "BAÑOS"
+          }
+      },
+      "blocks": [
+          "vtex.menu@2.x:submenu.accordion#baños-formulario-pqrs"
+      ]
+  },
+  "vtex.menu@2.x:submenu.accordion#baños-formulario-pqrs": {
+      "children": [
+        "flex-layout.row#detalles-ceramicas-1",
+        "flex-layout.row#detalles-ceramicas-1",
+        "flex-layout.row#detalles-ceramicas-1"
+      ]
+  },
+
+  // ESPACIO PARA EL CONTENIDO DE ACORDENOS BAÑOS
+
+
+  "menu-item#menu-griferia-formulario-pqrs": {
+    "props": {
+        "id": "menu-griferia-formulario-pqrs",
+        "blockClass": ["menu-griferia-formulario-pqrs"],
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "",
+            "text": "GRIFERÍA"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu.accordion#griferia-formulario-pqrs"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#griferia-formulario-pqrs": {
+    "children": [
+      "flex-layout.row#detalles-ceramicas-1",
+      "flex-layout.row#detalles-ceramicas-1",
+      "flex-layout.row#detalles-ceramicas-1"
+    ]
+  }
+
+    // ESPACIO PARA EL CONTENIDO DE ACORDENOS GRIFERIA
+}

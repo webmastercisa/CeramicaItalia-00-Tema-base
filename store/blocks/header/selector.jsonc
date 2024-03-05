@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#container-selector": {
+    "children": [
+      "flex-layout.row#ico-selector",
+      "flex-layout.row#selector"
+    ],
+    "props": {
+      "blockClass": [
+        "container-selector"
+      ],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#ico-selector": {
+    "children": [
+      "image#selector"
+    ],
+    "props": {
+      "blockClass": [
+        "ico-selector"
+      ]
+    }
+  },
+  "image#selector": {
+    "props": {
+      "src": "assets/ico/icon-storeLocator.svg",
+      "alt": "alt",
+      "height": "hight",
+      "blockClass": "selector"
+    }
+  },
+  "flex-layout.row#selector": {
+    "children": [
+      "form#selector"
+    ],
+    "props": {
+      "blockClass": "selector",
+      "fulwidth": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+  "form#selector": {
+    "props": {
+      "entity": "cd",
+      "schema": "selector",
+      "blockClass": "formulario-cd"
+    },
+    "children": [
+      "form-input.dropdown#select"
+    ],
+    "blocks": [
+      "form-success"
+    ]
+  },
+  "form-input.dropdown#select": {
+    "props": {
+      "pointer": "#/properties/select/properties/Tipo",
+      "placeholder": "No",
+      "blockClass": "select"
+    }
+  }
+}

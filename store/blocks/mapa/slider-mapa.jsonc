@@ -1,0 +1,68 @@
+{ //SLIDER DEPARTAMENTOS
+    "list-context.info-card-list#slider-infocard-mapa": {
+        "children": [
+            "slider-layout#slider-infocards-map"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "infocard-mapas",
+                    "title": "infocard-mapas",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "arquivos/banner-infocard-mapa.png",
+                    "headline": "NOMBRE SUCURSAL",
+                    "subhead": "<strong>negritas</strong>**Dirección:** Cra 74 # 163 - 33\n **Telefono fijo:** 601 555 25 21\n **Horarios:** L - D 8 am - 6 pm \n **Telefono fijo:** 601 555 25 21",
+                    "callToActionText": "contactanos",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-mapas"
+                    ]
+                },
+                {
+                    "id": "infocard-mapas",
+                    "title": "infocard-mapas",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "arquivos/banner-infocard-mapa.png",
+                    "headline": "NOMBRE SUCURSAL",
+                    "subhead": "**Dirección:** Cra 74 # 163 - 33\n **Telefono fijo:** 601 555 25 21\n **Horarios:** L - D 8 am - 6 pm \n **Telefono fijo:** 601 555 25 21",
+                    "callToActionText": "contactanos",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-mapas"
+                    ]
+                },
+                {
+                    "id": "infocard-mapas",
+                    "title": "infocard-mapas",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "arquivos/banner-infocard-mapa.png",
+                    "headline": "NOMBRE SUCURSAL",
+                    "subhead": "**Dirección:** Cra 74 # 163 - 33\n **Telefono fijo:** 601 555 25 21\n **Horarios:** L - D 8 am - 6 pm \n **Telefono fijo:** 601 555 25 21",
+                    "callToActionText": "contactanos",
+                    "textMode": "rich-text",
+                    "blockClass": [
+                        "infocard-mapas"
+                    ]
+                }
+            ]
+        }
+    },
+    "slider-layout#slider-infocards-map": {
+        "title": "Slider infocards con los departamentos de CI",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 2,
+                "tablet": 2,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "always",
+            "blockClass": "slider-infocards-map",
+            "arrowSize": 12
+        }
+    }
+}

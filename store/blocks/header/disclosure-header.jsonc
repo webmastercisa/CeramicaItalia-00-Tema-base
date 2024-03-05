@@ -1,0 +1,362 @@
+{
+  "disclosure-layout-group#header": {
+    "children": [
+      "disclosure-layout#header1",
+      "disclosure-layout#header2",
+      "disclosure-layout#header3"
+    ]
+  },
+  // section pisos
+  "disclosure-layout#header1": {
+    "children": [
+      "disclosure-trigger#header1",
+      "disclosure-content#header1"
+    ],
+    "props": {}
+  },
+  "disclosure-trigger#header1": {
+    "children": [
+      "flex-layout.col#menu-iconPisos"
+    ],
+    "props": {
+      "blockClass": [
+        "trigger-header1"
+      ]
+    }
+  },
+  "flex-layout.row#container-btn1-postularme": {
+    "children": [
+      "rich-text#btn1-postularme"
+    ],
+    "props": {
+      "blockClass": [
+        "container-btn1"
+      ]
+    }
+  },
+  "disclosure-content#header1": {
+    "title": "disclosure1-header",
+    "children": [
+      "flex-layout.row#container-header-pisos"
+    ],
+    "props": {
+      "blockClass": [
+        "content-header1"
+      ]
+    }
+  },
+  // slider pisos
+  "flex-layout.row#container-header-pisos": {
+    "children": [
+      "list-context.info-card-list#slider-header-pisos"
+    ],
+    "props": {
+      "blockClass": [
+        "container-header-pisos"
+      ]
+    }
+  },
+  "list-context.info-card-list#slider-header-pisos": {
+    "children": [
+      "slider-layout#slider-header-pisos"
+    ],
+    "props": {
+      "infoCards": [
+        {
+          "id": "infocard-pisos1",
+          "title": "infocard-pisos1",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/interiores",
+          // "headline": "Interiores",
+          "callToActionText": "Interiores",
+          "blockClass": [
+            "infocard-pisos"
+          ]
+        },
+        {
+          "id": "infocard-pisos1",
+          "title": "infocard-pisos1",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/Exteriores",
+          "callToActionText": "Exteriores",
+          // "headline": "Exteriores",
+          "blockClass": [
+            "infocard-pisos"
+          ]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-header-pisos": {
+    "title": "Slider header pisos",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 5,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "slider-header-pisos",
+      "arrowSize": 12
+    }
+  },
+  // section paredes
+  "disclosure-layout#header2": {
+    "children": [
+      "disclosure-trigger#header2",
+      "disclosure-content#header2"
+    ],
+    "props": {}
+  },
+  "disclosure-trigger#header2": {
+    "children": [
+      "flex-layout.col#menu-iconParedes"
+    ],
+    "props": {
+      "blockClass": [
+        "trigger-header2"
+      ]
+    }
+  },
+  "disclosure-content#header2": {
+    "title": "disclosure2-header",
+    "children": [
+      "flex-layout.row#container-header-paredes"
+    ],
+    "props": {
+      "blockClass": [
+        "content-header2"
+      ]
+    }
+  },
+  // slider paredes
+  "flex-layout.row#container-header-paredes": {
+    "children": [
+      "list-context.info-card-list#slider-header-paredes"
+    ],
+    "props": {
+      "blockClass": [
+        "container-header-paredes"
+      ]
+    }
+  },
+  "list-context.info-card-list#slider-header-paredes": {
+    "children": [
+      "slider-layout#slider-header-paredes"
+    ],
+    "props": {
+      "infoCards": [
+        {
+          "id": "infocard-paredes1",
+          "title": "infocard-paredes1",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/interiores",
+          // "headline": "Interiores",
+          "callToActionText": "Interiores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes2",
+          "title": "infocard-paredes2",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/Exteriores",
+          "callToActionText": "Exteriores",
+          // "headline": "Exteriores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes1",
+          "title": "infocard-paredes1",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/interiores",
+          // "headline": "Interiores",
+          "callToActionText": "Interiores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes2",
+          "title": "infocard-paredes2",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/Exteriores",
+          "callToActionText": "Exteriores",
+          // "headline": "Exteriores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes1",
+          "title": "infocard-paredes1",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/interiores",
+          // "headline": "Interiores",
+          "callToActionText": "Interiores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes2",
+          "title": "infocard-paredes2",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/Exteriores",
+          "callToActionText": "Exteriores",
+          // "headline": "Exteriores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes1",
+          "title": "infocard-paredes1",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/interiores",
+          // "headline": "Interiores",
+          "callToActionText": "Interiores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes2",
+          "title": "infocard-paredes2",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/Exteriores",
+          "callToActionText": "Exteriores",
+          // "headline": "Exteriores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes1",
+          "title": "infocard-paredes1",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/interiores",
+          // "headline": "Interiores",
+          "callToActionText": "Interiores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes2",
+          "title": "infocard-paredes2",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/Exteriores",
+          "callToActionText": "Exteriores",
+          // "headline": "Exteriores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes1",
+          "title": "infocard-paredes1",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/interiores",
+          // "headline": "Interiores",
+          "callToActionText": "Interiores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        },
+        {
+          "id": "infocard-paredes2",
+          "title": "infocard-paredes2",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://ceramicaitalia.vteximg.com.br/arquivos/banner200x200.png",
+          "imageActionUrl": "/Exteriores",
+          "callToActionText": "Exteriores",
+          // "headline": "Exteriores",
+          "blockClass": [
+            "infocard-paredes"
+          ]
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-header-paredes": {
+    "title": "Slider header paredes",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 5,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "slider-header-paredes",
+      "arrowSize": 12
+    }
+  },
+  // section colores
+  "disclosure-layout#header3": {
+    "children": [
+      "disclosure-trigger#header3",
+      "disclosure-content#header3"
+    ],
+    "props": {}
+  },
+  "disclosure-trigger#header3": {
+    "children": [
+      "flex-layout.col#menu-iconColores"
+    ],
+    "props": {
+      "blockClass": [
+        "trigger-header3"
+      ]
+    }
+  },
+  "disclosure-content#header3": {
+    "title": "disclosure3-header",
+    "children": [
+      // "flex-layout.col#colorPalette-section"
+      // "flex-layout.row#colorPalette-section"
+      "rich-text#title-color-palette",
+      "rich-text#text-color-palette",
+      "list-context.image-list#colorPalette"
+    ],
+    "props": {
+      "blockClass": [
+        "content-header3"
+      ]
+    }
+  }
+}

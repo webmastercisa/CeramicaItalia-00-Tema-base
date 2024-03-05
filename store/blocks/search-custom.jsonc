@@ -1,0 +1,25 @@
+{
+    //Search custom template
+    "store.custom#ResultadoBusqueda": {
+      "blocks": [
+          "search-result-layout.customQuery#ResultadoBusqueda"
+        ]
+    },
+    "search-result-layout.customQuery#ResultadoBusqueda": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": false,
+          "maxItemsPerPage": 20,
+          "queryField": "", //Valores de los campos a buscar (separados por //)
+          "mapField": "marcas", //Campos a buscar (separados por comas, tambien se puede buscar por coleccion productClusterIds)
+          "facetsBehavior": "dynamic"
+        }
+      },
+      "blocks": [
+        "search-result-layout.desktop",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+      ]
+    }
+}

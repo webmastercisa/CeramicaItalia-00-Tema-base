@@ -1,0 +1,101 @@
+{
+    "responsive-layout.mobile#seasonProduct": {
+        "children": [
+            "flex-layout.row#seasonProduct-mobile"
+        ]
+    },
+    "flex-layout.row#seasonProduct-mobile": {
+        "children": [
+            // "image#seasonProduct-mobile",
+            "flex-layout.col#text-seasonProduct-mobile"
+        ],
+        "title": "seccion-productoTemporada-mobile",
+        "props": {
+            "blockclass": ["section-seasonProduct", "section-seasonProduct-mobile"],
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": false
+        }
+    },
+    "flex-layout.col#text-seasonProduct-mobile": {
+        "children": [
+            "image#seasonProduct-mobile",
+            "rich-text#title-seasonProduct-mobile",
+            "rich-text#seasonProduct-mobile",
+            "list-context.product-list#shelf-general",
+            // "list-context.product-list#cocinas-mobile",
+            "rich-text#conoce-mas-mobile"
+        ],
+        "title": "textos-productoTemporada-mobile",
+        "props": {
+            "blockclass": "textColumnSesonProduct",
+            "preventVerticalStretch": true
+            // "width": "50%"
+        }
+    },
+    "rich-text#title-seasonProduct-mobile": {
+        "title": "titulo-productoTemporada-mobile",
+        "props": {
+            "text": "# Temporada de cocinas",
+            "blockClass": "titleSesonProducts"
+        }
+    },
+    "image#seasonProduct-mobile": {
+        "title": "imagen-productoTemporada-mobile",
+        "props": {
+            "src": "/arquivos/banner-cocina-mobile2.png",
+            "maxHeight": "",
+            "maxWidth": "",
+            "blockClass": "imageSesonProduct"
+        }
+    },
+    "rich-text#seasonProduct-mobile": {
+        "title": "parrafo-productoTemporada-mobile",
+        "props": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. ",
+            "blockClass": "textParagraphSesonProduct"
+        }
+    },
+    /* Bottom for season section */
+    "rich-text#conoce-mas-mobile": {
+        "title": "boton-productoTemporada-mobile",
+        "props": {
+            "text": "[Conoce más](https://www.ceramicaitalia.com/como-comprar)",
+            "blockClass": "conoce-mas",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#cocinas-mobile": {
+        "blocks": [
+          "product-summary.shelf"
+        ],
+        "children": [
+          "slider-layout#cocinas-mobile"
+        ],
+        "title": "contenedor-productoTemporada-mobile",
+        "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "blockClass": ["row-shelf-product", "contenedor-shelfTemporadaCocinas-mobile"]
+        }
+      },
+      "slider-layout#cocinas-mobile": {
+        "title": "slider-productoTemporada-mobile",
+        "props": {
+          "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "showPaginationDots": "mobileOnly",
+          "showNavigationArrows": "never",
+          "blockClass": ["shelf-destacados", "shelf-temporadaCocinas-mobile"],
+          "autoplay": {
+                  "timeout": 3000,
+                  "stopOnHover": true
+                }
+        }
+      }
+
+}

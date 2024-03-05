@@ -1,0 +1,169 @@
+{
+  "store.custom#terminos-legales": {
+    "blocks": [
+      "flex-layout.row#contenedor-seccion-terminos-legales"
+    ]
+  },
+
+    //CONTENEDOR SECCION TERMINOS LEGALES
+    "flex-layout.row#contenedor-seccion-terminos-legales": {
+      "children": ["flex-layout.col#contenedor-seccion-terminos-legales"],
+      "props":{
+        "blockClass":"contenedor-seccion-terminos-legales"
+      }
+    },
+    "flex-layout.col#contenedor-seccion-terminos-legales": {
+      "children": [
+        "flex-layout.row#miga-pan-terminos-legales",
+        "rich-text#titulo-seccion-terminos-legales",
+        "rich-text#texto-seccion-terminos-legales",
+        "tab-layout#tab-seccion-terminos-legales"
+      ],
+      "props":{
+        "blockClass":"contenedor-seccion-terminos-legales"
+      }
+    },
+
+    //MIGA DE PAN TERMINOS LEGALES
+    "flex-layout.row#miga-pan-terminos-legales": {
+      "children": [
+        "image#icono-miga-pan",
+        "rich-text#texto-1-miga-pan",
+        "rich-text#texto-2-miga-pan"
+      ],
+      "props": {
+        "blockClass": ["miga-pan-terminos-legales"]
+      }
+    },
+
+
+    // TEXTO 2 MIGA DE PAN
+    "rich-text#texto-2-miga-pan": {
+      "props": {
+        "blockClass": ["texto-2-miga-pan"],
+        // "text": "Términos legales",
+        "text": "[Términos legales](/terminos-legales)",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    // TITULO SECCION TERMINOS LEGALES
+    "rich-text#titulo-seccion-terminos-legales": {
+      "props": {
+        "blockClass": ["titulo-seccion-terminos-legales"],
+        "text": "Términos legales"
+      }
+    },
+
+    //TEXTO SECCION TERMINOS LEGALES
+    "rich-text#texto-seccion-terminos-legales": {
+      "props": {
+        "blockClass": ["texto-seccion-terminos-legales"],
+        "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. ."
+      }
+    },
+
+    //SECCION TAB TERMINOS LEGALES
+  "tab-layout#tab-seccion-terminos-legales": {
+    "children": [
+      "tab-list#tab-seccion-terminos-legales",
+      "tab-content#tab-seccion-terminos-legales"
+    ],
+    "props": {
+      "blockClass": "tab-seccion-terminos-legales",
+      "defaultActiveTabId": "tab-terminos-condiciones"
+    }
+  },
+
+  // Listado de pestañas
+  "tab-list#tab-seccion-terminos-legales": {
+    "children": ["tab-list.item#tab-terminos-condiciones", "tab-list.item#tab-politica-entregas", "tab-list.item#tab-politica-precios", "tab-list.item#tab-politica-tratamiento-datos"],
+    "props": {
+      "blockClass": "list-tab-terminos-legales"
+    }
+  },
+  "tab-list.item#tab-terminos-condiciones": {
+    "props": {
+      "tabId": "tab-terminos-condiciones",
+      "blockClass": "item-terminos-condiciones",
+      "label": "Términos y condiciones del sitio",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tab-politica-entregas": {
+    "props": {
+      "tabId": "tab-politica-entregas",
+      "blockClass": "item-politica-entregas",
+      "label": "Política de entregas"
+    }
+  },
+  "tab-list.item#tab-politica-precios": {
+    "props": {
+      "tabId": "tab-politica-precios",
+      "blockClass": "item-politica-precios",
+      "label": "Política de precios"
+    }
+  },
+  "tab-list.item#tab-politica-tratamiento-datos": {
+    "props": {
+      "tabId": "tab-politica-tratamiento-datos",
+      "blockClass": "item-politica-tratamiento-datos",
+      "label": "Política de tratamiento de datos (Privacidad)"
+    }
+  },
+
+  //Listado de los contenidos de las pestañas
+  "tab-content#tab-seccion-terminos-legales": {
+    "children": ["tab-content.item#tab-terminos-condiciones", "tab-content.item#tab-politica-entregas", "tab-content.item#tab-politica-precios","tab-content.item#tab-politica-tratamiento-datos"],
+    "props": {
+      "blockClass": "content-tab-terminos-legales"
+    }
+  },
+
+  // Detalle de cada contenido de las pestañas
+  "tab-content.item#tab-terminos-condiciones": {
+    "children": [
+      "flex-layout.col#contenido-terminos-condiciones"
+    ],
+    "props": {
+      "tabId": "tab-terminos-condiciones",
+      "blockClass": "content-terminos-condiciones"
+    }
+  },
+  "tab-content.item#tab-politica-entregas": {
+    "children": [
+      "flex-layout.col#contenido-politica-entregas"
+    ],
+    "props": {
+      "tabId": "tab-politica-entregas",
+      "blockClass": "content-politica-entregas"
+    }
+  },
+  "tab-content.item#tab-politica-precios": {
+    "children": [
+      "flex-layout.col#contenido-politica-precios"
+    ],
+    "props": {
+      "tabId": "tab-politica-precios",
+      "blockClass": "content-politica-precios"
+    }
+  },
+  "tab-content.item#tab-politica-tratamiento-datos": {
+    "children": [
+      "flex-layout.col#contenido-politica-tratamiento-datos"
+    ],
+    "props": {
+      "tabId": "tab-politica-tratamiento-datos",
+      "blockClass": "content-politica-tratamiento-datos"
+    }
+  },
+
+  //BOTON DESCARGAR TERMINOS LEGALES
+  "rich-text#link-descargar-terminos-legales": {
+    "props": {
+      "blockClass": ["link-descargar-terminos-legales"],
+      "text": "Descargar"
+    }
+  }
+}

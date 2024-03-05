@@ -1,0 +1,107 @@
+.formSubmitContainer--inputNewsLetter :global(.vtex-button) {
+    width: 186px;
+    height: 50px;
+    background: #ED1B24;
+    border: none;
+    border-radius: 25px;
+    transform: translate(15px, 0px);
+}
+
+.emailInputContainer--inputNewsLetter-input {
+    display: flex;
+    align-items: center;
+}
+
+.newsletterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.confirmationCheckboxContainer--inputNewsLetter {
+    margin: 34px 0 62px 0;
+}
+
+.confirmationCheckboxContainer :global(.vtex-checkbox__label) {
+    padding: 4px 2px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+.confirmationCheckboxContainer :global(.vtex-checkbox__inner-container),
+.confirmationCheckboxContainer :global(.vtex-checkbox__container),
+.confirmationCheckboxContainer :global(.vtex-checkbox__input),
+.confirmationCheckboxContainer :global(.vtex-checkbox__box-wrapper) {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+}
+
+.confirmationCheckboxContainer :global(.vtex-checkbox__box-wrapper) {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ED1B24;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.confirmationCheckboxContainer :global(.vtex__icon-check) {
+    width: 14px;
+    height: 10px;
+    color: #ED1B24;
+    background: #FFF;
+    border: 1px solid #ED1B24;
+}
+
+.confirmationCheckboxContainer--inputNewsLetter {
+    margin: 0;
+}
+
+.defaultSuccessMessage {
+    display: flex;
+    justify-content: center;
+    font-family: 'Neutra Display';
+    padding: 10px 0;
+}
+
+
+@media (max-width:1024px) {
+
+    .formSubmitContainer--inputNewsLetter :global(.vtex-button) {
+        width: 126px;
+        height: 48px;
+        margin: 7px;
+        transform: translate(4%, 0px);
+    }
+
+    .formSubmitContainer--inputNewsLetter :global(.vtex-button__label) {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .newsletterForm {
+        margin-bottom: 3vh;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    .formSubmitContainer--inputNewsLetter :global(.vtex-button){
+        transform: translate(110%,0px);
+      }
+  }
+
+@media (max-width:390px) {
+    .formSubmitContainer--inputNewsLetter :global(.vtex-button) {
+        transform: translate(-6%, 0px);
+    }
+}
+
+@media (max-width: 370px) {
+    .formSubmitContainer--inputNewsLetter .vtex-button {
+        transform: translate(-8%, 0px);
+    }
+}
