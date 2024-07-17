@@ -1,0 +1,28 @@
+.link--global__opinion--project{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+.label--global__opinion--project{
+    border: solid 1px #FF0000;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #FF0000;
+}
+.link--lobal__btn--step--card{
+    text-decoration: none;
+    color: white;
+    background-color: #e50514;
+    /* width: 75% !important; */
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+@media(min-width:64rem){
+    .link--lobal__btn--step--card{
+    font-size: 2rem;
+    }
+}

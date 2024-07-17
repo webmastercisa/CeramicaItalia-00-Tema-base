@@ -1,0 +1,237 @@
+{
+  "store.custom#landing-giorgio": {
+    "blocks": [
+    //Desktop
+      "responsive-layout.desktop#giorgio",
+      //Mobile
+      "responsive-layout.mobile#giorgio"
+    
+    ]
+  },
+  "responsive-layout.desktop#giorgio": {
+    "title":"Landing Giorgio desktop",
+    "children": [
+      "flex-layout.row#global__main--banner--georgio",
+      "flex-layout.row#global__description--landing--georgio",
+      "flex-layout.row#desktop__three--steps",
+      "flex-layout.row#global__last--banner--georgio",
+      "flex-layout.row#global__slider--opinion"
+
+    ]
+  },
+  "responsive-layout.mobile#giorgio": {
+    "title":"Landing Giorgio Mobile",
+    "children": [
+        "flex-layout.row#mobile__main--banner--georgio",
+        "flex-layout.row#global__second--banner--georgio",
+        "slider-layout#mobile__slider--steps",
+        // "flex-layout.row#mobile__slider--steps",
+        "flex-layout.row#mobile__last--banner--georgio",
+        // "slider-layout#global__home--benefits--slider",
+        "flex-layout.row#global__slider--opinion"
+    ]
+  },
+  //main banner mobile
+  "flex-layout.row#mobile__main--banner--georgio": {
+    "title": "Banner principal Landing georgio",
+    "children": ["flex-layout.col#mobile__main--banner--georgio"],
+    "props": {
+      "blockClass": "mobile__main--banner--georgio"
+    }
+  },
+  "flex-layout.col#mobile__main--banner--georgio": {
+    "title": "Banner principal Landing georgio",
+    "children": ["image#mobile__main--banner--georgio"],
+    "props": {
+      "blockClass": "mobile__main-banner-georgio"
+    }
+  },
+  "image#mobile__main--banner--georgio": {
+    "title": "Imagen Banner principal",
+    "props": {
+      "blockClass": "",
+      "src": "/arquivos/main-banner-giorgio-mobile.jpg",
+      "link": {
+        "openNewTab": true,
+        "url": "/perfilamiento"
+      }
+    }
+  },
+  //Main Banner desktop
+  "flex-layout.row#global__main--banner--georgio": {
+    "title": "Banner principal Landing georgio",
+    "children": ["flex-layout.col#global__main--banner--georgio"],
+    "props": {
+      "blockClass": "global__main--banner--georgio"
+    }
+  },
+  "flex-layout.col#global__main--banner--georgio": {
+    "title": "Banner principal Landing georgio",
+    "children": ["image#global__main--banner--georgio"],
+    "props": {
+      "blockClass": "global__main-banner-georgio"
+    }
+  },
+  "image#global__main--banner--georgio": {
+    "title": "Imagen Banner principal",
+    "props": {
+      "blockClass": "",
+      "src": "/arquivos/main-banner-giorgio.jpg",
+      "link": {
+        "openNewTab": true,
+        "url": "/perfilamiento"
+      }
+    }
+  },
+  //SECOND BANNER
+  "flex-layout.row#global__second--banner--georgio": {
+    "title": "Banner secundario Landing georgio",
+    "children": ["flex-layout.col#global__second--banner--georgio"],
+    "props": {
+      "blockClass": "global__second--banner--georgio"
+    }
+  },
+  "flex-layout.col#global__second--banner--georgio": {
+    "title": "Banner Secundario Landing georgio",
+    "children": ["image#global__second--banner--georgio"],
+    "props": {
+      "blockClass": "global__second-banner-georgio"
+    }
+  },
+  "image#global__second--banner--georgio": {
+    "title": "Imagen Banner secundario",
+    "props": {
+      "blockClass": "",
+      "src": "/arquivos/second-section--giorgio-v3.png",
+      "link": {
+        "openNewTab": true,
+        "url": "/perfilamiento"
+      }
+    }
+  },
+  //SEGUNDA SECCIÓN DESCRIPCIÓN
+  "flex-layout.row#global__description--landing--georgio": {
+    "title": "Banner principal Landing georgio",
+    "children": [
+      "flex-layout.col#global__left--description--landing--georgio"
+    //   "flex-layout.col#global__right--description--landing--georgio"
+    ],
+    "props": {
+      "blockClass": "global__description--landing--georgio"
+    }
+  },
+  "flex-layout.col#global__left--description--landing--georgio": {
+    "title": "Contenedor Banner descripción landing",
+    "children": [
+    //   "rich-text#global__first--text--description--georgio",
+      "image#global__description--landing--georgio"
+    ],
+    "props": {
+      "blockClass": "global__description--landing--georgio"
+    }
+  },
+  "rich-text#global__first--text--description--georgio": {
+    "title": "Primer texto descripción landing georgio",
+    "props": {
+      "blockClass": "global__first--text--description--georgio",
+      "text": "Giorgio te enseña todo lo que necesitas para ser un experto"
+    }
+  },
+  "image#global__description--landing--georgio": {
+    "title": "Imagen descripcion landing giogio",
+    "props": {
+      "blockClass": "",
+      "src": "/arquivos/Banner2.png",
+      "link": {
+        "openNewTab": true,
+        "url": "/"
+      }
+    }
+  },
+  "flex-layout.col#global__right--description--landing--georgio": {
+    "title": "Sección derecha descripción landing",
+    "children": [
+      "rich-text#global__second--text--description--georgio",
+      "rich-text#global__third--text--description--georgio",
+      "rich-text#global__fourth--text--description--georgio"
+    ],
+    "props": {
+      "blockClass": "global__description--landing--georgio"
+    }
+  },
+  "rich-text#global__second--text--description--georgio": {
+    "title": "Primer texto descripción landing georgio",
+    "props": {
+      "blockClass": "global__second--text--description--georgio",
+      "text": "Nuestro asesor virtual te acompañará en el proceso de escoger el **producto ideal** para tu nuevo proyecto."
+    }
+  },
+  "rich-text#global__third--text--description--georgio": {
+    "title": "Primer texto descripción landing georgio",
+    "props": {
+      "blockClass": "global__third--text--description--georgio",
+      "text": "Giorgio está diseñado para acompañarte desde la sección hasta el calculo de metros... ¿No estás seguro? ¡No importa! **Giorgio estará ahi para darte la información que necesitas.**"
+    }
+  },
+  "rich-text#global__fourth--text--description--georgio": {
+    "title": "Primer texto descripción landing georgio",
+    "props": {
+      "blockClass": "global__fourth--text--description--georgio",
+      "text": "En tres sencillos pasos podrás remodelar tu hogar."
+    }
+  },
+ 
+  //cuarto banner mobile
+    //CUARTA SECCIÓN BANNER FINAL
+    "flex-layout.row#mobile__last--banner--georgio": {
+        "title": "Banner final Landing georgio",
+        "children": ["flex-layout.col#mobile__last--banner--georgio"],
+        "props": {
+          "blockClass": "mobile__main--banner--georgio"
+        }
+      },
+      "flex-layout.col#mobile__last--banner--georgio": {
+        "title": "Banner final Landing georgio",
+        "children": ["image#mobile__last--banner--georgio"],
+        "props": {
+          "blockClass": "mobile__main-banner-georgio"
+        }
+      },
+      "image#mobile__last--banner--georgio": {
+        "title": "Imagen Banner final",
+        "props": {
+          "blockClass": "",
+          "src": "/arquivos/last-banner-mobile.jpg",
+          "link": {
+            "openNewTab": true,
+            "url": "/perfilamiento"
+          }
+        }
+      },
+  //CUARTA SECCIÓN BANNER FINAL
+  "flex-layout.row#global__last--banner--georgio": {
+    "title": "Banner final Landing georgio",
+    "children": ["flex-layout.col#global__last--banner--georgio"],
+    "props": {
+      "blockClass": "global__main--banner--georgio"
+    }
+  },
+  "flex-layout.col#global__last--banner--georgio": {
+    "title": "Banner final Landing georgio",
+    "children": ["image#global__last--banner--georgio"],
+    "props": {
+      "blockClass": "global__main-banner-georgio"
+    }
+  },
+  "image#global__last--banner--georgio": {
+    "title": "Imagen Banner final",
+    "props": {
+      "blockClass": "",
+      "src": "/arquivos/last-banner-giorgio.png",
+      "link": {
+        "openNewTab": true,
+        "url": "/perfilamiento"
+      }
+    }
+  }
+}
