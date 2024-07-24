@@ -73,15 +73,12 @@
   }
 @media (min-width: 64rem) {
   .paragraph--global__title--step--card {
-    color: #868383;
-    font-size: 52px;
+    font-size: 35px;
+    letter-spacing: -1.4px;
     line-height: 1;
-    font-weight: 700;
     width: unset;
-    position: relative;
     left: unset;
     margin: 10px 0;
-    text-align: center;
   }
   .wrapper--global__title--step--card{
     display: flex;
@@ -91,17 +88,21 @@
     margin-top: 1rem;
   }
   .paragraph--global__title--step--card--2{
-    width: 77%;
+    width: 100%;
   }
   .paragraph--global__text--step--card {
-    font-size: 23px;
+    font-size: 21px;
     align-items: center;
-    height: 120px;
+    height: 140px;
     text-align: center;
     color: #3f3f40;
+    line-height: 1;
+    letter-spacing: -0.84px;
   }
   .paragraph--global__text--step--card--1 {
-    font-size: 25px;
+    font-size: 21px;
+    line-height: 1;
+    letter-spacing: -0.84px;
   }
 
   .paragraph--global__title--slider--opinion {
@@ -159,4 +160,12 @@
     font-size: 2rem;
     font-weight: bold;
   }
+  .container--global__text--step--card{
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper--global__text--step--card--1{
+    width: 81% !important;
+  }
+
 }

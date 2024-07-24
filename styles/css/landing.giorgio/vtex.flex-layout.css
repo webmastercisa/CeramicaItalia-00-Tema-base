@@ -59,7 +59,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 42px;
   }
   .flexRowContent--global__three--steps--card .stretchChildrenWidth {
     width: 100% !important;
@@ -67,7 +67,7 @@
   .flexRow--global__three--steps--landing--georgio {
     padding-top: 12rem;
     background: url(/arquivos/banner-remodela-1280x465.jpg); 
-    background-color: #dedede;
+    /* background-color: #dedede; */
     background-repeat: no-repeat;
     padding-bottom: 2rem;
     position: relative;
@@ -84,4 +84,12 @@
     width: 560px;
     text-align: right;
   }
+  /* .flexRow--global__main--banner--georgio :global(.vtex-store-components-3-x-container),
+  .flexRow--global__description--landing--georgio :global(.vtex-store-components-3-x-container){
+    width: 100vw;
+    max-width: 1700px;
+  } */
+   .flexRowContent--global__three--steps--landing--georgio{
+    padding: 0 50px;
+   }
 }

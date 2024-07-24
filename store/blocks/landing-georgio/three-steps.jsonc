@@ -168,7 +168,7 @@
     "title": "Texto paso",
     "props": {
       "blockClass": ["global__text--step--card", "global__text--step--card--2"],
-      "text": "Con instatile podrás ver el producto recomendado por Giorgio en tu espacio, tomas una foto, la suber, ¡Y listo! Prueba tipos de instalación, y mucho más."
+      "text": "**Con Instatile podrás ver el producto recomendado por Giorgio en tu espacio**, tomas una foto, la subes, ¡Y listo! Prueba tipos de instalación, y mucho más."
     }
   },
   "flex-layout.row#global__three--steps--card-3": {
@@ -204,7 +204,7 @@
     "title": "Texto paso",
     "props": {
       "blockClass": ["global__text--step--card", "global__text--step--card--3"],
-      "text": "Finalmente Giorgio te dará las cantidades exactas de tu producto ideal, y te acompañará a finalizar la compra."
+      "text": "Finalmente **calculáremos las cantidades exactas que necesitas para tu proyecto** y podrás finalizar tu compra"
     }
   }
 }
