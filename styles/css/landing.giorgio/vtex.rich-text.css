@@ -1,0 +1,171 @@
+.paragraph--global__title--step--card {
+  color: #717171;
+  font-size: 27.3px;
+  line-height: 1;
+  font-weight: 700;
+  width: 230px;
+  position: relative;
+  left: -12px;
+  margin: 10px 0 0 5px;
+  font-family: "NeutraTextAltBol";
+  text-align: center;
+}
+.container--global__title--step--card{
+    display: flex;
+    justify-content: center;
+}
+/* .paragraph--global__title--step--card--3 {
+  left: -55px;
+} */
+.container--desktop__title--three--steps{
+    background-color: #dad8d8;
+    display: flex;
+    justify-content: center;
+    background-color: #dad8d8;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0 20px 0;
+    position: relative;
+    bottom: -3px;
+    width: 100vw;
+    margin: 0 auto;
+}
+.paragraph--desktop__title--three--steps {
+    color: white;
+    text-shadow: -1px -1px 0 #868383, 1px -1px 0 #868383, -1px 1px 0 #868383,
+      1px 1px 0 #868383;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .strong--desktop__title--three--steps {
+    color: #3b3838;
+  }
+  .paragraph--global__title--slider--opinion {
+    color: #000000;
+    font-size: 33px;
+    line-height: 1;
+    font-weight: 700;
+    width: 181px;
+    margin-left: 1rem;
+    font-family: "NeutraTextAltBold";
+    margin-bottom: 0;
+  }
+  .paragraph--card--benefits--description{
+    text-align: left;
+    color: #000000;
+    letter-spacing: -1.23px;
+  }
+  .paragraph--card--benefits--title{
+    text-align: left;
+    letter-spacing: -1.3px;
+    color: #000000;
+    font-family: "NeutraText";
+  }
+  .paragraph--global__text--step--card{
+    color: #717171;
+    text-align: center;
+    letter-spacing: -1.8px;
+    font-size: 21px;
+  }
+@media (min-width: 64rem) {
+  .paragraph--global__title--step--card {
+    font-size: 35px;
+    letter-spacing: -1.4px;
+    line-height: 1;
+    width: unset;
+    left: unset;
+    margin: 10px 0;
+  }
+  .wrapper--global__title--step--card{
+    display: flex;
+    justify-content: center;
+    height: 105px;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .paragraph--global__title--step--card--2{
+    width: 100%;
+  }
+  .paragraph--global__text--step--card {
+    font-size: 21px;
+    align-items: center;
+    height: 140px;
+    text-align: center;
+    color: #3f3f40;
+    line-height: 1;
+    letter-spacing: -0.84px;
+  }
+  .paragraph--global__text--step--card--1 {
+    font-size: 21px;
+    line-height: 1;
+    letter-spacing: -0.84px;
+  }
+
+  .paragraph--global__title--slider--opinion {
+    color: #000000;
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 700;
+    width: 346px;
+  }
+
+  /*titulo 3 pasos*/
+  .container--desktop__title--three--steps {
+    background-color: #dad8d8;
+    height: 300px;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 1rem;
+    line-height: 1;
+    position: relative;
+    bottom: unset;
+    width: 100%;
+    justify-content: start;
+  }
+
+  .paragraph--desktop__title--three--steps--2 {
+    color: #3b3838;
+    text-shadow: -1px -1px 0 #868383, 1px -1px 0 #868383, -1px 1px 0 #868383,
+      1px 1px 0 #868383;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .strong--desktop__title--three--steps {
+    color: #3b3838;
+  }
+  .container--desktop__title--three--steps::after {
+    content: "Giorgio te asesora";
+    text-shadow: none;
+    font-size: 1.5rem;
+    color: black;
+    position: absolute;
+    display: block;
+    right: 2rem;
+    top: 7rem;
+    border-bottom: 1px solid black;
+    width: 560px;
+    text-align: right;
+  }
+  .strong--desktop__title--three--steps::after {
+    display: none;
+  }
+  .wrapper--card--benefits--title{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .container--global__text--step--card{
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper--global__text--step--card--1{
+    width: 81% !important;
+  }
+
+}

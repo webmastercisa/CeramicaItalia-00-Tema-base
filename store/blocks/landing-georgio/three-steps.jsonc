@@ -1,0 +1,210 @@
+{
+    "flex-layout.row#desktop__three--steps": {
+        "title": "Contenedor sección 3 pasos",
+        "children": ["flex-layout.col#desktop__three--steps"],
+        "props": {
+          "blockClass": "desktop__three--steps"
+        }
+      },
+      "flex-layout.col#desktop__three--steps": {
+        "title": "Contenedor sección 3 pasos",
+        "children": [
+            // "rich-text#desktop__title--three--steps",
+            "flex-layout.row#global__three--steps--landing--georgio"
+        ],
+        "props": {
+          "blockClass": "desktop__three--steps"
+        }
+      },
+    
+      //titulo slider
+      "rich-text#desktop__title--three--steps": {
+        "title": "Titulo slider opiniones giorgio",
+        "props": {
+          "text": "Remodela en 3 pasos \n\n **Remodela en 3 pasos**",
+          "blockClass": "desktop__title--three--steps"
+        }
+      },
+
+     //TERCERA SECCIÓN 3 PASOS
+  "flex-layout.row#global__three--steps--landing--georgio": {
+    "title": "Sección 3 pasos landing giorgio",
+    "children": [
+      "flex-layout.col#global__first--step--landing--georgio",
+      "flex-layout.col#global__second--step--landing--georgio",
+      "flex-layout.col#global__third--step--landing--georgio"
+    ],
+    "props": {
+      "blockClass": "global__three--steps--landing--georgio"
+    }
+  },
+  "flex-layout.col#global__first--step--landing--georgio": {
+    "title": "Primer paso landing giorgio",
+    "children": [
+      "flex-layout.row#global__three--steps--card-1"
+      
+    ],
+    "props": {
+      "blockClass": "global__first--step--landing--georgio"
+    }
+  },
+  "flex-layout.col#global__second--step--landing--georgio": {
+    "title": "Segundo paso landing giorgio",
+    "children": [ "flex-layout.row#global__three--steps--card-2"],
+    "props": {
+      "blockClass": "global__second--step--landing--georgio"
+    }
+  },
+  "flex-layout.col#global__third--step--landing--georgio": {
+    "title": "Tercer paso landing giorgio",
+    "children": ["flex-layout.row#global__three--steps--card-3"],
+    "props": {
+      "blockClass": "global__third--step--landing--georgio"
+    }
+  },
+  //CARDS PASOS TERCERA SECCIÓN
+  "flex-layout.row#global__three--steps--card-1": {
+    "title": "Primer paso",
+    "children": [
+      "image#global__first--step--card",
+      "rich-text#global__title--step--card--1",
+      "rich-text#global__text--step--card--1",
+      "link#global__btn--step--card--1"
+    ],
+    "props": {
+      "blockClass": "global__three--steps--card"
+    }
+  },
+  "image#global__first--step--card": {
+    "title": "Imagen primera card",
+    "props": {
+      "blockClass": "global__image--step--card",
+      "src": "/arquivos/image-card-1.jpg"
+    }
+  },
+  "link#global__btn--step--card--1": {
+    "title": "Link botton", 
+    "props": {
+        "blockClass":"lobal__btn--step--card",
+        "href": "/perfilamiento", 
+        "label": "¡Empezar asesoría!"
+    }
+  },
+  "link#global__btn--step--card--2": {
+    "title": "Link botton", 
+    "props": {
+        "blockClass":"lobal__btn--step--card",
+        "href": "/contenido/instatile", 
+        "label": "¡Empezar asesoría!"
+    }
+  },
+  "link#global__btn--step--card--3": {
+    "title": "Link botton", 
+    "props": {
+        "blockClass":"lobal__btn--step--card",
+        "href": "/perfilamiento", 
+        "label": "¡Empezar asesoría!"
+    }
+  },
+  "image#global__btn--step--card--1": {
+    "title": "Imagen primera card",
+    "props": {
+      "blockClass": "global__image--btn--step--card",
+      "src": "/arquivos/btn-card.png",
+      "link": {
+        "openNewTab": true,
+        "url": "/"
+      }
+    }
+  },
+  "rich-text#global__title--step--card--1": {
+    "title": "Titulo paso",
+    "props": {
+      "blockClass": [
+        "global__title--step--card",
+        "global__title--step--card--1"
+      ],
+      "text": "1.El producto ideal"
+    }
+  },
+  "rich-text#global__text--step--card--1": {
+    "title": "Texto paso",
+    "props": {
+      "blockClass": ["global__text--step--card", "global__text--step--card--1"],
+      "text": "**Giorgio encontrará el producto adecuado para tu proyecto** con solo unas preguntas"
+    }
+  },
+
+  "flex-layout.row#global__three--steps--card-2": {
+    "title": "Primer paso",
+    "children": [
+      "image#global__second--step--card",
+      "rich-text#global__title--step--card--2",
+      "rich-text#global__text--step--card--2",
+      "link#global__btn--step--card--2"
+    ],
+    "props": {
+      "blockClass": "global__three--steps--card"
+    }
+  },
+  "image#global__second--step--card": {
+    "title": "Imagen segunda card",
+    "props": {
+      "blockClass": "global__image--step--card",
+      "src": "/arquivos/image-card-2.jpg"
+    }
+  },
+  "rich-text#global__title--step--card--2": {
+    "title": "Titulo paso",
+    "props": {
+      "blockClass": [
+        "global__title--step--card",
+        "global__title--step--card--2"
+      ],
+      "text": "2.Momento de soñar"
+    }
+  },
+  "rich-text#global__text--step--card--2": {
+    "title": "Texto paso",
+    "props": {
+      "blockClass": ["global__text--step--card", "global__text--step--card--2"],
+      "text": "**Con Instatile podrás ver el producto recomendado por Giorgio en tu espacio**, tomas una foto, la subes, ¡Y listo! Prueba tipos de instalación, y mucho más."
+    }
+  },
+  "flex-layout.row#global__three--steps--card-3": {
+    "title": "Tercer paso",
+    "children": [
+      "image#global__third--step--card",
+      "rich-text#global__title--step--card--3",
+      "rich-text#global__text--step--card--3",
+      "link#global__btn--step--card--3"
+    ],
+    "props": {
+      "blockClass": "global__three--steps--card"
+    }
+  },
+  "image#global__third--step--card": {
+    "title": "Imagen tercera card",
+    "props": {
+      "blockClass": "global__image--step--card",
+      "src": "/arquivos/image-card-3.jpg"
+    }
+  },
+  "rich-text#global__title--step--card--3": {
+    "title": "Titulo paso",
+    "props": {
+      "blockClass": [
+        "global__title--step--card",
+        "global__title--step--card--3"
+      ],
+      "text": "3.Preparando tu proyecto"
+    }
+  },
+  "rich-text#global__text--step--card--3": {
+    "title": "Texto paso",
+    "props": {
+      "blockClass": ["global__text--step--card", "global__text--step--card--3"],
+      "text": "Finalmente **calculáremos las cantidades exactas que necesitas para tu proyecto** y podrás finalizar tu compra"
+    }
+  }
+}

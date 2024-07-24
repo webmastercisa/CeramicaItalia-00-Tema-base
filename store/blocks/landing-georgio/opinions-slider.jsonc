@@ -1,0 +1,414 @@
+{
+  "flex-layout.row#global__slider--opinion": {
+    "title": "Contenedor slider opiniones",
+    "children": ["flex-layout.col#global__slider--opinion"],
+    "props": {
+      "blockClass": "global__slider--opinion"
+    }
+  },
+  "flex-layout.col#global__slider--opinion": {
+    "title": "Contenedor slider opiniones",
+    "children": [
+      "rich-text#global__title--slider--opinion",
+      "slider-layout#global__home--benefits--slider"
+    ],
+    "props": {
+      "blockClass": "global__slider--opinion"
+    }
+  },
+
+  //titulo slider
+  "rich-text#global__title--slider--opinion": {
+    "title": "Titulo slider opiniones giorgio",
+    "props": {
+      "text": "Lo que dicen de Giorgio:",
+      "blockClass": "global__title--slider--opinion"
+    }
+  },
+  "slider-layout#global__home--benefits--slider": {
+    "title": "Slider benefits",
+    "props": {
+      "blockClass": "global__home--benefits--slider",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "navigationStep": "page",
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "autoplay": {
+          "stopOnHover": true,
+          "timeout": 5000
+      }
+    },
+    "children": [
+      "flex-layout.row#global__home--card--benefits--1",
+      "flex-layout.row#global__home--card--benefits--2",
+      "flex-layout.row#global__home--card--benefits--3",
+      "flex-layout.row#global__home--card--benefits--4",
+      "flex-layout.row#global__home--card--benefits--5"
+    ]
+  },
+  //Card benefits
+  "flex-layout.row#global__home--card--benefits--1": {
+    "title": "Container card opinions",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": ["flex-layout.col#global__home--card--benefits"]
+  },
+  "flex-layout.col#global__home--card--benefits": {
+    "title": "",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": [
+      "flex-layout.row#global__image--name--card--1",
+      "rich-text#card--benefits--description--1",
+      "toggle-layout#global__opinion--link--1"
+    ]
+  },
+  "flex-layout.row#global__image--name--card--1": {
+    "title": "Imagen perfil y Nombre",
+    "children": [
+      "image#global__card--image--1",
+      "rich-text#card--benefits--title--1"
+    ],
+    "props": {
+      "blockClass": "global__image--name--card"
+    }
+  },
+  "image#global__card--image--1": {
+    "props": {
+      "blockClass": "global__benefits",
+      "src": "/arquivos/img-perfil-v2.png"
+    }
+  },
+  "rich-text#card--benefits--title--1": {
+    "props": {
+      "blockClass": "card--benefits--title",
+      "text": "Juan Felipe",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-4"
+    }
+  },
+  "rich-text#card--benefits--description--1": {
+    "props": {
+      "blockClass": "card--benefits--description",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  "toggle-layout#global__opinion--link--1": {
+    "title": "Show/hide link project",
+    "children": ["flex-layout.row#global__opinion--link--1"]
+  },
+  "flex-layout.row#global__opinion--link--1": {
+    "title": "Link proyecto",
+    "children": ["link#global__opinion--project--1"],
+    "props": {
+      "blockClass": "global__opinion--link"
+    }
+  },
+  "link#global__opinion--project--1": {
+    "title": "Link ver proyecto",
+    "props": {
+      "href": "/",
+      "label": "Ver proyecto",
+      "blockClass": "global__opinion--project"
+    }
+  },
+  //2
+  "flex-layout.row#global__home--card--benefits--2": {
+    "title": "Container card opinions",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": ["flex-layout.col#global__home--card--benefits--2"]
+  },
+  "flex-layout.col#global__home--card--benefits--2": {
+    "title": "",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": [
+      "flex-layout.row#global__image--name--card--2",
+      "rich-text#card--benefits--description--2",
+      "toggle-layout#global__opinion--link--2"
+    ]
+  },
+  "flex-layout.row#global__image--name--card--2": {
+    "title": "Imagen perfil y Nombre",
+    "children": [
+      "image#global__card--image--2",
+      "rich-text#card--benefits--title--2"
+    ],
+    "props": {
+      "blockClass": "global__image--name--card"
+    }
+  },
+  "image#global__card--image--2": {
+    "props": {
+      "blockClass": "global__benefits",
+      "src": "/arquivos/img-perfil-v2.png"
+    }
+  },
+  "rich-text#card--benefits--title--2": {
+    "props": {
+      "blockClass": "card--benefits--title",
+      "text": "Karen Sofia",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-4"
+    }
+  },
+  "rich-text#card--benefits--description--2": {
+    "props": {
+      "blockClass": "card--benefits--description",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  "toggle-layout#global__opinion--link--2": {
+    "title": "Show/hide link project",
+    "children": ["flex-layout.row#global__opinion--link--2"]
+  },
+  "flex-layout.row#global__opinion--link--2": {
+    "title": "Link proyecto",
+    "children": ["link#global__opinion--project--2"],
+    "props": {
+      "blockClass": "global__opinion--link"
+    }
+  },
+  "link#global__opinion--project--2": {
+    "title": "Link ver proyecto",
+    "props": {
+      "href": "/",
+      "label": "Ver proyecto",
+      "blockClass": "global__opinion--project"
+    }
+  },
+  //3
+  "flex-layout.row#global__home--card--benefits--3": {
+    "title": "Container card opinions",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": ["flex-layout.col#global__home--card--benefits--3"]
+  },
+  "flex-layout.col#global__home--card--benefits--3": {
+    "title": "",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": [
+      "flex-layout.row#global__image--name--card--3",
+      "rich-text#card--benefits--description--3",
+      "toggle-layout#global__opinion--link--3"
+    ]
+  },
+  "flex-layout.row#global__image--name--card--3": {
+    "title": "Imagen perfil y Nombre",
+    "children": [
+      "image#global__card--image--3",
+      "rich-text#card--benefits--title--3"
+    ],
+    "props": {
+      "blockClass": "global__image--name--card"
+    }
+  },
+  "image#global__card--image--3": {
+    "props": {
+      "blockClass": "global__benefits",
+      "src": "/arquivos/img-perfil-v2.png"
+    }
+  },
+  "rich-text#card--benefits--title--3": {
+    "props": {
+      "blockClass": "card--benefits--title",
+      "text": "Lorena Sofia",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-4"
+    }
+  },
+  "rich-text#card--benefits--description--3": {
+    "props": {
+      "blockClass": "card--benefits--description",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  "toggle-layout#global__opinion--link--3": {
+    "title": "Show/hide link project",
+    "children": ["flex-layout.row#global__opinion--link--3"]
+  },
+  "flex-layout.row#global__opinion--link--3": {
+    "title": "Link proyecto",
+    "children": ["link#global__opinion--project--3"],
+    "props": {
+      "blockClass": "global__opinion--link"
+    }
+  },
+  "link#global__opinion--project--3": {
+    "title": "Link ver proyecto",
+    "props": {
+      "href": "/",
+      "label": "Ver proyecto",
+      "blockClass": "global__opinion--project"
+    }
+  },
+  //4
+  "flex-layout.row#global__home--card--benefits--4": {
+    "title": "Container card opinions",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": ["flex-layout.col#global__home--card--benefits--4"]
+  },
+  "flex-layout.col#global__home--card--benefits--4": {
+    "title": "",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": [
+      "flex-layout.row#global__image--name--card--4",
+      "rich-text#card--benefits--description--4",
+      "toggle-layout#global__opinion--link--4"
+    ]
+  },
+  "flex-layout.row#global__image--name--card--4": {
+    "title": "Imagen perfil y Nombre",
+    "children": [
+      "image#global__card--image--4",
+      "rich-text#card--benefits--title--4"
+    ],
+    "props": {
+      "blockClass": "global__image--name--card"
+    }
+  },
+  "image#global__card--image--4": {
+    "props": {
+      "blockClass": "global__benefits",
+      "src": "/arquivos/img-perfil-v2.png"
+    }
+  },
+  "rich-text#card--benefits--title--4": {
+    "props": {
+      "blockClass": "card--benefits--title",
+      "text": "Karen Pepita",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-4"
+    }
+  },
+  "rich-text#card--benefits--description--4": {
+    "props": {
+      "blockClass": "card--benefits--description",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  "toggle-layout#global__opinion--link--4": {
+    "title": "Show/hide link project",
+    "children": ["flex-layout.row#global__opinion--link--4"]
+  },
+  "flex-layout.row#global__opinion--link--4": {
+    "title": "Link proyecto",
+    "children": ["link#global__opinion--project--4"],
+    "props": {
+      "blockClass": "global__opinion--link"
+    }
+  },
+  "link#global__opinion--project--4": {
+    "title": "Link ver proyecto",
+    "props": {
+      "href": "/",
+      "label": "Ver proyecto",
+      "blockClass": "global__opinion--project"
+    }
+  },
+  //5
+  "flex-layout.row#global__home--card--benefits--5": {
+    "title": "Container card opinions",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": ["flex-layout.col#global__home--card--benefits--5"]
+  },
+  "flex-layout.col#global__home--card--benefits--5": {
+    "title": "",
+    "props": {
+      "blockClass": "global__home--card--benefits"
+    },
+    "children": [
+      "flex-layout.row#global__image--name--card--5",
+      "rich-text#card--benefits--description--5",
+      "toggle-layout#global__opinion--link--5"
+    ]
+  },
+  "flex-layout.row#global__image--name--card--5": {
+    "title": "Imagen perfil y Nombre",
+    "children": [
+      "image#global__card--image--5",
+      "rich-text#card--benefits--title--5"
+    ],
+    "props": {
+      "blockClass": "global__image--name--card"
+    }
+  },
+  "image#global__card--image--5": {
+    "props": {
+      "blockClass": "global__benefits",
+      "src": "/arquivos/img-perfil-v2.png"
+    }
+  },
+  "rich-text#card--benefits--title--5": {
+    "props": {
+      "blockClass": "card--benefits--title",
+      "text": "Karen Juana",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#card--benefits--description--5": {
+    "props": {
+      "blockClass": "card--benefits--description",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  "toggle-layout#global__opinion--link--5": {
+    "title": "Show/hide link project",
+    "children": ["flex-layout.row#global__opinion--link--5"]
+  },
+  "flex-layout.row#global__opinion--link--5": {
+    "title": "Link proyecto",
+    "children": ["link#global__opinion--project--5"],
+    "props": {
+      "blockClass": "global__opinion--link"
+    }
+  },
+  "link#global__opinion--project--5": {
+    "title": "Link ver proyecto",
+    "props": {
+      "href": "/",
+      "label": "Ver proyecto",
+      "blockClass": "global__opinion--project"
+    }
+  }
+}
