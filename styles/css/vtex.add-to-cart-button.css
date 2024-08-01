@@ -14,6 +14,176 @@
   background-size: cover;
 }
 
+/**/
+
+.btn_addcart{
+  width: 100%;
+  background-color: #ED1B24;
+  border: 1px solid #ED1B24;
+  border-radius: 100px;
+  padding: 8px;
+  height: 48px;
+  color: #fff;
+  cursor: pointer;
+  transition: color .35s ease-in-out,background-color .35s ease-in-out;
+  margin-bottom: 5px ;
+}
+.btn_addcart:hover{
+  background-color: #fff;
+  color: #ED1B24;
+  transition: color .35s ease-in-out,background-color .35s ease-in-out;
+}
+.btn_addcart:disabled{
+  background-color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+  color: #fff;
+  cursor: initial;
+}
+.btn_addcart_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn_addcart_text{
+  display: flex;
+  align-items: center;
+
+}
+.btn_add_content_whatsapp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.btn_buy_sample{
+  margin: 10px;
+  width: 100%;
+  padding: 5px;
+  color: #838181b9;
+  border: none !important;
+  /* border-color: #ffffff;
+  border-radius: 25px; */
+  text-decoration: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.btn_buy_whatsapp{
+  margin: 10px;
+  width: 100%;
+  padding: 5px;
+  color: #6fc745;
+  border-color: #6fc745 !important;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  background-color: #fff;
+}
+.btn_buy_whatsapp:hover{   
+  margin: 10px;
+  width: 100%;
+  padding: 5px;
+  color: #ffff;
+  border-color: #6fc745;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  background-color: #6fc745;
+  
+}
+
+
+.btn_add_text_whatsapp{
+  font-family: 'NeutraText';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+
+}
+.btn_img_whatsapp{
+  width: 10%;
+}
+.btn_img_sample{
+  width: 15%;
+  box-shadow: #fff;
+}
+
+
+ /*calculadora de metros*/
+
+
+ .containercalc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.columncalc {
+  flex: 1;
+  padding: 20px;
+}
+
+.btn_quote_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin: 10px;
+}
+
+.title_area_quote{
+  color: rgb(61, 60, 60);
+    font-family: NeutraTextAltBold;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.btn_quote{
+  width: 80%;
+  background-color: #ED1B24;
+  border: 1px solid #ED1B24;
+  border-radius: 100px;
+  padding: 5px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: color .35s ease-in-out,background-color .35s ease-in-out;
+}
+.btn_quote:hover{
+  width: 80%;
+  background-color: #fff;
+  color: #ED1B24;
+  transition: color .35s ease-in-out,background-color .35s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*calculadora de metros*/
+
 
 @media (max-width:1024px) {
   .buttonText::before {
