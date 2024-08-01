@@ -104,6 +104,10 @@
   "store.custom#perfilamiento": {
     "path": "/perfilamiento",
     "title": "Perfilamiento de Proyectos"
+  },
+  "store.custom#landing-giorgio":{
+    "path": "/asesorvirtual",
+    "title": ""
   }
 
 }

@@ -2,10 +2,10 @@
     "store.custom#mapa-ceramicaitalia": {
         "blocks": [
             "flex-layout.row#miga-pan-nuestras-tiendas",
-            "flex-layout.row#section1-map",
-            "flex-layout.row#section2-map",
-            "flex-layout.row#container-map",
+            "flex-layout.row#section1-map",            
             "flex-layout.row#section3-map",
+            "flex-layout.row#section2-map",
+            "flex-layout.row#container-map",            
             "flex-layout.row#container-newsletter2-mapa"
         ]
     },

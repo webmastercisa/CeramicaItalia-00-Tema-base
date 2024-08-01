@@ -1,0 +1,55 @@
+{ 
+    "flex-layout.row#mobile__three--steps": {
+        "title": "Contenedor sección 3 pasos",
+        "children": ["slider-layout#mobile__slider--steps"],
+        "props": {
+          "blockClass": "desktop__three--steps"
+        }
+      },
+     //SLIDER
+  "flex-layout.row#mobile__slider--steps": {
+    "title": "Slider Cards steps",
+    "children": ["flex-layout.col#mobile__slider--steps"],
+    "props": {
+      "blockClass": "mobile__slider--steps"
+    }
+  },
+  "flex-layout.col#mobile__slider--steps": {
+    "children": [
+        // "rich-text#desktop__title--three--steps",
+        "slider-layout#mobile__slider--steps"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "mobile__slider--steps"
+    }
+  },
+  "slider-layout#mobile__slider--steps": {
+    "children": [
+      "flex-layout.row#global__three--steps--card-1",
+      "flex-layout.row#global__three--steps--card-2",
+      "flex-layout.row#global__three--steps--card-3"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+    //   "autoplay": {
+    //     "timeout": 5000,
+    //     "stopOnHover": true
+    //   },
+      "arrowSize": 15,
+      "slideTransition": {
+        "speed": 115,
+        "delay": 0,
+        "timing": ""
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "mobile__slider--steps"
+    }
+  }
+}

@@ -4,7 +4,7 @@
         "custom-form-products"
       ]
     },
-    "custom-form-products": {
+    "custom-form-products#v2": {
       "props":{
         "SummaryQuickView": "modal-trigger#quickview",
         "SummaryHighlights": "vtex.product-highlights@2.x:product-highlights#collection",

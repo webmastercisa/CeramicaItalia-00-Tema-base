@@ -1,0 +1,20 @@
+.imageElement--global__image--step--card{
+    width: 215px;
+    height: 275px;
+    border-radius: 25px;
+}
+
+/*Slider opinions*/
+
+.imageElement--global__benefits{
+    width: 60px;
+    height: 60px;
+}
+
+@media(min-width:64rem){
+    .imageElement--global__image--step--card{
+        width: unset;
+        height: unset;
+        border-radius: 25px;
+    }
+}
