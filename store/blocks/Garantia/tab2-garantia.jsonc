@@ -1,7 +1,8 @@
 {
     "flex-layout.row#container-tab2-garantia": {
         "children": [
-            "flex-layout.col#container-tab2-garantia"
+            /*"flex-layout.col#container-tab2-garantia"*/
+            "tab-layout#tabs-garantia"
         ],
         "props": {
             "blockClass": [
@@ -10,22 +11,81 @@
         }
     },
 
+    "tab-layout#tabs-garantia":
+    {
+      "children": [
+          "tab-list#garantia-recomendacion",
+          "tab-content#garantia-recomendacion"
+      ],
+      "props": {
+          "blockClass": "sostenibilidad",
+          "defaultActiveTabId": "garantia"
+      }
+  },
+  "tab-list#garantia-recomendacion":
+  {
+    "children": [
+        "tab-list.item#garantia",
+        "tab-list.item#recomendacion"
+    ]
+  },
+  /* ===  Etiquetas de los tabs ===*/
+  "tab-list.item#garantia": {
+    "props": {
+        "tabId": "garantia",
+        "label": "Garantía",
+        "blockClass": "item-tab-sostenibilidad",
+        "defaultActiveTab": true
+    }
+},
+"tab-list.item#recomendacion": {
+    "props": {
+        "tabId": "recomendacion",
+        "label": "Recomendaciones de instalación",
+        "blockClass": "item-tab-sostenibilidad"
+    }
+},
+/* ===  Contenido del grupo de tabs ===*/
+"tab-content#garantia-recomendacion":
+{
+  "children": [
+      "tab-content.item#garantia",
+      "tab-content.item#recomendacion"
+  ]
+},
+
+"tab-content.item#garantia":
+{
+  "children": [ "flex-layout.col#container-tab2-garantia" ],
+  "props": { "tabId": "garantia" }
+},
+"tab-content.item#recomendacion":
+{
+  "children": [ "flex-layout.col#container-tab2-recomendacion" ],
+  "props": {
+      "tabId": "recomendacion"
+  }
+},
+
+
+/* ===  Contenido dentro del tab 1 ===*/
 "flex-layout.col#container-tab2-garantia": {
   "children": [
-    "rich-text#title-tab2-garantia",
+    /*"rich-text#title-tab2-garantia",*/
     "tab-layout#garantia2"],
   "props": {
     "blockClass": ["container-tab2-garantia"]
   }
 },
+/*
 "rich-text#title-tab2-garantia": {
     "props": {
-             "text": "Descarga nuestra garantía de:",
+             "text": "Descarga nuestra garantía  o sigue nuestras recomendaciones de instalación:",
              "blockClass": "title-tab2-garantia",
              "textAlignment": "CENTER",
              "textPosition": "CENTER"
     }
-},
+},*/
 
     "tab-layout#garantia2": {
         "children": [
@@ -57,7 +117,7 @@
     "tab-list.item#2-1": {
         "props": {
             "tabId": "item2-1",
-            "label": "Productos Mapei",
+            "label": "1. Revestimiento Nacional",
             "defaultActiveTab": true,
             "blockClass": "item-garantia2"
         }
@@ -65,21 +125,21 @@
     "tab-list.item#2-2": {
         "props": {
             "tabId": "item2-2",
-            "label": "Productos Pegomax",
+            "label": "2. Revestimiento Importado",
             "blockClass": "item-garantia2"
         }
     },
     "tab-list.item#2-3": {
         "props": {
             "tabId": "item2-3",
-            "label": "Bañeras e hidromasajes Firplack",
+            "label": "3. Baños",
             "blockClass": "item-garantia2"
         }
     },
     "tab-list.item#2-4": {
         "props": {
             "tabId": "item2-4",
-            "label": "Revestimiento Cerámico",
+            "label": "4. Servicios De Instalación",
             "blockClass": "item-garantia2"
         }
     },
@@ -87,7 +147,7 @@
     "tab-list.item#2-5": {
         "props": {
             "tabId": "item2-5",
-            "label": "Servicios de instalación",
+            "label": "5. Garantía De bañeras e hidromasajes Firplak",
             "blockClass": "item-garantia2"
         }
     },
@@ -95,7 +155,7 @@
     "tab-list.item#2-6": {
         "props": {
             "tabId": "item2-6",
-            "label": "Revestimiento Cerámico Importado",
+            "label": "6. Garantía de mármol sintético Firplak",
             "blockClass": "item-garantia2"
         }
     },
@@ -103,7 +163,7 @@
     "tab-list.item#2-7": {
         "props": {
             "tabId": "item2-7",
-            "label": "Baños",
+            "label": "7. Garantía de muebles Firplak",
             "blockClass": "item-garantia2"
         }
     },
@@ -111,16 +171,16 @@
     "tab-list.item#2-8": {
         "props": {
             "tabId": "item2-8",
-            "label": "Garantía de productos Pegomax",
+            "label": "8. Garantía de productos Pegomax",
             "blockClass": "item-garantia2"
         }
     },
 
-    
+
     "tab-list.item#2-9": {
         "props": {
             "tabId": "item2-9",
-            "label": "Garantía Stretto",
+            "label": "9. Garantía Stretto",
             "blockClass": "item-garantia2"
         }
     },
@@ -128,7 +188,7 @@
     "tab-list.item#2-10": {
         "props": {
             "tabId": "item2-10",
-            "label": "Recomendaciones de almacenamiento",
+            "label": "10 Recomendaciones de almacenamiento",
             "blockClass": "item-garantia2"
         }
     },
@@ -252,7 +312,7 @@
     },
     "rich-text#title-item1-tab2": {
         "props": {
-            "text": "Productos Mapei",
+            "text": "Revestimiento Nacional",
             "blockClass": "title-item1-tab2",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -260,7 +320,7 @@
     },
     "rich-text#description-item1-tab2": {
         "props": {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+            "text": "&nbsp; &nbsp; &nbsp; &nbsp;",
             "blockClass": "description-item1-tab2",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -307,7 +367,7 @@
           "blockClass": ["img-item1-tab2"]
         }
       },
-  
+
       "image#img-item1-tab2": {
           "props": {
                    "src": "arquivos/banner-tap-garantia.png",
@@ -342,8 +402,8 @@
           "blockClass": ["img-item1-tab2"]
         }
       },
-  
-      "image#img-item2-tab2": {
+
+    "image#img-item2-tab2": {
           "props": {
                    "src": "arquivos/banner-tap-garantia.png",
                    "alt": "alt",
@@ -357,7 +417,7 @@
       },
     "rich-text#title-item2-tab2": {
         "props": {
-            "text": "Productos Pegomax",
+            "text": "Revestimiento Importado",
             "blockClass": "title-item1-tab2",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -365,7 +425,7 @@
     },
     "rich-text#description-item2-tab2": {
         "props": {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+            "text": "La GARANTÍA CERÁMICA ITALIA S.A. ® para productos de revestimiento cerámico importado es el reflejo del compromiso que la compañía tiene con Ud. al haber elegido nuestros productos, representa que además de la más alta tecnología de fabricación, Ud. dispondrá de las herramientas en nuestra organización para obtener una respuesta ágil y eficaz si su producto presenta algún defecto en la fabricación.",
             "blockClass": "description-item1-tab2",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -427,7 +487,7 @@
           "blockClass": ["img-item1-tab2"]
         }
       },
-  
+
       "image#img-item3-tab2": {
           "props": {
                    "src": "arquivos/banner-tap-garantia.png",
@@ -442,7 +502,7 @@
       },
     "rich-text#title-item3-tab2": {
         "props": {
-            "text": "Bañeras e hidromasajes Firplack",
+            "text": "Baños",
             "blockClass": "title-item1-tab2",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -450,7 +510,7 @@
     },
     "rich-text#description-item3-tab2": {
         "props": {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+            "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®. Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto.",
             "blockClass": "description-item1-tab2",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -512,7 +572,7 @@
           "blockClass": ["img-item1-tab2"]
         }
       },
-  
+
       "image#img-item4-tab2": {
           "props": {
                    "src": "arquivos/banner-tap-garantia.png",
@@ -528,7 +588,7 @@
 
     "rich-text#title-item4-tab2": {
         "props": {
-            "text": "Revestimiento Cerámico",
+            "text": "Servicios de Instalación",
             "blockClass": "title-item1-tab2",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -536,7 +596,7 @@
     },
     "rich-text#description-item4-tab2": {
         "props": {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+            "text": "El Protocolo de Servicio de Instalación y Mantenimiento de Aparatos Sanitarios establece las pautas y procedimientos para la correcta instalación y mantenimiento de dispositivos y sistemas sanitarios en edificaciones. Este protocolo asegura que los aparatos sanitarios, como lavabos, inodoros, grifos y sistemas de fontanería, se instalen de manera eficiente y segura, cumpliendo con las normativas y estándares establecidos.<br><br>El proceso de instalación implica la correcta conexión de tuberías, válvulas y dispositivos sanitarios, garantizando un funcionamiento adecuado y evitando posibles problemas como fugas o malos olores. Además, el mantenimiento periódico se encarga de verificar y corregir posibles desgastes, asegurando la durabilidad y eficacia de los aparatos sanitarios a lo largo del tiempo.<br><br>Este protocolo puede incluir pasos específicos, normativas de seguridad, requisitos técnicos y pautas de calidad para asegurar la integridad y el buen desempeño de los sistemas sanitarios en cualquier tipo de construcción. La implementación adecuada de este protocolo contribuye a la prevención de problemas, la optimización del consumo de agua y el mantenimiento de estándares higiénicos en los espacios donde se encuentran instalados los aparatos sanitarios.<br><br>Por favor descargue la siguiente guia para su mejor comprensión:.",
             "blockClass": "description-item1-tab2",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -615,7 +675,7 @@
 
 "rich-text#title-item5-tab2": {
     "props": {
-        "text": "Servicios de instalación",
+        "text": "Garantía de bañeras e Hidromasajes Firplak",
         "blockClass": "title-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -623,7 +683,7 @@
 },
 "rich-text#description-item5-tab2": {
     "props": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+        "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®.<br>Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto..",
         "blockClass": "description-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -701,7 +761,7 @@
 
 "rich-text#title-item6-tab2": {
     "props": {
-        "text": "Revestimiento Cerámico Importado",
+        "text": "Garantía de mármol sintético Firplak",
         "blockClass": "title-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -709,7 +769,7 @@
 },
 "rich-text#description-item6-tab2": {
     "props": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+        "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®.<br>Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto..",
         "blockClass": "description-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -787,7 +847,7 @@
 
 "rich-text#title-item7-tab2": {
     "props": {
-        "text": "Baños",
+        "text": "Garantía De Muebles Firplak",
         "blockClass": "title-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -795,7 +855,7 @@
 },
 "rich-text#description-item7-tab2": {
     "props": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+        "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®.<br>Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto..",
         "blockClass": "description-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -881,7 +941,7 @@
 },
 "rich-text#description-item8-tab2": {
     "props": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+        "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®.<br>Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto..",
         "blockClass": "description-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -967,7 +1027,7 @@
 },
 "rich-text#description-item9-tab2": {
     "props": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+        "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®.<br>Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto..",
         "blockClass": "description-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -1053,7 +1113,7 @@
 },
 "rich-text#description-item10-tab2": {
     "props": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+        "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®.<br>Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto..",
         "blockClass": "description-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
@@ -1092,5 +1152,789 @@
             "title": "title"
         }
     }
+},
+
+
+
+/* ===  Contenido dentro del tab 2 ===*/
+
+
+"flex-layout.col#container-tab2-recomendacion": {
+  "children": [
+    /*"rich-text#title-tab2-recomendacion",*/
+    "tab-layout#recomendacion2"],
+  "props": {
+    "blockClass": ["container-tab2-recomendacion"]
+  }
+},
+/*
+"rich-text#title-tab2-recomendacion": {
+    "props": {
+             "text": "Descarga nuestra garantía o sigue nuestras recomendaciones de instalación:",
+             "blockClass": "title-tab2-recomendacion",
+             "textAlignment": "CENTER",
+             "textPosition": "CENTER"
+    }
+},*/
+
+    "tab-layout#recomendacion2": {
+        "children": [
+            "tab-list#recomendacion2",
+            "tab-content#recomendacion2"
+        ],
+        "props": {
+            "blockClass": "garantia2",
+            "defaultActiveTabId": "recoitem-id-1"
+            /*"defaultActiveTabId": "item2-1"*/
+        }
+    },
+    "tab-list#recomendacion2": {
+        "children": [
+            "tab-list.item#recoitem-1",
+            "tab-list.item#recoitem-2",
+            "tab-list.item#recoitem-3",
+            "tab-list.item#recoitem-4",
+            "tab-list.item#recoitem-5",
+            "tab-list.item#recoitem-6",
+            "tab-list.item#recoitem-7"
+        ],
+        "props": { "blockClass": "tab-list-garantia2" }
+    },
+    "tab-list.item#recoitem-1": {
+        "props": {
+            "tabId": "recoitem-id-1",
+            "label": "Recomendaciones de instalación",
+            "defaultActiveTab": true,
+            "blockClass": "item-garantia2"
+        }
+    },
+    "tab-list.item#recoitem-2": {
+        "props": {
+            "tabId": "recoitem-id-2",
+            "label": "Manipulación de cajas",
+            "blockClass": "item-garantia2"
+        }
+    },
+    "tab-list.item#recoitem-3": {
+        "props": {
+            "tabId": "recoitem-id-3",
+            "label": "Preparación de la superficie",
+            "blockClass": "item-garantia2"
+        }
+    },
+    "tab-list.item#recoitem-4": {
+        "props": {
+            "tabId": "recoitem-id-4",
+            "label": "Recomendaciones instalación en fachada",
+            "blockClass": "item-garantia2"
+        }
+    },
+
+    "tab-list.item#recoitem-5": {
+        "props": {
+            "tabId": "recoitem-id-5",
+            "label": "Recomendaciones instalación en muros y pisos",
+            "blockClass": "item-garantia2"
+        }
+    },
+
+    "tab-list.item#recoitem-6": {
+        "props": {
+            "tabId": "recoitem-id-6",
+            "label": "Recomendaciones de instalación en piscinas",
+            "blockClass": "item-garantia2"
+        }
+    },
+
+    "tab-list.item#recoitem-7": {
+        "props": {
+            "tabId": "recoitem-id-7",
+            "label": "Recomendaciones de mantenimiento.",
+            "blockClass": "item-garantia2"
+        }
+    },
+
+
+    "tab-content#recomendacion2": {
+        "children": [
+            "tab-content.item#reco-cont-item-1",
+            "tab-content.item#reco-cont-item-2",
+            "tab-content.item#reco-cont-item-3",
+            "tab-content.item#reco-cont-item-4",
+            "tab-content.item#reco-cont-item-5",
+            "tab-content.item#reco-cont-item-6",
+            "tab-content.item#reco-cont-item-7"
+        ],
+        "props": {
+            "blockClass": "tab-content-garantia2"
+        }
+    },
+    "tab-content.item#reco-cont-item-1": {
+        "children": [
+            "flex-layout.col#content-reco-item1"
+        ],
+        "props": {
+            "tabId": "recoitem-id-1"
+            /*"tabId": "reco-cont-item-id-1"*/
+        }
+    },
+    "tab-content.item#reco-cont-item-2": {
+        "children": [
+            "flex-layout.col#content-reco-item2"
+        ],
+        "props": {
+            "tabId": "recoitem-id-2"
+        }
+    },
+    "tab-content.item#reco-cont-item-3": {
+        "children": [
+            "flex-layout.col#content-reco-item3"
+        ],
+        "props": {
+            "tabId": "recoitem-id-3"
+        }
+    },
+    "tab-content.item#reco-cont-item-4": {
+        "children": [
+            "flex-layout.col#content-reco-item4"
+        ],
+        "props": {
+            "tabId": "recoitem-id-4"
+        }
+    },
+    "tab-content.item#reco-cont-item-5": {
+        "children": [
+            "flex-layout.col#content-reco-item5"
+        ],
+        "props": {
+            "tabId": "recoitem-id-5"
+        }
+    },
+    "tab-content.item#reco-cont-item-6": {
+        "children": [
+            "flex-layout.col#content-reco-item6"
+        ],
+        "props": {
+            "tabId": "recoitem-id-6"
+        }
+    },
+    "tab-content.item#reco-cont-item-7": {
+        "children": [
+            "flex-layout.col#content-reco-item7"
+        ],
+        "props": {
+            "tabId": "recoitem-id-7"
+        }
+    },
+
+    // contenido tab 1
+    "flex-layout.col#content-reco-item1": {
+        "children": [
+            "flex-layout.row#img-reco-item1-tab2",
+            "rich-text#title-reco-item1-tab2",
+            "rich-text#description-reco-item1-tab2",
+            "flex-layout.row#descarga-reco-item1-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "content-tab2-item1"
+            ]
+        }
+    },
+    "rich-text#title-reco-item1-tab2": {
+        "props": {
+            "text": "Recomendaciones de instalación",
+            "blockClass": "title-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#description-reco-item1-tab2": {
+        "props": {
+            "text": "&nbsp;&nbsp;",
+            "blockClass": "description-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#descarga-reco-item1-tab2": {
+        "children": [
+            "rich-text#text-descarga-reco-item1-tab2",
+            "image#img-descarga-reco-item1-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "descarga-item1-tab2"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-descarga-reco-item1-tab2": {
+        "props": {
+            "text": "[Descargar](#)",
+            "blockClass": "text-descarga-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#img-descarga-reco-item1-tab2": {
+        "props": {
+            "src": "assets/ico/descarga-ico.svg",
+            "alt": "alt",
+            //  "height": "hight",
+            "blockClass": "img-descarga-item1-tab2",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    },
+
+    "flex-layout.row#img-reco-item1-tab2": {
+        "children": ["image#img-reco-item1-tab2"],
+        "props": {
+          "blockClass": ["img-item1-tab2"]
+        }
+      },
+
+      "image#img-reco-item1-tab2": {
+          "props": {
+                   "src": "arquivos/banner-tap-garantia.png",
+                   "alt": "alt",
+                   "blockClass": "img-item1-tab2"
+              //      "link": {
+              //              "url": "url",
+              //              "openNewTab": false,
+              //              "title": "title"
+              // }
+          }
+      },
+
+    // contenido tab 2
+    "flex-layout.col#content-reco-item2": {
+        "children": [
+            "flex-layout.row#img-reco-item2-tab2",
+            "rich-text#title-reco-item2-tab2",
+            "rich-text#description-reco-item2-tab2",
+            "flex-layout.row#descarga-reco-item2-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "content-tab2-item1"
+            ]
+        }
+    },
+
+    "flex-layout.row#img-reco-item2-tab2": {
+        "children": ["image#img-reco-item2-tab2"],
+        "props": {
+          "blockClass": ["img-item1-tab2"]
+        }
+      },
+
+      "image#img-reco-item2-tab2": {
+          "props": {
+                   "src": "arquivos/banner-tap-garantia.png",
+                   "alt": "alt",
+                   "blockClass": "img-item1-tab2"
+              //      "link": {
+              //              "url": "url",
+              //              "openNewTab": false,
+              //              "title": "title"
+              // }
+          }
+      },
+    "rich-text#title-reco-item2-tab2": {
+        "props": {
+            "text": "Manipulación de cajas",
+            "blockClass": "title-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#description-reco-item2-tab2": {
+        "props": {
+            "text": "&nbsp;&nbsp;",
+            "blockClass": "description-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#descarga-reco-item2-tab2": {
+        "children": [
+            "rich-text#text-descarga-reco-item2-tab2",
+            "image#img-descarga-reco-item2-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "descarga-item1-tab2"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-descarga-reco-item2-tab2": {
+        "props": {
+            "text": "[Descargar](#)",
+            "blockClass": "text-descarga-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#img-descarga-reco-item2-tab2": {
+        "props": {
+            "src": "assets/ico/descarga-ico.svg",
+            "alt": "alt",
+            //  "height": "hight",
+            "blockClass": "img-descarga-item1-tab2",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    },
+
+     // contenido tab 3
+     "flex-layout.col#content-reco-item3": {
+        "children": [
+            "flex-layout.row#img-reco-item3-tab2",
+            "rich-text#title-reco-item3-tab2",
+            "rich-text#description-reco-item3-tab2",
+            "flex-layout.row#descarga-reco-item3-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "content-tab2-item1"
+            ]
+        }
+    },
+
+    "flex-layout.row#img-reco-item3-tab2": {
+        "children": ["image#img-reco-item3-tab2"],
+        "props": {
+          "blockClass": ["img-item1-tab2"]
+        }
+      },
+
+      "image#img-reco-item3-tab2": {
+          "props": {
+                   "src": "arquivos/banner-tap-garantia.png",
+                   "alt": "alt",
+                   "blockClass": "img-item1-tab2"
+              //      "link": {
+              //              "url": "url",
+              //              "openNewTab": false,
+              //              "title": "title"
+              // }
+          }
+      },
+    "rich-text#title-reco-item3-tab2": {
+        "props": {
+            "text": "Preparación de la superficie",
+            "blockClass": "title-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#description-reco-item3-tab2": {
+        "props": {
+            "text": "&nbsp;&nbsp;",
+            "blockClass": "description-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#descarga-reco-item3-tab2": {
+        "children": [
+            "rich-text#text-descarga-reco-item3-tab2",
+            "image#img-descarga-reco-item3-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "descarga-item1-tab2"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-descarga-reco-item3-tab2": {
+        "props": {
+            "text": "[Descargar](#)",
+            "blockClass": "text-descarga-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#img-descarga-reco-item3-tab2": {
+        "props": {
+            "src": "assets/ico/descarga-ico.svg",
+            "alt": "alt",
+            //  "height": "hight",
+            "blockClass": "img-descarga-item1-tab2",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    },
+
+     // contenido tab 4
+     "flex-layout.col#content-reco-item4": {
+        "children": [
+            "flex-layout.row#img-reco-item4-tab2",
+            "rich-text#title-reco-item4-tab2",
+            "rich-text#description-reco-item4-tab2",
+            "flex-layout.row#descarga-reco-item4-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "content-tab2-item1"
+            ]
+        }
+    },
+
+    "flex-layout.row#img-reco-item4-tab2": {
+        "children": ["image#img-reco-item4-tab2"],
+        "props": {
+          "blockClass": ["img-item1-tab2"]
+        }
+      },
+
+      "image#img-reco-item4-tab2": {
+          "props": {
+                   "src": "arquivos/banner-tap-garantia.png",
+                   "alt": "alt",
+                   "blockClass": "img-item1-tab2"
+              //      "link": {
+              //              "url": "url",
+              //              "openNewTab": false,
+              //              "title": "title"
+              // }
+          }
+      },
+
+    "rich-text#title-reco-item4-tab2": {
+        "props": {
+            "text": "Recomendaciones de instalación en fachadas",
+            "blockClass": "title-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#description-reco-item4-tab2": {
+        "props": {
+            "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+            "blockClass": "description-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#descarga-reco-item4-tab2": {
+        "children": [
+            "rich-text#text-descarga-reco-item4-tab2",
+            "image#img-descarga-reco-item4-tab2"
+        ],
+        "props": {
+            "blockClass": [
+                "descarga-item1-tab2"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-descarga-reco-item4-tab2": {
+        "props": {
+            "text": "[Descargar](#)",
+            "blockClass": "text-descarga-item1-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "image#img-descarga-reco-item4-tab2": {
+        "props": {
+            "src": "assets/ico/descarga-ico.svg",
+            "alt": "alt",
+            //  "height": "hight",
+            "blockClass": "img-descarga-item1-tab2",
+            "link": {
+                "url": "#",
+                "openNewTab": false,
+                "title": "title"
+            }
+        }
+    },
+
+    // contenido tab 5
+
+  "flex-layout.col#content-reco-item5": {
+    "children": [
+        "flex-layout.row#img-reco-item5-tab2",
+        "rich-text#title-reco-item5-tab2",
+        "rich-text#description-reco-item5-tab2",
+        "flex-layout.row#descarga-reco-item5-tab2"
+    ],
+    "props": {
+        "blockClass": [
+            "content-tab2-item1"
+        ]
+    }
+},
+
+"flex-layout.row#img-reco-item5-tab2": {
+    "children": ["image#img-reco-item5-tab2"],
+    "props": {
+      "blockClass": ["img-item1-tab2"]
+    }
+  },
+
+  "image#img-reco-item5-tab2": {
+      "props": {
+               "src": "arquivos/banner-tap-garantia.png",
+               "alt": "alt",
+               "blockClass": "img-item1-tab2"
+          //      "link": {
+          //              "url": "url",
+          //              "openNewTab": false,
+          //              "title": "title"
+          // }
+      }
+  },
+
+"rich-text#title-reco-item5-tab2": {
+    "props": {
+        "text": "Recomendaciones de instalacióne en muros y pisos",
+        "blockClass": "title-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"rich-text#description-reco-item5-tab2": {
+    "props": {
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "blockClass": "description-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"flex-layout.row#descarga-reco-item5-tab2": {
+    "children": [
+        "rich-text#text-descarga-reco-item5-tab2",
+        "image#img-descarga-reco-item5-tab2"
+    ],
+    "props": {
+        "blockClass": [
+            "descarga-item1-tab2"
+        ],
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true
+    }
+},
+"rich-text#text-descarga-reco-item5-tab2": {
+    "props": {
+        "text": "[Descargar](#)",
+        "blockClass": "text-descarga-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"image#img-descarga-reco-item5-tab2": {
+    "props": {
+        "src": "assets/ico/descarga-ico.svg",
+        "alt": "alt",
+        //  "height": "hight",
+        "blockClass": "img-descarga-item1-tab2",
+        "link": {
+            "url": "#",
+            "openNewTab": false,
+            "title": "title"
+        }
+    }
+},
+
+// contenido tab 6
+"flex-layout.col#content-reco-item6": {
+    "children": [
+        "flex-layout.row#img-reco-item6-tab2",
+        "rich-text#title-reco-item6-tab2",
+        "rich-text#description-reco-item6-tab2",
+        "flex-layout.row#descarga-reco-item6-tab2"
+    ],
+    "props": {
+        "blockClass": [
+            "content-tab2-item1"
+        ]
+    }
+},
+
+"flex-layout.row#img-reco-item6-tab2": {
+    "children": ["image#img-reco-item6-tab2"],
+    "props": {
+      "blockClass": ["img-item1-tab2"]
+    }
+  },
+
+  "image#img-reco-item6-tab2": {
+      "props": {
+               "src": "arquivos/banner-tap-garantia.png",
+               "alt": "alt",
+               "blockClass": "img-item1-tab2"
+          //      "link": {
+          //              "url": "url",
+          //              "openNewTab": false,
+          //              "title": "title"
+          // }
+      }
+  },
+
+"rich-text#title-reco-item6-tab2": {
+    "props": {
+        "text": "Recomendación de instalación en piscinas",
+        "blockClass": "title-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"rich-text#description-reco-item6-tab2": {
+    "props": {
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "blockClass": "description-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"flex-layout.row#descarga-reco-item6-tab2": {
+    "children": [
+        "rich-text#text-descarga-reco-item6-tab2",
+        "image#img-descarga-reco-item6-tab2"
+    ],
+    "props": {
+        "blockClass": [
+            "descarga-item1-tab2"
+        ],
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true
+    }
+},
+"rich-text#text-descarga-reco-item6-tab2": {
+    "props": {
+        "text": "[Descargar](#)",
+        "blockClass": "text-descarga-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"image#img-descarga-reco-item6-tab2": {
+    "props": {
+        "src": "assets/ico/descarga-ico.svg",
+        "alt": "alt",
+        //  "height": "hight",
+        "blockClass": "img-descarga-item1-tab2",
+        "link": {
+            "url": "#",
+            "openNewTab": false,
+            "title": "title"
+        }
+    }
+},
+
+  // contenido tab 7
+  "flex-layout.col#content-reco-item7": {
+    "children": [
+        "flex-layout.row#img-reco-item7-tab2",
+        "rich-text#title-reco-item7-tab2",
+        "rich-text#description-reco-item7-tab2",
+        "flex-layout.row#descarga-reco-item7-tab2"
+    ],
+    "props": {
+        "blockClass": [
+            "content-tab2-item1"
+        ]
+    }
+},
+
+"flex-layout.row#img-reco-item7-tab2": {
+    "children": ["image#img-reco-item7-tab2"],
+    "props": {
+      "blockClass": ["img-item1-tab2"]
+    }
+  },
+
+  "image#img-reco-item7-tab2": {
+      "props": {
+               "src": "arquivos/banner-tap-garantia.png",
+               "alt": "alt",
+               "blockClass": "img-item1-tab2"
+          //      "link": {
+          //              "url": "url",
+          //              "openNewTab": false,
+          //              "title": "title"
+          // }
+      }
+  },
+
+"rich-text#title-reco-item7-tab2": {
+    "props": {
+        "text": "Recomendaciones de mantenimiento.",
+        "blockClass": "title-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"rich-text#description-reco-item7-tab2": {
+    "props": {
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "blockClass": "description-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"flex-layout.row#descarga-reco-item7-tab2": {
+    "children": [
+        "rich-text#text-descarga-reco-item7-tab2",
+        "image#img-descarga-reco-item7-tab2"
+    ],
+    "props": {
+        "blockClass": [
+            "descarga-item1-tab2"
+        ],
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true
+    }
+},
+"rich-text#text-descarga-reco-item7-tab2": {
+    "props": {
+        "text": "[Descargar](#)",
+        "blockClass": "text-descarga-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+"image#img-descarga-reco-item7-tab2": {
+    "props": {
+        "src": "assets/ico/descarga-ico.svg",
+        "alt": "alt",
+        //  "height": "hight",
+        "blockClass": "img-descarga-item1-tab2",
+        "link": {
+            "url": "#",
+            "openNewTab": false,
+            "title": "title"
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 }
