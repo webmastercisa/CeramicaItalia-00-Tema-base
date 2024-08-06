@@ -288,7 +288,7 @@
     color: #686868;
 }
 .btn_add{
-    width: 100%;
+    width: 50%;
     background-color: #ED1B24;
     border: 1px solid #ED1B24;
     border-radius: 100px;
@@ -299,7 +299,7 @@
     transition: color .35s ease-in-out,background-color .35s ease-in-out;
 }
 .btn_add:hover{
-    width: 100%;
+    width: 50%;
     background-color: #fff;
     color: #ED1B24;
     transition: color .35s ease-in-out,background-color .35s ease-in-out;
@@ -444,6 +444,23 @@
       font-weight: 700;
       text-align: center;
   }
+
+  .btn_whatsapp_buy{
+    width: 48%;
+    background-color: #fff;
+    border: 1px solid #6FC745;
+    border-radius: 100px;
+    height: 48px;
+    color: #6FC745;
+    cursor: pointer;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out;
+}
+.btn_whatsapp_buy:hover{
+    background-color: #6FC77D;
+    color: #fff;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out;
+}
+
 
 
 /*calculadora de metros*/
