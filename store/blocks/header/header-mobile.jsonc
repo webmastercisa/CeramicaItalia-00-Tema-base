@@ -205,7 +205,7 @@
       // "drawer#mobile-pisos-iconos",
       "flex-layout.col#menu-iconPisos-mobile",
       "flex-layout.col#menu-iconParedes-mobile",
-      "flex-layout.col#menu-iconColores"
+      "flex-layout.col#menu-iconColores-head"
     ]
   },
   "flex-layout.col#menu-iconPisos-mobile": {
@@ -297,9 +297,9 @@
       }
     }
   },
-  "flex-layout.col#menu-iconColores": {
+  "flex-layout.col#menu-iconColores-head": {
     "children": [
-      "logo#iconMenuColores",
+      "logo#iconMenuColores-h",
       "rich-text#opciones-colores"
       // "menu-item#colores"
     ],
@@ -308,7 +308,7 @@
       "preventVerticalStretch": true
     }
   },
-  "logo#iconMenuColores": {
+  "logo#iconMenuColores-h": {
     "props": {
       "title": "iconMenuColores",
       // "href": "/",

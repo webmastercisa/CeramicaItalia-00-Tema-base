@@ -86,7 +86,7 @@
   },
   "flex-layout.col#menu-iconColores": {
     "children": [
-      "logo#iconMenuColores",
+      "logo#iconMenuColores-cat",
       // "rich-text#opciones-colores"
       "menu-item#colores"
     ],
@@ -95,7 +95,7 @@
       "preventVerticalStretch": true
     }
   },
-  "logo#iconMenuColores": {
+  "logo#iconMenuColores-cat": {
     "props": {
       "title": "iconMenuColores",
       // "href": "/",
