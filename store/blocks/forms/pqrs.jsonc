@@ -295,7 +295,7 @@
   "form-input.checkbox#agreement-formulario-pqrs": {
     "props": {
       "pointer": "#/properties/agreement",
-      "label": "He leído y acepto la política de datos personales",
+      "label": "He leído y acepto la política de datos personales.",
       "blockClass": "agreement-formulario-pqr"
     }
   }
