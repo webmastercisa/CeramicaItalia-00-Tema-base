@@ -94,7 +94,7 @@
           "blockClass": "cantidad-general"
         }
       },
-
+/*
       "add-to-cart-button#general": {
         "props": {
           "addToCartFeedback": "customEvent",
@@ -102,7 +102,7 @@
           "blockClass": "btn-general"
         }
       },
-
+*/
 
       "slider-layout#shelf-general": {
         "title": "slider-vitrina-general",

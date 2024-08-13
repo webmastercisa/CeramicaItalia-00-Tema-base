@@ -157,13 +157,15 @@
       "tabId": "tab-politica-tratamiento-datos",
       "blockClass": "content-politica-tratamiento-datos"
     }
-  },
+  }
+  /*,
 
   //BOTON DESCARGAR TERMINOS LEGALES
+
   "rich-text#link-descargar-terminos-legales": {
     "props": {
       "blockClass": ["link-descargar-terminos-legales"],
       "text": "Descargar"
     }
-  }
+  }*/
 }

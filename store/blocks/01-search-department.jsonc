@@ -94,8 +94,8 @@
       "list-context.info-card-list#slider-departamentos-search",
       "flex-layout.row#searchbread",
       // "flex-layout.row#vitrina1-imagen-search-departamento-mobile",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#contentmobile",
+      "flex-layout.row#searchinfomobile_dpto",
+      "flex-layout.row#contentmobile_dpto",
       "flex-layout.row#fetchmore",
       // "flex-layout.row#vitrina2-imagen-search-departamento-mobile",
       "rich-text#titulo-textos-search-departamento-mobile"
@@ -111,13 +111,13 @@
       "blockClass": "ResultadoMobile"
     }
   },
-  "flex-layout.row#contentmobile": {
+  "flex-layout.row#contentmobile_dpto": {
     "children": ["search-content"],
     "props": {
       "preserveLayoutOnMobile": true
     }
   },
-  "flex-layout.row#searchinfomobile": {
+  "flex-layout.row#searchinfomobile_dpto": {
     "children": [
       "flex-layout.col#filterMobile",
       "flex-layout.col#productCount",
