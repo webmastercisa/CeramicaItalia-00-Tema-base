@@ -74,12 +74,12 @@
     width: 100%;
 }
 .content_modal_met_text{
-    font-family: 'NeutraText';
+    font-family: Adobe Clean;
     color: #ED1B24;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 350;
     cursor: pointer;
-    padding: 5px 0;
+    padding: 10px 0;
     font-style: normal;
     line-height: normal;
 }
@@ -405,6 +405,39 @@
     background-color: #6fc745;
     
   }
+  .btn_whatsapp_buy{
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #6FC745;
+    border-radius: 100px;
+    height: 48px;
+    color: #6FC745;
+    cursor: pointer;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out;
+}
+.btn_whatsapp_buy:hover{
+    background-color: #6FC77D;
+    color: #fff;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out;
+}
+
+.btn_add_with_whatsapp{
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #ED1B24;
+    border-radius: 100px;
+    height: 48px;
+    color: #ED1B24;
+    cursor: pointer;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out;
+
+}
+.btn_add_with_whatsapp:hover{
+    color: #fff;
+    background-color: #ED1B24;
+    transition: color .35s ease-in-out,background-color .35s ease-in-out;
+  }
+
 
   .btn_add_text_whatsapp{
     font-family: 'NeutraText';

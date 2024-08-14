@@ -189,7 +189,8 @@
       "rowGap": 0
     },
     "children": [
-      "condition-layout.product#cond1"
+      "condition-layout.product#cond1",
+      "addi-infos"
     ]
   },
   "flex-layout.row#product-name": {

@@ -17,16 +17,17 @@
   "flex-layout.col#faq": {
     "children": [
       "rich-text#faq",
-      "disclosure-layout-group#group"
+      "disclosure-layout-group#group-faq"
     ]
   },
+
   "rich-text#faq": {
     "props": {
       "text": "## FAQ"
     }
   },
 
-  "disclosure-layout-group#group": {
+  "disclosure-layout-group#group-faq": {
     "children": [
       "disclosure-layout#first",
       "disclosure-layout#second",
@@ -41,6 +42,7 @@
     },
     "children": ["disclosure-trigger#first", "disclosure-content#first"]
   },
+
   "disclosure-trigger#first": {
     "props": {
       "blockClass": "question",

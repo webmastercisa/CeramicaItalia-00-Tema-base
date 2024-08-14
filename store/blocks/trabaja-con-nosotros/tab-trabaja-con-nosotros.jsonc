@@ -54,14 +54,14 @@
     "disclosure-layout#simple": {
       "children": ["disclosure-trigger#simple", "disclosure-content#simple"],
       "props": {
-        
+
       }
     },
     "disclosure-trigger#simple": {
       "children": ["rich-text#btn1-postularme"]
     },
 
-    "flex-layout.row#container-btn1-postularme": {
+    "flex-layout.row#container-btn1-postularme2": {
       "children": ["rich-text#btn1-postularme"],
       "props": {
         "blockClass": ["container-btn1"]

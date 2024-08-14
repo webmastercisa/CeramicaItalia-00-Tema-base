@@ -143,7 +143,46 @@
       "showNavigationArrows": true,
       "hiddenImages": "Vitrina"
     }
+  },
+  /** === Bloque de revisiones ===**/
+  "product-reviews":
+  {
+    "title": "Reviews and Ratings",
+    "render": "client",
+    "props": {
+      "text": "Review Hoy",
+      "blockClass": "text-toDay"
+    },
+    "blocks":[]
+  },
+  "product-rating-summary":
+  {
+    "title": "Reviews and Ratings",
+    "render": "client",
+    "props": {
+      "text": "Review Hoy",
+      "blockClass": "text-toDay"
+    },
+    "blocks":[]
+  },
+
+
+  "product-rating-inline":
+  {
+    "title": "Reviews and Ratings",
+    "render": "client",
+    "props": {
+      "text": "Review Hoy",
+      "blockClass": "text-toDay"
+    },
+    "blocks":[]
   }
+
+
+
+
+
+
 
 
 
