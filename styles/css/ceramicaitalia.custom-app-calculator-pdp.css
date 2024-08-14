@@ -74,12 +74,12 @@
     width: 100%;
 }
 .content_modal_met_text{
-    font-family: 'NeutraText';
+    font-family: Adobe Clean;
     color: #ED1B24;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 350;
     cursor: pointer;
-    padding: 5px 0;
+    padding: 10px 0;
     font-style: normal;
     line-height: normal;
 }
