@@ -189,7 +189,8 @@
       "rowGap": 0
     },
     "children": [
-      "condition-layout.product#cond1"
+      "condition-layout.product#cond1",
+      "addi-infos"
     ]
   },
   "flex-layout.row#product-name": {
@@ -339,6 +340,21 @@
       }
     }
   },
+
+  "flex-layout.row#buy-button2-pdp": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7,
+      "text": "Envío Gratis",
+      "blockClass": "btn-pdp"
+    },
+    "children": [
+      "add-to-cart-button"
+    ]
+  },
+
+  
+
   "flex-layout.row#buy-button-pdp": {
     "props": {
       "marginTop": 4,
@@ -346,7 +362,8 @@
       "blockClass": "btn-pdp"
     },
     "children": [
-      "add-to-cart-button"
+      "add-to-cart-button",
+      "flex-layout.row#buy-button2-pdp"
     ]
   },
   "flex-layout.row#container-atributos": {

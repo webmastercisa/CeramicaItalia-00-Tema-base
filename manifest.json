@@ -1,7 +1,7 @@
 {
   "vendor": "ceramicaitalia",
   "name": "xtrategik-tema-ceramicaitalia",
-  "version": "3.0.141",
+  "version": "4.0.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -82,7 +82,8 @@
     "vtex.wish-list": "1.x",
     "ceramicaitalia.custom-app-calculator-pdp": "0.x",
     "vtex.availability-notify": "1.x",
-    "ceramicaitalia.map-custom-app": "0.x"
+    "ceramicaitalia.map-custom-app": "0.x",
+    "addi.product-page-action": "1.x"
   },
   "serverCache": {
     "maxUploadSize": "50mb"

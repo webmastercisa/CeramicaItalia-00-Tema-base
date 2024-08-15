@@ -15,11 +15,11 @@
   },
   "flex-layout.row#Footer-Xtrategik-CT": {
     "children": [
-      "rich-text#TextoDerechos",
+      "rich-text#TextoDerechos"/*,
       "rich-text#TextoXtrategik",
       "image#xtrategik-logo",
       "rich-text#TextoTecnologiaVTEX",
-      "image#vtex-logo"
+      "image#vtex-logo"*/
     ],
     "props": {
       "blockClass": "Footer-Xtrategik-CT",
@@ -35,7 +35,7 @@
   },
   "rich-text#TextoDerechos": {
     "props": {
-      "text": "© Copyright 2023 Cerámica Italia S.A. - Todos los derechos reservados",
+      "text": "© Copyright 2024 Cerámica Italia S.A. - Todos los derechos reservados",
       "blockClass": "CopyrigthTextoXtrategik",
       "textAlignment": "LEFT",
       "textPosition": "LEFT"
