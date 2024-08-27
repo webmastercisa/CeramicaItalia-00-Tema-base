@@ -353,7 +353,7 @@
     ]
   },
 
-  
+
 
   "flex-layout.row#buy-button-pdp": {
     "props": {
@@ -362,8 +362,8 @@
       "blockClass": "btn-pdp"
     },
     "children": [
-      "add-to-cart-button",
-      "flex-layout.row#buy-button2-pdp"
+      "add-to-cart-button"
+      //"flex-layout.row#buy-button2-pdp"  Segundo botón de añadir al carrito en baños y sanitarios
     ]
   },
   "flex-layout.row#container-atributos": {
