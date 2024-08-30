@@ -265,8 +265,7 @@
       // "flex-layout.row#buy-button-pdp",
       "flex-layout.row#availability",
       "vtex.menu@2.x:menu#menu-pdp",
-      "flex-layout.row#container-atributos",
-      "flex-layout.row#container-iconos-final-pdp"
+      "flex-layout.row#container-atributos"
     ],
     "props": {
       "blockClass": [
@@ -293,6 +292,7 @@
       ]
     }
   },
+
   "image#pagos-pdp": {
     "props": {
       "src": "assets/imgs/pagos-logos.svg",
@@ -301,6 +301,7 @@
       "blockClass": "pagos-pdp"
     }
   },
+
   "flex-layout.row#container-envio-gratis": {
     "children": [
       "image#envio-gratis-pdp",
@@ -314,6 +315,7 @@
       "preserveLayoutOnMobile": true
     }
   },
+
   "image#envio-gratis-pdp": {
     "props": {
       "src": "assets/ico/home/carrito-ceramica.svg",
@@ -402,16 +404,16 @@
       "blockClass": "atributos-pdp"
     }
   },
+
+  //=============  Fila Necesitas ayuda  ===============
   "flex-layout.row#container-iconos-final-pdp": {
     "children": [
       "flex-layout.row#icono-ayuda",
-      // "flex-layout.row#icono-comprar"
+      //"flex-layout.row#icono-comprar",
       "condition-layout.product#cond-como-comprar"
     ],
     "props": {
-      "blockClass": [
-        "container-iconos-final-pdp"
-      ],
+      "blockClass": ["container-atributos"],
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true
     }
@@ -449,6 +451,8 @@
       }
     }
   },
+
+
   // condicional como comprar
   "condition-layout.product#cond-como-comprar": {
     "props": {
@@ -542,6 +546,7 @@
       "Then": "flex-layout.row#icono-comprar"
     }
   },
+
   "flex-layout.row#icono-comprar": {
     "children": [
       "rich-text#texto-comprar",
@@ -576,6 +581,48 @@
       }
     }
   },
+
+  //=============  Fila Boton Perfilamiento  ===============
+  "flex-layout.row#container-boton-perfilamiento": {
+    "children": ["flex-layout.row#boton-perfilamiento"],
+    //"children": ["image#icono-boton-perfilamiento"],
+    "props": {
+      "blockClass": ["container-iconos-final-pdp"],
+      "fullWidth": true
+      //"preventHorizontalStretch": true,
+      //"preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#boton-perfilamiento": {
+    "children": [
+      "image#icono-boton-perfilamiento"
+    ],
+    "props": {
+      "blockClass": ["icono-ayuda"],
+      "fullWidth": true,
+      //"preventHorizontalStretch": false,
+      "preserveLayoutOnMobile": true
+      // "width": "55%"
+    }
+  },
+
+  "image#icono-boton-perfilamiento": {
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/d37b5d61-f36c-4a4b-abc2-ea9eba4a4cee___7070cf7c5b0e5b1c958c4bb0992e4071.png",
+      "alt": "CISA perfilamiento",
+      //  "height": "hight",
+      "blockClass": "banner-pdp-mobile",
+      "link": {
+        "url": "/perfilamiento",
+        "openNewTab": false,
+        "title": "title"
+      }
+    }
+  },
+
+
+
+
   "flex-layout.row#container-banner-pdp": {
     "children": [
       "image#banner-pdp"
