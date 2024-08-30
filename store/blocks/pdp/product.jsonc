@@ -3,6 +3,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "product-reviews",
       "flex-layout.row#InfoExtraPDP"
       // "responsive-layout.desktop#banner-final-pdp",
       // "responsive-layout.mobile#banner-final-pdp"

@@ -395,8 +395,6 @@
         }
     },
 
-
-
     "flex-layout.col#bloque-nombre-referencia": {
       "children": ["flex-layout.row#product-name",
       "product-identifier.product"],
@@ -419,19 +417,20 @@
             "product-images#mobile"
         ]
       },
-      "product-images#mobile": {
-        "props": {
-            "blockClass":"main-product__image-container",
-          "aspectRatio": {
-            "desktop": "auto",
-            "phone": "auto"
-          },
-          "hiddenImages": ["Vitrina", "Color"],
-          "thumbnailsOrientation": "horizontal",
-          "displayThumbnailsArrows": true,
-          "thumbnailAspectRatio" : "1:1",
-          "showNavigationArrows": false
-        }
+
+    "product-images#mobile": {
+      "props": {
+          "blockClass":"main-product__image-container",
+        "aspectRatio": {
+          "desktop": "auto",
+          "phone": "auto"
+        },
+        "hiddenImages": ["Vitrina", "Color"],
+        "thumbnailsOrientation": "horizontal",
+        "displayThumbnailsArrows": true,
+        "thumbnailAspectRatio" : "1:1",
+        "showNavigationArrows": false
       }
+    }
 
 }
