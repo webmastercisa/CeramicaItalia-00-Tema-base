@@ -126,7 +126,8 @@
             // "flex-layout.row#container-descripcion-corta",
             "custom-app-calculator",
             "flex-layout.row#container-atributos",
-            "flex-layout.row#container-iconos-final-pdp"
+            "flex-layout.row#container-iconos-final-pdp",
+            "flex-layout.row#container-boton-perfilamiento"
         ],
         "props": {
             "blockClass": [
@@ -161,7 +162,8 @@
             "flex-layout.row#container-pagos-pdp",
             "flex-layout.row#buy-button-pdp",
             "flex-layout.row#container-atributos",
-            "flex-layout.row#container-iconos-final-pdp"
+            "flex-layout.row#container-iconos-final-pdp",
+            "flex-layout.row#container-boton-perfilamiento"
         ],
         "props": {
             "blockClass": [
@@ -350,7 +352,8 @@
             // "flex-layout.row#container-descripcion-corta",
             "vtex.menu@2.x:menu#menu-pdp",
             "flex-layout.row#container-atributos",
-            "flex-layout.row#container-iconos-final-pdp"
+            "flex-layout.row#container-iconos-final-pdp",
+            "flex-layout.row#container-boton-perfilamiento"
         ],
         "props": {
             "blockClass": [
@@ -379,7 +382,8 @@
             "flex-layout.row#buy-button-pdp",
             "vtex.menu@2.x:menu#menu-pdp",
             "flex-layout.row#container-atributos",
-            "flex-layout.row#container-iconos-final-pdp"
+            "flex-layout.row#container-iconos-final-pdp",
+            "flex-layout.row#container-boton-perfilamiento"
         ],
         "props": {
             "blockClass": [
