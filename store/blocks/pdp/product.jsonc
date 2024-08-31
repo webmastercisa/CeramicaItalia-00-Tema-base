@@ -3,8 +3,9 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "product-reviews",
-      "flex-layout.row#InfoExtraPDP"
+      "flex-layout.row#InfoExtraPDP",
+      "flex-layout.row#reviews"
+      //"product-reviews"
       // "responsive-layout.desktop#banner-final-pdp",
       // "responsive-layout.mobile#banner-final-pdp"
     ]
@@ -56,6 +57,24 @@
       "Else": "flex-layout.row#product-availability"
     }
   },
+
+  "flex-layout.row#reviews": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "container-pdp"
+    },
+    "children": [
+      // "responsive-layout.desktop#view-pdp-desktop",
+      // "responsive-layout.mobile#view-pdp-mobile"
+      "product-reviews"
+    ]
+  },
+
   "flex-layout.row#product-main": {
     "props": {
       "colGap": 7,
@@ -72,6 +91,7 @@
       "flex-layout.col#container-responsive-pdp"
     ]
   },
+
   "flex-layout.col#container-responsive-pdp": {
     "children": [
       "responsive-layout.desktop#view-pdp-desktop",
