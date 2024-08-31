@@ -3,6 +3,8 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      //"flex-layout.row#product-page-cross-selling",
+      "shelf.relatedProducts",
       "flex-layout.row#InfoExtraPDP",
       "flex-layout.row#reviews"
       //"product-reviews"
@@ -10,6 +12,8 @@
       // "responsive-layout.mobile#banner-final-pdp"
     ]
   },
+
+
   "responsive-layout.desktop#banner-final-pdp": {
     "children": [
       "flex-layout.row#container-banner-pdp"
