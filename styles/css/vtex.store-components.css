@@ -1271,3 +1271,13 @@ width: 100%;
     padding-right: 0 !important;
   }
 }
+
+/* ===================== IGarcia Iconos de colores con menos espacio =============================== */
+.skuSelectorItemImage
+{
+  padding: 0;
+  height: 28px !important;
+  width: 28px !important;
+  margin-bottom: -10px !important;
+  margin-top: -18px !important;
+}

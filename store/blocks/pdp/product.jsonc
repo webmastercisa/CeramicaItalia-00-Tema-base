@@ -607,44 +607,58 @@
     }
   },
 
+  //========================================================
   //=============  Fila Boton Perfilamiento  ===============
   "flex-layout.row#container-boton-perfilamiento": {
-    "children": ["flex-layout.row#boton-perfilamiento"],
+    "children": ["flex-layout.col#boton-perfilamiento"],
     //"children": ["image#icono-boton-perfilamiento"],
     "props": {
-      "blockClass": ["container-iconos-final-pdp"],
-      "fullWidth": true
+      "blockClass": [
+        "txt-center"
+      ],
+      "fullWidth": true,
+      "text-align": "center",
+      "width": "100%"
       //"preventHorizontalStretch": true,
       //"preserveLayoutOnMobile": true
-    }
-  },
-  "flex-layout.row#boton-perfilamiento": {
-    "children": [
-      "image#icono-boton-perfilamiento"
-    ],
-    "props": {
-      "blockClass": ["icono-ayuda"],
-      "fullWidth": true,
-      //"preventHorizontalStretch": false,
-      "preserveLayoutOnMobile": true
-      // "width": "55%"
+      //"image#icono-boton-perfilamiento"
     }
   },
 
+"flex-layout.col#boton-perfilamiento": {
+    "children": ["image#icono-boton-perfilamiento"],
+    "props": {
+      "blockClass": [
+        "txt-center"
+      ],
+      "fullWidth": true,
+      //"preventHorizontalStretch": false,
+      //"preserveLayoutOnMobile": true,
+      "text-align": "center",
+      "width": "100%"
+    }
+  },
+
+  // "cerrar-drawer-filter-navigator-v2"
+  //"img-trigger-todos-los-filtros"
+  //"linea-search"
+  //"liena-search-categoria"
+  //"img-row-textos-img-search-departamento"
   "image#icono-boton-perfilamiento": {
     "props": {
       "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/d37b5d61-f36c-4a4b-abc2-ea9eba4a4cee___7070cf7c5b0e5b1c958c4bb0992e4071.png",
       "alt": "CISA perfilamiento",
       //  "height": "hight",
-      "blockClass": "banner-pdp-mobile",
+      //"banner-pdp-mobile"
+      "blockClass": [],
       "link": {
         "url": "/perfilamiento",
         "openNewTab": false,
-        "title": "title"
+        "title": "Haga clic aquí para ir al Perfilador."
       }
     }
   },
-
+  // =================  Fin Botón perfilamiento  =======================
 
 
 
