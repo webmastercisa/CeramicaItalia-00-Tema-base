@@ -3329,3 +3329,13 @@ height: 520px;
     zoom: 100%;
   }
 }
+/* =================== igarcia =======================*/
+/* ====== Centrar contenido dentro del flex Row y Col =======*/
+.flexRow--txt-center
+{
+  text-align: center;
+}
+.flexCol--txt-center
+{
+  text-align: center;
+}
