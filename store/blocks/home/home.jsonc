@@ -125,9 +125,9 @@
   },
   "image#ico-btn-whatsapp": {
     "props": {
-      "src": "assets/ico/whatsappIcon.svg",
-      "alt": "whatsapp",
-      "height": "59.7px",
+      "src": "https://cera789ed6433504997026f414.svg",
+      "alt": "Comunicación whatsapp",
+      "height": "100px", //"height": "59.7px",
       "blockClass": ["class", "ico-btn-whatsapp"],
       "link": {
         "url": "https://wa.me/5715141167",

@@ -1084,7 +1084,8 @@ width: 100%;
   }
 
   .imageElement--ico-btn-whatsapp {
-    height: 45px !important;
+    height: 100px !important;
+    /*height: 45px !important;*/
   }
 
   .imageElement--ico-btn-CallCenter {
