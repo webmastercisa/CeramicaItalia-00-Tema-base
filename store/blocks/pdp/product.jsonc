@@ -4,8 +4,9 @@
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       //"flex-layout.row#product-page-cross-selling",
-      "shelf.relatedProducts",
       "flex-layout.row#InfoExtraPDP",
+      "shelf.relatedProducts",
+      "shelf.relatedProducts",
       "flex-layout.row#reviews"
       //"product-reviews"
       // "responsive-layout.desktop#banner-final-pdp",
