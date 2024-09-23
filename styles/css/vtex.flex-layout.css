@@ -2698,7 +2698,7 @@ height: 520px;
     position: fixed;
     bottom: 30px;
     z-index: 99;
-    right: -39vw;
+    right: -56vw;
   }
 
   .flexRow--shelf-general :global(.vtex-store-components-3-x-container) {
