@@ -1086,24 +1086,24 @@ width: 100%;
   }
 
   .imageElement--ico-btn-whatsapp {
-    height: 100px !important;
+    height: 80px !important;
     /*height: 45px !important;*/
   }
 
-   .class 
+   .class
    {
       height: 100px !important;
    }
 
-  @media (min-width:1025px) 
+  @media (min-width:1025px)
   {
-    .imageElement--ico-btn-whatsapp 
+    .imageElement--ico-btn-whatsapp
     {
       height: 100px !important;
       /*height: 45px !important;*/
     }
 
-    .class 
+    .class
     {
       height: 100px !important;
     }

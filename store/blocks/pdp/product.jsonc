@@ -6,7 +6,7 @@
       //"flex-layout.row#product-page-cross-selling",
       "flex-layout.row#InfoExtraPDP",
       "shelf.relatedProducts",
-      "shelf.relatedProducts",
+      "shelf.relatedProducts#segunda",
       "flex-layout.row#reviews"
       //"product-reviews"
       // "responsive-layout.desktop#banner-final-pdp",

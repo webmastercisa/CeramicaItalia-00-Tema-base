@@ -51,6 +51,46 @@
         ]
     },
 
+
+
+
+
+    //Productos relacionados
+    "shelf.relatedProducts#segunda": {
+      "props": {
+          "blockClass": "productos-relacionados",
+          "recommendation": "buy",
+          "hideOutOfStockItems": true,
+          "paddingBottom": 10,
+          "productList": {
+              "titleText": "Te puede interesar... y mucho",
+              "scroll": "BY_PAGE",
+              "showTitle": false,
+              "arrows": false,
+              "itemsPerPage": 4,
+              "minItemsPerPage": 2,
+              "maxItems": 18,
+              "navigationStep": "itemsPerPage",
+              "slideTransition": {
+                  "speed": 400,
+                  "delay": 0,
+                  "timing": 0
+              },
+              "autoplay": {
+                  "timeout": 5000,
+                  "stopOnHover": true
+              }
+          }
+      },
+      "blocks": [
+          "product-summary.shelf#crossSelling"
+      ]
+  },
+
+
+
+
+
     "product-summary.shelf#crossSelling": {
         "children": [
           "stack-layout#prodsum",
@@ -61,4 +101,6 @@
           "add-to-cart-button"
         ]
       }
+
+
 }
