@@ -397,11 +397,14 @@
     font-size: 12px;
     font-weight: 600;
     color: #FFF;
-    padding: 8px 0;
+    padding: 0px 0;
   }
 
   .styledLinkContainer--menuTopMenu-mobile {
-    margin: 0 10px;
+    margin: 0 5px;
+    /** nuevo 24.09.23 igarcia ajuste cintilla superior **/
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
   }
 
   .menuContainer--preHeader-mobile {

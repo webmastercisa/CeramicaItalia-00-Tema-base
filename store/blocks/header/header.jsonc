@@ -114,7 +114,7 @@
   "flex-layout.row#container-iconoes-header": {
     "children": [
       "flex-layout.row#container-logoUSA",
-      "login", 
+      "login",
       "minicart.v2"
     ],
     "props": {

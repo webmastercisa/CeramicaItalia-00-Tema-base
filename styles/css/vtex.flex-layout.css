@@ -31,8 +31,11 @@
 .flexRow--btnWhatsApp {
   position: fixed;
   bottom: 30px;
-  right: -1160px;
+  /*right: -1160px;*/
+  right: -1072px;
   z-index: 99;
+  height: 97px !important;
+  margin-right:15px !important;
 }
 
 /* Btn Call Center*/
@@ -2695,7 +2698,7 @@ height: 520px;
     position: fixed;
     bottom: 30px;
     z-index: 99;
-    right: -85vw;
+    right: -39vw;
   }
 
   .flexRow--shelf-general :global(.vtex-store-components-3-x-container) {
