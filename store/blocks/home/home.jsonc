@@ -6,7 +6,6 @@
       "flex-layout.row#product-featured",
       "__fold__.mobile",
       "flex-layout.row#shelf",
-      "connectif#test-connectif-block",
       "responsive-layout.desktop#seasonProduct",
       "responsive-layout.mobile#seasonProduct",
       "responsive-layout.desktop#section-inspireInfocard-2",
@@ -291,14 +290,6 @@
       "blockClass": "row-shelf-container"
     }
   },
-
-  "connectif#test-connectif-block": {
-    "props": {
-    "classId": "test-connectif-block",
-    "elementId": "test-connectif-block-elem-id"
-    }
-  },
-
 
   "list-context.product-list#demo1": {
     "blocks": [
