@@ -9,7 +9,8 @@
   },
   "sticky-layout#1-mobile": {
     "children": [
-      "flex-layout.row#1-mobile"
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#1x-mobile"
     ]
   },
   "flex-layout.row#1-mobile": {
@@ -26,6 +27,21 @@
       "fullWidth": true
     }
   },
+
+  "flex-layout.row#1x-mobile": {
+      "children": [
+        "search-bar"
+      ],
+      "props": {
+        "blockClass": "main-header-mobile",
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true,
+        "fullWidth": true
+      }
+    },
+
+
+
   "drawer#mobile-major": {
     "props":{
       "customPixelEventId": "ModalMenu",
@@ -33,7 +49,7 @@
     },
     "children": [
       "drawer-header#my-drawer",
-      "search-bar",
+      //"search-bar",
       // "search-bar#modificado",
       // "flex-layout.row#storeLocator",
       // "flex-layout.row#container-nuestras-tiendas",
