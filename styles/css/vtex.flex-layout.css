@@ -2021,7 +2021,8 @@ width: auto !important; */
   align-items: center;
 }
 
-.flexRow--ResultadoProductos {
+.flexRow--ResultadoProductos
+{
   /* border-top: 1px solid lightgray; */
 }
 
@@ -2720,7 +2721,7 @@ height: 520px;
   }
 
   .flexRowContent--main-header-mobile {
-    height: 75px;
+    height: 57px;/*75px;*/
     background: #FFF;
     display: flex;
     gap: 20px;

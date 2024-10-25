@@ -610,6 +610,7 @@
 
   //========================================================
   //=============  Fila Boton Perfilamiento  ===============
+  /*
   "flex-layout.row#container-boton-perfilamiento": {
     "children": ["flex-layout.col#boton-perfilamiento"],
     //"children": ["image#icono-boton-perfilamiento"],
@@ -640,11 +641,13 @@
     }
   },
 
+
   // "cerrar-drawer-filter-navigator-v2"
   //"img-trigger-todos-los-filtros"
   //"linea-search"
   //"liena-search-categoria"
   //"img-row-textos-img-search-departamento"
+  /*
   "image#icono-boton-perfilamiento": {
     "props": {
       "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/d37b5d61-f36c-4a4b-abc2-ea9eba4a4cee___7070cf7c5b0e5b1c958c4bb0992e4071.png",
@@ -659,6 +662,7 @@
       }
     }
   },
+  */
   // =================  Fin Botón perfilamiento  =======================
 
 
