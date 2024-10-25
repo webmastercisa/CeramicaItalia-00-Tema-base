@@ -909,7 +909,7 @@ width: 100%;
 
   .portalContainer--searchBarIcon :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
     width: 50vw !important;
-    top: -7vw;
+    top: -9vw; /* igarcia*/
     position: relative;
   }
 
