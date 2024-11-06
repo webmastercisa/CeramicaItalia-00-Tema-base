@@ -4,6 +4,7 @@
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       //"flex-layout.row#product-page-cross-selling",
+      "flex-layout.row#roomvo",
       "flex-layout.row#InfoExtraPDP",
       "shelf.relatedProducts",
       "shelf.relatedProducts#segunda",

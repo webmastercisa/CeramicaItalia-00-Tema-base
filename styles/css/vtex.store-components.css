@@ -546,6 +546,24 @@
   padding-top: 8px;
 }
 
+.imageElement--ico-bandera-col
+{
+  padding-top: 8px;
+  width: 35px;
+  height: 24px;
+  background-image: url(assets/imgs/bandera_col.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.imageElement--ico-bandera-col:hover {
+  /* content: url("assets/ico/home/fav-act.svg"); */
+  background-image: url(assets/imgs/bandera_col_h.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+
 .sizeDesktop {
   padding-right: 0px;
   padding-left: 0px;
@@ -874,13 +892,29 @@ width: 100%;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
 }
 
-.imageElementLink--logoUSA {
-  height: fit-content;
-  margin-top: 10px;
+.imageElementLink--logoUSA
+{
+  height: 100px !important;/*fit-content;*/
+  /*margin-top: 5px;*/
 }
 
-.imageElement--logoUSA {
-  width: 40px;
+.imageElement--logoUSA
+{
+  /*width: 240px;/*width: 96px*/
+  /*height:30px !important;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+  justify-content: flex-start;
+  background: transparent;
+
+  box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.45);
+  position:static;
+  width: 408px !important;
+  height:42px !important;
+  border-radius: 5px;
 }
 .PaymentMethod{
   font-family: 'NeutraText';
@@ -920,38 +954,37 @@ width: 100%;
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px)
+{
+  .imageElement--logoUSA
+  {
+    height: 40px !important;
+  }
 
-  .imageElement--logoUSA {
-    height: 25px !important;
-}
+  .imageElementLink--logoUSA
+  {
+      height: min-content;
+      /* margin-top: 4px; */
+  }
 
+    .logoLink--logoRedes1 {
+      width: fit-content !important;
+  }
 
+    .logoContainer--logoSic{
+      max-width: none;
+      min-height: auto;
+      min-width: auto;
+  }
 
+    .logoImage--logoSic{
+      width: 150px;
+  }
 
-.imageElementLink--logoUSA {
-    height: min-content;
-    /* margin-top: 4px; */
-}
-
-  .logoLink--logoRedes1 {
-    width: fit-content !important;
-}
-
-  .logoContainer--logoSic{
-    max-width: none;
-    min-height: auto;
-    min-width: auto;
-}
-
-  .logoImage--logoSic{
-    width: 150px;
-}
-
-.logoContainer--logoRedes1 {
-    min-width: auto;
-    width: fit-content;
-}
+  .logoContainer--logoRedes1 {
+      min-width: auto;
+      width: fit-content;
+  }
 
   .download--Link {
     padding: 0px;
@@ -967,19 +1000,19 @@ width: 100%;
 
   .bannerPDPMobile {
     width: 100vw;
-}
+  }
 
   .bannerPDPMobileContent {
     display: block;
-}
+  }
 
-.bannerPDPDesktopContent{
-  display: none;
-}
+  .bannerPDPDesktopContent{
+    display: none;
+  }
 
   .BloqueSecundarioVideo-iframe {
     width: 100vw;
-}
+  }
 
   .productImageTag--main{
     border-radius: 0px !important;
