@@ -3343,3 +3343,8 @@ height: 520px;
 {
   text-align: center;
 }
+
+.flexRow--roomvo
+{
+  display: none;
+}

@@ -1,4 +1,50 @@
 {
+  "flex-layout.row#roomvo":
+  {
+    "children": [
+      "flex-layout.col#roomvo-desktop",
+      "flex-layout.col#roomvo-mobile"
+    ],
+    "props": {
+      "blockClass": "roomvo"
+    }
+  },
+
+  "flex-layout.col#roomvo-desktop": {
+    "children": ["image#logoUSA"],
+    "props": {
+      "blockClass": "roomvo-lite-container-desktop",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+
+  "flex-layout.col#roomvo-mobile": {
+    "children": ["image#logoUSA"],
+    "props": {
+      "blockClass": "roomvo-lite-container-mobile",
+      "fulwidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "paddingTop": 0,
+      "paddingBottom": 0
+    }
+  },
+
+  /*=========== Fin Roomvo ====*/
+
+
+
+
   "flex-layout.row#InfoExtraPDP": {
     "children": [
       "flex-layout.col#InfoExtraPDP"

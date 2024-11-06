@@ -17,7 +17,8 @@
     "children": [
       "drawer#mobile-major",
       "logo#mobile",
-      "image#ico-favoritos",
+      //"image#ico-idioma_esp",
+      "vtex.menu@2.x:menu#idioma",
       "minicart.v2"
     ],
     "props": {
@@ -176,6 +177,7 @@
       "autocomplete-result-list.v2#modificado"
     ]
   },
+
   "autocomplete-result-list.v2#modificado": {
     "blocks": [
       "product-summary.shelf#general"
