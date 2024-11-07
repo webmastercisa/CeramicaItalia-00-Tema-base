@@ -94,6 +94,28 @@
   width: 80px;
 }
 
+
+.styledLinkContent--bandera-col:hover
+{
+  background-image: url('assets/imgs/bandera_col_h.png');
+}
+
+/*
+.bandera-col :global(.vtex-menu-2-x-menuItem--isOpen):hover
+{
+  background-image: url('assets/imgs/bandera_col_h.png');
+  background: linear-gradient(80deg, rgba(255, 253, 253, 1) 0%, rgba(205, 203, 203, 1) 100%);
+}
+  */
+/*
+.bandera-col:hover
+{
+  background-image: url('assets/imgs/bandera_col_h.png');
+  background-repeat: no-repeat, repeat;
+  padding-left: -15px;
+}*/
+
+
 /*
 .styledLinkContent--bandera-col
 {

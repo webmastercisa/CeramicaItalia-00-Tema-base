@@ -5,13 +5,10 @@
       "flex-layout.col#roomvo-desktop",
       "flex-layout.col#roomvo-mobile"
     ],
-    "props": {
-      "blockClass": "roomvo"
-    }
+    "props": {"blockClass": "roomvo"}
   },
 
   "flex-layout.col#roomvo-desktop": {
-    "children": ["image#logoUSA"],
     "props": {
       "blockClass": "roomvo-lite-container-desktop",
       "fulwidth": true,
@@ -26,7 +23,6 @@
   },
 
   "flex-layout.col#roomvo-mobile": {
-    "children": ["image#logoUSA"],
     "props": {
       "blockClass": "roomvo-lite-container-mobile",
       "fulwidth": true,

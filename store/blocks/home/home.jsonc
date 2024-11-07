@@ -8,6 +8,7 @@
       "flex-layout.row#shelf",
       "responsive-layout.desktop#seasonProduct",
       "responsive-layout.mobile#seasonProduct",
+      "connectif#test-connectif-block",
       "responsive-layout.desktop#section-inspireInfocard-2",
       "responsive-layout.mobile#section-inspireInfocard-2-mobile",
       "responsive-layout.desktop#colorPalette-section",
@@ -1001,5 +1002,15 @@
       "submitButtonLabel": "Suscribirme",
       "width": "40%"
     }
+  },
+
+"connectif#test-connectif-block":
+{
+  "props":
+  {
+    "classId": "test-connectif-block",
+    "elementId": "test-connectif-block-elem-id"
   }
+}
+
 }
