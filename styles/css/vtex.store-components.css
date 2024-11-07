@@ -542,7 +542,8 @@
   padding-top: 6px;
 }
 
-.imageElement--ico-favoritos {
+.imageElement--ico-favoritos
+{
   padding-top: 8px;
 }
 
@@ -556,7 +557,8 @@
   background-position: bottom;
 }
 
-.imageElement--ico-bandera-col:hover {
+.imageElement--ico-bandera-col:hover
+{
   /* content: url("assets/ico/home/fav-act.svg"); */
   background-image: url(assets/imgs/bandera_col_h.png);
   background-repeat: no-repeat;
@@ -564,23 +566,26 @@
 }
 
 
-.sizeDesktop {
+.sizeDesktop
+{
   padding-right: 0px;
   padding-left: 0px;
 }
 
-.searchBarContainer {
+.searchBarContainer
+{
   align-items: center !important;
   display: flex !important;
 }
 
-
-.imageElement--ico-favoritos {
+.imageElement--ico-favoritos
+{
   width: 35px;
   height: 24px;
 }
 
-.imageElement--ico-favoritos {
+.imageElement--ico-favoritos
+{
   background-image: url(assets/ico/home/fav-desact.svg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -865,6 +870,7 @@ width: 100%;
   font-weight: bold;
   display: block;
 }
+
 .BloqueSecundarioParrafo{
   text-align: justify;
 }
