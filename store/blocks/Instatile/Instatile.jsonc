@@ -2,7 +2,7 @@
     "store.custom#Instatile": {
         "blocks": [
             "flex-layout.row#miga-pan-instatile",
-            "flex-layout.row#container-instatile",
+            "flex-layout.row#visualizador-contenedor",
             "flex-layout.row#container-newsletter2"
         ]
     },
@@ -19,27 +19,412 @@
             ]
         }
     },
-    // TEXTO 2 MIGA DE PAN 
+    // TEXTO 2 MIGA DE PAN
     "rich-text#texto-2-miga-pan-instatile": {
         "props": {
-            "blockClass": [
-                "texto-2-miga-pan"
-            ],
-            "text": "[Instatile](/Instatile)",
+            "blockClass": ["texto-2-miga-pan"],
+            "text": "[Visualizador](/visualizador)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
         }
     },
-    "flex-layout.row#container-instatile": {
-        "children": [
-            "flex-layout.col#container-texts",
-            "flex-layout.col#container-video"
-        ],
-        "props": {
-            "blockClass": "container-instatile",
-            "fulwidth": false
+
+
+
+
+
+
+    "flex-layout.row#visualizador-contenedor":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "flex-layout.col#visualizador-contenedor"],
+        "props":    { "blockClass": "visualizador-contenedor", "fulwidth": false }
+    },
+
+    "flex-layout.col#visualizador-contenedor":
+    {
+      "children": [
+        "flex-layout.row#visualizador-contenedor_fila1",
+        "flex-layout.row#visualizador-contenedor_fila2",
+        "flex-layout.row#visualizador-contenedor_fila3",
+        "flex-layout.row#visualizador-contenedor_fila4",
+        "flex-layout.row#visualizador-contenedor_fila5",
+        "flex-layout.row#visualizador-contenedor_fila6"
+      ],
+      "props":
+      {
+          /*"blockClass": "visualizador-colcolor1",*/
+          "fulwidth": true,
+          "preventVerticalStretch": true
+      }
+    },
+
+    //=======================  Fila 1 =======================
+    "flex-layout.row#visualizador-contenedor_fila1":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "flex-layout.col#visualizador-contenedor_fila1"],
+        "props":
+        { "blockClass": "visualizador-contenedor_fila1",
+          "fulwidth": false
         }
     },
+
+    "flex-layout.col#visualizador-contenedor_fila1":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "image#visualizador-image_f1c1"],
+        "props":
+        {
+          "blockClass": "visualizador-colimg", "fulwidth": false,
+          "width": "100%",
+          "link": {
+            "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+            "openNewTab": true,
+            "title": "Visualizador"
+     }
+        }
+    },
+
+    "image#visualizador-image_f1c1":
+    {
+      "props": {
+           "src": "assets/imgs/visu_fila1_col1.jpg",
+           "alt": "visualizador - Ceramica Italia Corp.",
+           /*"height": "90px",*/
+           "width": "100%",
+           "link": {
+               "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+               "openNewTab": true,
+               "title": "Visualizador"
+        }
+      }
+    },
+
+    //=======================  Fila 2 =======================
+    "flex-layout.row#visualizador-contenedor_fila2":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [  "flex-layout.col#visualizador-contenedor_fila2_col1",
+                       "flex-layout.col#visualizador-contenedor_fila2_col2"],
+        "props":    { "blockClass": "visualizador-contenedor_fila1", "fulwidth": false }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila2_col1":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "image#visualizador-image_f2c1"],
+        "props":
+        {
+          "blockClass": "visualizador-spc-r", "fulwidth": false,
+          "link":
+          {
+            "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+            "openNewTab": true,
+            "title": "Visualizador"
+          }
+        }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila2_col2":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "image#visualizador-image_f2c2"],
+        "props":
+        {
+          "blockClass": "visualizador-spc-l", "fulwidth": false,
+          "link": {
+            "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+            "openNewTab": true,
+            "title": "Visualizador"
+     }
+        }
+    },
+
+    "image#visualizador-image_f2c1":
+    {
+      "props": {
+           "src": "assets/imgs/visu_fila2_col1.jpg",
+           "alt": "visualizador - Ceramica Italia Corp.",
+           /*"height": "90px",*/
+           "blockClass": ""
+      }
+    },
+
+    "image#visualizador-image_f2c2":
+    {
+      "props": {
+           "src": "assets/imgs/visu_fila2_col2.gif",
+           "alt": "visualizador - Ceramica Italia Corp.",
+           /*"height": "90px",*/
+           "blockClass": ""
+      }
+    },
+
+    //=======================  Fila 3 =======================
+    "flex-layout.row#visualizador-contenedor_fila3":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "flex-layout.col#visualizador-contenedor_fila3"],
+        "props":    { "blockClass": "visualizador-contenedor_fila1", "fulwidth": false }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila3":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "image#visualizador-image_f3c1"],
+        "props":
+        {
+          "blockClass": "", "fulwidth": false,
+          "width": "35%",
+          "link":
+          {
+            "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+            "openNewTab": true,
+            "title": "Visualizador"
+          }
+        }
+    },
+
+    "image#visualizador-image_f3c1":
+    {
+      "props":
+      {
+          "src": "assets/imgs/visu_fila3_col1.png",
+          "alt": "visualizador - Ceramica Italia Corp.",
+          "blockClass": "",
+          "link":
+          {
+              "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+              "openNewTab": true,
+              "title": "Visualizador"
+        }
+      }
+    },
+
+    //=======================  Fila 4 =======================
+    "flex-layout.row#visualizador-contenedor_fila4":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [
+                      "flex-layout.col#visualizador-contenedor_fila4-col1",
+                      "flex-layout.col#visualizador-contenedor_fila4-col2"
+                    ],
+        "props":    { "blockClass": "visualizador-contenedor_fila1", "fulwidth": false }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila4-col1":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "video#instatile-video"],
+        "props":
+        {
+          "blockClass": "visualizador-colimg", "fulwidth": false,
+          "margin-right":"20px",
+          "link":
+          {
+            "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+            "openNewTab": true,
+            "title": "Visualizador"
+          }
+        }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila4-col2":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": ["image#visualizador-image_f4c2"],
+        "props":
+        {
+          "blockClass": "visualizador-spc-l", "fulwidth": false,
+          "link":
+          {
+            "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+            "openNewTab": true,
+            "title": "Visualizador"
+          }
+        }
+    },
+
+    "image#visualizador-image_f4c2":
+    {
+      "props": {
+           "src": "assets/imgs/visu_fila4_col2.png",
+           "alt": "visualizador - Ceramica Italia Corp.",
+           /*"height": "90px",*/
+           "blockClass": ""
+      }
+    },
+
+    //=======================  Fila 5 =======================
+    "flex-layout.row#visualizador-contenedor_fila5":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "flex-layout.col#visualizador-contenedor_fila5"],
+        "props":    { "blockClass": "visualizador-contenedor_fila1", "fulwidth": false }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila5":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [ "image#visualizador-image_f5c1"],
+        "props":
+        {
+          "blockClass": "visualizador-colimg", "fulwidth": false,
+          "width": "100%",
+          "link":
+          {
+            "url": "https://www.ceramicaitalia.com/?roomvoStartVisualizer=true",
+            "openNewTab": true,
+            "title": "Visualizador"
+          }
+        }
+    },
+
+    "image#visualizador-image_f5c1":
+    {
+      "props":
+      {
+        "src": "assets/imgs/visu_fila5_col1.png",
+        "alt": "visualizador - Ceramica Italia Corp.",
+        /*"height": "90px",*/
+        "blockClass": ""
+      }
+    },
+
+    //=======================  Fila 6 =======================
+    "flex-layout.row#visualizador-contenedor_fila6":
+    {
+        /*"children": [ "flex-layout.col#container-texts", "flex-layout.col#container-video" ],*/
+        "children": [
+                      "flex-layout.col#visualizador-contenedor_fila6-1",
+                      "flex-layout.col#visualizador-contenedor_fila6-2",
+                      "flex-layout.col#visualizador-contenedor_fila6-3"
+                    ],
+        "props":
+        {
+          "height": "320px !important",
+          "blockClass": "visualizador-contenedor_fila6", "fulwidth": false
+        }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila6-1":
+    {
+        "children": [
+                      "image#visualizador-image_f6c1",
+                      "rich-text#visualizador-txt-title1",
+                      "rich-text#visualizador-txt-body1"
+                    ],
+        "props":
+        {
+
+          "blockClass": "visualizador-comentario", "fulwidth": false
+        }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila6-2":
+    {
+        "children": [
+                      "image#visualizador-image_f6c1",
+                      "rich-text#visualizador-txt-title2",
+                      "rich-text#visualizador-txt-body2"
+                    ],
+        "props":
+        {
+          "blockClass": "visualizador-comentario", "fulwidth": false
+        }
+    },
+
+    "flex-layout.col#visualizador-contenedor_fila6-3":
+    {
+        "children": [
+                      "image#visualizador-image_f6c1",
+                      "rich-text#visualizador-txt-title3",
+                      "rich-text#visualizador-txt-body3"
+                    ],
+        "props":
+        {
+          "blockClass": "visualizador-comentario", "fulwidth": false
+        }
+    },
+
+    "image#visualizador-image_f6c1":
+    {
+      "props":
+      {
+        "src": "assets/imgs/visu_fila6_col1_comentario.png",
+        "alt": "visualizador - Ceramica Italia Corp.",
+        "blockClass": "visualizador-comentario-img", "fulwidth": false
+      }
+    },
+
+    "rich-text#visualizador-txt-title1":
+    {
+      "props":
+      {
+          "text": "Alexander Peña",
+          "blockClass": "visualizador-title",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+      }
+    },
+    "rich-text#visualizador-txt-title2":
+    {
+      "props":
+      {
+          "text": "Bermesio Sanchez Claro",
+          "blockClass": "visualizador-title",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+      }
+    },
+    "rich-text#visualizador-txt-title3":
+    {
+      "props":
+      {
+          "text": "Liliana Ropero Barbosa",
+          "blockClass": "visualizador-title",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+      }
+    },
+
+
+    "rich-text#visualizador-txt-body1":
+    {
+      "props":
+      {
+          "text": "Es increible esa tecnología, se ve muy real",
+          "blockClass": "visualizador-body",
+          "textPosition": "CENTER"
+      }
+    },
+    "rich-text#visualizador-txt-body2":
+    {
+      "props":
+      {
+          "text": "Subí la foto de mi casa y pude seleccionar el producto que más se adaptaba a mi hogar",
+          "blockClass": "visualizador-body",
+          "textPosition": "CENTER"
+      }
+    },
+    "rich-text#visualizador-txt-body3":
+    {
+      "props":
+      {
+          "text": "Me pareció muy interesante poder ver como si realmente fuera mi casa y ya hubiese seleccionado tenido el piso, es increible",
+          "blockClass": "visualizador-body",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+      }
+    },
+
+
+
+
+
+
+
     "flex-layout.col#container-texts": {
         "children": [
             "rich-text#instatile-title",
@@ -113,6 +498,7 @@
             "textPosition": "CENTER"
         }
     },
+
     "flex-layout.col#container-video": {
         "children": [
             "video#instatile-video"
@@ -134,6 +520,8 @@
             "blockClass": "instatile-video"
         }
     },
+
+
     //   "newsletter-form"
     "flex-layout.row#container-newsletter2": {
         "children": [
@@ -151,38 +539,38 @@
             "rich-text#text-newsletter2"
         ]
     },
-"flex-layout.row#container-input-newsletter2": {
-  "children": [
-      "flex-layout.row#input-name-newsletter2",
-    "flex-layout.row#input-email-newsletter2",
-    "flex-layout.row#btn-enviar-newsletter2"
-  ],
-  "props": {
-    "blockClass": ["container-input-newsletter2"]
-  }
-},
-"flex-layout.row#input-email-newsletter2": {
-  "children": ["newsletter-input-email#newsletter2"],
-  "props": {
-    "blockClass": ["input-email-newsletter2"],
-    "width": "42%"
-  }
-},
+    "flex-layout.row#container-input-newsletter2": {
+      "children": [
+          "flex-layout.row#input-name-newsletter2",
+        "flex-layout.row#input-email-newsletter2",
+        "flex-layout.row#btn-enviar-newsletter2"
+      ],
+      "props": {
+        "blockClass": ["container-input-newsletter2"]
+      }
+    },
+    "flex-layout.row#input-email-newsletter2": {
+      "children": ["newsletter-input-email#newsletter2"],
+      "props": {
+        "blockClass": ["input-email-newsletter2"],
+        "width": "42%"
+      }
+    },
 
-"flex-layout.row#input-name-newsletter2": {
-  "children": ["newsletter-input-name#newsletter2"],
-  "props": {
-    "blockClass": ["input-name-newsletter2"],
-    "width": "42%"
-  }
-},
+    "flex-layout.row#input-name-newsletter2": {
+      "children": ["newsletter-input-name#newsletter2"],
+      "props": {
+        "blockClass": ["input-name-newsletter2"],
+        "width": "42%"
+      }
+    },
 
-"flex-layout.row#btn-enviar-newsletter2": {
-  "children": ["newsletter-submit#newsletter2"],
-  "props": {
-    "blockClass": ["btn-enviar-newsletter2"]
-  }
-},
+    "flex-layout.row#btn-enviar-newsletter2": {
+      "children": ["newsletter-submit#newsletter2"],
+      "props": {
+        "blockClass": ["btn-enviar-newsletter2"]
+      }
+    },
     "newsletter-input-email#newsletter2": {
         "props": {
             "placeholderText": "Tu correo"

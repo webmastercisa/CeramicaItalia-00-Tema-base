@@ -1,16 +1,15 @@
 {
   "flex-layout.row#roomvo":
   {
-    "children": [
-      "flex-layout.col#roomvo-desktop",
-      "flex-layout.col#roomvo-mobile"
-    ],
+    "children": ["flex-layout.col#roomvo"],
     "props": {"blockClass": "roomvo"}
   },
 
-  "flex-layout.col#roomvo-desktop": {
+  "flex-layout.col#roomvo":
+  {
     "props": {
-      "blockClass": "roomvo-lite-container-desktop",
+      "blockClass": "roomvo-lite-container",
+      "height": "70px",
       "fulwidth": true,
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
@@ -21,24 +20,7 @@
       "paddingBottom": 0
     }
   },
-
-  "flex-layout.col#roomvo-mobile": {
-    "props": {
-      "blockClass": "roomvo-lite-container-mobile",
-      "fulwidth": true,
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "paddingTop": 0,
-      "paddingBottom": 0
-    }
-  },
-
   /*=========== Fin Roomvo ====*/
-
-
 
 
   "flex-layout.row#InfoExtraPDP": {
@@ -80,20 +62,20 @@
   },
 
   // condicional checkbox InfoExtraActivo
-"condition-layout.product#especificacion-InfoExtraActivo": {
-  "props": {
-      "conditions": [
-          {
-              "subject": "specificationProperties",
-              "arguments": {
-                  "name": "InfoExtraActivo",
-                  "value": "Sí"
-              }
-          }
-      ],
-      "Then": "flex-layout.row#CompiladoImagenTexto"
-  }
-},
+  "condition-layout.product#especificacion-InfoExtraActivo": {
+    "props": {
+        "conditions": [
+            {
+                "subject": "specificationProperties",
+                "arguments": {
+                    "name": "InfoExtraActivo",
+                    "value": "Sí"
+                }
+            }
+        ],
+        "Then": "flex-layout.row#CompiladoImagenTexto"
+    }
+  },
 
   "rich-text#InfoExtra": {
     "props": {

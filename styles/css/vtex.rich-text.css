@@ -1988,6 +1988,44 @@ margin: 0px 0px 10px 0px;
   font-family: 'NeutraTextAltBold';
   font-size: 1.75rem;
 }
+/*=======  igarcia Visualizador ===================*/
+.headingLevel1--visualizador-title,
+.headingLevel2--visualizador-title,
+.headingLevel3--visualizador-title,
+.headingLevel4--visualizador-title,
+.headingLevel5--visualizador-title,
+.paragraph--visualizador-title
+{
+  color: #3D3C3C;
+  font-family: 'NeutraTextAltBold';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.paragraph--visualizador-body
+{
+  font-family: 'NeutraTextAltBold';
+  color: #636363;
+  font-size: 16px;
+  /*position: relative;*/
+  position: absolute;
+  /*bottom: 0;*/
+  padding-top: 50px;
+  left: 10px;
+  padding-left: 20px;
+  padding-right: 45px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
 
 @media (max-width:1024px) {
 
