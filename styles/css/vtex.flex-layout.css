@@ -3419,9 +3419,9 @@ height: 520px;
 {    justify-content: flex-start;    padding-left: 10px;    gap: 10px;  }
 
 .flexCol--col-mnu-USA
-{    height: 0px;    width: 160px;    margin-right: 125px;  margin-top: -35px;  }
+{    height: 0px;    width: 160px;    margin-right: 125px;  margin-top: -50px;  }
 .flexColChild--col-mnu-USA
-{    background-color: #524545 !important;    width: 150px;    height: 0px;    margin-right: 35px;  }
+{    width: 150px;    height: 0px;    margin-right: 35px;  }
 
 
 /*=================  visualizador 3D ====================*/

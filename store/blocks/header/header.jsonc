@@ -146,14 +146,6 @@
         "noFollow": false,
         "tagTitle": "Versión Esp."//,
         //"text": "  V"
-      },
-      "iconProps":
-      {
-        "id": "mpa-bars2", //"bnd-logo",
-        "size": 42,
-        "viewBox": "0 0 16 16",
-        "activeClassName": "red",
-        "mutedClassName": "c-action-primary"
       }
     }
   },
