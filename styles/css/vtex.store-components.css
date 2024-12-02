@@ -552,15 +552,17 @@
   padding-top: 8px;
   width: 35px;
   height: 24px;
-  background-image: url(assets/imgs/bandera_col.png);
+  background-image: url(assets/imgs/bandera_col_down.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
 .imageElement--ico-bandera-col:hover
 {
-  /* content: url("assets/ico/home/fav-act.svg"); */
-  background-image: url(assets/imgs/bandera_col_h.png);
+  padding-top: 8px;
+  width: 35px;
+  height: 24px;
+  background-image: url(assets/imgs/bandera_col_up.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -898,31 +900,6 @@ width: 100%;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
 }
 
-.imageElementLink--logoUSA
-{
-  height: 100px !important;/*fit-content;*/
-  /*margin-top: 5px;*/
-}
-
-.imageElement--logoUSA
-{
-  /*width: 240px;/*width: 96px*/
-  /*height:30px !important;*/
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  transition: all 0.3s ease;
-  justify-content: flex-start;
-  background: transparent;
-
-  box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.45);
-  position:static;
-  width: 408px !important;
-  height:42px !important;
-  border-radius: 5px;
-}
-
 .imageElement--visualizador-colimg
 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aplica una sombra suave */
@@ -961,6 +938,34 @@ width: 100%;
 .PaymentMethod{
   font-family: 'NeutraText';
 }
+
+
+.imageElement--imgUSA
+{
+  /*height: 35px !important;*/
+  /*margin-right: 150px !important;*/
+  /*margin-bottom: 150px;*/
+  margin-top: 15px;
+  border: 1px solid  #a0a0a0;
+  box-shadow: 0px 2px 2px 1px rgba(50,50,50,0.245);
+  position:fixed;
+  border-radius: 5px;
+  z-index: 999999;
+}
+
+
+.flexRow--container-row-USA
+{    margin-top: 100px;  }
+.flexRowContent--container-row-USA
+{    justify-content: flex-start;    padding-left: 10px;    gap: 10px;  }
+
+.flexCol--col-mnu-USA
+{    height: 0px;    width: 160px;    margin-right: 35px;  }
+.flexColChild--col-mnu-USA
+{    background-color: #524545 !important;    width: 150px;    height: 0px;    margin-right: 35px;  }
+
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -1001,13 +1006,29 @@ width: 100%;
     height: 18px;
   }
 
+  .imageElement--ico-bandera-col:hover
+  {
+    width: 18px;
+    height: 8px;
+    background-image: url(assets/imgs/bandera_col_up.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 @media (max-width: 1024px)
 {
-  .imageElement--logoUSA
+  .imageElement--imgUSA
   {
-    height: 40px !important;
+    /*height: 35px !important;*/
+    /*margin-right: 150px !important;*/
+    /*margin-bottom: 150px;
+    margin-top: -10px;*/
+    border: 1px solid  #a0a0a0;
+    box-shadow: 0px 2px 2px 1px rgba(50,50,50,0.245);
+    position:fixed;
+    border-radius: 5px;
+    z-index: 999999;
   }
 
   .imageElementLink--logoUSA

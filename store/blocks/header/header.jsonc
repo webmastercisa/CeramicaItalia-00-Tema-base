@@ -160,29 +160,29 @@
 
   "vtex.menu@2.x:submenu#MnuUSA":
   {
-    "children": ["flex-layout.row#container-logoUSA"]
+    "children": ["flex-layout.row#container-row-USA"]
   },
 
-  "flex-layout.row#container-logoUSA":
+  "flex-layout.row#container-row-USA":
   {
     //"children": ["image#logoUSA"],
-    "children": ["flex-layout.col#submenu-imageUSA"],
-    "props": { "blockClass": ["container-logoUSA"] }
+    "children": ["flex-layout.col#submenu-col-USA"],
+    "props": { "blockClass": ["container-row-USA"] }
   },
 
-  "flex-layout.col#submenu-imageUSA":
+  "flex-layout.col#submenu-col-USA":
   {
-    "children": ["image#logoUSA"]
+    "children": ["image#img-USA"],
+    "props": { "blockClass": ["col-mnu-USA"] }
   },
 
 
-  "image#logoUSA":
+  "image#img-USA":
   {
     "props": {
          "src": "assets/imgs/bandera_usa.png",
          "alt": "Ceramica Italia Corp.",
-         "height": "90px",
-         "blockClass": "logoUSA",
+         "blockClass": "imgUSA",
          "link": {
              "url": "https://usa.ceramicaitalia.com/",
              "openNewTab": true,
@@ -193,16 +193,15 @@
 
   "flex-layout.row#container-logoCOL":
   {
-    "children": ["image#logoUSA"],
+    "children": ["image#logo-USA"],
     "props": { "blockClass": ["container-logoUSA"] }
   },
 
-  "image#logoCOL":
+  "image#logo-USA":
   {
     "props": {
          "src": "bandera_usa.png",
          "alt": "USA",
-         "height": "90px",
          "blockClass": "logoUSA",
          "link": {
              "url": "https://usa.ceramicaitalia.com",
@@ -255,7 +254,7 @@
          "textPosition": "CENTER"
     }
   },
-/*
+  /*
   "flex-layout.row#container-favoritos": {
     "children": [ "image#ico-idioma_esp"],
     //"children": [ "image#ico-idioma_esp", "rich-text#texto-favoritos"],
