@@ -2093,10 +2093,6 @@ height: 520px;
   max-width: none;
 }
 
-.flexRow--container-logoUSA {
-  align-items: center;
-  display: flex;
-}
 
 .flexRow--container-iconoes-header {
   align-items: center;
@@ -2193,22 +2189,6 @@ height: 520px;
   display: none;
 }
 
-.flexColChild--mnulogoUSA
-{
-  background-color: #dddddd !important;
-  width: 208px !important;
-  height: 40px !important;
-  margin-right: 35px;
-}
-.flexCol--mnulogoUSA
-{
-  width: 208px;
-  height: 40px;
-  margin-right: 35px;
-}
-
-
-
 
 @media (max-width:1024px)
 {
@@ -2238,34 +2218,6 @@ height: 520px;
       height: 20px;
       margin-right: 20px;
       margin-top: 10px;
-    }
-    /* ======== Menu mobile ============  */
-
-    .flexRow--icon-usa-login-mobile
-    {
-      border-bottom: 0.8px solid #3D3C3C;
-    }
-
-    .flexRowContent--icon-usa-login-mobile
-    {
-      justify-content: flex-start;
-      padding-left: 10px;
-      gap: 10px;
-    }
-
-
-      .flexColChild--mnulogoUSA
-    {
-      background-color: #524545 !important;
-      width: 150px;
-      height: 0px;
-      margin-right: 35px;
-    }
-    .flexCol--mnulogoUSA
-    {
-      height: 0px;
-      width: 160px;
-      margin-right: 35px;
     }
 
     :global(.vtex-store__template)
@@ -2789,7 +2741,7 @@ height: 520px;
       height: 57px;/*75px;*/
       background: #FFF;
       display: flex;
-      gap: 20px;
+      gap: 35px; /* ==============  Centrar logo CISA =====================================*/
       box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.12);
     }
 
@@ -3273,17 +3225,43 @@ height: 520px;
     .flexRowContent--category-menu-header-mobile-drawer {
       max-width: 56vw;
       margin: auto;
-  }
+    }
 
-  .flexColChild--mnulogoUSA
-  {
-    margin-top: -10px !important;
-    z-index: 999999 !important;
-    margin-right: 70px;
-    height: 140px;
-    border: 1px solid #0a0a0a;
-    border-radius: 15px;
-  }
+    /* ======== Menu mobile MEDIA ============  */
+
+    .flexRow--icon-usa-login-mobile
+    {
+      border-bottom: 0.8px solid #3D3C3C;
+    }
+
+    .flexRowContent--icon-usa-login-mobile
+    {
+      justify-content: flex-start;
+      padding-left: 10px;
+      gap: 10px;
+    }
+
+    /*
+    .flexCol--mnulogoUSA
+    {
+      height: 0px;
+      width: 150px;
+      margin-right: 35px;
+    }
+
+    .flexColChild--mnulogoUSA
+    {
+      width: 150px;
+      height: 140px;
+      margin-right: 35px;
+      margin-top: -30px !important;
+      margin-right: 70px;
+      z-index: 999999 !important;
+    }
+    */
+    .flexCol--col-mnu-USA       { width: 40px;  height: 10px;  margin-right: 80px;  margin-top: -110px;  }
+    .flexColChild--col-mnu-USA  { width: 40px;  height: 10px;  margin-right: -1px;   margin-top: -15px; }
+
 
 }
 
@@ -3341,7 +3319,7 @@ height: 520px;
   .flexRow--main-header-mobile :global(.vtex-store-components-3-x-logoImage) {
     height: 52px;
     width: 126px;
-    margin-left: 0px;
+    margin-left: 50px; /* =======================  Centrar Logo =======================*/
   }
 
   .flexRowContent--productDescription-row :global(.vtex-product-list-0-x-removeButton) {
@@ -3412,17 +3390,14 @@ height: 520px;
   }
 }
 
-/*=================  Bandera Idioma USA ====================*/
-.flexRow--col-mnu-USA
-{    border-bottom: 0.8px solid #3D3C3C;  }
-.flexRowContent--col-mnu-USA
-{    justify-content: flex-start;    padding-left: 10px;    gap: 10px;  }
+/*=================  Bandera Idioma USA Desktop ====================*/
+/*
+.flexRow--col-mnu-USA         { border-bottom: 0.8px solid #3D3C3C;  }
+.flexRowContent--col-mnu-USA  { justify-content: flex-start;    padding-left: 10px;    gap: 10px;  }
 
-.flexCol--col-mnu-USA
-{    height: 0px;    width: 160px;    margin-right: 125px;  margin-top: -50px;  }
-.flexColChild--col-mnu-USA
-{    width: 150px;    height: 0px;    margin-right: 35px;  }
-
+*/
+.flexCol--col-mnu-USA       { width: 140px;  height: 20px;  margin-right: 100px;  margin-top: -35px;  }
+.flexColChild--col-mnu-USA  { width: 140px;  height: 20px;  margin-left: -50px;  }
 
 /*=================  visualizador 3D ====================*/
 .flexRow--visualizador-contenedor
