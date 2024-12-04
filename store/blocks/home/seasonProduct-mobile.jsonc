@@ -11,7 +11,7 @@
         ],
         "title": "seccion-productoTemporada-mobile",
         "props": {
-            "blockclass": ["section-seasonProduct", "section-seasonProduct-mobile"],
+            "blockClass": ["section-seasonProduct", "section-seasonProduct-mobile"],
             "preventVerticalStretch": true,
             "preventHorizontalStretch": false
         }
@@ -27,7 +27,7 @@
         ],
         "title": "textos-productoTemporada-mobile",
         "props": {
-            "blockclass": "textColumnSesonProduct",
+            "blockClass": "textColumnSesonProduct",
             "preventVerticalStretch": true
             // "width": "50%"
         }

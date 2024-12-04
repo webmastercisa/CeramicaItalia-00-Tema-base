@@ -853,6 +853,7 @@
 }
 
 .flexCol--content-departamento {
+  font-family: 'NeutraText';
   /* border-top: 1px solid #828181; */
   /* border-bottom: 1px solid #828181; */
   /* padding: 30px 0px; */
@@ -2024,6 +2025,7 @@ width: auto !important; */
 
 .flexRow--ResultadoProductos
 {
+  font-family: 'NeutraText';
   /* border-top: 1px solid lightgray; */
 }
 

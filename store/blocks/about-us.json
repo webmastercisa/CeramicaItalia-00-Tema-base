@@ -19,7 +19,7 @@
       "rich-text#about-us"
     ],
     "props": {
-      "blockclass": "textColumn",
+      "blockClass": "textColumn",
       "preventVerticalStretch": true
     }
   },
