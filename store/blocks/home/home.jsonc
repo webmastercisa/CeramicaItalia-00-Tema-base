@@ -365,7 +365,7 @@
     ],
     "title": "textos-productoDeTemporada-desktop",
     "props": {
-      "blockclass": "textColumnSesonProduct",
+      "blockClass": "textColumnSesonProduct",
       "preventVerticalStretch": true,
       "width": "50%"
     }
@@ -441,7 +441,7 @@
     ],
     "title": "vitrina-productoDeTemporada-desktop",
     "props": {
-      "blockclass": "shelf-seasonProduct"
+      "blockClass": "shelf-seasonProduct"
     }
   },
   // *Inspire Section -Inspírate*
