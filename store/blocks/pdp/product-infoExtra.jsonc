@@ -1,27 +1,9 @@
 {
   "flex-layout.row#roomvo":
   {
-    "children": ["flex-layout.col#roomvo"],
-    "props": {"blockClass": "roomvo"}
-  },
-
-  "flex-layout.col#roomvo":
-  {
-    "props": {
-      "blockClass": "roomvo-lite-container",
-      "height": "70px",
-      "fulwidth": true,
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "paddingTop": 0,
-      "paddingBottom": 0
-    }
+    "children": ["RoomvoDiv"]
   },
   /*=========== Fin Roomvo ====*/
-
 
   "flex-layout.row#InfoExtraPDP": {
     "children": [
