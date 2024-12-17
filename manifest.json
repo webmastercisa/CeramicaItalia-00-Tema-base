@@ -84,7 +84,8 @@
     "vtex.availability-notify": "1.x",
     "ceramicaitalia.map-custom-app": "0.x",
     "addi.product-page-action": "1.x",
-    "connectif.connectif": "1.x"
+    "connectif.connectif": "1.x",
+    "vtex.wordpress-integration": "2.x"
   },
   "serverCache": {
     "maxUploadSize": "50mb"

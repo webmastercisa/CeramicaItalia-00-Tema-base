@@ -108,6 +108,15 @@
   "store.custom#landing-giorgio":{
     "path": "/asesorvirtual",
     "title": ""
-  }
+  },
+
+
+
+
+  "store.blog-home": { "path": "/blog" },
+  "store.blog-category": { "path": "/blog/category/:categoryslug(/page/:page)" },
+  "store.blog-post": { "path": "/blog/post/:slug" },
+  "store.blog-search-result": { "path": "/blog/search/:term" }
+
 
 }
