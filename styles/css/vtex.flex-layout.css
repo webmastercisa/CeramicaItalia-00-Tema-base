@@ -3321,7 +3321,7 @@ height: 520px;
   .flexRow--main-header-mobile :global(.vtex-store-components-3-x-logoImage) {
     height: 52px;
     width: 126px;
-    margin-left: 50px; /* =======================  Centrar Logo =======================*/
+    margin-left: 32px; /* =======================  Centrar Logo =======================*/
   }
 
   .flexRowContent--productDescription-row :global(.vtex-product-list-0-x-removeButton) {
