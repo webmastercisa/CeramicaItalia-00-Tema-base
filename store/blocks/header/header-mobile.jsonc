@@ -153,6 +153,7 @@
   },
   "logo#mobile": {
     "props": {
+      "blockClass": "logoMobileContainer",
       "title": "Logo",
       "href": "/",
       "url": "https://ceramicaitalia.vteximg.com.br/arquivos/ceramicaItaliaIcon.png",
