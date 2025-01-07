@@ -201,10 +201,7 @@
         "phone": "1:1"
       },
       "blockClass": "ProductImagesHorizontal",
-      "hiddenImages": [
-        "Vitrina",
-        "Color"
-      ],
+      "hiddenImages": ["Vitrina", "Color"],
       "thumbnailsOrientation": "horizontal",
       "displayThumbnailsArrows": true,
       "thumbnailAspectRatio": "1:1"
@@ -216,8 +213,9 @@
       "rowGap": 0
     },
     "children": [
-      "condition-layout.product#cond1",
-      "addi-infos"
+      "condition-layout.product#cond1"
+      /*,
+      "addi-infos"*/
     ]
   },
   "flex-layout.row#product-name": {

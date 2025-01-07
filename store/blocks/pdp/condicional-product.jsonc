@@ -126,6 +126,7 @@
             // "flex-layout.row#container-descripcion-corta",
             "custom-app-calculator",
             "flex-layout.row#container-atributos",
+            "flex-layout.row#container-addi",
             "flex-layout.row#container-iconos-final-pdp"//,
             //"flex-layout.row#container-boton-perfilamiento"
         ],
@@ -162,7 +163,9 @@
             "flex-layout.row#container-pagos-pdp",
             "flex-layout.row#buy-button-pdp",
             "flex-layout.row#container-atributos",
+            "flex-layout.row#container-addi",
             "flex-layout.row#container-iconos-final-pdp"//,
+
             //"flex-layout.row#container-boton-perfilamiento"
         ],
         "props": {
@@ -171,6 +174,13 @@
             ]
         }
     },
+
+    "flex-layout.row#container-addi":
+    {
+      "children": ["addi-infos"],
+      "props": { "blockClass": ["container-centrado-hv"] }
+    },
+
 
     "flex-layout.row#container-descripcion-corta": {
       "children": ["DescripcionCorta"],
@@ -348,6 +358,7 @@
             "stack-layout#mobile",
             "sku-selector",
             "custom-app-calculator",
+            "flex-layout.row#container-addi",
     //   "tab-layout#tab-pdp",
             // "flex-layout.row#container-descripcion-corta",
             "vtex.menu@2.x:menu#menu-pdp",
@@ -380,6 +391,7 @@
             //   "flex-layout.row#selling-price",
             "flex-layout.row#container-pagos-pdp",
             "flex-layout.row#buy-button-pdp",
+            "flex-layout.row#container-addi",
             "vtex.menu@2.x:menu#menu-pdp",
             "flex-layout.row#container-atributos",
             "flex-layout.row#container-iconos-final-pdp"/*,

@@ -65,6 +65,7 @@
       "children": [
         "form-input.text#nameAndLastname-formulario-contacto",
         "form-input.text#phone-formulario-contacto",
+        /*"form-input.text#email-formulario-contacto",*/
         "form-input.text#taxNumber-formulario-contacto",
         "form-input.text#shoppingCity-formulario-contacto"
       ],
@@ -96,6 +97,12 @@
       "props": {
         "pointer": "#/properties/phone3",
         "placeholder": "Teléfono"
+      }
+    },
+    "form-input.text#email-formulario-contacto": {
+      "props": {
+        "pointer": "#/properties/email",
+        "placeholder": "Correo Eléctronico"
       }
     },
     "form-input.text#taxNumber-formulario-contacto": {
