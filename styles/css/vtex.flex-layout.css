@@ -342,7 +342,7 @@
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
+  background-color: #FFFFFF;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -2747,6 +2747,43 @@ height: 520px;
       box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.12);
     }
 
+
+    .flexRowContent--main-header-menu-mobile {
+      align-items: center;
+      padding: 0.625rem 0.5rem;
+      background-color: #FFFFFF;
+    }
+
+
+    .flexRow--main-header-menu-mobile :global(.vtex-store-components-3-x-logoImage) {
+      height: 52px;
+      width: 126px;
+      margin-left: 20px;
+    }
+
+    .flexRow--main-header-menu-mobile :global(.vtex-minicart-2-x-minicartWrapperContainer) {
+      padding-right: 15px !important;
+      padding-left: 14px;
+      margin-bottom: 0;
+    }
+
+
+    .flexRowContent--main-header-menu-mobile
+    {
+      height: 57px;/*75px;*/
+      background: #FFFFFF;
+      position:relative;
+      z-index: 999999999;
+      gap: 35px; /* ==============  Centrar logo CISA =====================================*/
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .flexRowContent--main-header-menu-mobile {
+      margin-top: -1px;
+    }
+
+
+
     .flexRow--row-shelf-container :global(.vtex-flex-layout-0-x-flexRowContent) {
       width: 100%;
     }
@@ -3485,3 +3522,9 @@ height: 520px;
 }
 
 
+.flexRow--container-centrado-hv
+{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
