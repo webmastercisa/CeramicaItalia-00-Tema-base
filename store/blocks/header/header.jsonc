@@ -127,7 +127,14 @@
     }
   },
 
-  "vtex.menu@2.x:menu#idioma": { "children": ["menu-item#MnuCOL"]  },
+  "vtex.menu@2.x:menu#idioma":
+  {
+    "children": ["menu-item#MnuCOL"],
+    "props":
+    {
+      "blockClass": ["centrar-icono-bandera"]
+    }
+  },
 
   "menu-item#MnuCOL":
   {
