@@ -101,7 +101,7 @@
   background-image: url('assets/imgs/bandera_col_down.png');
   background-size: contain;
   background-repeat: no-repeat, repeat;
-  width: 75px;
+  width: 48px;
 }
 
 .menuItem--bandera-col--isOpen
@@ -111,7 +111,7 @@
   background-image: url('assets/imgs/bandera_col_up.png');
   background-size: contain;
   background-repeat: no-repeat, repeat;
-  width: 75px;
+  width: 48px;
 }
 
 
@@ -394,6 +394,12 @@
   height: 100%;
 }
 
+/* ======= centrar la bandera vertical en Desktop =======  */
+.menuContainer--centrar-icono-bandera
+{
+    margin-top: 15px;
+}
+
 .menuContainerNav--btn-customized {
   width: 80%;
 }
@@ -410,6 +416,13 @@
 
 @media (max-width: 1024px)
 {
+
+  /* ======= centrar la bandera vertical en Desktop =======  */
+  .menuContainer--centrar-icono-bandera
+  {
+    margin-top: 5px;
+    margin-right: -10px;
+  }
 
   .menuContainerNav--acordeon-menu-pdp
   {

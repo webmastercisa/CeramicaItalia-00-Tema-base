@@ -11,8 +11,8 @@
 
 
 .cartIcon {
-    width: 34px; /*width: 40px;*/
-    height: 34px; /*height: 40px;*/
+    width: 42px; /*width: 40px;*/
+    height: 42px; /*height: 40px;*/
     margin-bottom: -7px;
 }
 
@@ -119,19 +119,30 @@
   z-index: 9999999 !important;
 }
 
-@media (max-width: 1024px) {
-    .minicartSideBarContentWrapper {
-        height: 680px;
-    }
+@media (max-width: 1024px)
+{
+  .minicartSideBarContentWrapper
+  {
+      height: 680px;
+  }
 
-    .drawer {
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-    }
+  .drawer
+  {
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+  }
 
-    .openIconContainer :global(.vtex-button){
-      height: 60px !important;
-    }
+  .openIconContainer :global(.vtex-button){
+    height: 60px !important;
+    width: 22px;
+  }
+
+  .cartIcon
+  {
+    width: 36px; /*width: 40px;*/
+    height: 36px; /*height: 40px;*/
+  }
+
 }
 
 @media (max-width: 700px) {
