@@ -65,7 +65,7 @@
       "children": [
         "form-input.text#nameAndLastname-formulario-contacto",
         "form-input.text#phone-formulario-contacto",
-        /*"form-input.text#email-formulario-contacto",*/
+        "form-input.text#email-formulario-contacto",
         "form-input.text#taxNumber-formulario-contacto",
         "form-input.text#shoppingCity-formulario-contacto"
       ],

@@ -397,7 +397,8 @@
 /* ======= centrar la bandera vertical en Desktop =======  */
 .menuContainer--centrar-icono-bandera
 {
-    margin-top: 15px;
+  margin-top: 15px;
+  margin-right: -7px;
 }
 
 .menuContainerNav--btn-customized {
@@ -417,7 +418,7 @@
 @media (max-width: 1024px)
 {
 
-  /* ======= centrar la bandera vertical en Desktop =======  */
+  /* ======= centrar la bandera vertical en Mobile =======  */
   .menuContainer--centrar-icono-bandera
   {
     margin-top: 5px;
