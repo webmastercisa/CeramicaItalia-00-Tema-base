@@ -706,6 +706,10 @@
 }
 
 
+.txt_center           { text-align: center;  }
+.txt_neutra           { font-family: 'NeutraText';  }
+.txt_neutra_tf        { font-family: 'NeutraTextTF';  }
+.txt_neutra_alt_bold  { font-family: 'NeutraTextAltBold';  }
 
 @media (max-width:1024px) {
 
