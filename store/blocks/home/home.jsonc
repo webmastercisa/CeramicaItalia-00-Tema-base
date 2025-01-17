@@ -6,7 +6,6 @@
       "flex-layout.row#product-featured",
       "__fold__.mobile",
       "flex-layout.row#shelf",
-      "connectif#test-connectif-block",
       "responsive-layout.desktop#seasonProduct",
       "responsive-layout.mobile#seasonProduct",
       "responsive-layout.desktop#section-inspireInfocard-2",
@@ -340,6 +339,7 @@
   /* Season product section -COCINAS*/
   "responsive-layout.desktop#seasonProduct": {
     "children": [
+      "connectif#test-connectif-block",
       "flex-layout.row#seasonProduct"
     ]
   },
