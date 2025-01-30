@@ -8,7 +8,7 @@
       "flex-layout.row#shelf",
       "responsive-layout.desktop#seasonProduct",
       "responsive-layout.mobile#seasonProduct",
-      "connectif#test-connectif-block",
+
       "responsive-layout.desktop#section-inspireInfocard-2",
       "responsive-layout.mobile#section-inspireInfocard-2-mobile",
       "responsive-layout.desktop#colorPalette-section",
@@ -340,9 +340,22 @@
   /* Season product section -COCINAS*/
   "responsive-layout.desktop#seasonProduct": {
     "children": [
-      "flex-layout.row#seasonProduct"
+      "flex-layout.row#seasonProduct",
+      "flex-layout.row#connectif-block"
     ]
   },
+
+  "flex-layout.row#connectif-block":
+  {
+    "children": ["connectif#test-connectif-block"],
+    "props":
+    {
+      /*"blockClass": "section-seasonProduct",*/
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false
+    }
+  },
+
   "flex-layout.row#seasonProduct": {
     "children": [
       "image#seasonProductImg",
