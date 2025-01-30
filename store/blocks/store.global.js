@@ -17,5 +17,4 @@ document.addEventListener("DOMContentLoaded", () =>{
     // ============ FIN =================
 });
 
-
 console.log("==== Store global ====");

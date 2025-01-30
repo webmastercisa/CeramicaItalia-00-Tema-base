@@ -230,7 +230,9 @@
     "props": {
       "variationsSpacing": 3,
       "showValueNameForImageVariation": true,
-      "thumbnailImage": "Color"
+      "thumbnailImage": "Color",
+      "identifierField": "skuReferenceId"
+      /*"identifierField": "SKU Reference ID"*/
     }
   },
   "flex-layout.row#buy-button": {
