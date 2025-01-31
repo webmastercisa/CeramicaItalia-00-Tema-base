@@ -304,7 +304,7 @@
   "product-identifier.product": {
     "props": {
       "label": "default", //'default' | 'custom' | 'hide'
-      "customLabel": "_Código:", // text if label is custom
+      "customLabel": "Código:", // text if label is custom
       "idField": "skuReferenceId", //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
       "visibility": "visible", // Asegúrate de que no sea "hidden" en mobile
       "displayOn": ["desktop", "mobile"] // Si usas esta prop
