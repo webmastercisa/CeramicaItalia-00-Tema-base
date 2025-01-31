@@ -415,6 +415,9 @@
       }
     },
 
+
+
+
     "stack-layout#mobile": {
         "props": {
           "blockClass": "product"

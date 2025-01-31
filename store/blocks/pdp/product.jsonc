@@ -300,6 +300,17 @@
       ]
     }
   },
+
+  "product-identifier.product": {
+    "props": {
+      "label": "default", //'default' | 'custom' | 'hide'
+      "customLabel": "Código:", // text if label is custom
+      "idField": "skuReferenceId", //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+      "visibility": "visible", // Asegúrate de que no sea "hidden" en mobile
+      "displayOn": ["desktop", "mobile"] // Si usas esta prop
+    }
+  },
+
   "flex-layout.row#availability": {
     "props": {
       "blockClass": "message-availability"
