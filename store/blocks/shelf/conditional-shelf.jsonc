@@ -93,6 +93,12 @@
                     }
                 },
                 {
+                  "subject": "categoryId",
+                  "arguments": {
+                      "id": "24"
+                  }
+                },
+                {
                     "subject": "categoryId",
                     "arguments": {
                         "id": "26"
@@ -220,6 +226,12 @@
                     "arguments": {
                         "id": "23"
                     }
+                },
+                {
+                  "subject": "categoryId",
+                  "arguments": {
+                      "id": "24"
+                  }
                 },
                 {
                     "subject": "categoryId",
