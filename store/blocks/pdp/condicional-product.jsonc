@@ -88,6 +88,16 @@
                     }
                 },
                 {
+                  "subject": "categoryId",
+                  "arguments": {"id": "24"}
+                },
+                {
+                  "subject": "categoryId",
+                  "arguments": {
+                      "id": "54"
+                  }
+                },
+                {
                     "subject": "categoryId",
                     "arguments": {
                         "id": "25"
@@ -318,6 +328,8 @@
                         "id": "23"
                     }
                 },
+                { "subject": "categoryId", "arguments": { "id": "24" }  },
+                { "subject": "categoryId", "arguments": { "id": "54" }  },
                 {
                     "subject": "categoryId",
                     "arguments": {
