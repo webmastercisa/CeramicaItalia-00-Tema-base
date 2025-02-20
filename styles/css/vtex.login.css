@@ -57,7 +57,7 @@
   /* top: 100%;
   visibility: visible;
   min-width: 19.375rem; */
-  right: 92px !important; 
+  right: -51px !important;/* 92px*/
 }
 
 @media (max-width: 1024px) {
