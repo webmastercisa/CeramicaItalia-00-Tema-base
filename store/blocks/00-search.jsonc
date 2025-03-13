@@ -15,7 +15,7 @@
   "store.search#brand": {
     "blocks": [
       // "rich-text#Marca",
-      "search-result-layout" 
+      "search-result-layout"
     ],
     "props": {
       "context": {
@@ -820,9 +820,7 @@
   },
   "rich-text#texto-search-categoria": {
     "props": {
-      "blockClass": [
-        "texto-search-categoria"
-      ],
+      "blockClass":["texto-search-categoria"],
       "text": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem ec fringiazdv"
     }
   },
@@ -1162,7 +1160,7 @@
     "children": [
       "rich-text#texto-2-contenido-notFound",
       "flex-layout.row#fila-recomendamos-contenido-notFound",
-      "flex-layout.row#shelf-general",
+      "flex-layout.row#shelf-general-shelf",
       "list-context.image-list#slider-imagenes-notFound"
     ],
     "props": {

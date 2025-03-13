@@ -1,4 +1,5 @@
 {
+      /*  =======  TODOREWIEW  ======
       "product-summary-name#general": {
         "props": {
             "blockClass": "section-name-general"
@@ -11,7 +12,7 @@
           "blockClass": "cantidad-general"
         }
       },
-
+         */
       "add-to-cart-button#general": {
         "props": {
           "addToCartFeedback": "customEvent",
@@ -19,7 +20,6 @@
           "blockClass": "btn-general"
         }
       },
-
 
       "list-context.product-list#shelf-general": {
         "blocks": [
