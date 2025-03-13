@@ -26,13 +26,13 @@
             ]
         }
     },
-    // TEXTO 2 MIGA DE PAN 
+    // TEXTO 2 MIGA DE PAN
     "rich-text#texto-2-miga-pan-imperdible": {
         "props": {
             "blockClass": [
                 "texto-2-miga-pan"
             ],
-            // "text": "imperdibles", 
+            // "text": "imperdibles",
             "text": "[Imperdibles](/imperdibles)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER"
@@ -62,9 +62,9 @@
           "blockClass": ["container-banner1-imperdibles-slider"]
         }
       },
-  
+
       "list-context.image-list#banner1Slider-imperdibles": {
-          "children": ["slider-layout#banner1-imperdibles"],
+          "children": ["slider-layout#banner1-imperdibles-uno"],
           "props": {
             "height": 570,
             "preload": true,
@@ -80,7 +80,7 @@
             ]
           }
         },
-        "slider-layout#banner1-imperdibles": {
+        "slider-layout#banner1-imperdibles-uno": {
           "props": {
             "itemsPerPage": {
               "desktop": 1,
@@ -89,7 +89,7 @@
             },
             "infinite": true,
             "showNavigationArrows": "never",
-            "showPaginationDots": "never", 
+            "showPaginationDots": "never",
             "blockClass": ["banner1-imperdibles-slider"]
             // "autoplay": {
             //   "timeout": 3000,
@@ -120,9 +120,9 @@
            "responsive-layout.mobile#banner-grilla-imperdibles": {
               "children": ["flex-layout.row#container-banners-imperdibles-mobile"]
             },
-            
-          
-    
+
+
+
         "flex-layout.row#container-banners-imperdibles": {
           "children": [
             "image#banner1-imperdibles",
@@ -260,5 +260,5 @@
       }
     }
 
-       
+
 }

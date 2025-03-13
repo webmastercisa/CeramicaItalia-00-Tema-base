@@ -121,7 +121,7 @@
       },
 
 
-      "flex-layout.row#shelf-general": {
+      "flex-layout.row#shelf-general-shelf": {
         "children": [
             "list-context.product-list#shelf-general"
         ],

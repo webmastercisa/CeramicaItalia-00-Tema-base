@@ -70,7 +70,6 @@
     "isSitemapEntry": false
   },
 
-
   "store.custom#sostenibilidad": {
     "path": "/sostenibilidad",
     "title": "Sostenibilidad| Ceramica Italia",
@@ -97,6 +96,9 @@
     "title": "template categoria",
     "isSitemapEntry": true
   },
+
+
+
   "store.custom#form-products": {
     "path": "/form-products",
     "title": "Formulario de productos"

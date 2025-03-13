@@ -24,11 +24,11 @@
 
 /* Btn Whatsapp*/
 
-.flexRowContent--btnWhatsApp {
+.flexRowContent--btnWhatsApp-layout {
   width: fit-content;
 }
 
-.flexRow--btnWhatsApp {
+.flexRow--btnWhatsApp-layout {
   position: fixed;
   bottom: 30px;
   /*right: -1160px;*/
@@ -131,7 +131,8 @@
 }
 
 /* Search */
-.flexRow--orderByAndSwitcher {
+.flexRow--orderByAndSwitcher
+{
   padding-right: 1.5em;
 }
 
@@ -440,8 +441,14 @@
 }
 
 
-.flexCol--productCountCol {
+.flexCol--productCountCol
+{
   align-items: flex-start;
+}
+
+.flexCol--productCountCol-template
+{
+  align-items: anchor-center;
 }
 
 .flexCol--orderByCol {
@@ -1116,6 +1123,13 @@
   margin-right: 0;
 }
 
+.flexRow--content-search-template
+{
+  width: fit-content;
+  margin: auto;
+  margin-right: 0;
+}
+
 .flexRowContent--question-formulario-pqrs {
   gap: 10px;
 
@@ -1230,6 +1244,13 @@
 }
 
 .flexRowContent--content-searchinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRowContent--content-search-template
+{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2714,7 +2735,7 @@ height: 520px;
       z-index: 99;
     }
 
-    .flexRow--btnWhatsApp {
+    .flexRow--btnWhatsApp-layout {
       position: fixed;
       bottom: 30px;
       z-index: 99;

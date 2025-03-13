@@ -12,17 +12,17 @@
     },
 
 
-    
+
      "responsive-layout.desktop#texto-desktop-template-categoria": {
         "children": [ "flex-layout.row#titulo-texto-search"]
       },
-      
+
        "responsive-layout.mobile#texto-mobile-template-categoria": {
           "children": ["rich-text#texto-seo-search-categoria-mobile"]
         },
-        
-      
-    
+
+
+
 
     "flex-layout.row#container-title-template": {
       "children": [ "rich-text#template-title"],
@@ -88,6 +88,7 @@
     "search-result-layout.desktop#template-categoria": {
         "children": [
             // "flex-layout.row#searchbread",
+            "flex-layout.row#search-template",
             "flex-layout.row#result-custom-search-2"
         ],
         "props": {
@@ -95,5 +96,18 @@
             "preventRouteChange": false,
             "defaultGalleryLayout": "grid"
         }
-    }
+    },
+
+    "flex-layout.row#search-template":
+    {
+      "children": [ "flex-layout.col#productCount-template", "flex-layout.row#orderByAndSwitcher" ],
+      "props": { "blockClass": "content-search-template"}
+    },
+    "flex-layout.col#productCount-template":
+    {
+      "children": [ "total-products.v2" ],
+      "props": { "blockClass": "productCountCol-template" }
+    }// ?__inspect=null
+
+
 }

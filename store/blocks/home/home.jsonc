@@ -109,12 +109,11 @@
   },
   // Botón whatsapp
   "flex-layout.row#btnWhatsApp": {
-    "children": [
-      "image#ico-btn-whatsapp2"
-    ],
+    "children": [ "image#ico-btn-whatsapp-new" ],
     "props": {
-      "blockClass": "btnWhatsApp",
+      "blockClass": "btnWhatsApp-layout",
       "fulwidth": true,
+      //"height":"100px",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true,
@@ -125,12 +124,12 @@
     }
   },
 
-  "image#ico-btn-whatsapp2": {
+  "image#ico-btn-whatsapp-new": {
     "props": {
       "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/41fa3d28-2157-4418-a950-e1ea111ba281___32bd7a405f6cafeeaa1a9e6b2f6c111c.png",
-      "alt": "Comunicación whatsapp",
-      "height": "100px",
-      "blockClass": ["ico-btn-whatsapp", "img-whatsapp97"],
+      "alt": "Comunícate whatsapp L132",
+      "height":"100px",
+      "blockClass": ["btnWhatsApp-ico"],
       "link": {
         "url": "https://wa.me/5715141167",
         "openNewTab": true,
@@ -143,9 +142,9 @@
   "image#ico-btn-whatsapp": {
     "props": {
       "src": "https://cera789ed6433504997026f414.svg",
-      "alt": "Comunicación whatsapp",
-      //"height": "128px", //"height": "59.7px",
-      "blockClass": ["ico-btn-whatsapp", "img-whatsapp97"],
+      "alt": "Comunicate whatsapp L147",
+      //"height":"101px",      //"height": "128px", //"height": "59.7px",
+      //"blockClass": ["ico-btn-whatsapp"],
       "link": {
         "url": "https://wa.me/5715141167",
         "openNewTab": true,

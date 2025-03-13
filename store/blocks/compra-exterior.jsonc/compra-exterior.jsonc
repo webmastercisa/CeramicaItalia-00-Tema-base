@@ -28,7 +28,7 @@
             ]
         }
     },
-    // TEXTO 2 MIGA DE PAN 
+    // TEXTO 2 MIGA DE PAN
     "rich-text#texto-2-miga-pan-compras-exterior": {
         "props": {
             "blockClass": [
@@ -64,7 +64,7 @@
           "blockClass": ["container-banner1-compras-exterior-slider"]
         }
       },
-  
+
       "list-context.image-list#banner1Slider-compras-exterior": {
           "children": ["slider-layout#banner1-imperdibles"],
           "props": {
@@ -91,7 +91,7 @@
             },
             "infinite": true,
             "showNavigationArrows": "never",
-            "showPaginationDots": "never", 
+            "showPaginationDots": "never",
             "blockClass": [ "banner1-compras-exterior-slider"]
             // "autoplay": {
             //   "timeout": 3000,
@@ -122,9 +122,9 @@
         //    "responsive-layout.mobile#banner-grilla-imperdibles": {
         //       "children": ["flex-layout.row#container-banners-imperdibles-mobile"]
         //     },
-            
-          
-    
+
+
+
         "flex-layout.row#container-banners-compras-exterior": {
           "children": [
             "image#banner1-compras-exterior",
@@ -193,25 +193,27 @@
           }
       },
 
+         /*
         "flex-layout.row#container-banners-imperdibles-mobile": {
           "children": ["flex-layout.col#container-banners-imperdibles-mobile"],
           "props": {
             "blockClass": ["container-banners-imperdibles-mobile"]
           }
         },
+         */
 
-        "flex-layout.col#container-banners-imperdibles-mobile": {
+        "flex-layout.col#container-banners-imperdibles-mobile-compra": {
           "children": [
-            "image#banner1-imperdible-mobile",
-            "image#banner2-imperdible-mobile",
-            "image#banner3-imperdible-mobile"
+            "image#banner1-imperdible-mobile-compra",
+            "image#banner2-imperdible-mobile-compra",
+            "image#banner3-imperdible-mobile-compra"
           ],
           "props": {
             "blockClass": ["container-banners-imperdibles-mobile"]
           }
         },
 
-        "image#banner1-imperdible-mobile": {
+        "image#banner1-imperdible-mobile-compra": {
             "props": {
                      "src": "arquivos/banner2.imperdibles-mobile.png",
                      "alt": "alt",
@@ -224,7 +226,7 @@
                 }
             }
         },
-        "image#banner2-imperdible-mobile": {
+        "image#banner2-imperdible-mobile-compra": {
             "props": {
                      "src": "arquivos/banner2.imperdibles-mobile.png",
                      "alt": "alt",
@@ -238,7 +240,7 @@
             }
         },
 
-        "image#banner3-imperdible-mobile": {
+        "image#banner3-imperdible-mobile-compra": {
             "props": {
                      "src": "arquivos/banner2.imperdibles-mobile.png",
                      "alt": "alt",
@@ -278,7 +280,7 @@
       }
     },
 
-    
+
     "image#linea-search-compra-exterior": {
       "props": {
            "src": "assets/ico/linea-muestra.svg",
@@ -299,7 +301,7 @@
       "props": {
         "blockClass": ["container-banner2-compras-exterior-slider"]
       }
-    }, 
+    },
 
     "list-context.image-list#banner2Slider-compras-exterior": {
         "children": [ "slider-layout#banner2-compra-exterior"],
@@ -323,7 +325,7 @@
           },
           "infinite": true,
           "showNavigationArrows": "never",
-          "showPaginationDots": "never", 
+          "showPaginationDots": "never",
           "blockClass": [ "banner1-compras-exterior-slider", "banner2-compras-exterior-slider"]
           // "autoplay": {
           //   "timeout": 3000,
@@ -332,5 +334,5 @@
         }
       }
 
-       
+
 }
