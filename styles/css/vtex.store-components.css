@@ -1175,27 +1175,6 @@ width: 100%;
   .productBrand--quickview {
     font-size: 18px;
   }
-
-
-  .imageElement--ico-btn-whatsapp
-  {
-    height: 10px!important;
-  }
-  .ico-btn-whatsapp { height: 10px!important;  }
-  .imageElement--img-whatsapp97  {height: 100px;}
-  .img-whatsapp97   { height: 101px !important; }
-
-   .class{ height: 100px !important; }
-
-  @media (min-width:1025px)
-  {
-    .imageElement--ico-btn-whatsapp { height: 101px !important; }
-    .imageElement--img-whatsapp97   { height: 101px !important; }
-    .img-whatsapp97   { height: 101px !important; }
-    .class    {      height: 100px !important;    }
-  }
-
-
   .imageElement--ico-btn-CallCenter {
     height: 45px !important;
   }
@@ -1371,7 +1350,22 @@ width: 100%;
   .portalContainer--searchBarIcon :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
     width: 83vw;
   }
+
+  .imageElement--btnWhatsApp-ico  { height: 70px !important; margin-top: 55px; margin-left: 18px; }
+  .imageElement--img-whatsapp97   { height: 71px;}
+  .img-whatsapp97                 { height: 72px !important; }
+  .class                          { height: 100px !important; }
+
+}  /* ===============  @media (max-width: 1024px) ===============  */
+
+@media (min-width:1025px)
+{
+  .imageElement--btnWhatsApp-ico  { height: 85px !important; }
+  .imageElement--img-whatsapp97   { height: 86px !important; }
+  .img-whatsapp97                 { height: 87px !important; }
+  .class    {      height: 100px !important;    }
 }
+
 
 
 @media (max-width: 450px) {
