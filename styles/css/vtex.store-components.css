@@ -1351,7 +1351,7 @@ width: 100%;
     width: 83vw;
   }
 
-  .imageElement--btnWhatsApp-ico  { height: 70px !important; margin-top: 55px; margin-left: 18px; }
+  .imageElement--btnWhatsApp-ico  { height: 86px !important; margin-top: 55px; margin-left: 18px; }
   .imageElement--img-whatsapp97   { height: 71px;}
   .img-whatsapp97                 { height: 72px !important; }
   .class                          { height: 100px !important; }
@@ -1360,7 +1360,7 @@ width: 100%;
 
 @media (min-width:1025px)
 {
-  .imageElement--btnWhatsApp-ico  { height: 85px !important; }
+  .imageElement--btnWhatsApp-ico  { height: 94px !important; }
   .imageElement--img-whatsapp97   { height: 86px !important; }
   .img-whatsapp97                 { height: 87px !important; }
   .class    {      height: 100px !important;    }
