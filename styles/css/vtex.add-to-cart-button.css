@@ -6,11 +6,12 @@
 
 .buttonText::before {
   content: '';
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   display: flex;
-  padding: 0;
-  background-image: url(assets/ico/cartShelf.svg);
+  padding: 0px 4px 4px 0px; /*padding: 0;*/
+  margin-right: 5px;
+  background-image: url(assets/ico/cartShelf_w.svg);
   background-size: cover;
 }
 
@@ -55,7 +56,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 .btn_buy_sample{
   margin: 10px;
@@ -83,7 +84,7 @@
   cursor: pointer;
   background-color: #fff;
 }
-.btn_buy_whatsapp:hover{   
+.btn_buy_whatsapp:hover{
   margin: 10px;
   width: 100%;
   padding: 5px;
@@ -94,7 +95,7 @@
   font-size: 1.3em;
   cursor: pointer;
   background-color: #6fc745;
-  
+
 }
 .btn_add_with_whatsapp{
   width: 50%;
