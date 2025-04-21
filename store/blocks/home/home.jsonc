@@ -2,12 +2,22 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#homeBanners",
+      //"__fold__.desktop",
+      //"flex-layout.row#product-featured",
+      //"__fold__.mobile",
+      //"flex-layout.row#shelf",
+
+      "flex-layout.row#connectif-block",
+
+      "responsive-layout.desktop#seasonProduct",
+      "responsive-layout.mobile#seasonProduct",
+
       "__fold__.desktop",
       "flex-layout.row#product-featured",
       "__fold__.mobile",
       "flex-layout.row#shelf",
-      "responsive-layout.desktop#seasonProduct",
-      "responsive-layout.mobile#seasonProduct",
+
+
 
       "responsive-layout.desktop#section-inspireInfocard-2",
       "responsive-layout.mobile#section-inspireInfocard-2-mobile",
@@ -107,6 +117,21 @@
       "blockClass": "title-product"
     }
   },
+
+
+  "flex-layout.row#connectif-block":
+  {
+    "children": ["connectif#test-connectif-block"],
+    "props":
+    {
+      /*"blockClass": "section-seasonProduct",*/
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false
+    }
+  },
+
+
+
   // Botón whatsapp
   "flex-layout.row#btnWhatsApp": {
     "children": [ "image#ico-btn-whatsapp-new" ],
@@ -339,21 +364,11 @@
   /* Season product section -COCINAS*/
   "responsive-layout.desktop#seasonProduct": {
     "children": [
-      "flex-layout.row#seasonProduct",
-      "flex-layout.row#connectif-block"
+      "flex-layout.row#seasonProduct"
     ]
   },
 
-  "flex-layout.row#connectif-block":
-  {
-    "children": ["connectif#test-connectif-block"],
-    "props":
-    {
-      /*"blockClass": "section-seasonProduct",*/
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": false
-    }
-  },
+
 
   "flex-layout.row#seasonProduct": {
     "children": [
@@ -456,6 +471,10 @@
       "blockClass": "shelf-seasonProduct"
     }
   },
+
+
+
+
   // *Inspire Section -Inspírate*
   "flex-layout.row#inspireInfoCard": {
     "props": {
