@@ -3549,3 +3549,7 @@ height: 520px;
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 20em) and (max-width: 1024px)
+{
+  .flexRow--container-centrado-hv { margin-top: 35px; }
+}
