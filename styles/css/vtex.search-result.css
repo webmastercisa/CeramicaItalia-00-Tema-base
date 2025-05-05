@@ -46,7 +46,7 @@
 .filterAvailable--filter-navigator {
   border: 1px solid #ED1B24;
   border-radius: 30px;
-  padding: 10px 15px;
+  padding: 8px 15px;
   margin: 0 5px;
 }
 
@@ -508,8 +508,8 @@
   .accordionFilterContent--filter-navigator{
     border: 1px solid #ED1B24;
     border-radius: 35px;
-    padding: 15px 10px;
-    margin-bottom: 5px;
+    padding: 6px 10px;/* 6 antes 15 */
+    margin-bottom: 4px;
   }
 
   .filterAccordionBreadcrumbs {
