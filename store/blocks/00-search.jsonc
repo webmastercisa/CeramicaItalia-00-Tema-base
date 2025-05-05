@@ -387,7 +387,9 @@
     "props": {
       "maxItemsDepartment": 3,
       "maxItemsCategory": 1,
-      "initiallyCollapsed": true,
+      "showTitle": true, //nuevo
+      "preventRouteChange": false, //nuevo
+      "initiallyCollapsed": false,/*true*/
       "closeOnOutsideClick": true,
       "blockClass": "filter-navigator",
       "priceRangeLayout": "inputAndSlider",
@@ -398,7 +400,10 @@
           "orderBy": "name",
           "order": "ASC"
         }
-      ]
+      ],
+      "filterByTag": true,        //nuevo
+      "fullWidth": false,         //nuevo
+      "updateOnFilterSelectionOnMobile": true //
     }
   },
   "drawer#filter-navigator-v2": {
