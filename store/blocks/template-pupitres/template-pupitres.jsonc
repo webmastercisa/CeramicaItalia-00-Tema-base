@@ -1,0 +1,606 @@
+{
+    "store.custom#template-pupitres":
+    {
+      "blocks":
+      [
+        "responsive-layout.desktop#pupitres",
+        "responsive-layout.mobile#pupitres"
+      ]
+    },
+
+    "responsive-layout.desktop#pupitres":
+    {
+      "title":"PUPITRES",
+      "children": [
+        "flex-layout.row#pupitres-contenedor-banner",
+        "flex-layout.row#pupitres-contenedor-b2",
+        "flex-layout.row#pupitres-contenedor-b3",
+        "flex-layout.row#pupitres-contenedor-b4"
+      ]
+    },
+
+    "responsive-layout.mobile#pupitres":
+    {
+      "title":"PUPITRES",
+      "children": [
+        "flex-layout.row#pupitres-contenedor-banner-m",
+        "flex-layout.row#pupitres-contenedor-b2",
+        "flex-layout.row#pupitres-contenedor-b3",
+        "flex-layout.row#pupitres-contenedor-b4-m"
+      ]
+    },
+
+
+    // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Separadores  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    "flex-layout.row#spc10": { "children": ["rich-text#spc10"]  },
+    "rich-text#spc10":       { "props": { "text": "&nbsp;", "blockClass": ["h10px"],  "textAlignment": "CENTER", "textPosition": "CENTER" } },
+    "flex-layout.row#spc30": { "children": ["rich-text#spc30"]  },
+    "rich-text#spc30":       { "props": { "text": "&nbsp;", "blockClass": ["h30px"],  "textAlignment": "CENTER", "textPosition": "CENTER" } },
+    "flex-layout.row#spc50": { "children": ["rich-text#spc50"]  },
+    "rich-text#spc50":       { "props": { "text": "&nbsp;", "blockClass": ["h70px"],  "textAlignment": "CENTER", "textPosition": "CENTER" } },
+    "flex-layout.row#spc70": { "children": ["rich-text#spc70"]  },
+    "rich-text#spc70":       { "props": { "text": "&nbsp;", "blockClass": ["h70px"],  "textAlignment": "CENTER", "textPosition": "CENTER" } },
+    "flex-layout.row#spc100":{ "children": ["rich-text#spc100"]  },
+    "rich-text#spc100":      { "props": { "text": "&nbsp;", "blockClass": ["h100px"], "textAlignment": "CENTER", "textPosition": "CENTER" } },
+    // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+    "flex-layout.row#pupitres-contenedor-banner":
+    {
+      "children": ["image#imagen-cabecera"],
+      "props": { "blockClass": ["pupi-contenedor-b1"] }
+    },
+
+        "image#imagen-cabecera":
+        {
+          "props":
+          {
+            "src": "arquivos/banner1-muestra.png",
+            "alt": "Cerámica Italia",
+            "title":"CERAMICA ITALIA .::. Transformando la educación",
+            "blockClass": "img-w80p" //storePrint
+          }
+        },
+
+
+        "flex-layout.row#pupitres-contenedor-banner-m":
+        {
+          "children": ["image#imagen-cabecera-m"],
+          "props": { "blockClass": ["pupi-contenedor-b1"] }
+        },
+
+            "image#imagen-cabecera-m":
+            {
+              "props":
+              {
+                "src": "arquivos/bannerImage.png",
+                "alt": "Cerámica Italia",
+                "title":"CERAMICA ITALIA .::. Transformando la educación",
+                "blockClass": "img-wfull-m" //storePrint
+              }
+            },
+
+    // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Bloque 2 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ //
+    "flex-layout.row#pupitres-contenedor-b2":
+    {
+      "children": [
+        "flex-layout.col#pupitres-layout-izq",
+        "flex-layout.col#pupitres-layout-der"
+      ],
+      "props":
+      {
+        "blockClass": ["pupi-contenedor-b2", "pupi-frm"]
+      }
+    },
+
+        //╠════════════════ Level 2 ════════════════╣
+        "flex-layout.col#pupitres-layout-izq":
+        {
+          "children": [
+            "flex-layout.row#pupitres-slider-mini-contenedor",
+            "flex-layout.row#pupitres-txt-contenedor1",
+            "flex-layout.row#pupitres-txt-contenedor2",
+            "flex-layout.row#pupitres-txt-contenedor3"
+          ],
+          "props":
+          {
+            "blockClass": ["col-b1-50p-i"]
+          }
+        },
+        "flex-layout.col#pupitres-layout-der":
+        {
+          "children": ["form#Pupitres"],
+          "props":
+          {
+            "blockClass": ["col-b1-50p-d", "pupi-frm"],
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "fullWidth": true,
+            "minHeight": "100vh"
+          }
+        },
+
+            //╠════════════════ Level 3 ════════════════╣
+            "flex-layout.row#pupitres-slider-mini-contenedor":
+            {
+              "children": ["list-context.image-list#pupitres-banner-slider-mini-list"]
+            },
+
+            "flex-layout.row#pupitres-txt-contenedor1":
+            {
+              "children": ["rich-text#pupitres-texto-explicativo_1"]
+            },
+
+            "flex-layout.row#pupitres-txt-contenedor2":
+            {
+              "children": ["rich-text#pupitres-texto-explicativo_2"]
+            },
+
+            "flex-layout.row#pupitres-txt-contenedor3":
+            {
+              "children": ["rich-text#pupitres-texto-explicativo_3"]
+            },
+
+                //╠════════════════ Level 4 ════════════════╣
+                "list-context.image-list#pupitres-banner-slider-mini-list":
+                {
+                  "children": ["slider-layout#pupitres-banner-slider-izq"],
+                  "props":
+                  {
+                    "height": 570,
+                    "preload": true,
+                    "images": [
+                      {
+                        "image": "arquivos/banner1-muestra.png",
+                        "mobileImage": "arquivos/banner1-muestra-mobile.png"
+                      },
+                      {
+                        "image":"arquivos/banner1-muestra.png",
+                        "mobileImage": "arquivos/banner1-muestra-mobile.png"
+                      }
+                    ]
+                  }
+                },
+                "rich-text#pupitres-texto-explicativo_1":
+                {
+                  "props":
+                  {
+                    "text": "En cerámica italia creemos en el poder del diseño para transformar realidades. **Por eso creamos ¨Plasmando sueños en Cerámica¨ pupitres personalizados en cerámica para que los niños puedan hacer del dibujo el centro de su aprendizaje.**",
+                    "blockClass": ["neutra","pupi-b1-col1"],
+                    "textAlignment": "LEFT",
+                    "textPosition": "CENTER"
+                  }
+                },
+                "rich-text#pupitres-texto-explicativo_2":
+                {
+                  "props":
+                  {
+                    "text": "!Estamos buscando aliados para llevar esta iniciativa a todos el país!",
+                    "blockClass": ["neutra", "pupi-b1-h3"],
+                    "textAlignment": "LEFT",
+                    "textPosition": "CENTER"
+                  }
+                },
+                "rich-text#pupitres-texto-explicativo_3":
+                {
+                  "props":
+                  {
+                    "text": "¿Te gustaría ayudarnos?",
+                    "blockClass": ["neutrab", "pupi-b1-h1"],
+                    "textAlignment": "CENTER",
+                    "textPosition": "CENTER"
+                  }
+                },
+                    //╠════════════════ Level 4 ════════════════╣
+
+                    "slider-layout#pupitres-banner-slider-izq": {
+                      "props": {
+                        "itemsPerPage": {
+                          "desktop": 1,
+                          "tablet": 1,
+                          "phone": 1
+                        },
+                        "infinite": true,
+                        "showNavigationArrows": "never",
+                        "showPaginationDots": "always",
+                        "blockClass": ["banner1-muestras"],
+                        "autoplay": {
+                          "timeout": 3000,
+                          "stopOnHover": true
+                        }
+                      }
+                    },
+
+                   // ________________  Fin Bloque Izq _________________________
+                   //_________________ Ini Bloque Der  _________________________
+
+                   "form#Pupitres":
+                   {
+                    "props": {  "entity": "PT", "schema": "mdv1", "blockClass": "formulario-pqrs2" },
+                    //"props": {  "entity": "CO", "schema": "CONTACTO", "blockClass": "formulario-pqrs2" },
+                    "children": ["flex-layout.row#campos-form-pupitres", "flex-layout.row#contenedor-submit-formulario-pupi"],
+                    "blocks": ["form-success#successSubmitPupitres"]
+                  },
+
+                  "form-success#successSubmitPupitres": { "children": [ "rich-text#successSubmitPupitres" ] },
+                  "rich-text#successSubmitPupitres": {
+                    "props": {
+                      "text": "Los datos han sido enviados satisfactoriamente!",
+                      "textAlignment": "CENTER",
+                      "textPosition": "CENTER",
+                      "blockClass": "pupi-form-respuesta-envio"
+                    }
+                  },
+                  "flex-layout.row#campos-form-pupitres":{ "children": ["flex-layout.col#campos-form-pupitres"] },
+                  "flex-layout.col#campos-form-pupitres":
+                  {
+                    "children": [
+                      "rich-text#Pupitres-form-Title",
+                      "form-input.text#Pupitres-Name",
+                      "form-input.text#Pupitres-email",
+                      "form-input.text#Pupitres-phone",
+                      "form-input.text#Pupitres-company"
+                      //"form-field-group#address",
+                      //"form-input.checkbox#agreement",
+                    ],
+                    "props":
+                    {
+                      "blockClass": "pupi-form-style2"
+                    }
+                  },
+
+                  "rich-text#Pupitres-form-Title":
+                  {
+                    "props":
+                    {
+                      "text": "### !Súmate a esta iniciativa y transformemos las aulas del país!\n",
+                      "blockClass": "fondo-negro",
+                      "textAlignment": "CENTER",
+                      "textPosition": "CENTER"
+                    }
+                  },
+
+                  "form-input.text#Pupitres-Name":    { "props":  { "pointer": "#/properties/name",     "placeholder": "Nombres y apellidos"    } },
+                  "form-input.text#Pupitres-email":   { "props":  { "pointer": "#/properties/email",    "placeholder": "Correo electrónico"     } },
+                  "form-input.text#Pupitres-phone":   { "props":  { "pointer": "#/properties/phone",    "placeholder": "Número de teléfono"     } },
+                  "form-input.text#Pupitres-company": { "props":  { "pointer": "#/properties/company",  "placeholder": "Compañía o Razón Social"} },
+                  //"form-input.checkbox#agreement":  { "props":  { "pointer": "#/properties/company_name", "label": "Do you agree that this is the best form component in the whole wide world?" }  },
+                  //"form-field-group#address":       { "props":  { "pointer": "#/properties/address" } },
+
+                  // ============  FILA Boton  SUBMIT
+                  "flex-layout.row#contenedor-submit-formulario-pupi":
+                  {
+                    "children": [
+                      //"form-input.checkbox#agreement-formulario-pupi",
+                      "form-submit#boton-submit-formulario-pupi"
+                    ],
+                    "props":{ "blockClass":"contenedor-submit-formulario-pupi" }
+                  },
+                  "form-submit#boton-submit-formulario-pupi":
+                  {
+                    "props": { "label": "! Quiero unirme a este proyecto ¡" }
+                  },
+                  /*
+                  "form-input.checkbox#agreement-formulario-pqrs":
+                  {
+                    "props": {
+                      "pointer": "#/properties/agreement",
+                      "label": "He leído y acepto la política de datos personales.",
+                      "blockClass": "agreement-formulario-pqr"
+                    }
+                  }
+                    */
+
+
+
+
+
+
+
+
+
+
+
+    // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Bloque 3 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    "flex-layout.row#pupitres-contenedor-b3":
+    {
+      "children": ["flex-layout.col#pupitres-b3"],
+      "props": {"blockClass": "pupi-contenedor-b3"}
+      //"children": ["flex-layout.row#pupitres-b3-txt1","flex-layout.row#spc10","flex-layout.row#pupitres-b3-txt2","flex-layout.row#spc10","flex-layout.row#pupitres-b3-contenedor"]
+    },
+        //╠════════════════ Level 2 ════════════════╣
+        "flex-layout.col#pupitres-b3":
+        {
+          "children": ["flex-layout.row#pupitres-b3-txt1","flex-layout.row#pupitres-b3-txt2","flex-layout.row#pupitres-b3-contenedor"],
+          "props": {"blockClass": "pupi-contenedor-b3"}
+        },
+            //╠════════════════ Level 3 ════════════════╣
+
+
+            "flex-layout.row#pupitres-b3-txt1":
+            {
+              "children": ["flex-layout.col#pupitres-b3-txt1"]
+            },
+            "flex-layout.row#pupitres-b3-txt2":
+            {
+              "children": ["rich-text#pupitres-b3-txt2"]
+            },
+            "flex-layout.row#pupitres-b3-contenedor":
+            {
+              "children": [
+                "flex-layout.col#pupitres-b3-col1",
+                "flex-layout.col#pupitres-b3-col2",
+                "flex-layout.col#pupitres-b3-col3"]
+            },
+                //╠════════════════ Level 4 ════════════════╣
+                "flex-layout.col#pupitres-b3-txt1":
+                {
+                  "children": ["rich-text#pupitres-b3-txt1"]
+
+                },
+                "rich-text#pupitres-b3-txt1":
+                {
+                  "props":
+                  {
+                    "text": "Grandes sueños, grandes sonrisas",
+                    "blockClass": ["pupi-txt-100"],  "textAlignment": "CENTER", "textPosition": "CENTER"
+                  }
+                },
+                "rich-text#pupitres-b3-txt2":
+                {
+                  "props": { "text": "Descubre cómo el diseño puede impactar de forma positiva el aprendizaje de los niños",
+                  "blockClass": ["pupi-b3-txt-h2"],
+                  "textAlignment": "CENTER", "textPosition": "CENTER"
+                }
+                },
+                "flex-layout.col#pupitres-b3-col1":
+                {
+                  "children": ["flex-layout.row#pupitres-b3-col1-img","flex-layout.row#pupitres-b3-col1-txt"],
+                  "props": {"blockClass": "separador-b3-der"}
+                },
+                "flex-layout.col#pupitres-b3-col2":
+                {
+                  "children": ["flex-layout.row#pupitres-b3-col2-img","flex-layout.row#pupitres-b3-col2-txt"],
+                  "props": {"blockClass": "separador-b3-izqder"}
+                },
+                "flex-layout.col#pupitres-b3-col3":
+                {
+                  "children": ["flex-layout.row#pupitres-b3-col3-img","flex-layout.row#pupitres-b3-col3-txt"],
+                  "props": {"blockClass": "separador-b3-izq"}
+                },
+                    //╠════════════════ Level 5 ════════════════╣
+                    "flex-layout.row#pupitres-b3-col1-img": {  "children": ["image#pupitres-b3-col1"]  },
+                    "flex-layout.row#pupitres-b3-col1-txt":
+                    {
+                      "children": ["rich-text#pupitres-b3-col1"],
+                      "props":{ "blockClass": ["contenedor-top-xxxx"] }
+                    },
+
+                    "flex-layout.row#pupitres-b3-col2-img": { "children": ["image#pupitres-b3-col2"]  },
+                    "flex-layout.row#pupitres-b3-col2-txt":
+                    {
+                      "children": ["rich-text#pupitres-b3-col2"],
+                      "props":{ "blockClass": ["contenedor-top-xxxx"] }
+                    },
+
+                    "flex-layout.row#pupitres-b3-col3-img":  { "children": ["image#pupitres-b3-col3"]  },
+                    "flex-layout.row#pupitres-b3-col3-txt":
+                    {
+                      "children": ["rich-text#pupitres-b3-col3"],
+                      "props":{ "blockClass": ["contenedor-top-xxxx"] }
+                    },
+                        //╠════════════════ Level 6 ════════════════╣
+                        "image#pupitres-b3-col1":
+                        {
+                          "props":
+                          {
+                            "src":  "arquivos/banner-comprar-exterior-2.png",
+                            "alt": "Cerámica Italia",
+                            "height": "hight",
+                            "blockClass": "banner1-compra-exterior",
+                            "link": { "url": "#", "openNewTab": false,  "title": "title"  }
+                          }
+                        },
+                        "rich-text#pupitres-b3-col1":
+                        {"props":
+                          {
+                            "text": "Diseño trapezoidal, para incentivar el trabajo en equipo",
+                            "blockClass": ["h100px","pupi-b1-col1"],
+                            "textAlignment": "CENTER",
+                            "textPosition": "CENTER"
+                          }
+                        },
+
+                        "image#pupitres-b3-col2":
+                        {
+                          "props":
+                          {
+                            "src":  "arquivos/banner-comprar-exterior-2.png",
+                            "alt": "Cerámica Italia",
+                            "height": "hight",
+                            "blockClass": "banner1-compra-exterior",
+                            "link": { "url": "#", "openNewTab": false,  "title": "title"  }
+                          }
+                        },
+                        "rich-text#pupitres-b3-col2":
+                        {
+                          "props":
+                          {
+                            "text": "Superficie de Ceranatto adaptado",
+                            "blockClass": ["h100px","pupi-b1-col1"],
+                            "textAlignment": "CENTER",
+                            "textPosition":  "CENTER"
+                          }
+                        },
+
+                        "image#pupitres-b3-col3":
+                        {
+                          "props":
+                          {
+                            "src":  "arquivos/banner-comprar-exterior-2.png",
+                            "alt": "Cerámica Italia",
+                            "height": "hight",
+                            "blockClass": "banner1-compra-exterior",
+                            "link": { "url": "#", "openNewTab": false,  "title": "title"  }
+                          }
+                        },
+                        "rich-text#pupitres-b3-col3":
+                        {
+                          "props":
+                          {
+                            "text": "Diseño único para cada institución",
+                            "blockClass": ["h100px","pupi-b1-col1"],
+                            "textAlignment": "CENTER",
+                            "textPosition": "CENTER"
+                          }
+                        },
+
+
+
+
+
+
+
+    // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Bloque 4 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    "flex-layout.row#pupitres-contenedor-b4":
+    {
+      "children": ["flex-layout.col#pupitres-contenedor-b4"],
+      "props":
+      {
+        "blockClass": "pupi-contenedor-b4"
+      }
+    },
+
+    "flex-layout.col#pupitres-contenedor-b4":
+    {
+      "children": [
+        "flex-layout.row#pupitres-b4-txt",
+        "flex-layout.row#pupitres-b4-video",
+        "flex-layout.row#pupitres-b4-img"],
+      "props":
+      {
+        "blockClass": ["pupi-w100p", "separador-mt-50","centrar"]
+      }
+    },
+
+    "flex-layout.row#pupitres-b4-txt":    {   "children": ["rich-text#pupitres-b4-txt"]  },
+    "flex-layout.row#pupitres-b4-video":
+    {
+      "children": ["video#pupitres-b4"],
+      "props":
+      {
+        //"blockClass": "pupi-video-container"
+      }
+    },
+    "flex-layout.row#pupitres-b4-img":
+    {
+      "children": ["image#pupitres-b4"],
+      "props":
+      {
+        "blockClass":"spc-t150-b150"
+      }
+    },
+
+    "rich-text#pupitres-b4-txt":
+    {
+      "props":
+      {
+        "text": "Conoce la experiencia completa en el Colegio Nuevos Hombres:",
+        "blockClass": "pupi-txt-font84",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+    // ========================= Bloque video ========================= //
+    "video#pupitres-b4":
+    {
+      "props":
+      {
+        "name":"Cerámica Italia, Hoy celebramos la magia de ser niño",
+        "description":"Cerámica Italia, Hoy celebramos la magia de ser niño",
+        "loop": false,
+        "autoPlay": true,
+        "muted": false,
+        "src": "https://www.youtube.com/embed/T2lRneL2OZU",
+        "blockClass": "pupi"
+      }
+    },
+    "image#pupitres-b4":
+    {
+      "props":
+      {
+        "src": "arquivos/banner1-muestra.png",
+        "alt": "Cerámica Italia",
+        "blockClass": ["img-wfull"]
+      }
+    },
+
+
+
+// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Bloque 4 Mobile ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+"flex-layout.row#pupitres-contenedor-b4-m":
+{
+  "children": ["flex-layout.col#pupitres-contenedor-b4-m"],
+  "props":
+  {
+    "blockClass": "pupi-contenedor-b4-m"
+  }
+},
+
+"flex-layout.col#pupitres-contenedor-b4-m":
+{
+  "children": [
+    "flex-layout.row#pupitres-b4-txt",
+    "flex-layout.row#pupitres-b4-video-m",
+    "flex-layout.row#pupitres-b4-img-m"],
+  "props":
+  {
+    "blockClass": ["pupi-w100p", "centrar"]
+  }
+},
+
+
+
+"flex-layout.row#pupitres-b4-video-m":
+{
+  "children": ["video#pupitres-b4-m"],
+  "props":
+  {
+    //"blockClass": "pupi-video-container"
+  }
+},
+
+"flex-layout.row#pupitres-b4-img-m":
+{
+  "children": ["image#pupitres-b4-m"],
+  "props":
+  {
+    "blockClass":"spc-t150-b150-m"
+  }
+},
+
+// ========================= Bloque video ========================= //
+"video#pupitres-b4-m":
+{
+  "props":
+  {
+    "name":"Cerámica Italia, Hoy celebramos la magia de ser niño",
+    "description":"Cerámica Italia, Hoy celebramos la magia de ser niño",
+    "loop": false,
+    "autoPlay": true,
+    "muted": false,
+    "src": "https://www.youtube.com/embed/T2lRneL2OZU",
+    "blockClass": "pupi-m"
+  }
+},
+"image#pupitres-b4-m":
+{
+  "props":
+  {
+    "src": "arquivos/banner1-muestra-mobile.png",
+    "alt": "Cerámica Italia",
+    "blockClass": ["img-wfull-m"]
+  }
+}
+
+
+}

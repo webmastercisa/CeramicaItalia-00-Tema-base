@@ -196,6 +196,7 @@
   },
   "product-images#horizontal": {
     "props": {
+      "showBadge": true,
       "aspectRatio": {
         "desktop": "auto",
         "phone": "1:1"
@@ -224,8 +225,11 @@
     },
     "children": [
       "vtex.store-components:product-name"
+      //,"badge-descuento"
+
     ]
   },
+
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,

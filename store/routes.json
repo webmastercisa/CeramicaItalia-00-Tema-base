@@ -46,13 +46,11 @@
     "title": "Imperdibles",
     "isSitemapEntry": true
   },
-
   "store.custom#compras-exterior":{
     "path": "/compras-exterior",
     "title": "Compra desde el exterior",
     "isSitemapEntry": true
   },
-
   "store.custom#mapa-ceramicaitalia": {
     "path": "/nuestras-tiendas",
     "title": "Nuestro Mapa | Ceramica Italia",
@@ -63,13 +61,11 @@
     "title": "Centro de ayuda | Ceramica Italia",
     "isSitemapEntry": false
   },
-
   "store.custom#trabaja-con-nosotros": {
     "path": "/trabaja-con-nosotros",
     "title": "Trabaja con nosotros| Ceramica Italia",
     "isSitemapEntry": false
   },
-
   "store.custom#sostenibilidad": {
     "path": "/sostenibilidad",
     "title": "Sostenibilidad| Ceramica Italia",
@@ -96,9 +92,6 @@
     "title": "template categoria",
     "isSitemapEntry": true
   },
-
-
-
   "store.custom#form-products": {
     "path": "/form-products",
     "title": "Formulario de productos"
@@ -115,6 +108,12 @@
   "store.blog-home": { "path": "/blog" },
   "store.blog-category": { "path": "/blog/category/:categoryslug(/page/:page)" },
   "store.blog-post": { "path": "/blog/post/:slug" },
-  "store.blog-search-result": { "path": "/blog/search/:term" }
+  "store.blog-search-result": { "path": "/blog/search/:term" },
+
+  "store.custom#template-pupitres":
+  {
+    "path": "/template-pupitres",
+    "title": "Transformemos la educación"
+  }
 
 }
