@@ -57,7 +57,13 @@
             "src": "arquivos/banner1-muestra.png",
             "alt": "Cerámica Italia",
             "title":"CERAMICA ITALIA .::. Transformando la educación",
-            "blockClass": "img-w80p" //storePrint
+            "blockClass": "img-w80p", //storePrint
+            "link": 
+            {
+              "url": "#bbloque2",
+              "openNewTab": false,
+              "title": "Go to bloque number two"
+            }
           }
         },
 
@@ -75,7 +81,14 @@
                 "src": "arquivos/bannerImage.png",
                 "alt": "Cerámica Italia",
                 "title":"CERAMICA ITALIA .::. Transformando la educación",
-                "blockClass": "img-wfull-m" //storePrint
+                "blockClass": "img-wfull-m", //storePrint
+                "link": 
+                {
+                  "url": "#bbloque2",
+                  "openNewTab": false,
+                  "title": "Go to bloque number two"
+                }
+                
               }
             },
 
@@ -371,7 +384,7 @@
                         {
                           "props":
                           {
-                            "src":  "arquivos/banner-comprar-exterior-2.png",
+                            "src":  "arquivos/logoVtex.png",
                             "alt": "Cerámica Italia",
                             "height": "hight",
                             "blockClass": "img_tres_por_fila",
@@ -424,7 +437,7 @@
       "children": ["video#pupitres-b4"],
       "props":
       {
-        //"blockClass": "pupi-video-container"
+        "blockClass": "pupi-video-container"
       }
     },
     "flex-layout.row#pupitres-b4-img":
@@ -466,7 +479,13 @@
       {
         "src": "arquivos/banner1-muestra.png",
         "alt": "Cerámica Italia",
-        "blockClass": ["img-wfull"]
+        "blockClass": ["img-w80p"],
+        "link": 
+        {
+          "url": "#bbloque2",
+          "openNewTab": false,
+          "title": "Go to block number two"
+        }
       }
     },
 
@@ -534,7 +553,13 @@
   {
     "src": "arquivos/banner1-muestra-mobile.png",
     "alt": "Cerámica Italia",
-    "blockClass": ["img-wfull-m"]
+    "blockClass": ["img-wfull-m"],
+    "link": 
+    {
+      "url": "#bbloque2",
+      "openNewTab": false,
+      "title": "Go to bloque number two"
+    }
   }
 }
 

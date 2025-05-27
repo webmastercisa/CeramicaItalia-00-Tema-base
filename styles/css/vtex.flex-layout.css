@@ -3735,6 +3735,7 @@ height: 520px;
   width: 100% !important;
 }
 
+
 .flexRow--pupi-contenedor-b3
 {
   background-color: #F1F1F1;
@@ -3764,6 +3765,10 @@ height: 520px;
   background-color: #F1F1F1;
 }
 
+.flexRow--pupi-video-container
+{
+  height: 640px;
+}
 
 /* Móvil pequeño (ejemplo: hasta 480px) */
 @media (max-width: 480px)
@@ -3812,5 +3817,5 @@ height: 520px;
 /* Escritorio grande (ejemplo: más de 1200px) */
 @media (min-width: 1201px)
 {
-  .flexRow--pupi-contenedor-b1  {    margin-bottom: 100px;  }
+  .flexRow--pupi-contenedor-b1  {  margin-bottom: 60px;  }
 }
