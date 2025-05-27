@@ -3817,5 +3817,5 @@ height: 520px;
 /* Escritorio grande (ejemplo: más de 1200px) */
 @media (min-width: 1201px)
 {
-  .flexRow--pupi-contenedor-b1  {    margin-bottom: 100px;  }
+  .flexRow--pupi-contenedor-b1  {  margin-bottom: 60px;  }
 }

@@ -57,7 +57,13 @@
             "src": "arquivos/banner1-muestra.png",
             "alt": "Cerámica Italia",
             "title":"CERAMICA ITALIA .::. Transformando la educación",
-            "blockClass": "img-w80p" //storePrint
+            "blockClass": "img-w80p", //storePrint
+            "link": 
+            {
+              "url": "#bbloque2",
+              "openNewTab": false,
+              "title": "Go to bloque number two"
+            }
           }
         },
 
@@ -473,7 +479,7 @@
       {
         "src": "arquivos/banner1-muestra.png",
         "alt": "Cerámica Italia",
-        "blockClass": ["img-wfull"],
+        "blockClass": ["img-w80p"],
         "link": 
         {
           "url": "#bbloque2",
