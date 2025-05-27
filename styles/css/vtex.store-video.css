@@ -35,15 +35,15 @@
 
 .videoContainer--pupi
 {
-  margin-bottom:  250px !important;
+  margin-bottom:  150px !important;
   margin-left:  0 !important;
   margin-right: 0 !important;
   padding: 0 !important;
 }
 .videoElement--pupi
 {
-  height: 980px !important;
-  width: 1280px !important;
+  height: 620px !important;
+  width: 1080px !important;
 }
 .videoContainer--pupi-m
 {

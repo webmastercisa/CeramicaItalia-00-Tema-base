@@ -1444,4 +1444,8 @@ width: 100%;
 
 }
 
-
+.imageElementLink--img_tres_por_fila
+{
+  text-align: center;
+  align-items: center;
+}
