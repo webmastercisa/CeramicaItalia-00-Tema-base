@@ -2607,26 +2607,7 @@ margin: 0px 0px 10px 0px;
   background-color: #000;
   margin-bottom: 15px;
 }
-.container--pupi-txt-100
-{
-  font-size: 120px;
-  color: #3f3f3f;
-  font-family: 'NeutraTextAltBold' !important;
-  font-weight: bolder;
-  text-align: center;
-  line-height: 0.9 !important;
-}
-.paragraph--pupi-txt-100
-{
-  font-size: 120px;
-  color: #3f3f3f;
-  font-family: 'NeutraTextAltBold' !important;
-  font-weight: bolder;
-  text-align: center;
-  line-height: 0.9 !important;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.25em;
-}
+
 
 .container--pupi-b3-txt-h2
 {
@@ -2656,7 +2637,7 @@ margin: 0px 0px 10px 0px;
   font-weight: bolder;
   text-align: center;
   line-height: 0.9 !important;
-  padding-top: 120px;
+  padding-top: 60px;
   margin-block-start: 0.25em;
   margin-block-end: 0.25em;
 }
@@ -2677,14 +2658,6 @@ margin: 0px 0px 10px 0px;
   .paragraph--pupi-b1-h1  {    font-size: 40px;  }
   .paragraph--pupi-b1-h3  {    text-align: center;    font-size: 30px;  }
 
-  .paragraph--pupi-txt-100
-  {
-    font-size: 60px !important;
-    line-height: 0.9 !important;
-    margin-block-start: 0.25em;
-    margin-block-end: 0.25em;
-
-  }
 
   .container--pupi-b3-txt-h2
   {
@@ -2720,6 +2693,6 @@ margin: 0px 0px 10px 0px;
     padding-top: 20px;
     margin-block-start: 0.25em;
     margin-block-end: 0.25em;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }

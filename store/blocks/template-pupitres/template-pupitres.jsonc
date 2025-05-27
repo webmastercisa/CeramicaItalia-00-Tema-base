@@ -3,14 +3,14 @@
     {
       "blocks":
       [
-        "responsive-layout.desktop#pupitres",
-        "responsive-layout.mobile#pupitres"
+        "responsive-layout.desktop#pupitresDesktop",
+        "responsive-layout.mobile#pupitresMobile"
       ]
     },
 
-    "responsive-layout.desktop#pupitres":
+    "responsive-layout.desktop#pupitresDesktop":
     {
-      "title":"PUPITRES",
+      "title":"PUPITRES_Desktop",
       "children": [
         "flex-layout.row#pupitres-contenedor-banner",
         "flex-layout.row#pupitres-contenedor-b2",
@@ -19,9 +19,9 @@
       ]
     },
 
-    "responsive-layout.mobile#pupitres":
+    "responsive-layout.mobile#pupitresMobile":
     {
-      "title":"PUPITRES",
+      "title":"PUPITRES_Mobile",
       "children": [
         "flex-layout.row#pupitres-contenedor-banner-m",
         "flex-layout.row#pupitres-contenedor-b2",
@@ -88,7 +88,8 @@
       ],
       "props":
       {
-        "blockClass": ["pupi-contenedor-b2", "pupi-frm"]
+        "blockClass": ["pupi-contenedor-b2", "pupi-frm"],
+        "htmlId": "bbloque2"
       }
     },
 
@@ -108,7 +109,7 @@
         },
         "flex-layout.col#pupitres-layout-der":
         {
-          "children": ["form#Pupitres"],
+          "children": ["flex-layout.row#form-connectif"],
           "props":
           {
             "blockClass": ["col-b1-50p-d", "pupi-frm"],
@@ -213,87 +214,17 @@
                    // ________________  Fin Bloque Izq _________________________
                    //_________________ Ini Bloque Der  _________________________
 
-                   "form#Pupitres":
-                   {
-                    "props": {  "entity": "PT", "schema": "mdv1", "blockClass": "formulario-pqrs2" },
-                    //"props": {  "entity": "CO", "schema": "CONTACTO", "blockClass": "formulario-pqrs2" },
-                    "children": ["flex-layout.row#campos-form-pupitres", "flex-layout.row#contenedor-submit-formulario-pupi"],
-                    "blocks": ["form-success#successSubmitPupitres"]
-                  },
 
-                  "form-success#successSubmitPupitres": { "children": [ "rich-text#successSubmitPupitres" ] },
-                  "rich-text#successSubmitPupitres": {
-                    "props": {
-                      "text": "Los datos han sido enviados satisfactoriamente!",
-                      "textAlignment": "CENTER",
-                      "textPosition": "CENTER",
-                      "blockClass": "pupi-form-respuesta-envio"
-                    }
-                  },
-                  "flex-layout.row#campos-form-pupitres":{ "children": ["flex-layout.col#campos-form-pupitres"] },
-                  "flex-layout.col#campos-form-pupitres":
+                  "flex-layout.row#form-connectif":
                   {
-                    "children": [
-                      "rich-text#Pupitres-form-Title",
-                      "form-input.text#Pupitres-Name",
-                      "form-input.text#Pupitres-email",
-                      "form-input.text#Pupitres-phone",
-                      "form-input.text#Pupitres-company"
-                      //"form-field-group#address",
-                      //"form-input.checkbox#agreement",
-                    ],
-                    "props":
-                    {
-                      "blockClass": "pupi-form-style2"
-                    }
+                    "children": ["flex-layout.col#form-connectif"],
+                    "props":  { "htmlId": "frm-connectif-pupi" }
                   },
 
-                  "rich-text#Pupitres-form-Title":
+                  "flex-layout.col#form-connectif":
                   {
-                    "props":
-                    {
-                      "text": "### !Súmate a esta iniciativa y transformemos las aulas del país!\n",
-                      "blockClass": "fondo-negro",
-                      "textAlignment": "CENTER",
-                      "textPosition": "CENTER"
-                    }
+                    "props": {  "blockClass": ["pupi-frm-connectif"] }
                   },
-
-                  "form-input.text#Pupitres-Name":    { "props":  { "pointer": "#/properties/name",     "placeholder": "Nombres y apellidos"    } },
-                  "form-input.text#Pupitres-email":   { "props":  { "pointer": "#/properties/email",    "placeholder": "Correo electrónico"     } },
-                  "form-input.text#Pupitres-phone":   { "props":  { "pointer": "#/properties/phone",    "placeholder": "Número de teléfono"     } },
-                  "form-input.text#Pupitres-company": { "props":  { "pointer": "#/properties/company",  "placeholder": "Compañía o Razón Social"} },
-                  //"form-input.checkbox#agreement":  { "props":  { "pointer": "#/properties/company_name", "label": "Do you agree that this is the best form component in the whole wide world?" }  },
-                  //"form-field-group#address":       { "props":  { "pointer": "#/properties/address" } },
-
-                  // ============  FILA Boton  SUBMIT
-                  "flex-layout.row#contenedor-submit-formulario-pupi":
-                  {
-                    "children": [
-                      //"form-input.checkbox#agreement-formulario-pupi",
-                      "form-submit#boton-submit-formulario-pupi"
-                    ],
-                    "props":{ "blockClass":"contenedor-submit-formulario-pupi" }
-                  },
-                  "form-submit#boton-submit-formulario-pupi":
-                  {
-                    "props": { "label": "! Quiero unirme a este proyecto ¡" }
-                  },
-                  /*
-                  "form-input.checkbox#agreement-formulario-pqrs":
-                  {
-                    "props": {
-                      "pointer": "#/properties/agreement",
-                      "label": "He leído y acepto la política de datos personales.",
-                      "blockClass": "agreement-formulario-pqr"
-                    }
-                  }
-                    */
-
-
-
-
-
 
 
 
@@ -304,7 +235,11 @@
     "flex-layout.row#pupitres-contenedor-b3":
     {
       "children": ["flex-layout.col#pupitres-b3"],
-      "props": {"blockClass": "pupi-contenedor-b3"}
+      "props": 
+      {
+        "blockClass": "pupi-contenedor-b3",
+        "htmlId": "bbloque3"
+      }
       //"children": ["flex-layout.row#pupitres-b3-txt1","flex-layout.row#spc10","flex-layout.row#pupitres-b3-txt2","flex-layout.row#spc10","flex-layout.row#pupitres-b3-contenedor"]
     },
         //╠════════════════ Level 2 ════════════════╣
@@ -342,7 +277,7 @@
                   "props":
                   {
                     "text": "Grandes sueños, grandes sonrisas",
-                    "blockClass": ["pupi-txt-100"],  "textAlignment": "CENTER", "textPosition": "CENTER"
+                    "blockClass": ["pupi-txt-font84"],  "textAlignment": "CENTER", "textPosition": "CENTER"
                   }
                 },
                 "rich-text#pupitres-b3-txt2":
@@ -396,7 +331,7 @@
                             "src":  "arquivos/banner-comprar-exterior-2.png",
                             "alt": "Cerámica Italia",
                             "height": "hight",
-                            "blockClass": "banner1-compra-exterior",
+                            "blockClass": "img_tres_por_fila",
                             "link": { "url": "#", "openNewTab": false,  "title": "title"  }
                           }
                         },
@@ -417,7 +352,7 @@
                             "src":  "arquivos/banner-comprar-exterior-2.png",
                             "alt": "Cerámica Italia",
                             "height": "hight",
-                            "blockClass": "banner1-compra-exterior",
+                            "blockClass": "img_tres_por_fila",
                             "link": { "url": "#", "openNewTab": false,  "title": "title"  }
                           }
                         },
@@ -439,7 +374,7 @@
                             "src":  "arquivos/banner-comprar-exterior-2.png",
                             "alt": "Cerámica Italia",
                             "height": "hight",
-                            "blockClass": "banner1-compra-exterior",
+                            "blockClass": "img_tres_por_fila",
                             "link": { "url": "#", "openNewTab": false,  "title": "title"  }
                           }
                         },
@@ -466,7 +401,8 @@
       "children": ["flex-layout.col#pupitres-contenedor-b4"],
       "props":
       {
-        "blockClass": "pupi-contenedor-b4"
+        "blockClass": "pupi-contenedor-b4",
+        "htmlId": "bbloque4"
       }
     },
 
@@ -520,7 +456,7 @@
         "loop": false,
         "autoPlay": true,
         "muted": false,
-        "src": "https://www.youtube.com/embed/T2lRneL2OZU",
+        "src": "https://www.youtube.com/embed/6wmlVLeB3s4",
         "blockClass": "pupi"
       }
     },
@@ -588,7 +524,7 @@
     "loop": false,
     "autoPlay": true,
     "muted": false,
-    "src": "https://www.youtube.com/embed/T2lRneL2OZU",
+    "src": "https://youtu.be/6wmlVLeB3s4?si=zuqGj-DSwspo84Uy",
     "blockClass": "pupi-m"
   }
 },
