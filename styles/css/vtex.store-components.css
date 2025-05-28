@@ -1404,9 +1404,6 @@ width: 100%;
   max-width: 120vw;
   height: auto;
   position: relative;
-  margin-left: -7vw;
-  margin-right: -5vw;
-  border-radius: 5px;
 }
 .imageElement--img-wfull
 {
@@ -1431,36 +1428,88 @@ width: 100%;
 }
 
 
-@media (min-width: 481px) and (max-width: 767px)
+.imageElementLink--img_tres_por_fila
 {
-  .imageElement--img-w80p
-  {
-    width: 50vw !important;
-    max-width: 50vw !important;
-    height: auto;
-    position: relative;
-    border-radius: 5px;
-  }
-
+  text-align: center;
+  align-items: center;
 }
 
-@media (min-width:1600px)
+/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  MEDIAS  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
+/* ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ */
+/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ Mobile ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
+@media (min-width: 320px) and (max-width: 481px)                /* Mobile (hasta 481px) */
 {
   .imageElement--img-w80p
   {
-    width: 107vw;
-    max-width: 120vw;
-    height: auto;
-    position: relative;
-    margin-left: -18vw;
+    margin-left: -7vw;
+    margin-right: -5vw;
+    border-radius: 5px;
+  }
+  .imageElement--img-wfull-m
+  {
+    width: 99vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px)                /* Mobile (hasta 767px) Precticamente todos */
+{
+  .imageElement--img-w80p
+  {
+    margin-left: -7vw;
+    margin-right: -5vw;
+    border-radius: 5px;
+  }
+  .imageElement--img-wfull-m
+  {
+    width: 99vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px)                /* Tablet/Mobile grande - 768px a 991px */
+{
+  .imageElement--img-w80p
+  {
+    margin-left: -7vw;
     margin-right: -5vw;
     border-radius: 5px;
   }
 }
 
-
-.imageElementLink--img_tres_por_fila
+/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ Laptop ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
+@media only screen and (min-width: 992px) and (max-width: 1023px)     /* Laptop pequeña (768px - 1023px) */
 {
-  text-align: center;
-  align-items: center;
+  .imageElement--img-w80p
+  {
+    margin-left: -7vw;
+    margin-right: -5vw;
+    border-radius: 5px;
+  }  
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px)    /* Laptop grande (1024px - 1279px) */
+{
+  .imageElement--img-w80p
+  {
+    margin-left: -7vw;
+    margin-right: -5vw;
+    border-radius: 5px;
+  }
+}
+
+/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ Desktop ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
+@media only screen and (min-width: 1280px) and (max-width: 1439px)    /* Desktop pequeño (1280px - 1439px) */
+{
+  .imageElement--img-w80p
+  {
+    margin-left: -4vw;
+    margin-right: -5vw;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 1440px)                            /* Desktop grande (1440px y superior) */
+{
+  .imageElement--img-w80p
+  {
+    margin-left: -5vw;
+    margin-right: -5vw;
+    border-radius: 5px;
+  }
 }
