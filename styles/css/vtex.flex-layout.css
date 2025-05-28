@@ -3727,10 +3727,11 @@ height: 520px;
 }
 .flexColChild--col-b1-50p-d
 {
-  margin-left:  150px;
-  margin-right: 5px;
-  padding:      10px;
-  border: 1px solid #000;
+  margin-left:  10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding:      2px;
+  border: 1px solid #555;
   height: 100% !important;
   width: 100% !important;
 }
@@ -3770,22 +3771,34 @@ height: 520px;
   height: 640px;
 }
 
-/* Móvil pequeño (ejemplo: hasta 480px) */
-@media (max-width: 480px)
+
+/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  MEDIAS  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
+/* ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ */
+/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ Mobile ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
+@media (min-width: 320px) and (max-width: 481px)                /* Mobile (hasta 481px) */
 {
   .flexRow--pupi-contenedor-b1  {    margin-bottom: 2px;  }
+  .flexColChild--col-b1-50p-i
+  {
+    margin-left:  2px;
+    margin-right: 2px;
+    padding:      10px;
+  }
 }
-
-/* Móvil grande - casi todos (ejemplo: entre 481px y 767px) */
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 481px) and (max-width: 767px)                /* Mobile (hasta 767px) Precticamente todos */
 {
   .flexRow--pupi-contenedor-b1
   {
-    font-size: 14px;
-    /*background-color: #00d0d0;*/
+    font-size: 14px;    /*background-color: #00d0d0;*/
     margin-bottom: 5px;
   }
-
+  .flexColChild--col-b1-50p-i
+  {
+    margin-left:  2px;
+    margin-right: 2px;
+    padding:      10px;
+  }  
 
   .flexColChild--separador-b3-der   {  margin-right: 90px !important;margin-left: 90px !important; }
   .flexColChild--separador-b3-izqder{  margin-right: 90px !important;margin-left: 90px !important; }
@@ -3794,28 +3807,53 @@ height: 520px;
   .flexCol--pupi-contenedor-b3 { margin-bottom: 0;    padding-bottom: 0;   } /*  ?__inspect= */
   .flexColChild--pupi-contenedor-b3 { margin-bottom: 10px;    padding-bottom: 0;  }  /*  ?__inspect= */
 
+  .flexCol--col-b1-50p-d
+  {
+    padding-left: 100px;      padding-right: 100px;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 991px)                /* Tablet/Mobile grande - 768px a 991px */
+{
+  .flexCol--col-b1-50p-d
+  {
+    padding-left: 100px;      padding-right: 100px;
+  }  
 }
 
-/* Laptop pequeño (ejemplo: entre 768px y 1024px) */
-@media (min-width: 768px) and (max-width: 1024px)
+/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ Laptop ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
+@media only screen and (min-width: 992px) and (max-width: 1023px)     /* Laptop pequeña (768px - 1023px) */
 {
-  .flexRow--pupi-contenedor-b1  {    margin-bottom: 20px;  }
-  .flexRow--pupi-contenedor-b3
+  .flexRow--pupi-contenedor-b1  { margin-bottom: 20px;  }
+  .flexRow--pupi-contenedor-b3  { margin-bottom: 10px;  padding-bottom: 10px; }  
+  .flexCol--col-b1-50p-d
   {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding-left: 100px;      padding-right: 100px;
+  }
+    
     /*  ?__inspect= */
+  
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px)    /* Laptop grande (1024px - 1279px) */
+{
+  .flexRow--pupi-contenedor-b1 { margin-bottom: 20px; }
+  .flexCol--col-b1-50p-d
+  {
+    padding-left: 100px;      padding-right: 100px;
   }
 }
 
-/* Laptop grande (ejemplo: entre 1025px y 1200px) */
-@media (min-width: 1025px) and (max-width: 1200px)
-{
-  .flexRow--pupi-contenedor-b1 { margin-bottom: 20px; }
-}
-
-/* Escritorio grande (ejemplo: más de 1200px) */
-@media (min-width: 1201px)
+/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ Desktop ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
+@media only screen and (min-width: 1280px) and (max-width: 1439px)    /* Desktop pequeño (1280px - 1439px) */
 {
   .flexRow--pupi-contenedor-b1  {  margin-bottom: 60px;  }
+  .flexCol--col-b1-50p-d /* Contenedor */
+  {
+      padding-left: 200px;      padding-right: 10px;
+  }
+}
+@media only screen and (min-width: 1440px)                            /* Desktop grande (1440px y superior) */
+{
+  .flexRow--pupi-contenedor-b1  {  margin-bottom: 80px;  }
+  .flexCol--col-b1-50p-d { padding-left: 250px;      padding-right: 10px; }  
 }
