@@ -41,18 +41,37 @@
       "fullWidth": true
     }
   },
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
+  "flex-layout.row#3-desktop":
+  {
+    "props":
+    {
+      "blockClass": "top-bar-red", //menu-link
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites"
+      //"vtex.menu@2.x:menu#websites"
+      "flex-layout.col#top-bar-red"
     ]
   },
+
+
+  "flex-layout.row#top-bar-red" : { "children": ["flex-layout.col#top-bar-red"], "props": { "blockClass": ["top-bar-red"]    } },
+  "flex-layout.col#top-bar-red" : { "children": ["rich-text#top-bar-red-msg"],   "props": { "blockClass": ["top-bar-red-msg"]    }  },
+
+  "rich-text#top-bar-red-msg":
+  {
+    "props": {
+      "text": "Orgullosamente hecho en Colombia ❤️",
+      "blockClass": "top-bar-red-msg",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+
 
   "flex-layout.col#spacer": {
     "props": {

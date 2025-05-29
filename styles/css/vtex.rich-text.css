@@ -2696,3 +2696,17 @@ margin: 0px 0px 10px 0px;
     margin-bottom: 40px;
   }
 }
+
+.wrapper--top-bar-red-msg
+{
+  height: 35px;
+}
+
+.paragraph--top-bar-red-msg
+{
+  line-height: 0px;
+  font-size: 24px;
+  color: #dedede;
+  font-family: 'NeutraTextAltBold' !important;
+  margin-block-start: 18px;
+}

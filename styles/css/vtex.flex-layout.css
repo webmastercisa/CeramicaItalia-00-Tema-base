@@ -1614,7 +1614,8 @@
   color: #ED1B24 !important;
 }
 
-.flexRow--simular-sticky {
+.flexRow--simular-sticky
+{
   position: sticky;
   top: 0px;
   z-index: 100000;
@@ -3798,7 +3799,7 @@ height: 520px;
     margin-left:  2px;
     margin-right: 2px;
     padding:      10px;
-  }  
+  }
 
   .flexColChild--separador-b3-der   {  margin-right: 90px !important;margin-left: 90px !important; }
   .flexColChild--separador-b3-izqder{  margin-right: 90px !important;margin-left: 90px !important; }
@@ -3818,21 +3819,21 @@ height: 520px;
   .flexCol--col-b1-50p-d
   {
     padding-left: 100px;      padding-right: 100px;
-  }  
+  }
 }
 
 /* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ Laptop ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
 @media only screen and (min-width: 992px) and (max-width: 1023px)     /* Laptop pequeña (768px - 1023px) */
 {
   .flexRow--pupi-contenedor-b1  { margin-bottom: 20px;  }
-  .flexRow--pupi-contenedor-b3  { margin-bottom: 10px;  padding-bottom: 10px; }  
+  .flexRow--pupi-contenedor-b3  { margin-bottom: 10px;  padding-bottom: 10px; }
   .flexCol--col-b1-50p-d
   {
     padding-left: 100px;      padding-right: 100px;
   }
-    
+
     /*  ?__inspect= */
-  
+
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px)    /* Laptop grande (1024px - 1279px) */
 {
@@ -3855,5 +3856,7 @@ height: 520px;
 @media only screen and (min-width: 1440px)                            /* Desktop grande (1440px y superior) */
 {
   .flexRow--pupi-contenedor-b1  {  margin-bottom: 80px;  }
-  .flexCol--col-b1-50p-d { padding-left: 250px;      padding-right: 10px; }  
+  .flexCol--col-b1-50p-d { padding-left: 250px;      padding-right: 10px; }
 }
+
+.flexRow--top-bar-red{  height: 40px;  background-color:#ED1B24;  width: 100%; }
