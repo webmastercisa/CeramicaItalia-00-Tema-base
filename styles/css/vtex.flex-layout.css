@@ -1120,22 +1120,27 @@
   color: #3f3f3f;
 }
 .flexCol--pupi-frm :global(.vtex-input__label),
-.flexCol--pupi-frm :global(.vtex-textarea__label) {
+.flexCol--pupi-frm :global(.vtex-textarea__label)
+{
   font-size: 1rem;
-  color: #3f3f40;
+  color: #3f3f3f;
+  margin-left: 10px;
 }
 
 .flexCol--pupi-frm :global(.vtex-input),
 .flexCol--pupi-frm :global(.vtex-textarea) {
   display: block;
   margin-bottom: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .flexRow--pupi-frm-connectif
 {
   max-width: 700px;
   width: 700px;
-  background-color: #666;
+  /*background-color: #eee;*/
 
   margin: auto;
   color: #3f3f3f;
@@ -1145,7 +1150,7 @@
 {
   max-width: 700px;
   width: 700px;
-  background-color: #666;
+  /*background-color: #666;*/
 
   margin: auto;
   color: #3f3f3f;
@@ -1214,6 +1219,12 @@
 .flexCol--column-2-404 {
   display: flex;
   flex-direction: row;
+}
+
+.flexCol--pupi-form-inputs
+{
+  margin-right: 10px;
+  padding-right: 20px;
 }
 
 .flexRowContent--containTextImg-404-desktop {

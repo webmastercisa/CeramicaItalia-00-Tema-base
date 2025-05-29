@@ -58,7 +58,7 @@
             "alt": "Cerámica Italia",
             "title":"CERAMICA ITALIA .::. Transformando la educación",
             "blockClass": "img-w80p", //storePrint
-            "link": 
+            "link":
             {
               "url": "#bbloque2",
               "openNewTab": false,
@@ -82,13 +82,13 @@
                 "alt": "Cerámica Italia",
                 "title":"CERAMICA ITALIA .::. Transformando la educación",
                 "blockClass": "img-wfull-m", //storePrint
-                "link": 
+                "link":
                 {
                   "url": "#bbloque2",
                   "openNewTab": false,
                   "title": "Go to bloque number two"
                 }
-                
+
               }
             },
 
@@ -236,8 +236,127 @@
 
                   "flex-layout.col#form-connectif":
                   {
+                    "children": ["form#Pupitres"],
                     "props": {  "blockClass": ["pupi-frm-connectif"] }
                   },
+                  // ■■■■■■■■■■■■■■■■■■■■■■■■■ Formulario MasterData ■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+                    "form#Pupitres":
+                   {
+                    "props": {  "entity": "PT", "schema": "mdv1", "blockClass": "formulario-pqrs2" },
+                    //"props": {  "entity": "CO", "schema": "CONTACTO", "blockClass": "formulario-pqrs2" },
+                    "children": ["flex-layout.row#campos-form-pupitres", "flex-layout.row#contenedor-submit-formulario-pupi"],
+                    "blocks": ["form-success#successSubmitPupitres"]
+                  },
+
+                  "form-success#successSubmitPupitres": { "children": [ "rich-text#successSubmitPupitres" ] },
+                  "rich-text#successSubmitPupitres": {
+                    "props": {
+                      "text": "Los datos han sido enviados satisfactoriamente!",
+                      "textAlignment": "CENTER",
+                      "textPosition": "CENTER",
+                      "blockClass": "pupi-form-respuesta-envio"
+                    }
+                  },
+                  "flex-layout.row#campos-form-pupitres":{ "children": ["flex-layout.col#campos-form-pupitres"] },
+                  "flex-layout.col#campos-form-pupitres":
+                  {
+                    "children": [
+                      "rich-text#Pupitres-form-Title",
+                      "flex-layout.col#campos-form-inputs-pupitres"
+                    ],
+                    "props":  { "blockClass": "pupi-form-style2"  }
+                  },
+
+                  "flex-layout.col#campos-form-inputs-pupitres":
+                  {
+                    "children": [
+                      "form-input.text#Pupitres-Name",
+                      "form-input.text#Pupitres-email",
+                      "form-input.text#Pupitres-phone",
+                      "form-input.text#Pupitres-company"
+                      //"form-field-group#address",
+                      //"form-input.checkbox#agreement",
+                    ],
+                    "props":  { "blockClass": "pupi-form-inputs"  }
+                  },
+
+
+                  "rich-text#Pupitres-form-Title":
+                  {
+                    "props":
+                    {
+                      "text": "### !Súmate a esta iniciativa y transformemos las aulas del país!\n",
+                      "blockClass": "fondo-negro",
+                      "textAlignment": "CENTER",
+                      "textPosition": "CENTER"
+                    }
+                  },
+
+                  "form-input.text#Pupitres-Name":    { "props":  { "pointer": "#/properties/name",     "placeholder": "Nombres y apellidos"    } },
+                  "form-input.text#Pupitres-email":   { "props":  { "pointer": "#/properties/email",    "placeholder": "Correo electrónico"     } },
+                  "form-input.text#Pupitres-phone":   { "props":  { "pointer": "#/properties/phone",    "placeholder": "Número de teléfono"     } },
+                  "form-input.text#Pupitres-company": { "props":  { "pointer": "#/properties/company",  "placeholder": "Compañía o Razón Social"} },
+                  //"form-input.checkbox#agreement":  { "props":  { "pointer": "#/properties/company_name", "label": "Do you agree that this is the best form component in the whole wide world?" }  },
+                  //"form-field-group#address":       { "props":  { "pointer": "#/properties/address" } },
+
+                  // ============  FILA Boton  SUBMIT
+                  "flex-layout.row#contenedor-submit-formulario-pupi":
+                  {
+                    "children": [
+                      //"form-input.checkbox#agreement-formulario-pupi",
+                      "form-submit#boton-submit-formulario-pupi"
+                    ],
+                    "props":{ "blockClass":"contenedor-submit-formulario-pupi" }
+                  },
+                  "form-submit#boton-submit-formulario-pupi":
+                  {
+                    "props": { "label": "! Quiero unirme a este proyecto ¡" }
+                  },
+                  /*
+                  "form-input.checkbox#agreement-formulario-pqrs":
+                  {
+                    "props": {
+                      "pointer": "#/properties/agreement",
+                      "label": "He leído y acepto la política de datos personales.",
+                      "blockClass": "agreement-formulario-pqr"
+                    }
+                  }
+                    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,7 +367,7 @@
     "flex-layout.row#pupitres-contenedor-b3":
     {
       "children": ["flex-layout.col#pupitres-b3"],
-      "props": 
+      "props":
       {
         "blockClass": "pupi-contenedor-b3",
         "htmlId": "bbloque3"
@@ -480,7 +599,7 @@
         "src": "arquivos/banner1-muestra.png",
         "alt": "Cerámica Italia",
         "blockClass": ["img-w80p"],
-        "link": 
+        "link":
         {
           "url": "#bbloque2",
           "openNewTab": false,
@@ -554,7 +673,7 @@
     "src": "arquivos/banner1-muestra-mobile.png",
     "alt": "Cerámica Italia",
     "blockClass": ["img-wfull-m"],
-    "link": 
+    "link":
     {
       "url": "#bbloque2",
       "openNewTab": false,
