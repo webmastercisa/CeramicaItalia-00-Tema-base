@@ -236,7 +236,7 @@
 
                   "flex-layout.col#form-connectif":
                   {
-                    "children": ["form#Pupitres"],
+                    //"children": ["form#Pupitres"],
                     "props": {  "blockClass": ["pupi-frm-connectif"] }
                   },
                   // ■■■■■■■■■■■■■■■■■■■■■■■■■ Formulario MasterData ■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -244,7 +244,6 @@
                     "form#Pupitres":
                    {
                     "props": {  "entity": "PT", "schema": "mdv1", "blockClass": "formulario-pqrs2" },
-                    //"props": {  "entity": "CO", "schema": "CONTACTO", "blockClass": "formulario-pqrs2" },
                     "children": ["flex-layout.row#campos-form-pupitres", "flex-layout.row#contenedor-submit-formulario-pupi"],
                     "blocks": ["form-success#successSubmitPupitres"]
                   },
@@ -265,6 +264,7 @@
                       "rich-text#Pupitres-form-Title",
                       "flex-layout.col#campos-form-inputs-pupitres"
                     ],
+
                     "props":  { "blockClass": "pupi-form-style2"  }
                   },
 
