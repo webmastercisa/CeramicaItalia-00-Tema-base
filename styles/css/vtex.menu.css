@@ -177,6 +177,11 @@
   padding: 17px 0 16px 0;
 }
 
+.menuItem--text-top-menu-cintilla
+{
+  color: rgb(12, 196, 82);
+}
+
 .menuItem--textTopMenu {
   padding: 8px 0;
 }
