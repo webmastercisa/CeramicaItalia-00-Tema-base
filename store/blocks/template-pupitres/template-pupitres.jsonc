@@ -239,6 +239,7 @@
                     //"children": ["form#Pupitres"],
                     "props": {  "blockClass": ["pupi-frm-connectif"] }
                   },
+                  /*
                   // ■■■■■■■■■■■■■■■■■■■■■■■■■ Formulario MasterData ■■■■■■■■■■■■■■■■■■■■■■■■■■
 
                     "form#Pupitres":
@@ -313,49 +314,16 @@
                   {
                     "props": { "label": "! Quiero unirme a este proyecto ¡" }
                   },
-                  /*
-                  "form-input.checkbox#agreement-formulario-pqrs":
-                  {
-                    "props": {
-                      "pointer": "#/properties/agreement",
-                      "label": "He leído y acepto la política de datos personales.",
-                      "blockClass": "agreement-formulario-pqr"
-                    }
-                  }
+                  //
+                  //"form-input.checkbox#agreement-formulario-pqrs":
+                  //{
+                    //"props": {
+                      //"pointer": "#/properties/agreement",
+                      //"label": "He leído y acepto la política de datos personales.",
+                      //"blockClass": "agreement-formulario-pqr"
+                    //}
+                  //}
                     */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
