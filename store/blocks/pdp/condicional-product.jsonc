@@ -131,6 +131,7 @@
         "children": [
             // "rich-text#condicion2",
             "flex-layout.row#product-name",
+
             "product-identifier.product",
             "sku-selector",
             // "flex-layout.row#container-descripcion-corta",
