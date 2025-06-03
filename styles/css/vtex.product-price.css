@@ -79,6 +79,36 @@
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
+/* ========  Badge en producto =============  */
+.savingsPercentage--discount-badge-product
+{
+  background-color: #FF0000; /* Rojo brillante, ajusta si tienes un tono específico */
+  color: white;              /* Texto en blanco */
+  padding: 0px 0px 0px 4px;          /* Espaciado interno: 4px arriba/abajo, 8px izquierda/derecha. Ajusta al gusto. */
+  font-weight: bold;         /* Texto en negrita */
+  font-size: 1.3em;          /* Un poco más pequeño que el texto normal, o ajústalo (ej. 14px) */
+  border-radius: 3px;        /* Bordes ligeramente redondeados */
+  display: inline-block;     /* Permite que se comporte como un bloque pero fluya con el texto si es necesario */
+  line-height: 0.8;            /* Ajusta la altura de línea para centrar el texto verticalmente si es necesario */
+  margin-left: 1px;          /* Espacio a la izquierda si está al lado de otro texto (opcional) */
+  vertical-align: middle;    /* Alinea la insignia verticalmente con el texto circundante si es necesario */
+}
+.savings--discount-badge-product
+{
+  background-color: #FF0000; /* Rojo brillante, ajusta si tienes un tono específico */
+  color: white;              /* Texto en blanco */
+  padding: 4px 1px 7px 8px;          /* Espaciado interno: 4px arriba/abajo, 8px izquierda/derecha. Ajusta al gusto. */
+  font-weight: bold;         /* Texto en negrita */
+  font-size: 1.4em;          /* Un poco más pequeño que el texto normal, o ajústalo (ej. 14px) */
+  border-radius: 6px;        /* Bordes ligeramente redondeados */
+  line-height: 0.8;            /* Ajusta la altura de línea para centrar el texto verticalmente si es necesario */
+  display: inline-block;     /* Permite que se comporte como un bloque pero fluya con el texto si es necesario */
+  margin-left: 8px;          /* Espacio a la izquierda si está al lado de otro texto (opcional) */
+  vertical-align: middle;    /* Alinea la insignia verticalmente con el texto circundante si es necesario */
+  width: 85%;
+}
+
+
 
 .listPrice--price-summary-shelf {
   font-family: 'Neutra Display';

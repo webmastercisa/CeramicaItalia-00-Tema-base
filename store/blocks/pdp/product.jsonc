@@ -151,11 +151,12 @@
     "children": [
       "flex-layout.row#product-image"
       // "product-bookmark",
-      // "product-specification-badges"
+      //,"product-specification-badges"
     ]
   },
   "product-specification-badges": {
-    "props": {
+    "props":
+    {
       "specificationGroupName": "Group",
       "specificationName": "On Sale",
       "visibleWhen": "True",
@@ -221,14 +222,41 @@
   },
   "flex-layout.row#product-name": {
     "props": {
-      "marginBottom": 3
+      "marginBottom": 3,
+      "colSizing": "auto",
+      "colGap": 3
     },
     "children": [
-      "vtex.store-components:product-name"
+      //"vtex.store-components:product-name"
+      "flex-layout.col#product-name-col",
+      "flex-layout.col#price-savings-col"
+      //,      "product-price-savings#pdp" // Un contenedor para precio y descuento
       //,"badge-descuento"
-
     ]
   },
+
+  "flex-layout.col#product-name-col":
+  {
+    "props": { "width": "80%" },
+    "children": [ "vtex.store-components:product-name" ]
+  },
+  "flex-layout.col#price-savings-col":
+  {
+    "props": { "width": "20%" },
+    "children": [ "product-price-savings#pdp" ]
+  },
+  /*_____________ Bloques para Badge de descuento ______________*/
+  "product-price-savings#pdp":
+  {
+    "props":
+    {
+      "markers": ["discount" ], // Esto suele activar la visualización del % de descuento.
+      "message": "-{savingsPercentage}", // Esto debería mostrar solo el porcentaje, ej: "20%"
+      "blockClass": ["discount-badge-product"] // Clases para estilizar
+    }
+  },
+  /*_____________ Fin para Badge de descuento ______________*/
+
 
   "sku-selector": {
     "props": {

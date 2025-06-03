@@ -53,13 +53,13 @@
     },
     "children": [
       //"vtex.menu@2.x:menu#websites"
-      "flex-layout.col#top-bar-red"
+      //"flex-layout.col#top-bar-red"
     ]
   },
 
 
-  "flex-layout.row#top-bar-red" : { "children": ["flex-layout.col#top-bar-red"], "props": { "blockClass": ["top-bar-red"]    } },
-  "flex-layout.col#top-bar-red" : { "children": ["rich-text#top-bar-red-msg"],   "props": { "blockClass": ["top-bar-red-msg"]    }  },
+  //"flex-layout.row#top-bar-red" : { "children": ["flex-layout.col#top-bar-red"], "props": { "blockClass": ["top-bar-red"]    } },
+  //"flex-layout.col#top-bar-red" : { "children": ["rich-text#top-bar-red-msg"],   "props": { "blockClass": ["top-bar-red-msg"]    }  },
 
   "rich-text#top-bar-red-msg":
   {
@@ -89,7 +89,7 @@
   "flex-layout.col#simular-sticky": {
     "title": "header-sticky",
     "children": [
-      "flex-layout.row#3-desktop",
+      //"flex-layout.row#3-desktop",
       "flex-layout.row#4-desktop",
       "vtex.menu@2.x:menu#category-menu"
     ],
@@ -103,7 +103,7 @@
       "blockClass": "sticky-header"
     },
     "children": [
-      "flex-layout.row#3-desktop",
+      //"flex-layout.row#3-desktop",
       "flex-layout.row#4-desktop",
       "vtex.menu@2.x:menu#category-menu"
     ]
