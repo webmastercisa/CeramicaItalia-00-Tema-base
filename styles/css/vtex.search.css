@@ -44,8 +44,8 @@
 
 .biggy-autocomplete {
     margin-top: 1px;
-    top: 8px;
-    right: 32%;
+    top: 40px;
+    right: 24%;
 }
 
 .tileListItem :global(.vtex-wish-list-1-x-wishlistIconContainer--wishlistHeart-general){
