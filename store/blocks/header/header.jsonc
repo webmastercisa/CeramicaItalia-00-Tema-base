@@ -58,6 +58,7 @@
   },
 
 
+  // Deshabilitado de CINTILLA
   //"flex-layout.row#top-bar-red" : { "children": ["flex-layout.col#top-bar-red"], "props": { "blockClass": ["top-bar-red"]    } },
   //"flex-layout.col#top-bar-red" : { "children": ["rich-text#top-bar-red-msg"],   "props": { "blockClass": ["top-bar-red-msg"]    }  },
 

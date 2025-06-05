@@ -2,11 +2,11 @@
   "vtex.menu@2.x:menu#preHeader-mobile": {
     "props": {
       "blockClass": "preHeader-mobile"
-    },
+    }/*,
     "children": [
       "logo#topMenu-mobile",
       "menu-item#discount-mobile"
-    ]
+    ]*/
   },
   "logo#topMenu-mobile": {
     "props": {
