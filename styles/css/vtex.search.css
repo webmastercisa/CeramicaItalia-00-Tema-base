@@ -56,7 +56,7 @@
 @media (max-width: 1024px)
 {
     .biggy-autocomplete {
-        top: -32px; /*0  igarcia*/
+        top: -4px; /*0  igarcia*/
         right: 0;
     }
 }
