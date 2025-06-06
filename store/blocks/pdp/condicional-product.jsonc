@@ -224,9 +224,9 @@
             "sku-selector",
             // "flex-layout.row#container-descripcion-corta",
             "condition-layout.product#cond-description-product-pdp",
-            "flex-layout.row#container-pagos-pdp",
             // "flex-layout.row#buy-button-pdp",
             "flex-layout.row#availability",
+            "flex-layout.row#container-pagos-pdp",
             // "vtex.menu@2.x:menu#menu-pdp",
             "flex-layout.row#container-atributos",
             "flex-layout.row#container-iconos-final-pdp"

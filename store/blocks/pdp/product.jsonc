@@ -320,9 +320,9 @@
       "stack-layout#mobile",
       "sku-selector",
       // "flex-layout.row#container-descripcion-corta",
-      "flex-layout.row#container-pagos-pdp",
       // "flex-layout.row#buy-button-pdp",
       "flex-layout.row#availability",
+      "flex-layout.row#container-pagos-pdp",
       "vtex.menu@2.x:menu#menu-pdp",
       "flex-layout.row#container-atributos"
     ],
@@ -343,14 +343,70 @@
     }
   },
 
+
   "flex-layout.row#availability": {
-    "props": {
-      "blockClass": "message-availability"
-    },
-    "children": [
-      "availability-notify"
-    ]
+    "props": {"blockClass": "message-availability" },
+    "children": [ "flex-layout.col#no-disponible"]  //,"availability-notify"
   },
+
+  /* ======= Nuevo bloque de no disponible ========= */
+  "flex-layout.col#no-disponible":
+  {
+    "children": [ "flex-layout.row#no-disponible-txt", "flex-layout.row#no-disponible-btn" ],
+    "props": {
+      "blockClass": [ "container-no-disponible" ],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+      "flex-layout.row#no-disponible-txt":
+        {
+          "children": [ "rich-text#no-disponible-txt"],
+          "props": {
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+          }
+        },
+
+      "flex-layout.row#no-disponible-btn":
+        {
+          "children": [ "image#no-disponible"],
+          "props": {
+            "blockClass": [ "contenedor-centrado", "padding-5px" ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true
+          }
+        },
+
+            "rich-text#no-disponible-txt":
+            {
+              "props":
+              {
+                "text": "¡Hola! Por favor, **valida la disponibilidad de este producto** con uno de nuestros asesores.",
+                "blockClass": "txt-no-disponible",
+                "textAlignment": "CENTER",
+                "textPosition": "CENTER"
+              }
+            },
+
+            "image#no-disponible":
+            {
+              "props":
+              {
+                "src": "https://web.ceramicaitalia.com/img/bt_guasaa.webp",
+                "alt": "alt",
+                "blockClass": "img-no-disponible",
+                "fulwidth": false,
+                "link":
+                {
+                  "url": "https://api.whatsapp.com/send/?phone=5715141167&text&type=phone_number&app_absent=0",
+                  "openNewTab": true,
+                  "title": "title"
+                }
+              }
+            },
+  /* ======= fin Nuevo bloque de no disponible ========= */
 
   "flex-layout.row#container-pagos-pdp": {
     "children": [

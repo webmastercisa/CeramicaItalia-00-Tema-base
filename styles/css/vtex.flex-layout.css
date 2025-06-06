@@ -3872,3 +3872,20 @@ height: 520px;
 }
 
 .flexRow--top-bar-red{  height: 40px;  background-color:#ED1B24;  width: 100%; }
+
+.flexCol--container-centrado, .flexRow--container-centrado
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Opcional: centra el texto multilínea */
+}
+
+.flexRowContent--container-no-disponible
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Opcional: centra el texto multilínea */
+  padding: 15px;
+}

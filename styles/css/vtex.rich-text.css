@@ -2710,3 +2710,20 @@ margin: 0px 0px 10px 0px;
   font-family: 'NeutraTextAltBold' !important;
   margin-block-start: 18px;
 }
+
+.paragraph--txt-no-disponible
+{
+  margin: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #686868;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'NeutraTextBook';
+}
+.strong--txt-no-disponible
+{
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+}
