@@ -1434,6 +1434,34 @@ width: 100%;
   align-items: center;
 }
 
+
+
+.imageElementLink--img-no-disponible
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Opcional: centra el texto multilínea */
+  margin-bottom: 30px;
+}
+
+.imageElementLink--padding-5px  {  padding: 5px;}
+.imageElementLink--padding-10px {  padding: 10px;}
+.imageElementLink--padding-20px {  padding: 20px;}
+
+.imageElement--img-no-disponible
+{
+  text-align: center;
+  width: 50%;
+  border-radius: 8px;
+  position: relative;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+
+
+
 /* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
 /* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  MEDIAS  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
 /* ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ */
@@ -1482,7 +1510,7 @@ width: 100%;
     margin-left: -7vw;
     margin-right: -5vw;
     border-radius: 5px;
-  }  
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px)    /* Laptop grande (1024px - 1279px) */
 {
