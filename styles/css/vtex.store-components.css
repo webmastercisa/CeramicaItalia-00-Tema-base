@@ -1460,6 +1460,16 @@ width: 100%;
 }
 
 
+/* Imagen lookbook */
+.imageElement--lookbook-image
+{
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(237, 27, 36, 0.10);
+  max-width: 100%;
+  background: rgba(237, 27, 36, 0.04);
+  border: 2px solid rgba(237, 27, 36, 0.12);
+}
+
 
 
 /* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
@@ -1541,3 +1551,27 @@ width: 100%;
     border-radius: 5px;
   }
 }
+
+.productBrand--tallaDescripcion
+{
+  width: 300px;
+  text-align: center;
+}
+
+.productBrandContainer
+{
+  width: 300px;
+  color: #dedede;
+}
+
+.productBrandContainer--summaryListDesktop
+{
+  width: 300px;
+}
+
+.content--summaryListDesktop
+{
+  width: 300px;
+}
+
+

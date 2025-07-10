@@ -3889,3 +3889,45 @@ height: 520px;
   text-align: center; /* Opcional: centra el texto multilínea */
   padding: 15px;
 }
+
+.pdp-right-col
+{
+  max-height: 80vh; /* 80% de la altura de la pantalla */
+  overflow-y: auto; /* Añade scroll si el contenido es más alto */
+}
+
+
+/* Contenido de cada tab */
+.flexRow--tab-content-row
+{
+  background: rgba(255,255,255,0.92);
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 32px 24px;
+  min-height: 320px;
+  margin-bottom: 8px;
+}
+
+.flexCol--tallaDetailsListDesktop
+{
+  width: 300px;
+}
+
+.flexColChild--tallaDetailsListDesktop
+{
+  max-width: 300px;
+}
+
+.flexRow--summaryLeftListDesktop
+{
+  padding: 10px;
+  width: 100% !important;
+}
+
+.flexRow--summaryRightListDesktop
+{
+  background-color: rgb(43, 6, 145);
+  padding: 10px;
+  width: 300px !important;
+  height: 400px !important;
+}

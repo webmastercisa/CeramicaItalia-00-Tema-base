@@ -34,6 +34,37 @@
   color: #03034E;
 }
 
+.container--titulo-text-tallas
+{
+  text-align: center;
+  font-family: NeutraText;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.wrapper--text-talla-t1
+{
+  font-family: NeutraText;
+  text-align: center;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1rem;
+}
+
+.wrapper--text-talla-t2
+{
+  text-align: center;
+  line-height: 1.2;
+  font-family: NeutraText;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+
 .container--question .strong {
   font-size: 32px;
   line-height: 2rem;
@@ -2726,4 +2757,61 @@ margin: 0px 0px 10px 0px;
   color: #000;
   font-size: 20px;
   font-weight: 900;
+}
+/* _____________________  Tallas  _________________________*/
+.container--texto-contenedor-tallas
+{
+  text-align: center;
+  background-color: #ED1B24;
+  color : #DEDEDE;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.wrapper--texto-contenedor-tallas{  text-align: center;  width: 100%;}
+
+.paragraph--texto-contenedor-tallas
+{
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.container--texto-titulo-tabs
+{
+  background-color: #ffffff00;
+  color : #ED1B24;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.wrapper--texto-titulo-tabs{  text-align: center;  width: 100%;}
+.paragraph--texto-titulo-tabs
+{
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  /*text-transform: uppercase;*/
+  width: 100%;
+}
+
+
+/* Lista de items */
+.wrapper--items-list{  color: #222;  font-size: 1.05rem;  line-height: 1.7; }
+.heading--items-list{  color: #ED1B24;  margin-top: 18px;  margin-bottom: 6px;  font-weight: 700;}
+
+.paragraph--no-incluye {
+  background: rgba(237, 27, 36, 0.08);
+  color: #ED1B24;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-top: 24px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(237, 27, 36, 0.06);
 }

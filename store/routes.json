@@ -114,6 +114,12 @@
   {
     "path": "/template-pupitres",
     "title": "Transformemos la educación"
+  },
+
+  "store.custom#template-tallas":
+  {
+    "path": "/template-tallas",
+    "title": "Plantilla Tallas"
   }
 
 }

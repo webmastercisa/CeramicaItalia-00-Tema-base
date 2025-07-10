@@ -1,0 +1,133 @@
+{
+  "store.product#custom-detail": {
+    "children": [
+      "flex-layout.row#pdp-main-container"
+    ]
+  },
+
+  "flex-layout.row#pdp-main-container": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 6,
+      "marginBottom": 7,
+      "paddingLeft": 6,
+      "paddingRight": 6,
+      "blockClass": "pdp-main-container"
+    },
+    "children": [
+      "flex-layout.col#talla-pdp-left-col",
+      "flex-layout.col#talla-pdp-right-col"
+    ]
+  },
+
+  // Columna Izquierda (70%): Imagen del producto
+  "flex-layout.col#talla-pdp-left-col": {
+    "props": {
+      "width": "70%",
+      "rowGap": 0
+    },
+    "children": [
+      "product-images"
+    ]
+  },
+
+  // Columna Derecha (30%): Información y Pestañas
+  "flex-layout.col#talla-pdp-right-col": {
+    "props": {
+      "width": "30%",
+      "rowGap": 5,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      //"product-name",
+      "product-description",
+      "rich-text#que-incluye",
+      "tab-layout#product-tabs"
+    ]
+  },
+
+  "rich-text#que-incluye": {
+    "props": {
+      "text": "**Qué incluye**",
+      "blockClass": "que-incluye-titulo"
+    }
+  },
+
+  // --- Componente de Pestañas ---
+  "tab-layout#product-tabs": {
+    "children": [
+      "tab-list#product-tabs-list",
+      "tab-content#product-tabs-content"
+    ],
+    "props": {
+      "blockClass": "pdp-tabs",
+      "defaultActiveTabId": "ceramica"
+    }
+  },
+
+  "tab-list#product-tabs-list": {
+    "children": [
+      "tab-list.item#ceramica",
+      "tab-list.item#sanitario",
+      "tab-list.item#plato-ducha"
+    ]
+  },
+
+  "tab-list.item#ceramica": {
+    "props": { "tabId": "ceramica", "label": "Cerámica", "defaultActive": true }
+  },
+  "tab-list.item#sanitario": {
+    "props": { "tabId": "sanitario", "label": "Sanitario" }
+  },
+  "tab-list.item#plato-ducha": {
+    "props": { "tabId": "plato-ducha", "label": "Plato Ducha" }
+  },
+
+  "tab-content#product-tabs-content": {
+    "children": [
+      "tab-content.item#ceramica",
+      "tab-content.item#sanitario",
+      "tab-content.item#plato-ducha"
+    ]
+  },
+
+  // --- Contenido de cada Pestaña ---
+  "tab-content.item#ceramica": {
+    "props": { "tabId": "ceramica" },
+    "children": [
+      // Aquí debes poner el bloque que muestre el producto de cerámica.
+      // Puede ser un product-summary.shelf con una colección específica.
+      "rich-text#ceramica-content"
+    ]
+  },
+  "rich-text#ceramica-content": {
+    "props": {
+      "text": "Información del producto de cerámica. **ACCIÓN:** Reemplaza este bloque con un `product-summary.shelf` o similar, configurado con el ID/Colección del producto de cerámica."
+    }
+  },
+
+  "tab-content.item#sanitario": {
+    "props": { "tabId": "sanitario" },
+    "children": [
+      "rich-text#sanitario-content"
+    ]
+  },
+  "rich-text#sanitario-content": {
+    "props": {
+      "text": "Información del producto sanitario. **ACCIÓN:** Reemplaza este bloque con un `product-summary.shelf` o similar, configurado con el ID/Colección del producto sanitario."
+    }
+  },
+
+  "tab-content.item#plato-ducha": {
+    "props": { "tabId": "plato-ducha" },
+    "children": [
+      "rich-text#plato-ducha-content"
+    ]
+  },
+  "rich-text#plato-ducha-content": {
+    "props": {
+      "text": "Información del plato de ducha. **ACCIÓN:** Reemplaza este bloque con un `product-summary.shelf` o similar, configurado con el ID/Colección del plato de ducha."
+    }
+  }
+}
