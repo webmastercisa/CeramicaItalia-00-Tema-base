@@ -44,6 +44,18 @@
   width: 180px !important;
 }
 
+.image--img-kit-Desktop
+{
+  width: 180px !important;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0px;
+  justify-content: start;
+  display: flex;
+  align-items: center;
+}
+
 .image--summaryListMobile {
   width: 140px !important;
   min-width: 140px;
@@ -131,4 +143,34 @@
   .container :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
   }
+}
+
+
+.element--listLayout
+{
+ border-radius: 0.15rem;
+}
+
+.clearLink--listLayout
+{
+  margin-right: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px 0px #00000026;
+}
+
+.nameContainer--tallaDescripcion
+{
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
+  justify-content: start;
+  color: red;
+}
+.containerNormal--listLayout
+{
+  background-color: chartreuse;
+  margin-left:10px;
+  margin: 3px 0;
+  padding: 10px;
+
+  background: #FFF;
 }

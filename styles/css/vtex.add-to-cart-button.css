@@ -15,6 +15,21 @@
   background-size: cover;
 }
 
+.buttonText--buyNow
+{
+  font-size: 1.3em;
+  color: #dedede;
+  display: flex;
+  align-items: center;
+}
+
+.buttonText--buyNow::hover
+{
+  background-color: #fff;
+  color: #ED1B24;
+  transition: color .35s ease-in-out,background-color .35s ease-in-out;
+}
+
 /**/
 
 .btn_addcart{

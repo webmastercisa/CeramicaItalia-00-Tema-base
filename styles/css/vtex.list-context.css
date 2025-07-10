@@ -192,6 +192,91 @@ margin: 0px;
   height: 100%;
 }
 
+/* ====================== Reglas Cards Tallas ============== */
+
+/* ESTILOS GENERALES (MANTENIDOS) */
+/* ... (los mismos estilos de colores, fuentes, etc.) ... */
+
+/* CONTENEDOR PRINCIPAL - 1 COLUMNA */
+.list--infocards-tab2-tallas,
+.list--infocards-tab1-tallas {
+  display: grid;
+  grid-template-columns: 1fr; /* Solo 1 columna */
+  gap: 20px; /* Espacio entre tarjetas */
+}
+
+/* APLICAR DISEÑO DE 2 COLUMNAS INTERNAS A TODAS LAS TARJETAS */
+.infoCardContainer--infocards-tab2-tallas,
+.infoCardContainer--infocards-tab1-tallas {
+  display: flex;
+  flex-direction: row-reverse; /* Imagen a la derecha, texto a la izquierda */
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.12);
+  height: 100%;
+  align-items: center; /* Centrar verticalmente */
+}
+
+/* CONTENEDOR DE TEXTO - ESTILO DEL 5TO ÍTEM */
+.infoCardTextContainer--infocards-tab2-tallas,
+.infoCardTextContainer--infocards-tab1-tallas {
+  flex: 1; /* Ocupa el espacio disponible */
+  padding: 0px 30px; /* Padding del 5to ítem */
+}
+
+/* CONTENEDOR DE IMAGEN - ESTILO DEL 5TO ÍTEM */
+.infoCardImageContainer--infocards-tab2-tallas,
+.infoCardImageContainer--infocards-tab1-tallas {
+  flex: 0 0 65%; /* Ancho fijo (ajustar según necesidad) */
+  padding: 10px; /* Padding del 5to ítem */
+}
+
+/* IMAGEN - AJUSTES */
+.infoCardImage--infocards-tab2-tallas,
+.infoCardImage--infocards-tab1-tallas {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover; /* Mantener proporciones */
+}
+
+/* ELIMINAR REGLAS ESPECÍFICAS DEL 5TO ÍTEM */
+/*
+.item--infocards-tab1-tallas:nth-child(0n+5) {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+
+.item--infocards-tab1-tallas:nth-child(0n+5) .infoCardContainer--infocards-tab1-tallas {
+  display: flex;
+  flex-direction: row-reverse !important;
+}
+
+.item--infocards-tab1-tallas:nth-child(0n+5) .infoCardTextContainer--infocards-tab1-tallas {
+  padding: 0px 30px;
+}
+
+.item--infocards-tab1-tallas:nth-child(0n+5) .infoCardImageContainer--infocards-tab1-tallas {
+  padding: 15px;
+}
+*/
+
+/* MANTENER ESTOS ESTILOS */
+.infoCardCallActionContainer--infocards-tab2-tallas,
+.infoCardCallActionContainer--infocards-tab1-tallas
+{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.item--infocards-tab1-tallas :global(.vtex-info-card-list-0-x-infocard-tab1-tallas),
+.item--infocards-tab1-tallas :global(.vtex-info-card-list-0-x-infocard-tab2-tallas) {
+  height: 100%;
+}
+
+
+/* ====================== Fin reglas Tallas ================*/
 .list--infocards-tab1-aplicativos {
   display: grid;
   /* grid-template-rows: repeat(3, 1fr); */

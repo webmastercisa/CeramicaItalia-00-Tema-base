@@ -1,0 +1,568 @@
+{
+    "store.custom#template-tallas": {
+        "blocks": [
+            "flex-layout.row#miga-pan-talla",
+            "flex-layout.row#container-banner-talla",
+            "rich-text#texts-talla",
+
+            //"flex-layout.row#container-banner2-talla",
+
+
+            "flex-layout.row#section2-talla", // Tabs con las tallas
+
+            "rich-text#texto-titulo-tallas", // Título en una barra roja
+
+            "flex-layout.row#div-espacio-10px",
+            "flex-layout.row#section1-talla", // Una intro bloque 50/50  Texto/Imagen
+            "flex-layout.row#div-espacio-10px",
+
+
+            // "flex-layout.row#section3-talla"
+
+
+            "flex-layout.row#div-espacio-100px",
+            "rich-text#titulo-que-incluye",
+            "tab-layout#tallas"
+        ]
+    },
+    //MIGA DE PAN PREGUNTAS FRECUENTES
+    "flex-layout.row#miga-pan-talla": {
+        "children": [
+            "image#icono-miga-pan",
+            "rich-text#texto-1-miga-pan",
+            "rich-text#texto-2-miga-pan-talla"
+        ],
+        "props": { "blockClass": ["miga-pan-terminos-legales"] }
+    },
+    // TEXTO 2 MIGA DE PAN
+    "rich-text#texto-2-miga-pan-talla": {
+        "props": {
+            "blockClass": "texto-2-miga-pan",
+            "text": "[Talla de baños](/talla_banos)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // slider 1
+    "flex-layout.row#container-banner-talla": {
+        "children": [ "list-context.image-list#banner1Slider-talla" ],
+        "props"   : { "blockClass": ["container-banner1-sostenibilidad"] }
+    },
+    "list-context.image-list#banner1Slider-talla": {
+        "children": [ "slider-layout#banner1-talla" ],
+        "props": {
+            "height": 570,
+            "preload": true, // 1280X220
+            "images": [ {
+                          "image"       : "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/174c8729-c39b-48a8-b30a-ea5c45020f50___4b34344723b2b6eb369fe7f8c2422120.jpg",
+                          "mobileImage" : "arquivos/banner1-muestra-mobile.png"
+                        }
+            ]
+        }
+    },
+    "slider-layout#banner1-talla": {
+        "props": {
+            "itemsPerPage": { "desktop": 1, "tablet": 1, "phone": 1 },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": [ "banner1-sostenibilidad" ]
+            // "autoplay": {
+            //   "timeout": 3000,
+            //   "stopOnHover": true
+            // }
+        }
+    },
+
+    /* ===============================================  FILA  =============================================================== */
+    "rich-text#texto-titulo-tallas":
+    {
+      "props": { "blockClass": "texto-contenedor-tallas", "text": "Descubra fácilmente lo necesario para el baño soñado, al mejor precio."    }
+    },
+
+    /* ===============================================  FILA  =============================================================== */
+
+    "flex-layout.row#section1-talla":
+    {
+      "children": [ "flex-layout.col#texto1-talla-section1",  "flex-layout.row#img-talla-section1"  ],
+      "props"   : { "blockClass": ["section1-sostenibilidad"]        }
+    },
+    "flex-layout.col#texto1-talla-section1":
+    {
+      "children": [ "rich-text#title-talla-section1", "rich-text#text1-talla-section1", "rich-text#text2-talla-section1" ],
+      "props": {"blockClass": [ "texto1-section1" ], "preventVerticalStretch": true }
+    },
+    "rich-text#title-talla-section1": {
+        "props": {
+            "text": "Renovar tu baño nunca fue tan fácil.",
+            "blockClass": "titulo-text-tallas", "textAlignment": "CENTER", "textPosition": "CENTER"
+        }
+    },
+    "rich-text#text1-talla-section1": {
+        "props": {
+            "text": "En Cerámica Italia tenemos varios modelos de baños completos con presupuesto cerrado para que elijas el que mas se adapte a tu vida y a tu presupuesto.",
+            "blockClass": "text-talla-t1", "textAlignment": "CENTER", "textPosition": "CENTER"
+        }
+    },
+    "rich-text#text2-talla-section1": {
+        "props": {
+            "text": "Así mismo, como organización reconocemos que un hogar es todo aquello que nos rodea, cada espacio, cada hábitat y cada familia, por eso, como organización trabajamos firmemente con el propósito de construir un mejor hogar para ti.",
+            "blockClass": "text-talla-t1", "textAlignment": "CENTER", "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#img-talla-section1": { "children": [ "image#img-talla-section1"  ], "props" : { "blockClass": [ "img-section1"  ] } },
+    "image#img-talla-section1": {
+        "props": {
+            "src": "https://apps.ceramicaitalia.com/img/TallaWR_base_01.webp", "alt": "alt", "height": "hight", "blockClass": "img-section1",
+            "link": { "url": "#", "openNewTab": false, "title": "title" }
+        }
+    },
+
+    /* ===============================================  FILA  =============================================================== */
+    "rich-text#texts-talla": { "props": { "text": ".:: Mira el que más te convenga ::.", "blockClass": "texts-sostenibilidad", "textAlignment": "CENTER", "textPosition": "CENTER" } },
+
+    /* ===============================================  FILA  =============================================================== */
+    // slider 2
+    "flex-layout.row#container-banner2-talla": {
+        "children": [ "list-context.image-list#banner2Slider-talla" ],
+        "props": { "blockClass": [ "container-banner2-sostenibilidad" ] }
+    },
+    "list-context.image-list#banner2Slider-talla":
+    {
+        "children": [ "slider-layout#banner2-talla" ],
+        "props": {
+            "height": 570,
+            "preload": true,
+            "images": [
+                {
+                    "image"       : "arquivos/banner2-sostenibilidad.png",
+                    "mobileImage" : "arquivos/banner1-muestra-mobile.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#banner2-talla": {
+        "props": {
+            "itemsPerPage": { "desktop": 1,"tablet": 1,"phone": 1 },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": [  "banner2-sostenibilidad" ]
+            // "autoplay": {     "timeout": 3000,        "stopOnHover": true          }
+        }
+    },
+    "flex-layout.row#section3-talla": {
+        "children": [
+            "list-context.media-list#section3-talla"
+        ],
+        "props": {
+            "blockClass": [
+                "section3-sostenibilidad"
+            ]
+        }
+    },
+    "list-context.media-list#section3-talla": {
+        "children": [
+            "slider-layout#section3-talla-videos"
+        ],
+        "props": {
+            "height": 720,
+            "mediaList": [
+                {"video": "https://www.youtube.com/embed/JgkrlaF52WQ"},
+                {"video": "https://www.youtube.com/embed/JgkrlaF52WQ"},
+                {"video": "https://www.youtube.com/embed/JgkrlaF52WQ"},
+                {"video": "https://www.youtube.com/embed/JgkrlaF52WQ"},
+                {"video": "https://www.youtube.com/embed/JgkrlaF52WQ"},
+                {"video": "https://www.youtube.com/embed/JgkrlaF52WQ"}
+            ]
+        }
+    },
+    "slider-layout#section3-talla-videos": {
+        "props": {
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "always",
+            "blockClass": [
+                "carousel-video"
+            ],
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 1,
+                "phone": 1
+            },
+            "navigationStep": "page",
+            "usePagination": true,
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+              }
+        }
+    },
+
+    /* ===============================================  FILA  =============================================================== */
+    // tabs
+    "flex-layout.row#section2-talla": { "children": ["tab-layout#talla" ], "props": { "blockClass": [ "section2-sostenibilidad" ] } },
+    "tab-layout#talla":
+    { "children": [ "tab-list#talla", "tab-content#talla" ],
+      "props": { "blockClass": "sostenibilidad", "defaultActiveTabId": "Talla-L" }
+    },
+    "tab-list#talla"        : { "children": [ "tab-list.item#Talla-L", "tab-list.item#Talla-M", "tab-list.item#Talla-S"  ] },
+    "tab-list.item#Talla-L" : { "props"   : { "tabId": "Talla-L", "label": "Baños Talla L", "blockClass": "item-tab-tallas", "defaultActiveTab": true } },
+    "tab-list.item#Talla-M" : { "props"   : { "tabId": "Talla-M", "label": "Baños Talla M", "blockClass": "item-tab-tallas" } },
+    "tab-list.item#Talla-S" : { "props"   : { "tabId": "Talla-S", "label": "Baños Talla S", "blockClass": "item-tab-tallas" } },
+    "tab-content#talla"     : { "children": [ "tab-content.item#Talla-L", "tab-content.item#Talla-M", "tab-content.item#Talla-S" ] },
+    "tab-content.item#Talla-L" : { "children": [ "flex-layout.col#text-tab-Talla-L",       "flex-layout.row#container-tab-Talla-L" ],     "props": { "tabId": "Talla-L" } },
+    "tab-content.item#Talla-M" : { "children": [ "flex-layout.col#text-tab-Talla-M","flex-layout.row#container-tab-Talla-M"], "props": { "tabId": "Talla-M" } },
+    "tab-content.item#Talla-S" : { "children": [ "flex-layout.col#text-tab-Talla-S","flex-layout.row#container-tab-Talla-S"/*,  "flex-layout.row#container-btn-tab-Talla-S"*/ ], "props": { "tabId": "Talla-S" } },
+    "flex-layout.col#text-tab-Talla-L": { "children": [ "rich-text#text2-tab-Talla-L" ], "props": { "blockClass": [ "text-tab1" ] } },
+    "flex-layout.col#text-tab-Talla-M": { "children": [ "rich-text#text2-tab-Talla-M" ], "props": { "blockClass": [ "text-tab1" ] } },
+    "flex-layout.col#text-tab-Talla-S": { "children": [ "rich-text#text2-tab-Talla-S" ], "props": { "blockClass": [ "text-tab1" ] } },
+
+    "rich-text#text2-tab-Talla-L":
+    {
+        "props": {
+            "text": "¡ TU BAÑO COMPLETO, SIN COMPLICACIONES Y CON PRECIO FINAL GARANTIZADO DE HASTA 5mts. !",
+            "blockClass": "text2-tab1", "textAlignment": "CENTER", "textPosition": "CENTER"
+        }
+    },
+    "rich-text#text2-tab-Talla-M":
+    {
+        "props": {
+            "text": "¡ TU BAÑO COMPLETO, SIN COMPLICACIONES Y CON PRECIO FINAL GARANTIZADO DE HASTA 4mts. !",
+            "blockClass": "text2-tab1", "textAlignment": "CENTER", "textPosition": "CENTER"
+        }
+    },
+    "rich-text#text2-tab-Talla-S":
+    {
+        "props": {
+            "text": "¡ TU BAÑO COMPLETO, SIN COMPLICACIONES Y CON PRECIO FINAL GARANTIZADO DE HASTA 2mts. !",
+            "blockClass": "text2-tab1", "textAlignment": "CENTER", "textPosition": "CENTER"
+        }
+    },
+    // infocard tab1
+    "flex-layout.row#container-tab-Talla-L": { "children": [ "list-context.info-card-list#infocards-tab-Talla-L" ], "props": { "blockClass": [ "container-tab1"] } },
+
+    "list-context.info-card-list#infocards-tab-Talla-L": {
+        "children": [ "list-context-renderer#wrapped-tab-Talla-L" ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "infocard-tab1-talla-1",
+                    "title": "infocard-tab1-sostenibilidad-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_L_01.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 01",
+                    "subhead": "Tu baño completo en un solo pack. Incluye todo lo esencial, con precio cerrado y sin complicaciones.",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123456",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                },
+                {
+                    "id": "infocard-tab1-talla-2",
+                    "title": "infocard-tab1-sostenibilidad-2",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_L_02.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 02",
+                    "subhead": "Pack todo en uno para tu baño: práctico, elegante y sin costos ocultos.",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123457",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                },
+                {
+                    "id": "infocard-tab1-talla-3",
+                    "title": "infocard-tab1-sostenibilidad-3",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_L_03.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 03",
+                    "subhead": "Renová tu baño fácil y rápido. Elegí tu pack completo con precio final garantizado.\n\n",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123458",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                }
+            ]
+        }
+    },
+
+    //INFOCARDS BLOQUE 4 QUIENES SOMOS
+    "list-context-renderer#wrapped-tab-Talla-L":
+    {
+      "props": { "listElement": "div", "itemElement": "div", "blockClass": "infocards-tab1-tallas" }
+    },
+
+    //---------------- infocard tab Talla M ---------------
+    "flex-layout.row#container-tab-Talla-M": { "children": ["list-context.info-card-list#infocards-tab-Talla-M"], "props"   : { "blockClass": ["container-tab2"]  } },
+    "list-context.info-card-list#infocards-tab-Talla-M":
+    {
+      "children": [ "list-context-renderer#wrapped-tab-Talla-M" ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "infocard-tab1-talla-1",
+                    "title": "infocard-tab1-sostenibilidad-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_M_01.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 01",
+                    "subhead": "Tu baño completo en un solo pack. Incluye todo lo esencial, con precio cerrado y sin complicaciones.",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123456",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                },
+                {
+                    "id": "infocard-tab1-talla-2",
+                    "title": "infocard-tab1-sostenibilidad-2",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_M_02.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 02",
+                    "subhead": "Pack todo en uno para tu baño: práctico, elegante y sin costos ocultos.",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123457",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                },
+                {
+                    "id": "infocard-tab1-talla-3",
+                    "title": "infocard-tab1-sostenibilidad-3",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_M_03.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 03",
+                    "subhead": "Renová tu baño fácil y rápido. Elegí tu pack completo con precio final garantizado.\n\n",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123458",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                }
+            ]
+        }
+    },
+
+    //INFOCARDS 2
+    "list-context-renderer#wrapped-tab-Talla-M": { "props": { "listElement": "div", "itemElement": "div", "blockClass": "infocards-tab2-tallas" } },
+
+    //---------------- infocard tab Talla S ---------------
+    "flex-layout.row#container-tab-Talla-S": { "children": ["list-context.info-card-list#infocards-tab-Talla-S"], "props"   : { "blockClass": ["container-tab2"]  } },
+    "list-context.info-card-list#infocards-tab-Talla-S":
+    {
+      "children": [ "list-context-renderer#wrapped-tab-Talla-S" ],
+        "props": {
+            "infoCards": [
+                {
+                    "id": "infocard-tab3-talla-1",
+                    "title": "infocard-tab1-sostenibilidad-1",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_S_01.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 01",
+                    "subhead": "Tu baño completo en un solo pack. Incluye todo lo esencial, con precio cerrado y sin complicaciones.",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123456",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                },
+                {
+                    "id": "infocard-tab3-talla-2",
+                    "title": "infocard-tab1-sostenibilidad-2",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_S_02.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 02",
+                    "subhead": "Pack todo en uno para tu baño: práctico, elegante y sin costos ocultos.",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123457",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                },
+                {
+                    "id": "infocard-tab3-talla-3",
+                    "title": "infocard-tab1-sostenibilidad-3",
+                    "isFullModeStyle": false,
+                    "textPosition": "right",
+                    "imageUrl": "https://apps.ceramicaitalia.com/img/TallaWR_S_03.webp",
+                    "imageActionUrl": "",
+                    "headline": "# Kit 03",
+                    "subhead": "Renová tu baño fácil y rápido. Elegí tu pack completo con precio final garantizado.\n\n",
+                    "callToActionMode": "button",
+                    "callToActionText": "Me interesa",
+                    "callToActionUrl": "/ver_talla_l?sku=sku123458",
+                    "textMode": "rich-text",
+                    "blockClass": [ "infocard-tab1-tallas" ]
+                }
+            ]
+        }
+    },
+
+    //INFOCARDS 2
+    "list-context-renderer#wrapped-tab-Talla-S": { "props": { "listElement": "div", "itemElement": "div", "blockClass": "infocards-tab2-tallas" } },
+    /* ===================== Botonera ============================== */
+    "flex-layout.row#container-btn-tab-Talla-S": {
+        "children": [ "rich-text#btn1-tab-Talla-S", "rich-text#btn2-tab-Talla-S", "rich-text#btn3-tab-Talla-S" ],
+        "props": { "blockClass": [ "container-btn-tab2" ]
+        }
+    },
+    "rich-text#btn1-tab-Talla-S": {
+        "props": {
+            "text": "[Quienes somos](urlHipervinculo?target=_blank)",
+            "blockClass": "btn-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#btn2-tab-Talla-S": {
+        "props": {
+            "text": "[Fundación Cerámica Italia](urlHipervinculo?target=_blank)",
+            "blockClass": "btn-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#btn3-tab-Talla-S": {
+        "props": {
+            "text": "[Trabaja con nosotros](urlHipervinculo?target=_blank)",
+            "blockClass": "btn-tab2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /******************  Bloques correctos **************************/
+    "rich-text#titulo-que-incluye": { "props": { "text": "# ¿Qué incluye?", "textAlignment": "CENTER", "blockClass": "texto-titulo-tabs" } },
+
+  /* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  Talla s ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+  "tab-layout#tallas"     : { "children": [ "tab-list#tallas", "tab-content.item#talla-s", "tab-content.item#talla-m", "tab-content.item#talla-l" ],
+    "props": { "blockClass": "tallas-tabs", "defaultActiveTabId": "talla-s" } },
+
+  "tab-list#tallas"       : { "children": [ "tab-list.item#talla-s",  "tab-list.item#talla-m",  "tab-list.item#talla-l" ]  },
+
+  "tab-list.item#talla-s" : { "props": {  "tabId": "talla-s", "label": "Talla S", "defaultActiveTab": true, "blockClass": "list-item-talla"  }  },
+  "tab-list.item#talla-m" : { "props": {  "tabId": "talla-m", "label": "Talla M", "blockClass": "list-item-talla"  }  },
+  "tab-list.item#talla-l" : { "props": {  "tabId": "talla-l", "label": "Talla L", "blockClass": "list-item-talla"  }  },
+
+  "tab-content.item#talla-s": { "children": [ "flex-layout.row#content-talla-s" ],  "props": {  "tabId": "talla-s"  }  },
+  "tab-content.item#talla-m": { "children": [ "flex-layout.row#content-talla-m" ],  "props": {  "tabId": "talla-m"  }  },
+  "tab-content.item#talla-l": { "children": [ "flex-layout.row#content-talla-l" ],  "props": {  "tabId": "talla-l"  }  },
+
+  "flex-layout.row#content-talla-s": {
+    "children": [      "flex-layout.row#bathroom-features-s",   "flex-layout.col#image-talla-s"    ],
+    "props": {      "blockClass": "tab-content-row",      "paddingTop": 4,      "paddingBottom": 4    }
+  },
+
+  "flex-layout.row#content-talla-m": {
+    "children": [ "flex-layout.row#bathroom-features-ml",  "flex-layout.col#image-talla-m" ],
+    "props"   : { "blockClass": "tab-content-row",  "paddingTop": 4,  "paddingBottom": 4    }
+  },
+
+  "flex-layout.row#content-talla-l": {
+    "children": [ "flex-layout.row#bathroom-features-ml",  "flex-layout.col#image-talla-l"    ],
+    "props"   : { "blockClass": "tab-content-row",  "paddingTop": 4,      "paddingBottom": 4    }
+  },
+
+  "flex-layout.col#image-talla-s": { "children": [ "image#lookbook-s"   ],  "props": {  "width": "40%", "blockClass": "image-column"  }  },
+
+  "flex-layout.row#bathroom-features-s":
+  {
+    "children": [
+      "flex-layout.col#column-left-s",
+      "flex-layout.col#column-right-s"
+    ],
+    "props": {
+      "blockClass": "bathroom-features-container",
+      "colGap": 4,
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#column-left-s":
+  {
+    "children": [ "rich-text#feature-ceramica",         "rich-text#feature-mueble", "rich-text#feature-lavamanos",  "rich-text#feature-espejo"  ],
+    "props"   : { "blockClass": "bathroom-features-left", "width": "50%",               "paddingRight": 3    }
+  },
+  "flex-layout.col#column-right-s":
+  {
+    "children": [ "rich-text#feature-griferia",           "rich-text#feature-sanitario",  "rich-text#feature-accesorios", "rich-text#s-items-ni"  ],
+    "props"   : { "blockClass": "bathroom-features-right",  "width": "50%",                   "paddingLeft": 3    }
+  },
+  "rich-text#feature-ceramica"  : { "props": {  "text": "### • Cerámica\n\nIncluye cerámica para pared y suelo.",              "blockClass": "bathroom-feature-item" }  },
+  "rich-text#feature-mueble"    : { "props": {  "text": "### • Mueble de baño\n\nMueble completo para almacenamiento.",        "blockClass": "bathroom-feature-item" }  },
+  "rich-text#feature-lavamanos" : { "props": {  "text": "### • Lavamanos\n\nEl lavamanos perfecto para la medida de tu baño.", "blockClass": "bathroom-feature-item" }  },
+  "rich-text#feature-espejo"    : { "props": {  "text": "### •Espejo\n\nTe vas a ver muy bien en tu nuevo baño.",             "blockClass": "bathroom-feature-item" }  },
+  "rich-text#feature-griferia"  : { "props": {  "text": "### • Grifería\n\nGrifería incluida.",                                "blockClass": "bathroom-feature-item" }  },
+  "rich-text#feature-sanitario" : { "props": {  "text": "### • Sanitario\n\nIncluye sanitario.",                               "blockClass": "bathroom-feature-item" }  },
+  "rich-text#feature-accesorios": { "props": {  "text": "### • Accesorios\n\nIncluye toallero, portarrollos y escobillero.",   "blockClass": "bathroom-feature-item" }  },
+  "rich-text#feature-ducha"     : { "props": {  "text": "### • Ducha\n\nIncluye mampara, plato de ducha, grifería y perchas.", "blockClass": "bathroom-feature-item" }  },
+  "rich-text#s-items-ni"          : { "props": {  "text": "### •• No incluye\nEl montaje e instalación no está incluido en el precio. Consulta con nuestros asesores y te ayudaremos.",  "blockClass": "no-incluye" }  },
+
+  /* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  Talla M y L ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+
+  "flex-layout.col#image-talla-m": { "children": [ "image#lookbook-m" ],    "props": {  "width": "40%", "blockClass": "image-column"  }  },
+  "flex-layout.col#image-talla-l": { "children": [ "image#lookbook-l"   ],  "props": {  "width": "40%", "blockClass": "image-column"    }  },
+
+  "flex-layout.row#bathroom-features-ml":
+  {
+    "children": [ "flex-layout.col#column-left-ml", "flex-layout.col#column-right-ml" ],
+    "props"   : { "blockClass": "bathroom-features-container",  "colGap": 4,  "paddingTop": 4,  "paddingBottom": 4  }
+  },
+  "flex-layout.col#column-left-ml":
+  {
+    "children": [ "rich-text#feature-ceramica", "rich-text#feature-mueble", "rich-text#feature-lavamanos",  "rich-text#feature-espejo", "rich-text#feature-griferia"  ],
+    "props"   : { "blockClass": "bathroom-features-left", "width": "50%", "paddingRight": 3    }  },
+  "flex-layout.col#column-right-ml":
+  {
+    "children": [ "rich-text#feature-sanitario",  "rich-text#feature-ducha",  "rich-text#feature-accesorios", "rich-text#s-items-ni"  ],
+    "props"   : { "blockClass": "bathroom-features-right",  "width": "50%", "paddingLeft": 3    }
+  },
+
+  "image#lookbook-s": { "props": { "src": "https://queramic.com/img/cms/Banners-Home/722x722_S.png", "alt": "Lookbook Talla S", "blockClass": "lookbook-image" }  },
+  "image#lookbook-m": { "props": { "src": "https://queramic.com/img/cms/Banners-Home/722x722_M.png", "alt": "Lookbook Talla M", "blockClass": "lookbook-image" }  },
+  "image#lookbook-l": { "props": { "src": "https://queramic.com/img/cms/Banners-Home/722x722_L.png", "alt": "Lookbook Talla L", "blockClass": "lookbook-image" }  },
+
+
+  /** =================== Boques auxiliares ====================== */
+  "rich-text#espacio-rojo"            : { "props": { "text": "&nbsp;", "blockClass": "espacio-rojo" }  },
+  "flex-layout.row#div-espacio-10px"  : { "children": ["rich-text#espacio-rojo"], "props": { "blockClass": "div-espacio-10px" }  },
+  "flex-layout.row#div-espacio-100px" : { "children": ["rich-text#espacio-rojo"], "props": { "blockClass": "div-espacio-100px" }  }
+  /** =================== FIN Boques auxiliares ====================== */
+}
