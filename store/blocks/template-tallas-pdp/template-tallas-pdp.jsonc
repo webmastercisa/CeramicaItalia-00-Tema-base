@@ -1,41 +1,20 @@
 {
   "store.custom#template-tallas-pdp":
   {
-    "blocks": [
-        "flex-layout.row#miga-pan-talla-PDP",
-        "flex-layout.row#div-espacio-10px",
-        "flex-layout.row#section1-talla", // Una intro bloque 50/50  Texto/Imagen
-        "flex-layout.row#div-espacio-10px"
-      ]
-  },
-  //MIGA DE PAN PREGUNTAS FRECUENTES
-  "flex-layout.row#miga-pan-talla-PDP": {
-      "children": [ "image#icono-miga-pan", "rich-text#texto-1-miga-pan", "rich-text#texto-2-miga-pan-talla-PDP" ],
-      "props": { "blockClass": ["miga-pan-terminos-legales"] }
-  },
-  // TEXTO 2 MIGA DE PAN
-  "rich-text#texto-2-miga-pan-talla-PDP": {
-      "props": {
-          "blockClass": "texto-2-miga-pan",
-          "text": "[Talla de baños](/talla_banos)",
-          "textAlignment": "CENTER",
-          "textPosition": "CENTER"
-      }
-  },
-  "responsive-layout.desktop#banner-talla-pdp":
-  {
-  "children": [      "flex-layout.row#container-banner-talla-pdp"    ]
+    "blocks": [        "flex-layout.row#div-espacio-10px",        "flex-layout.row#ver-talla-container"      ]
   },
 
-  "flex-layout.row#container-banner-talla-pdp":
-  {
-    "children": [ "image#banner-pdp" ],
-    "props": { "blockClass": [ "container-banner-talla-pdp" ] }
+
+"flex-layout.row#ver-talla-container":
+{
+    "props"   : { "blockClass": "ver-talla-container",  "fullWidth": true },
+    "children": [ "flex-layout.col#ver-talla-content"    ]
   },
 
-  "image#banner-talla-pdp":
+  "flex-layout.col#ver-talla-content":
   {
-    "props": { "src": "/arquivos/banner-pdp.png", "alt": "alt", "blockClass": "banner-pdp"}
+    "props"   : { "blockClass": "ver-talla-content",  "width": "100%" },
+    "children": ["custom-app-tallas"]
   }
 
   /** =================== Boques auxiliares ====================== */
