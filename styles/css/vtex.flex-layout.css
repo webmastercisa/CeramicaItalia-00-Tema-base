@@ -80,6 +80,7 @@
 
 .flexCol--productSpecificationName {
   padding: 1rem;
+  background-color: #EEE;
 }
 
 .flexCol--productSpecificationValue {
@@ -90,9 +91,6 @@
   background-color: #f9f9f9;
 } */
 
-.flexCol--productSpecificationName {
-  background-color: #EEE;
-}
 
 .flexRow--productSpecification {
   border-bottom: solid 0.8px #D6D4D4;
@@ -172,6 +170,16 @@
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
+}
+.flexRowContent--main-header {
+  background-color: #FFFFFF;
+  width: 1280px;
+  margin: auto;
+  box-shadow: none !important;
+  justify-content: space-between;
+  padding: 4px 0px 6px 0px !important;
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 0.9rem; */
 }
 
 /* Service Section */
@@ -333,12 +341,7 @@
   color: #fff;
 }
 
-.flexRowContent--main-header {
-  background-color: #FFFFFF;
-  width: 1280px;
-  margin: auto;
-  box-shadow: none !important;
-}
+
 
 .flexRowContent--main-header-mobile {
   align-items: center;
@@ -1395,9 +1398,7 @@
   gap: 20px;
 }
 
-.flexRowContent--main-header {
-  justify-content: space-between;
-}
+
 
 /* .flexRowContent--container-nuestras-tiendas {
   gap: 10px;
@@ -1641,11 +1642,7 @@
   background: white;
 }
 
-.flexRowContent--main-header {
-  padding: 4px 0px 6px 0px !important;
-  /* padding-top: 0.5rem; */
-  /* padding-bottom: 0.9rem; */
-}
+
 
 .flexRowContent--texto-img-search-departamento {
   gap: 20px;

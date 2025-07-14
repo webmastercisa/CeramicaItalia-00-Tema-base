@@ -76,7 +76,8 @@
     "ceramicaitalia.form-product-search": "0.x",
     "ceramicaitalia.custom-precio-unidad-tax": "0.x",
     "ceramicaitalia.custom-orderplaced-paymentmethod": "0.x",
-    "ceramicaitalia.menu-items-custom": "0.x"
+    "ceramicaitalia.menu-items-custom": "0.x",
+    "ceramicaitalia.custom-app-tallas-pdp": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

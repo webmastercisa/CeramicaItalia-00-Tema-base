@@ -125,6 +125,7 @@
   "store.custom#template-tallas-pdp":
   {
     "path": "/template-tallas-pdp",
+    "page": "ver_talla",
     "title": "Tallas PDP"
   }
 
