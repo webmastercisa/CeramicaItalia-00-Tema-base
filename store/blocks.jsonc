@@ -62,7 +62,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "**Lo sentimos, no encontramos resultados para tu búsqueda**",
+      "text": "**Lo sentimos, no encontramos resultados para tu búsqueda.**",
       "font": "t-heading-1",
       "blockClass": "text-notFound"
     }

@@ -120,6 +120,13 @@
   {
     "path": "/template-tallas",
     "title": "Plantilla Tallas"
+  },
+
+  "store.custom#template-tallas-pdp":
+  {
+    "path": "/template-tallas-pdp",
+    "title": "Tallas PDP"
   }
+
 
 }
