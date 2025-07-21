@@ -124,7 +124,7 @@
     "children": ["connectif#test-connectif-block"],
     "props":
     {
-      /*"blockClass": "section-seasonProduct",*/
+      "blockClass": "espacio_15px",
       "preventVerticalStretch": true,
       "preventHorizontalStretch": false
     }
@@ -1039,6 +1039,7 @@
 {
   "props":
   {
+    "blockClass": ["espacio_15px"],
     "classId": "test-connectif-block",
     "elementId": "test-connectif-block-elem-id"
   }
