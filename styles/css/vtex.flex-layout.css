@@ -1143,7 +1143,7 @@
 {
   max-width: 700px;
   width: 700px;
-  /*background-color: #eee;*/
+  height: 200px;
 
   margin: auto;
   color: #3f3f3f;
@@ -1153,7 +1153,6 @@
 {
   max-width: 700px;
   width: 700px;
-  /*background-color: #666;*/
   height: 128px;
 
   margin: auto;
@@ -3929,4 +3928,4 @@ height: 520px;
   height: 400px !important;
 }
 
-.flexRow--espacio_15px { width: 100%; margin-top: 15px; }
+.flexRow--espacio_15px { height: 15px; width: 100%; margin-top: 15px;  background-color: rgba(210, 105, 30, 0);}

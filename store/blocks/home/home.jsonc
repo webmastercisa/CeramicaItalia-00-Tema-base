@@ -7,6 +7,7 @@
       //"__fold__.mobile",
       //"flex-layout.row#shelf",
 
+      "flex-layout.row#espacio_15px",
       "flex-layout.row#connectif-block",
 
       "responsive-layout.desktop#seasonProduct",
@@ -118,13 +119,20 @@
     }
   },
 
+  "flex-layout.row#espacio_15px":
+  {
+    "props":
+    {
+      "blockClass": "espacio_15px"
+    }
+  },
 
   "flex-layout.row#connectif-block":
   {
     "children": ["connectif#test-connectif-block"],
     "props":
     {
-      "blockClass": "espacio_15px",
+      /*"blockClass": "espacio_15px",*/
       "preventVerticalStretch": true,
       "preventHorizontalStretch": false
     }

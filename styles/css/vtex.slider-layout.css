@@ -1218,8 +1218,10 @@ text-transform: capitalize;
     min-height: auto;
   }
 
-  .paginationDotsContainer--carousel {
-    margin-bottom: -0.6px;
+  .paginationDotsContainer--carousel
+  {
+    /*margin-bottom: -0.6px;*/
+    margin-bottom: 15px;
   }
 
   .paginationDot--carousel {
