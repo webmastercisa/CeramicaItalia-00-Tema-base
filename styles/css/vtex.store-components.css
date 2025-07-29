@@ -394,12 +394,22 @@
   padding: 0;
 }
 
-.imageElement--imageSesonProduct {
-  width: 633px;
-  height: 698px;
+.imageElement--imageSesonProduct
+{
+  width: 320px;
+  height: 720px;
   object-fit: cover;
   margin-left: -14px;
 }
+
+  .imageElement--imageSesonProduct_mobile
+  {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    filter: contrast(130%) grayscale(30%);
+  }
 
 
 .discountInsideContainer {
@@ -1242,6 +1252,7 @@ width: 100%;
     margin-top: 50px;
     filter: contrast(130%) grayscale(30%);
   }
+
 
   .imageElement--banner-inspire-mobile {
     width: 100vw;

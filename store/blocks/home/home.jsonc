@@ -415,7 +415,7 @@
   "image#seasonProductImg": {
     "title": "imagen-productoDeTemporada-desktop",
     "props": {
-      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/banner-temporada-cocinas.png",
+      "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/20328f0f-dfd7-4b77-ae26-588b1dfefb20___424e3efc5cf0f532adc73362742cd00d.jpg",
       "maxHeight": "",
       "maxWidth": "",
       "blockClass": "imageSesonProduct"
