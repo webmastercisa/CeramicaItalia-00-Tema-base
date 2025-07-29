@@ -196,7 +196,8 @@
       "blockClass": "cantidad"
     }
   },
-  "price#miniCart": {
+  "price#miniCart":
+  {
     "props": {
       "textAlign": "left",
       "showListPrice": true

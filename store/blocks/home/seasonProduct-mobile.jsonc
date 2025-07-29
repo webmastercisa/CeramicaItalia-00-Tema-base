@@ -42,10 +42,10 @@
     "image#seasonProduct-mobile": {
         "title": "imagen-productoTemporada-mobile",
         "props": {
-            "src": "/arquivos/banner-cocina-mobile2.png",
+            "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/50d8ae4f-7458-4174-bed9-fbafcd517fc9___4565b7fbc5528c45c0d0c56fbabf4233.webp", //"/arquivos/banner-cocina-mobile2.png"
             "maxHeight": "",
             "maxWidth": "",
-            "blockClass": "imageSesonProduct"
+            "blockClass": "imageSesonProduct_mobile"
         }
     },
     "rich-text#seasonProduct-mobile": {
