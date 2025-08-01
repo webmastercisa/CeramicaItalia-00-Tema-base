@@ -1,9 +1,29 @@
 {
   "store.custom#template-tallas-pdp":
   {
-    "blocks": [        "flex-layout.row#div-espacio-10px",        "flex-layout.row#ver-talla-container"      ]
+    "blocks": [
+    "rich-text#espacio_extra1",
+    "ceramicaitalia.custom-app-tallas-pdp:custom-app-tallas",
+    "rich-text#espacio_extra2",
+    "ceramicaitalia.custom-app-tallas-pdp:custom-discount-badge",
+    "rich-text#espacio_extra3"
+  ]
   },
-
+  "rich-text#espacio_extra1":  {    "props": {      "text": "=============== SP 1 =================="    } },
+  "rich-text#espacio_extra2":  {    "props": {      "text": "=============== SP 2 =================="    } },
+  "rich-text#espacio_extra3":  {    "props": {      "text": "=============== SP 3 =================="    } }
+}
+/*
+  "custom-discount-badge#pdp":
+  {
+    "props":
+    {
+      "minDiscountPercentage": 2,
+      "markers": ["discount" ],
+      "message": "-{savingsPercentage}",
+      "blockClass": "discount-badge-product"
+    }
+  },
 
 "flex-layout.row#ver-talla-container":
 {
@@ -14,10 +34,8 @@
   "flex-layout.col#ver-talla-content":
   {
     "props"   : { "blockClass": "ver-talla-content",  "width": "100%" },
-    "children": ["custom-app-tallas"]
+    "children": ["ceramicaitalia.custom-app-tallas-pdp:custom-app-tallas"]
   }
 
-  /** =================== Boques auxiliares ====================== */
-
-  /** =================== FIN Boques auxiliares ====================== */
 }
+*/

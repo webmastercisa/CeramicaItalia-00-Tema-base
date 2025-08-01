@@ -1248,7 +1248,9 @@ width: 100%;
   .imageElement--imageSesonProduct {
     width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin-bottom: 5px; /*margin: 0 auto;*/
+    margin-left: 3px;
+    margin-right: 3px;
     margin-top: 50px;
     filter: contrast(130%) grayscale(30%);
   }
