@@ -107,8 +107,13 @@
   vertical-align: middle;    /* Alinea la insignia verticalmente con el texto circundante si es necesario */
   width: 85%;
 }
+.savings--discount-badge-product[data-discount="0"],
+.savings--discount-badge-product[data-discount="0%"],
+.savings--discount-badge-product[data-discount="-0%"] {  display: none !important; }
 
-
+.savingsPercentage--discount-badge-product[data-discount="0"],
+.savingsPercentage--discount-badge-product[data-discount="0%"],
+.savingsPercentage--discount-badge-product[data-discount="-0%"] {  display: none !important; }
 
 .listPrice--price-summary-shelf {
   font-family: 'Neutra Display';
@@ -131,13 +136,8 @@
   letter-spacing: 0.05rem;
 }
 
-.currencyFraction--selling-summary-shelf {
-  display: none !important;
-}
-
-.currencyDecimal--selling-summary-shelf {
-  display: none !important;
-}
+.currencyFraction--selling-summary-shelf  { display: none !important; }
+.currencyDecimal--selling-summary-shelf   { display: none !important; }
 
 /* .currencyContainer {
   color:  #3D3C3C;

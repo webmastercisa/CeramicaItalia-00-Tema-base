@@ -185,11 +185,7 @@
         "desktop": "auto",
         "phone": "1:1"
       },
-      "hiddenImages": [
-        "Vitrina",
-        "Color",
-        "InfoExtra"
-      ],
+      "hiddenImages": ["Vitrina","Color","InfoExtra"],
       "thumbnailsOrientation": "horizontal",
       "displayThumbnailsArrows": true,
       "thumbnailAspectRatio": "1:1"
@@ -209,6 +205,7 @@
       "thumbnailAspectRatio": "1:1"
     }
   },
+
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
@@ -226,13 +223,7 @@
       "colSizing": "auto",
       "colGap": 3
     },
-    "children": [
-      //"vtex.store-components:product-name"
-      "flex-layout.col#product-name-col",
-      "flex-layout.col#price-savings-col"
-      //,      "product-price-savings#pdp" // Un contenedor para precio y descuento
-      //,"badge-descuento"
-    ]
+    "children": [ "flex-layout.col#product-name-col", "flex-layout.col#price-savings-col" ]
   },
 
   "flex-layout.col#product-name-col":
@@ -240,12 +231,29 @@
     "props": { "width": "80%" },
     "children": [ "vtex.store-components:product-name" ]
   },
-  "flex-layout.col#price-savings-col":
-  {
-    "props": { "width": "20%" },
-    "children": [ "product-price-savings#pdp" ]
+
+  "flex-layout.col#price-savings-col" :
+  { "props": { "width": "20%" }, "children": ["product-price-savings#pdp"] },
+  //{ "props": { "width": "20%" }, "children": [ "custom-discount-badge#pdp",] },
+
+  "flex-layout.col#espacio_vacio"     :
+  { "props":  { "width": "20%" }, "children": ["rich-text#texto_vacio"]  },
+
+  "rich-text#texto_vacio"             :
+  { "props":  { "text": ".",  "blockClass": "txt-no-disponible",  "textAlignment": "CENTER",  "textPosition": "CENTER"  }
   },
   /*_____________ Bloques para Badge de descuento ______________*/
+  "custom-discount-badge#pdp":
+  {
+    "props":
+    {
+      "minDiscountPercentage": 2,
+      "message": "-{savingsPercentage}",
+      "blockClass": "discount-badge-product"
+    }
+  },
+
+
   "product-price-savings#pdp":
   {
     "props":
@@ -255,6 +263,8 @@
       "blockClass": ["discount-badge-product"] // Clases para estilizar
     }
   },
+
+
   /*_____________ Fin para Badge de descuento ______________*/
 
 
