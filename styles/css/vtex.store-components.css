@@ -1587,4 +1587,10 @@ width: 100%;
   width: 300px;
 }
 
-
+.brand
+{
+  color: #686868;
+  font-family: "NeutraText";
+  font-size: 18px;
+  font-weight: 550;
+}

@@ -3929,3 +3929,8 @@ height: 520px;
 }
 
 .flexRow--espacio_15px { height: 15px; width: 100%; margin-top: 15px;  background-color: rgba(210, 105, 30, 0);}
+
+.style_text_brand
+{
+  color: #ca2626;
+}
