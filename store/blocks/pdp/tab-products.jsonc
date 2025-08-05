@@ -82,7 +82,8 @@
           "DownloadFichaTecnica",
           "DownloadManualInstalacion",
           "DownloadManualManipulacion",
-          "DownloadBIMZIP"
+          "DownloadBIMZIP",
+          "DownloadEtiquetado"
         ],
         "props": {
             "tabId": "tab-descargas-pdp",

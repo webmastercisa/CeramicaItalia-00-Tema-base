@@ -133,6 +133,7 @@
             "flex-layout.row#product-name",
 
             "product-identifier.product",
+            "flex-layout.row#brand",
             "sku-selector",
             // "flex-layout.row#container-descripcion-corta",
             "custom-app-calculator",
@@ -147,6 +148,13 @@
             ]
         }
     },
+
+    "flex-layout.row#brand": {
+        "children": [ "TextBrandProduct"],
+        "props"   : { "blockClass": ["style_text_brand"] }
+    },
+
+
     "flex-layout.row#quantity-price": {
         "children": [
             "product-quantity",
@@ -165,6 +173,7 @@
             // "rich-text#condicion2-no",
             "flex-layout.row#product-name",
             "product-identifier.product",
+            "flex-layout.row#brand",
             "sku-selector",
             "flex-layout.row#container-descripcion-corta",
             "flex-layout.row#quantity-price",
