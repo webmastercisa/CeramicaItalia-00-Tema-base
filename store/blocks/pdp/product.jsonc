@@ -233,7 +233,10 @@
   },
 
   "flex-layout.col#price-savings-col" :
-  { "props": { "width": "20%" }, "children": ["product-price-savings#pdp"] },
+  {
+    "props": { "width": "20%" },
+    "children": ["product-price-savings#pdp","flex-layout.row#product-discount"]
+  },
   //{ "props": { "width": "20%" }, "children": [ "custom-discount-badge#pdp",] },
 
   "flex-layout.col#espacio_vacio"     :
@@ -243,6 +246,15 @@
   { "props":  { "text": ".",  "blockClass": "txt-no-disponible",  "textAlignment": "CENTER",  "textPosition": "CENTER"  }
   },
   /*_____________ Bloques para Badge de descuento ______________*/
+  "flex-layout.row#product-discount":
+  {
+    "children": [ "custom-discount-badge#pdp", "custom-discount-badge#pdp2" ],
+    "props":
+    {
+      "width": "20%",
+      "blockClass": ["discount-badge-product_invisible"] // Clases para estilizar
+    }
+  },
   "custom-discount-badge#pdp":
   {
     "props":
@@ -253,6 +265,11 @@
     }
   },
 
+  "custom-discount-badge#pdp2":{
+  "props": {
+    "blockClass": ["discount-badge-product"]
+  }
+},
 
   "product-price-savings#pdp":
   {
@@ -260,7 +277,7 @@
     {
       "markers": ["discount" ], // Esto suele activar la visualización del % de descuento.
       "message": "-{savingsPercentage}", // Esto debería mostrar solo el porcentaje, ej: "20%"
-      "blockClass": ["discount-badge-product"] // Clases para estilizar
+      "blockClass": "discount-badge-product" // Clases para estilizar
     }
   },
 
