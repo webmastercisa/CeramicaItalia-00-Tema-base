@@ -3934,3 +3934,13 @@ height: 520px;
 {
   color: #ca2626;
 }
+
+.flexRow--discount-badge-product_invisible
+{
+  height: 50px;
+  width: 100%;
+  background-color: #727273;
+  color: #ca2626;
+  display: none;
+}
+
