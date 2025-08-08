@@ -3821,12 +3821,27 @@ height: 520px;
     padding-left: 100px;      padding-right: 100px;
   }
 
+  .flexRow--discount-badge-product
+  {
+    height: auto !important;
+    width: 12% !important;
+    margin-left: 0px !important;
+    color: #ca2626;
+  }
+
 }
 @media (min-width: 768px) and (max-width: 991px)                /* Tablet/Mobile grande - 768px a 991px */
 {
   .flexCol--col-b1-50p-d
   {
     padding-left: 100px;      padding-right: 100px;
+  }
+  .flexRow--discount-badge-product
+  {
+    height: auto !important;
+    width: 12% !important;
+    margin-left: 0px !important;
+    color: #ca2626;
   }
 }
 
@@ -3935,12 +3950,20 @@ height: 520px;
   color: #ca2626;
 }
 
-.flexRow--discount-badge-product_invisible
+.flexRow--discount-badge-product
 {
   height: 50px;
   width: 100%;
-  background-color: #727273;
   color: #ca2626;
-  display: none;
+  /*display: none;*/
 }
 
+.flexRow--no-visible
+{
+  height: 50px;
+  width: 140px;
+  border: solid 0.8px #D6D4D4;
+  border-radius: 15px;
+  padding: 3px;
+  display: none;
+}

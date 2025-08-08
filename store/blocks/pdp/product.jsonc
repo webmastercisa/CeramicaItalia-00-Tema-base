@@ -235,8 +235,9 @@
   "flex-layout.col#price-savings-col" :
   {
     "props": { "width": "20%" },
-    "children": ["product-price-savings#pdp","flex-layout.row#product-discount"]
+    "children": ["flex-layout.row#product-discount"]
   },
+  //"children": ["product-price-savings#pdp","flex-layout.row#product-discount"]
   //{ "props": { "width": "20%" }, "children": [ "custom-discount-badge#pdp",] },
 
   "flex-layout.col#espacio_vacio"     :
@@ -248,12 +249,8 @@
   /*_____________ Bloques para Badge de descuento ______________*/
   "flex-layout.row#product-discount":
   {
-    "children": [ "custom-discount-badge#pdp", "custom-discount-badge#pdp2" ],
-    "props":
-    {
-      "width": "20%",
-      "blockClass": ["discount-badge-product_invisible"] // Clases para estilizar
-    }
+    "children": [ "custom-discount-badge#pdp"], //"children": [ "custom-discount-badge#pdp", "custom-discount-badge#pdp2" ],
+    "props": { "blockClass": ["discount-badge-product"] } // Clases para estilizar
   },
   "custom-discount-badge#pdp":
   {
