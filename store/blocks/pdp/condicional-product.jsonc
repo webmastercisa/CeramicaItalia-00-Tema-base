@@ -430,7 +430,7 @@
     },
 
     "flex-layout.col#bloque-nombre-referencia": {
-      "children": ["flex-layout.row#product-name",
+      "children": ["flex-layout.row#product-name","flex-layout.row#brand",
       "product-identifier.product"],
       "props": {
         "blockClass": ["bloque-nombre-referencia"]

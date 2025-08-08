@@ -163,3 +163,12 @@ font-weight: 400;
     padding-top: 2px !important;
   }
 }
+
+@media (min-width: 481px) and (max-width: 767px)                /* Mobile (hasta 767px) Precticamente todos */
+{
+  .savings--discount-badge-product
+  {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
