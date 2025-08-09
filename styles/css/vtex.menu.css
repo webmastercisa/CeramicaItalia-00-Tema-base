@@ -13,6 +13,7 @@
   height: 5px;
 }
 .menuContainerNav--btn-customized::-webkit-scrollbar-thumb{
+  /*background-color: #ED1B24;      ============================================ 25.08.08 */
   background-color: #ED1B24;
   padding-left: 1px;
   border-radius: 5px;
@@ -21,17 +22,22 @@
 .menuContainerNav--Main .menuItem {
   font-family: 'NeutraText';
   text-align: left;
+  /*background-color: #ffffff;      ============================================ 25.08.08 */
   background-color: #ffffff;
 }
 
 .menuContainerNav--Main .styledLinkContent .menuItem:hover {
-  color: #ffffff;
+  /*color: #ffffff;      ============================================ 25.08.08
   background-color: #ED1B24;
+*/
+  color: #E52024;
+  background-color: #ffffff;
 }
 
 
 .styledLinkContainer--btn-customized :global(.vtex-menu-2-x-styledLinkContent):hover {
-  color: #FFFFFF;
+  /*color: #ffffff;      ============================================ 25.08.08 */
+  color: #E52024;
   /*min-width: 250px;  igarcia 24.08.13 */
   min-width: 148px;
 }
@@ -55,7 +61,8 @@
   /* font-family: 'Neutra Display'; */
   font-family: 'NeutraTextBook';
   font-size: 18px;
-  color: #3D3C3C;
+  /*color: #3D3C3C;      ============================================ 25.08.08*/
+  color: #ffffff;
   padding: 15px 10px;
 }
 
@@ -139,17 +146,20 @@
   width: 100%;
   height: 100%;
   display: flex;
-  background: #DAD8D8;
+  /*background: #DAD8D8;      ============================================ 25.08.08*/
+  background: #E52024;
 }
 
 .styledLink--btn-customized:hover
 {
-  background: #FF030E;
+  /*background: #FF030E;      ============================================ 25.08.08*/
+  background: #FFFFFF;
 }
 
 
 .menuContainer--menuHeader :global(.vtex-menu-2-x-menuItem--btn-customized):nth-child(0n+1) :global(.vtex-menu-2-x-styledLink--btn-customized){
-  background: none;
+  /*background: none;      ============================================ 25.08.08*/
+  border-top: none;
 }
 
 .menuContainer--menuHeader :global(.vtex-menu-2-x-menuItem--btn-customized):nth-child(0n+1){
@@ -157,15 +167,18 @@
 }
 
 .menuContainer--menuHeader :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1){
-  background: #FF030E;
+  /*background: #FF030E;      ============================================ 25.08.08*/
+  background: #b1d3bf;
 }
 
 .menuContainer--menuHeaderRed :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1) :global(.vtex-menu-2-x-styledLinkContent){
-  color: white;
+  /*color: white;      ============================================ 25.08.08*/
+  color: #E52024 /* ____________________________________________________________________________ */
 }
 
 .menuContainer--menuHeaderRed :global(.vtex-menu-2-x-menuItem--btn-customized--isOpen):nth-child(0n+1) :global(.vtex-menu-2-x-menuContainer--mainSubMenu) :global(.vtex-menu-2-x-styledLinkContent){
   color: #828181;
+
 }
 
 .styledLinkIcon--btn-customized {
@@ -231,7 +244,8 @@
 }
 
 .menuContainerNav--menuHeader {
-  background: #DAD8D8;
+  /*background: #DAD8D8;   ============================================================ 25.08.08*/
+  background: #E52024;
 }
 
 .menuContainer--menuHeader {

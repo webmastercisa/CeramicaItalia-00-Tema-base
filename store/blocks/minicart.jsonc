@@ -149,7 +149,7 @@
   },
   "flex-layout.col#descriptionMinicartProducto": {
     "children": [
-      "price#miniCart",
+      //"price#miniCart",
       "flex-layout.row#PriceCorrect",
       "flex-layout.row#unit-price.desktop"
     ],
@@ -161,13 +161,11 @@
   // _____________________________  TODO _______________________________________________
   "flex-layout.row#PriceCorrect": {
     "children": [ "custom-final-price#miniCart" ],
-    "props"   : {"blockClass": "no-visible" }
+    "props"   : {"blockClass": "txt_final_price_container" }
   },
 
   "custom-final-price#miniCart":{
-    "props"   : {
-      "blockClass": "no-visible"
-    }
+    "props"   : {"blockClass": "txt_final_price" }
   },
   // ____________________________________________________________________________
 
