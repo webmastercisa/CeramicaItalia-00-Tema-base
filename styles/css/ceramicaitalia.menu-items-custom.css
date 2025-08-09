@@ -5,7 +5,7 @@
     max-width: 250px;
     position: relative;
   }
-  
+
   .MenuCustomBtn {
     display: flex;
     width: 100%;
@@ -23,6 +23,11 @@
     height: 100%;
     font-weight: bold;
     font-family: 'NeutraTextBook';
+    color:#fff !important;
+  }
+   .MenuCustomBtn:hover {
+    background-color:#FFF !important;
+    color:#E52024 !important;
   }
   .MenuCustomContentList {
     background-color: #fff;
@@ -33,38 +38,38 @@
     max-height: 0px;
     display: none;
   }
-  
+
   .MenuCustomContentList--show {
     display: block;
     max-height: max-content;
     z-index: 1;
   }
-  
-  
-  
+
+
+
   .MenuCustomContentList::-webkit-scrollbar {
     -webkit-appearance: none;
   }
-  
+
   .MenuCustomContentList::-webkit-scrollbar-button {
     display: none;
   }
-  
+
   .MenuCustomContentList::-webkit-scrollbar {
     height: 4px;
     width: 6px;
   }
-  
+
   .MenuCustomContentList::-webkit-scrollbar-thumb {
     background-color: rgba(83, 82, 82, 0.44);
     border-radius: 20px;
     border: 1px solid rgba(68, 69, 71, 0.34);
   }
-  
+
   .MenuCustomContentList::-webkit-scrollbar-track {
     border-radius: 10px;
   }
-  
+
   .MenuCustomListUl {
     margin: 0;
     padding: 0;
@@ -87,7 +92,7 @@
   .MenuCustomListLi:hover{
     background: linear-gradient(90deg, rgba(255, 253, 253, 1) 0%, rgba(205, 203, 203, 1) 100%);
   }
-  
+
   .MenuCustomListLi:last-child {
     border-bottom: none;
   }
@@ -95,7 +100,7 @@
     width: 36px;
     height: 25px;
   }
-  
+
   .MenuCustomContentSubList {
     background-color: #fff;
     position: absolute;
@@ -106,37 +111,37 @@
     max-height: 0px;
     overflow-y: auto;
   }
-  
+
   .MenuCustomContentSubList--show {
     max-height: max-content;
     z-index: 1;
   }
-  
-  
-  
+
+
+
   .MenuCustomContentSubList::-webkit-scrollbar {
     -webkit-appearance: none;
   }
-  
+
   .MenuCustomContentSubList::-webkit-scrollbar-button {
     display: none;
   }
-  
+
   .MenuCustomContentSubList::-webkit-scrollbar {
     height: 4px;
     width: 6px;
   }
-  
+
   .MenuCustomContentSubList::-webkit-scrollbar-thumb {
     background-color: rgba(83, 82, 82, 0.44);
     border-radius: 20px;
     border: 1px solid rgba(68, 69, 71, 0.34);
   }
-  
+
   .MenuCustomContentSubList::-webkit-scrollbar-track {
     border-radius: 10px;
   }
-  
+
   .MenuCustomSubListUl {
     margin: 0;
     padding: 0;

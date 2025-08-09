@@ -124,7 +124,7 @@
       // "flex-layout.col#spacer",
       "search-bar",
       // "search-bar#modificado",
-      "flex-layout.col#category-menu-header",
+      /*"flex-layout.col#category-menu-header",   Boton pisos, paredes colores*/
       // "flex-layout.row#selector",
       // "flex-layout.row#container-selector", //selector final de ciudades
       // "flex-layout.row#storeLocator",
@@ -138,6 +138,7 @@
       /*"flex-layout.row#container-logoUSA",*/
 
       "vtex.menu@2.x:menu#idioma",
+      "flex-layout.row#container-nuestras-tiendas",
       "login",
       "minicart.v2"
     ],
@@ -232,18 +233,9 @@
 
 
 
-  "flex-layout.row#container-fav-nuestras-tiendas": {
-    "children": ["flex-layout.row#container-nuestras-tiendas"
-    //,"flex-layout.row#container-favoritos"
-  ],
-    "props": {
-      "blockClass": ["container-fav-nuestras-tiendas"],
-      "preventHorizontalStretch": true
-    }
-  },
 
   "flex-layout.row#container-nuestras-tiendas": {
-    "children": ["image#ico-nuestras-tiendas", "rich-text#texto-nuestras-tiendas"],
+    "children": ["image#ico-nuestras-tiendas" ],//"children": ["image#ico-nuestras-tiendas", "rich-text#texto-nuestras-tiendas"],
     "props": {
       "blockClass": ["container-nuestras-tiendas"],
       "preventHorizontalStretch": true,
@@ -265,6 +257,7 @@
     }
   },
 
+  /*
   "rich-text#texto-nuestras-tiendas": {
     "props": {
          "text": "[Nuestras Tiendas](/nuestras-tiendas)",
@@ -273,7 +266,7 @@
          "textPosition": "CENTER"
     }
   },
-  /*
+
   "flex-layout.row#container-favoritos": {
     "children": [ "image#ico-idioma_esp"],
     //"children": [ "image#ico-idioma_esp", "rich-text#texto-favoritos"],

@@ -1383,7 +1383,11 @@
 
 .flexRowContent--container-favoritos,
 .flexRowContent--container-nuestras-tiendas {
-  align-items: center;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;    /* Centrado vertical */
+  height: 60px;
+  margin-top: 10px;
 }
 
 .flexRowContent--container-favoritos {
@@ -1392,9 +1396,9 @@
 }
 
 .flexRowContent--container-fav-nuestras-tiendas {
-  height: 100%;
-  padding-top: 9px;
-  gap: 20px;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;    /* Centrado vertical */
 }
 
 
@@ -2415,11 +2419,11 @@ height: 520px;
       display: flex;
       max-width: 90vw;
       margin-left: 5vw;
-  } */
+    } */
 
-    /* .flexRowContent--btns-anuncios {
-      display: flex;
-  } */
+      /* .flexRowContent--btns-anuncios {
+        display: flex;
+    } */
 
     .flexRowContent--container-input-hv {
       gap: 8px;
@@ -2800,11 +2804,14 @@ height: 520px;
     }
 
     .flexRowContent--container-nuestras-tiendas {
+      /*
       justify-content: flex-start;
       margin-left: 12px;
       padding-bottom: 5px;
+
       width: 80vw;
       gap: 10px;
+      */
       border-bottom: 0.8px solid #3D3C3C;
     }
 
@@ -2815,12 +2822,7 @@ height: 520px;
       z-index: 99;
     }
 
-    .flexRow--btnWhatsApp-layout {
-      position: fixed;
-      bottom: 30px;
-      z-index: 99;
-      right: -56vw;
-    }
+    .flexRow--btnWhatsApp-layout {      right: -56vw;    }
 
     .flexRow--shelf-general :global(.vtex-store-components-3-x-container) {
       padding: 0px !important;
@@ -3966,4 +3968,16 @@ height: 520px;
   border-radius: 15px;
   padding: 3px;
   display: none;
+}
+.flexRow--txt_final_price_container
+{
+  height: auto;
+  width: 200px;
+}
+
+.flexRow--txt_final_price
+{
+  background-color: #1bede2;
+  height: auto;
+  width: 200px;
 }
