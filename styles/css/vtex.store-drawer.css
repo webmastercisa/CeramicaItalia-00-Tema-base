@@ -179,5 +179,9 @@
   .openIconContainer--drawer-mobile-iconos {
     padding: 20px 0px 0px 0px;
 }
+.menuIcon
+{
+  color: #e52024;
+}
 
 }

@@ -67,7 +67,7 @@
     margin: 0 6px 0 6px;
     display: flex !important;
     align-items: center;
-    gap: 9px;
+    /*gap: 9px;*/
   }
 
   .profile {
@@ -81,7 +81,7 @@
   }
 
   .label::after {
-    content: 'Ingresar';
+    content: '';
     font-family: 'NeutraTextTF';
     font-size: 15px;
     color: #3D3C3C;
@@ -124,3 +124,60 @@
 
 
 }
+
+
+
+@media (min-width: 481px) and (max-width: 767px)                /* Mobile (hasta 767px) Precticamente todos */
+{
+  .label
+  {
+    content: '' !important;
+    display: inline-grid !important;
+    font-size: 0px !important;
+    color: #fff;
+  }
+  .label::after
+  {
+    content: '';
+    font-size: 0px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight:100;
+  }
+  .label::before
+  {
+    content: '';
+    font-size: 0px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight:100;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px)                /* Tablet/Mobile grande - 768px a 991px */
+{
+    .label
+  {
+    display: inline-grid !important;
+    font-size: 0px !important;
+    color: #fff;
+  }
+  .label::after
+  {
+    content: '';
+    font-size: 0px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight:100;
+  }
+
+  .label::before
+  {
+    content: '';
+    font-size: 0px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight:100;
+  }
+
+}
+

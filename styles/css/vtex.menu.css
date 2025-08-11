@@ -64,6 +64,7 @@
   /*color: #3D3C3C;      ============================================ 25.08.08*/
   color: #ffffff;
   padding: 15px 10px;
+  background: url(https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/2d4a7aff-32a3-4fc9-9808-cd1182552a03___8a019734337f54433dc546ad7dbc5270.png) no-repeat scroll right center !important;
 }
 
 .menuContainerNav--Main .menuItem .styledLinkContent .styledLinkIcon {
@@ -442,6 +443,7 @@
   {
     margin-top: 5px;
     margin-right: -10px;
+    width: 37px !important;
   }
 
   .menuContainerNav--acordeon-menu-pdp

@@ -2188,7 +2188,7 @@ height: 520px;
 }
 
 .flexRow--section-seasonProduct {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .flexRowContent--section-filters-2 {
@@ -2833,7 +2833,7 @@ height: 520px;
     .flexRow--main-header-mobile :global(.vtex-store-components-3-x-logoImage) {
       height: 52px;
       width: 126px;
-      margin-left: 20px;
+      /*margin-left: 20px;*/
     }
 
     .flexRow--main-header-mobile :global(.vtex-minicart-2-x-minicartWrapperContainer) {
@@ -2846,10 +2846,22 @@ height: 520px;
       height: 57px;/*75px;*/
       background: #FFF;
       display: flex;
-      gap: 35px; /* ==============  Centrar logo CISA =====================================*/
+      gap: 10px; /* 25 ==============  Centrar logo CISA =====================================*/
       box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.12);
     }
 
+    .flexRowContent--main-header-menu-mobile-e {
+      display: grid;
+      grid-template-columns: 4.5fr 1fr 1.5fr  repeat(3, 1fr);
+      background-color: #FFFFFF;
+      gap: 8px; /* ajusta a gusto */
+      place-items: center;               /* centra contenido H y V en cada celda */
+      min-height: 44px;
+      /*
+        align-items:center; justify-content:center;
+        flex-direction:column;
+      */
+    }
 
     .flexRowContent--main-header-menu-mobile {
       align-items: center;
@@ -2859,9 +2871,9 @@ height: 520px;
 
 
     .flexRow--main-header-menu-mobile :global(.vtex-store-components-3-x-logoImage) {
-      height: 52px;
-      width: 126px;
-      margin-left: 20px;
+      height: 44px;
+      width: 107px;
+      /*margin-left: 20px;*/
     }
 
     .flexRow--main-header-menu-mobile :global(.vtex-minicart-2-x-minicartWrapperContainer) {
@@ -2877,7 +2889,7 @@ height: 520px;
       background: #FFFFFF;
       position:relative;
       z-index: 999999999;
-      gap: 35px; /* ==============  Centrar logo CISA =====================================*/
+      gap: 25px; /* ==============  Centrar logo CISA =====================================*/
       box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.12);
     }
 
@@ -3068,7 +3080,8 @@ height: 520px;
     }
 
     .flexRow--logoMobileContainer {
-      padding: 1% 21% 0 0;
+      /*padding: 1% 21% 0 0;*/
+      padding: 0 0 0 0;
     }
 
     .flexRowContent--section-return-mobile {
@@ -3427,7 +3440,7 @@ height: 520px;
     margin-top: 25px;
   }
 
-
+  .flexRow--section-seasonProduct {    margin-top: -15px;  }
 }
 
 @media (max-width: 600px) {
@@ -3497,6 +3510,7 @@ height: 520px;
   .flexRowContent--minicart-footer {
     height: inherit;
   }
+  .flexRow--section-seasonProduct {    margin-top: -16px;  }
 }
 
 @media (max-width: 360px) {
@@ -3530,6 +3544,7 @@ height: 520px;
   :global(.vtex-store__template){
     zoom: 100%;
   }
+  .flexRow--section-seasonProduct {    margin-top: -17px;  }
 }
 
 /*=================  Bandera Idioma USA Desktop ====================*/
@@ -3782,6 +3797,21 @@ height: 520px;
   height: 640px;
 }
 
+.flexCol--container-item-sp-mobile
+{
+  width: 20px !important;
+  height: auto !important;
+  background-color: rgb(255, 255, 255);
+}
+
+.flexRow--container-separador-rojo{
+  width: 100% !important;
+  height: 4px !important;
+  background-color: #e52024;
+  display: block;     /* por si algún reset puso div en inline/inline-block */
+  clear: both;        /* rompe debajo de floats previos */
+}
+
 
 /* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
 /* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  MEDIAS  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
@@ -3830,7 +3860,6 @@ height: 520px;
     margin-left: 0px !important;
     color: #ca2626;
   }
-
 }
 @media (min-width: 768px) and (max-width: 991px)                /* Tablet/Mobile grande - 768px a 991px */
 {
@@ -3981,3 +4010,4 @@ height: 520px;
   height: auto;
   width: 200px;
 }
+
