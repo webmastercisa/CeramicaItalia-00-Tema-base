@@ -105,7 +105,7 @@
 }
 
 .autoCompleteOuterContainer--searchBarIcon {
-  width: 500px;
+  width: 650px;
   height: 50px;
   border-radius: 25px;
   opacity: 1;
@@ -550,6 +550,12 @@
   width: 39px !important;
   height: 39px;
   padding-top: 6px;
+}
+
+.imageElement--ico-nuestras-tiendas-mobile {
+  width: 37px !important;
+  height: 32px !important;
+  /*padding-top: 6px;*/
 }
 
 .imageElement--ico-favoritos

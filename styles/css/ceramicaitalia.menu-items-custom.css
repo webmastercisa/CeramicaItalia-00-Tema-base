@@ -24,6 +24,7 @@
     font-weight: bold;
     font-family: 'NeutraTextBook';
     color:#fff !important;
+    background: url(https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/2d4a7aff-32a3-4fc9-9808-cd1182552a03___8a019734337f54433dc546ad7dbc5270.png) no-repeat scroll right center !important;
   }
    .MenuCustomBtn:hover {
     background-color:#FFF !important;

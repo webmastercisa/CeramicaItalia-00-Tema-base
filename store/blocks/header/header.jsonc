@@ -245,7 +245,7 @@
 
   "image#ico-nuestras-tiendas": {
     "props": {
-         "src": "assets/ico/home/ico-nuestras-tiendas.svg",
+         "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/13b022e1-0b00-4920-82d6-62661dc42f23___b8836aaaaf99d1c5aa8b19a3d1ebba5b.png",//assets/ico/home/ico-nuestras-tiendas.svg
          "alt": "alt",
         //  "height": "hight",
          "blockClass": "ico-nuestras-tiendas",

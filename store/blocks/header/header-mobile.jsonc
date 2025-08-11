@@ -9,28 +9,82 @@
   },
   "sticky-layout#1-mobile": {
     "children": [
-      "flex-layout.row#1-mobile",
-      "flex-layout.row#1x-mobile"
+      "flex-layout.row#1L-mobile",
+      "flex-layout.row#2L-mobile",
+      "flex-layout.row#separardor-rojo"
     ]
   },
-  "flex-layout.row#1-mobile": {
+  "flex-layout.row#1L-mobile": {
     "children": [
-      "drawer#mobile-major",
+      //"drawer#mobile-major",
       "logo#mobile",
-      //"image#ico-idioma_esp",
+      "flex-layout.row#container-item-sp1",
       "vtex.menu@2.x:menu#idioma",
+      "flex-layout.row#container-nuestras-tiendas-mobile",
+      "login",//"login#mobile",
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-menu-mobile",
+      "blockClass": "main-header-menu-mobile-e",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
 
-  "flex-layout.row#1x-mobile": {
+  "flex-layout.row#container-item-sp1": {
+    "children": ["flex-layout.col#container-item-sp"],
+    "props": {
+      "blockClass": ["container-item-sp-mobile"],
+      //"preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#container-item-sp2": {
+    "children": ["flex-layout.col#container-item-sp"],
+    "props": {
+      "blockClass": ["container-item-sp-mobile"],
+      //"preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.col#container-item-sp": {
+    "props": {
+      "blockClass": ["container-item-sp-mobile"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+
+  "flex-layout.row#container-nuestras-tiendas-mobile": {
+    "children": ["image#ico-nuestras-tiendas-mobile" ],//"children": ["image#ico-nuestras-tiendas", "rich-text#texto-nuestras-tiendas"],
+    "props": {
+      "blockClass": ["container-nuestras-tiendas-mobile"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "image#ico-nuestras-tiendas-mobile": {
+    "props": {
+         "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/13b022e1-0b00-4920-82d6-62661dc42f23___b8836aaaaf99d1c5aa8b19a3d1ebba5b.png",//assets/ico/home/ico-nuestras-tiendas.svg
+         "alt": "alt",
+        //  "height": "hight",
+         "blockClass": "ico-nuestras-tiendas-mobile",
+         "link": {
+             "url": "/nuestras-tiendas",
+             "openNewTab": false,
+             "title": "title"
+      }
+    }
+  },
+
+
+  "flex-layout.row#2L-mobile": {
       "children": [
+        "drawer#mobile-major",
         "search-bar"
       ],
       "props": {
@@ -43,10 +97,23 @@
 
 
 
+ "flex-layout.row#separardor-rojo": {
+    "props": {
+      "blockClass": ["container-separador-rojo"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+
+
+
+
   "drawer#mobile-major": {
     "props":{
       "customPixelEventId": "ModalMenu",
-      "customPixelEventName": "openDrawer"
+      "customPixelEventName": "openDrawer",
+      "blockClass": ["my-drawer-color"]
     },
     "children": [
       "drawer-header#my-drawer",
@@ -128,8 +195,8 @@
   "image#icoDrawer": {
     "props": {
       "src": "https://ceramicaitalia.vteximg.com.br/arquivos/LogoCeramicaItalia.png",
-      "alt": "alt",
-      "height": "35px",
+      "alt": "CISA",
+      //"height": "44px",
       "blockClass": "icoDrawer"
     }
   },
@@ -156,9 +223,7 @@
       "blockClass": "logoMobileContainer",
       "title": "Logo",
       "href": "/",
-      "url": "https://ceramicaitalia.vteximg.com.br/arquivos/ceramicaItaliaIcon.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "https://ceramicaitalia.vteximg.com.br/arquivos/ceramicaItaliaIcon.png"
     }
   },
   "search-bar": {
