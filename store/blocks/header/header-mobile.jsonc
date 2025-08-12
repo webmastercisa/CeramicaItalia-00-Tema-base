@@ -123,7 +123,7 @@
       // "flex-layout.row#container-nuestras-tiendas",
       // "login",
       "flex-layout.row#cabecera-mnu-hide-mobile",
-      "flex-layout.row#category-menu-header-mobile",
+      //"flex-layout.row#category-menu-header-mobile",
       // "flex-layout.col#category-menu-header-mobile",
       "menu#drawer-mobile"
     ]
@@ -186,7 +186,7 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true,
-      "horizontalAlign": "center",
+      "horizontalAlign": "left",
       "verticalAlign": "bottom",
       "paddingTop": 0,
       "paddingBottom": 0
@@ -194,9 +194,9 @@
   },
   "image#icoDrawer": {
     "props": {
-      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/LogoCeramicaItalia.png",
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/ceramicaItaliaIcon.png",
       "alt": "CISA",
-      //"height": "44px",
+      "height": "60px",
       "blockClass": "icoDrawer"
     }
   },
