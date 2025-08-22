@@ -19,6 +19,7 @@ const createCheckbox = () => {
 const insertCheckbox = () => {
   const checkoutContainer = document.querySelector('p.newsletter');
   const checkbox = createCheckbox();
+  checkbox.setAttribute('data-gtm-form-interact-field-id', '1');
   checkoutContainer.appendChild(checkbox);
 
   const continueButton = document.querySelector('button#go-to-shipping');
@@ -29,11 +30,12 @@ const insertCheckbox = () => {
   errorContainer.style.color = 'red';
 
   continueButton.addEventListener('click', function (event) {
+    /*
     const hasAttribute = checkbox.hasAttribute('data-gtm-form-interact-field-id')
     if (!hasAttribute) {
       // Muestra el mensaje de error
       errorContainer.textContent = 'Debes seleccionar el checkbox para continuar con los datos de envío.';
-      
+
       // Inserta el mensaje de error en el DOM
       checkoutContainer.appendChild(errorContainer);
 
@@ -46,13 +48,16 @@ const insertCheckbox = () => {
       // Lógica para continuar con el pago
       console.log('Continuar con el pago...');
     }
+    */
+    errorContainer.textContent = '';
+    console.log('==================  Continuar con el pago... ==================');
   });
 
 
 checkbox.addEventListener('click', function() {
     // Agrega el atributo cuando el checkbox es clicado
     checkbox.setAttribute('data-gtm-form-interact-field-id', '1');
-    console.log('Estado actual del checkbox:', checkbox);
+    console.log('---->>>>  Estado actual del checkbox:', checkbox);
   });
 };
 
