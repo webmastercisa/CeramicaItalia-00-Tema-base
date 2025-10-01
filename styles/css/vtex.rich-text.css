@@ -2593,6 +2593,7 @@ margin: 0px 0px 10px 0px;
   }
 
 }
+
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pupitre ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 .container--h10px   { background-color: rgb(60, 0, 0);  height: 10px; }
 .container--h30px   { background-color: rgb(120, 0, 0);  height: 30px; }
@@ -2759,6 +2760,25 @@ margin: 0px 0px 10px 0px;
   font-weight: 900;
 }
 /* _____________________  Tallas  _________________________*/
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Tallas ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+.wrapper--talla_txt_titulo_ppal_l, .paragraph--talla_txt_titulo_ppal_l
+{
+  color: #707070;
+  /* font-family: 'NeutraText'; */
+  font-family: 'NeutraTextBook';
+  font-size: 80px;
+  font-weight: 700;
+}
+.wrapper--talla_txt_titulo_ppal_b, .paragraph--talla_txt_titulo_ppal_b
+{
+  color: #707070;
+  /* font-family: 'NeutraText'; */
+  font-family: 'NeutraTextAltBold';
+  font-size: 80px;
+  font-weight: 700;
+}
+
+
 .container--texto-contenedor-tallas
 {
   text-align: center;

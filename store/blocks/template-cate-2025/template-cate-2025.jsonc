@@ -1,0 +1,464 @@
+{
+  "store.custom#template-cate-2025": {
+    "blocks": [
+      "flex-layout.row#miga-pan-trabaja-con-nosotros",
+      "flex-layout.row#min-titulo-categoria",
+      "flex-layout.row#min-banner-categoria",
+
+      "responsive-layout.desktop#texto-desktop-template-categoria",
+      "search-result-layout.customQuery#min-template-categoria",
+      "responsive-layout.mobile#texto-mobile-template-categoria",
+
+
+      "flex-layout.row#min-seo-footer"
+    ]
+  },
+
+  // ========================================
+  // 2. TÍTULO DE LA CATEGORÍA
+  // ========================================
+  "flex-layout.row#min-titulo-categoria": {
+    "children": ["rich-text#min-titulo"],
+    "props": {
+      "blockClass": "container-title"
+    }
+  },
+  "rich-text#min-titulo": {
+    "props": {
+      "text": "Título de Categoría",
+      "blockClass": "template-title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // ========================================
+  // 3. BANNER (Desktop + Mobile)
+  // ========================================
+  "flex-layout.row#min-banner-categoria": {
+    "children": ["list-context.image-list#min-banner"],
+    "props": {
+      "blockClass": "container-banner-temmplate"
+    }
+  },
+
+  "list-context.image-list#min-banner": {
+    "children": ["slider-layout#min-banner"],
+    "props": {
+      "blockClass": "banners-search",
+      "images": [
+        {
+          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerSearch.png",
+          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner-search-mobile.png",
+          "description": "Banner categoría"
+        }
+      ],
+      "preload": false
+    }
+  },
+  "slider-layout#min-banner": {
+    "props": {
+      "itemsPerPage": { "desktop": 1, "tablet": 1, "phone": 1 },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "banners-search"
+    }
+  },
+
+  // ========================================
+  // 4. SEARCH RESULT LAYOUT (Query 181)
+  // ========================================
+  "search-result-layout.customQuery#min-template-categoria": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 8,
+        "queryField": "191",
+        "mapField": "productClusterIds",
+        "facetsBehavior": "Static"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#min-desktop",
+      "search-result-layout.mobile#min-mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  // ========================================
+  // DESKTOP LAYOUT
+  // ========================================
+  "search-result-layout.desktop#min-desktop": {
+    "children": [
+      "flex-layout.row#min-search-info-desktop",
+      "flex-layout.row#min-result-desktop"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "defaultGalleryLayout": "grid",
+      "preventRouteChange": true,
+      "scrollToTop": "button",
+      "showProductsCount": true,
+      "blockClass": "min-desktop-layout"
+    }
+  },
+
+  "flex-layout.row#min-search-info-desktop": {
+    "children": [
+      "flex-layout.col#min-product-count",
+      "flex-layout.col#min-order-by"
+    ],
+    "props": {
+      "blockClass": "content-search-template"
+    }
+  },
+
+  "flex-layout.col#min-product-count": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "min-product-count"
+    }
+  },
+
+  "flex-layout.col#min-order-by": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "min-order-by",
+      "horizontalAlign": "right"
+    }
+  },
+
+  "flex-layout.row#min-result-desktop": {
+    "children": ["flex-layout.col#min-content-desktop"],
+    "props": {
+      "blockClass": "min-result-desktop",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#min-content-desktop": {
+    "children": [
+      "flex-layout.row#min-filters-desktop",
+      "flex-layout.col#min-products-desktop"
+    ],
+    "props": {
+      "blockClass": "min-content-desktop",
+      "fullWidth": true
+    }
+  },
+
+  // ========================================
+  // 5. FILTROS DESKTOP (con drawer)
+  // ========================================
+  "flex-layout.row#min-filters-desktop": {
+    "children": [
+      "flex-layout.col#min-filter-nav",
+      "drawer#min-filter-drawer"
+    ],
+    "props": {
+      "blockClass": "section-filters",
+      "preventHorizontalStretch": false
+    }
+  },
+
+  "flex-layout.col#min-filter-nav": {
+    "children": ["filter-navigator.v3#min-desktop"],
+    "props": {
+      "blockClass": "filterCol",
+      "width": "70%"
+    }
+  },
+
+  "filter-navigator.v3#min-desktop": {
+    "props": {
+      "maxItemsDepartment": 10,
+      "maxItemsCategory": 10,
+      "showTitle": true,
+      "preventRouteChange": true,
+      "initiallyCollapsed": false,
+      "closeOnOutsideClick": true,
+      "blockClass": "filter-navigator",
+      "priceRangeLayout": "inputAndSlider",
+      "openFiltersMode": "one",
+      "updateOnFilterSelectionOnMobile": false
+    }
+  },
+
+  "drawer#min-filter-drawer": {
+    "children": ["filter-navigator.v3#min-drawer"],
+    "blocks": [
+      "drawer-header#min-filter-header",
+      "drawer-trigger#min-filter-trigger"
+    ],
+    "props": {
+      "blockClass": "drawer-filter-navigator-v2",
+      "width": "10%",
+      "slideDirection": "rightToLeft"
+    }
+  },
+
+  "drawer-header#min-filter-header": {
+    "children": [
+      "rich-text#min-titulo-drawer-filter-navigator-v2",
+      "drawer-close-button"
+    ]
+  },
+
+  "rich-text#min-titulo-drawer-filter-navigator-v2": {
+    "props": {
+      "blockClass":"titulo-drawer-filter-navigator-v2",
+      "text": "Todos los filtros"
+    }
+  },
+
+
+  "drawer-trigger#min-filter-trigger": {
+    "children": ["flex-layout.row#min-trigger-todos-los-filtros"],
+    "props": {
+      "blockClass": "trigger-todos-los-filtros"
+    }
+  },
+
+  "flex-layout.row#min-trigger-todos-los-filtros": {
+    "children": [
+      "rich-text#min-texto-trigger-todos-los-filtros",
+      "image#min-img-trigger-todos-los-filtros"
+    ],
+    "props": {
+      "blockClass": [
+        "trigger-todos-los-filtros"
+      ]
+    }
+  },
+
+  "image#min-img-trigger-todos-los-filtros": {
+    "props": {
+      "blockClass": [
+        "img-trigger-todos-los-filtros"
+      ],
+      "src": "assets/ico/icon-filter.svg"
+    }
+  },
+
+  "rich-text#min-texto-trigger-todos-los-filtros": {
+    "props": {
+      "blockClass":"texto-trigger-todos-los-filtros",
+      "text": "Todos los filtros"
+    }
+  },
+
+  "filter-navigator.v3#min-drawer": {
+    "props": {
+      "maxItemsDepartment": 10,
+      "maxItemsCategory": 10,
+      "layout": "responsive",
+      "initiallyCollapsed": true,
+      "blockClass": "filter-navigator-v2",
+      "priceRangeLayout": "inputAndSlider",
+      "openFiltersMode": "one"
+    }
+  },
+
+  // ========================================
+  // PRODUCTOS DESKTOP
+  // ========================================
+  "flex-layout.col#min-products-desktop": {
+    "children": [
+      "flex-layout.row#min-gallery-desktop",
+      "flex-layout.row#min-fetchmore"
+    ],
+    "props": {
+      "blockClass": "products-desktop",
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.row#min-gallery-desktop": {
+    "children": ["search-content#min-desktop"],
+    "props": {
+      "blockClass": "min-gallery-desktop"
+    }
+  },
+
+  "search-content#min-desktop": {
+    "blocks": ["gallery#min-desktop", "not-found"],
+    "props": {
+      "blockClass": "min-search-content-desktop"
+    }
+  },
+
+  "gallery#min-desktop": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#min-desktop",
+      "blockClass": "min-gallery-desktop"
+    }
+  },
+
+  "product-summary.shelf#min-desktop": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+
+  "flex-layout.row#min-fetchmore": {
+    "children": ["search-fetch-more"],
+    "props": {
+      "blockClass": "min-fetchmore",
+      "marginTop": 3
+    }
+  },
+
+  // ========================================
+  // MOBILE LAYOUT (Mobile-first)
+  // ========================================
+  "search-result-layout.mobile#min-mobile": {
+    "children": [
+      "flex-layout.row#min-search-info-mobile",
+      "flex-layout.row#min-products-mobile",
+      "flex-layout.row#min-fetchmore-mobile"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "defaultGalleryLayout": "grid",
+      "blockClass": "min-mobile-layout",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+
+  "flex-layout.row#min-search-info-mobile": {
+    "children": [
+      "flex-layout.col#min-filter-mobile",
+      "flex-layout.col#min-product-count-mobile",
+      "flex-layout.col#min-order-by-mobile"
+    ],
+    "props": {
+      "blockClass": "min-search-info-mobile",
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "around"
+    }
+  },
+
+  "flex-layout.col#min-filter-mobile": {
+    "children": ["filter-navigator.v3#min-mobile"],
+    "props": {
+      "blockClass": "min-filter-mobile"
+    }
+  },
+
+  "filter-navigator.v3#min-mobile": {
+    "props": {
+      "maxItemsDepartment": 10,
+      "maxItemsCategory": 10,
+      "layout": "responsive",
+      "initiallyCollapsed": true,
+      "blockClass": "min-filter-navigator-mobile",
+      "priceRangeLayout": "inputAndSlider",
+      "openFiltersMode": "one",
+      "updateOnFilterSelectionOnMobile": true
+    }
+  },
+
+  "flex-layout.col#min-product-count-mobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "min-product-count-mobile"
+    }
+  },
+
+  "flex-layout.col#min-order-by-mobile": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "min-order-by-mobile"
+    }
+  },
+
+  "flex-layout.row#min-products-mobile": {
+    "children": ["search-content#min-mobile"],
+    "props": {
+      "blockClass": "min-products-mobile",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "search-content#min-mobile": {
+    "blocks": ["gallery#min-mobile", "not-found"],
+    "props": {
+      "blockClass": "min-search-content-mobile"
+    }
+  },
+
+  "gallery#min-mobile": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "phone": 2
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#min-mobile",
+      "blockClass": "min-gallery-mobile"
+    }
+  },
+
+  "product-summary.shelf#min-mobile": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+
+  "flex-layout.row#min-fetchmore-mobile": {
+    "children": ["search-fetch-more"],
+    "props": {
+      "blockClass": "min-fetchmore-mobile",
+      "marginTop": 3
+    }
+  },
+
+  // ========================================
+  // 6. SEO FOOTER (Texto final)
+  // ========================================
+  "flex-layout.row#min-seo-footer": {
+    "children": ["rich-text#min-seo-text"],
+    "props": {
+      "blockClass": "min-seo-footer",
+      "marginTop": 5,
+      "fullWidth": true
+    }
+  },
+  "rich-text#min-seo-text": {
+    "props": {
+      "text": "**Cerámica Italia** Espacios que abrazan, pisos que protegen.",
+      "blockClass": "min-seo-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}
