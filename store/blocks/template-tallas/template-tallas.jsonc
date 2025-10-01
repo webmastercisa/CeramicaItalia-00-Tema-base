@@ -3,7 +3,8 @@
       "blocks": [
           "flex-layout.row#miga-pan-talla",
           "flex-layout.row#container-banner-talla",
-          "rich-text#texts-talla",
+          "rich-text#texts-talla_l1",
+          "rich-text#texts-talla_l2",
 
           //"flex-layout.row#container-banner2-talla",
 
@@ -119,7 +120,8 @@
   },
 
   /* ===============================================  FILA  =============================================================== */
-  "rich-text#texts-talla": { "props": { "text": ".:: Mira el que más te convenga ::.", "blockClass": "texts-sostenibilidad", "textAlignment": "CENTER", "textPosition": "CENTER" } },
+  "rich-text#texts-talla_l1": { "props": { "text": "Tu nuevo baño", "blockClass": "talla_txt_titulo_ppal_l", "textAlignment": "CENTER", "textPosition": "CENTER" } },
+  "rich-text#texts-talla_l2": { "props": { "text": "en tres pasos", "blockClass": "talla_txt_titulo_ppal_b", "textAlignment": "CENTER", "textPosition": "CENTER" } },
 
   /* ===============================================  FILA  =============================================================== */
   // slider 2

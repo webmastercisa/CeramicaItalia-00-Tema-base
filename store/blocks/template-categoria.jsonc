@@ -4,7 +4,10 @@
             "flex-layout.row#miga-pan-trabaja-con-nosotros",
             "flex-layout.row#container-title-template",
             "flex-layout.row#container-banner-temmplate",
-            // "flex-layout.row#titulo-texto-search",
+
+
+            // "flex-layout.row#titulo-texto-searc h",  Este ya esta comentado
+
             "responsive-layout.desktop#texto-desktop-template-categoria",
             "search-result-layout.customQuery#template-categoria",
             "responsive-layout.mobile#texto-mobile-template-categoria"
@@ -53,15 +56,15 @@
                 // "orderByField": "OrderByReleaseDateDESC",
                 "orderByField": "OrderByTopSaleDESC",
                 "hideUnavailableItems": false,
-                "maxItemsPerPage": 20,
-                "queryField": "166", //Valores de los campos a buscar (separados por //)
+                "maxItemsPerPage": 8,
+                "queryField": "181", //Valores de los campos a buscar (separados por //)
                 "mapField": "productClusterIds", //Campos a buscar (separados por comas, tambien se puede buscar por coleccion productClusterIds)
-                "facetsBehavior": "dynamic"
+                "facetsBehavior": "static"
             }
         },
         "blocks": [
             "search-result-layout.desktop#template-categoria",
-            // "search-result-layout.mobile",
+            // "search-result-layout.mobile",  --- Ya esta comentada
             "search-result-layout.mobile#template-categoria-mobile",
             "search-not-found-layout"
         ]
@@ -87,20 +90,28 @@
 
     "search-result-layout.desktop#template-categoria": {
         "children": [
-            // "flex-layout.row#searchbread",
-            "flex-layout.row#search-template",
-            "flex-layout.row#result-custom-search-2"
+            // "flex-layout.row#searchbread", Ya comentada
+            "flex-layout.row#search-template"
+            ,"flex-layout.row#result-custom-search-2"
         ],
         "props": {
             "pagination": "show-more",
-            "preventRouteChange": false,
-            "defaultGalleryLayout": "grid"
+            //"preventRouteChange": false, // se cambia po la de mas abajo
+            "defaultGalleryLayout": "grid",
+            //----------  Nuevas ----------
+            "maxItemsPerPage": 12,  // ← AÑADE ESTA LÍNEA
+            "preventRouteChange": true,
+            "scrollToTop": "button",
+            "showProductsCount": true
         }
     },
 
     "flex-layout.row#search-template":
     {
-      "children": [ "flex-layout.col#productCount-template", "flex-layout.row#orderByAndSwitcher" ],
+      "children": [
+        "flex-layout.col#productCount-template",
+        "flex-layout.row#orderByAndSwitcher"
+      ],
       "props": { "blockClass": "content-search-template"}
     },
     "flex-layout.col#productCount-template":

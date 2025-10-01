@@ -127,6 +127,11 @@
     "path": "/template-tallas-pdp",
     "title": "Tallas PDP",
     "blockId": "store.custom#template-tallas-pdp"
+  },
+
+  "store.custom#template-cate-2025": {
+    "path": "/template-cate-2025",
+    "blockId": "store.custom#template-cate-2025"
   }
 
 

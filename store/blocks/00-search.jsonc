@@ -745,7 +745,7 @@
       "blockClass": [
         "texto1-search-categoria"
       ],
-      "text": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit serisus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac "
+      "text": "**Cerámica Italia** Donde cada espacio refleja tu esencia."
     }
   },
   "flex-layout.row#title-search-linea": {
@@ -826,7 +826,7 @@
   "rich-text#texto-search-categoria": {
     "props": {
       "blockClass":["texto-search-categoria"],
-      "text": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem ec fringiazdv"
+      "text": "**Cerámica Italia** Belleza que perdura, valores que trascienden."
     }
   },
   "image#liena-search-categoria": {
@@ -1070,25 +1070,19 @@
   },
   "rich-text#titulo-search-categoria-mobile": {
     "props": {
-      "blockClass": [
-        "titulo-search-categoria-mobile"
-      ],
+      "blockClass":"titulo-search-categoria-mobile",
       "text": "Productos recomendados"
     }
   },
   "rich-text#texto-seo-search-categoria-mobile": {
     "props": {
-      "blockClass": [
-        "texto-seo-search-categoria-mobile"
-      ],
-      "text": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit serisus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac "
+      "blockClass":"texto-seo-search-categoria-mobile",
+      "text": "**Cerámica Italia** Espacios que abrazan, pisos que protegen."
     }
   },
   "rich-text#titulo-seo-search-categoria-mobile": {
     "props": {
-      "blockClass": [
-        "titulo-seo-search-categoria-mobile"
-      ],
+      "blockClass":"titulo-seo-search-categoria-mobile",
       "text": "BAÑOS"
     }
   },
