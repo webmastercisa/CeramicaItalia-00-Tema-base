@@ -66,6 +66,8 @@
     }
   },
 
+
+
   // ========================================
   // 4. SEARCH RESULT LAYOUT (Query 181)
   // ========================================
@@ -124,7 +126,7 @@
   "flex-layout.col#min-order-by": {
     "children": ["order-by.v2"],
     "props": {
-      "blockClass": "min-order-by",
+      "blockClass": "min-order-by-xxxxxxxxx",
       "horizontalAlign": "right"
     }
   },
