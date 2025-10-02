@@ -5,20 +5,21 @@
       "flex-layout.row#tpl-container-title-template",
       "flex-layout.row#tpl-container-banner-temmplate",
       "responsive-layout.desktop#tpl-txt-desktop-template-categoria",
-      "search-result-layout.customQuery#tpl-template-categoria",
-      "responsive-layout.mobile#tpl-txt-mobile-template-categoria"
+      /*"search-result-layout.customQuery#tpl-template-categoria",*/
+      "search-result-layout.customQuery#ResultadoBusqueda-2",  // externo ResultradoBusquedaBloqueSEO
+      "responsive-layout.mobile#tpl-txt-mobile-template-categoria",
+      "store.custom#tpl-categoria-seo"
     ]
   },
 
+  /* ---------------- BREADCRUMB / MIGA ---------------- */
   "flex-layout.row#tpl-miga-pan-tpl": {
-    "children": [
-      "image#tpl-icono-miga-pan",
-      "rich-text#tpl-txt-1-miga-pan",
-      "rich-text#tpl-txt-2-miga-pan"
-    ],
-    "props": {
-      "blockClass": ["miga-pan-terminos-legales"]
-    }
+    "children": ["breadcrumb.search#tpl", "image#tpl-icono-miga-pan"],
+    "props": { "blockClass": ["miga-pan-terminos-legales"] }
+  },
+
+  "breadcrumb.search#tpl": {
+    "props": { "showOnMobile": true }
   },
 
   "image#tpl-icono-miga-pan": {
@@ -29,183 +30,32 @@
     }
   },
 
-  "rich-text#tpl-txt-1-miga-pan": {
-    "props": {
-      "blockClass": "texto-1-miga-pan",
-      "text": "[Inicio](/)",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-
-  "rich-text#tpl-txt-2-miga-pan": {
-    "props": {
-      "blockClass": "texto-2-miga-pan",
-      "text": "[Trabaja con nosotros](/trabaja-con-nosotros)",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-
   "flex-layout.row#tpl-container-title-template": {
-    "children": ["rich-text#tpl-template-title"],
-    "props": {
-      "blockClass": ["container-title"]
-    }
+    "children": ["store.custom#tpl-categoria-title"],
+    "props": { "blockClass": ["container-title"] }
   },
 
-  "rich-text#tpl-template-title": {
-    "props": {
-      "text": "Titulo Template",
-      "blockClass": "template-title",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-
+  /* ---------------- BANNER SLOT ---------------- */
   "flex-layout.row#tpl-container-banner-temmplate": {
-    "children": ["list-context.image-list#tpl-banners-search"],
-    "props": {
-      "blockClass": ["container-banner-temmplate"]
-    }
+    "children": ["store.custom#tpl-banner-categoria"],
+    "props": { "blockClass": ["container-banner-temmplate"] }
   },
 
-  "list-context.image-list#tpl-banners-search": {
-    "children": ["slider-layout#tpl-banners-search"],
-    "props": {
-      "width": "100%",
-      "preload": true,
-      "blockClass": "banners-search",
-      "images": [
-        {
-          "image": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerSearch.png",
-          "mobileImage": "https://ceramicaitalia.vteximg.com.br/arquivos/banner-search-mobile.png"
-        }
-      ]
-    }
+  /* ---------------- TITULO SLOT ---------------- */
+  "store.custom#tpl-categoria-title": {
+    "blocks": ["rich-text#tpl-template-title"]
   },
+  "rich-text#tpl-template-title": {},
 
-  "slider-layout#tpl-banners-search": {
-    "props": {
-      "itemsPerPage": { "desktop": 1, "tablet": 1, "phone": 1 },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "showPaginationDots": "always",
-      "blockClass": "banners-search"
-    }
+  /* ---------------- BANNER SLOT ---------------- */
+  "store.custom#tpl-banner-categoria": {
+    "blocks": ["list-context.image-list#tpl-banners-search"]
   },
+  "list-context.image-list#tpl-banners-search": {},
 
+  /* ---------------- DESKTOP HEADER ---------------- */
   "responsive-layout.desktop#tpl-txt-desktop-template-categoria": {
     "children": ["flex-layout.row#tpl-titulo-txt-search"]
-  },
-
-  "responsive-layout.mobile#tpl-txt-mobile-template-categoria": {
-    "children": ["rich-text#tpl-txt-seo-search-categoria-mobile"]
-  },
-
-  "search-result-layout.customQuery#tpl-template-categoria": {
-    "props": {
-      "querySchema": {
-        "orderByField": "OrderByTopSaleDESC",
-        "hideUnavailableItems": false,
-        "maxItemsPerPage": 8,
-        "queryField": "181",
-        "mapField": "productClusterIds",
-        "facetsBehavior": "static"
-      }
-    },
-    "blocks": [
-      "search-result-layout.desktop#tpl-template-categoria",
-      "search-result-layout.mobile#tpl-template-categoria-mobile",
-      "search-not-found-layout#tpl"
-    ]
-  },
-
-  "search-not-found-layout#tpl": {
-    "children": [
-      "flex-layout.row#tpl-searchbread",
-      "flex-layout.row#tpl-notfound"
-    ]
-  },
-
-  "flex-layout.row#tpl-searchbread": {
-    "children": ["breadcrumb.search#tpl"],
-    "props": { "preserveLayoutOnMobile": true, "fullWidth": true }
-  },
-
-  "breadcrumb.search#tpl": {
-    "props": { "showOnMobile": true }
-  },
-
-  "flex-layout.row#tpl-notfound": {
-    "children": ["flex-layout.col#tpl-contentido-notFound"],
-    "props": { "fullWidth": true }
-  },
-
-  "flex-layout.col#tpl-contentido-notFound": {
-    "children": [
-      "rich-text#tpl-txt-2-contenido-notFound",
-      "flex-layout.row#tpl-fila-recomendamos-contenido-notFound",
-      "flex-layout.row#tpl-shelf-general-shelf",
-      "list-context.image-list#tpl-slider-imgs-notFound"
-    ],
-    "props": { "blockClass": ["col-contenido-notFound"] }
-  },
-
-  "rich-text#tpl-txt-2-contenido-notFound": {
-    "props": {
-      "blockClass": "texto-2-contenido-notFound",
-      "text": "Lo sentimos, no encontramos resultados para tu búsqueda",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-
-  "flex-layout.row#tpl-fila-recomendamos-contenido-notFound": {
-    "children": [
-      "rich-text#tpl-txt-recomendamos",
-      "image#tpl-img-recomendamos"
-    ],
-    "props": { "blockClass": ["fila-recomendamos-contenido-notFound"] }
-  },
-
-  "rich-text#tpl-txt-recomendamos": {
-    "props": { "blockClass": "texto-recomendamos", "text": "Te recomendamos" }
-  },
-
-  "image#tpl-img-recomendamos": {
-    "props": {
-      "blockClass": ["img-recomendamos"],
-      "src": "assets/ico/linea-recomendamos.svg"
-    }
-  },
-
-  "list-context.image-list#tpl-slider-imgs-notFound": {
-    "children": ["slider-layout#tpl-slider-imgs-notFound"],
-    "props": {
-      "width": "100%",
-      "preload": true,
-      "blockClass": "slider-imgs-notFound",
-      "images": [
-        { "image": "/arquivos/img-slider-notFound.png" },
-        { "image": "/arquivos/img-slider-notFound.png" }
-      ]
-    }
-  },
-
-  "slider-layout#tpl-slider-imgs-notFound": {
-    "props": {
-      "itemsPerPage": { "desktop": 1, "tablet": 1, "phone": 1 },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "showPaginationDots": "always",
-      "blockClass": "slider-imgs-notFound"
-    }
-  },
-
-  "flex-layout.row#tpl-shelf-general-shelf": {
-    "children": ["list-context.product-list#shelf-general"],
-    "props": { "blockClass": "shelf-general" }
   },
 
   "flex-layout.row#tpl-titulo-txt-search": {
@@ -214,14 +64,16 @@
 
   "flex-layout.col#tpl-titulo-txt-search": {
     "children": [
-      "rich-text#tpl-titulo-search-categoria",
+      "store.custom#tpl-categoria-richtext",
       "flex-layout.row#tpl-txt-linea-search"
     ]
   },
 
-  "rich-text#tpl-titulo-search-categoria": {
-    "props": { "blockClass": "titulo-search-categoria", "text": "## Titulo" }
+  /* ---------------- RICH TEXT SLOT ---------------- */
+  "store.custom#tpl-categoria-richtext": {
+    "blocks": ["rich-text#tpl-titulo-search-categoria"]
   },
+  "rich-text#tpl-titulo-search-categoria": {},
 
   "flex-layout.row#tpl-txt-linea-search": {
     "children": [
@@ -231,13 +83,7 @@
     "props": { "blockClass": ["texto-linea-search"] }
   },
 
-  "rich-text#tpl-txt-search-categoria": {
-    "props": {
-      "blockClass": "texto-search-categoria",
-      "text": "**Cerámica Italia** Belleza que perdura, valores que trascienden."
-    }
-  },
-
+  "rich-text#tpl-txt-search-categoria": {},
   "image#tpl-liena-search-categoria": {
     "props": {
       "blockClass": ["liena-search-categoria"],
@@ -245,245 +91,14 @@
     }
   },
 
-  "rich-text#tpl-txt-seo-search-categoria-mobile": {
-    "props": {
-      "blockClass": "texto-seo-search-categoria-mobile",
-      "text": "**Cerámica Italia** Espacios que abrazan, pisos que protegen."
-    }
+  /* ---------------- MOBILE HEADER ---------------- */
+  "responsive-layout.mobile#tpl-txt-mobile-template-categoria": {
+    "children": ["store.custom#tpl-categoria-seo"]
   },
 
-  "product-summary.shelf#tpl-grid": {
-    "children": [
-      "stack-layout#tpl-prodsum",
-      "product-summary-name#tpl",
-      "flex-layout.row#tpl-selling-price-savings",
-      "condition-layout.product#tpl-text-hoy-promotion",
-      "condition-layout.product#cond-shelf-quantity",
-      "condition-layout.product#cond-shelf"
-    ]
+  /* ---------------- SEO SLOT ---------------- */
+  "store.custom#tpl-categoria-seo": {
+    "blocks": ["rich-text#tpl-txt-seo-search-categoria-mobile"]
   },
-
-  "stack-layout#tpl-prodsum": {
-    "children": [
-      "product-summary-image#tpl-shelf",
-      "vtex.product-highlights@2.x:product-highlights#tpl-collection",
-      "modal-trigger#quickview"
-    ]
-  },
-
-  "product-summary-image#tpl-shelf": {
-    "props": {
-      "showBadge": true,
-      "aspectRatio": "1:1",
-      "maxHeight": 300,
-      "mainImageLabel": { "label": "Vitrina", "labelMatchCriteria": "exact" },
-      "hoverImage": { "criteria": "index", "index": 1 },
-      "blockClass": "section-price-shelf"
-    }
-  },
-
-  "vtex.product-highlights@2.x:product-highlights#tpl-collection": {
-    "props": { "type": "collection" },
-    "children": ["product-highlight-wrapper#tpl"]
-  },
-
-  "product-highlight-wrapper#tpl": {
-    "props": { "blockClass": "collection" },
-    "children": ["product-highlight-text#tpl"]
-  },
-
-  "product-highlight-text#tpl": {
-    "props": { "message": "{highlightName}" }
-  },
-
-  "product-summary-name#tpl": {
-    "props": { "showFieldsProps": { "showSku": true } }
-  },
-
-  "flex-layout.row#tpl-selling-price-savings": {
-    "props": {
-      "blockClass": "selling-price-shelf",
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
-    },
-    "children": ["ListPriceWithTax", "SellingPriceWithTax"]
-  },
-
-  "condition-layout.product#tpl-text-hoy-promotion": {
-    "props": {
-      "conditions": [
-        { "subject": "hasBestPrice", "arguments": { "value": true } }
-      ],
-      "Then": "rich-text#tpl-text-toDay",
-      "Else": "rich-text#tpl-text-cantidad"
-    }
-  },
-
-  "rich-text#tpl-text-toDay": {
-    "props": { "text": "Hoy", "blockClass": "text-toDay" }
-  },
-
-  "rich-text#tpl-text-cantidad": {
-    "props": { "text": "", "blockClass": "text-toPromo" }
-  },
-
-  "product-quantity#tpl-quantity": {
-    "props": { "blockClass": "cantidad" }
-  },
-
-  "flex-layout.col#tpl-productRating": {
-    "props": { "blockClass": "productRating" },
-    "children": ["product-rating-inline"]
-  },
-
-  "product-summary.shelf#tpl-listLayout": {
-    "props": { "blockClass": "listLayout" },
-    "children": [
-      "responsive-layout.desktop#tpl-productSummaryList",
-      "responsive-layout.mobile#tpl-productSummaryList"
-    ]
-  },
-
-  "responsive-layout.desktop#tpl-productSummaryList": {
-    "children": ["flex-layout.row#tpl-summaryListDesktop"]
-  },
-
-  "responsive-layout.mobile#tpl-productSummaryList": {
-    "children": ["flex-layout.row#tpl-summaryListMobile"]
-  },
-
-  "product-summary.shelf#tpl-general": {
-    "children": [
-      "stack-layout#tpl-general",
-      "product-summary-name#tpl-general",
-      "flex-layout.row#tpl-selling-price-savings-general",
-      "condition-layout.product#cond-shelf-quantity",
-      "condition-layout.product#cond-shelf"
-    ]
-  },
-
-  "stack-layout#tpl-general": {
-    "children": [
-      "product-summary-image#tpl-shelf-general",
-      "vtex.product-highlights@2.x:product-highlights#tpl-collection",
-      "modal-trigger#quickview"
-    ]
-  },
-
-  "product-summary-image#tpl-shelf-general": {
-    "props": {
-      "showBadge": true,
-      "aspectRatio": "1:1",
-      "maxHeight": 300,
-      "mainImageLabel": { "label": "Vitrina", "labelMatchCriteria": "exact" },
-      "hoverImage": { "criteria": "index", "index": 1 },
-      "blockClass": "section-img-general"
-    }
-  },
-
-  "product-summary-name#tpl-general": {
-    "props": {
-      "blockClass": "section-name-general",
-      "showFieldsProps": { "showSku": true }
-    }
-  },
-
-  "flex-layout.row#tpl-selling-price-savings-general": {
-    "props": {
-      "blockClass": "selling-price-shelf-general",
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
-    },
-    "children": ["ListPriceWithTax", "SellingPriceWithTax"]
-  },
-
-  "slider-layout#tpl-shelf-general": {
-    "title": "slider-vitrina-general",
-    "props": {
-      "itemsPerPage": { "desktop": 4, "tablet": 3, "phone": 2 },
-      "infinite": true,
-      "fullWidth": false,
-      "showPaginationDots": "always",
-      "showNavigationArrows": "never",
-      "blockClass": "shelf-general"
-    }
-  },
-
-  "product-quantity#tpl-quantity-general": {
-    "props": { "blockClass": "cantidad-general" }
-  },
-
-  "flex-layout.col#tpl-name-sku": {
-    "children": [
-      "product-summary-name#tpl-general",
-      "flex-layout.row#tpl-sku-selector"
-    ],
-    "props": { "blockClass": ["name-sku"], "preventVerticalStretch": true }
-  },
-
-  "flex-layout.row#tpl-sku-selector": {
-    "children": ["product-summary-sku-selector#tpl"],
-    "props": { "blockClass": "sku-selector-shelf" }
-  },
-
-  "product-summary-sku-selector#tpl": {
-    "props": {
-      "blockClass": ["sku", "bloqueSKUSelector"],
-      "variationsSpacing": 0,
-      "showValueForVariation": "all",
-      "showValueNameForImageVariation": true,
-      "hideImpossibleCombinations": false,
-      "disableUnavailableSelectOptions": false,
-      "initialSelection": "empty",
-      "sortVariarionsByLabel": true,
-      "sliderDisplayThreshold": 2,
-      "sliderArrowSize": 12,
-      "thumbnailImage": "Color",
-      "maxItems": 14
-    }
-  },
-
-  "gallery-layout-option#tpl-grid": {
-    "props": { "name": "grid" },
-    "children": [
-      "icon-grid",
-      "responsive-layout.desktop#tpl-textOptionGrid"
-    ]
-  },
-
-  "gallery-layout-option#tpl-list": {
-    "props": { "name": "list" },
-    "children": [
-      "icon-inline-grid",
-      "responsive-layout.desktop#tpl-textOptionList"
-    ]
-  },
-
-  "responsive-layout.desktop#tpl-textOptionGrid": {
-    "children": ["rich-text#tpl-option-grid"]
-  },
-
-  "responsive-layout.desktop#tpl-textOptionList": {
-    "children": ["rich-text#tpl-option-list"]
-  },
-
-  "rich-text#tpl-option-grid": {
-    "props": {
-      "text": "Grid",
-      "textColor": "c-auto",
-      "blockClass": "layout-option"
-    }
-  },
-
-  "rich-text#tpl-option-list": {
-    "props": {
-      "text": "List",
-      "textColor": "c-auto",
-      "blockClass": "layout-option"
-    }
-  }
+  "rich-text#tpl-txt-seo-search-categoria-mobile": {}
 }

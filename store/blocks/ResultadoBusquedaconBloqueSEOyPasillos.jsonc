@@ -38,7 +38,7 @@
                 "maxItemsPerPage": 20,
                 "queryField": "166", //Valores de los campos a buscar (separados por //)
                 "mapField": "productClusterIds", //Campos a buscar (separados por comas, tambien se puede buscar por coleccion productClusterIds)
-                "facetsBehavior": "dynamic"
+                "facetsBehavior": "static"
             }
         },
         "blocks": [

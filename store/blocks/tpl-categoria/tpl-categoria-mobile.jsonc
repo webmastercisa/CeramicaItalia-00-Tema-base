@@ -13,6 +13,17 @@
     }
   },
 
+  /* ---------------- HEADER (solo mobile) ---------------- */
+  "responsive-layout.mobile#tpl-txt-mobile-template-categoria": {
+    "children": ["store.custom#tpl-categoria-seo"]
+  },
+
+  "store.custom#tpl-categoria-seo": {
+    "blocks": ["rich-text#tpl-txt-seo-search-categoria-mobile"]
+  },
+  "rich-text#tpl-txt-seo-search-categoria-mobile": {},
+
+  /* ---------------- SEARCH INFO ---------------- */
   "flex-layout.row#tpl-searchinfomobile": {
     "children": [
       "flex-layout.col#tpl-filterMobile",
@@ -28,8 +39,17 @@
   },
 
   "flex-layout.col#tpl-filterMobile": {
-    "children": ["filter-navigator.v3"],
+    "children": ["drawer#tpl-filter-navigator-mobile"],
     "props": { "blockClass": "filterMobileCol" }
+  },
+
+  "drawer#tpl-filter-navigator-mobile": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "drawer-filter-navigator-mobile",
+      "width": "100%",
+      "slideDirection": "bottomUp"
+    }
   },
 
   "flex-layout.col#tpl-productCount": {
@@ -42,106 +62,19 @@
     "props": { "blockClass": "orderByMobileCol" }
   },
 
+  /* ---------------- CONTENT ---------------- */
   "flex-layout.row#tpl-contentmobile": {
     "children": ["search-content"],
     "props": { "preserveLayoutOnMobile": true }
   },
 
-  "flex-layout.row#tpl-summaryListMobile": {
-    "props": {
-      "preserveLayoutOnMobile": true,
-      "colSizing": "auto",
-      "blockClass": "summaryListMobile",
-      "colGap": 5
-    },
-    "children": [
-      "stack-layout#tpl-summaryListMobile",
-      "flex-layout.col#tpl-summaryDetailsListMobile"
-    ]
+  /* ---------------- FETCH MORE ---------------- */
+  "flex-layout.row#tpl-fetchmore": {
+    "props": { "marginTop": 3, "blockClass": "fetchmore" },
+    "children": ["search-fetch-more#tpl"]
   },
 
-  "stack-layout#tpl-summaryListMobile": {
-    "children": [
-      "product-summary-image#tpl-summaryListMobile",
-      "vtex.product-highlights@2.x:product-highlights#tpl-collection",
-      "modal-trigger#quickview"
-    ]
-  },
-
-  "product-summary-image#tpl-summaryListMobile": {
-    "props": {
-      "showBadge": true,
-      "aspectRatio": "1:1",
-      "maxHeight": 220,
-      "mainImageLabel": { "label": "Vitrina", "labelMatchCriteria": "exact" },
-      "hoverImage": { "criteria": "index", "index": 1 },
-      "blockClass": "summaryListMobile",
-      "alt": "Producto Cerámica Italia"
-    }
-  },
-
-  "flex-layout.col#tpl-summaryDetailsListMobile": {
-    "props": {
-      "preventVerticalStretch": true,
-      "width": "grow",
-      "blockClass": "summaryDetailsListMobile"
-    },
-    "children": [
-      "flex-layout.col#tpl-summaryUpDetailsListMobile",
-      "flex-layout.col#tpl-summaryDownDetailsListMobile"
-    ]
-  },
-
-  "flex-layout.col#tpl-summaryUpDetailsListMobile": {
-    "props": {
-      "preventVerticalStretch": true,
-      "blockClass": "summaryUpDetailsListMobile"
-    },
-    "children": [
-      "vtex.store-components:product-brand#tpl-summaryListMobile",
-      "product-summary-name#tpl-summaryListMobile",
-      "product-rating-inline"
-    ]
-  },
-
-  "vtex.store-components:product-brand#tpl-summaryListMobile": {
-    "props": {
-      "displayMode": "text",
-      "blockClass": "summaryListMobile"
-    }
-  },
-
-  "product-summary-name#tpl-summaryListMobile": {
-    "props": {
-      "tag": "div",
-      "blockClass": "summaryListMobile"
-    }
-  },
-
-  "flex-layout.col#tpl-summaryDownDetailsListMobile": {
-    "props": { "preventVerticalStretch": true },
-    "children": [
-      "SellingPriceWithTax",
-      "product-installments#tpl-summary"
-    ]
-  },
-
-  "product-installments#tpl-summary": {
-    "props": { "blockClass": "summary" }
-  },
-
-  "product-list-price#tpl-summary": {
-    "props": {
-      "markers": ["highlight"],
-      "blockClass": "price-summary-shelf",
-      "message": "{listPriceValue}"
-    }
-  },
-
-  "product-selling-price#tpl-summary": {
-    "props": {
-      "blockClass": "selling-summary-shelf",
-      "message": "{sellingPriceValue}"
-    }
+  "search-fetch-more#tpl": {
+    "props": { "htmlElementForButton": "a" }
   }
 }
