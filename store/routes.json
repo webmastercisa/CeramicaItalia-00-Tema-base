@@ -129,10 +129,6 @@
     "blockId": "store.custom#template-tallas-pdp"
   },
 
-  "store.custom#template-cate-2025": {
-    "path": "/template-cate-2025",
-    "blockId": "store.custom#template-cate-2025"
-  }
-
+  "store.custom#tpl-categoria": { "path": "/tpl-categoria" }
 
 }
