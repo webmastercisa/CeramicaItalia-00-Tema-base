@@ -3,10 +3,10 @@
     "blocks": [
       "flex-layout.row#tpl-miga-pan-tpl",
       "flex-layout.row#tpl-container-title-template",
-      "flex-layout.row#tpl-container-banner-temmplate"//,
-      //"responsive-layout.desktop#tpl-txt-desktop-template-categoria",
-      //"search-result-layout.customQuery#tpl-template-categoria",
-      //"responsive-layout.mobile#tpl-txt-mobile-template-categoria"
+      "flex-layout.row#tpl-container-banner-temmplate",
+      "responsive-layout.desktop#tpl-txt-desktop-template-categoria",
+      "search-result-layout.customQuery#tpl-template-categoria",
+      "responsive-layout.mobile#tpl-txt-mobile-template-categoria"
     ]
   },
 
