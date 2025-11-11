@@ -2763,16 +2763,15 @@ margin: 0px 0px 10px 0px;
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Tallas ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 .wrapper--talla_txt_titulo_ppal_l, .paragraph--talla_txt_titulo_ppal_l
 {
-  color: #707070;
-  /* font-family: 'NeutraText'; */
+  color: #707070 !important;
   font-family: 'NeutraTextBook';
   font-size: 80px;
   font-weight: 700;
+  height: 74px;
 }
 .wrapper--talla_txt_titulo_ppal_b, .paragraph--talla_txt_titulo_ppal_b
 {
   color: #707070;
-  /* font-family: 'NeutraText'; */
   font-family: 'NeutraTextAltBold';
   font-size: 80px;
   font-weight: 700;
@@ -2834,4 +2833,61 @@ margin: 0px 0px 10px 0px;
   margin-top: 24px;
   font-weight: 500;
   box-shadow: 0 2px 8px rgba(237, 27, 36, 0.06);
+}
+
+.paragraph--titulo-pasos
+{
+  left: 435px;
+  width: 258px;
+  height: 71px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 32px/30px Neutra Text Alt;
+  letter-spacing: -1.4px;
+  color: #707070;
+  opacity: 1;
+  margin-bottom: 40px;
+}
+.strong--titulo-pasos
+{
+  font-weight: 400 !important;
+}
+
+.wrapper--texto-talla-metraje
+{
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper--texto-seleccion
+{
+  color: #707070;
+  font: normal normal normal 32px/30px Neutra Text Alt;
+  width: 100%;
+  text-align: left;
+  height: 32px;
+}
+
+.paragraph--texto-seleccion-valor
+{
+  color: #363636;
+  font: normal normal bold 35px/30px Neutra Text Alt;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  height: 35px;
+}
+
+.paragraph--texto-seleccion-titulo
+{
+  left: 435px;
+  width: 258px;
+  height: 71px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 32px/30px Neutra Text Alt;
+  letter-spacing: -1.4px;
+  color: #707070;
+  opacity: 1;
+  margin-bottom: 40px;
 }

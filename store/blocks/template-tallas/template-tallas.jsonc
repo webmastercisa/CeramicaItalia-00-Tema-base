@@ -7,6 +7,9 @@
           "rich-text#texts-talla_l2",
 
           //"flex-layout.row#container-banner2-talla",
+          "flex-layout.row#3pasos",
+
+
 
 
           "flex-layout.row#section2-talla", // Tabs con las tallas
@@ -120,7 +123,7 @@
   },
 
   /* ===============================================  FILA  =============================================================== */
-  "rich-text#texts-talla_l1": { "props": { "text": "Tu nuevo baño", "blockClass": "talla_txt_titulo_ppal_l", "textAlignment": "CENTER", "textPosition": "CENTER" } },
+  "rich-text#texts-talla_l1": { "props": { "text": "Tu nuevo baño,", "blockClass": "talla_txt_titulo_ppal_l", "textAlignment": "CENTER", "textPosition": "CENTER" } },
   "rich-text#texts-talla_l2": { "props": { "text": "en tres pasos", "blockClass": "talla_txt_titulo_ppal_b", "textAlignment": "CENTER", "textPosition": "CENTER" } },
 
   /* ===============================================  FILA  =============================================================== */
@@ -200,8 +203,205 @@
             }
       }
   },
+   /* ================================================  FILA Con tres columnas de pasos  ================================================ */
+  "flex-layout.row#3pasos": {
+    "children": ["flex-layout.col#paso1", "flex-layout.col#paso2", "flex-layout.col#paso3"],
+    "props": {
+      "blockClass": ["container-pasos-talla"]
+    }
+  },
 
-  /* ===============================================  FILA  =============================================================== */
+
+  "flex-layout.col#paso1": {
+    "children": [
+      "image#img-paso1",      "rich-text#titulo-tallas1",      "flex-layout.row#botones-tallas",
+      "flex-layout.row#textos-tallas"
+    ],
+    "props": { "blockClass": ["columnas-pasos"] }
+  },
+
+  "flex-layout.col#paso2": {
+    "children": [
+      "image#img-paso2",      "rich-text#titulo-tallas2",      "flex-layout.row#contenedor-2img",
+      "flex-layout.row#textos-disenofav"
+    ],
+    "props": { "blockClass": ["columnas-pasos"] }
+  },
+
+  "flex-layout.col#paso3": {
+    "children": [
+      "image#img-paso3", "rich-text#titulo-tallas3",
+      "flex-layout.col#texto-seleccion"
+    ],
+    "props": { "blockClass": ["columnas-pasos"] }
+  },
+
+  "image#img-paso1": {
+    "props": {
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/ids/164774-292-292/330924_v1.jpg",
+      "alt": "Bano talla S", "blockClass": "img-talla-pasos"
+    }
+  },
+  "image#img-paso2": {
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/arquivos/ids/166312-300-300",
+      "alt": "Bano talla M", "blockClass": "img-talla-pasos"
+    }
+  },
+  "image#img-paso3": {
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/arquivos/ids/161507-300-300",
+      "alt": "Bano talla L", "blockClass": "img-talla-pasos"
+    }
+  },
+
+  "rich-text#titulo-tallas1": {
+    "props": { "text": "**1. Selecciona el tamaño de tu baño**", "blockClass": "titulo-pasos" }
+  },
+
+  "rich-text#titulo-tallas2": {
+    "props": { "text": "**2. Elige tu diseño favorito**", "blockClass": "titulo-pasos" }
+  },
+
+  "rich-text#titulo-tallas3": {
+    "props": { "text": "**3. Revisa el precio de tu baño ¡y compra!**", "blockClass": "titulo-pasos" }
+  },
+
+  "flex-layout.row#botones-tallas": {
+    "children": [
+      "link#talla-s",
+      "link#talla-m",
+      "link#talla-l"
+    ],
+    "props": {
+      "blockClass": ["botones-tallas-sml"]
+    }
+  },
+
+  "flex-layout.row#contenedor-2img": {
+    "children": [
+      "image#img-eterna",
+      "image#img-natural"
+    ],
+    "props": {
+      "blockClass": ["botones-tallas-2img"]
+    }
+  },
+
+  "image#img-eterna": {
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/arquivos/paso2_a.png",
+      "alt": "Bano Etern", "blockClass": "img-talla-paso2"
+    }
+  },
+  "image#img-natural": {
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/arquivos/paso2_b.png",
+      "alt": "Bano Natural", "blockClass": "img-talla-paso2"
+    }
+  },
+
+
+  "link#talla-s": {
+    "props": {
+      "label": "S",
+      "href": "#talla-s",
+      "blockClass": ["boton-talla-txt"]
+    }
+  },
+
+  "link#talla-m": {
+    "props": {
+      "label": "M",
+      "href": "#talla-m",
+      "blockClass": ["boton-talla-m-txt"]
+    }
+  },
+
+  "link#talla-l": {
+    "props": {
+      "label": "L",
+      "href": "#talla-l",
+      "blockClass": ["boton-talla-txt"]
+    }
+  },
+
+  "flex-layout.row#textos-tallas": {
+    "children": [
+      "rich-text#texto-s",
+      "rich-text#texto-m",
+      "rich-text#texto-l"
+    ],
+    "props": {
+      "blockClass": ["textos-metraje"]
+    }
+  },
+
+  "flex-layout.row#textos-disenofav": {
+    "children": [
+      "rich-text#texto-eterna",
+      "rich-text#texto-natural"
+    ],
+    "props": {
+      "blockClass": ["textos-metraje"]
+    }
+  },
+
+  "flex-layout.col#texto-seleccion" : {
+    "children": [ "rich-text#texto-seleccion-titulo" ,"rich-text#texto-seleccion-tallas","rich-text#texto-seleccion-valor" ],
+    "props": {"blockClass": "texto-seleccion" }
+  },
+
+  // ... los otros info-cards similares
+ "rich-text#texto-s": {
+    "props": {
+      "text": "Hasta 2 Mt²",
+      "blockClass": "texto-talla-metraje"
+    }
+  },
+
+  "rich-text#texto-m": {
+    "props": {
+      "text": "Hasta 4 Mt²",
+      "blockClass": "texto-talla-metraje"
+    }
+  },
+
+  "rich-text#texto-l": {
+    "props": {
+      "text": "Hasta 5 Mt²",
+      "blockClass": "texto-talla-metraje"
+    }
+  },
+
+    // ===========  Texto final segunda tarjeta
+   "rich-text#texto-eterna": {
+    "props": {
+      "text": "Baño Eterna",
+      "blockClass": "texto-talla-metraje"
+    }
+  },
+
+  "rich-text#texto-natural": {
+    "props": {
+      "text": "Baño Natural",
+      "blockClass": "texto-talla-metraje"
+    }
+  },
+
+
+  "rich-text#texto-seleccion-titulo": {
+    "props": {  "text": "Baño Eterna",  "blockClass": "texto-seleccion"    }
+  },
+  "rich-text#texto-seleccion-tallas": {
+    "props": {  "text": "Talla M",      "blockClass": "texto-seleccion"    }
+  },
+  "rich-text#texto-seleccion-valor": {
+    "props": {  "text": "$XX'XXX.XXX",  "blockClass": "texto-seleccion-valor"  }
+  },
+
+
+  /* ================================================               FILA                  ================================================ */
   // tabs
   "flex-layout.row#section2-talla": { "children": ["tab-layout#talla" ], "props": { "blockClass": [ "section2-sostenibilidad" ] } },
   "tab-layout#talla":
