@@ -1605,3 +1605,23 @@ width: 100%;
   font-size: 18px;
   font-weight: 550;
 }
+
+
+.imageElement--img-talla-pasos {
+  margin-bottom: 1rem;
+  object-fit: contain;
+  width: 321px  !important;
+  height: 248px  !important;
+  /* UI Properties */
+  background: #C4C4C4 0% 0% no-repeat padding-box;
+  border-radius: 14px;
+  opacity: 1;
+}
+
+.imageElement--img-talla-paso2 {
+  margin-bottom: -1rem;
+  object-fit: contain;
+  width: 125px  !important;
+  height: auto  !important;
+  opacity: 1;
+}
