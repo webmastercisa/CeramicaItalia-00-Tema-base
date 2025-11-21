@@ -129,6 +129,13 @@
     "blockId": "store.custom#template-tallas-pdp"
   },
 
+    "store.custom#tpl-resultado-productos":
+  {
+    "path": "/tpl-resultado-productos",
+    "title": "Plantilla resultado de productos",
+    "blockId": "store.custom#tpl-resultado-productos"
+  },
+
   "store.custom#tpl-categoria": { "path": "/tpl-categoria/:slug" }
 
 }
