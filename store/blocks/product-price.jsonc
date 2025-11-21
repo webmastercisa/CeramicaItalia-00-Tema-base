@@ -8,6 +8,7 @@
     },
     "children": [
       // "product-selling-price"
+      "ListPriceWithTax",
       "SellingPriceWithTax"
     ]
   },
