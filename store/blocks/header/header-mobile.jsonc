@@ -237,6 +237,10 @@
       // "autoFocus": false,
       "autocompleteFullWidth": false,
       "openAutocompleteOnFocus": true
+
+
+
+
       // "searchBarIcon": "telemarketing",
       // "productLayout": "VERTICAL"
     },
@@ -249,7 +253,7 @@
       "product-summary.shelf#general"
     ],
     "props": {
-      "blockClass": "inteliSearch",
+      "blockClass": "inteliSearch2",
       "maxSuggestedProducts": 2,
       "maxSuggestedTerms": 10
     }

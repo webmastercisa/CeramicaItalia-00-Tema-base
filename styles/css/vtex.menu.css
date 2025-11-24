@@ -442,8 +442,8 @@
   .menuContainer--centrar-icono-bandera
   {
     margin-top: 5px;
-    margin-right: -10px;
-    width: 37px !important;
+    margin-right: -2px;
+    width: 39px !important;
   }
 
   .menuContainerNav--acordeon-menu-pdp
@@ -668,16 +668,16 @@ align-items: center;
 {
   margin-right: -25px !important;
   margin-top: 8px !important;
-  margin-bottom: -30px !important;
-  width: 38px !important; /* 50*/
+  margin-bottom: -24px !important;
+  width: 42px !important; /* 50*/
 }
 
 .menuItem--bandera-col--isOpen
 {
   margin-right: -25px !important;
   margin-top: 8px !important;
-  margin-bottom: -30px !important;
-  width: 38px !important; /* 50*/
+  margin-bottom: -24px !important;
+  width: 42px !important; /* 50*/
 }
 
 
