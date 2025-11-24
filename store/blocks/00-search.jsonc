@@ -180,7 +180,7 @@
     "title": "slider-vitrina-search",
     "props": {
       "itemsPerPage": {
-        "desktop": 3,
+        "desktop": 4,
         "tablet": 3,
         "phone": 2
       },
@@ -1191,9 +1191,7 @@
   },
   "rich-text#texto-recomendamos": {
     "props": {
-      "blockClass": [
-        "texto-recomendamos"
-      ],
+      "blockClass":"texto-recomendamos",
       "text": "Te recomendamos"
     }
   },

@@ -58,5 +58,6 @@
     .biggy-autocomplete {
         top: -4px; /*0  igarcia*/
         right: 0;
+        position:sticky;
     }
 }

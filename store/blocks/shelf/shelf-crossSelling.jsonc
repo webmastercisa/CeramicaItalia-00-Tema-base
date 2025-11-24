@@ -31,9 +31,9 @@
                 "scroll": "BY_PAGE",
                 "showTitle": false,
                 "arrows": false,
-                "itemsPerPage": 4,
+                "itemsPerPage": 2,
                 "minItemsPerPage": 2,
-                "maxItems": 18,
+                "maxItems": 8,
                 "navigationStep": "itemsPerPage",
                 "slideTransition": {
                     "speed": 400,
@@ -53,12 +53,10 @@
 
 
 
-
-
     //Productos relacionados
     "shelf.relatedProducts#segunda": {
       "props": {
-          "blockClass": "productos-relacionados",
+          "blockClass": "general",
           "recommendation": "buy",
           "hideOutOfStockItems": true,
           "paddingBottom": 10,
@@ -67,12 +65,12 @@
               "scroll": "BY_PAGE",
               "showTitle": false,
               "arrows": false,
-              "itemsPerPage": 4,
+              "itemsPerPage": 2,
               "minItemsPerPage": 2,
-              "maxItems": 18,
+              "maxItems": 4,
               "navigationStep": "itemsPerPage",
               "slideTransition": {
-                  "speed": 400,
+                  "speed": 800,
                   "delay": 0,
                   "timing": 0
               },
@@ -88,19 +86,47 @@
   },
 
 
-
-
-
     "product-summary.shelf#crossSelling": {
         "children": [
           "stack-layout#prodsum",
           "product-summary-name",
-          "flex-layout.row#selling-price-savings",
+          "flex-layout.row#selling-price-cross",
           "condition-layout.product#text-hoy-promotion",
-          "product-quantity#quantity",
-          "add-to-cart-button"
+          "flex-layout.row#btn-ver-mas"
         ]
+      },
+
+  "flex-layout.row#btn-ver-mas": {
+      "children": ["add-to-cart-button#btn-ver-mas"],
+      "props": {
+        "fullWidth": true,
+        "blockClass": ["btn-revestimiento"]
       }
+    },
+
+    "add-to-cart-button#btn-ver-mas": {
+        "props": {
+          "text": "Ver más",
+          "blockClass":"btnshelf1",
+          "fullWidth": true,
+          "onClickBehavior": "go-to-product-page"
+        }
+      },
+
+  "flex-layout.row#selling-price-cross": {
+    "props": {
+      "blockClass": "selling-price-shelf-general",
+      "fullWidth": true,
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": [
+      "ListPriceWithTax", // CustomApp
+      "SellingPriceWithTax" // CustomApp
+    ]
+  }
 
 
 }

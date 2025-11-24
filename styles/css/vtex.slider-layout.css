@@ -26,6 +26,12 @@
   padding-top: 15px;
   padding-bottom: 50px;
 }
+.sliderTrackContainer--shelf-productos-relacionados{
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+
 
 .slideChildrenContainer--shelf-cocinas :global(.vtex-store-components-3-x-discountInsideContainer) {
   position: absolute;
@@ -216,6 +222,9 @@
   border-radius: 15px;
   max-height: 520px;
 }
+
+
+.slide--shelf-productos-relacionados :global(.vtex-button),
 .slide--shelf-general :global(.vtex-button),
 .slide--shelf-destacados :global(.vtex-button) {
   background: #FFF;
@@ -223,7 +232,7 @@
   border: 1px solid #ED1B24;
 }
 
-
+.slide--shelf-productos-relacionados :global(.vtex-add-to-cart-button-0-x-buttonText),
 .slide--shelf-general :global(.vtex-add-to-cart-button-0-x-buttonText),
 .slide--shelf-destacados :global(.vtex-add-to-cart-button-0-x-buttonText) {
   /* font-family: 'NeutraTextTF'; */
@@ -233,7 +242,7 @@
   gap: 10px;
 }
 
-
+.slide--shelf-productos-relacionados :global(.vtex-button):hover,
 .slide--shelf-general :global(.vtex-button):hover,
 .slide--shelf-destacados :global(.vtex-button):hover {
   background: #ED1B24;
@@ -241,6 +250,7 @@
 }
 
 
+.slide--shelf-productos-relacionados :global(.vtex-button):hover ::before,
 .slide--shelf-general :global(.vtex-button):hover ::before,
 .slide--shelf-destacados :global(.vtex-button):hover ::before {
   content: '';
@@ -582,6 +592,14 @@
 
 /* ajustes vitrina */
 
+.slideChildrenContainer--shelf-productos-relacionados {
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px 15px 5px 15px;
+}
+
+
 .slideChildrenContainer--shelf-general {
   border-radius: 25px;
   background: #FFF;
@@ -589,11 +607,22 @@
   padding: 15px 15px 5px 15px;
 }
 
+.slide--shelf-productos-relacionados{
+  /* margin-bottom: 25px; */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    min-height: 500px;
+}
+
 .slide--shelf-general{
   /* margin-bottom: 25px; */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     min-height: 500px;
+}
+
+.sliderLayoutContainer--shelf-productos-relacionados {
+  padding: 0px !important;
 }
 
 .sliderLayoutContainer--shelf-general {
@@ -605,6 +634,11 @@
   max-width: 2000px!important;
     text-align: start;
 }
+
+.slideChildrenContainer--shelf-productos-relacionados :global(.vtex-button__label){
+  padding: 0px !important;
+}
+
 .slideChildrenContainer--shelf-general :global(.vtex-button__label){
   padding: 0px !important;
 }
@@ -1114,6 +1148,12 @@ text-transform: capitalize;
     padding: 0px;
 }
 
+
+.slide--shelf-productos-relacionados :global(.vtex-product-summary-2-x-element){
+    min-height: 360px;
+  }
+
+
   .slide--shelf-general :global(.vtex-product-summary-2-x-element){
     min-height: 360px;
   }
@@ -1204,9 +1244,19 @@ text-transform: capitalize;
 }
 
 
+  .slide--shelf-productos-relacionados{
+      min-height: auto;
+  }
+
   .slide--shelf-general{
       min-height: auto;
   }
+
+.slideChildrenContainer--shelf-productos-relacionados {
+
+  padding: 5px 5px 0px 5px;
+}
+
 
 .slideChildrenContainer--shelf-general {
 
@@ -1380,6 +1430,12 @@ margin: 0px;
 
 .slideChildrenContainer--slider-bloque-3-quienes-somos {
   padding-bottom: 0px;
+}
+
+
+.sliderTrackContainer--shelf-productos-relacionados{
+  padding-top: 15px;
+  padding-bottom: 35px;
 }
 
 .sliderTrackContainer--shelf-general{

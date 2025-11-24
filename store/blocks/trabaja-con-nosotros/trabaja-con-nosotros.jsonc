@@ -25,12 +25,10 @@
       ]
     }
   },
-  // TEXTO 2 MIGA DE PAN 
+  // TEXTO 2 MIGA DE PAN
   "rich-text#texto-2-miga-pan-trabaja-con-nosotros": {
     "props": {
-      "blockClass": [
-        "texto-2-miga-pan"
-      ],
+      "blockClass":"texto-2-miga-pan",
       // "text": "Trabaja con nosotros",
       "text": "[Trabaja con nosotros](/trabaja-con-nosotros)",
       "textAlignment": "CENTER",
@@ -447,7 +445,7 @@
     }
 },
 
-// section slider final 
+// section slider final
 
 "flex-layout.row#contianer-slider-end-trabaja-con-nosotros": {
   "children": ["list-context.image-list#slider-layout#slider-end-trabaja-con-nosotros"],

@@ -74,14 +74,14 @@
   "rich-text#titulo-textos-search-departamento-desktop": {
     "title": "SEO-Desktop",
     "props": {
-      "blockClass": ["titulo-textos-search-departamento"],
-      "text": "# DEPARTAMENTO \n lorem ipsum"
+      "blockClass": "titulo-textos-search-departamento",
+      "text": "# **Cerámica Italia** \n Belleza que perdura, valores que trascienden."
     }
   },
   "rich-text#texto-textos-search-departamento": {
     "props": {
-      "blockClass": ["texto-textos-search-departamento"],
-      "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. ."
+      "blockClass": "texto-textos-search-departamento",
+      "text": "# **Cerámica Italia** \n Belleza que perdura, valores que trascienden."
     }
   },
 
@@ -194,8 +194,8 @@
   "rich-text#titulo-textos-search-departamento-mobile": {
     "title": "SEO-Mobile",
     "props": {
-      "blockClass": ["titulo-textos-search-departamento"],
-      "text": "# DEPARTAMENTO \n lorem ipsum"
+      "blockClass": "titulo-textos-search-departamento",
+      "text": "# **Cerámica Italia** \n Belleza que perdura, valores que trascienden."
     }
   },
 
