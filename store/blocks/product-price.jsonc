@@ -4,10 +4,12 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "marginBottom": 4,
+      "blockClass":"prices"
     },
     "children": [
       // "product-selling-price"
+      "ListPriceWithTax",
       "SellingPriceWithTax"
     ]
   },

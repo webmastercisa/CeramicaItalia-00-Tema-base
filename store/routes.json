@@ -92,6 +92,11 @@
     "title": "template categoria",
     "isSitemapEntry": true
   },
+  "store.custom#new-template-categoria":{
+    "path": "/new-template-categoria",
+    "title": "new template categoria",
+    "isSitemapEntry": true
+  },
   "store.custom#form-products": {
     "path": "/form-products",
     "title": "Formulario de productos"
