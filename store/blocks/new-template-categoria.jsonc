@@ -124,12 +124,12 @@
     },
 
     "flex-layout.row#new-category-template-products": {
-      "children": [
-        "search-content#category-template"
-      ],
       "props": {
         "blockClass": "ResultadoProductos"
-      }
+      },
+      "children": [
+        "search-content#category-template"
+      ]
     },
 
     "search-result-layout.mobile#new-template-categoria-mobile": {
@@ -150,19 +150,83 @@
     },
 
     "flex-layout.row#new-contentmobile": {
-      "children": [
-        "search-content#category-template"
-      ],
       "props": {
         "preserveLayoutOnMobile": true
-      }
+      },
+      "children": [
+        "search-content#category-template-mobile"
+      ]
     },
 
     "search-content#category-template": {
+      "title":"search content",
       "blocks": [
-        "gallery",
-        "not-found"
+        "gallery#categoria",
+        "not-found#empty"
       ]
-    }
+    },
 
+    "gallery#categoria": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#listLayout",
+      "GridSummary": "product-summary.shelf"
+    }
+    },
+
+    "not-found#empty":{
+      "title":"notFound"
+    },
+
+    "search-content#category-template-mobile": {
+      "title":"search content mobile",
+      "blocks": [
+        "gallery#categoria-mobile",
+        "not-found#empty-mobile"
+      ]
+    },
+
+    "gallery#categoria-mobile": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#listLayout",
+      "GridSummary": "product-summary.shelf"
+    }
+    },
+
+    "not-found#empty-mobile":{
+      "title":"notFound"
+    }
 }
