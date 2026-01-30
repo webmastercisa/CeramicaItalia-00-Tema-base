@@ -109,7 +109,7 @@
 
   "flex-layout.row#tpl-products-row": {
     "children": ["search-content#tpl-result-content"],
-    "props": { "blockClass": "ResultadoProductos" }
+    "props": { "blockClass": ["ResultadoProductos","pruebas-connectif"] }
   },
 
   "search-content#tpl-result-content": {

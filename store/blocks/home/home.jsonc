@@ -320,7 +320,7 @@
     ],
     "title": "vitrina-destacados-desktop",
     "props": {
-      "blockClass": "row-shelf-container"
+      "blockClass": ["row-shelf-container","destacados-connectif"]
     }
   },
 
@@ -821,7 +821,8 @@
     "props": {
       "blockClass": [
         "row-shelf-container",
-        "productNewList"
+        "productNewList",
+        "nuevos-connectif"
       ]
     },
     "children": [
