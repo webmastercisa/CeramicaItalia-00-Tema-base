@@ -1,0 +1,114 @@
+{
+  /*Vitrina de destacados*/
+  "disposition-layout#home-destacados": {
+    "title": "vitrinas destacados",
+    "children": [
+      "flex-layout.row#product-featured",
+      "flex-layout.row#shelf",
+      "flex-layout.row#connectif-block-destacados"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        }
+      ]
+    }
+  },
+  "flex-layout.row#connectif-block-destacados": {
+    "children": [
+      "connectif#test-connectif-block-destacados"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false
+    }
+  },
+  "connectif#test-connectif-block-destacados": {
+    "props": {
+      "blockClass": [
+        "espacio_15px"
+      ],
+      "classId": "destacados-connectif",
+      "elementId": "destacados-connectif"
+    }
+  },
+  /*Vitrina de nuevos*/
+  "disposition-layout#home-nuevos": {
+    "title": "vitrinas nuevos",
+    "children": [
+      "rich-text#titleProductNew",
+      "flex-layout.row#newProductSection",
+      "flex-layout.row#connectif-block-nuevos"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        }
+      ]
+    }
+  },
+  "flex-layout.row#connectif-block-nuevos": {
+    "children": [
+      "connectif#test-connectif-block-nuevos"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false
+    }
+  },
+  "connectif#test-connectif-block-nuevos": {
+    "props": {
+      "blockClass": [
+        "espacio_15px"
+      ],
+      "classId": "nuevos-connectif",
+      "elementId": "nuevos-connectif"
+    }
+  },
+  /*Vitrina de landing pruebas*/
+  "disposition-layout#landing-pruebas": {
+    "title": "vitrinas pruebas",
+    "children": [
+      "flex-layout.row#connectif-block-pruebas"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        }
+      ]
+    }
+  },
+  "flex-layout.row#connectif-block-pruebas": {
+    "children": [
+      "connectif#test-connectif-block-pruebas"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false
+    }
+  },
+  "connectif#test-connectif-block-pruebas": {
+    "props": {
+      "blockClass": [
+        "espacio_15px"
+      ],
+      "classId": "pruebas-connectif",
+      "elementId": "pruebas-connectif"
+    }
+  }
+}

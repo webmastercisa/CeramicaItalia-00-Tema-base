@@ -8,7 +8,8 @@
       "flex-layout.row#title-trabaja-con-nosotros",
       "flex-layout.row#textos-trabaja-con-nosotros",
       "flex-layout.row#container-banner1-trabaja-con-nosotros",
-      "search-result-layout.customQuery#tpl-result"
+      "search-result-layout.customQuery#tpl-result",
+      "disposition-layout#landing-pruebas"
     ]
   },
 
