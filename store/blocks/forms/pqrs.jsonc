@@ -183,6 +183,7 @@
     "children": [
       "form-input.text#nameAndLastname-formulario-pqrs",
       "form-input.text#cellPhone-formulario-pqrs",
+      "form-input.text#mail-formulario-pqrs",
       "form-input.text#addres-formulario-pqrs",
       "form-input.text#shoppingCity-formulario-pqrs"
     ],
@@ -209,6 +210,13 @@
       "placeholder": "Celular"
     }
   },
+  "form-input.text#mail-formulario-pqrs": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Correo electrónico"
+    }
+  },
+
   "form-input.text#addres-formulario-pqrs": {
     "props": {
       "pointer": "#/properties/address",

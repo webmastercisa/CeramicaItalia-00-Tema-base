@@ -8,6 +8,7 @@
   min-height: 450px;
   margin: 0 auto;
   margin-top: -1px;
+  gap:10px;
 }
 
 .sliderTrackContainer {
@@ -20,6 +21,7 @@
   padding-top: 15px;
   padding-bottom: 57px;
   width: 101% !important;
+
 }
 
 .sliderTrackContainer--shelf-general{
@@ -30,8 +32,6 @@
   padding-top: 15px;
   padding-bottom: 50px;
 }
-
-
 
 .slideChildrenContainer--shelf-cocinas :global(.vtex-store-components-3-x-discountInsideContainer) {
   position: absolute;
@@ -86,6 +86,7 @@
   height: 8px !important;
   width: 8px !important;
   background-color: #F4F2F2;
+  gap:10px;
 }
 
 .paginationDot--carousel--isActive {
@@ -138,6 +139,8 @@
   padding-right: .5rem;
   min-height: 550px;
 }
+
+
 
 .sliderLayoutContainer--shelf-cocinas {
   padding-left: 8px!important;
@@ -1298,6 +1301,7 @@ text-transform: capitalize;
   }
   .slide--shelf-general :global(.vtex-add-to-cart-button-0-x-buttonText){
     font-size: 13px;
+    gap:10px;
   }
   .slide--shelf-destacados :global(.vtex-add-to-cart-button-0-x-buttonText) {
     font-size: 11px;
