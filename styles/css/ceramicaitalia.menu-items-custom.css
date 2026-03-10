@@ -40,13 +40,38 @@
     display: none;
   }
 
+  /* ========  Original  igarcia =========================================================
   .MenuCustomContentList--show {
     display: block;
     max-height: max-content;
     z-index: 1;
   }
+    */
 
+  .MenuCustomContentList--show {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+  }
 
+  /* 2. Solo lo mostramos cuando el mouse está REALMENTE sobre el contenedor padre */
+  .MenuCustom:hover .MenuCustomContentList--show {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+  }
+  /* 3. Opcional: Si quieres que los submenús laterales también funcionen bien al salir el mouse */
+  .ceramicaitalia-menu-items-custom-0-x-MenuCustomListLi:hover .ceramicaitalia-menu-items-custom-0-x-MenuCustomContentSubList {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ceramicaitalia-menu-items-custom-0-x-MenuCustomListLi:not(:hover) .ceramicaitalia-menu-items-custom-0-x-MenuCustomContentSubList {
+    display: none !important;
+  }
+ /* ========  Fin de codigo nuevo 2026.03.09  ========================================================= */
 
   .MenuCustomContentList::-webkit-scrollbar {
     -webkit-appearance: none;
