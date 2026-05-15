@@ -134,11 +134,18 @@
     "blockId": "store.custom#template-tallas-pdp"
   },
 
-    "store.custom#tpl-resultado-productos":
+  "store.custom#tpl-resultado-productos":
   {
     "path": "/tpl-resultado-productos",
     "title": "Plantilla resultado de productos",
     "blockId": "store.custom#tpl-resultado-productos"
+  },
+  "store.custom#tpl-custom-mundial":
+  {
+    "path": "/tpl-custom-mundial",
+    "title": "Plantilla personalizada mundial 2026",
+    "blockId": "store.custom#tpl-custom-mundial"
+    
   },
 
   "store.custom#tpl-categoria": { "path": "/tpl-categoria/:slug" }

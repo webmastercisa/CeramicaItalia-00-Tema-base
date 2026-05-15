@@ -4159,3 +4159,260 @@ height: 520px;
   }
 
 }
+
+/* ================================================================================================ */
+/* =================================  Clases para mundial ========================================= */
+/* ================================================================================================ */
+.flexRow--mundialHero,
+.flexRowContent--mundialHero 
+{
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 32px 64px;
+  background: #ffffff;
+  position: relative;
+}
+.flexCol--mundialHeroCol,
+.flexColChild--mundialHeroCol
+{
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.flexRow--mundialHeroButtons,
+.flexRowContent--mundialHeroButtons 
+{
+    margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flexRow--mundialStats,
+.flexRowContent--mundialStats
+{
+  background: #ED1B24;
+  padding: 36px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.flexRow--mundialStatCol,
+.flexRowContent--mundialStatCol
+{
+  flex: 1;
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.flexRow--mundialColeccionHeader,
+.flexRowContent--mundialColeccionHeader
+{
+  background: #f7f7f7;
+  padding: 56px 48px 24px;
+}
+
+.flexCol--mundialColeccionHeaderCol,
+.flexColChild--mundialColeccionHeaderCol
+{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flexRow--mundialToolbar,
+.flexRowContent--mundialToolbar
+{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 48px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+
+.flexRow--mundialGalleryRow,
+.flexRowContent--mundialGalleryRow
+{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.flexRow--mundialCard,
+.flexRowContent--mundialCard
+{
+  height: 100%;
+}
+
+.flexCol--mundialCardCol,
+.flexColChild--mundialCardCol
+{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  background: #ffffff;
+}
+
+.flexColChild--mundialCardCol:hover 
+{
+  border-color: #ED1B24;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(237, 27, 36, 0.08);
+}
+
+.flexCol--mundialCardInfo,
+.flexColChild--mundialCardInfo
+{
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.flexRow--mundialCardPrice,
+.flexRowContent--mundialCardPrice
+{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.flexRow--mundialFetchMore,
+.flexRowContent--mundialFetchMore
+{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 48px 40px;
+  display: flex;
+  justify-content: center;
+}
+.flexRow--mundialUrgencia,
+.flexRowContent--mundialUrgencia
+{
+  background: #111111;
+  padding: 64px 48px;
+}
+.flexCol--mundialUrgenciaCol,
+.flexColChild--mundialUrgenciaCol
+{
+  /*max-width: 800px;*/
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.flexRow--mundialChips
+{
+  width: 100vw;
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.flexRow--mundialCtaFinal,
+.flexRowContent--mundialCtaFinal
+{
+  background: #ffffff;
+  padding: 72px 48px;
+}
+.flexCol--mundialCtaCol,
+.flexColChild--mundialCtaCol
+{
+  width: 100vw;
+  /*max-width: 600px;*/
+  margin: 0 auto;
+}
+.flexRow--mundialCtaButtons,
+.flexRowContent--mundialCtaButtons
+{
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) 
+{
+  .flexRow--mundialHero,
+  .flexRowContent--mundialHero 
+  {
+    min-height: auto;
+    padding: 56px 20px 48px;
+  }
+  .flexRow--mundialStats,
+  .flexRowContent--mundialStats
+  {
+    padding: 24px 20px;
+    flex-direction: column;
+  }
+
+  .flexRow--mundialStatCol,
+  .flexRowContent--mundialStatCol
+  {
+    padding: 10px 0;
+  }
+
+  .flexRow--mundialColeccionHeader,
+  .flexRowContent--mundialColeccionHeader 
+  {
+    padding: 40px 20px 16px;
+  }
+
+  .flexRow--mundialGalleryRow,
+  .flexRowContent--mundialGalleryRow 
+  {
+    padding: 0 12px;
+  }
+
+  .flexRow--mundialToolbar,
+  .flexRowContent--mundialToolbar
+  {
+    padding: 12px 20px 8px;
+  }
+
+  .flexRow--mundialFetchMore,
+  .flexRowContent--mundialFetchMore 
+  {
+    padding: 16px 20px 32px;
+  }
+
+  .flexRow--mundialUrgencia 
+  .flexRowContent--mundialUrgencia
+  {
+    padding: 48px 20px;
+  }
+
+  .flexRow--mundialCtaFinal,
+  .flexRowContent--mundialCtaFinal 
+  {
+    padding: 48px 20px;
+  }
+
+  .flexRowContent--mundialNotFoundRow  /*==========================*/
+  {
+    padding: 48px 20px;
+  }
+
+  .flexRow--mundialChips,
+  .flexRowContent--mundialChips
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+}

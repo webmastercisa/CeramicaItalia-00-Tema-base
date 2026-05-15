@@ -46,12 +46,18 @@
   },
   "flex-layout.row#description": {
     "props": {
-      "marginBottom": 7
+      "marginBottom": 17
     },
     "children": [
-      "product-description"
+      "product-description#desclarga"
     ]
   },
+  "product-description#desclarga": {
+    "props": {
+      "collapseContent": false
+    }
+  },
+
   "condition-layout.product#availability": {
     "props": {
       "conditions": [

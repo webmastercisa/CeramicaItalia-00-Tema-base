@@ -1,0 +1,608 @@
+{
+  /* ============================================
+   *  LANDING — EL MUNDIAL SE VIVE EN CASA 2026
+   *  Cerámica Italia
+   *  Color principal: #ED1B24
+   * ============================================ */
+
+  "store.custom#tpl-custom-mundial": {
+    "blocks": [
+      "flex-layout.row#mundial-hero",
+      "flex-layout.row#mundial-stats",
+      "flex-layout.row#mundial-coleccion-header",
+      "search-result-layout.customQuery#mundial-productos",
+      "flex-layout.row#mundial-urgencia",
+      "flex-layout.row#mundial-cta-final"
+    ]
+  },
+
+  "flex-layout.row#mundial-hero": {
+    "children": ["flex-layout.col#mundial-hero-col"],
+    "props": {
+      "blockClass": "mundialHero",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#mundial-hero-col": {
+    "children": [
+      "rich-text#mundial-hero-eyebrow",
+      "rich-text#mundial-hero-title",
+      "rich-text#mundial-hero-subtitle",
+      "flex-layout.row#mundial-hero-buttons"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true,
+      "blockClass": "mundialHeroCol"
+    }
+  },
+
+  "rich-text#mundial-hero-eyebrow": {
+    "props": {
+      "text": "⚽ Colección especial Mundial 2026",
+      "blockClass": "mundialHeroEyebrow",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#mundial-hero-title": {
+    "props": {
+      "text": "# EL MUNDIAL SE VIVE EN CASA",
+      "blockClass": "mundialHeroTitle",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#mundial-hero-subtitle": {
+    "props": {
+      "text": "Renueva tu hogar antes de que empiece el espectáculo. Pisos de cerámica y porcelanato que resisten el mejor partido de tu vida.",
+      "blockClass": "mundialHeroSubtitle",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#mundial-hero-buttons": {
+    "children": [
+      "link#mundial-btn-coleccion",
+      "link#mundial-btn-asesor"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "colGap": 4,
+      "blockClass": "mundialHeroButtons",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "link#mundial-btn-coleccion": {
+    "props": {
+      "href": "#coleccion",
+      "label": "Ver la colección",
+      "blockClass": "mundialBtnPrimary",
+      "displayMode": "button"
+    }
+  },
+
+  "link#mundial-btn-asesor": {
+    "props": {
+      "href": "#contacto",
+      "label": "Hablar con un asesor",
+      "blockClass": "mundialBtnSecondary",
+      "displayMode": "button"
+    }
+  },
+
+  "flex-layout.row#mundial-stats": {
+    "children": [
+      "flex-layout.col#mundial-stat-1",
+      "flex-layout.col#mundial-stat-2",
+      "flex-layout.col#mundial-stat-3",
+      "flex-layout.col#mundial-stat-4"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "mundialStats",
+      "preserveLayoutOnMobile": false
+    }
+  },
+
+  "flex-layout.col#mundial-stat-1": {
+    "children": ["rich-text#mundial-stat-1-text"],
+    "props": { "blockClass": "mundialStatCol", "horizontalAlign": "center", "width": "25%" }
+  },
+  "rich-text#mundial-stat-1-text": {
+    "props": {
+      "text": "**+500** \n Referencias en cerámica",
+      "blockClass": "mundialStatText",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.col#mundial-stat-2": {
+    "children": ["rich-text#mundial-stat-2-text"],
+    "props": { "blockClass": "mundialStatCol", "horizontalAlign": "center", "width": "25%" }
+  },
+  "rich-text#mundial-stat-2-text": {
+    "props": {
+      "text": "**3–5** \n Días de instalación",
+      "blockClass": "mundialStatText",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.col#mundial-stat-3": {
+    "children": ["rich-text#mundial-stat-3-text"],
+    "props": { "blockClass": "mundialStatCol", "horizontalAlign": "center", "width": "25%" }
+  },
+  "rich-text#mundial-stat-3-text": {
+    "props": {
+      "text": "**15+** \n Años de experiencia",
+      "blockClass": "mundialStatText",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.col#mundial-stat-4": {
+    "children": ["rich-text#mundial-stat-4-text"],
+    "props": { "blockClass": "mundialStatCol", "horizontalAlign": "center", "width": "25%" }
+  },
+  "rich-text#mundial-stat-4-text": {
+    "props": {
+      "text": "**98%** \n Clientes satisfechos",
+      "blockClass": "mundialStatText",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.row#mundial-coleccion-header": {
+    "children": ["flex-layout.col#mundial-coleccion-header-col"],
+    "props": {
+      "blockClass": "mundialColeccionHeader",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#mundial-coleccion-header-col": {
+    "children": [
+      "rich-text#mundial-coleccion-label",
+      "rich-text#mundial-coleccion-title",
+      "rich-text#mundial-coleccion-sub"
+    ],
+    "props": {
+      "blockClass": "mundialColeccionHeaderCol",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#mundial-coleccion-label": {
+    "props": {
+      "text": "Colección Mundial 2026",
+      "blockClass": "mundialLabel",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  "rich-text#mundial-coleccion-title": {
+    "props": {
+      "text": "## Elige tu ambiente",
+      "blockClass": "mundialColeccionTitle",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  "rich-text#mundial-coleccion-sub": {
+    "props": {
+      "text": "Encuentra el piso perfecto para tu remodelación mundialista.",
+      "blockClass": "mundialColeccionSub",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  "search-result-layout.customQuery#mundial-productos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 8,
+        "queryField": "190",
+        "mapField": "productClusterIds",
+        "facetsBehavior": "static"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#mundial",
+      "search-result-layout.mobile#mundial",
+      "search-not-found-layout#mundial-nofound"
+    ]
+  },
+
+  "search-result-layout.desktop#mundial": {
+    "children": [
+      "flex-layout.row#mundial-toolbar",
+      "flex-layout.row#mundial-gallery-row",
+      "flex-layout.row#mundial-fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "defaultGalleryLayout": "grid",
+      "preventRouteChange": true
+    }
+  },
+
+  "flex-layout.row#mundial-toolbar": {
+    "children": [
+      "total-products.v2#mundial",
+      "order-by.v2#mundial"
+    ],
+    "props": {
+      "blockClass": "mundialToolbar",
+      "preventHorizontalStretch": true,
+      "colGap": 6
+    }
+  },
+
+  "total-products.v2#mundial": {
+    "props": { "blockClass": "mundialTotalProducts" }
+  },
+
+  "order-by.v2#mundial": {
+    "props": { "blockClass": "mundialOrderBy" }
+  },
+
+  "flex-layout.row#mundial-gallery-row": {
+    "children": ["search-content#mundial"],
+    "props": {
+      "blockClass": "mundialGalleryRow",
+      "fullWidth": true
+    }
+  },
+
+  "search-content#mundial": {
+    "blocks": ["gallery#mundial", "not-found#mundial"]
+  },
+
+  "gallery#mundial": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#mundial-card"
+    }
+  },
+
+  "not-found#mundial": {
+    "props": { "blockClass": "mundialNotFound" }
+  },
+
+  "flex-layout.row#mundial-fetchmore": {
+    "children": ["search-fetch-more#mundial"],
+    "props": {
+      "blockClass": "mundialFetchMore",
+      "marginTop": 4
+    }
+  },
+
+  "search-fetch-more#mundial": {
+    "props": {
+      "htmlElementForButton": "a",
+      "blockClass": "mundialFetchMoreBtn"
+    }
+  },
+
+  "search-result-layout.mobile#mundial": {
+    "children": [
+      "flex-layout.row#mundial-toolbar-mobile",
+      "flex-layout.row#mundial-gallery-row",
+      "flex-layout.row#mundial-fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "defaultGalleryLayout": "grid",
+      "blockClass": "mundialMobile"
+    }
+  },
+
+  "flex-layout.row#mundial-toolbar-mobile": {
+    "children": [
+      "total-products.v2#mundial",
+      "order-by.v2#mundial"
+    ],
+    "props": {
+      "blockClass": "mundialToolbarMobile",
+      "preserveLayoutOnMobile": true,
+      "colGap": 4
+    }
+  },
+
+  "product-summary.shelf#mundial-card": {
+    "children": [
+      "flex-layout.col#mundial-card-col"
+    ],
+    "props": {
+      "blockClass": "mundialCard"
+    }
+  },
+
+  "flex-layout.col#mundial-card-col": {
+    "children": [
+      "stack-layout#mundial-card-image",
+      "flex-layout.col#mundial-card-info"
+    ],
+    "props": {
+      "blockClass": "mundialCardCol"
+    }
+  },
+
+  "stack-layout#mundial-card-image": {
+    "children": [
+      "product-summary-image#mundial",
+      "vtex.product-highlights@2.x:product-highlights#mundial-badge"
+    ]
+  },
+
+  "product-summary-image#mundial": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 280,
+      "hoverImage": { "criteria": "index", "index": 1 },
+      "blockClass": "mundialProductImage"
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#mundial-badge": {
+    "props": { "type": "collection" },
+    "children": ["product-highlight-wrapper#mundial-badge"]
+  },
+
+  "product-highlight-wrapper#mundial-badge": {
+    "props": { "blockClass": "mundialBadge" },
+    "children": ["product-highlight-text#mundial-badge"]
+  },
+
+  "product-highlight-text#mundial-badge": {
+    "props": { "message": "{highlightName}", "blockClass": "mundialBadgeText" }
+  },
+
+  "flex-layout.col#mundial-card-info": {
+    "children": [
+      "product-summary-name#mundial",
+      "product-summary-sku-name#mundial",
+      "flex-layout.row#mundial-card-price",
+      "add-to-cart-button#mundial"
+    ],
+    "props": {
+      "blockClass": "mundialCardInfo",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "product-summary-name#mundial": {
+    "props": {
+      "tag": "h3",
+      "blockClass": "mundialProductName"
+    }
+  },
+
+  "product-summary-sku-name#mundial": {
+    "props": {
+      "blockClass": "mundialSkuName"
+    }
+  },
+
+  "flex-layout.row#mundial-card-price": {
+    "children": [
+      "product-list-price#mundial",
+      "product-selling-price#mundial"
+    ],
+    "props": {
+      "blockClass": "mundialCardPrice",
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "product-list-price#mundial": {
+    "props": {
+      "blockClass": "mundialListPrice"
+    }
+  },
+
+  "product-selling-price#mundial": {
+    "props": {
+      "blockClass": "mundialSellingPrice"
+    }
+  },
+
+  "add-to-cart-button#mundial": {
+    "props": {
+      "blockClass": "mundialAddToCart",
+      "text": "Ver producto",
+      "isOneClickBuy": false
+    }
+  },
+
+  "flex-layout.row#mundial-urgencia": {
+    "children": ["flex-layout.col#mundial-urgencia-col"],
+    "props": {
+      "blockClass": "mundialUrgencia",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#mundial-urgencia-col": {
+    "children": [
+      "rich-text#mundial-urgencia-label",
+      "rich-text#mundial-urgencia-title",
+      "rich-text#mundial-urgencia-sub",
+      "flex-layout.row#mundial-urgencia-chips"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": "mundialUrgenciaCol"
+    }
+  },
+
+  "rich-text#mundial-urgencia-label": {
+    "props": {
+      "text": "Disponibilidad limitada",
+      "blockClass": "mundialLabel",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "rich-text#mundial-urgencia-title": {
+    "props": {
+      "text": "## Instálalo antes del primer partido",
+      "blockClass": "mundialUrgenciaTitle",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "rich-text#mundial-urgencia-sub": {
+    "props": {
+      "text": "Pedidos realizados antes del 1 de junio garantizan instalación a tiempo. Cupos limitados por temporada.",
+      "blockClass": "mundialUrgenciaSub",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.row#mundial-urgencia-chips": {
+    "children": [
+      "rich-text#mundial-chip-1",
+      "rich-text#mundial-chip-2",
+      "rich-text#mundial-chip-3",
+      "rich-text#mundial-chip-4"
+    ],
+    "props": {
+      "blockClass": "mundialChips",
+      "horizontalAlign": "center",
+      "colGap": 3,
+      "preserveLayoutOnMobile": false
+    }
+  },
+
+  "rich-text#mundial-chip-1": {
+    "props": { "text": "✓ Instalación en 3–5 días hábiles", "blockClass": "mundialChip" }
+  },
+  "rich-text#mundial-chip-2": {
+    "props": { "text": "✓ Garantía de 10 años", "blockClass": "mundialChip" }
+  },
+  "rich-text#mundial-chip-3": {
+    "props": { "text": "✓ Envío a todo el país", "blockClass": "mundialChip" }
+  },
+  "rich-text#mundial-chip-4": {
+    "props": { "text": "✓ Asesoría gratuita", "blockClass": "mundialChip" }
+  },
+
+  "flex-layout.row#mundial-cta-final": {
+    "children": ["flex-layout.col#mundial-cta-col"],
+    "props": {
+      "blockClass": "mundialCtaFinal",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#mundial-cta-col": {
+    "children": [
+      "rich-text#mundial-cta-label",
+      "rich-text#mundial-cta-title",
+      "rich-text#mundial-cta-sub",
+      "flex-layout.row#mundial-cta-buttons"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": "mundialCtaCol"
+    }
+  },
+
+  "rich-text#mundial-cta-label": {
+    "props": {
+      "text": "¿Listo para remodelar?",
+      "blockClass": "mundialLabel",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "rich-text#mundial-cta-title": {
+    "props": {
+      "text": "## Tu hogar, tu estadio",
+      "blockClass": "mundialCtaTitle",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "rich-text#mundial-cta-sub": {
+    "props": {
+      "text": "Nuestro equipo te ayuda a elegir el piso ideal, calcular los m² necesarios y coordinar la instalación a tiempo.",
+      "blockClass": "mundialCtaSub",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.row#mundial-cta-buttons": {
+    "children": [
+      "link#mundial-btn-whatsapp",
+      "link#mundial-btn-ver-productos"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "colGap": 4,
+      "blockClass": "mundialCtaButtons",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "link#mundial-btn-whatsapp": {
+    "props": {
+      "href": "https://wa.me/57XXXXXXXXXX",
+      "label": "Hablar por WhatsApp",
+      "blockClass": "mundialBtnWhatsapp",
+      "displayMode": "button"
+    }
+  },
+
+  "link#mundial-btn-ver-productos": {
+    "props": {
+      "href": "#coleccion",
+      "label": "Ver todos los productos",
+      "blockClass": "mundialBtnPrimary",
+      "displayMode": "button"
+    }
+  },
+
+  "search-not-found-layout#mundial-nofound": {
+    "children": ["flex-layout.row#mundial-nofound-row"]
+  },
+
+  "flex-layout.row#mundial-nofound-row": {
+    "children": ["rich-text#mundial-nofound"],
+    "props": { "blockClass": "mundialNotFoundRow", "fullWidth": true }
+  },
+
+  "rich-text#mundial-nofound": {
+    "props": {
+      "text": "Lo sentimos, no encontramos productos disponibles en este momento.",
+      "blockClass": "mundialNotFoundText",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

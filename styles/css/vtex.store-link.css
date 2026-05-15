@@ -52,3 +52,76 @@
   /* Opcional: puedes añadir un ligero movimiento hacia abajo */
   transform: translateY(2px);
 }
+
+/* ================================================================================================ */
+/* =================================  Clases para mundial ========================================= */
+/* ================================================================================================ */
+
+.link--mundialFetchMoreBtn,
+.label--mundialFetchMoreBtn {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ED1B24;
+  border: 2px solid #ED1B24;
+  padding: 12px 32px;
+  border-radius: 8px;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.label--mundialAddToCart{
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.link--mundialFetchMoreBtn,
+.label--mundialFetchMoreBtn {
+  background: #ED1B24;
+  color: #ffffff;
+}
+
+.link--mundialBtnPrimary,
+.label--mundialBtnPrimary{
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.link--mundialBtnSecondary,
+.label--mundialBtnSecondary {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.link--mundialBtnWhatsapp,
+.label--mundialBtnWhatsapp {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+@media (max-width: 768px) 
+{
+
+  .link--mundialBtnPrimary,
+  .label--mundialBtnPrimary,
+  .link--mundialBtnSecondary,
+  .label--mundialBtnSecondary,
+  .link--mundialBtnWhatsapp,
+  .label--mundialBtnWhatsapp
+  {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}

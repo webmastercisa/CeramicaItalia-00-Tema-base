@@ -1,0 +1,796 @@
+.searchBlockContainer,
+.latestPostsBlockContainer,
+.categoryBlockContainer,
+.listContainer,
+.paginationComponent,
+.filtersContainer,
+.categoryBlockLink,
+.dateFilterButtonsContainer{
+  --ci-red: #ed1b24;
+  --ci-red-dark: #c9141b;
+  --ci-dark: #3d3c3c;
+  --ci-text: #444444;
+  --ci-muted: #777777;
+  --ci-line: #e7e1dc;
+  --ci-soft-bg: #faf8f5;
+  --ci-white: #ffffff;
+
+  --action-primary: #ed1b24;
+  --on-action-primary: #ffffff;
+  --action-secondary: transparent;
+  --on-action-secondary: #3d3c3c;
+  --link: #ed1b24;
+  --muted-3: #ed1b24;
+  --muted-4: #e7e1dc;
+}
+
+
+/* =========================================================
+   2. Contenedores principales
+   ========================================================= */
+
+.searchBlockContainer {
+  max-width: 760px;
+  margin: 32px auto 12px;
+  padding: 12px 18px;
+  border: 1px solid #e7e1dc;
+  border-radius: 33px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.latestPostsBlockContainer,
+.categoryBlockContainer,
+.listContainer {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px 24px 64px;
+}
+
+.listContainer {
+  border-radius: 28px;
+  background: linear-gradient(180deg, #ffffff 0%, #faf8f5 100%);
+}
+
+
+/* =========================================================
+   3. Títulos editoriales
+   ========================================================= */
+
+.latestPostsBlockTitle,
+.categoryBlockTitle {
+  max-width: 840px;
+  margin: 0 auto 28px;
+  padding-bottom: 16px;
+  border-bottom: 4px solid #ed1b24;
+  color: #3d3c3c;
+  font-family: NeutraTextAltBold, Arial, sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  text-align: center;
+}
+
+.categoryBlockDescription {
+  max-width: 720px;
+  margin: -8px auto 34px;
+  color: #777777;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/* =========================================================
+   4. Layout de grillas
+   ========================================================= */
+
+.latestPostsBlockFlex,
+.categoryBlockFlex,
+.listFlex {
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.latestPostsBlockFlexFirstColumnItem,
+.latestPostsBlockFlexSecondColumn,
+.latestPostsBlockFlexSecondColumnItem,
+.categoryBlockFlexItem,
+.listFlexItem {
+  margin: 0;
+  padding: 0;
+}
+
+.latestPostsBlockFlexFirstColumnItem {
+  flex: 1 1 62%;
+  max-width: calc(66.666% - 12px);
+}
+
+.latestPostsBlockFlexSecondColumn {
+  flex: 1 1 32%;
+  max-width: calc(33.333% - 12px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.categoryBlockFlexItem {  flex: 1 1 calc(33.333% - 16px);  max-width: calc(33.333% - 16px); }
+
+.listFlexItem {  flex: 1 1 calc(50% - 12px);  max-width: calc(50% - 12px); }
+
+
+/* =========================================================
+   5. Tarjetas de posts
+   ========================================================= */
+
+.teaserContainer {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.teaserImageContainer {
+  display: block;
+  overflow: hidden;
+  background: #f2efeb;
+}
+
+.teaserImage {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.latestPostsBlockFlexFirstColumnItem .teaserImage {  height: 430px;}
+
+.latestPostsBlockFlexSecondColumn .teaserImage {  height: 190px; }
+
+.categoryBlockFlexItem .teaserImage, .listFlexItem .teaserImage {  height: 270px; }
+
+
+/* =========================================================
+   6. Meta información: categoría y fecha
+   ========================================================= */
+
+.teaserHeader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 18px 22px 10px;
+  color: #777777;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.teaserCategoryLink, .postCategoryLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(237, 27, 36, 0.09);
+  color: #ed1b24;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.teaserSeparator  {  color: #c8c1ba;}
+.teaserDate       {  color: #777777;}
+
+
+/* =========================================================
+   7. Títulos y extractos
+   ========================================================= */
+
+.titleAndExcerptContainer {  padding: 0 22px 24px;  }
+
+.teaserTitle {
+  margin: 0;
+  padding: 8px 0 12px;
+  color: #3d3c3c;
+  font-family: NeutraTextAltBold, Arial, sans-serif;
+  font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+  line-height: 1.18;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.latestPostsBlockFlexSecondColumn .teaserTitle {  font-size: 1.1rem; }
+
+.teaserTitleLink {  color: #3d3c3c;   text-decoration: none; }
+
+.teaserBody {
+  max-height: 5.2em;
+  overflow: hidden;
+  padding: 0;
+  color: #444444;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.latestPostsBlockFlexSecondColumn .teaserBody {  max-height: 3.4em; }
+
+
+/* =========================================================
+   8. Filtros y paginación
+   ========================================================= */
+
+.paginationComponent,
+.filtersContainer {
+  border: 1px solid #e7e1dc;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.045);
+}
+
+.paginationComponent {
+  margin-bottom: 22px;
+  padding: 16px 20px;
+}
+
+.filtersContainer {
+  gap: 16px;
+  align-items: center;
+  margin: 16px 0 28px;
+  padding: 18px;
+}
+
+.categorySelectContainer,
+.tagSelectContainer,
+.dateSelectContainer,
+.dateInputContainer {
+  padding: 0;
+}
+
+.categorySelectContainer,
+.tagSelectContainer,
+.dateSelectContainer {
+  flex: 1 1 220px;
+  width: auto;
+}
+
+.dateSelectInnerContainer,
+.dateRangeInputsContainer,
+.dateFilterButtonsContainer {  gap: 12px; }
+
+.dateRangeInputsContainer {  flex-wrap: wrap; }
+
+
+/* =========================================================
+   9. Botón tipo "Conoce más"
+   ========================================================= */
+
+.categoryBlockLink {
+  width: fit-content;
+  min-height: 43px;
+  margin: 18px auto 0;
+  padding: 9px 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ed1b24;
+  border-radius: 33px;
+  overflow: hidden;
+  color: #3d3c3c;
+  font-family: NeutraTextAltBold, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: none;
+
+  --action-secondary: transparent;
+  --on-action-secondary: #3d3c3c;
+}
+
+.dateFilterButtonsContainer {
+  --action-primary: #ed1b24;
+  --on-action-primary: #ffffff;
+  --action-secondary: transparent;
+  --on-action-secondary: #3d3c3c;
+}
+
+
+/* =========================================================
+   10. Ajustes responsive
+   ========================================================= */
+
+@media screen and (max-width: 64em) {
+  .latestPostsBlockContainer,
+  .categoryBlockContainer,
+  .listContainer {
+    padding: 40px 20px 56px;
+  }
+
+  .latestPostsBlockFlexFirstColumnItem,
+  .latestPostsBlockFlexSecondColumn {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .categoryBlockFlexItem,
+  .listFlexItem {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+
+  .latestPostsBlockFlexFirstColumnItem .teaserImage {
+    height: 340px;
+  }
+
+  .latestPostsBlockFlexSecondColumn .teaserImage {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .searchBlockContainer {
+    margin-top: 20px;
+    padding: 10px 14px;
+  }
+
+  .latestPostsBlockContainer,
+  .categoryBlockContainer,
+  .listContainer {
+    padding: 32px 14px 44px;
+    border-radius: 20px;
+  }
+
+  .latestPostsBlockTitle,
+  .categoryBlockTitle {
+    font-size: 2rem;
+  }
+
+  .latestPostsBlockFlex,
+  .categoryBlockFlex,
+  .listFlex {
+    gap: 18px;
+  }
+
+  .categoryBlockFlexItem,
+  .listFlexItem {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .teaserImage,
+  .latestPostsBlockFlexFirstColumnItem .teaserImage,
+  .latestPostsBlockFlexSecondColumn .teaserImage,
+  .categoryBlockFlexItem .teaserImage,
+  .listFlexItem .teaserImage {
+    height: 235px;
+  }
+
+  .teaserHeader {
+    padding: 16px 18px 8px;
+  }
+
+  .titleAndExcerptContainer {
+    padding: 0 18px 22px;
+  }
+
+  .teaserTitle {
+    font-size: 1.18rem;
+  }
+
+  .filtersContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .categorySelectContainer,
+  .tagSelectContainer,
+  .dateSelectContainer,
+  .dateInputContainer {
+    width: 100%;
+  }
+
+  .categoryBlockLink {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* =========================================================
+   11. Detalle de post / Blog post page
+   Compatible con VTEX IO: sin :global, sin :hover, sin tags
+   ========================================================= */
+
+.breadcrumbContainer,
+.breadcrumbHomeLink,
+.breadcrumbLink,
+.breadcrumbCurrentPage,
+.breadcrumbSeparator,
+.postFlex,
+.postContainer,
+.postTitle,
+.postMeta,
+.postMetaDate,
+.postMetaCategory,
+.postMetaAuthor,
+.postCategoryLink,
+.postFeaturedImageContainer,
+.postFeaturedImage,
+.postBody,
+.wp-block-image,
+.wp-block-gallery,
+.has-nested-images,
+.columns-default,
+.is-cropped,
+.is-resized,
+.size-large,
+.alignleft,
+.alignright,
+.wordpressContentLink {
+  --ci-red: #ed1b24;
+  --ci-red-dark: #c9141b;
+  --ci-dark: #3d3c3c;
+  --ci-text: #444444;
+  --ci-muted: #777777;
+  --ci-line: #e7e1dc;
+  --ci-soft-bg: #faf8f5;
+  --ci-white: #ffffff;
+
+  --action-primary: #ed1b24;
+  --on-action-primary: #ffffff;
+  --action-secondary: transparent;
+  --on-action-secondary: #3d3c3c;
+  --link: #ed1b24;
+  --muted-3: #ed1b24;
+  --muted-4: #e7e1dc;
+}
+
+
+/* =========================================================
+   12. Breadcrumb del blog
+   ========================================================= */
+
+.breadcrumbContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 22px 24px 14px;
+  color: #777777;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.breadcrumbHomeLink,
+.breadcrumbLink {
+  color: #3d3c3c;
+  font-family: NeutraTextAltBold, Arial, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.breadcrumbCurrentPage {
+  color: #777777;
+  font-weight: 500;
+}
+
+.breadcrumbSeparator {
+  color: #ed1b24;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   13. Contenedor principal del post
+   ========================================================= */
+
+.postFlex {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 36px 24px 72px;
+}
+
+.postContainer {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 44px 48px 56px;
+  border: 1px solid #e7e1dc;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #ffffff 0%, #faf8f5 100%);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.075);
+}
+
+
+/* =========================================================
+   14. Encabezado del post
+   ========================================================= */
+
+.postTitle {
+  max-width: 880px;
+  margin: 0 auto 20px;
+  padding-bottom: 20px;
+  border-bottom: 4px solid #ed1b24;
+  color: #3d3c3c;
+  font-family: NeutraTextAltBold, Arial, sans-serif;
+  font-size: clamp(2.15rem, 4.2vw, 3.85rem);
+  line-height: 1.06;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  text-align: center;
+}
+
+.postMeta {
+  max-width: 850px;
+  margin: 0 auto 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #777777;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.postMetaDate,
+.postMetaAuthor {
+  color: #777777;
+  font-weight: 500;
+}
+
+.postMetaCategory {
+  display: inline-flex;
+  align-items: center;
+  margin: 3px 4px;
+}
+
+
+/* La clase postCategoryLink ya existía parcialmente;
+   esta versión la deja alineada con el estilo chip corporativo. */
+
+.postCategoryLink {
+  width: fit-content;
+  min-height: 24px;
+  padding: 5px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #dedede;
+  border-radius: 25px;
+  background: #ed1b24;
+  color: #dedede;
+  font-family: NeutraTextAltBold, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   15. Imagen destacada del post
+   ========================================================= */
+
+.postFeaturedImageContainer {
+  max-width: 980px;
+  margin: 36px auto 46px;
+  overflow: hidden;
+  border-radius: 26px;
+  background: #f2efeb;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.13);
+}
+
+.postFeaturedImage {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 48vw, 560px);
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   16. Cuerpo del artículo
+   ========================================================= */
+
+.postBody {
+  max-width: 820px;
+  margin: 0 auto;
+  color: #444444;
+  font-size: 1.08rem;
+  line-height: 1.82;
+  font-weight: 400;
+}
+
+.wordpressContentLink {
+  display: block;
+  overflow: hidden;
+  border-radius: 22px;
+  color: #ed1b24;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 5px 10px;
+  padding-right: 10px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.085);
+}
+
+
+/* =========================================================
+   17. Imágenes internas de WordPress
+   ========================================================= */
+
+.wp-block-image {
+  max-width: 860px;
+  margin: 34px auto;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #ffffff;
+}
+
+.size-large {
+  width: 100%;
+}
+
+.is-resized {
+  max-width: 100%;
+}
+
+.alignleft {
+  max-width: 46%;
+  margin: 8px 28px 18px 0;
+  float: left;
+}
+
+.alignright {
+  max-width: 46%;
+  margin: 8px 0 18px 28px;
+  float: right;
+}
+
+
+/* =========================================================
+   18. Galerías de WordPress
+   ========================================================= */
+
+.wp-block-gallery,
+.has-nested-images,
+.columns-default {
+  width: 100%;
+  max-width: 920px;
+  margin: 42px auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  clear: both;
+}
+
+.is-cropped {
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   19. Imágenes específicas detectadas en esta página
+   Nota: WordPress genera estos IDs por imagen.
+   Si cambian los posts, pueden aparecer otros wp-image-XXXX.
+   ========================================================= */
+
+.wp-image-2329,
+.wp-image-2330,
+.wp-image-2451 {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+}
+
+
+/* =========================================================
+   20. Ajustes responsive del detalle de post
+   ========================================================= */
+
+@media screen and (max-width: 64em) {
+  .postFlex {
+    padding: 32px 20px 60px;
+  }
+
+  .postContainer {
+    padding: 36px 30px 48px;
+    border-radius: 24px;
+  }
+
+  .postFeaturedImage {
+    height: clamp(260px, 52vw, 440px);
+  }
+
+  .postBody {
+    font-size: 1.03rem;
+  }
+
+  .alignleft,
+  .alignright {
+    max-width: 100%;
+    margin: 30px auto;
+    float: none;
+  }
+
+  .wp-block-gallery,
+  .has-nested-images,
+  .columns-default {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .breadcrumbContainer {
+    padding: 18px 14px 8px;
+    font-size: 0.8rem;
+  }
+
+  .postFlex {
+    padding: 24px 14px 46px;
+  }
+
+  .postContainer {
+    padding: 28px 18px 38px;
+    border-radius: 20px;
+  }
+
+  .postTitle {
+    font-size: 2rem;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+  }
+
+  .postMeta {
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 0.84rem;
+  }
+
+  .postMetaCategory {
+    margin-left: 0;
+  }
+
+  .postCategoryLink {
+    font-size: 0.7rem;
+  }
+
+  .postFeaturedImageContainer {
+    margin: 28px auto 36px;
+    border-radius: 20px;
+  }
+
+  .postFeaturedImage {
+    height: 250px;
+  }
+
+  .postBody {
+    font-size: 1rem;
+    line-height: 1.76;
+  }
+
+  .wp-block-image,
+  .wordpressContentLink,
+  .wp-image-2329,
+  .wp-image-2330,
+  .wp-image-2451 {
+    border-radius: 18px;
+  }
+
+  .wp-block-gallery,
+  .has-nested-images,
+  .columns-default {
+    gap: 18px;
+    margin: 32px auto;
+  }
+}
