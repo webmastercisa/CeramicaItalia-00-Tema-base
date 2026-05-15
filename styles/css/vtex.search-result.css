@@ -394,6 +394,13 @@
   font-family: 'NeutraTextAltBold';
 }
 
+.totalProductsMessage--mundialTotalProducts
+{
+  font-size: 14px;
+  color: #666666;
+  font-weight: 500;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .orderByText {

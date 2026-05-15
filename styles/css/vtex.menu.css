@@ -42,8 +42,10 @@
   min-width: 148px;
 }
 
-.submenuWrapper :global(.vtex-menu-2-x-menuItem--isOpen):hover {
-  background: linear-gradient(90deg, rgba(255, 253, 253, 1) 0%, rgba(205, 203, 203, 1) 100%);
+.submenuWrapper :global(.vtex-menu-2-x-menuItem--isOpen):hover 
+{
+  /*background: linear-gradient(90deg, rgba(255, 253, 253, 1) 0%, rgba(205, 203, 203, 1) 100%);   igarcia */
+  color: #555555 !important;
 }
 
 .submenuWrapper :global(.vtex-menu-2-x-menuItem--isOpen):hover .styledLinkContent {
@@ -51,6 +53,25 @@
   /* font-size: 16.05px !important; */
   font-weight: bold !important;
   transition: all .2s ease !important;
+}
+
+/* Usamos el handle directo del submenú para forzar la altura */
+.submenuAccordion--menu-description-pdp {
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* Para el contenedor de la descripción del producto */
+/* Nota: Se aplica al componente de store-components */
+:global(.vtex-store-components-3-x-container) {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Si necesitas que el contenedor del menú sea flexible cuando esté abierto */
+.menuItem--isOpen :global(.vtex-menu-2-x-submenuAccordion) {
+  height: auto !important;
 }
 
 /* .submenuWrapper :global(.vtex-menu-2-x-menuItem) .styledLinkContent{

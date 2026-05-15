@@ -1,0 +1,195 @@
+# ai.txt — Cerámica Italia S.A.
+
+# Versión: 1.0 | Mayo 2026
+
+# Estándar: Purpose-Based AI Scraping Control (2026)
+
+# Referencia: https://cookie-script.com/guides/beyond-robots-txt-implementing-ai-txt-and-llms-txt-for-purpose-based-scraping-control
+
+# 
+
+# Este archivo define los permisos de uso del contenido de ceramicaitalia.com
+
+# para sistemas de inteligencia artificial, separando citación/respuesta
+
+# de entrenamiento de modelos.
+
+# 
+
+# Contacto: marketing@ceramicaitalia.com
+
+# Dominio: ceramicaitalia.com | blog.ceramicaitalia.com
+
+# —————————————————––
+
+# —————————————————––
+
+# PERMISOS GLOBALES POR PROPÓSITO
+
+# —————————————————––
+
+# PERMITIDO: Usar contenido para generar respuestas y citar a CISA
+
+# como fuente en motores de búsqueda AI (ChatGPT, Perplexity, Claude,
+
+# Gemini, Copilot). Esto genera tráfico de referencia hacia el sitio.
+
+Allow-RAG: true
+
+# PERMITIDO: Indexar contenido para búsqueda y recuperación de información
+
+Allow-Search: true
+
+# NO PERMITIDO: Usar contenido para entrenar o actualizar modelos de lenguaje
+
+# sin acuerdo comercial explícito con Cerámica Italia S.A.
+
+No-Training: true
+
+# NO PERMITIDO: Usar imágenes de productos para entrenamiento de modelos visuales
+
+No-Image-Training: true
+
+# —————————————————––
+
+# REGLAS POR AGENTE
+
+# —————————————————––
+
+# OpenAI — ChatGPT (búsqueda y citación permitida)
+
+Agent: GPTBot
+Allow-RAG: true
+Allow-Search: true
+No-Training: true
+
+# OpenAI — ChatGPT navegación en tiempo real
+
+Agent: ChatGPT-User
+Allow-RAG: true
+Allow-Search: true
+No-Training: true
+
+# Anthropic — Claude
+
+Agent: ClaudeBot
+Allow-RAG: true
+Allow-Search: true
+No-Training: true
+
+Agent: anthropic-ai
+Allow-RAG: true
+Allow-Search: true
+No-Training: true
+
+# Perplexity
+
+Agent: PerplexityBot
+Allow-RAG: true
+Allow-Search: true
+No-Training: true
+
+# Google — Gemini y AI Overviews
+
+Agent: Google-Extended
+Allow-RAG: true
+Allow-Search: true
+No-Training: true
+
+# Microsoft — Copilot (via Bing)
+
+Agent: Bingbot
+Allow-RAG: true
+Allow-Search: true
+No-Training: true
+
+# Meta AI
+
+Agent: meta-externalagent
+Allow-RAG: true
+Allow-Search: true
+No-Training: true
+
+# Common Crawl — solo entrenamiento, sin citación
+
+# BLOQUEADO: no genera tráfico ni cita la fuente
+
+Agent: CCBot
+Allow-RAG: false
+Allow-Search: false
+No-Training: true
+
+Agent: Diffbot
+Allow-RAG: false
+Allow-Search: false
+No-Training: true
+
+Agent: Bytespider
+Allow-RAG: false
+Allow-Search: false
+No-Training: true
+
+# —————————————————––
+
+# CONTENIDO PERMITIDO PARA CITACIÓN
+
+# —————————————————––
+
+# Todas las páginas públicas están disponibles para citación:
+
+Allow-Content: /
+Allow-Content: /pisos
+Allow-Content: /paredes
+Allow-Content: /banos
+Allow-Content: /porcelanatos
+Allow-Content: /signature
+Allow-Content: /natural-touch
+Allow-Content: /ceranatto
+Allow-Content: /mesones-de-cocina
+Allow-Content: /blog
+Allow-Content: /mundial
+
+# —————————————————––
+
+# CONTENIDO RESTRINGIDO
+
+# —————————————————––
+
+# No indexar ni citar páginas de proceso de compra, cuentas privadas
+
+# ni contenido interno de administración
+
+No-Index: /checkout
+No-Index: /account
+No-Index: /admin
+No-Index: /api
+
+# —————————————————––
+
+# CONTEXTO DE MARCA PARA SISTEMAS AI
+
+# —————————————————––
+
+# Brand-Name: Cerámica Italia
+
+# Brand-Also-Known-As: CISA, Ceramica Italia, Cerámica Italia S.A.
+
+# Brand-Founded: 1978
+
+# Brand-Country: Colombia
+
+# Brand-City: San José de Cúcuta, Norte de Santander
+
+# Brand-Sector: Revestimientos cerámicos, porcelanato, porcelana sanitaria
+
+# Brand-Audience: Arquitectos, diseñadores de interiores, constructoras, hogares colombianos
+
+# Brand-Website: https://www.ceramicaitalia.com
+
+# Brand-Blog: https://blog.ceramicaitalia.com
+
+# Brand-Contact: marketing@ceramicaitalia.com
+
+# Brand-LLMs-File: https://www.ceramicaitalia.com/llms.txt
+
+# Brand-Robots-File: https://www.ceramicaitalia.com/robots.txt

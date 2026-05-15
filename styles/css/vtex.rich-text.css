@@ -2891,3 +2891,159 @@ margin: 0px 0px 10px 0px;
   opacity: 1;
   margin-bottom: 40px;
 }
+
+
+/* ================================================================================================ */
+/* =================================  Clases para mundial ========================================= */
+/* ================================================================================================ */
+
+.paragraph--mundialHeroEyebrow
+{
+  color: #ED1B24;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: inline-block;
+  border: 1px solid rgba(237, 27, 36, 0.35);
+  padding: 8px 20px;
+  border-radius: 24px;
+}
+
+.headingLevel1--mundialHeroTitle 
+{
+  font-size: clamp(42px, 8vw, 88px);
+  font-weight: 900;
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.paragraph--mundialHeroSubtitle
+{
+  font-size: 17px;
+  color: #666666;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+.paragraph--mundialStatText
+{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.strong--mundialStatText
+{
+  display: block;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.paragraph--mundialLabel
+{
+  color: #ED1B24;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.headingLevel2--mundialColeccionTitle
+{
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.paragraph--mundialColeccionSub
+{
+  font-size: 15px;
+  color: #888888;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.headingLevel2--mundialUrgenciaTitle
+{
+  font-size: clamp(24px, 4vw, 52px);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+.paragraph--mundialUrgenciaSub
+{
+  font-size: 30px;
+  color: #cccccc;
+  /*max-width: 600px;*/
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.paragraph--mundialChip
+{
+  font-size: 13px;
+  color: #cccccc;
+}
+
+.headingLevel2--mundialCtaTitle
+{
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.container--mundialCtaSub
+{
+  background-color: #03034E;
+  text-align: center;
+}
+.paragraph--mundialCtaSub
+{
+  font-size: 26px;
+  color: #666666;
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.paragraph--mundialNotFoundText
+{
+  font-size: 18px;
+  color: #999999;
+  font-weight: 500;
+}
+
+.container--mundialChip 
+{
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 8px 18px;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) 
+{
+  .strong--mundialStatText
+  {
+    font-size: 30px;
+  }
+  .paragraph--mundialStatText
+  {
+    font-size: 12px;
+  }
+}

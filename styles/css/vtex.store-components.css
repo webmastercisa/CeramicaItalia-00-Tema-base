@@ -27,6 +27,12 @@
   font-size: 26px;
 }
 
+.showMoreButton
+{
+  visibility:hidden;
+  display: none;
+}
+
 .inputGroup {
   padding-bottom: 4px;
   display: flex;
@@ -1512,6 +1518,12 @@ width: 100%;
   {
     width: 99vw;
   }
+  .fadeBottom
+  {
+    visibility:hidden !important;
+    display: none !important;
+    height: 2px;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px)                /* Mobile (hasta 767px) Precticamente todos */
 {
@@ -1525,6 +1537,14 @@ width: 100%;
   {
     width: 99vw;
   }
+
+  .fadeBottom
+  {
+    visibility:hidden !important;
+    display: none !important;
+    height: 2px;
+  }
+
 }
 @media (min-width: 768px) and (max-width: 991px)                /* Tablet/Mobile grande - 768px a 991px */
 {

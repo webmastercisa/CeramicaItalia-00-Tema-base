@@ -108,7 +108,8 @@
             "tab-list.item#2-7",
             "tab-list.item#2-8",
             "tab-list.item#2-9",
-            "tab-list.item#2-10"
+            "tab-list.item#2-10",
+            "tab-list.item#2-11"
         ],
         "props": {
             "blockClass": "tab-list-garantia2"
@@ -188,7 +189,14 @@
     "tab-list.item#2-10": {
         "props": {
             "tabId": "item2-10",
-            "label": "10 Recomendaciones de almacenamiento",
+            "label": "10. Garantía Mapei",
+            "blockClass": "item-garantia2"
+        }
+    },
+    "tab-list.item#2-11": {
+        "props": {
+            "tabId": "item2-11",
+            "label": "11. Recomendaciones de almacenamiento",
             "blockClass": "item-garantia2"
         }
     },
@@ -204,7 +212,8 @@
             "tab-content.item#2-7",
             "tab-content.item#2-8",
             "tab-content.item#2-9",
-            "tab-content.item#2-10"
+            "tab-content.item#2-10",
+            "tab-content.item#2-11"
         ],
         "props": {
             "blockClass": "tab-content-garantia2"
@@ -296,6 +305,14 @@
         }
     },
 
+    "tab-content.item#2-11": {
+        "children": [
+            "flex-layout.col#content-tab2-item11"
+        ],
+        "props": {
+            "tabId": "item2-11"
+        }
+    },
     // contenido tab 1
     "flex-layout.col#content-tab2-item1": {
         "children": [
@@ -1068,7 +1085,7 @@
     }
 },
 
-// contenido tab 9s
+// contenido tab 10s
 "flex-layout.col#content-tab2-item10": {
     "children": [
         "flex-layout.row#img-item10-tab2",
@@ -1088,29 +1105,30 @@
     "props": {
       "blockClass": ["img-item1-tab2"]
     }
-  },
+},
 
-  "image#img-item10-tab2": {
-      "props": {
-               "src": "arquivos/banner-tap-garantia.png",
-               "alt": "alt",
-               "blockClass": "img-item1-tab2"
+"image#img-item10-tab2": {
+    "props": {
+            "src": "arquivos/banner-tap-garantia.png",
+            "alt": "alt",
+            "blockClass": "img-item1-tab2"
           //      "link": {
           //              "url": "url",
           //              "openNewTab": false,
           //              "title": "title"
           // }
-      }
-  },
+    }
+},
 
 "rich-text#title-item10-tab2": {
     "props": {
-        "text": "Recomendaciones de almacenamiento",
+        "text": "Garantía de productos Mapei",
         "blockClass": "title-item1-tab2",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
     }
 },
+
 "rich-text#description-item10-tab2": {
     "props": {
         "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®.<br>Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto..",
@@ -1119,6 +1137,7 @@
         "textPosition": "CENTER"
     }
 },
+
 "flex-layout.row#descarga-item10-tab2": {
     "children": [
         "rich-text#text-descarga-item10-tab2",
@@ -1132,6 +1151,7 @@
         "preserveLayoutOnMobile": true
     }
 },
+
 "rich-text#text-descarga-item10-tab2": {
     "props": {
         "text": "[Descargar](#)",
@@ -1140,6 +1160,7 @@
         "textPosition": "CENTER"
     }
 },
+
 "image#img-descarga-item10-tab2": {
     "props": {
         "src": "assets/ico/descarga-ico.svg",
@@ -1153,6 +1174,100 @@
         }
     }
 },
+
+
+//================== contenido tab 11s ======================
+"flex-layout.col#content-tab2-item11": {
+    "children": [
+        "flex-layout.row#img-item11-tab2",
+        "rich-text#title-item11-tab2",
+        "rich-text#description-item11-tab2",
+        "flex-layout.row#descarga-item11-tab2"
+    ],
+    "props": {
+        "blockClass": [
+            "content-tab2-item1"
+        ]
+    }
+},
+
+"flex-layout.row#img-item11-tab2": {
+    "children": ["image#img-item11-tab2"],
+    "props": {
+      "blockClass": ["img-item1-tab2"]
+    }
+},
+
+"image#img-item11-tab2": {
+    "props": {
+            "src": "arquivos/banner-tap-garantia.png",
+            "alt": "alt",
+            "blockClass": "img-item1-tab2"
+          //      "link": {
+          //              "url": "url",
+          //              "openNewTab": false,
+          //              "title": "title"
+          // }
+    }
+},
+
+"rich-text#title-item11-tab2": {
+    "props": {
+        "text": "Recomendaciones de almacenamiento",
+        "blockClass": "title-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+
+"rich-text#description-item11-tab2": {
+    "props": {
+        "text": "Usted ha tomado la mejor decisión al elegir productos de la marca CERÁMICA ITALIA®.<br>Con el propósito de dar validez a su garantía le solicitamos tenga en cuenta la siguiente apreciación en el archivo adjunto..",
+        "blockClass": "description-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+
+"flex-layout.row#descarga-item11-tab2": {
+    "children": [
+        "rich-text#text-descarga-item11-tab2",
+        "image#img-descarga-item11-tab2"
+    ],
+    "props": {
+        "blockClass": [
+            "descarga-item1-tab2"
+        ],
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true
+    }
+},
+
+"rich-text#text-descarga-item11-tab2": {
+    "props": {
+        "text": "[Descargar](#)",
+        "blockClass": "text-descarga-item1-tab2",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+    }
+},
+
+"image#img-descarga-item11-tab2": {
+    "props": {
+        "src": "assets/ico/descarga-ico.svg",
+        "alt": "alt",
+        //  "height": "hight",
+        "blockClass": "img-descarga-item1-tab2",
+        "link": {
+            "url": "#",
+            "openNewTab": false,
+            "title": "title"
+        }
+    }
+},
+//================== Fin contenido tab 11s ======================
+
+
 
 
 
