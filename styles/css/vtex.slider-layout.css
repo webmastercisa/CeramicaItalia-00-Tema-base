@@ -90,7 +90,7 @@
 }
 
 .paginationDot--carousel--isActive {
-  width: 40px !important;
+  width: 25px !important;
   background-color: #ED1B24;
   height: 4px !important;
   border-radius: 10px;
@@ -1450,9 +1450,23 @@ margin: 0px;
 
 }
 
+@media (max-width: 767px) {
+  .sliderArrows--carousel
+  {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}
+
 @media (max-width: 450px) {
   .infoCardContainer--optionService-slider {
     margin: 104px 0 10px 0;
+  }
+
+  .sliderArrows--carousel
+  {
+    visibility: hidden !important;
+    display: none !important;
   }
 }
 
@@ -1469,8 +1483,6 @@ margin: 0px;
     margin: 3px 1px !important;
     padding: 5px !important;
   }
-
-
 
   .slide--shelf-temporadaCocinas-mobile--visible :global(.vtex-button__label) {
     padding: 0;
@@ -1505,8 +1517,12 @@ margin: 0px;
     max-width: 100vw;
     width: 95vw !important;
   }
-
-
+  
+  .sliderArrows--carousel
+  {
+    visibility: hidden !important;
+    display: none !important;
+  }
 
 }
 
@@ -1525,6 +1541,13 @@ margin: 0px;
     max-width: 92vw;
     margin: 0px auto;
   }
+  
+  .sliderArrows--carousel
+  {
+    visibility: hidden !important;
+    display: none !important;
+  }
+
 }
 
 
@@ -1557,6 +1580,12 @@ margin: 0px;
   .slide--slider-shelfPicture :global(.vtex-stack-layout-0-x-stackItem--wishlistHeart) {
     left: 75vw !important;
     top: 30px !important;
+  }
+
+  .sliderArrows--carousel
+  {
+    visibility: hidden !important;
+    display: none !important;
   }
 
 }

@@ -124,7 +124,8 @@
   "store.custom#template-tallas":
   {
     "path": "/template-tallas",
-    "title": "Plantilla Tallas"
+    "title": "Plantilla Tallas",
+    "blockId": "store.custom#template-tallas"
   },
 
   "store.custom#template-tallas-pdp":
@@ -144,8 +145,23 @@
   {
     "path": "/tpl-custom-mundial",
     "title": "Plantilla personalizada mundial 2026",
-    "blockId": "store.custom#tpl-custom-mundial"
-    
+    "blockId": "store.custom#tpl-custom-mundial"    
+  },
+  
+  "store.custom#tpl-ceranatto":
+  {
+    "path": "/tpl-ceranatto",
+    "title": "Ceranatto® | Revestimiento cerámico de alto desempeño",
+    "blockId": "store.custom#tpl-ceranatto",
+    "isSitemapEntry": true
+  },
+  
+  "store.custom#tpl-supermaestro":
+  {
+    "path": "/tpl-supermaestro",
+    "title": "Súper Maestros | Programa de beneficios para maestros instaladores",
+    "blockId": "store.custom#tpl-supermaestro",
+    "isSitemapEntry": true
   },
 
   "store.custom#tpl-categoria": { "path": "/tpl-categoria/:slug" }

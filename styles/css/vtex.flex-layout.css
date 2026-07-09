@@ -28,6 +28,11 @@
   width: fit-content;
 }
 
+.flexRow--titleh1oculto
+{
+  height: 1px;
+}
+
 .flexRow--btnWhatsApp-layout {
   position: fixed;
   bottom: 30px;

@@ -1,0 +1,103 @@
+/* ============================================================
+ * TPL-CERANATTO · Botones y enlaces (vtex.store-link)
+ * Réplica de .btn / .btn-primary / .btn-ghost / .btn-dark-ghost
+ * del diseño. Scoped a blockClass "ceranatto*".
+ * ============================================================ */
+
+/* Base pill compartida */
+.link--ceranattoBtnPrimary,
+.link--ceranattoBtnGhost,
+.link--ceranattoBtnDarkGhost,
+.link--ceranattoNavBtn {
+  display: inline-block;
+  padding: 0.9rem 1.75rem;
+  border-radius: 999px;
+  font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Primario: clay */
+.link--ceranattoBtnPrimary,
+.link--ceranattoNavBtn {
+  background-color: #ED1B24;
+  color: #faf7f1;
+  box-shadow: 0 10px 30px -10px rgba(181, 98, 63, 0.4);
+}
+
+.link--ceranattoBtnPrimary:hover,
+.link--ceranattoNavBtn:hover {
+  transform: scale(1.02);
+  background-color: #faf7f1;
+  color: #ED1B24;
+  /*color: #faf7f1;*/
+}
+
+/* CTA de la nav: más compacto */
+.link--ceranattoNavBtn {
+  padding: 0.6rem 1.25rem;
+  box-shadow: none;
+}
+
+/* Ghost claro (hero) */
+.link--ceranattoBtnGhost {
+  border-color: rgba(30, 24, 16, 0.2);
+  background-color: rgba(250, 247, 241, 0.6);
+  color: #1e1810;
+}
+
+.link--ceranattoBtnGhost:hover {
+  background-color: #1e1810;
+  color: #faf7f1;
+}
+
+/* Ghost oscuro (caja CTA final) */
+.link--ceranattoBtnDarkGhost {
+  border-color: rgba(250, 247, 241, 0.25);
+  background-color: transparent;
+  color: #faf7f1;
+}
+
+.link--ceranattoBtnDarkGhost:hover {
+  background-color: #faf7f1;
+  color: #1e1810;
+}
+
+/* Enlaces de la nav interna */
+.link--ceranattoNavLink {
+  font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(42, 33, 24, 0.8);
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.link--ceranattoNavLink:hover {
+  color: #ED1B24;
+}
+
+/* Los links con displayMode "button" renderizan un label interno */
+.link--ceranattoBtnPrimary .label--ceranattoBtnPrimary,
+.link--ceranattoBtnGhost .label--ceranattoBtnGhost,
+.link--ceranattoBtnDarkGhost .label--ceranattoBtnDarkGhost,
+.link--ceranattoNavBtn .label--ceranattoNavBtn {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/* Responsive de la nav interna, igual que el diseño: bajo 768px solo
+   queda el logo (los enlaces y el CTA aparecen desde min-width:768px) */
+@media (max-width: 47.99rem) {
+  .link--ceranattoNavLink,
+  .link--ceranattoNavBtn {
+    display: none;
+  }
+}

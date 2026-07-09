@@ -211,6 +211,13 @@
   text-decoration: underline rgb(168, 167, 167) 3px;
 }
 
+.headingLevel1--titleh1oculto
+{
+  display: none;
+  padding: 1px 1px 1px 1px;
+  color: #E52024;
+}
+
 /* Seasons Products Section -Temporada de cocinas*/
 .headingLevel1--titleSesonProducts,
 .headingLevel2--titleSesonProducts,

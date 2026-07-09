@@ -1,0 +1,374 @@
+/* ============================================================
+ * TPL-CERANATTO · Layout (vtex.flex-layout)
+ * Todos los selectores van scoped a blockClass "ceranatto*"
+ * exclusivos de esta plantilla: no afectan otras páginas.
+ *
+ * Paleta (réplica del diseño Ceranatto/index.html):
+ *   --crn-bg        #faf7f1   fondo crema
+ *   --crn-fg        #2a2118   texto base
+ *   --crn-ink       #1e1810   tinta oscura (headings / secciones dark)
+ *   --crn-muted     #7a6b5c   texto atenuado
+ *   --crn-clay      #ED1B24   rojo CISA (acento de marca)
+ *   --crn-border    #e2d9c9   bordes
+ *   --crn-secondary #f0e9dc   fondo secundario
+ * Tipografía: serif editorial (Playfair Display con fallback a
+ * Georgia) para display; sans (Inter con fallback de sistema)
+ * para texto. Ver docs/TPL-CERANATTO.md para cargar las fuentes
+ * reales vía assets/fonts + styles/configs/font-faces.css.
+ * ============================================================ */
+
+/* Variables heredables: se declaran en cada fila raíz de la landing */
+.flexRow--ceranattoNav,
+.flexRow--ceranattoHero,
+.flexRow--ceranattoTrust,
+.flexRow--ceranattoQueEs,
+.flexRow--ceranattoPilares,
+.flexRow--ceranattoComparativa,
+.flexRow--ceranattoPeso,
+.flexRow--ceranattoAcabados,
+.flexRow--ceranattoFormatos,
+.flexRow--ceranattoSegmentos,
+.flexRow--ceranattoFaq,
+.flexRow--ceranattoCta {
+  --crn-bg: #faf7f1;
+  --crn-bg2: #fae9e9;
+  --crn-fg: #2a2118;
+  --crn-ink: #1e1810;
+  --crn-muted: #7a6b5c;
+  --crn-clay: #ED1B24;
+  --crn-border: #fcd3d3;
+  --crn-secondary: #f0e9dc;
+  --crn-font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --crn-font-sans: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--crn-bg);
+  color: var(--crn-fg);
+  font-family: var(--crn-font-sans);
+  line-height: 1.55;
+}
+
+/* Compensa el header sticky del tema al navegar por anclas (#que-es, #faq...) */
+.flexRow--ceranattoQueEs,
+.flexRow--ceranattoPilares,
+.flexRow--ceranattoComparativa,
+.flexRow--ceranattoAcabados,
+.flexRow--ceranattoFormatos,
+.flexRow--ceranattoFaq,
+.flexRow--ceranattoCta {
+  scroll-margin-top: 140px;
+}
+
+/* Contenedor tipo .container del diseño (max 1200px) para el contenido
+   de cada sección; el color de fondo llega al borde por fullWidth */
+.flexRowContent--ceranattoNav,
+.flexRowContent--ceranattoHero,
+.flexRowContent--ceranattoTrust,
+.flexRowContent--ceranattoQueEs,
+.flexRowContent--ceranattoPilares,
+.flexRowContent--ceranattoComparativa,
+.flexRowContent--ceranattoPeso,
+.flexRowContent--ceranattoAcabados,
+.flexRowContent--ceranattoFormatos,
+.flexRowContent--ceranattoSegmentos,
+.flexRowContent--ceranattoFaq,
+.flexRowContent--ceranattoCta {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Padding vertical de sección (section.pad del diseño), mobile-first */
+.flexRow--ceranattoQueEs .flexRowContent--ceranattoQueEs,
+.flexRow--ceranattoPilares .flexRowContent--ceranattoPilares,
+.flexRow--ceranattoComparativa .flexRowContent--ceranattoComparativa,
+.flexRow--ceranattoPeso .flexRowContent--ceranattoPeso,
+.flexRow--ceranattoAcabados .flexRowContent--ceranattoAcabados,
+.flexRow--ceranattoFormatos .flexRowContent--ceranattoFormatos,
+.flexRow--ceranattoSegmentos .flexRowContent--ceranattoSegmentos,
+.flexRow--ceranattoFaq .flexRowContent--ceranattoFaq,
+.flexRow--ceranattoCta .flexRowContent--ceranattoCta {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 64rem) {
+  .flexRow--ceranattoQueEs .flexRowContent--ceranattoQueEs,
+  .flexRow--ceranattoPilares .flexRowContent--ceranattoPilares,
+  .flexRow--ceranattoComparativa .flexRowContent--ceranattoComparativa,
+  .flexRow--ceranattoPeso .flexRowContent--ceranattoPeso,
+  .flexRow--ceranattoAcabados .flexRowContent--ceranattoAcabados,
+  .flexRow--ceranattoFormatos .flexRowContent--ceranattoFormatos,
+  .flexRow--ceranattoSegmentos .flexRowContent--ceranattoSegmentos,
+  .flexRow--ceranattoFaq .flexRowContent--ceranattoFaq,
+  .flexRow--ceranattoCta .flexRowContent--ceranattoCta {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* ─────────────────── NAV interna ─────────────────── */
+
+.flexRow--ceranattoNav {
+  background-color: rgba(250, 247, 241, 0.85);
+  border-bottom: 1px solid rgba(226, 217, 201, 0.6);
+}
+
+/* Doble clase para ganar a la regla global del tema
+   ".flexRowContent { justify-content: center }" (vtex.flex-layout.css raíz) */
+.flexRow--ceranattoNav .flexRowContent--ceranattoNav {
+  justify-content: space-between;
+  align-items: center;
+  min-height: 64px;
+  gap: 1rem;
+}
+/* La ocultación responsive de enlaces/CTA vive en tpl.ceranatto/vtex.store-link.css */
+
+/* ─────────────────── HERO ─────────────────── */
+
+.flexRow--ceranattoHero {
+  /* Gradiente de legibilidad + foto; si la imagen no resuelve,
+     queda el gradiente sobre el fondo crema (degradación segura).
+     Alternativa File Manager: url("/arquivos/hero-ceranatto.jpg") */
+  background-image: linear-gradient(
+      to right,
+      #faf7f1 0%,
+      rgba(250, 247, 241, 0.85) 45%,
+      rgba(250, 247, 241, 0.2) 100%
+    ),
+    url("assets/imgs/ceranatto/hero-ceranatto.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.flexRowContent--ceranattoHero {
+  /* Diseño: 86vh. El tema aplica zoom:85% global sobre .vtex-store__template
+     y las unidades vh no se escalan con zoom: 101vh ≈ 86vh visuales.
+     Si algún día se retira el zoom global, volver a 86vh. */
+  min-height: 101vh;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.flexCol--ceranattoHeroCol {
+  justify-content: center;
+}
+
+/* Doble clase: gana a ".flexRowContent { justify-content: center }" del raíz */
+.flexRow--ceranattoHeroButtons .flexRowContent--ceranattoHeroButtons {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.flexRow--ceranattoHeroStats {
+  max-width: 32rem;
+  margin-top: 3.5rem;
+  border-top: 1px solid rgba(226, 217, 201, 0.6);
+}
+
+.flexRowContent--ceranattoHeroStats {
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ─────────────────── TRUST STRIP ─────────────────── */
+
+.flexRow--ceranattoTrust {
+  background-color: rgba(240, 233, 220, 0.6);
+  border-top: 1px solid var(--crn-border);
+  border-bottom: 1px solid var(--crn-border);
+}
+
+.flexRowContent--ceranattoTrust {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 2.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* ─────────────────── ¿QUÉ ES? ─────────────────── */
+
+.flexRowContent--ceranattoQueEs {
+  align-items: center;
+}
+
+/* Figura con caption superpuesto (patrón figure/figcaption del diseño).
+   La <img> se estiliza por su handle imageElement en
+   tpl.ceranatto/vtex.store-components.css (el builder no admite
+   selectores de elemento como "img"). */
+.flexCol--ceranattoFigure {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flexCol--ceranattoFigure .flexColChild--ceranattoFigure:first-child {
+  width: 100%;
+  height: 100%;
+}
+
+/* ─────────────────── PILARES ─────────────────── */
+
+.flexRow--ceranattoPilares {
+  background-color: rgba(240, 233, 220, 0.5);
+}
+
+/* Grilla con juntas de 1px (bordes del diseño) */
+.flexRow--ceranattoPilaresGrid {
+  margin-top: 1px;
+}
+
+.flexRow--ceranattoPilaresGrid1 {
+  margin-top: 3.5rem;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+.flexRow--ceranattoPilaresGrid2 {
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
+}
+
+.flexRowContent--ceranattoPilaresGrid {
+  background-color: rgba(226, 217, 201, 0.7);
+  gap: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flexCol--ceranattoPillar {
+  background-color: var(--crn-bg);
+  padding: 2rem;
+  height: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.flexCol--ceranattoPillar:hover {
+  background-color: rgba(240, 220, 220, 0.6);
+}
+
+/* ─────────────────── PESO (sección oscura) ─────────────────── */
+
+.flexRow--ceranattoPeso {
+  background-color: var(--crn-ink);
+  color: var(--crn-bg);
+}
+
+.flexRowContent--ceranattoPesoGrid {
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* La separación vertical entre filas de KPIs la aporta el prop
+   rowGap:4 del flex-layout.col#ceranatto-peso-kpis (el builder no
+   admite el combinador "+" entre selectores) */
+.flexRowContent--ceranattoKpiFila {
+  gap: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ─────────────────── ACABADOS ─────────────────── */
+
+.flexRow--ceranattoAcabadosGrid {
+  margin-top: 3.5rem;
+}
+
+.flexRowContent--ceranattoAcabadosGrid {
+  gap: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flexCol--ceranattoFinish {
+  border: 1px solid var(--crn-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--crn-bg);
+  height: 100%;
+}
+
+/* Zoom al hover: la imagen es de otra app (store-components), se apunta
+   a su handle compilado vía :global scoped bajo el blockClass propio
+   (mismo patrón que vtex.flex-layout.css raíz línea ~1296). El resto de
+   estilos de la imagen vive en tpl.ceranatto/vtex.store-components.css */
+.flexCol--ceranattoFinish:hover
+  :global(.vtex-store-components-3-x-imageElement--ceranattoFinishImg) {
+  transform: scale(1.05);
+}
+
+/* ─────────────────── FORMATOS ─────────────────── */
+
+.flexRow--ceranattoFormatos {
+  background-color: rgba(240, 233, 220, 0.5);
+}
+
+.flexRow--ceranattoFormatosGrid {
+  margin-top: 3.5rem;
+}
+
+.flexRowContent--ceranattoFormatosGrid {
+  gap: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ─────────────────── SEGMENTOS ─────────────────── */
+
+.flexRow--ceranattoSegmentosGrid {
+  margin-top: 3.5rem;
+}
+
+.flexRowContent--ceranattoSegmentosGrid {
+  gap: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ─────────────────── FAQ ─────────────────── */
+
+.flexRow--ceranattoFaq {
+  background-color: rgba(240, 233, 220, 0.5);
+}
+
+.flexRowContent--ceranattoFaq {
+  align-items: flex-start;
+}
+
+/* Cierra la lista con la línea inferior del último ítem
+   (details:last border-bottom del diseño) */
+.flexCol--ceranattoFaqLista {
+  border-bottom: 1px solid var(--crn-border);
+}
+
+/* ─────────────────── CTA FINAL ─────────────────── */
+
+.flexCol--ceranattoCtaBox {
+  background-color: var(--crn-ink);
+  color: var(--crn-bg);
+  border-radius: 24px;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 64rem) {
+  .flexCol--ceranattoCtaBox {
+    padding: 5rem 2.5rem;
+  }
+}
+
+.flexRowContent--ceranattoCtaButtons {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
