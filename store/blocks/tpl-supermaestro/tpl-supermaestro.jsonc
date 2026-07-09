@@ -1,0 +1,715 @@
+{
+  /* ============================================================
+   *  PLANTILLA — TPL-SUPERMAESTRO
+   *  Cerámica Italia · Landing programa Súper Maestros
+   *  Ruta: /tpl-supermaestro (ver store/routes.json)
+   *  Estilos: styles/css/tpl.supermaestro/*.css
+   *  Paleta: rojo #E30613 · tinta #14110F · hueso #F5F6F7
+   *  Convención: IDs "spm-*" / blockClass "spm*"
+   *  Réplica del diseño supermaestro/index.html (composición
+   *  renderizada: Nav + Hero + Programa + Galería + Registro;
+   *  el footer propio del diseño se sustituye por el del tema).
+   * ============================================================ */
+
+  "store.custom#tpl-supermaestro": {
+    "blocks": [
+      "flex-layout.row#spm-hero",
+      "flex-layout.row#spm-programa",
+      "flex-layout.row#spm-galeria",
+      "flex-layout.row#spm-registro",
+      "flex-layout.row#spm-brand"
+    ]
+  },
+
+
+  /* ══════════════════════ HERO ══════════════════════ */
+
+  "flex-layout.row#spm-hero": {
+    "title": "Súper Maestros - Hero",
+    "children": ["flex-layout.col#spm-hero-left", "flex-layout.col#spm-hero-right"],
+    "props": {
+      "blockClass": "spmHero",
+      "fullWidth": true,
+      "colGap": 5
+    }
+  },
+
+  "flex-layout.col#spm-hero-left": {
+    "children": [
+      "rich-text#spm-hero-eyebrow",
+      "rich-text#spm-hero-title",
+      "rich-text#spm-hero-sub",
+      "rich-text#spm-hero-desc",
+      "flex-layout.row#spm-hero-buttons",
+      "flex-layout.row#spm-hero-stats"
+    ],
+    "props": {
+      "blockClass": "spmHeroLeft",
+      "width": "55%",
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
+    }
+  },
+
+  /* Píldora con punto rojo (hero-eyebrow del diseño; punto vía CSS ::before) */
+  "rich-text#spm-hero-eyebrow": {
+    "props": {
+      "text": "Programa de beneficios · Cerámica Italia",
+      "blockClass": "spmHeroEyebrow"
+    }
+  },
+
+  /* El strong pasa a rojo y a línea propia ("Súper Maestro." como
+     tercera línea del diseño); la barra roja inferior va por CSS ::after */
+  "rich-text#spm-hero-title": {
+    "props": {
+      "text": "# Detrás de cada gran espacio hay un **Súper Maestro.**",
+      "blockClass": "spmHeroTitle"
+    }
+  },
+
+  "rich-text#spm-hero-sub": {
+    "props": {
+      "text": "Capacitar, reconocer, fidelizar y premiar a quienes transforman espacios.",
+      "blockClass": "spmHeroSub"
+    }
+  },
+
+  "rich-text#spm-hero-desc": {
+    "props": {
+      "text": "Súper Maestros es la comunidad de Cerámica Italia que impulsa al maestro instalador con puntos por cada compra, formación técnica, eventos y reconocimiento.",
+      "blockClass": "spmHeroDesc"
+    }
+  },
+
+  "flex-layout.row#spm-hero-buttons": {
+    "children": ["link#spm-btn-unete", "link#spm-btn-como"],
+    "props": {
+      "blockClass": "spmHeroButtons",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "link#spm-btn-unete": {
+    "props": {
+      "href": "#registro",
+      "label": "Únete al programa",
+      "blockClass": "spmBtnPrimary",
+      "displayMode": "button"
+    }
+  },
+
+  "link#spm-btn-como": {
+    "props": {
+      "href": "#programa",
+      "label": "¿Cómo funciona?",
+      "blockClass": "spmBtnGhost",
+      "displayMode": "button"
+    }
+  },
+
+  /* Stats (los contadores animados del diseño quedan como cifras estáticas) */
+  "flex-layout.row#spm-hero-stats": {
+    "children": [
+      "flex-layout.col#spm-stat-1",
+      "flex-layout.col#spm-stat-2",
+      "flex-layout.col#spm-stat-3"
+    ],
+    "props": {
+      "blockClass": "spmHeroStats",
+      "preserveLayoutOnMobile": true,
+      "colGap": 5
+    }
+  },
+
+  "flex-layout.col#spm-stat-1": {
+    "children": ["rich-text#spm-stat-1-text"],
+    "props": { "blockClass": "spmStatCol", "width": "33%" }
+  },
+  "rich-text#spm-stat-1-text": {
+    "props": { "text": "**+5.000** \n Maestros activos", "blockClass": "spmStat" }
+  },
+  "flex-layout.col#spm-stat-2": {
+    "children": ["rich-text#spm-stat-2-text"],
+    "props": { "blockClass": "spmStatCol", "width": "33%" }
+  },
+  "rich-text#spm-stat-2-text": {
+    "props": { "text": "**2M+** \n Italpuntos ganados", "blockClass": "spmStat" }
+  },
+  "flex-layout.col#spm-stat-3": {
+    "children": ["rich-text#spm-stat-3-text"],
+    "props": { "blockClass": "spmStatCol", "width": "33%" }
+  },
+  "rich-text#spm-stat-3-text": {
+    "props": { "text": "**120+** \n Eventos al año", "blockClass": "spmStat" }
+  },
+
+  /* Foto del maestro con recorte diagonal + chips flotantes de beneficios */
+  "flex-layout.col#spm-hero-right": {
+    "children": ["image#spm-hero-photo", "flex-layout.col#spm-hero-chips"],
+    "props": {
+      "blockClass": "spmHeroRight",
+      "width": "45%"
+    }
+  },
+
+  "image#spm-hero-photo": {
+    "props": {
+      "src": "assets/imgs/supermaestro/hero-maestro.jpg",
+      "alt": "Maestro instalador Súper Maestros de Cerámica Italia",
+      "blockClass": "spmHeroPhoto"
+    }
+  },
+
+  "flex-layout.col#spm-hero-chips": {
+    "children": [
+      "rich-text#spm-chip-1",
+      "rich-text#spm-chip-2",
+      "rich-text#spm-chip-3",
+      "rich-text#spm-chip-4",
+      "rich-text#spm-chip-5"
+    ],
+    "props": {
+      "blockClass": "spmHeroChips",
+      "preventVerticalStretch": true,
+      "rowGap": 3
+    }
+  },
+
+  "rich-text#spm-chip-1": {
+    "props": { "text": "**Acumula** \n Italpuntos por compra", "blockClass": ["spmHeroChip", "spmChipStar"] }
+  },
+  "rich-text#spm-chip-2": {
+    "props": { "text": "**Capacítate** \n Formación técnica", "blockClass": ["spmHeroChip", "spmChipCap"] }
+  },
+  "rich-text#spm-chip-3": {
+    "props": { "text": "**Aprende** \n Tips y recursos", "blockClass": ["spmHeroChip", "spmChipBulb"] }
+  },
+  "rich-text#spm-chip-4": {
+    "props": { "text": "**Reconocimiento** \n Que te destaca", "blockClass": ["spmHeroChip", "spmChipAward"] }
+  },
+  "rich-text#spm-chip-5": {
+    "props": { "text": "**Comunidad** \n De maestros", "blockClass": ["spmHeroChip", "spmChipPeople"] }
+  },
+
+  /* ══════════════════════ PROGRAMA (beneficios) ══════════════════════ */
+
+  "flex-layout.row#spm-programa": {
+    "title": "Súper Maestros - El programa",
+    "children": ["flex-layout.col#spm-programa-col"],
+    "props": {
+      "blockClass": "spmPrograma",
+      "fullWidth": true,
+      "htmlId": "programa"
+    }
+  },
+
+  "flex-layout.col#spm-programa-col": {
+    "children": [
+      "flex-layout.row#spm-programa-head",
+      "flex-layout.row#spm-beneficios"
+    ],
+    "props": {
+      "blockClass": "spmProgramaCol",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#spm-programa-head": {
+    "children": [
+      "flex-layout.col#spm-programa-head-izq",
+      "flex-layout.col#spm-programa-head-der"
+    ],
+    "props": {
+      "blockClass": "spmProgramaHead",
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#spm-programa-head-izq": {
+    "children": ["rich-text#spm-programa-eyebrow", "rich-text#spm-programa-title"],
+    "props": {
+      "blockClass": "spmProgramaHeadIzq",
+      "width": "50%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#spm-programa-eyebrow": {
+    "props": { "text": "El programa", "blockClass": "spmEyebrow" }
+  },
+
+  /* Acento rojo en línea (sin salto) + barra inferior por CSS ::after */
+  "rich-text#spm-programa-title": {
+    "props": {
+      "text": "## Beneficios del programa **Súper Maestros**",
+      "blockClass": "spmSectionTitle"
+    }
+  },
+
+  "flex-layout.col#spm-programa-head-der": {
+    "children": [
+      "rich-text#spm-programa-lead",
+      "rich-text#spm-programa-body-1",
+      "rich-text#spm-programa-body-2"
+    ],
+    "props": {
+      "blockClass": "spmProgramaHeadDer",
+      "width": "50%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#spm-programa-lead": {
+    "props": {
+      "text": "Una comunidad que impulsa al maestro instalador.",
+      "blockClass": "spmLead"
+    }
+  },
+
+  "rich-text#spm-programa-body-1": {
+    "props": {
+      "text": "**Súper Maestros** es el programa de beneficios de **Cerámica Italia** creado para capacitar, reconocer, fidelizar y premiar a los maestros instaladores que transforman espacios en Colombia. Acumula **Italpuntos** por cada compra y por las compras de tus referidos, y redímelos en premios, vales y experiencias exclusivas.",
+      "blockClass": "spmBody"
+    }
+  },
+
+  "rich-text#spm-programa-body-2": {
+    "props": {
+      "text": "Recibe **Ceramitips** con consejos de instalación, recomendaciones de producto y soluciones a errores frecuentes. Participa en capacitaciones técnicas, olimpiadas, retos prácticos y eventos presenciales en todo el país. Conecta con otros maestros líderes y conviértete en embajador de la marca.",
+      "blockClass": "spmBody"
+    }
+  },
+
+  /* 5 tarjetas pb-card; ícono por modificador de blockClass (CSS ::before).
+     preserveLayoutOnMobile + flex-wrap en CSS = 2 tarjetas por fila en
+     mobile (5 en desktop), sin duplicar árboles responsive. */
+  "flex-layout.row#spm-beneficios": {
+    "children": [
+      "rich-text#spm-beneficio-1",
+      "rich-text#spm-beneficio-2",
+      "rich-text#spm-beneficio-3",
+      "rich-text#spm-beneficio-4",
+      "rich-text#spm-beneficio-5"
+    ],
+    "props": {
+      "blockClass": "spmBeneficios",
+      "htmlId": "beneficios",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "rich-text#spm-beneficio-1": {
+    "props": {
+      "text": "01 · Italpuntos\n\n### Acumula puntos por compras\n\nItalpuntos por cada compra propia y por las compras de tus referidos. Redime en premios y beneficios.",
+      "blockClass": ["spmPbCard", "spmPbCardStar"]
+    }
+  },
+  "rich-text#spm-beneficio-2": {
+    "props": {
+      "text": "02 · Ceramitips\n\n### Consejos que sí le sirven\n\nTips de instalación, recomendaciones de producto, novedades y soluciones a errores frecuentes.",
+      "blockClass": ["spmPbCard", "spmPbCardBulb"]
+    }
+  },
+  "rich-text#spm-beneficio-3": {
+    "props": {
+      "text": "03 · Capacitación\n\n### Formación técnica\n\nAprende sobre producto, técnicas de instalación y tendencias de la mano de expertos.",
+      "blockClass": ["spmPbCard", "spmPbCardCap"]
+    }
+  },
+  "rich-text#spm-beneficio-4": {
+    "props": {
+      "text": "04 · Experiencias\n\n### Eventos y comunidad\n\nParticipa en olimpiadas, activaciones y encuentros con maestros líderes del país.",
+      "blockClass": ["spmPbCard", "spmPbCardPeople"]
+    }
+  },
+  "rich-text#spm-beneficio-5": {
+    "props": {
+      "text": "05 · Reconocimiento\n\n### Premios y distinción\n\nOlimpiadas Súper Maestros, retos prácticos y premios especiales que reconocen tu trabajo.",
+      "blockClass": ["spmPbCard", "spmPbCardAward"]
+    }
+  },
+
+  /* ══════════════════════ GALERÍA (sección oscura) ══════════════════════ */
+
+  "flex-layout.row#spm-galeria": {
+    "title": "Súper Maestros - Galería",
+    "children": ["flex-layout.col#spm-galeria-col"],
+    "props": {
+      "blockClass": "spmGaleria",
+      "fullWidth": true,
+      "htmlId": "galeria"
+    }
+  },
+
+  "flex-layout.col#spm-galeria-col": {
+    "children": ["flex-layout.row#spm-galeria-head", "flex-layout.row#spm-galeria-grid"],
+    "props": {
+      "blockClass": "spmGaleriaCol",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#spm-galeria-head": {
+    "children": ["flex-layout.col#spm-galeria-head-izq", "flex-layout.col#spm-galeria-head-der"],
+    "props": {
+      "blockClass": "spmGaleriaHead",
+      "colGap": 6
+    }
+  },
+
+  "flex-layout.col#spm-galeria-head-izq": {
+    "children": ["rich-text#spm-galeria-eyebrow", "rich-text#spm-galeria-title"],
+    "props": {
+      "blockClass": "spmGaleriaHeadIzq",
+      "width": "60%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#spm-galeria-eyebrow": {
+    "props": { "text": "Galería", "blockClass": ["spmEyebrow", "spmEyebrowDark"] }
+  },
+
+  "rich-text#spm-galeria-title": {
+    "props": {
+      "text": "## Así se vive **Súper Maestros**",
+      "blockClass": ["spmSectionTitle", "spmSectionTitleDark", "spmSectionTitleGaleria"]
+    }
+  },
+
+  "flex-layout.col#spm-galeria-head-der": {
+    "children": ["rich-text#spm-galeria-sub"],
+    "props": {
+      "blockClass": "spmGaleriaHeadDer",
+      "width": "40%",
+      "verticalAlign": "bottom",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#spm-galeria-sub": {
+    "props": {
+      "text": "Olimpiadas, capacitaciones, premios y comunidad. La marca también se vive presencialmente.",
+      "blockClass": "spmGaleriaSub"
+    }
+  },
+
+  /* Grilla 1.4fr + 2×2: tarjeta grande a la izquierda, 4 a la derecha */
+  "flex-layout.row#spm-galeria-grid": {
+    "children": ["flex-layout.col#spm-g-big", "flex-layout.col#spm-g-right"],
+    "props": {
+      "blockClass": "spmGaleriaGrid"
+    }
+  },
+
+  "flex-layout.col#spm-g-big": {
+    "children": ["image#spm-g-img-evento", "rich-text#spm-g-cap-evento"],
+    "props": {
+      "blockClass": ["spmGCard", "spmGCardBig"],
+      "width": "40%"
+    }
+  },
+  "image#spm-g-img-evento": {
+    "props": {
+      "src": "assets/imgs/supermaestro/exp-evento.jpg",
+      "alt": "Olimpiadas Súper Maestros: encuentro anual de instaladores",
+      "blockClass": "spmGImg"
+    }
+  },
+  "rich-text#spm-g-cap-evento": {
+    "props": { "text": "Olimpiadas \n **Encuentro anual de instaladores**", "blockClass": "spmGCap" }
+  },
+
+  "flex-layout.col#spm-g-right": {
+    "children": ["flex-layout.row#spm-g-fila-1", "flex-layout.row#spm-g-fila-2"],
+    "props": {
+      "blockClass": "spmGRight",
+      "width": "60%",
+      "rowGap": 3,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#spm-g-fila-1": {
+    "children": ["flex-layout.col#spm-g-medallas", "flex-layout.col#spm-g-presentador"],
+    "props": { "blockClass": "spmGFila" }
+  },
+  "flex-layout.row#spm-g-fila-2": {
+    "children": ["flex-layout.col#spm-g-instalacion", "flex-layout.col#spm-g-comunidad"],
+    "props": { "blockClass": "spmGFila" }
+  },
+
+  "flex-layout.col#spm-g-medallas": {
+    "children": ["image#spm-g-img-medallas", "rich-text#spm-g-cap-medallas"],
+    "props": { "blockClass": "spmGCard", "width": "50%" }
+  },
+  "image#spm-g-img-medallas": {
+    "props": {
+      "src": "assets/imgs/supermaestro/exp-medallas.jpg",
+      "alt": "Medallas y premios del programa Súper Maestros",
+      "blockClass": "spmGImg"
+    }
+  },
+  "rich-text#spm-g-cap-medallas": {
+    "props": { "text": "Premios \n **Reconocimiento Súper Maestro**", "blockClass": "spmGCap" }
+  },
+
+  "flex-layout.col#spm-g-presentador": {
+    "children": ["image#spm-g-img-presentador", "rich-text#spm-g-cap-presentador"],
+    "props": { "blockClass": "spmGCard", "width": "50%" }
+  },
+  "image#spm-g-img-presentador": {
+    "props": {
+      "src": "assets/imgs/supermaestro/exp-presentador.jpg",
+      "alt": "Activación presencial del programa Súper Maestros",
+      "blockClass": "spmGImg"
+    }
+  },
+  "rich-text#spm-g-cap-presentador": {
+    "props": { "text": "Activaciones \n **Eventos en sala y aliados**", "blockClass": "spmGCap" }
+  },
+
+  "flex-layout.col#spm-g-instalacion": {
+    "children": ["image#spm-g-img-instalacion", "rich-text#spm-g-cap-instalacion"],
+    "props": { "blockClass": "spmGCard", "width": "50%" }
+  },
+  "image#spm-g-img-instalacion": {
+    "props": {
+      "src": "assets/imgs/supermaestro/exp-instalacion.jpg",
+      "alt": "Capacitación técnica de instalación en vivo",
+      "blockClass": "spmGImg"
+    }
+  },
+  "rich-text#spm-g-cap-instalacion": {
+    "props": { "text": "Capacitación \n **Formación técnica en vivo**", "blockClass": "spmGCap" }
+  },
+
+  "flex-layout.col#spm-g-comunidad": {
+    "children": ["image#spm-g-img-comunidad", "rich-text#spm-g-cap-comunidad"],
+    "props": { "blockClass": "spmGCard", "width": "50%" }
+  },
+  "image#spm-g-img-comunidad": {
+    "props": {
+      "src": "assets/imgs/supermaestro/exp-comunidad.jpg",
+      "alt": "Comunidad de maestros instaladores Súper Maestros",
+      "blockClass": "spmGImg"
+    }
+  },
+  "rich-text#spm-g-cap-comunidad": {
+    "props": { "text": "Comunidad \n **Networking entre maestros**", "blockClass": "spmGCap" }
+  },
+
+  /* ══════════════════════ REGISTRO (Únete + formulario) ══════════════════════
+   * Formulario con vtex.store-form (patrón de forms/contacto.jsonc).
+   * PRERREQUISITO ADMIN: entidad "SM" con schema "SUPERMAESTROS" en
+   * Master Data — el JSON del schema está en docs/TPL-SUPERMAESTRO.md. */
+
+  "flex-layout.row#spm-registro": {
+    "title": "Súper Maestros - Registro",
+    "children": ["flex-layout.col#spm-registro-izq", "flex-layout.col#spm-registro-der"],
+    "props": {
+      "blockClass": "spmRegistro",
+      "fullWidth": true,
+      "htmlId": "registro",
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#spm-registro-izq": {
+    "children": [
+      "rich-text#spm-registro-eyebrow",
+      "rich-text#spm-registro-title",
+      "rich-text#spm-registro-lead",
+      "rich-text#spm-registro-desc",
+      "flex-layout.row#spm-join-pills-1",
+      "flex-layout.row#spm-join-pills-2"
+    ],
+    "props": {
+      "blockClass": "spmRegistroIzq",
+      "width": "50%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#spm-registro-eyebrow": {
+    "props": { "text": "Únete", "blockClass": ["spmEyebrow", "spmEyebrowDark"] }
+  },
+
+  /* strong = "Súper Maestros" en rojo glow y línea propia + barra CSS */
+  "rich-text#spm-registro-title": {
+    "props": {
+      "text": "## Súmate a **Súper Maestros**",
+      "blockClass": ["spmSectionTitle", "spmSectionTitleDark", "spmSectionTitleBreak"]
+    }
+  },
+
+  "rich-text#spm-registro-lead": {
+    "props": {
+      "text": "Acumula. Aprende. Conéctate. Destácate.",
+      "blockClass": "spmJoinLead"
+    }
+  },
+
+  "rich-text#spm-registro-desc": {
+    "props": {
+      "text": "Porque detrás de cada gran espacio hay un Súper Maestro. Llena el formulario y un asesor te contactará para activar tus beneficios.",
+      "blockClass": "spmJoinDesc"
+    }
+  },
+
+  "flex-layout.row#spm-join-pills-1": {
+    "children": ["rich-text#spm-pill-1", "rich-text#spm-pill-2"],
+    "props": { "blockClass": "spmJoinPills", "preserveLayoutOnMobile": true }
+  },
+  "flex-layout.row#spm-join-pills-2": {
+    "children": ["rich-text#spm-pill-3", "rich-text#spm-pill-4"],
+    "props": { "blockClass": "spmJoinPills", "preserveLayoutOnMobile": true }
+  },
+
+  "rich-text#spm-pill-1": {
+    "props": { "text": "**Gana con** \n Italpuntos", "blockClass": ["spmJoinPill", "spmChipStar"] }
+  },
+  "rich-text#spm-pill-2": {
+    "props": { "text": "**Recibe** \n Ceramitips", "blockClass": ["spmJoinPill", "spmChipBulb"] }
+  },
+  "rich-text#spm-pill-3": {
+    "props": { "text": "**Participa en** \n Experiencias", "blockClass": ["spmJoinPill", "spmChipPeople"] }
+  },
+  "rich-text#spm-pill-4": {
+    "props": { "text": "**Únete a la** \n Comunidad", "blockClass": ["spmJoinPill", "spmChipAward"] }
+  },
+
+  /* Tarjeta de formulario (form-card del diseño) */
+  "flex-layout.col#spm-registro-der": {
+    "children": [
+      "rich-text#spm-form-title",
+      "rich-text#spm-form-sub",
+      "form#spm-registro",
+      "rich-text#spm-form-consent"
+    ],
+    "props": {
+      "blockClass": "spmFormCard",
+      "width": "50%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#spm-form-title": {
+    "props": { "text": "### Activa tus beneficios", "blockClass": "spmFormTitle" }
+  },
+
+  "rich-text#spm-form-sub": {
+    "props": {
+      "text": "Llena el formulario. Te contactamos en menos de 48h.",
+      "blockClass": "spmFormSub"
+    }
+  },
+
+  "form#spm-registro": {
+    "props": {
+      "entity": "SM",
+      "schema": "SUPERMAESTRO",
+      "blockClass": "spmForm"
+    },
+    "children": [
+      "flex-layout.row#spm-form-fila-1",
+      "flex-layout.row#spm-form-fila-2",
+      "form-input.text#spm-email",
+      "form-input.dropdown#spm-sala",
+      "form-submit#spm-registro"
+    ],
+    "blocks": ["form-success#spm-registro"]
+  },
+
+  "flex-layout.row#spm-form-fila-1": {
+    "children": ["form-input.text#spm-nombre", "form-input.text#spm-cedula"],
+    "props": { "blockClass": "spmFormFila", "preserveLayoutOnMobile": true }
+  },
+
+  "flex-layout.row#spm-form-fila-2": {
+    "children": ["form-input.text#spm-telefono", "form-input.text#spm-ciudad"],
+    "props": { "blockClass": "spmFormFila", "preserveLayoutOnMobile": true }
+  },
+
+  "form-input.text#spm-nombre": {
+    "props": { "pointer": "#/properties/nombre", "placeholder": "Jean Paolo Ramírez", "label": "Nombre completo" }
+  },
+  "form-input.text#spm-cedula": {
+    "props": { "pointer": "#/properties/cedula", "placeholder": "88183304", "label": "Cédula" }
+  },
+  "form-input.text#spm-telefono": {
+    "props": { "pointer": "#/properties/telefono", "placeholder": "3115293923", "label": "Teléfono" }
+  },
+  "form-input.text#spm-ciudad": {
+    "props": { "pointer": "#/properties/ciudad", "placeholder": "Aguachica", "label": "Ciudad" }
+  },
+  "form-input.text#spm-email": {
+    "props": { "pointer": "#/properties/email", "placeholder": "jpaolors@correo.com", "label": "Correo electrónico" }
+  },
+  "form-input.dropdown#spm-sala": {
+    "props": { "pointer": "#/properties/sala", "label": "Sala donde compras" }
+  },
+
+  "form-submit#spm-registro": {
+    "props": { "label": "Activar mis beneficios" }
+  },
+
+  "form-success#spm-registro": {
+    "children": ["rich-text#spm-form-success"]
+  },
+
+  "rich-text#spm-form-success": {
+    "props": {
+      "text": "### ¡Listo, maestro!\n\nRecibimos tu solicitud. Un asesor de Cerámica Italia te contactará pronto para activar tus Italpuntos.",
+      "blockClass": "spmFormSuccess",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#spm-form-consent": {
+    "props": {
+      "text": "Al enviar aceptas la [política de tratamiento de datos](/terminos-legales) de Cerámica Italia.",
+      "blockClass": "spmFormConsent"
+    }
+  },
+
+  /* ══════════════════════ CIERRE DE MARCA ══════════════════════
+   * Franja tomada del footer propio del diseño (logo + leyenda);
+   * el resto del footer lo aporta el footer estándar del tema. */
+
+  "flex-layout.row#spm-brand": {
+    "title": "Súper Maestros - Cierre de marca",
+    "children": ["flex-layout.col#spm-brand-col"],
+    "props": {
+      "blockClass": "spmBrand",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#spm-brand-col": {
+    "children": ["image#spm-brand-logo", "rich-text#spm-brand-text"],
+    "props": {
+      "blockClass": "spmBrandCol",
+      "preventVerticalStretch": true,
+      "horizontalAlign": "left"
+    }
+  },
+
+  "image#spm-brand-logo": {
+    "props": {
+      "src": "assets/imgs/supermaestro/logo-supermaestros.svg",
+      "alt": "Súper Maestros",
+      "blockClass": "spmBrandLogo"
+    }
+  },
+
+  "rich-text#spm-brand-text": {
+    "props": {
+      "text": "Programa de beneficios de Cerámica Italia. Capacitar, reconocer, fidelizar y premiar a quienes transforman espacios.",
+      "blockClass": "spmBrandText"
+    }
+  }
+}

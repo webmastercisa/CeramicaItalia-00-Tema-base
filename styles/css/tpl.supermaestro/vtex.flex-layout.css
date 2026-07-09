@@ -1,0 +1,474 @@
+/* ============================================================
+ * TPL-SUPERMAESTRO · Layout (vtex.flex-layout)
+ * Selectores scoped a blockClass "spm*" exclusivos de esta
+ * plantilla. Réplica del diseño supermaestro/index.html.
+ *
+ * Paleta (tokens :root del diseño):
+ *   --spm-red         #E30613   rojo Cerámica Italia
+ *   --spm-red-deep    #B2050F
+ *   --spm-red-glow    #FF1F2E   acento sobre fondo oscuro
+ *   --spm-ink         #14110F   casi-negro cálido
+ *   --spm-bone        #F5F6F7   gris-blanco frío
+ *   --spm-muted       #6B6560
+ * Tipografía: el diseño usa 'Neutra' 400/700 — el tema ya registra
+ * NeutraText (book) y NeutraTextAltBold en font-faces.css.
+ * Animaciones @keyframes del diseño (pulso, chips flotantes, línea
+ * de scroll) OMITIDAS: sin precedente del at-rule en el tema;
+ * los hovers con transition sí se conservan.
+ * ============================================================ */
+
+/* Variables heredables en las filas raíz */
+.flexRow--spmNav,
+.flexRow--spmHero,
+.flexRow--spmPrograma,
+.flexRow--spmGaleria,
+.flexRow--spmRegistro,
+.flexRow--spmBrand {
+  --spm-red: #E30613;
+  --spm-red-deep: #B2050F;
+  --spm-red-glow: #FF1F2E;
+  --spm-ink: #14110F;
+  --spm-ink-3: #2A2522;
+  --spm-bone: #F5F6F7;
+  --spm-line: rgba(20, 17, 15, 0.1);
+  --spm-line-strong: rgba(20, 17, 15, 0.18);
+  --spm-muted: #6B6560;
+  --spm-font: 'NeutraText', 'Neutra', 'Helvetica Neue', system-ui, sans-serif;
+  --spm-font-bold: 'NeutraTextAltBold', 'NeutraText', 'Helvetica Neue', system-ui, sans-serif;
+  background-color: var(--spm-bone);
+  color: var(--spm-ink);
+  font-family: var(--spm-font);
+  line-height: 1.5;
+}
+
+/* Compensa el header sticky del tema al navegar por anclas */
+.flexRow--spmPrograma,
+.flexRow--spmGaleria,
+.flexRow--spmRegistro,
+.flexRow--spmBeneficios {
+  scroll-margin-top: 140px;
+}
+
+/* Contenedor .container del diseño (max 1320px, padding 32px / 20px mobile) */
+.flexRowContent--spmNav,
+.flexRowContent--spmHero,
+.flexRowContent--spmPrograma,
+.flexRowContent--spmGaleria,
+.flexRowContent--spmRegistro,
+.flexRowContent--spmBrand {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 48rem) {
+  .flexRowContent--spmNav,
+  .flexRowContent--spmHero,
+  .flexRowContent--spmPrograma,
+  .flexRowContent--spmGaleria,
+  .flexRowContent--spmRegistro,
+  .flexRowContent--spmBrand {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Padding vertical de sección (mobile 80px; desktop según cada
+   sección del diseño: programa 120/100, galería 100/80, registro 120/120) */
+.flexRow--spmPrograma .flexRowContent--spmPrograma,
+.flexRow--spmGaleria .flexRowContent--spmGaleria,
+.flexRow--spmRegistro .flexRowContent--spmRegistro {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 64rem) {
+  .flexRow--spmPrograma .flexRowContent--spmPrograma {
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+  .flexRow--spmGaleria .flexRowContent--spmGaleria {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .flexRow--spmRegistro .flexRowContent--spmRegistro {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+/* ─────────────────── NAV interna ─────────────────── */
+
+.flexRow--spmNav {
+  background-color: rgba(244, 241, 236, 0.92);
+  border-bottom: 1px solid var(--spm-line);
+}
+
+/* Doble clase: gana a ".flexRowContent { justify-content: center }" del raíz */
+.flexRow--spmNav .flexRowContent--spmNav {
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+  gap: 12px;
+}
+/* La ocultación responsive de enlaces/CTA vive en tpl.supermaestro/vtex.store-link.css */
+
+/* ─────────────────── HERO ─────────────────── */
+
+.flexRowContent--spmHero {
+  /* Diseño: min-height 100vh. Con el zoom:85% global del tema las
+     unidades vh no se escalan: 118vh ≈ 100vh visuales en desktop.
+     Si el zoom global se retira, volver a 100vh. */
+  min-height: 100vh;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* El CSS raíz del tema resetea el zoom a 100% en viewports ≤1024px
+   (vtex.flex-layout.css raíz ~2330): ahí 100vh vuelve a ser exacto */
+@media (max-width: 1024px) {
+  .flexRowContent--spmHero {
+    min-height: 100vh;
+  }
+}
+
+.flexCol--spmHeroLeft {
+  justify-content: center;
+}
+
+/* Doble clase: gana al justify-content:center global */
+.flexRow--spmHeroButtons .flexRowContent--spmHeroButtons {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.flexRow--spmHeroStats {
+  max-width: 480px;
+  margin-top: 56px;
+  border-top: 1px solid var(--spm-line-strong);
+}
+
+.flexRowContent--spmHeroStats {
+  padding-top: 32px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Foto del maestro: el col es el marco posicionado; la <img> se
+   estiliza por su handle en tpl.supermaestro/vtex.store-components.css */
+.flexCol--spmHeroRight {
+  position: relative;
+  min-height: 480px;
+}
+
+@media (min-width: 64rem) {
+  .flexCol--spmHeroRight {
+    min-height: 720px;
+  }
+}
+
+/* El wrapper de la foto lleva el recorte diagonal (clip-path clipa
+   también al velo ::after); la <img> interior solo hace cover */
+.flexCol--spmHeroRight .flexColChild--spmHeroRight:first-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Velo del diseño (.hero-photo::after) que funde la foto con el fondo */
+.flexCol--spmHeroRight .flexColChild--spmHeroRight:first-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    115deg,
+    rgba(244, 241, 236, 0.4) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(20, 17, 15, 0.15) 100%
+  );
+  pointer-events: none;
+}
+
+/* Chips flotantes sobre la foto (columna centrada a la derecha) */
+.flexCol--spmHeroChips {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  z-index: 4;
+  width: 35%
+;
+}
+
+/* ─────────────────── PROGRAMA ─────────────────── */
+
+.flexRow--spmProgramaHead {
+  margin-bottom: 48px;
+}
+
+@media (min-width: 64rem) {
+  .flexRow--spmProgramaHead {
+    margin-bottom: 72px;
+  }
+}
+
+.flexRowContent--spmProgramaHead,
+.flexRowContent--spmBeneficios,
+.flexRowContent--spmGaleriaHead,
+.flexRowContent--spmGaleriaGrid,
+.flexRowContent--spmGFila,
+.flexRowContent--spmJoinPills,
+.flexRowContent--spmFormFila {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Grilla de beneficios: 2 tarjetas por fila en mobile/tablet, 5 en
+   desktop. El row lleva preserveLayoutOnMobile:true y aquí se controla
+   el corte con flex-wrap + ancho de los wrappers .stretchChildrenWidth
+   (!important porque flex-layout les pone width inline — mismo patrón
+   que landing.giorgio). Doble clase para ganar al justify-content:center
+   global del raíz: la tarjeta impar (05) queda alineada a la izquierda. */
+.flexRow--spmBeneficios .flexRowContent--spmBeneficios {
+  gap: 14px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.flexRowContent--spmBeneficios .stretchChildrenWidth {
+  flex: 0 0 auto;
+  min-width: 0;
+  width: calc(50% - 7px) !important;
+}
+
+@media (min-width: 64rem) {
+  .flexRowContent--spmBeneficios .stretchChildrenWidth {
+    width: calc(20% - 11.2px) !important;
+  }
+}
+
+/* ─────────────────── GALERÍA (oscura) ─────────────────── */
+
+.flexRow--spmGaleria {
+  background-color: var(--spm-ink);
+  color: var(--spm-bone);
+}
+
+.flexRow--spmGaleriaHead {
+  margin-bottom: 48px;
+}
+
+.flexRowContent--spmGaleriaHead {
+  align-items: flex-end;
+}
+
+.flexRowContent--spmGaleriaGrid {
+  gap: 12px;
+}
+
+.flexRow--spmGFila .flexRowContent--spmGFila {
+  gap: 12px;
+}
+
+.flexRow--spmGFila {
+  margin-bottom: 0;
+}
+
+/* Tarjeta de galería: marco posicionado con overlay y caption */
+.flexCol--spmGCard {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 220px;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 64rem) {
+  .flexCol--spmGCard {
+    min-height: 280px;
+  }
+  .flexCol--spmGCardBig {
+    min-height: 572px;
+    height: 100%;
+  }
+}
+
+.flexCol--spmGCard:hover {
+  transform: scale(1.02);
+}
+
+.flexCol--spmGCard .flexColChild--spmGCard:first-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Velo inferior para legibilidad del caption */
+.flexCol--spmGCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.85));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ─────────────────── REGISTRO (oscura + foto lateral) ─────────────────── */
+
+.flexRow--spmRegistro {
+  background-color: var(--spm-ink);
+  color: var(--spm-bone);
+  /* Foto de maestros fundida al fondo por la derecha (mask del diseño
+     resuelto con gradiente apilado; degrada a fondo tinta si la
+     imagen no resuelve) */
+  background-image: linear-gradient(
+      90deg,
+      #14110F 40%,
+      rgba(20, 17, 15, 0.82) 62%,
+      rgba(20, 17, 15, 0.45) 100%
+    ),
+    url("assets/imgs/supermaestro/join-maestros.jpg");
+  background-size: cover, cover;
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.flexRowContent--spmRegistro {
+  align-items: flex-start;
+}
+
+.flexRow--spmJoinPills {
+  max-width: 480px;
+  margin-top: 12px;
+}
+
+.flexRowContent--spmJoinPills {
+  gap: 12px;
+}
+
+/* Tarjeta del formulario (form-card del diseño) */
+.flexCol--spmFormCard {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 24px;
+  position: relative;
+}
+
+@media (min-width: 48rem) {
+  .flexCol--spmFormCard {
+    padding: 40px;
+  }
+}
+
+.flexCol--spmFormCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 32px;
+  right: 32px;
+  height: 3px;
+  background: var(--spm-red);
+}
+
+.flexRow--spmFormFila {
+  margin-bottom: 4px;
+}
+
+.flexRowContent--spmFormFila {
+  gap: 12px;
+}
+
+/* ── Inputs del formulario (patrón del tema para vtex.store-form:
+   :global sobre styleguide, ver vtex.flex-layout.css raíz ~línea 950) ── */
+
+.flexCol--spmFormCard :global(.vtex-input-prefix__group) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.flexCol--spmFormCard :global(.vtex-styleguide-9-x-input) {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.flexCol--spmFormCard :global(.vtex-input) {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 12px;
+}
+
+.flexCol--spmFormCard :global(.vtex-dropdown__button) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Botón enviar: pill roja de ancho completo (patrón formulario-pqrs) */
+.flexCol--spmFormCard :global(.vtex-store-form-0-x-formSubmitContainer) {
+  margin-top: 16px;
+}
+
+.flexCol--spmFormCard :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button) {
+  width: 100%;
+  background-color: var(--spm-red);
+  border-color: var(--spm-red);
+  border-radius: 999px;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.flexCol--spmFormCard :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button):hover {
+  background-color: var(--spm-red-deep);
+  border-color: var(--spm-red-deep);
+  transform: translateY(-2px);
+}
+
+.flexCol--spmFormCard :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button__label) {
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-size: 15px;
+}
+
+/* Flecha del CTA del diseño ("Activar mis beneficios →") */
+.flexCol--spmFormCard :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button__label)::after {
+  content: '→';
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.25s ease;
+}
+
+.flexCol--spmFormCard :global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button):hover :global(.vtex-button__label)::after {
+  transform: translateX(4px);
+}
+
+/* ─────────────────── CIERRE DE MARCA ─────────────────── */
+
+/* Franja del footer del diseño (fondo #0A0808, logo + leyenda) */
+.flexRow--spmBrand {
+  background-color: #0A0808;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.flexRow--spmBrand .flexRowContent--spmBrand {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}

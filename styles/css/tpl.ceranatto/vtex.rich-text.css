@@ -1,0 +1,452 @@
+/* ============================================================
+ * TPL-CERANATTO · Tipografía y tarjetas (vtex.rich-text)
+ * Scoped a blockClass "ceranatto*". Las variables --crn-* se
+ * heredan de las filas raíz (ver tpl.ceranatto/vtex.flex-layout.css).
+ * ============================================================ */
+
+/* ── Eyebrow (etiqueta superior de cada sección) ── */
+
+.container--ceranattoEyebrow .paragraph--ceranattoEyebrow {
+  font-family: var(--crn-font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--crn-clay);
+  font-weight: 600;
+  margin: 0 0 1.25rem;
+}
+
+.container--ceranattoEyebrowCenter .paragraph--ceranattoEyebrowCenter {
+  text-align: center;
+}
+
+/* ── Título de sección (h2) ── */
+
+.container--ceranattoSectionTitle .headingLevel2--ceranattoSectionTitle {
+  font-family: var(--crn-font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--crn-ink);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-weight: 600;
+  max-width: 48rem;
+  margin: 0;
+}
+
+/* Variante para secciones oscuras: el strong hace de acento clay
+   y fuerza salto de línea (patrón <br><span class="accent"> del diseño) */
+.container--ceranattoSectionTitleDark .headingLevel2--ceranattoSectionTitleDark {
+  color: var(--crn-bg);
+}
+
+.container--ceranattoSectionTitleDark .strong--ceranattoSectionTitleDark {
+  color: var(--crn-clay);
+  font-weight: inherit;
+}
+
+.container--ceranattoSectionTitleDark .strong--ceranattoSectionTitleDark::before {
+  content: "\A";
+  white-space: pre;
+}
+
+/* ── Lede (párrafo introductorio) ── */
+
+.container--ceranattoLede .paragraph--ceranattoLede {
+  font-size: 1.125rem;
+  color: rgba(42, 33, 24, 0.75);
+  margin: 1.25rem 0 0;
+  max-width: 48rem;
+}
+
+/* ── HERO ── */
+
+.container--ceranattoHeroTitle .headingLevel1--ceranattoHeroTitle {
+  font-family: var(--crn-font-display);
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  color: var(--crn-ink);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* "La cerámica" en clay y en línea nueva (accent del diseño) */
+.container--ceranattoHeroTitle .strong--ceranattoHeroTitle {
+  color: var(--crn-clay);
+  font-weight: inherit;
+}
+
+.container--ceranattoHeroTitle .strong--ceranattoHeroTitle::before {
+  content: "\A";
+  white-space: pre;
+}
+
+.container--ceranattoHeroLead .paragraph--ceranattoHeroLead {
+  margin: 2rem 0 0;
+  max-width: 34rem;
+  font-size: 1.125rem;
+  color: rgba(42, 33, 24, 0.8);
+}
+
+/* Stats del hero (dt/dd del diseño) */
+.container--ceranattoStat .paragraph--ceranattoStat {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--crn-muted);
+  margin: 0;
+}
+
+.container--ceranattoStat .strong--ceranattoStat {
+  display: block;
+  font-family: var(--crn-font-display);
+  font-size: 1.5rem;
+  color: var(--crn-clay);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-bottom: 0.25rem;
+}
+
+/* ── TRUST STRIP ── */
+
+.container--ceranattoTrustItem .paragraph--ceranattoTrustItem {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--crn-muted);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ── FIGURA (¿qué es?) ── */
+
+.container--ceranattoFigureCaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(30, 24, 16, 0.8), transparent);
+}
+
+.container--ceranattoFigureCaption .paragraph--ceranattoFigureCaption {
+  color: var(--crn-bg);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* ── PILARES ── */
+
+.container--ceranattoPillarMetric .paragraph--ceranattoPillarMetric {
+  font-family: var(--crn-font-display);
+  font-size: 1.875rem;
+  color: var(--crn-clay);
+  margin: 0 0 1.25rem;
+}
+
+.container--ceranattoPillarBody .headingLevel3--ceranattoPillarBody {
+  font-family: var(--crn-font-display);
+  font-size: 1.5rem;
+  color: var(--crn-ink);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 0;
+}
+
+.container--ceranattoPillarBody .paragraph--ceranattoPillarBody {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: rgba(42, 33, 24, 0.75);
+}
+
+/* ── TABLA COMPARATIVA ──
+   rich-text renderiza la tabla markdown con sus CSS handles oficiales
+   (table/tableHead/tableBody/tableTr/tableTd/tableTh), que heredan el
+   blockClass. El builder de estilos no admite selectores de elemento
+   (table, td...) ni :nth-child(N) plano — solo even/odd/an+b. */
+
+.container--ceranattoTable {
+  overflow-x: auto;
+  border: 1px solid var(--crn-border);
+  border-radius: 16px;
+  margin-top: 1.5rem;
+}
+
+.wrapper--ceranattoTable {
+  width: 100%;
+}
+.table--ceranattoTable {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.tableHead--ceranattoTable {
+  background-color: var(--crn-ink);
+  color: var(--crn-bg);
+}
+
+.tableHead--ceranattoTable .tableTh--ceranattoTable {
+  padding: 1.25rem 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.tableHead--ceranattoTable .tableTh--ceranattoTable:last-child {
+  color: #e8a381;
+}
+
+.tableBody--ceranattoTable .tableTr--ceranattoTable:nth-child(odd) {
+  background-color: var(--crn-bg);
+}
+
+.tableBody--ceranattoTable .tableTr--ceranattoTable:nth-child(even) {
+  background-color: rgba(240, 233, 220, 0.5);
+}
+
+.tableBody--ceranattoTable .tableTd--ceranattoTable {
+  padding: 1rem 1.5rem;
+}
+
+.tableBody--ceranattoTable .tableTd--ceranattoTable:first-child {
+  font-weight: 500;
+  color: var(--crn-ink);
+}
+
+.tableBody--ceranattoTable .tableTd--ceranattoTable:nth-child(0n+2) {
+  color: rgba(42, 33, 24, 0.7);
+}
+
+.tableBody--ceranattoTable .tableTd--ceranattoTable:last-child {
+  font-weight: 600;
+  color: var(--crn-clay);
+}
+
+/* ── PESO (sección oscura) ── */
+
+.container--ceranattoPesoParrafo .paragraph--ceranattoPesoParrafo {
+  margin: 1.5rem 0 0;
+  font-size: 1.125rem;
+  color: rgba(250, 247, 241, 0.75);
+}
+
+.container--ceranattoPesoParrafo .strong--ceranattoPesoParrafo {
+  color: var(--crn-bg);
+}
+
+.container--ceranattoKpi {
+  border: 1px solid rgba(250, 247, 241, 0.15);
+  background-color: rgba(250, 247, 241, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.container--ceranattoKpiAccent {
+  border-color: var(--crn-clay);
+  background-color: rgba(181, 98, 63, 0.12);
+}
+
+/* p1 = etiqueta · p2 = valor (strong) · p3 = unidad */
+.container--ceranattoKpi .paragraph--ceranattoKpi {
+  margin: 0;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(250, 247, 241, 0.6);
+}
+
+.container--ceranattoKpi .paragraph--ceranattoKpi:last-child {
+  font-size: 0.875rem;
+  text-transform: none;
+  letter-spacing: normal;
+  color: rgba(250, 247, 241, 0.7);
+  margin-top: 0.25rem;
+}
+
+.container--ceranattoKpi .strong--ceranattoKpi {
+  display: block;
+  font-family: var(--crn-font-display);
+  font-size: 2.25rem;
+  color: var(--crn-bg);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-top: 0.75rem;
+}
+
+.container--ceranattoPesoDisclaimer .paragraph--ceranattoPesoDisclaimer {
+  font-size: 0.75rem;
+  color: rgba(250, 247, 241, 0.5);
+  margin: 2.5rem 0 0;
+}
+
+/* ── ACABADOS ── */
+
+.container--ceranattoFinishBody {
+  padding: 2rem;
+}
+
+.container--ceranattoFinishBody .headingLevel3--ceranattoFinishBody {
+  font-family: var(--crn-font-display);
+  font-size: 1.875rem;
+  color: var(--crn-ink);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Tagline (*...*): clay, sin cursiva — réplica del .tag del diseño */
+.container--ceranattoFinishBody .italic--ceranattoFinishBody {
+  display: block;
+  font-style: normal;
+  color: var(--crn-clay);
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.container--ceranattoFinishBody .paragraph--ceranattoFinishBody {
+  color: rgba(42, 33, 24, 0.75);
+  margin: 0.5rem 0 0;
+}
+
+/* ── FORMATOS ── */
+
+.container--ceranattoFormat {
+  border: 1px solid var(--crn-border);
+  background-color: var(--crn-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  height: 100%;
+}
+
+/* p1 = eyebrow "Formato" · p2 = medida (serif grande, como <p class="size">
+   del diseño — no es heading) · p3 = tipo */
+.container--ceranattoFormat .paragraph--ceranattoFormat {
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--crn-clay);
+  font-weight: 600;
+  margin: 0;
+}
+
+.container--ceranattoFormat .paragraph--ceranattoFormat:nth-child(0n+2) {
+  font-family: var(--crn-font-display);
+  font-size: 1.875rem;
+  color: var(--crn-ink);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  margin-top: 0.75rem;
+}
+
+.container--ceranattoFormat .paragraph--ceranattoFormat:last-child {
+  font-size: 0.875rem;
+  color: rgba(42, 33, 24, 0.75);
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: 400;
+  margin-top: 0.75rem;
+}
+
+/* ── SEGMENTOS ── */
+
+.container--ceranattoSeg {
+  background-color: var(--crn-clay);
+  color: var(--crn-bg);
+  border-radius: 16px;
+  padding: 2.5rem;
+  height: 100%;
+}
+
+.container--ceranattoSeg .paragraph--ceranattoSeg {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--crn-bg);
+}
+
+.container--ceranattoSeg .paragraph--ceranattoSeg:first-child {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: rgba(250, 247, 241, 0.7);
+}
+
+.container--ceranattoSeg .headingLevel3--ceranattoSeg {
+  font-family: var(--crn-font-display);
+  color: var(--crn-bg);
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0.75rem 0 0;
+}
+
+/* dt del diseño: etiqueta atenuada en bloque */
+.container--ceranattoSeg .strong--ceranattoSeg {
+  display: block;
+  color: rgba(250, 247, 241, 0.6);
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* ── FAQ ── */
+
+.container--ceranattoFaqQ .paragraph--ceranattoFaqQ {
+  font-family: var(--crn-font-display);
+  font-size: 1.25rem;
+  color: var(--crn-ink);
+  margin: 0;
+  padding-right: 1.5rem;
+}
+
+.container--ceranattoFaqA .paragraph--ceranattoFaqA {
+  margin: 1rem 0 0;
+  color: rgba(42, 33, 24, 0.75);
+}
+
+/* ── CTA FINAL ── */
+
+.container--ceranattoCtaTitle .headingLevel2--ceranattoCtaTitle {
+  font-family: var(--crn-font-display);
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  color: var(--crn-bg);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-weight: 600;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.container--ceranattoCtaSub .paragraph--ceranattoCtaSub {
+  color: rgba(250, 247, 241, 0.7);
+  margin: 1.5rem auto 0;
+  max-width: 36rem;
+  font-size: 1.125rem;
+}
+
+/* ── NAV: logo ── */
+
+.container--ceranattoNavLogo .paragraph--ceranattoNavLogo {
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--crn-muted);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.container--ceranattoNavLogo .strong--ceranattoNavLogo {
+  font-family: var(--crn-font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--crn-ink);
+  letter-spacing: normal;
+  text-transform: none;
+  margin-right: 0.5rem;
+}

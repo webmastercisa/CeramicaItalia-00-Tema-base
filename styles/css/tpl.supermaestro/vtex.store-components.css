@@ -1,0 +1,56 @@
+/* ============================================================
+ * TPL-SUPERMAESTRO · Imágenes (vtex.store-components)
+ * El bloque "image" emite el handle imageElement de esta app
+ * (patrón landing.giorgio / tpl.ceranatto).
+ * ============================================================ */
+
+/* Logos de la nav */
+.imageElement--spmLogoSm {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.imageElement--spmLogoCi {
+  height: 48px;
+  width: auto;
+  display: block;
+  border-left: 1px solid rgba(20, 17, 15, 0.18);
+  padding-left: 12px;
+}
+
+@media (min-width: 48rem) {
+  .imageElement--spmLogoSm,
+  .imageElement--spmLogoCi {
+    height: 56px;
+  }
+}
+
+/* Foto del maestro en el hero: llena su marco; el recorte diagonal
+   y el velo viven en el wrapper posicionado (ver
+   tpl.supermaestro/vtex.flex-layout.css, flexColChild--spmHeroRight) */
+.imageElement--spmHeroPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+/* Fotos de la galería: llenan su tarjeta */
+.imageElement--spmGImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Logo del cierre de marca: sobre placa blanca (footer-brand del diseño) */
+.imageElement--spmBrandLogo {
+  height: 64px;
+  width: auto;
+  display: block;
+  background-color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 12px;
+}

@@ -1,0 +1,54 @@
+/* ============================================================
+ * TPL-CERANATTO · Acordeón FAQ (vtex.disclosure-layout)
+ * Réplica del patrón details/summary del diseño.
+ * Scoped a blockClass "ceranatto*" (no toca .trigger--question
+ * ni .content--answer de la página /faq).
+ * ============================================================ */
+
+.trigger--ceranattoFaqQuestion {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e2d9c9;
+}
+
+/* Caret en clay, a la derecha (equivale al "+" del diseño).
+   margin-right:0 resetea el "margin-right:1rem" que el CSS raíz
+   vtex.disclosure-layout.css aplica sobre ".trigger" sin modifier. */
+.trigger--ceranattoFaqQuestion :global(.vtex-store-icons-0-x-caretIcon) {
+  color: #ED1B24;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  margin-right: 0;
+}
+
+.trigger--ceranattoFaqQuestion:hover :global(.vtex-rich-text-0-x-paragraph--ceranattoFaqQ) {
+  color: #ED1B24;
+}
+
+.content--ceranattoFaqAnswer {
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out,
+    transform 250ms ease-in-out;
+  opacity: 0;
+  height: 0;
+  transform: translate3d(0, -10%, 0);
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.content--ceranattoFaqAnswer[data-enter] {
+  opacity: 1;
+  height: fit-content;
+  transform: translate3d(0, 0, 0);
+  padding-bottom: 1.5rem;
+}
+
+.content--ceranattoFaqAnswer[data-leave] {
+  height: 0;
+  overflow: hidden;
+}

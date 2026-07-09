@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "flex-layout.row#ia-cisa",
       "list-context.image-list#homeBanners",
       //"__fold__.desktop",
       //"flex-layout.row#product-featured",
@@ -16,9 +17,6 @@
       "__fold__.desktop",
       "__fold__.mobile",
       "disposition-layout#home-destacados",
-
-
-
       "responsive-layout.desktop#section-inspireInfocard-2",
       "responsive-layout.mobile#section-inspireInfocard-2-mobile",
       "responsive-layout.desktop#colorPalette-section",
@@ -32,7 +30,21 @@
       "flex-layout.row#newsletter"
     ]
   },
-  // *Home  Slide*
+
+  "flex-layout.row#ia-cisa": {
+    "props":    { "blockClass": "titleh1oculto", "colSizing": "auto" },
+    "children": [ "rich-text#cisa-h1", "rich-text#cisa-h2", "rich-text#cisa-h3" ]
+  },
+
+  "rich-text#cisa-h1": { "props": { "blockClass": "titleh1oculto", "text": "# Cerámica Italia Tienda Oficial", "textAlignment": "CENTER", "textPosition": "CENTER" }  },
+  "rich-text#cisa-h2": { "props": { "blockClass": "titleh1oculto", "text": "## Empresa colombiana líder en revestimientos cerámicos, porcelanato y porcelana sanitaria con diseño de herencia italiana. Fundada en 1978 en San José de Cúcuta, Colombia. Más de 300 puntos de venta y distribuidores autorizados en todo el país. Referente del sector constructor, arquitectos y diseñadores de interiores en Colombia y Suramérica.",
+      "textAlignment": "CENTER", "textPosition": "CENTER" }
+  },
+  "rich-text#cisa-h3": { "props": { "blockClass": "titleh1oculto", "text": "##Ceranatto® ###**CERANATTO®** es la línea insignia de Cerámica Italia: un porcelanato rectificado de gran formato que fusiona la estética del porcelanato premium con un desempeño técnico diseñado para la realidad constructiva colombiana. No es una cerámica tradicional ni un porcelanato comercial rígido, sino una categoría propia que equilibra estabilidad dimensional, resistencia mecánica superior y flexibilidad estructural.",
+  "textAlignment": "CENTER", "textPosition": "CENTER" }
+},
+
+// *Home  Slide*
   "list-context.image-list#homeBanners": {
     "children": [
       "slider-layout#home-images"

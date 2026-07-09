@@ -1,0 +1,117 @@
+/* ============================================================
+ * TPL-SUPERMAESTRO · Botones y enlaces (vtex.store-link)
+ * Réplica de .btn / .btn-primary / .btn-ghost del diseño.
+ * La flecha del CTA (SVG en el diseño) se resuelve con ::after "→".
+ * ============================================================ */
+
+/* Base pill */
+.link--spmBtnPrimary,
+.link--spmBtnGhost,
+.link--spmNavBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-family: 'NeutraTextAltBold', 'NeutraText', 'Helvetica Neue', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Primario rojo con flecha */
+.link--spmBtnPrimary,
+.link--spmNavBtn {
+  background-color: #E30613;
+  color: #ffffff;
+  box-shadow: 0 10px 24px -8px rgba(227, 6, 19, 0.55);
+}
+
+.link--spmBtnPrimary::after,
+.link--spmNavBtn::after {
+  content: '→';
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.link--spmBtnPrimary:hover,
+.link--spmNavBtn:hover {
+  background-color: #B2050F;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -8px rgba(227, 6, 19, 0.65);
+}
+
+.link--spmBtnPrimary:hover::after,
+.link--spmNavBtn:hover::after {
+  transform: translateX(4px);
+}
+
+/* CTA de la nav: compacto */
+.link--spmNavBtn {
+  padding: 10px 20px;
+  font-size: 13px;
+  box-shadow: none;
+}
+
+/* Ghost (¿Cómo funciona?) */
+.link--spmBtnGhost {
+  background-color: transparent;
+  color: #14110F;
+  border-color: #14110F;
+}
+
+.link--spmBtnGhost:hover {
+  background-color: #14110F;
+  color: #ffffff;
+}
+
+/* Enlaces de la nav con subrayado rojo animado */
+.link--spmNavLink {
+  position: relative;
+  font-family: 'NeutraTextAltBold', 'NeutraText', 'Helvetica Neue', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #14110F;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.link--spmNavLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #E30613;
+  transition: width 0.3s ease;
+}
+
+.link--spmNavLink:hover::after {
+  width: 100%;
+}
+
+/* El label interno hereda el estilo del pill */
+.link--spmBtnPrimary .label--spmBtnPrimary,
+.link--spmBtnGhost .label--spmBtnGhost,
+.link--spmNavBtn .label--spmNavBtn {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/* Responsive de la nav: bajo 880px (breakpoint del diseño) solo
+   quedan los logos */
+@media (max-width: 54.99rem) {
+  .link--spmNavLink,
+  .link--spmNavBtn {
+    display: none;
+  }
+}

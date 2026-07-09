@@ -1,0 +1,25 @@
+/* ============================================================
+ * TPL-CERANATTO · Imágenes (vtex.store-components)
+ * El bloque "image" emite el handle imageElement de esta app
+ * (mismo patrón que styles/css/landing.giorgio/vtex.store-components.css).
+ * ============================================================ */
+
+/* Figura de la sección ¿Qué es? (aspecto 4/5 con caption superpuesto) */
+.imageElement--ceranattoFigureImg {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fotos de las tarjetas de acabado (aspecto 4/3, zoom al hover
+   disparado desde .flexCol--ceranattoFinish:hover en
+   tpl.ceranatto/vtex.flex-layout.css) */
+.imageElement--ceranattoFinishImg {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease;
+}
