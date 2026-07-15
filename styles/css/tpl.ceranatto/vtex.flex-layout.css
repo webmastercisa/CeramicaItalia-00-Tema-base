@@ -102,8 +102,8 @@
   .flexRow--ceranattoSegmentos .flexRowContent--ceranattoSegmentos,
   .flexRow--ceranattoFaq .flexRowContent--ceranattoFaq,
   .flexRow--ceranattoCta .flexRowContent--ceranattoCta {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -165,7 +165,7 @@
 }
 
 .flexRow--ceranattoHeroStats {
-  max-width: 32rem;
+  max-width: 42rem;
   margin-top: 3.5rem;
   border-top: 1px solid rgba(226, 217, 201, 0.6);
 }
@@ -265,6 +265,8 @@
   padding-left: 0;
   padding-right: 0;
 }
+
+
 
 /* La separación vertical entre filas de KPIs la aporta el prop
    rowGap:4 del flex-layout.col#ceranatto-peso-kpis (el builder no

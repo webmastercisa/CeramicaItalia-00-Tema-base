@@ -1,0 +1,196 @@
+{
+  /* ============================================================
+   *  PLANTILLA — TPL-LISTAPRODUCTOS
+   *  Cerámica Italia · Listado de productos por colección
+   *  Ruta: /tpl-listaproductos (ver store/routes.json)
+   *  Estilos: styles/css/tpl.listaproductos/*.css
+   *
+   *  Réplica funcional de ResultadoBusquedaconBloqueSEOyPasillos:
+   *  se rediseñan ÚNICAMENTE los dos contenedores responsive
+   *  (hero glassmorphism + 4 marcos de categorías con hover);
+   *  el bloque de resultados reutiliza POR REFERENCIA los layouts
+   *  desktop/mobile de la plantilla origen, de modo que filtros,
+   *  galería y paginación permanecen idénticos.
+   *
+   *  Paleta: rojo #ED1B24 · tinta #3f3f40 · línea #e3e4e6
+   *  Convención: IDs "listaproductos-*" / blockClass "listaproductos*"
+   * ============================================================ */
+
+  "store.custom#tpl-listaproductos": {
+    "blocks": [
+      "responsive-layout.desktop#listaproductos-desktop",
+      "responsive-layout.mobile#listaproductos-mobile",
+      "search-result-layout.customQuery#listaproductos"
+    ]
+  },
+
+  /* ══════════ CONTENEDORES RESPONSIVE (réplica de
+     container-desktop/mobile-search-custom de la origen) ══════════
+     Ambos muestran hero + marcos; se mantienen separados para poder
+     divergir por dispositivo desde el Site Editor sin tocar bloques. */
+
+  "responsive-layout.desktop#listaproductos-desktop": {
+    "children": [
+      "flex-layout.row#listaproductos-hero",
+      "list-context.info-card-list#listaproductos-marcos"
+    ]
+  },
+
+  "responsive-layout.mobile#listaproductos-mobile": {
+    "children": [
+      "flex-layout.row#listaproductos-hero",
+      "list-context.info-card-list#listaproductos-marcos"
+    ]
+  },
+
+  /* ══════════════════════ HERO GLASSMORPHISM ══════════════════════
+   * Imagen a todo el ancho (~320px de alto) como background del row
+   * (precedente: ceranattoHero); el texto va SOBRE la imagen dentro
+   * de un panel "vidrio" (blur con fallback sólido). */
+
+  "flex-layout.row#listaproductos-hero": {
+    "title": "Lista productos - Hero glass",
+    "children": ["flex-layout.col#listaproductos-hero-glass"],
+    "props": {
+      "blockClass": "listaproductosHero",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#listaproductos-hero-glass": {
+    "children": [ "rich-text#listaproductos-hero-titulo", "rich-text#listaproductos-hero-lead" //,"link#listaproductos-hero-boton"
+    ],
+    "props": {
+      "blockClass": "listaproductosHeroGlass",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
+    }
+  },
+
+  /* Único H1 de la página (el headline de los marcos renderiza <div>) */
+  "rich-text#listaproductos-hero-titulo": {
+    "title": "Hero - Título (H1)",
+    "props": {
+      "text": "# **Cerámica Italia**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "listaproductosHeroTitulo"
+    }
+  },
+
+  "rich-text#listaproductos-hero-lead": {
+    "title": "Hero - Texto SEO",
+    "props": {
+      "text": "Belleza que perdura, valores que trascienden. Explora la colección y encuentra el revestimiento perfecto para tu espacio.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "listaproductosHeroLead"
+    }
+  },
+
+  /* Botón de marca: pill, fondo rojo, texto blanco (CSS store-link) */
+  "link#listaproductos-hero-boton": {
+    "props": {
+      "href": "/muestras",
+      "label": "Solicita tu muestra",
+      "displayMode": "button",
+      "blockClass": "listaproductosBtnPrimary"
+    }
+  },
+
+  /* ══════════════════════ 4 MARCOS DE CATEGORÍAS ══════════════════════
+   * Tarjetas que direccionan a /pisos /paredes /ceranatto /banos.
+   * Texto en banda bajo la imagen; al hover la imagen hace zoom con
+   * blur tenue y la banda sube al centro de la imagen (efecto vidrio).
+   * OJO (verificado en producción): dentro de info-card-list → slider,
+   * los handles infoCard* se emiten bajo vtex-slider-layout-0-x y su
+   * modificador es el blockClass DEL SLIDER ("listaproductosMarcos");
+   * el blockClass por tarjeta NO se emite — por eso no se declara. */
+
+  "list-context.info-card-list#listaproductos-marcos": {
+    "children": ["slider-layout#listaproductos-marcos"],
+    "title": "Lista productos - Marcos de categorías",
+    "props": {
+      "infoCards": [
+        {
+          "id": "listaproductos-marco-pisos",
+          "title": "Marco Pisos",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "assets/imgs/500x500/vtex-500x500-1.jpg",
+          "imageActionUrl": "/pisos",
+          "headline": "Pisos"
+        },
+        {
+          "id": "listaproductos-marco-paredes",
+          "title": "Marco Paredes",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "assets/imgs/500x500/vtex-500x500-7.jpg",
+          "imageActionUrl": "/paredes",
+          "headline": "Paredes"
+        },
+        {
+          "id": "listaproductos-marco-ceranatto",
+          "title": "Marco Ceranatto",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "assets/imgs/500x500/vtex-500x500-8.jpg",
+          "imageActionUrl": "/ceranatto",
+          "headline": "Ceranatto"
+        },
+        {
+          "id": "listaproductos-marco-banos",
+          "title": "Marco Baños",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "assets/imgs/500x500/vtex-500x500-3.jpg",
+          "imageActionUrl": "/banos",
+          "headline": "Baños"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#listaproductos-marcos": {
+    "title": "Slider marcos de categorías",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "fullWidth": false,
+      "blockClass": "listaproductosMarcos"
+    }
+  },
+
+  /* ══════════════════════ RESULTADOS ══════════════════════
+   * querySchema idéntico al de la origen (cambiar SOLO queryField
+   * para apuntar a otra colección). Los layouts desktop/mobile y el
+   * not-found se reutilizan POR REFERENCIA de la plantilla origen
+   * (ResultadoBusquedaconBloqueSEOyPasillos.jsonc / 00-search.jsonc):
+   * "el resto permanece igual que la plantilla origen". */
+
+  "search-result-layout.customQuery#listaproductos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 20,
+        "queryField": "166", // ID de la colección (admin → Colecciones)
+        "mapField": "productClusterIds",
+        "facetsBehavior": "static"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#custom-search-2",
+      "search-result-layout.mobile#custom-search-2",
+      "search-not-found-layout"
+    ]
+  }
+}

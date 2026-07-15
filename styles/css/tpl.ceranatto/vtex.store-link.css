@@ -4,6 +4,14 @@
  * del diseño. Scoped a blockClass "ceranatto*".
  * ============================================================ */
 
+.link--ObjectLink {
+  display: inline-block;
+  padding: 0.9rem 1.75rem;
+  text-decoration: none;
+  cursor: pointer; 
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
 /* Base pill compartida */
 .link--ceranattoBtnPrimary,
 .link--ceranattoBtnGhost,

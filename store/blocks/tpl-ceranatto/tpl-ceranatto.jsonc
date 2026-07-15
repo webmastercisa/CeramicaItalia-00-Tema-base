@@ -10,14 +10,14 @@
 
   "store.custom#tpl-ceranatto": {
     "blocks": [
-      "flex-layout.row#ceranatto-nav",
       "flex-layout.row#ceranatto-hero",
       "flex-layout.row#ceranatto-trust",
       "flex-layout.row#ceranatto-que-es",
       "flex-layout.row#ceranatto-pilares",
-      "flex-layout.row#ceranatto-comparativa",
-      "flex-layout.row#ceranatto-peso",
+      "flex-layout.row#crt-registro",
       "flex-layout.row#ceranatto-acabados",
+      "flex-layout.row#ceranatto-comparativa",
+      "flex-layout.row#ceranatto-peso",      
       "flex-layout.row#ceranatto-formatos",
       "flex-layout.row#ceranatto-segmentos",
       "flex-layout.row#ceranatto-faq",
@@ -25,63 +25,7 @@
     ]
   },
 
-  /* ══════════════════════ NAV INTERNA (anclas) ══════════════════════
-   * Barra estática bajo el header del tema (el header ya es sticky,
-   * un segundo sticky se solaparía). Enlaces a las secciones vía htmlId. */
-
-  "flex-layout.row#ceranatto-nav": {
-    "title": "Ceranatto - Nav interna",
-    "children": [
-      "rich-text#ceranatto-nav-logo",
-      "link#ceranatto-nav-que-es",
-      "link#ceranatto-nav-pilares",
-      "link#ceranatto-nav-comparativa",
-      "link#ceranatto-nav-acabados",
-      "link#ceranatto-nav-formatos",
-      "link#ceranatto-nav-faq",
-      "link#ceranatto-nav-cta"
-    ],
-    "props": {
-      "blockClass": "ceranattoNav",
-      "fullWidth": true,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true
-    }
-  },
-
-  "rich-text#ceranatto-nav-logo": {
-    "props": {
-      "text": "**Ceranatto** by Cerámica Italia",
-      "blockClass": "ceranattoNavLogo"
-    }
-  },
-
-  "link#ceranatto-nav-que-es": {
-    "props": { "href": "#que-es", "label": "¿Qué es?", "blockClass": "ceranattoNavLink" }
-  },
-  "link#ceranatto-nav-pilares": {
-    "props": { "href": "#pilares", "label": "Tecnología", "blockClass": "ceranattoNavLink" }
-  },
-  "link#ceranatto-nav-comparativa": {
-    "props": { "href": "#comparativa", "label": "Comparativa", "blockClass": "ceranattoNavLink" }
-  },
-  "link#ceranatto-nav-acabados": {
-    "props": { "href": "#acabados", "label": "Acabados", "blockClass": "ceranattoNavLink" }
-  },
-  "link#ceranatto-nav-formatos": {
-    "props": { "href": "#formatos", "label": "Formatos", "blockClass": "ceranattoNavLink" }
-  },
-  "link#ceranatto-nav-faq": {
-    "props": { "href": "#faq", "label": "FAQ", "blockClass": "ceranattoNavLink" }
-  },
-  "link#ceranatto-nav-cta": {
-    "props": {
-      "href": "#contacto",
-      "label": "Especificar Ceranatto",
-      "blockClass": "ceranattoNavBtn",
-      "displayMode": "button"
-    }
-  },
+ 
 
   /* ══════════════════════ HERO ══════════════════════
    * Imagen de fondo + gradiente por CSS sobre el blockClass ceranattoHero. */
@@ -119,14 +63,14 @@
 
   "rich-text#ceranatto-hero-title": {
     "props": {
-      "text": "# Ceranatto. **La cerámica** que evolucionó al porcelanato.",
+      "text": "# Ceranatto. La nueva categoría de superficies de **Cerámica Italia.**",
       "blockClass": "ceranattoHeroTitle"
     }
   },
 
   "rich-text#ceranatto-hero-lead": {
     "props": {
-      "text": "No es cerámica tradicional. No es porcelanato importado. Es **Ceranatto**: una categoría tecnológica diseñada para la realidad constructiva de Colombia — más resistente, más flexible y más liviana.",
+      "text": "Diseñada para ofrecer el equilibrio perfecto entre diseño, resistencia e innovación, **Ceranatto®** supera las limitaciones de la cerámica tradicional y la rigidez del porcelanato convencional para crear espacios más duraderos, seguros y sofisticados.",
       "blockClass": "ceranattoHeroLead"
     }
   },
@@ -144,7 +88,7 @@
   "link#ceranatto-btn-descubrir": {
     "props": {
       "href": "#que-es",
-      "label": "Descubrir la tecnología",
+      "label": "Explora la colección",
       "blockClass": "ceranattoBtnPrimary",
       "displayMode": "button"
     }
@@ -273,21 +217,21 @@
 
   "rich-text#ceranatto-que-es-title": {
     "props": {
-      "text": "## Una respuesta tecnológica al porcelanato importado.",
+      "text": "## Ceranatto®",
       "blockClass": "ceranattoSectionTitle"
     }
   },
 
   "rich-text#ceranatto-que-es-lede-1": {
     "props": {
-      "text": "En un mercado saturado por porcelanatos importados de bajo costo y dudosa calidad, **Ceranatto** nace como una categoría superior: un revestimiento que supera las limitaciones de la cerámica tradicional y la rigidez quebradiza del porcelanato comercial.",
+      "text": " es una marca registrada y una línea exclusiva de Cerámica Italia que representa la evolución de la cerámica. Es una categoría tecnológica superior diseñada para ofrecer un equilibrio entre diseño, innovación y alto desempeño, superando las limitaciones de la cerámica tradicional y la rigidez del porcelanato convencional..",
       "blockClass": "ceranattoLede"
     }
   },
 
   "rich-text#ceranatto-que-es-lede-2": {
     "props": {
-      "text": "Es soberanía tecnológica nacional. Formulado para los ciclos rápidos de construcción, los movimientos estructurales normales y las exigencias climáticas de Colombia.",
+      "text": " Está desarrollada para proyectos residenciales y comerciales que buscan superficies resistentes, duraderas y de estética contemporánea.",
       "blockClass": "ceranattoLede"
     }
   },
@@ -346,7 +290,7 @@
 
   "rich-text#ceranatto-pilares-title": {
     "props": {
-      "text": "## La ciencia de un desempeño superior.",
+      "text": "## La tecnología detrás de Ceranatto®.",
       "blockClass": "ceranattoSectionTitle"
     }
   },
@@ -378,7 +322,7 @@
   },
   "rich-text#ceranatto-pilar-1-body": {
     "props": {
-      "text": "### Flexibilidad estructural\nMicro-flexión controlada (0.3–0.5 mm en servicio) que disipa movimientos laterales por viento o sismo y absorbe asentamientos diferenciales sin fisurarse.",
+      "text": "### Flexibilidad estructural\nAbsorbe pequeños movimientos del edificio disminuyendo el riesgo de fracturas.",
       "blockClass": "ceranattoPillarBody"
     }
   },
@@ -392,7 +336,7 @@
   },
   "rich-text#ceranatto-pilar-2-body": {
     "props": {
-      "text": "### Estabilidad dimensional\nExpansión irreversible menor al 0.1%. Comportamiento equivalente al porcelanato, con juntas mínimas de 2 mm y superficies visualmente continuas.",
+      "text": "### Estabilidad dimensional\nPermite instalaciones precisas con juntas de solo 2 mm.",
       "blockClass": "ceranattoPillarBody"
     }
   },
@@ -406,7 +350,7 @@
   },
   "rich-text#ceranatto-pilar-3-body": {
     "props": {
-      "text": "### Menor carga muerta\n≈ 20 kg/m² vs. 25–30 kg/m² del porcelanato típico. En una torre de 30 pisos representa entre 112,5 y 225 toneladas menos sobre la estructura.",
+      "text": "### Menor carga muerta\nReduce la carga muerta de la estructura y facilita el transporte e instalación",
       "blockClass": "ceranattoPillarBody"
     }
   },
@@ -420,7 +364,7 @@
   },
   "rich-text#ceranatto-pilar-4-body": {
     "props": {
-      "text": "### Absorción inteligente\nLa absorción controlada (6–10%) permite un anclaje químico y mecánico superior con el adhesivo. Óptimo para el clima colombiano, sin ciclos de congelamiento.",
+      "text": "### Absorción inteligente\nSu absorción controlada mejora el anclaje del adhesivo para instalaciones más seguras.",
       "blockClass": "ceranattoPillarBody"
     }
   },
@@ -434,7 +378,7 @@
   },
   "rich-text#ceranatto-pilar-5-body": {
     "props": {
-      "text": "### Resistencia química\nSuperficie 100% sellada e inmune al manchado. Limpieza con agua y jabón neutro. Cero mantenimiento complejo en el tiempo.",
+      "text": "### Resistencia química\nConserva la belleza y el desempeño de la superficie frente al uso diario, la humedad y los productos de limpieza más comunes.",
       "blockClass": "ceranattoPillarBody"
     }
   },
@@ -448,7 +392,7 @@
   },
   "rich-text#ceranatto-pilar-6-body": {
     "props": {
-      "text": "### Estética rectificada\nTodos los formatos con borde rectificado de alta precisión. Juntas mínimas, acabados asépticos y continuidad visual premium.",
+      "text": "### Estética rectificada\nEl rectificado de alta precisión permite instalaciones con juntas mínimas, logrando espacios más modernos, uniformes y sofisticados.",
       "blockClass": "ceranattoPillarBody"
     }
   },
@@ -471,7 +415,8 @@
       "rich-text#ceranatto-comparativa-eyebrow",
       "rich-text#ceranatto-comparativa-title",
       "rich-text#ceranatto-comparativa-lede",
-      "rich-text#ceranatto-tabla"
+      "rich-text#ceranatto-tabla",
+      "rich-text#ceranatto-nota-tecnica"
     ],
     "props": {
       "blockClass": "ceranattoComparativaCol",
@@ -485,22 +430,30 @@
 
   "rich-text#ceranatto-comparativa-title": {
     "props": {
-      "text": "## Ceranatto frente al porcelanato tradicional.",
+      "text": "## ¿Por qué Ceranatto® representa la evolución de la cerámica?",
       "blockClass": "ceranattoSectionTitle"
     }
   },
 
   "rich-text#ceranatto-comparativa-lede": {
     "props": {
-      "text": "Mismo nivel técnico de un porcelanato de alta gama. Beneficios estructurales que ningún porcelanato importado ofrece.",
+      "text": "**Más que una superficie, una solución de ingeniería**. Ceranatto® integra innovación en materiales, diseño y desempeño para ofrecer un equilibrio único entre resistencia, estabilidad y estética. Cada atributo ha sido desarrollado para responder a las condiciones reales de la construcción en Colombia, brindando mayor seguridad durante la instalación y una larga vida útil en el uso diario.",
       "blockClass": "ceranattoLede"
     }
   },
 
   "rich-text#ceranatto-tabla": {
     "props": {
-      "text": "| Atributo | Porcelanato típico | Ceranatto |\n| --- | --- | --- |\n| Comportamiento ante carga | Frágil (quebradizo) | Elástico (micro-flexión) |\n| Resistencia a la flexión | ~ 1.300 N | ≥ 1.500 N |\n| Expansión irreversible | ≈ 0.05% | < 0.1% |\n| Peso por m² | 25–30 kg | ≈ 20 kg |\n| Riesgo de fisuras | Alto | Bajo |\n| Resistencia al manchado | Variable | Inmune / 100% sellado |\n| Acabado de borde | Rectificado | Rectificado |\n| Tolerancia a asentamientos | Baja | Alta |",
+      "text": "| Atributo | Cerámica tradicional | Porcelanato típico | Ceranatto |\n| --- | --- | --- | --- |\n| Absorción de agua | Alta | Muy baja (<0,5 %) | Controlada (6 %–10 %) para una mejor adherencia del adhesivo |\n| Resistencia mecánica | Media | Alta (≈1300 N) | Muy alta (1500–1600 N) |\n| Flexibilidad estructural | Baja | Baja | Alta, absorbe mejor los movimientos de la estructura |\n| Peso aproximado | Medio | 25–30 kg/m² | ≈ 20 kg/m² |\n| Instalación con juntas de 2 mm | No siempre | Si | Muy alta | Sí, con validación técnica |\n| Bordes rectificados | Algunos modelos | Si | Sí, en toda la línea |\n| Resistencia química | Buena | Alta | Alta |\n| Tecnologías exclusivas | No | Limitadas | Crystal Lux y Natural Touch |\n| Garantía | Variable | Variable | 10 años |",
       "blockClass": "ceranattoTable"
+    }
+  },
+
+
+  "rich-text#ceranatto-nota-tecnica": {
+    "props": {
+      "text": "*Los valores pueden variar según la referencia y el formato. Consulte la ficha técnica de cada producto para conocer sus especificaciones.",
+      "blockClass": "ceranattoNotaTecnica"
     }
   },
 
@@ -650,11 +603,32 @@
 
   "flex-layout.row#ceranatto-acabados-grid": {
     "children": [
-      "flex-layout.col#ceranatto-acabado-crystal",
-      "flex-layout.col#ceranatto-acabado-natural"
+      "link#ceranatto-lnk-crystal",
+      "link#ceranatto-lnk-touch"
     ],
     "props": { "blockClass": "ceranattoAcabadosGrid", "colGap": 6 }
   },
+
+  "link#ceranatto-lnk-crystal": {
+    "children": [
+      "flex-layout.col#ceranatto-acabado-crystal"
+    ],
+    "props": {
+      "href": "/cristal-lux",
+      "blockClass": "ObjectLink"
+    }
+  },
+  
+  "link#ceranatto-lnk-touch": {
+    "children": [
+      "flex-layout.col#ceranatto-acabado-natural"
+    ],
+    "props": {
+      "href": "/natural-touch",
+      "blockClass": "ObjectLink"
+    }
+  },
+
 
   "flex-layout.col#ceranatto-acabado-crystal": {
     "children": ["image#ceranatto-img-crystal", "rich-text#ceranatto-acabado-crystal-body"],
@@ -671,7 +645,7 @@
 
   "rich-text#ceranatto-acabado-crystal-body": {
     "props": {
-      "text": "### Crystal Lux\n\n*Brillo espejo. Lujo visual. Alta resistencia al rayado.*\n\nTecnología de esmalte de alta densidad. Superficie premium con mayor resistencia al rayado por contacto cotidiano, apta incluso para mesones de cocina residenciales.",
+      "text": "### Crystal Lux®\n\n*Brillo que trasciende el diseño.*\n\nCrystal Lux® ofrece un acabado de efecto espejo con un brillo superior a 90 lúminas, realzando la amplitud, la luz y la sofisticación de cada espacio. Su esmalte de alta densidad proporciona una elevada resistencia al rayado, conservando la belleza de la superficie incluso en el uso diario.",
       "blockClass": "ceranattoFinishBody"
     }
   },
@@ -691,7 +665,7 @@
 
   "rich-text#ceranatto-acabado-natural-body": {
     "props": {
-      "text": "### Natural Touch\n\n*Zona Dual: agarre seguro, tacto suave, limpieza fácil.*\n\nCoeficiente de fricción DCOF 0.65–0.75, ideal para exteriores y zonas húmedas. Suave al tacto y totalmente trapeable — sin la aspereza de los antideslizantes rústicos.",
+      "text": "### Natural Touch®\n\n*Seguridad y confort en perfecta armonía.*\n\nNatural Touch® incorpora la tecnología Zona Dual para ofrecer una superficie antideslizante ideal para exteriores y zonas húmedas, sin renunciar a una textura suave al tacto y fácil de limpiar. El equilibrio perfecto entre seguridad, funcionalidad y diseño.",
       "blockClass": "ceranattoFinishBody"
     }
   },
@@ -854,7 +828,7 @@
 
   "rich-text#ceranatto-faq-title": {
     "props": {
-      "text": "## Todo lo que un especificador necesita saber.",
+      "text": "## (FAQ) sobre Ceranatto®.",
       "blockClass": "ceranattoSectionTitle"
     }
   },
@@ -870,11 +844,14 @@
 
   "disclosure-layout-group#ceranatto-faq": {
     "children": [
-      "disclosure-layout#ceranatto-faq-1",
-      "disclosure-layout#ceranatto-faq-2",
-      "disclosure-layout#ceranatto-faq-3",
-      "disclosure-layout#ceranatto-faq-4",
-      "disclosure-layout#ceranatto-faq-5"
+      "disclosure-layout#ceranatto-faq-1",      "disclosure-layout#ceranatto-faq-2",
+      "disclosure-layout#ceranatto-faq-3",      "disclosure-layout#ceranatto-faq-4",
+      "disclosure-layout#ceranatto-faq-5",      "disclosure-layout#ceranatto-faq-6",
+      "disclosure-layout#ceranatto-faq-7",      "disclosure-layout#ceranatto-faq-8",
+      "disclosure-layout#ceranatto-faq-9",      "disclosure-layout#ceranatto-faq-10",
+      "disclosure-layout#ceranatto-faq-11",     "disclosure-layout#ceranatto-faq-12",
+      "disclosure-layout#ceranatto-faq-13",     "disclosure-layout#ceranatto-faq-14",
+      "disclosure-layout#ceranatto-faq-15"
     ]
   },
 
@@ -888,7 +865,7 @@
   },
   "rich-text#ceranatto-faq-1-q": {
     "props": {
-      "text": "¿Qué es Ceranatto y en qué se diferencia del porcelanato?",
+      "text": "¿Qué es Ceranatto?",
       "blockClass": "ceranattoFaqQ"
     }
   },
@@ -898,7 +875,7 @@
   },
   "rich-text#ceranatto-faq-1-a": {
     "props": {
-      "text": "Ceranatto es una categoría tecnológica de revestimiento cerámico desarrollada por Cerámica Italia. Iguala la estabilidad dimensional del porcelanato (expansión < 0.1%) y lo supera en resistencia mecánica (1500–1600 N vs. ~1300 N), añadiendo flexibilidad estructural que absorbe los movimientos naturales de los edificios.",
+      "text": "Ceranatto® es una marca registrada y una línea exclusiva de Cerámica Italia que representa la evolución de la cerámica. Es una categoría tecnológica superior diseñada para ofrecer un equilibrio entre diseño, innovación y alto desempeño, superando las limitaciones de la cerámica tradicional y la rigidez del porcelanato convencional. Está desarrollada para proyectos residenciales y comerciales que buscan superficies resistentes, duraderas y de estética contemporánea.",
       "blockClass": "ceranattoFaqA"
     }
   },
@@ -913,7 +890,7 @@
   },
   "rich-text#ceranatto-faq-2-q": {
     "props": {
-      "text": "¿La absorción de agua de Ceranatto es una desventaja en Colombia?",
+      "text": "¿Cuál es la diferencia entre Ceranatto® y un porcelanato?",
       "blockClass": "ceranattoFaqQ"
     }
   },
@@ -923,7 +900,7 @@
   },
   "rich-text#ceranatto-faq-2-a": {
     "props": {
-      "text": "No. La exigencia de absorción menor a 0.5% aplica en zonas con temperaturas de congelamiento, donde el agua atrapada expande y fractura la baldosa. En Colombia no existen esas condiciones, por lo que la absorción controlada de Ceranatto (6–10%) mejora el anclaje químico y mecánico con el adhesivo.",
+      "text": "Aunque ambos son revestimientos de alto desempeño, Ceranatto® incorpora una arquitectura de materiales que combina resistencia mecánica, menor peso y mayor flexibilidad estructural. Esto le permite adaptarse mejor a los movimientos naturales de las edificaciones sin sacrificar estabilidad, además de ofrecer tecnologías exclusivas como Crystal Lux y Natural Touch.",
       "blockClass": "ceranattoFaqA"
     }
   },
@@ -938,7 +915,7 @@
   },
   "rich-text#ceranatto-faq-3-q": {
     "props": {
-      "text": "¿Cuánto peso se ahorra por m² con Ceranatto?",
+      "text": "¿Ceranatto® reemplaza al porcelanato?",
       "blockClass": "ceranattoFaqQ"
     }
   },
@@ -948,7 +925,7 @@
   },
   "rich-text#ceranatto-faq-3-a": {
     "props": {
-      "text": "Ceranatto pesa aproximadamente 20 kg/m², frente a los 25–30 kg/m² de un porcelanato típico. En una torre residencial de 30 pisos con ~22.500 m² revestidos, esto representa entre 112,5 y 225 toneladas menos de carga muerta.",
+      "text": "No. Ceranatto® es una nueva categoría de superficies desarrollada por Cerámica Italia para ofrecer una solución de alto desempeño. Dependiendo del tipo de proyecto, puede ser una alternativa con ventajas técnicas como menor peso, mayor flexibilidad estructural y tecnologías exclusivas de acabado.",
       "blockClass": "ceranattoFaqA"
     }
   },
@@ -963,7 +940,7 @@
   },
   "rich-text#ceranatto-faq-4-q": {
     "props": {
-      "text": "¿Ceranatto sirve para exteriores y zonas húmedas?",
+      "text": "¿Por qué Ceranatto® está diseñado para la construcción en Colombia?",
       "blockClass": "ceranattoFaqQ"
     }
   },
@@ -973,11 +950,12 @@
   },
   "rich-text#ceranatto-faq-4-a": {
     "props": {
-      "text": "Sí. El acabado Natural Touch (Tecnología Zona Dual) alcanza un coeficiente DCOF de 0.65–0.75, ideal para exteriores, baños y zonas húmedas, sin la aspereza de los antideslizantes tradicionales: es suave al tacto y totalmente trapeable.",
+      "text": "Ceranatto® fue desarrollado entendiendo las dinámicas constructivas y las condiciones climáticas de Colombia. Su composición permite acompañar los procesos de asentamiento de las edificaciones, ofreciendo estabilidad dimensional, alta resistencia y mayor confiabilidad durante la instalación y el uso.",
       "blockClass": "ceranattoFaqA"
     }
   },
 
+  /* =======================================  5  ======================================= */
   "disclosure-layout#ceranatto-faq-5": {
     "props": { "animated": true },
     "children": ["disclosure-trigger#ceranatto-faq-5", "disclosure-content#ceranatto-faq-5"]
@@ -988,7 +966,7 @@
   },
   "rich-text#ceranatto-faq-5-q": {
     "props": {
-      "text": "¿Qué garantía ofrece Ceranatto?",
+      "text": "¿La absorción de agua de Ceranatto® afecta su desempeño?",
       "blockClass": "ceranattoFaqQ"
     }
   },
@@ -998,10 +976,269 @@
   },
   "rich-text#ceranatto-faq-5-a": {
     "props": {
-      "text": "Ceranatto cuenta con 10 años de garantía y el respaldo de más de 40 años de trayectoria de Cerámica Italia.",
+      "text": "No. Su nivel de absorción controlada (entre 6 % y 10 %) es una ventaja técnica, ya que mejora el anclaje químico y mecánico del adhesivo, proporcionando una instalación más segura sin comprometer la resistencia ni la durabilidad del producto.",
       "blockClass": "ceranattoFaqA"
     }
   },
+  /* =======================================  6  ======================================= */
+  "disclosure-layout#ceranatto-faq-6": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-6", "disclosure-content#ceranatto-faq-6"]
+  },
+  "disclosure-trigger#ceranatto-faq-6": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-6-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-6-q": {
+    "props": {
+      "text": "¿Qué tan resistente es Ceranatto®?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-6": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-6-a"]
+  },
+  "rich-text#ceranatto-faq-6-a": {
+    "props": {
+      "text": "Ceranatto® alcanza resistencias mecánicas entre 1.500 y 1.600 Newtons, superando en muchos casos la resistencia de un porcelanato estándar. Esto le permite soportar cargas pesadas, alto tráfico y las exigencias propias de proyectos residenciales, comerciales e institucionales.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+  /* =======================================  7  ======================================= */
+  "disclosure-layout#ceranatto-faq-7": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-7", "disclosure-content#ceranatto-faq-7"]
+  },
+  "disclosure-trigger#ceranatto-faq-7": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-7-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-7-q": {
+    "props": {
+      "text": "¿Ceranatto® se puede fracturar con los movimientos de una construcción?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-7": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-7-a"]
+  },
+  "rich-text#ceranatto-faq-7-a": {
+    "props": {
+      "text": "Está diseñado precisamente para minimizar ese riesgo. Gracias a su flexibilidad estructural, Ceranatto® puede absorber pequeños movimientos naturales de las edificaciones sin fracturarse, convirtiéndose en una solución ideal para construcciones modernas.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
+  /* =======================================  8  ======================================= */
+  "disclosure-layout#ceranatto-faq-8": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-8", "disclosure-content#ceranatto-faq-8"]
+  },
+  "disclosure-trigger#ceranatto-faq-8": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-8-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-8-q": {
+    "props": {
+      "text": "Ceranatto® pesa menos que un porcelanato?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-8": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-8-a"]
+  },
+  "rich-text#ceranatto-faq-8-a": {
+    "props": {
+      "text": "Sí. Ceranatto® tiene un peso aproximado de 20 kg por metro cuadrado, mientras que un porcelanato convencional puede pesar entre 25 y 30 kg por metro cuadrado. Esta reducción disminuye la carga muerta de la edificación y facilita el transporte y la instalación.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
+  /* =======================================  9  ======================================= */
+  "disclosure-layout#ceranatto-faq-9": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-9", "disclosure-content#ceranatto-faq-9"]
+  },
+  "disclosure-trigger#ceranatto-faq-9": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-9-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-9-q": {
+    "props": {
+      "text": "Qué es la tecnología Crystal Lux?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-9": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-9-a"]
+  },
+  "rich-text#ceranatto-faq-9-a": {
+    "props": {
+      "text": "Crystal Lux es una tecnología exclusiva de Ceranatto® que ofrece acabados de alto brillo con efecto espejo, superiores a 90 lúminas. Además de aportar elegancia, incorpora un esmalte de alta densidad que proporciona una excelente resistencia al rayado y al desgaste diario.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
+  /* =======================================  10  ======================================= */
+  "disclosure-layout#ceranatto-faq-10": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-10", "disclosure-content#ceranatto-faq-10"]
+  },
+  "disclosure-trigger#ceranatto-faq-10": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-10-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-10-q": {
+    "props": {
+      "text": "Qué es Natural Touch?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-10": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-10-a"]
+  },
+  "rich-text#ceranatto-faq-10-a": {
+    "props": {
+      "text": "Natural Touch es una tecnología exclusiva con Zona Dual que combina seguridad y comodidad. Su alto coeficiente de fricción la hace ideal para exteriores y zonas húmedas, mientras que su superficie suave facilita la limpieza, evitando que la suciedad se adhiera como ocurre con otros pisos antideslizantes.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
+  /* =======================================  11  ======================================= */
+  "disclosure-layout#ceranatto-faq-11": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-11", "disclosure-content#ceranatto-faq-11"]
+  },
+  "disclosure-trigger#ceranatto-faq-11": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-11-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-11-q": {
+    "props": {
+      "text": "En qué espacios se puede instalar Ceranatto®?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-11": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-11-a"]
+  },
+  "rich-text#ceranatto-faq-11-a": {
+    "props": {
+      "text": "Ceranatto® puede instalarse en pisos y paredes de espacios residenciales y comerciales, tanto interiores como exteriores, incluyendo salas, habitaciones, cocinas, baños, terrazas, balcones, zonas húmedas y áreas de alto tráfico, según la tecnología y el acabado seleccionados.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
+  /* =======================================  12  ======================================= */
+  "disclosure-layout#ceranatto-faq-12": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-12", "disclosure-content#ceranatto-faq-12"]
+  },
+  "disclosure-trigger#ceranatto-faq-12": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-12-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-12-q": {
+    "props": {
+      "text": "Ceranatto® permite instalar juntas de solo 2 mm?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-12": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-12-a"]
+  },
+  "rich-text#ceranatto-faq-12-a": {
+    "props": {
+      "text": "Sí. Toda la línea Ceranatto® cuenta con bordes rectificados de alta precisión y ha sido validada técnicamente para instalarse con juntas de 2 mm, logrando superficies más continuas, elegantes y fáciles de limpiar.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
+  /* =======================================  13  ======================================= */
+  "disclosure-layout#ceranatto-faq-13": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-13", "disclosure-content#ceranatto-faq-13"]
+  },
+  "disclosure-trigger#ceranatto-faq-13": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-13-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-13-q": {
+    "props": {
+      "text": "Qué formatos ofrece Ceranatto®?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-13": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-13-a"]
+  },
+  "rich-text#ceranatto-faq-13-a": {
+    "props": {
+      "text": "Ceranatto® está disponible en formatos tipo listón de 29 × 118,4 cm, gran formato de 58,4 × 118,4 cm y una línea técnica de 60 × 60 cm, diseñada para proyectos que requieren alta resistencia y eficiencia constructiva..",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
+  /* =======================================  14  ======================================= */
+  "disclosure-layout#ceranatto-faq-14": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-14", "disclosure-content#ceranatto-faq-14"]
+  },
+  "disclosure-trigger#ceranatto-faq-14": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-14-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-14-q": {
+    "props": {
+      "text": "Qué garantía tiene Ceranatto®?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-14": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-14-a"]
+  },
+  "rich-text#ceranatto-faq-14-a": {
+    "props": {
+      "text": "Ceranatto® cuenta con una garantía de 10 años y el respaldo de más de 40 años de experiencia de Cerámica Italia, ofreciendo confianza, calidad y soporte para proyectos de construcción y remodelación.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
+  /* =======================================  15  ======================================= */
+  "disclosure-layout#ceranatto-faq-15": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#ceranatto-faq-15", "disclosure-content#ceranatto-faq-15"]
+  },
+  "disclosure-trigger#ceranatto-faq-15": {
+    "props": { "as": "div", "blockClass": "ceranattoFaqQuestion" },
+    "children": ["rich-text#ceranatto-faq-15-q", "disclosure-state-indicator#ceranatto"]
+  },
+  "rich-text#ceranatto-faq-15-q": {
+    "props": {
+      "text": "Por qué elegir Ceranatto®?",
+      "blockClass": "ceranattoFaqQ"
+    }
+  },
+  "disclosure-content#ceranatto-faq-15": {
+    "props": { "blockClass": "ceranattoFaqAnswer" },
+    "children": ["rich-text#ceranatto-faq-15-a"]
+  },
+  "rich-text#ceranatto-faq-15-a": {
+    "props": {
+      "text": "Porque combina innovación, diseño contemporáneo y tecnologías exclusivas para ofrecer superficies más resistentes, ligeras, seguras y duraderas. Ceranatto® es una solución desarrollada para la realidad constructiva de Colombia, respaldada por Cerámica Italia y diseñada para transformar los espacios con alto desempeño y estética de vanguardia.",
+      "blockClass": "ceranattoFaqA"
+    }
+  },
+
 
   "disclosure-state-indicator#ceranatto": {
     "props": {
@@ -1090,5 +1327,186 @@
       "blockClass": "ceranattoBtnDarkGhost",
       "displayMode": "button"
     }
+  },
+
+
+
+
+
+
+
+  
+  /* ══════════════════════ REGISTRO (Únete + formulario) ══════════════════════
+   * Formulario con vtex.store-form (patrón de forms/contacto.jsonc).
+   * PRERREQUISITO ADMIN: entidad "CN" con schema "CERANATTO" en
+   * Master Data — el JSON del schema está en docs/TPL-CERANATTO.md. */
+
+  "flex-layout.row#crt-registro": {
+    "title": "Ceranatto - Registro",
+    "children": ["flex-layout.col#crt-registro-izq", "flex-layout.col#crt-registro-der"],
+    "props": {
+      "blockClass": "spmRegistro",
+      "fullWidth": true,
+      "htmlId": "registro",
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#crt-registro-izq": {
+    "children": [
+      "rich-text#crt-registro-eyebrow",
+      "rich-text#crt-registro-title",
+      "rich-text#crt-registro-lead",
+      "rich-text#crt-registro-desc"
+    ],
+    "props": {
+      "blockClass": "spmRegistroIzq",
+      "width": "50%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#crt-registro-eyebrow": {
+    "props": { "text": "Únete", "blockClass": ["spmEyebrow", "spmEyebrowDark"] }
+  },
+
+  /* strong = "Súper Maestros" en rojo glow y línea propia + barra CSS */
+  "rich-text#crt-registro-title": {
+    "props": {
+      "text": "## Explora **CERANATTO®**",
+      "blockClass": ["spmSectionTitle", "spmSectionTitleDark", "spmSectionTitleBreak", "cerSectionTitleBreak"]
+    }
+  },
+
+  "rich-text#crt-registro-lead": {
+    "props": {
+      "text": "Belleza. eficiencia. Absorción inteligente.",
+      "blockClass": "spmJoinLead"
+    }
+  },
+
+  "rich-text#crt-registro-desc": {
+    "props": {
+      "text": "Porque la línea Ceranatto se produce con bordes rectificados de alta precisión — juntas mínimas de 2 mm y continuidad visual premium.",
+      "blockClass": "spmJoinDesc"
+    }
+  },
+
+
+
+  /* Tarjeta de formulario (form-card del diseño) */
+  "flex-layout.col#crt-registro-der": {
+    "children": [
+      "rich-text#crt-form-title",
+      "rich-text#crt-form-sub",
+      "form#crt-registro",
+      "rich-text#crt-form-consent"
+    ],
+    "props": {
+      "blockClass": "spmFormCard",
+      "width": "50%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#crt-form-title": {
+    "props": { "text": "### Conoce más beneficios", "blockClass": "spmFormTitle" }
+  },
+
+  "rich-text#crt-form-sub": {
+    "props": {
+      "text": "Llena el formulario. Te contactamos en menos de 48h.",
+      "blockClass": "spmFormSub"
+    }
+  },
+
+  "form#crt-registro": {
+    "props": {
+      "entity": "SM",
+      "schema": "SUPERMAESTRO",
+      "blockClass": "spmForm"
+    },
+    "children": [
+      "flex-layout.row#crt-form-fila-1",
+      "flex-layout.row#crt-form-fila-2",
+      "form-input.text#crt-email",
+      "form-input.dropdown#crt-sala",
+      "form-submit#crt-registro"
+    ],
+    "blocks": ["form-success#crt-registro"]
+  },
+
+  "flex-layout.row#crt-form-fila-1": {
+    "children": ["form-input.text#crt-nombre"/*, "form-input.text#crt-cedula"*/],
+    "props": { "blockClass": "spmFormFila", "preserveLayoutOnMobile": true }
+  },
+
+  "flex-layout.row#crt-form-fila-2": {
+    "children": ["form-input.text#crt-telefono"/*, "form-input.text#crt-ciudad"*/],
+    "props": { "blockClass": "spmFormFila", "preserveLayoutOnMobile": true }
+  },
+
+  "form-input.text#crt-nombre": {
+    "props": { "pointer": "#/properties/nombre", "placeholder": "Jean Paolo Ramírez", "label": "Nombre completo" }
+  },
+  
+  //"form-input.text#crt-cedula": {
+  //  "props": { "pointer": "#/properties/cedula", "placeholder": "88183304", "label": "Cédula" }
+  //},
+
+  "form-input.text#crt-telefono": {
+    "props": { "pointer": "#/properties/telefono", "placeholder": "3115293923", "label": "Teléfono" }
+  },
+
+  //"form-input.text#crt-ciudad": {
+  //  "props": { "pointer": "#/properties/ciudad", "placeholder": "Aguachica", "label": "Ciudad" }
+  //},
+
+  "form-input.text#crt-email": {
+    "props": { "pointer": "#/properties/email", "placeholder": "jpaolors@correo.com", "label": "Correo electrónico" }
+  },
+  "form-input.dropdown#crt-sala": {
+    "props": { "pointer": "#/properties/sala", "label": "Sala donde compras" }
+  },
+
+  "form-submit#crt-registro": {
+    "props": { "label": "Enviar información" }
+  },
+
+  "form-success#crt-registro": {
+    "children": ["rich-text#crt-form-success"]
+  },
+
+  "rich-text#crt-form-success": {
+    "props": {
+      "text": "### ¡Listo, !\n\nRecibimos tu solicitud. Un asesor de Cerámica Italia te contactará pronto.",
+      "blockClass": "spmFormSuccess",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#crt-form-consent": {
+    "props": {
+      "text": "Al enviar aceptas la [política de tratamiento de datos](/terminos-legales) de Cerámica Italia.",
+      "blockClass": "spmFormConsent"
+    }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
