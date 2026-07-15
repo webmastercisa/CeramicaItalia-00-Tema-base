@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "flex-layout.row#ia-cisa",
+      "flex-layout.row#infotienda-cisa",
       "list-context.image-list#homeBanners",
       //"__fold__.desktop",
       //"flex-layout.row#product-featured",
@@ -31,7 +31,8 @@
     ]
   },
 
-  "flex-layout.row#ia-cisa": {
+  /* =================  Texto H1 para que la IA lo gestione  ==================================== */
+  "flex-layout.row#infotienda-cisa": {
     "props":    { "blockClass": "titleh1oculto", "colSizing": "auto" },
     "children": [ "rich-text#cisa-h1", "rich-text#cisa-h2", "rich-text#cisa-h3" ]
   },

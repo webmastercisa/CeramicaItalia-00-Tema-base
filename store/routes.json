@@ -164,6 +164,15 @@
     "isSitemapEntry": true
   },
 
+  "store.custom#tpl-listaproductos":
+  {
+    "path": "/tpl-listaproductos",
+    "title": "Lista de productos | Cerámica Italia",
+    "blockId": "store.custom#tpl-listaproductos",
+    "isSitemapEntry": true
+  },
+
+
   "store.custom#tpl-categoria": { "path": "/tpl-categoria/:slug" }
 
 }

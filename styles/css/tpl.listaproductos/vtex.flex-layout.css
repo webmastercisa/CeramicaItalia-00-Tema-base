@@ -1,0 +1,78 @@
+/* ============================================================
+ * TPL-LISTAPRODUCTOS · Layout (vtex.flex-layout)
+ * Scoped a blockClass "listaproductos*": no afecta otras páginas.
+ *
+ * Paleta de marca:
+ *   rojo    #ED1B24  (background.action-primary de style.json)
+ *   tinta   #3f3f40  · muted #727273 · línea #e3e4e6
+ * Tipos: NeutraTextAltBold (títulos) / NeutraText (cuerpo),
+ * registradas en styles/configs/font-faces.css.
+ * ============================================================ */
+
+/* ─────────────── HERO GLASSMORPHISM ───────────────
+ * La imagen ocupa TODO el ancho con ~320px de alto; va como
+ * background del row para que el panel de texto quede sobre ella
+ * (precedente: .flexRow--ceranattoHero). Para cambiarla, subir el
+ * nuevo asset al File Manager y actualizar esta URL. */
+.flexRow--listaproductosHero {
+  background-image:
+    linear-gradient(rgba(30, 26, 26, 0.28), rgba(30, 26, 26, 0.38)),
+    url("https://ceramicaitalia.vteximg.com.br/arquivos/bannerSearch.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Doble clase: gana a la regla global del tema
+   ".flexRowContent { justify-content: center }" */
+.flexRow--listaproductosHero .flexRowContent--listaproductosHero {
+  /* alto solicitado ~320px; en px y no vh (zoom: 85% global del tema) */
+  min-height: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Panel "vidrio": PRIMERO el fallback sólido (navegadores sin
+   backdrop-filter), el blur real va dentro de @supports —
+   convención del tema (styles/css/vtex.store-header.css) */
+.flexCol--listaproductosHeroGlass {
+  /* margin auto: el wrapper interno de flex-layout ocupa el 100% del
+     row; así el panel queda centrado a cualquier ancho */
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1.75rem 1.5rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22);
+}
+
+@supports (backdrop-filter: blur(5px)) {
+  .flexCol--listaproductosHeroGlass {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px) saturate(120%);
+  }
+}
+
+@media (min-width: 64rem) {
+  .flexCol--listaproductosHeroGlass {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+/* Mobile: misma variante del banner que usa la plantilla origen */
+@media (max-width: 47.99rem) {
+  .flexRow--listaproductosHero {
+    background-image:
+      linear-gradient(rgba(30, 26, 26, 0.28), rgba(30, 26, 26, 0.38)),
+      url("https://ceramicaitalia.vteximg.com.br/arquivos/banner-search-mobile.png");
+  }
+
+  .flexRow--listaproductosHero .flexRowContent--listaproductosHero {
+    min-height: 280px;
+    padding: 1.5rem 1rem;
+  }
+}

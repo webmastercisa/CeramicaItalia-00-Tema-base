@@ -28,9 +28,16 @@
   width: fit-content;
 }
 
-.flexRow--titleh1oculto
+.flexRowContent--titleh1oculto, .flexRow--titleh1oculto
 {
-  height: 1px;
+  height: 0px;
+  width: 0px;
+  display: none;
+  visibility: hidden;
+  padding: 0px;
+  font-size: 1px;
+  color: #ffffff00;
+  margin: 0px;
 }
 
 .flexRow--btnWhatsApp-layout {

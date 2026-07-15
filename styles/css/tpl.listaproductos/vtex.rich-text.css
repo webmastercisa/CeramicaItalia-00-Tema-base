@@ -1,0 +1,43 @@
+/* ============================================================
+ * TPL-LISTAPRODUCTOS · Tipografía del hero (vtex.rich-text)
+ * Scoped a blockClass "listaproductos*".
+ * ============================================================ */
+
+.container--listaproductosHeroTitulo,
+.container--listaproductosHeroLead {
+  margin: 0;
+}
+
+/* Único H1 de la plantilla */
+.headingLevel1--listaproductosHeroTitulo {
+  margin: 0;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.15;
+  color: #3f3f40;
+}
+
+/* El **negrita** del título toma el rojo de marca */
+.strong--listaproductosHeroTitulo {
+  color: #ED1B24;
+}
+
+.paragraph--listaproductosHeroLead {
+  margin: 0.75rem 0 1.25rem;
+  font-family: 'NeutraText', -apple-system, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #e3e3e3;
+}
+
+@media (min-width: 64rem) {
+  .headingLevel1--listaproductosHeroTitulo {
+    font-size: 2.375rem;
+  }
+
+  .paragraph--listaproductosHeroLead {
+    font-size: 1.125rem;
+  }
+}

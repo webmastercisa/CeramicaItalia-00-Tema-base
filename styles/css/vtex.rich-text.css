@@ -211,11 +211,16 @@
   text-decoration: underline rgb(168, 167, 167) 3px;
 }
 
-.headingLevel1--titleh1oculto
+.container--titleh1oculto, .wrapper--titleh1oculto, .headingLevel1--titleh1oculto, .headingLevel2--titleh1oculto
 {
+  height: 0px;
+  width: 0px;
   display: none;
-  padding: 1px 1px 1px 1px;
-  color: #E52024;
+  visibility: hidden;
+  padding: 0px;
+  font-size: 1px;
+  color: #ffffff00;
+  margin: 0px;
 }
 
 /* Seasons Products Section -Temporada de cocinas*/

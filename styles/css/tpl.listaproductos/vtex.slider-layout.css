@@ -1,0 +1,155 @@
+/* ============================================================
+ * TPL-LISTAPRODUCTOS · Marcos de categorías (vtex.slider-layout)
+ *
+ * VERIFICADO EN PRODUCCIÓN (bundle de /ResultadoBusquedaconBloqueSEOyPasillos):
+ * dentro de list-context.info-card-list → slider-layout, los handles
+ * infoCard* se emiten bajo vtex-slider-layout-0-x y su modificador es
+ * el blockClass DEL SLIDER ("listaproductosMarcos") — por eso viven en
+ * este archivo y no en vtex.store-components.css. Los elementos traen
+ * Tachyons (w-50-ns, items-start): se ganan con doble clase.
+ *
+ * Diseño: la imagen llena toda la tarjeta y el nombre de la categoría
+ * va SIEMPRE centrado en la mitad, grande, sobre una franja de vidrio
+ * clara. Al hover: zoom + blur tenue en la imagen, la franja se vuelve
+ * vidrio oscuro y el texto pasa a #ededed (contraste garantizado).
+ * ============================================================ */
+
+/* Sección de marcos: mismo ancho de contenido que el hero */
+.sliderLayoutContainer--listaproductosMarcos {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 0.5rem 2rem;
+}
+
+/* Gutter entre marcos (precedente: .slide--shelf-destacados--visible) */
+.slide--listaproductosMarcos {
+  padding: 0 0.5rem;
+}
+
+/* ── Marco: la imagen ocupa toda la tarjeta ── */
+.infoCardContainer--listaproductosMarcos {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid #e3e4e6;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.infoCardContainer--listaproductosMarcos .infoCardImageContainer--listaproductosMarcos {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Imagen en reposo: sin ningún efecto */
+.infoCardContainer--listaproductosMarcos .infoCardImage--listaproductosMarcos {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  transition: filter 0.45s ease;
+}
+
+/* Hover: solo un blur suave (el contraste del texto lo da la franja) */
+.infoCardContainer--listaproductosMarcos:hover .infoCardImage--listaproductosMarcos {
+  transform: scale(1.5);
+}
+
+/* Franja de texto centrada en la mitad de la tarjeta.
+   pointer-events:none para que el clic atraviese hacia el enlace
+   de la imagen (imageActionUrl). Fallback sólido primero; el vidrio
+   real va en @supports (convención del tema). */
+.infoCardContainer--listaproductosMarcos .infoCardTextContainer--listaproductosMarcos {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.35s ease;
+  pointer-events: none;
+}
+
+/* Hover: la franja se oscurece para que el texto claro no se pierda */
+.infoCardContainer--listaproductosMarcos:hover .infoCardTextContainer--listaproductosMarcos {
+  background-color: rgba(32, 28, 28, 0.6);  
+}
+
+@supports (backdrop-filter: blur(5px)) {
+  .infoCardContainer--listaproductosMarcos .infoCardTextContainer--listaproductosMarcos {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(3px);
+  }
+
+  .infoCardContainer--listaproductosMarcos:hover .infoCardTextContainer--listaproductosMarcos {
+    background-color: rgba(32, 28, 28, 0.42);
+    transition: background-color 0.35s ease;
+    z-index: 9999;
+  }
+}
+
+/* Nombre de la categoría: grande y protagonista (renderiza <div>,
+   no compite con el H1 del hero) */
+.infoCardContainer--listaproductosMarcos .infoCardHeadline--listaproductosMarcos {
+  width: 100%;
+  margin: 0;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #3f3f40;
+  transition: color 0.35s ease;
+}
+
+/* Hover: texto claro sobre el vidrio oscuro */
+.infoCardContainer--listaproductosMarcos:hover .infoCardHeadline--listaproductosMarcos {
+  color: #ededed;
+}
+
+/* Refuerzo del callToActionMode:"none" de los bloques: si el Site
+   Editor conserva contenido antiguo con el botón vacío, no se pinta */
+.infoCardContainer--listaproductosMarcos .infoCardCallActionContainer--listaproductosMarcos {
+  display: none;
+}
+
+/* Dots del slider (visibles cuando no caben los 4 marcos) */
+.paginationDotsContainer--listaproductosMarcos {
+  margin-top: 0.75rem;
+}
+
+.paginationDot--listaproductosMarcos {
+  background-color: #d8d8da;
+}
+
+.paginationDot--listaproductosMarcos--isActive {
+  background-color: #ED1B24;
+}
+
+/* Desktop: los 4 marcos caben en una vista → sin dots */
+@media (min-width: 64rem) {
+  .paginationDotsContainer--listaproductosMarcos {
+    display: none;
+  }
+}
+
+/* Mobile: marcos algo más compactos */
+@media (max-width: 47.99rem) {
+  .infoCardContainer--listaproductosMarcos {
+    height: 300px;
+  }
+
+  .infoCardContainer--listaproductosMarcos .infoCardImage--listaproductosMarcos {
+    height: 300px;
+  }
+
+  .infoCardContainer--listaproductosMarcos .infoCardHeadline--listaproductosMarcos {
+    font-size: 1.375rem;
+  }
+}
