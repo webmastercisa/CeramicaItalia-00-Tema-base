@@ -22,7 +22,7 @@
       "querySchema": {
         "orderByField": "OrderByTopSaleDESC",
         "hideUnavailableItems": false,
-        "maxItemsPerPage": 4, // Puedes bajar a 4 si aún ves problemas de peso
+        "maxItemsPerPage": 12, // Puedes bajar a 4 si aún ves problemas de peso
         "queryField": "190",
         "mapField": "productClusterIds",
         "facetsBehavior": "static"

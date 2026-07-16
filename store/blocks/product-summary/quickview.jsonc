@@ -36,7 +36,9 @@
   },
   "flex-layout.col#quickviewPrice": {
     "children": [
-      "flex-layout.row#list-price-savings",
+      /* solo una fila: #list-price-savings y #selling-price montan el
+         mismo par ListPriceWithTax+SellingPriceWithTax (duplicaba el
+         precio en pantalla) */
       "flex-layout.row#selling-price"
       // "product-installments"
     ]
@@ -96,7 +98,7 @@
         "variant": "secondary"
       },
       "displayMode": "button",
-      "label": "View details",
+      "label": "Ver detalle del producto",
       "href": "/{slug}/p"
     }
   },
@@ -111,7 +113,10 @@
   "flex-layout.col#quickview-images": {
     "children": [
       "product-images#quickview"
-    ]
+    ],
+    "props": {
+      "width": "55%"
+    }
   },
   "flex-layout.col#quickview-product-details": {
     "children": [
@@ -119,6 +124,7 @@
       "modal-actions#quickview"
     ],
     "props": {
+      "width": "grow",
       "preventVerticalStretch": true,
       "blockClass": "quickviewDetails"
     }
@@ -177,11 +183,6 @@
     },
     "blocks":[]
   }
-
-
-
-
-
 
 
 
