@@ -5,12 +5,12 @@
    *  Ruta: /tpl-listaproductos (ver store/routes.json)
    *  Estilos: styles/css/tpl.listaproductos/*.css
    *
-   *  Réplica funcional de ResultadoBusquedaconBloqueSEOyPasillos:
-   *  se rediseñan ÚNICAMENTE los dos contenedores responsive
-   *  (hero glassmorphism + 4 marcos de categorías con hover);
-   *  el bloque de resultados reutiliza POR REFERENCIA los layouts
-   *  desktop/mobile de la plantilla origen, de modo que filtros,
-   *  galería y paginación permanecen idénticos.
+   *  Plantilla AUTÓNOMA (réplica funcional de la antigua
+   *  ResultadoBusquedaconBloqueSEOyPasillos, hoy borrable): todos los
+   *  bloques estructurales son propios (IDs listaproductos-*). Solo
+   *  referencia la infraestructura global de búsqueda de
+   *  00-search.jsonc, compartida por todo el sitio (store.search).
+   *  Contenedores responsive: hero glassmorphism + 4 marcos hover.
    *
    *  Paleta: rojo #ED1B24 · tinta #3f3f40 · línea #e3e4e6
    *  Convención: IDs "listaproductos-*" / blockClass "listaproductos*"
@@ -89,7 +89,10 @@
     }
   },
 
-  /* Botón de marca: pill, fondo rojo, texto blanco (CSS store-link) */
+  /* Botón de marca (pill rojo/blanco) desactivado en el hero.
+     Para reactivarlo: descomentar este bloque, su referencia en
+     flex-layout.col#listaproductos-hero-glass y las reglas de
+     styles/css/tpl.listaproductos/vtex.store-link.css.
   "link#listaproductos-hero-boton": {
     "props": {
       "href": "/muestras",
@@ -98,6 +101,7 @@
       "blockClass": "listaproductosBtnPrimary"
     }
   },
+  */
 
   /* ══════════════════════ 4 MARCOS DE CATEGORÍAS ══════════════════════
    * Tarjetas que direccionan a /pisos /paredes /ceranatto /banos.
@@ -170,27 +174,114 @@
   },
 
   /* ══════════════════════ RESULTADOS ══════════════════════
-   * querySchema idéntico al de la origen (cambiar SOLO queryField
-   * para apuntar a otra colección). Los layouts desktop/mobile y el
-   * not-found se reutilizan POR REFERENCIA de la plantilla origen
-   * (ResultadoBusquedaconBloqueSEOyPasillos.jsonc / 00-search.jsonc):
-   * "el resto permanece igual que la plantilla origen". */
+   * Cadena de resultados PROPIA (IDs listaproductos-*): la plantilla es
+   * autónoma y NO depende de ResultadoBusquedaconBloqueSEOyPasillos.jsonc
+   * (borrable). Solo referencia la infraestructura global de búsqueda de
+   * 00-search.jsonc (searchbread, filter-navigator, drawer, products,
+   * fetchmore, searchinfomobile, contentmobile, search-not-found-layout),
+   * que es el núcleo de TODAS las búsquedas del sitio (store.search).
+   * Los blockClass se conservan idénticos a la origen (section-filters,
+   * filterCol, ResultadoMobile...) porque el CSS raíz estiliza esas
+   * clases: cero cambio visual. */
 
   "search-result-layout.customQuery#listaproductos": {
     "props": {
       "querySchema": {
         "orderByField": "OrderByTopSaleDESC",
         "hideUnavailableItems": false,
-        "maxItemsPerPage": 20,
-        "queryField": "166", // ID de la colección (admin → Colecciones)
+        "maxItemsPerPage": 12,
+        "queryField": "179", // ID de la colección (Ceranatto)
         "mapField": "productClusterIds",
         "facetsBehavior": "static"
       }
     },
     "blocks": [
-      "search-result-layout.desktop#custom-search-2",
-      "search-result-layout.mobile#custom-search-2",
+      "search-result-layout.desktop#listaproductos",
+      "search-result-layout.mobile#listaproductos",
       "search-not-found-layout"
     ]
+  },
+
+  "search-result-layout.desktop#listaproductos": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#listaproductos-resultado"
+    ],
+    "props": {
+      "pagination": "show-more",
+      /* true (la origen usaba false): en una ruta custom, false expulsa
+         al usuario de la plantilla al primer clic en una faceta */
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "flex-layout.row#listaproductos-resultado": {
+    "children": ["flex-layout.col#listaproductos-resultado"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#listaproductos-resultado": {
+    "children": [
+      "flex-layout.row#listaproductos-filtros",
+      "flex-layout.col#listaproductos-contenido"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+
+  /* Barra de filtros horizontal + drawer "Todos los filtros" */
+  "flex-layout.row#listaproductos-filtros": {
+    "children": [
+      "flex-layout.col#listaproductos-filtros",
+      "drawer#filter-navigator-v2"
+    ],
+    "props": {
+      "blockClass": ["section-filters", "section-filters-2"],
+      "preventHorizontalStretch": false
+    }
+  },
+
+  "flex-layout.col#listaproductos-filtros": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": ["filterCol", "filterCol-2"],
+      "width": "78%"
+    }
+  },
+
+  "flex-layout.col#listaproductos-contenido": {
+    "children": [
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "search-result-layout.mobile#listaproductos": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      "blockClass": "ResultadoMobile"
+    }
   }
 }

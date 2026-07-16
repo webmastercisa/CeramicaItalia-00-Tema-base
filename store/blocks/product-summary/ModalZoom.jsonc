@@ -1,168 +1,88 @@
 {
-    "condition-layout.product#availability-modal": {
-        "props": {
-          "conditions": [
-            {
-              "subject": "isProductAvailable"
-            }
-          ],
-          "Then": "flex-layout.row#product-main-modal",
-          "Else": "flex-layout.row#product-availability-modal"
+  /* ============================================================
+   * QUICKVIEW DEL PRODUCT-SUMMARY (rediseño 2026-07-16)
+   *
+   * ANTES: este archivo montaba el PDP COMPLETO dentro del modal de
+   * cada card, y por partida doble (responsive-layout.desktop#view-pdp-
+   * desktop-modal + responsive-layout.mobile#view-pdp-mobile-modal),
+   * incluido menu#menu-pdp con la tabla de especificaciones. Medido en
+   * el bundle SSR de *.myvtex.com: el 85% del arbol de bloques de una
+   * pagina de busqueda (3,88 MB / 2.476 nodos de 4,55 MB / 3.013) vivia
+   * bajo este modal, y el payload de pageContent superaba el limite de
+   * vtex.pages-graphql -> 413 en Site Editor (docs/TPL-LISTAPRODUCTOS.md
+   * y scripts/site_editor_payload.py).
+   *
+   * AHORA: quickview compacto (imagen + nombre + precio + selector de
+   * SKU + cantidad + anadir al carrito + enlace al PDP) reutilizando
+   * las piezas ya definidas y estilizadas en quickview.jsonc
+   * (.modal--quickview, .contentContainer--quickviewContent, etc.).
+   * Un solo arbol para desktop y mobile: flex-layout apila las columnas
+   * en pantallas pequenas, no hacen falta responsive-layout duplicados.
+   * El detalle completo del producto vive en el PDP, a un clic
+   * ("Ver detalles" en modal-actions#quickview).
+   *
+   * Entrada externa (NO renombrar): condition-layout.product#availability-modal,
+   * referenciado desde flex-layout.row#quickview-main-row (quickview.jsonc).
+   * ============================================================ */
+
+  "condition-layout.product#availability-modal": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
         }
-      },
-
-
-      "flex-layout.row#product-main-modal": {
-        "props": {
-          "colGap": 7,
-          "rowGap": 7,
-          "marginTop": 4,
-          "marginBottom": 7,
-          "paddingTop": 7,
-          "paddingBottom": 7,
-          "blockClass": "container-pdp"
-        },
-        "children": [
-          "flex-layout.col#container-responsive-pdp-modal"
-        ]
-      },
-
-      "flex-layout.col#container-responsive-pdp-modal": {
-        "children": [
-          "responsive-layout.desktop#view-pdp-desktop-modal",
-          "responsive-layout.mobile#view-pdp-mobile-modal"
-        ],
-        "props": {
-          "blockClass": ["container-responsive"]
-        }
-      },
-
-       "responsive-layout.desktop#view-pdp-desktop-modal": {
-          "children": ["flex-layout.row#container-desktop-pdp-responsive-modal"]
-          // ,"props": {
-          //   "width": "100%"
-          // }
-        },
-
-    "flex-layout.row#container-desktop-pdp-responsive-modal": {
-      "children": [
-        "flex-layout.col#stack-modal",
-        "flex-layout.col#right-col-modal"
       ],
-      "props": {
-        "blockClass": ["container-desktop-pdp-responsive"],
-        "preventHorizontalStretch": false
-      }
+      "Then": "flex-layout.row#product-main-modal",
+      "Else": "flex-layout.row#product-availability-modal"
+    }
+  },
+
+  /* ── Producto disponible: compra rapida ── */
+
+  "flex-layout.row#product-main-modal": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "container-pdp"
     },
+    "children": [
+      "flex-layout.col#quickview-images",
+      "flex-layout.col#quickview-product-details"
+    ]
+  },
 
-     "responsive-layout.mobile#view-pdp-mobile-modal": {
-        "children": ["flex-layout.col#container-mobile-pdp-responsive-modal"]
-      },
+  /* ── Producto agotado: imagen + nombre + aviso/registro de
+        disponibilidad (mismas piezas que usa el PDP) ── */
 
-      "flex-layout.col#container-mobile-pdp-responsive-modal": {
-        "children": [
-          "condition-layout.product#cond1-mobile"
-        ],
-        "props": {
-          "blockClass": ["container-mobile-pdp-responsive"]
-        }
-      },
+  "flex-layout.row#product-availability-modal": {
+    "props": {
+      "colGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "container-pdp"
+    },
+    "children": [
+      "flex-layout.col#quickview-images",
+      "flex-layout.col#quickview-unavailable"
+    ]
+  },
 
-      "flex-layout.col#stack-modal": {
-        "children": [
-          "stack-layout"
-        //   "tab-layout#tab-pdp"
-        ],
-        "props": {
-          "width": "55%",
-          "rowGap": 0
-        }
-      },
-
-      "flex-layout.col#right-col-modal": {
-        "props": {
-          "preventVerticalStretch": true,
-          "rowGap": 0,
-          "width": "43%"
-        },
-        "children": [
-          "condition-layout.product#cond1"
-        ]
-      },
-    //   availability
-
-    "flex-layout.row#product-availability-modal": {
-        "props": {
-          "colGap": 7,
-          "marginTop": 4,
-          "marginBottom": 7,
-          "paddingTop": 7,
-          "blockClass": "container-pdp"
-        },
-        "children": [
-          "responsive-layout.desktop#view-pdp-availability-desktop-modal",
-          "responsive-layout.mobile#container-pdp-availability-mobile-modal"
-        ]
-      },
-
-       "responsive-layout.desktop#view-pdp-availability-desktop-modal": {
-          "children": ["flex-layout.row#container-desktop-pdp-availability-modal"],
-          "props": {
-            "width": "100%"
-          }
-        },
-
-        "flex-layout.row#container-desktop-pdp-availability-modal": {
-          "children": ["flex-layout.col#stack-modal",
-          "flex-layout.col#right-col-product-sinCustom-availability-modal"
-        ],
-          "props": {
-            "blockClass": ["container-desktop-pdp-availability"]
-          }
-        },
-         "responsive-layout.mobile#container-pdp-availability-mobile-modal": {
-            "children": ["flex-layout.col#container-mobile-pdp-availability-responsive-mobile"]
-          },
-
-          "flex-layout.col#container-mobile-pdp-availability-responsive-mobile": {
-            "children": [
-              "flex-layout.row#product-name",
-                "product-identifier.product",
-                "stack-layout#mobile",
-                "sku-selector",
-                // "flex-layout.row#container-descripcion-corta",
-                "flex-layout.row#container-pagos-pdp",
-                // "flex-layout.row#buy-button-pdp",
-                "flex-layout.row#availability",
-                // "vtex.menu@2.x:menu#menu-pdp",
-                "flex-layout.row#container-atributos",
-                "flex-layout.row#container-iconos-final-pdp"
-            ],
-            "props": {
-              "blockClass": ["container-mobile-pdp-responsive"]
-            }
-          },
-
-          "flex-layout.col#right-col-product-sinCustom-availability-modal": {
-            "children": [
-                // "rich-text#condicion2-no",
-                "flex-layout.row#product-name",
-                "product-identifier.product",
-                "sku-selector",
-                "flex-layout.row#container-descripcion-corta",
-                "flex-layout.row#container-pagos-pdp",
-                // "flex-layout.row#buy-button-pdp",
-                "flex-layout.row#availability",
-                // "vtex.menu@2.x:menu#menu-pdp",
-                "flex-layout.row#container-atributos",
-                "flex-layout.row#container-iconos-final-pdp"
-            ],
-            "props": {
-                "blockClass": [
-                    "right-col-product-sinCustom"
-                ],
-                "preventVerticalStretch": true
-            }
-        }
-
+  "flex-layout.col#quickview-unavailable": {
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true,
+      "blockClass": "quickviewDetails"
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "product-summary-sku-selector#quickview",
+      "flex-layout.row#availability"
+    ]
+  }
 }

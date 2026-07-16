@@ -340,6 +340,63 @@
     }
   },
 
+  /* Cadena "custom-search-2" (movida desde
+     ResultadoBusquedaconBloqueSEOyPasillos.jsonc, sin cambios):
+     la consumen store.search#Resultado (via #result-sincolores),
+     template-categoria (#result-custom-search-2) y
+     new-template-categoria (#section-filters-custom-search-2). */
+  "flex-layout.row#result-custom-search-2": {
+    "children": [
+      "flex-layout.col#result-custom-search-2"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#result-custom-search-2": {
+    "children": [
+      "flex-layout.row#section-filters-custom-search-2",
+      "flex-layout.col#content-custom-search-2"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#section-filters-custom-search-2": {
+    "children": [
+      "flex-layout.col#filter-2",
+      "drawer#filter-navigator-v2"
+      //   "list-context.image-list#section-filters-colors"
+    ],
+    "props": {
+      "blockClass": [
+        "section-filters", "section-filters-2"
+      ],
+      "preventHorizontalStretch": false
+    }
+  },
+  "flex-layout.col#content-custom-search-2": {
+    "children": [
+      //   "flex-layout.row#searchinfo",
+      //   "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#filter-2": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": ["filterCol", "filterCol-2"],
+      "width": "78%"
+    }
+  },
+
   "flex-layout.row#result-sincolores": {
     "children": [
       "flex-layout.col#result-sincolores"
