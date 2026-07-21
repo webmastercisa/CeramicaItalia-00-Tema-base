@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [10.0.0] - 2026-07-21
+
 ## [9.1.35] - 2026-07-21
 
 ### Changed (archivos AI/SEO en assets/)
