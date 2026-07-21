@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [9.1.35] - 2026-07-21
+
 ### Changed (archivos AI/SEO en assets/)
 
 - `robots.txt`, `ai.txt`, `llms.txt` sincronizados con las versiones de producción (julio 2026, que iban por delante del repo) y `llms-full.txt` añadido al repo como fuente de verdad. Mejoras sobre producción — `ai.txt` v2.1: agentes alineados con robots.txt (OAI-SearchBot, Claude-SearchBot/Claude-User, Perplexity-User, Applebot-Extended, Amazonbot, DuckAssistBot, MistralAI-User, YouBot, Meta-ExternalFetcher; bloqueo de omgili/omgilibot; retirado el token obsoleto `anthropic-ai`), rutas nuevas (`/serie-ceranatto`, `/centro-de-ayuda`, `/nuestras-tiendas`, `/quienes-somos`) y `Flagship-Shop-URL`/`Brand-Help-Center`. `llms.txt`: sección "Centro de Ayuda" (56 FAQs con los 6 temas), enlace de compra de CERANATTO®, directorio de sedes y consultas nuevas derivadas del FAQ. **Desplegar**: re-subir `ai.txt` y `llms.txt` al File Manager (`/files/`); robots ya está al día en producción.
