@@ -10,24 +10,23 @@
  * ============================================================ */
 
 /* ─────────────── HERO GLASSMORPHISM ───────────────
- * La imagen ocupa TODO el ancho con ~320px de alto; va como
- * background del row para que el panel de texto quede sobre ella
- * (precedente: .flexRow--ceranattoHero). Para cambiarla, subir el
- * nuevo asset al File Manager y actualizar esta URL. */
-.flexRow--listaproductosHero {
-  background-image:
-    linear-gradient(rgba(30, 26, 26, 0.28), rgba(30, 26, 26, 0.38)),
-    url("https://ceramicaitalia.vteximg.com.br/arquivos/bannerSearch.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ * La imagen es un bloque image DENTRO de stack-layout (editable en
+ * Site Editor); el alto lo fija .imageElement--listaproductosHeroImg
+ * en vtex.store-components.css y los stackItem en vtex.stack-layout.css.
+ * Esta fila de contenido va apilada encima y aporta el oscurecido. */
+.flexRow--listaproductosHero .flexRowContent--listaproductosHero {
+  padding: 0; /* la imagen llega al borde */
+}
+
+.flexRow--listaproductosHeroContent {
+  height: 100%;
+  background: linear-gradient(rgba(30, 26, 26, 0.28), rgba(30, 26, 26, 0.38));
 }
 
 /* Doble clase: gana a la regla global del tema
    ".flexRowContent { justify-content: center }" */
-.flexRow--listaproductosHero .flexRowContent--listaproductosHero {
-  /* alto solicitado ~320px; en px y no vh (zoom: 85% global del tema) */
-  min-height: 320px;
+.flexRow--listaproductosHeroContent .flexRowContent--listaproductosHeroContent {
+  height: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -63,16 +62,9 @@
   }
 }
 
-/* Mobile: misma variante del banner que usa la plantilla origen */
+/* Mobile: el alto lo pone la imagen (280px en vtex.store-components.css) */
 @media (max-width: 47.99rem) {
-  .flexRow--listaproductosHero {
-    background-image:
-      linear-gradient(rgba(30, 26, 26, 0.28), rgba(30, 26, 26, 0.38)),
-      url("https://ceramicaitalia.vteximg.com.br/arquivos/banner-search-mobile.png");
-  }
-
-  .flexRow--listaproductosHero .flexRowContent--listaproductosHero {
-    min-height: 280px;
+  .flexRow--listaproductosHeroContent .flexRowContent--listaproductosHeroContent {
     padding: 1.5rem 1rem;
   }
 }

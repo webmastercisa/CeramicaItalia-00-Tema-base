@@ -1,0 +1,168 @@
+{
+    "condition-layout.product#availability-modal": {
+        "props": {
+          "conditions": [
+            {
+              "subject": "isProductAvailable"
+            }
+          ],
+          "Then": "flex-layout.row#product-main-modal",
+          "Else": "flex-layout.row#product-availability-modal"
+        }
+      },
+
+
+      "flex-layout.row#product-main-modal": {
+        "props": {
+          "colGap": 7,
+          "rowGap": 7,
+          "marginTop": 4,
+          "marginBottom": 7,
+          "paddingTop": 7,
+          "paddingBottom": 7,
+          "blockClass": "container-pdp"
+        },
+        "children": [
+          "flex-layout.col#container-responsive-pdp-modal"
+        ]
+      },
+
+      "flex-layout.col#container-responsive-pdp-modal": {
+        "children": [
+          "responsive-layout.desktop#view-pdp-desktop-modal",
+          "responsive-layout.mobile#view-pdp-mobile-modal"
+        ],
+        "props": {
+          "blockClass": ["container-responsive"]
+        }
+      },
+
+       "responsive-layout.desktop#view-pdp-desktop-modal": {
+          "children": ["flex-layout.row#container-desktop-pdp-responsive-modal"]
+          // ,"props": {
+          //   "width": "100%"
+          // }
+        },
+
+    "flex-layout.row#container-desktop-pdp-responsive-modal": {
+      "children": [
+        "flex-layout.col#stack-modal",
+        "flex-layout.col#right-col-modal"
+      ],
+      "props": {
+        "blockClass": ["container-desktop-pdp-responsive"],
+        "preventHorizontalStretch": false
+      }
+    },
+
+     "responsive-layout.mobile#view-pdp-mobile-modal": {
+        "children": ["flex-layout.col#container-mobile-pdp-responsive-modal"]
+      },
+
+      "flex-layout.col#container-mobile-pdp-responsive-modal": {
+        "children": [
+          "condition-layout.product#cond1-mobile"
+        ],
+        "props": {
+          "blockClass": ["container-mobile-pdp-responsive"]
+        }
+      },
+
+      "flex-layout.col#stack-modal": {
+        "children": [
+          "stack-layout"
+        //   "tab-layout#tab-pdp"
+        ],
+        "props": {
+          "width": "55%",
+          "rowGap": 0
+        }
+      },
+
+      "flex-layout.col#right-col-modal": {
+        "props": {
+          "preventVerticalStretch": true,
+          "rowGap": 0,
+          "width": "43%"
+        },
+        "children": [
+          "condition-layout.product#cond1"
+        ]
+      },
+    //   availability
+
+    "flex-layout.row#product-availability-modal": {
+        "props": {
+          "colGap": 7,
+          "marginTop": 4,
+          "marginBottom": 7,
+          "paddingTop": 7,
+          "blockClass": "container-pdp"
+        },
+        "children": [
+          "responsive-layout.desktop#view-pdp-availability-desktop-modal",
+          "responsive-layout.mobile#container-pdp-availability-mobile-modal"
+        ]
+      },
+
+       "responsive-layout.desktop#view-pdp-availability-desktop-modal": {
+          "children": ["flex-layout.row#container-desktop-pdp-availability-modal"],
+          "props": {
+            "width": "100%"
+          }
+        },
+
+        "flex-layout.row#container-desktop-pdp-availability-modal": {
+          "children": ["flex-layout.col#stack-modal",
+          "flex-layout.col#right-col-product-sinCustom-availability-modal"
+        ],
+          "props": {
+            "blockClass": ["container-desktop-pdp-availability"]
+          }
+        },
+         "responsive-layout.mobile#container-pdp-availability-mobile-modal": {
+            "children": ["flex-layout.col#container-mobile-pdp-availability-responsive-mobile"]
+          },
+
+          "flex-layout.col#container-mobile-pdp-availability-responsive-mobile": {
+            "children": [
+              "flex-layout.row#product-name",
+                "product-identifier.product",
+                "stack-layout#mobile",
+                "sku-selector",
+                // "flex-layout.row#container-descripcion-corta",
+                "flex-layout.row#container-pagos-pdp",
+                // "flex-layout.row#buy-button-pdp",
+                "flex-layout.row#availability",
+                // "vtex.menu@2.x:menu#menu-pdp",
+                "flex-layout.row#container-atributos",
+                "flex-layout.row#container-iconos-final-pdp"
+            ],
+            "props": {
+              "blockClass": ["container-mobile-pdp-responsive"]
+            }
+          },
+
+          "flex-layout.col#right-col-product-sinCustom-availability-modal": {
+            "children": [
+                // "rich-text#condicion2-no",
+                "flex-layout.row#product-name",
+                "product-identifier.product",
+                "sku-selector",
+                "flex-layout.row#container-descripcion-corta",
+                "flex-layout.row#container-pagos-pdp",
+                // "flex-layout.row#buy-button-pdp",
+                "flex-layout.row#availability",
+                // "vtex.menu@2.x:menu#menu-pdp",
+                "flex-layout.row#container-atributos",
+                "flex-layout.row#container-iconos-final-pdp"
+            ],
+            "props": {
+                "blockClass": [
+                    "right-col-product-sinCustom"
+                ],
+                "preventVerticalStretch": true
+            }
+        }
+
+}

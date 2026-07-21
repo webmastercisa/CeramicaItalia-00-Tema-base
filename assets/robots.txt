@@ -1,83 +1,153 @@
 # robots.txt — Cerámica Italia S.A.
-# Última actualización: mayo 2026
-# Configuración para motores de búsqueda tradicionales + motores AI (LLMs)
+# Última revisión: julio 2026
+# Estrategia: máxima visibilidad en buscadores tradicionales y en motores
+# de IA que citan y enlazan la fuente (generan tráfico de referencia).
+# Se bloquean los scrapers que solo extraen contenido y no citan.
 
 # -------------------------------------------------------
-# MOTORES DE BÚSQUEDA TRADICIONALES
+# 1. MOTORES DE BÚSQUEDA TRADICIONALES
 # -------------------------------------------------------
-
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Slurp
-Allow: /
-
 User-agent: DuckDuckBot
 Allow: /
 
-# -------------------------------------------------------
-# BOTS DE AI — PERMITIR CITACIÓN EN RESPUESTAS
-# (Generan tráfico de referencia hacia ceramicaitalia.com)
-# -------------------------------------------------------
-
-# OpenAI / ChatGPT
-User-agent: GPTBot
+User-agent: Applebot
 Allow: /
 
-User-agent: ChatGPT-User
-Allow: /
+# Nota: Slurp (Yahoo) fue retirado; Yahoo usa el índice de Bing.
 
+# -------------------------------------------------------
+# 2. OPENAI / CHATGPT
+# -------------------------------------------------------
+# Índice de ChatGPT Search — imprescindible para ser citado
 User-agent: OAI-SearchBot
 Allow: /
 
-# Anthropic / Claude
+# Visitas en tiempo real iniciadas por usuarios de ChatGPT
+User-agent: ChatGPT-User
+Allow: /
+
+# Crawler de entrenamiento de OpenAI
+User-agent: GPTBot
+Allow: /
+
+# -------------------------------------------------------
+# 3. ANTHROPIC / CLAUDE
+# -------------------------------------------------------
+# Índice de búsqueda de Claude
+User-agent: Claude-SearchBot
+Allow: /
+
+# Visitas en tiempo real iniciadas por usuarios de Claude
+User-agent: Claude-User
+Allow: /
+
+# Crawler general de Anthropic
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: anthropic-ai
-Allow: /
+# Nota: "anthropic-ai" y "Claude-Web" quedaron obsoletos;
+# ya no es necesario declararlos.
 
-# Perplexity
+# -------------------------------------------------------
+# 4. PERPLEXITY
+# -------------------------------------------------------
 User-agent: PerplexityBot
 Allow: /
 
-# Google Gemini y AI Overviews
+User-agent: Perplexity-User
+Allow: /
+
+# -------------------------------------------------------
+# 5. GOOGLE GEMINI / AI OVERVIEWS
+# -------------------------------------------------------
+# AI Overviews y AI Mode usan el propio Googlebot (sección 1);
+# no existe un user-agent separado para ellos.
+# Google-Extended solo controla el uso del contenido para
+# entrenar Gemini; permitirlo no afecta el ranking en Google.
 User-agent: Google-Extended
 Allow: /
 
-# Microsoft Copilot (via Bing)
-User-agent: Bingbot
-Allow: /
+# -------------------------------------------------------
+# 6. MICROSOFT COPILOT
+# -------------------------------------------------------
+# Copilot se alimenta del índice de Bing: basta con permitir
+# Bingbot (ya permitido en la sección 1).
 
+# -------------------------------------------------------
+# 7. OTROS ASISTENTES DE IA QUE CITAN FUENTES
+# -------------------------------------------------------
 # Meta AI
 User-agent: meta-externalagent
 Allow: /
 
-# -------------------------------------------------------
-# CRAWLERS DE ENTRENAMIENTO — BLOQUEAR
-# (Solo usan el contenido para entrenar modelos, no citan)
-# -------------------------------------------------------
+User-agent: Meta-ExternalFetcher
+Allow: /
 
+# Apple Intelligence (Applebot ya cubre Siri y Spotlight)
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon (Alexa / Rufus)
+User-agent: Amazonbot
+Allow: /
+
+# DuckDuckGo DuckAssist
+User-agent: DuckAssistBot
+Allow: /
+
+# Mistral / Le Chat
+User-agent: MistralAI-User
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Meta (crawler heredado de entrenamiento)
+User-agent: FacebookBot
+Allow: /
+
+# -------------------------------------------------------
+# 8. SCRAPERS SIN VALOR DE CITACIÓN — BLOQUEAR
+# -------------------------------------------------------
+# Common Crawl (el token correcto es "CCBot";
+# "Common Crawl" no es un user-agent válido)
 User-agent: CCBot
 Disallow: /
 
-User-agent: Common Crawl
-Disallow: /
-
-User-agent: FacebookBot
-Disallow: /
-
-User-agent: Diffbot
-Disallow: /
-
+# ByteDance / Doubao
 User-agent: Bytespider
 Disallow: /
 
-# -------------------------------------------------------
-# SITEMAP
-# -------------------------------------------------------
+# Diffbot (extracción de datos)
+User-agent: Diffbot
+Disallow: /
 
+# Webz.io (agregadores de datos)
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+# IMPORTANTE: Bytespider tiene historial documentado de ignorar
+# robots.txt. Para bloquearlo de forma efectiva hay que añadir
+# una regla a nivel de servidor, WAF o CDN (respuesta 403 por
+# user-agent y rango de IP), no solo en este archivo.
+
+# -------------------------------------------------------
+# 9. REGLA POR DEFECTO PARA EL RESTO DE BOTS
+# -------------------------------------------------------
+User-agent: *
+Allow: /
+
+# -------------------------------------------------------
+# 10. SITEMAP
+# -------------------------------------------------------
 Sitemap: https://www.ceramicaitalia.com/sitemap.xml

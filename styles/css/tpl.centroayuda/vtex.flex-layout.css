@@ -1,0 +1,105 @@
+/* ============================================================
+ * CENTRO DE AYUDA · Layout (vtex.flex-layout)
+ * Scoped a blockClass "centroAyuda*". Paleta de marca:
+ * rojo #ED1B24 · tinta #3f3f40 · línea #e3e4e6 · fondo #f9f9f9
+ * ============================================================ */
+
+/* ─── HERO glass ───
+ * La imagen es un bloque image dentro de stack-layout (EDITABLE EN
+ * SITE EDITOR); su alto vive en vtex.store-components.css y el
+ * estirado de capas en vtex.stack-layout.css. Esta fila apilada
+ * encima aporta el oscurecido para contraste. */
+.flexRow--centroAyudaHero .flexRowContent--centroAyudaHero {
+  padding: 0; /* la imagen llega al borde */
+}
+
+.flexRow--centroAyudaHeroContent {
+  height: 100%;
+  background: linear-gradient(rgba(30, 26, 26, 0.30), rgba(30, 26, 26, 0.40));
+}
+
+/* Doble clase: gana al ".flexRowContent{justify-content:center}" global */
+.flexRow--centroAyudaHeroContent .flexRowContent--centroAyudaHeroContent {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCol--centroAyudaHeroGlass {
+  margin: 0 auto;
+  max-width: 38rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22);
+}
+
+@supports (backdrop-filter: blur(5px)) {
+  .flexCol--centroAyudaHeroGlass {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px) saturate(120%);
+  }
+}
+
+/* ─── NAV de temas (chips ancla) ─── */
+.flexRow--centroAyudaNav .flexRowContent--centroAyudaNav {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 0.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 0.5rem;
+}
+
+/* ─── Secciones de preguntas ─── */
+.flexRow--centroAyudaCat {
+  /* compensa el header sticky del tema al navegar por anclas */
+  scroll-margin-top: 140px;
+}
+
+.flexRow--centroAyudaCat .flexRowContent--centroAyudaCat {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+}
+
+.flexCol--centroAyudaCatCol {
+  width: 100%;
+}
+
+/* ─── CTA final ─── */
+.flexRow--centroAyudaCta {
+  background-color: #f9f9f9;
+  border-top: 1px solid #e3e4e6;
+  margin-top: 2rem;
+}
+
+.flexRow--centroAyudaCta .flexRowContent--centroAyudaCta {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3rem;
+  justify-content: center;
+}
+
+.flexCol--centroAyudaCtaBox {
+  text-align: center;
+}
+
+.flexRow--centroAyudaCtaBotones .flexRowContent--centroAyudaCtaBotones {
+  justify-content: center;
+  padding-top: 0.75rem;
+}
+
+@media (min-width: 64rem) {
+  .flexCol--centroAyudaHeroGlass {
+    padding: 2rem 2.5rem;
+  }
+
+  .flexRow--centroAyudaCat .flexRowContent--centroAyudaCat {
+    padding: 1.75rem 1rem;
+  }
+}

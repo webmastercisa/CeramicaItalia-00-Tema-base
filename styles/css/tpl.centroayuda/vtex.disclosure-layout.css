@@ -1,0 +1,76 @@
+/* ============================================================
+ * CENTRO DE AYUDA · Acordeones (vtex.disclosure-layout)
+ * Tarjetas blancas con acento rojo; teclado y aria-expanded /
+ * aria-controls los aporta el propio componente (Reakit).
+ * Precedente de handles: tpl.ceranatto/vtex.disclosure-layout.css
+ * ============================================================ */
+
+.trigger--centroAyudaQuestion {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 0.75rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e3e4e6;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trigger--centroAyudaQuestion:hover {
+  border-color: #ED1B24;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.trigger--centroAyudaQuestion:hover .headingLevel3--centroAyudaQ {
+  color: #ED1B24;
+}
+
+/* Foco visible para navegación por teclado (accesibilidad).
+   :focus (no :focus-within/:focus-visible: el styles builder no las
+   admite); el trigger es el propio elemento enfocable (Reakit). */
+.trigger--centroAyudaQuestion:focus {
+  outline: 2px solid #ED1B24;
+  outline-offset: 2px;
+}
+
+/* Caret rojo de la librería nativa (vtex.store-icons); el reset de
+   margin-right anula la regla del CSS raíz sobre ".trigger" */
+.trigger--centroAyudaQuestion :global(.vtex-store-icons-0-x-caretIcon) {
+  color: #ED1B24;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  margin-right: 0;
+}
+
+/* Panel de respuesta: conectado visualmente a la tarjeta */
+.content--centroAyudaAnswer {
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out,
+    transform 250ms ease-in-out;
+  opacity: 0;
+  height: 0;
+  transform: translate3d(0, -8%, 0);
+  overflow: hidden;
+  margin: 0 0.5rem;
+  padding: 0 1rem;
+  border: 0;
+}
+
+.content--centroAyudaAnswer[data-enter] {
+  opacity: 1;
+  height: fit-content;
+  transform: translate3d(0, 0, 0);
+  padding: 0.9rem 1rem 1rem;
+  border: 1px solid #e3e4e6;
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+  background-color: #fdfdfd;
+}
+
+.content--centroAyudaAnswer[data-leave] {
+  height: 0;
+  overflow: hidden;
+}
