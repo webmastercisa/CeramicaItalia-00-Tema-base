@@ -8,8 +8,7 @@
       "flex-layout.row#section-anuncios-trabajo",
       "flex-layout.row#container-banner2-trabaja-con-nosotros",
       "flex-layout.row#textos2-trabaja-con-nosotros",
-      "flex-layout.row#container-infocards-trabaja-con-nosotros",
-      "flex-layout.row#contianer-slider-end-trabaja-con-nosotros"
+      "flex-layout.row#container-infocards-trabaja-con-nosotros"
     ]
   },
   //MIGA DE PAN PREGUNTAS FRECUENTES
@@ -170,7 +169,7 @@
       "textPosition": "CENTER"
     }
   },
-  // section btns
+  // =================== section btns  ========================
   "flex-layout.row#btns-anuncios": {
     "children": [
       "disclosure-layout-group#group",
@@ -443,62 +442,7 @@
         }
         ]
     }
-},
-
-// section slider final
-
-"flex-layout.row#contianer-slider-end-trabaja-con-nosotros": {
-  "children": ["list-context.image-list#slider-layout#slider-end-trabaja-con-nosotros"],
-  "props": {
-    "blockClass": ["contianer-slider-end-trabaja-con-nosotros"]
-  }
-},
-
-"list-context.image-list#slider-layout#slider-end-trabaja-con-nosotros": {
-  "children": [
-    "slider-layout#slider-end-trabaja-con-nosotros"
-  ],
-  "props": {
-    // "height": 344,
-    "preload": true,
-    "images": [
-      {
-        "image": "arquivos/slider-tn-1.png",
-        "mobileImage": "arquivos/slider-tn-1.png"
-      },
-      {
-        "image": "arquivos/slider-tn-2.png",
-        "mobileImage": "arquivos/slider-tn-2.png"
-      },
-      {
-        "image": "arquivos/slider-tn-3.png",
-        "mobileImage": "arquivos/slider-tn-3.png"
-      },
-      {
-        "image": "arquivos/slider-tn-4.png",
-        "mobileImage": "arquivos/slider-tn-4.png"
-      },{
-        "image": "arquivos/slider-tn-1.png",
-        "mobileImage": "arquivos/slider-tn-1.png"
-      }
-    ]
-  }
-},
-"slider-layout#slider-end-trabaja-con-nosotros": {
-  "title": "slider-end-trabaja-con-nosotros",
-  "props": {
-    "itemsPerPage": {
-      "desktop": 4,
-      "tablet": 1,
-      "phone": 1
-    },
-    "infinite": true,
-    "showNavigationArrows": "always",
-    "showPaginationDots": "always",
-    "blockClass": "slider-end-trabaja-con-nosotros",
-    "arrowSize": 12,
-    "centerMode": "disabled"
-  }
 }
+
 
 }
