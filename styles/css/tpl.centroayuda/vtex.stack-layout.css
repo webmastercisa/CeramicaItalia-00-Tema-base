@@ -1,0 +1,16 @@
+/* ============================================================
+ * CENTRO DE AYUDA · Hero apilado (vtex.stack-layout)
+ * La imagen (primer hijo) da el alto; la fila del panel glass
+ * (segundo hijo) se estira para cubrirla completa.
+ * ============================================================ */
+
+.stackContainer--centroAyudaHero {
+  width: 100%;
+}
+
+.stackItem--centroAyudaHero {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

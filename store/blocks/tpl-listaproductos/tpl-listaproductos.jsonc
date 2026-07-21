@@ -44,15 +44,45 @@
   },
 
   /* ══════════════════════ HERO GLASSMORPHISM ══════════════════════
-   * Imagen a todo el ancho (~320px de alto) como background del row
-   * (precedente: ceranattoHero); el texto va SOBRE la imagen dentro
-   * de un panel "vidrio" (blur con fallback sólido). */
+   * stack-layout apila la imagen (bloque image → EDITABLE EN SITE
+   * EDITOR) y encima la fila con el panel "vidrio" (blur con fallback
+   * sólido). El oscurecido para contraste lo pone el CSS sobre la fila
+   * de contenido (flexRow--listaproductosHeroContent). */
 
   "flex-layout.row#listaproductos-hero": {
     "title": "Lista productos - Hero glass",
-    "children": ["flex-layout.col#listaproductos-hero-glass"],
+    "children": ["stack-layout#listaproductos-hero"],
     "props": {
       "blockClass": "listaproductosHero",
+      "fullWidth": true
+    }
+  },
+
+  "stack-layout#listaproductos-hero": {
+    "title": "Hero - Imagen + panel",
+    "children": [
+      "image#listaproductos-hero-img",
+      "flex-layout.row#listaproductos-hero-content"
+    ],
+    "props": {
+      "blockClass": "listaproductosHero"
+    }
+  },
+
+  /* Imagen de fondo del hero — cambiar desde Site Editor */
+  "image#listaproductos-hero-img": {
+    "title": "Hero - Imagen de fondo (editable)",
+    "props": {
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerSearch.png",
+      "alt": "",
+      "blockClass": "listaproductosHeroImg"
+    }
+  },
+
+  "flex-layout.row#listaproductos-hero-content": {
+    "children": ["flex-layout.col#listaproductos-hero-glass"],
+    "props": {
+      "blockClass": "listaproductosHeroContent",
       "fullWidth": true
     }
   },

@@ -1,0 +1,17 @@
+/* ============================================================
+ * TPL-LISTAPRODUCTOS · Hero apilado (vtex.stack-layout)
+ * La imagen (primer hijo) da el alto; el segundo hijo (fila con el
+ * panel glass) se estira para cubrirla completa.
+ * Precedente de handles: styles/css/vtex.stack-layout.css raíz.
+ * ============================================================ */
+
+.stackContainer--listaproductosHero {
+  width: 100%;
+}
+
+.stackItem--listaproductosHero {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

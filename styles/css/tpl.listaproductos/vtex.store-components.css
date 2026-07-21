@@ -1,0 +1,18 @@
+/* ============================================================
+ * TPL-LISTAPRODUCTOS · Imagen del hero (vtex.store-components)
+ * El bloque image emite el handle imageElement (store-components 3.x).
+ * Alto en px, nunca vh (zoom: 85% global del tema).
+ * ============================================================ */
+
+.imageElement--listaproductosHeroImg {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+@media (max-width: 47.99rem) {
+  .imageElement--listaproductosHeroImg {
+    height: 280px;
+  }
+}

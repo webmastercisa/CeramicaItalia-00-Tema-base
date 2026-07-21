@@ -1,169 +1,2667 @@
-{"store.custom#centro-de-ayuda": {
-    "blocks": [
-        "flex-layout.row#miga-pan-centro-ayuda",
-        "flex-layout.row#title-centro-de-ayuda",
-        "flex-layout.row#container-banner1-centro-ayuda",
-        "flex-layout.row#section1-centro-ayuda",
-        "flex-layout.row#section2-centro-ayuda"
-    ]
-},
+{
+  /* ============================================================
+   *  CENTRO DE AYUDA (FAQ) - store.custom#centro-de-ayuda
+   *  GENERADO por scripts/generar_centro_ayuda.py desde docs/FAQ.md
+   *  NO EDITAR A MANO: editar docs/FAQ.md y regenerar.
+   *  56 preguntas en 6 temas · acordeones vtex.disclosure-layout
+   *  (teclado y aria-expanded/aria-controls nativos) · JSON-LD
+   *  FAQPage + LocalBusiness en store.global.js (misma fuente).
+   *  Estilos: styles/css/tpl.centroayuda/*.css
+   * ============================================================ */
 
-//MIGA DE PAN PREGUNTAS FRECUENTES
-"flex-layout.row#miga-pan-centro-ayuda": {
+  "store.custom#centro-de-ayuda": {
+    "blocks": [
+      "flex-layout.row#centroayuda-hero",
+      "flex-layout.row#centroayuda-nav",
+      "flex-layout.row#centroayuda-cat-instalacion",
+      "flex-layout.row#centroayuda-cat-producto",
+      "flex-layout.row#centroayuda-cat-formatos",
+      "flex-layout.row#centroayuda-cat-ceranatto",
+      "flex-layout.row#centroayuda-cat-banos",
+      "flex-layout.row#centroayuda-cat-tiendas",
+      "flex-layout.row#centroayuda-cta"
+    ]
+  },
+  "flex-layout.row#centroayuda-hero": {
+    "title": "Centro de ayuda - Hero",
     "children": [
-        "image#icono-miga-pan",
-        "rich-text#texto-1-miga-pan",
-        "rich-text#texto-2-miga-pan-centro-ayuda"
+      "stack-layout#centroayuda-hero"
     ],
     "props": {
-        "blockClass": [
-            "miga-pan-terminos-legales"
-        ]
-    }
-},
-// TEXTO 2 MIGA DE PAN 
-"rich-text#texto-2-miga-pan-centro-ayuda": {
-    "props": {
-        "blockClass": [
-            "texto-2-miga-pan"
-        ],
-        "text": "[Centro de ayuda](/centro-de-ayuda)",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-    }
-},
- // titulo
-
- "flex-layout.row#title-centro-de-ayuda": {
-    "children": [ "rich-text#title-centro-de-ayuda"],
-    "props": {
-      "blockClass": ["title-imperdibles" ]
+      "blockClass": "centroAyudaHero",
+      "fullWidth": true
     }
   },
-  "rich-text#title-centro-de-ayuda": {
-      "props": {
-               "text": "Centro de ayuda",
-               "blockClass": "centro-de-ayuda",
-               "textAlignment": "CENTER",
-               "textPosition": "CENTER"
-      }
-  },
-
-   // slider 1
-   "flex-layout.row#container-banner1-centro-ayuda": {
-    "children": ["list-context.image-list#banner1Slider-centro-ayuda"],
+  "stack-layout#centroayuda-hero": {
+    "title": "Hero - Imagen + panel",
+    "children": [
+      "image#centroayuda-hero-img",
+      "flex-layout.row#centroayuda-hero-content"
+    ],
     "props": {
-      "blockClass": ["container-banner1-centro-ayuda-slider"]
+      "blockClass": "centroAyudaHero"
     }
   },
-
-  "list-context.image-list#banner1Slider-centro-ayuda": {
-      "children": ["slider-layout#banner1-centro-ayuda"],
-      "props": {
-        "height": 570,
-        "preload": true,
-        "images": [
-          {
-            "image": "arquivos/banner-centro-ayuda.png",
-            "mobileImage": "arquivos/banner-centro-mobile.png"
-          },
-          {
-              "image":"arquivos/banner-centro-ayuda.png",
-              "mobileImage": "arquivos/banner-centro-mobile.png"
-            }
-        ]
-      }
-    },
-    "slider-layout#banner1-centro-ayuda": {
-      "props": {
-        "itemsPerPage": {
-          "desktop": 1,
-          "tablet": 1,
-          "phone": 1
-        },
-        "infinite": true,
-        "showNavigationArrows": "never",
-        "showPaginationDots": "never", 
-        "blockClass": ["banner1-centro-ayuda-slider"]
-        // "autoplay": {
-        //   "timeout": 3000,
-        //   "stopOnHover": true
-        // }
-      }
-    },
-
-    "flex-layout.row#section1-centro-ayuda": {
-      "children": ["rich-text#text1-centro-ayuda"],
-      "props": {
-        "blockClass": ["section1-centro-ayuda"]
-      }
-    },
-
-    "rich-text#text1-centro-ayuda": {
-        "props": {
-                 "text": "Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\n\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.",
-                 "blockClass": "text1-centro-ayuda",
-                 "textAlignment": "CENTER",
-                 "textPosition": "CENTER"
-        }
-    },
-
-    // section 2
-
-    "flex-layout.row#section2-centro-ayuda": {
-      "children": [ "flex-layout.row#container-descarga","flex-layout.row#container-text2-ayuda"],
-      "props": {
-        "blockClass": ["section2-centro-ayuda"]
-      }
-    },
-
-    "flex-layout.row#container-text2-ayuda": {
-      "children": ["rich-text#text2-centro-ayuda"],
-      "props": {
-        "blockClass": ["container-text2-ayuda"],
-        "width": "65%"
-      }
-    },
-
-    "rich-text#text2-centro-ayuda": {
-        "props": {
-                 "text": "Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\n\nCurabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. ",
-                 "blockClass": "text2-centro-ayuda",
-                 "textAlignment": "CENTER",
-                 "textPosition": "CENTER"
-        }
-    },
-
-    "flex-layout.row#container-descarga": {
-      "children": ["rich-text#text-descarga", "image#ico-descarga"],
-      "props": {
-        "blockClass": ["container-descarga"],
-        "preserveLayoutOnMobile": true
-      }
-    },
-
-    "rich-text#text-descarga": {
-        "props": {
-                 "text": "[Descarga el formato de carta de autorizacion de entrega de producto aqui](#)",
-                 "blockClass": "text-descarga",
-                 "textAlignment": "CENTER",
-                 "textPosition": "CENTER",
-                 "width":"85%"
-        }
-    },
-    
-
-    "image#ico-descarga": {
-        "props": {
-                 "src": "assets/ico/centro-ayuda.svg",
-                 "alt": "alt",
-                 "height": "hight",
-                 "blockClass": "ico-descarga",
-                 "link": {
-                         "url": "url",
-                         "openNewTab": false,
-                         "title": "title"
-            }
-        }
+  "image#centroayuda-hero-img": {
+    "title": "Hero - Imagen de fondo (editable)",
+    "props": {
+      "src": "https://ceramicaitalia.vteximg.com.br/arquivos/bannerSearch.png",
+      "alt": "",
+      "blockClass": "centroAyudaHeroImg"
     }
+  },
+  "flex-layout.row#centroayuda-hero-content": {
+    "children": [
+      "flex-layout.col#centroayuda-hero-glass"
+    ],
+    "props": {
+      "blockClass": "centroAyudaHeroContent",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#centroayuda-hero-glass": {
+    "children": [
+      "rich-text#centroayuda-hero-titulo",
+      "rich-text#centroayuda-hero-lead"
+    ],
+    "props": {
+      "blockClass": "centroAyudaHeroGlass",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#centroayuda-hero-titulo": {
+    "title": "Hero - Titulo (H1)",
+    "props": {
+      "text": "# Centro de ayuda",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "centroAyudaHeroTitulo"
+    }
+  },
+  "rich-text#centroayuda-hero-lead": {
+    "title": "Hero - Texto",
+    "props": {
+      "text": "Resuelve tus dudas sobre instalación, productos, sanitarios y nuestras tiendas. Respuestas técnicas del fabricante, siempre a la mano.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "centroAyudaHeroLead"
+    }
+  },
+  "link#centroayuda-chip-instalacion": {
+    "props": {
+      "href": "#instalacion",
+      "label": "Instalación y herramientas",
+      "displayMode": "button",
+      "blockClass": "centroAyudaChip"
+    }
+  },
+  "link#centroayuda-chip-producto": {
+    "props": {
+      "href": "#producto",
+      "label": "Características del producto",
+      "displayMode": "button",
+      "blockClass": "centroAyudaChip"
+    }
+  },
+  "link#centroayuda-chip-formatos": {
+    "props": {
+      "href": "#formatos",
+      "label": "Grandes formatos y Verticale",
+      "displayMode": "button",
+      "blockClass": "centroAyudaChip"
+    }
+  },
+  "link#centroayuda-chip-ceranatto": {
+    "props": {
+      "href": "#ceranatto",
+      "label": "Ceranatto®",
+      "displayMode": "button",
+      "blockClass": "centroAyudaChip"
+    }
+  },
+  "link#centroayuda-chip-banos": {
+    "props": {
+      "href": "#banos",
+      "label": "Baños y sanitarios",
+      "displayMode": "button",
+      "blockClass": "centroAyudaChip"
+    }
+  },
+  "link#centroayuda-chip-tiendas": {
+    "props": {
+      "href": "#tiendas",
+      "label": "Tiendas y puntos de fábrica",
+      "displayMode": "button",
+      "blockClass": "centroAyudaChip"
+    }
+  },
+  "flex-layout.row#centroayuda-nav": {
+    "title": "Centro de ayuda - Temas",
+    "children": [
+      "link#centroayuda-chip-instalacion",
+      "link#centroayuda-chip-producto",
+      "link#centroayuda-chip-formatos",
+      "link#centroayuda-chip-ceranatto",
+      "link#centroayuda-chip-banos",
+      "link#centroayuda-chip-tiendas"
+    ],
+    "props": {
+      "blockClass": "centroAyudaNav",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "colGap": 3
+    }
+  },
+  "flex-layout.row#centroayuda-cat-instalacion": {
+    "title": "Centro de ayuda - Instalación y herramientas",
+    "children": [
+      "flex-layout.col#centroayuda-cat-instalacion"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCat",
+      "fullWidth": true,
+      "htmlId": "instalacion"
+    }
+  },
+  "flex-layout.col#centroayuda-cat-instalacion": {
+    "children": [
+      "rich-text#centroayuda-cat-instalacion-titulo",
+      "disclosure-layout-group#centroayuda-instalacion"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCatCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#centroayuda-cat-instalacion-titulo": {
+    "props": {
+      "text": "## Instalación y herramientas",
+      "blockClass": "centroAyudaCatTitle"
+    }
+  },
+  "disclosure-layout#centroayuda-instalacion-1": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-instalacion-1",
+      "disclosure-content#centroayuda-instalacion-1"
+    ]
+  },
+  "disclosure-trigger#centroayuda-instalacion-1": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-1-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-1-q": {
+    "props": {
+      "text": "### ¿Las baldosas rectificadas necesitan juntas de dilatación?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-instalacion-1": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-1-a"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-1-a": {
+    "props": {
+      "text": "Sí. Todos los productos cerámicos requieren juntas de dilatación, independientemente de si son rectificados o no. Para baldosas rectificadas se recomienda un dilatador plástico de 2 mm; para no rectificadas, de 3 mm. Esta información aparece especificada en la caja de cada producto. Las juntas permiten que el piso respire ante cambios de temperatura y movimientos estructurales, evitando levantamientos y desprendimientos.\n\n¿Por qué son importantes los dilatadores en cerámica? Los dilatadores cumplen tres funciones: (1) seguridad estructural, evitando desprendimientos por expansión o contracción térmica\n(2) fraguado correcto del adhesivo, permitiendo que la humedad se evapore adecuadamente\n(3) alineamiento estético uniforme entre piezas con leve variación de tamaño.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-instalacion-2": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-instalacion-2",
+      "disclosure-content#centroayuda-instalacion-2"
+    ]
+  },
+  "disclosure-trigger#centroayuda-instalacion-2": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-2-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-2-q": {
+    "props": {
+      "text": "### ¿Qué herramienta se debe usar para cortar cerámica del grupo BIIb?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-instalacion-2": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-2-a"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-2-a": {
+    "props": {
+      "text": "Para cortar cerámica del grupo BIIb —clasificación a la que pertenecen todos los productos de Cerámica Italia— se recomienda un cortador con buril (rodel) de 10 mm en buen estado. El rodel es quien realiza el corte real: marca el esmalte vitrificado antes de la separación. Su vida útil promedio es de 900 metros de corte. El grupo al que pertenece cada producto figura en el respaldo de la caja.\n\n¿Por qué se cristaliza o no corta bien la cerámica? El problema no es la dureza del material sino el buril. Un rodel desgastado o de especificación incorrecta genera cortes irregulares y fracturas. Verifique siempre el grupo del producto en la caja y consulte la tabla de compatibilidad en el empaque del buril antes de cortar.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-instalacion-3": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-instalacion-3",
+      "disclosure-content#centroayuda-instalacion-3"
+    ]
+  },
+  "disclosure-trigger#centroayuda-instalacion-3": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-3-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-3-q": {
+    "props": {
+      "text": "### ¿Qué llana dentada se debe usar para instalar formatos grandes de 60×120 cm?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-instalacion-3": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-3-a"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-3-a": {
+    "props": {
+      "text": "Para formatos grandes (60×120 cm y superiores) se debe usar una llana dentada número 12, con diente de 12 mm de altura. Además, es obligatorio aplicar la técnica de doble encolado: una capa de adhesivo sobre el sustrato y una capa fina en la parte posterior de la baldosa. La norma NTC 919 exige una cobertura mínima del 95% en grandes formatos, requisito que las llanas pequeñas no pueden cumplir.\n\n¿Por qué suena hueca una baldosa grande recién instalada? El sonido hueco indica vacíos de adhesivo bajo la pieza, causados por cobertura insuficiente. La solución es usar llana dentada No. 12 con doble encolado. Sin esta técnica, los vacíos generan puntos de quiebre, riesgo de fisuras y eventual desprendimiento.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-instalacion-4": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-instalacion-4",
+      "disclosure-content#centroayuda-instalacion-4"
+    ]
+  },
+  "disclosure-trigger#centroayuda-instalacion-4": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-4-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-4-q": {
+    "props": {
+      "text": "### ¿Qué es el alabeo en cerámica y cómo se corrige?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-instalacion-4": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-4-a"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-4-a": {
+    "props": {
+      "text": "El alabeo es una curvatura natural que presentan las baldosas cerámicas y porcelánicas, no es un defecto de fabricación. La Norma Técnica Colombiana 919 (equivalente a ISO 13006\\) permite hasta un 0,5% de alabeo en productos de calidad primera, según la dimensión de la pieza. Se minimiza con tres técnicas: usar niveladores y dilatadores recomendados por el fabricante, aplicar doble encolado, y en piezas rectangulares no superar el 25% de traslape.\n\n¿Por qué quedan tropezones o percepciones de ondulación en pisos rectangulares? En formatos rectangulares, instalar con traslape al 50% magnifica visualmente el alabeo natural de las piezas. El traslape máximo recomendado es del 25%. Combinado con niveladores y doble encolado, se obtiene una superficie plana, segura y estéticamente uniforme.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-instalacion-5": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-instalacion-5",
+      "disclosure-content#centroayuda-instalacion-5"
+    ]
+  },
+  "disclosure-trigger#centroayuda-instalacion-5": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-5-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-5-q": {
+    "props": {
+      "text": "### ¿Se debe remojar la baldosa antes de instalarla?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-instalacion-5": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-5-a"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-5-a": {
+    "props": {
+      "text": "No. Las baldosas cerámicas y porcelánicas modernas no requieren remojo previo. Su fabricación incluye baja absorción de agua gracias a la compactación y esmaltes de alta tecnología. Si se humedecen antes de instalar, el adhesivo pierde adherencia y la pieza puede despegarse con el tiempo. La instalación siempre debe hacerse en seco, con adhesivo aplicado correctamente y el tiempo de fraguado respetado.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-instalacion-6": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-instalacion-6",
+      "disclosure-content#centroayuda-instalacion-6"
+    ]
+  },
+  "disclosure-trigger#centroayuda-instalacion-6": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-6-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-6-q": {
+    "props": {
+      "text": "### ¿Cuánto tiempo hay que esperar para emboquillar después de instalar cerámica?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-instalacion-6": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-6-a"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-6-a": {
+    "props": {
+      "text": "Se recomienda esperar entre 48 y 72 horas tras la instalación antes de aplicar la boquilla, según las condiciones climáticas y ambientales del espacio. Este tiempo permite que el adhesivo fragüe completamente y garantiza una unión firme. Emboquillar antes puede comprometer la resistencia de las juntas. La elección de la boquilla —interior, exterior o zona húmeda— debe hacerse según el tipo de espacio, el espesor de la junta y el color de la cerámica.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-instalacion-7": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-instalacion-7",
+      "disclosure-content#centroayuda-instalacion-7"
+    ]
+  },
+  "disclosure-trigger#centroayuda-instalacion-7": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-7-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-7-q": {
+    "props": {
+      "text": "### ¿Todos los adhesivos sirven para todos los tipos de cerámica?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-instalacion-7": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-instalacion-7-a"
+    ]
+  },
+  "rich-text#centroayuda-instalacion-7-a": {
+    "props": {
+      "text": "No. Cada tipo de cerámica y espacio requiere un adhesivo específico:\n\n* C1: para cerámica tradicional en interiores.\n* C2 con doble encolado: para porcelanatos y grandes formatos.\n* C2S1 / C2S2 (deformables): para exteriores y fachadas expuestas a cambios térmicos.\n* Epóxico: para zonas de alto desempeño como piscinas o ambientes industriales.\n\nCeranatto es una excepción técnica: su estructura especial permite la adherencia con adhesivo C1 de alta calidad, sin necesidad de pegante para porcelanato.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout-group#centroayuda-instalacion": {
+    "children": [
+      "disclosure-layout#centroayuda-instalacion-1",
+      "disclosure-layout#centroayuda-instalacion-2",
+      "disclosure-layout#centroayuda-instalacion-3",
+      "disclosure-layout#centroayuda-instalacion-4",
+      "disclosure-layout#centroayuda-instalacion-5",
+      "disclosure-layout#centroayuda-instalacion-6",
+      "disclosure-layout#centroayuda-instalacion-7"
+    ]
+  },
+  "flex-layout.row#centroayuda-cat-producto": {
+    "title": "Centro de ayuda - Características del producto",
+    "children": [
+      "flex-layout.col#centroayuda-cat-producto"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCat",
+      "fullWidth": true,
+      "htmlId": "producto"
+    }
+  },
+  "flex-layout.col#centroayuda-cat-producto": {
+    "children": [
+      "rich-text#centroayuda-cat-producto-titulo",
+      "disclosure-layout-group#centroayuda-producto"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCatCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#centroayuda-cat-producto-titulo": {
+    "props": {
+      "text": "## Características del producto",
+      "blockClass": "centroAyudaCatTitle"
+    }
+  },
+  "disclosure-layout#centroayuda-producto-1": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-producto-1",
+      "disclosure-content#centroayuda-producto-1"
+    ]
+  },
+  "disclosure-trigger#centroayuda-producto-1": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-1-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-producto-1-q": {
+    "props": {
+      "text": "### ¿Por qué las baldosas de calidad primera tienen variación de tamaño?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-producto-1": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-1-a"
+    ]
+  },
+  "rich-text#centroayuda-producto-1-a": {
+    "props": {
+      "text": "La variación dimensional en cerámica de calidad primera no es un defecto. Según la Norma Técnica Colombiana 919, se permite una variación de hasta ±0,6% respecto al tamaño nominal, con un límite absoluto de ±2,0 mm. Ejemplo: una baldosa de 60 cm puede medir entre 59,8 cm y 60,2 cm. Estas tolerancias se deben a la contracción y expansión de materiales naturales durante el proceso de cocción, y no afectan el desempeño del producto cuando se instala con los dilatadores adecuados.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-producto-2": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-producto-2",
+      "disclosure-content#centroayuda-producto-2"
+    ]
+  },
+  "disclosure-trigger#centroayuda-producto-2": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-2-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-producto-2-q": {
+    "props": {
+      "text": "### ¿Cuál es la diferencia entre baldosa de calidad primera y calidad segunda (grado B)?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-producto-2": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-2-a"
+    ]
+  },
+  "rich-text#centroayuda-producto-2-a": {
+    "props": {
+      "text": "La calidad primera cumple con todos los estándares de la NTC 919 en dimensiones, planitud, tono y aspecto superficial. La calidad segunda o grado B presenta tolerancias mayores en medidas y acabados, lo que puede generar pequeñas diferencias visuales o dimensionales, aunque sin comprometer la funcionalidad ni la resistencia del producto. Los productos de Cerámica Italia en grado B no incluyen garantía de fábrica.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-producto-3": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-producto-3",
+      "disclosure-content#centroayuda-producto-3"
+    ]
+  },
+  "disclosure-trigger#centroayuda-producto-3": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-3-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-producto-3-q": {
+    "props": {
+      "text": "### ¿Qué diferencia hay entre una baldosa rectificada y una no rectificada (prensada)?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-producto-3": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-3-a"
+    ]
+  },
+  "rich-text#centroayuda-producto-3-a": {
+    "props": {
+      "text": "La baldosa rectificada pasa por un proceso mecánico de corte y pulido posterior a la cocción, que deja bordes perfectamente rectos a 90°. Esto permite juntas mínimas de 2 mm y superficies de alta precisión visual. La baldosa no rectificada o prensada presenta bordes levemente curvos y requiere juntas de mínimo 3 mm para un acabado correcto. Ambas cumplen con la norma UNE-EN 14411 / NTC 919, que permite variaciones de hasta ±2 mm incluso en calidad primera.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-producto-4": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-producto-4",
+      "disclosure-content#centroayuda-producto-4"
+    ]
+  },
+  "disclosure-trigger#centroayuda-producto-4": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-4-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-producto-4-q": {
+    "props": {
+      "text": "### ¿Qué significan las nomenclaturas V1, V2, V3 y V4 en las cajas de cerámica?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-producto-4": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-4-a"
+    ]
+  },
+  "rich-text#centroayuda-producto-4-a": {
+    "props": {
+      "text": "Estos códigos indican el nivel de variación visual entre caras del producto, basado en el estándar internacional de la industria cerámica:\n\n* V1 – Uniforme: diferencias mínimas entre caras.\n* V2 – Leve: variaciones leves y controladas.\n* V3 – Moderada: el número de colores por pieza varía significativamente.\n* V4 – Sustancial: variación de color aleatoria entre caras.\n\nA mayor variación (V3/V4), mayor naturalidad visual. Los productos inspirados en mármoles, piedras o maderas suelen ser V3 o V4 para replicar el comportamiento real del material natural.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-producto-5": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-producto-5",
+      "disclosure-content#centroayuda-producto-5"
+    ]
+  },
+  "disclosure-trigger#centroayuda-producto-5": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-5-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-producto-5-q": {
+    "props": {
+      "text": "### ¿Para qué sirven las flechas y los números en el respaldo de una baldosa?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-producto-5": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-5-a"
+    ]
+  },
+  "rich-text#centroayuda-producto-5-a": {
+    "props": {
+      "text": "Las flechas, números y marcas impresas en el respaldo de una baldosa son referencias internas de fábrica para control de calidad y trazabilidad del proceso de producción. No indican dirección de instalación. Lo que sí importa antes de instalar es hacer un tendido en seco: acomodar las piezas sin adhesivo para evaluar caras, tonos y gráficas. Girar algunas piezas 180° permite lograr acabados más naturales y armónicos.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-producto-6": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-producto-6",
+      "disclosure-content#centroayuda-producto-6"
+    ]
+  },
+  "disclosure-trigger#centroayuda-producto-6": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-6-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-producto-6-q": {
+    "props": {
+      "text": "### ¿Qué es Ceranatto Cristalux y en qué se diferencia de otros productos brillantes?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-producto-6": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-producto-6-a"
+    ]
+  },
+  "rich-text#centroayuda-producto-6-a": {
+    "props": {
+      "text": "Ceranatto Cristalux es la línea de alta gama de Cerámica Italia, con brillo espejo superior a 90 lúminas, bordes rectificados de alta precisión y resistencia de tráfico nivel 5 (PEI clase 5), apto para los espacios de mayor exigencia. Cuenta con 10 años de garantía. No requiere procesos de pulido, sellado ni mantenimiento especial: su limpieza se realiza solo con agua y jabón neutro. A diferencia de materiales como el mármol natural, no pierde brillo con el uso ni necesita mantenimientos periódicos costosos.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout-group#centroayuda-producto": {
+    "children": [
+      "disclosure-layout#centroayuda-producto-1",
+      "disclosure-layout#centroayuda-producto-2",
+      "disclosure-layout#centroayuda-producto-3",
+      "disclosure-layout#centroayuda-producto-4",
+      "disclosure-layout#centroayuda-producto-5",
+      "disclosure-layout#centroayuda-producto-6"
+    ]
+  },
+  "flex-layout.row#centroayuda-cat-formatos": {
+    "title": "Centro de ayuda - Grandes formatos y Verticale",
+    "children": [
+      "flex-layout.col#centroayuda-cat-formatos"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCat",
+      "fullWidth": true,
+      "htmlId": "formatos"
+    }
+  },
+  "flex-layout.col#centroayuda-cat-formatos": {
+    "children": [
+      "rich-text#centroayuda-cat-formatos-titulo",
+      "disclosure-layout-group#centroayuda-formatos"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCatCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#centroayuda-cat-formatos-titulo": {
+    "props": {
+      "text": "## Grandes formatos y Verticale",
+      "blockClass": "centroAyudaCatTitle"
+    }
+  },
+  "disclosure-layout#centroayuda-formatos-1": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-formatos-1",
+      "disclosure-content#centroayuda-formatos-1"
+    ]
+  },
+  "disclosure-trigger#centroayuda-formatos-1": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-1-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-formatos-1-q": {
+    "props": {
+      "text": "### ¿Los grandes formatos generan más desperdicio de material que los formatos pequeños?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-formatos-1": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-1-a"
+    ]
+  },
+  "rich-text#centroayuda-formatos-1-a": {
+    "props": {
+      "text": "No, si la instalación se planifica correctamente. La clave está en medir el área total y agregar un 5% adicional para cortes y ajustes. Con una buena modulación y las herramientas adecuadas, el desperdicio no es mayor que con formatos pequeños. Estudios comparativos muestran que los grandes formatos generan menos juntas, menos mantenimiento posterior y una mayor sensación visual de amplitud, con igual o mejor eficiencia de material por metro cuadrado instalado.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-formatos-2": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-formatos-2",
+      "disclosure-content#centroayuda-formatos-2"
+    ]
+  },
+  "disclosure-trigger#centroayuda-formatos-2": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-2-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-formatos-2-q": {
+    "props": {
+      "text": "### ¿Se pueden instalar grandes formatos en pisos de ducha?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-formatos-2": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-2-a"
+    ]
+  },
+  "rich-text#centroayuda-formatos-2-a": {
+    "props": {
+      "text": "Sí. La clave es ejecutar una pendiente exacta del 1% hacia el desagüe (1 cm por cada metro de longitud) con cortes técnicos precisos. Con esta pendiente, el agua fluye sin filtraciones ni acumulaciones. Además, los grandes formatos en duchas presentan ventajas adicionales: menos juntas expuestas significa menos acumulación de hongos y suciedad, mayor higiene y menor mantenimiento, además de un aspecto visualmente más limpio y moderno.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-formatos-3": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-formatos-3",
+      "disclosure-content#centroayuda-formatos-3"
+    ]
+  },
+  "disclosure-trigger#centroayuda-formatos-3": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-3-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-formatos-3-q": {
+    "props": {
+      "text": "### ¿Cuáles son los beneficios de los grandes formatos frente a los formatos pequeños?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-formatos-3": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-3-a"
+    ]
+  },
+  "rich-text#centroayuda-formatos-3-a": {
+    "props": {
+      "text": "Los grandes formatos ofrecen: (1) menos juntas visibles, generando una lectura continua del espacio; (2) mayor amplitud visual, haciendo que los ambientes se perciban más grandes; (3) menor mantenimiento, al reducir las superficies de acumulación de suciedad; (4) mayor valor estético, con un acabado premium que transforma cualquier espacio. Para el instalador, dominan la técnica de grandes formatos representa mayor rentabilidad por metro cuadrado y diferenciación profesional.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-formatos-4": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-formatos-4",
+      "disclosure-content#centroayuda-formatos-4"
+    ]
+  },
+  "disclosure-trigger#centroayuda-formatos-4": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-4-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-formatos-4-q": {
+    "props": {
+      "text": "### ¿Qué es el formato Verticale 31×101 de Cerámica Italia y para qué espacios es ideal?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-formatos-4": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-4-a"
+    ]
+  },
+  "rich-text#centroayuda-formatos-4-a": {
+    "props": {
+      "text": "Verticale 31×101 es el nuevo estándar premium del muro cerámico de Cerámica Italia. Su proporción —31 cm de ancho por 101 cm de largo— genera una lectura completamente diferente del muro: menos piezas, menos juntas visibles, mayor continuidad y escala. Es ideal para baños, muros de televisión en sala, cabeceros de habitación, cocinas integradas, lobbies y corredores. Su formato elongado no es exclusivo del baño: es una herramienta de arquitectura interior aplicable a cualquier muro que merezca protagonismo.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-formatos-5": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-formatos-5",
+      "disclosure-content#centroayuda-formatos-5"
+    ]
+  },
+  "disclosure-trigger#centroayuda-formatos-5": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-5-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-formatos-5-q": {
+    "props": {
+      "text": "### ¿En qué dirección se instala el formato Verticale 31×101?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-formatos-5": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-5-a"
+    ]
+  },
+  "rich-text#centroayuda-formatos-5-a": {
+    "props": {
+      "text": "Verticale 31×101 admite tres orientaciones con efectos espaciales distintos:\n\n* Horizontal: genera amplitud lateral. El espacio se percibe más ancho y sereno. Ideal para baños compactos, cocinas integradas y muros de acompañamiento.\n* Vertical: genera altura y protagonismo. El espacio se percibe más alto y elegante. Ideal para duchas tipo spa, muros de recepción y cabeceros de habitación.\n* Mixto: combina orientaciones en un mismo espacio (por ejemplo, fondo vertical y laterales horizontales). El lenguaje más sofisticado: cada plano cumple una función visual diferente y reduce el número de piezas instaladas.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-formatos-6": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-formatos-6",
+      "disclosure-content#centroayuda-formatos-6"
+    ]
+  },
+  "disclosure-trigger#centroayuda-formatos-6": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-6-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-formatos-6-q": {
+    "props": {
+      "text": "### ¿El formato Verticale 31×101 funciona en espacios pequeños?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-formatos-6": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-formatos-6-a"
+    ]
+  },
+  "rich-text#centroayuda-formatos-6-a": {
+    "props": {
+      "text": "Sí, y de hecho es donde mejor rinde. Un muro en 30×60 genera múltiples líneas de junta horizontales y verticales que fragmentan visualmente el espacio. Verticale reduce esa fragmentación de forma contundente: menos piezas, menos juntas visibles, mayor continuidad. El ojo percibe el espacio como más limpio y ordenado. Un baño pequeño con Verticale instalado en horizontal se percibe más amplio; en vertical, más alto. La instalación mixta óptima reduce de 54 segmentos (con 30×60) a solo 28, con menor desperdicio.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout-group#centroayuda-formatos": {
+    "children": [
+      "disclosure-layout#centroayuda-formatos-1",
+      "disclosure-layout#centroayuda-formatos-2",
+      "disclosure-layout#centroayuda-formatos-3",
+      "disclosure-layout#centroayuda-formatos-4",
+      "disclosure-layout#centroayuda-formatos-5",
+      "disclosure-layout#centroayuda-formatos-6"
+    ]
+  },
+  "flex-layout.row#centroayuda-cat-ceranatto": {
+    "title": "Centro de ayuda - Ceranatto®",
+    "children": [
+      "flex-layout.col#centroayuda-cat-ceranatto"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCat",
+      "fullWidth": true,
+      "htmlId": "ceranatto"
+    }
+  },
+  "flex-layout.col#centroayuda-cat-ceranatto": {
+    "children": [
+      "rich-text#centroayuda-cat-ceranatto-titulo",
+      "disclosure-layout-group#centroayuda-ceranatto"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCatCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#centroayuda-cat-ceranatto-titulo": {
+    "props": {
+      "text": "## Ceranatto®",
+      "blockClass": "centroAyudaCatTitle"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-1": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-1",
+      "disclosure-content#centroayuda-ceranatto-1"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-1": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-1-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-1-q": {
+    "props": {
+      "text": "### ¿Qué es Ceranatto®?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-1": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-1-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-1-a": {
+    "props": {
+      "text": "Ceranatto® es una marca registrada y una línea exclusiva de Cerámica Italia que representa la evolución de la cerámica. Es una categoría tecnológica superior diseñada para ofrecer un equilibrio entre diseño, innovación y alto desempeño, superando las limitaciones de la cerámica tradicional y la rigidez del porcelanato convencional. Está desarrollada para proyectos residenciales y comerciales que buscan superficies resistentes, duraderas y de estética contemporánea.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-2": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-2",
+      "disclosure-content#centroayuda-ceranatto-2"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-2": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-2-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-2-q": {
+    "props": {
+      "text": "### ¿Cuál es la diferencia entre Ceranatto® y un porcelanato?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-2": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-2-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-2-a": {
+    "props": {
+      "text": "Aunque ambos son revestimientos de alto desempeño, Ceranatto® incorpora una arquitectura de materiales que combina resistencia mecánica, menor peso y mayor flexibilidad estructural. Esto le permite adaptarse mejor a los movimientos naturales de las edificaciones sin sacrificar estabilidad, además de ofrecer tecnologías exclusivas como Crystal Lux y Natural Touch.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-3": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-3",
+      "disclosure-content#centroayuda-ceranatto-3"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-3": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-3-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-3-q": {
+    "props": {
+      "text": "### ¿Ceranatto® reemplaza al porcelanato?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-3": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-3-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-3-a": {
+    "props": {
+      "text": "No. Ceranatto® es una nueva categoría de superficies desarrollada por Cerámica Italia para ofrecer una solución de alto desempeño. Dependiendo del tipo de proyecto, puede ser una alternativa con ventajas técnicas como menor peso, mayor flexibilidad estructural y tecnologías exclusivas de acabado.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-4": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-4",
+      "disclosure-content#centroayuda-ceranatto-4"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-4": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-4-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-4-q": {
+    "props": {
+      "text": "### ¿Por qué Ceranatto® está diseñado para la construcción en Colombia?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-4": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-4-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-4-a": {
+    "props": {
+      "text": "Ceranatto® fue desarrollado entendiendo las dinámicas constructivas y las condiciones climáticas de Colombia. Su composición permite acompañar los procesos de asentamiento de las edificaciones, ofreciendo estabilidad dimensional, alta resistencia y mayor confiabilidad durante la instalación y el uso.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-5": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-5",
+      "disclosure-content#centroayuda-ceranatto-5"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-5": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-5-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-5-q": {
+    "props": {
+      "text": "### ¿La absorción de agua de Ceranatto® afecta su desempeño?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-5": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-5-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-5-a": {
+    "props": {
+      "text": "No. Su nivel de absorción controlada (entre 6 % y 10 %) es una ventaja técnica, ya que mejora el anclaje químico y mecánico del adhesivo, proporcionando una instalación más segura sin comprometer la resistencia ni la durabilidad del producto.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-6": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-6",
+      "disclosure-content#centroayuda-ceranatto-6"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-6": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-6-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-6-q": {
+    "props": {
+      "text": "### ¿Qué tan resistente es Ceranatto®?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-6": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-6-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-6-a": {
+    "props": {
+      "text": "Ceranatto® alcanza resistencias mecánicas entre 1.500 y 1.600 Newtons, superando en muchos casos la resistencia de un porcelanato estándar. Esto le permite soportar cargas pesadas, alto tráfico y las exigencias propias de proyectos residenciales, comerciales e institucionales.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-7": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-7",
+      "disclosure-content#centroayuda-ceranatto-7"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-7": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-7-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-7-q": {
+    "props": {
+      "text": "### ¿Ceranatto® se puede fracturar con los movimientos de una construcción?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-7": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-7-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-7-a": {
+    "props": {
+      "text": "Está diseñado precisamente para minimizar ese riesgo. Gracias a su flexibilidad estructural, Ceranatto® puede absorber pequeños movimientos naturales de las edificaciones sin fracturarse, convirtiéndose en una solución ideal para construcciones modernas.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-8": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-8",
+      "disclosure-content#centroayuda-ceranatto-8"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-8": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-8-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-8-q": {
+    "props": {
+      "text": "### ¿Ceranatto® pesa menos que un porcelanato?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-8": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-8-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-8-a": {
+    "props": {
+      "text": "Sí. Ceranatto® tiene un peso aproximado de 20 kg por metro cuadrado, mientras que un porcelanato convencional puede pesar entre 25 y 30 kg por metro cuadrado. Esta reducción disminuye la carga muerta de la edificación y facilita el transporte y la instalación.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-9": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-9",
+      "disclosure-content#centroayuda-ceranatto-9"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-9": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-9-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-9-q": {
+    "props": {
+      "text": "### ¿Qué es la tecnología Crystal Lux?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-9": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-9-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-9-a": {
+    "props": {
+      "text": "Crystal Lux es una tecnología exclusiva de Ceranatto® que ofrece acabados de alto brillo con efecto espejo, superiores a 90 lúminas. Además de aportar elegancia, incorpora un esmalte de alta densidad que proporciona una excelente resistencia al rayado y al desgaste diario.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-10": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-10",
+      "disclosure-content#centroayuda-ceranatto-10"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-10": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-10-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-10-q": {
+    "props": {
+      "text": "### ¿Qué es Natural Touch?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-10": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-10-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-10-a": {
+    "props": {
+      "text": "Natural Touch es una tecnología exclusiva con Zona Dual que combina seguridad y comodidad. Su alto coeficiente de fricción la hace ideal para exteriores y zonas húmedas, mientras que su superficie suave facilita la limpieza, evitando que la suciedad se adhiera como ocurre con otros pisos antideslizantes.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-11": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-11",
+      "disclosure-content#centroayuda-ceranatto-11"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-11": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-11-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-11-q": {
+    "props": {
+      "text": "### ¿En qué espacios se puede instalar Ceranatto®?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-11": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-11-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-11-a": {
+    "props": {
+      "text": "Ceranatto® puede instalarse en pisos y paredes de espacios residenciales y comerciales, tanto interiores como exteriores, incluyendo salas, habitaciones, cocinas, baños, terrazas, balcones, zonas húmedas y áreas de alto tráfico, según la tecnología y el acabado seleccionados.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-12": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-12",
+      "disclosure-content#centroayuda-ceranatto-12"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-12": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-12-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-12-q": {
+    "props": {
+      "text": "### ¿Ceranatto® permite instalar juntas de solo 2 mm?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-12": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-12-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-12-a": {
+    "props": {
+      "text": "Sí. Toda la línea Ceranatto® cuenta con bordes rectificados de alta precisión y ha sido validada técnicamente para instalarse con juntas de 2 mm, logrando superficies más continuas, elegantes y fáciles de limpiar.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-13": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-13",
+      "disclosure-content#centroayuda-ceranatto-13"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-13": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-13-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-13-q": {
+    "props": {
+      "text": "### ¿Qué formatos ofrece Ceranatto®?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-13": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-13-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-13-a": {
+    "props": {
+      "text": "Ceranatto® está disponible en formatos tipo listón de 29 × 118,4 cm, gran formato de 58,4 × 118,4 cm y una línea técnica de 60 × 60 cm, diseñada para proyectos que requieren alta resistencia y eficiencia constructiva.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-14": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-14",
+      "disclosure-content#centroayuda-ceranatto-14"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-14": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-14-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-14-q": {
+    "props": {
+      "text": "### ¿Qué garantía tiene Ceranatto®?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-14": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-14-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-14-a": {
+    "props": {
+      "text": "Ceranatto® cuenta con una garantía de 10 años y el respaldo de más de 40 años de experiencia de Cerámica Italia, ofreciendo confianza, calidad y soporte para proyectos de construcción y remodelación.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-ceranatto-15": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-ceranatto-15",
+      "disclosure-content#centroayuda-ceranatto-15"
+    ]
+  },
+  "disclosure-trigger#centroayuda-ceranatto-15": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-15-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-15-q": {
+    "props": {
+      "text": "### ¿Por qué elegir Ceranatto®?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-ceranatto-15": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-ceranatto-15-a"
+    ]
+  },
+  "rich-text#centroayuda-ceranatto-15-a": {
+    "props": {
+      "text": "Porque combina innovación, diseño contemporáneo y tecnologías exclusivas para ofrecer superficies más resistentes, ligeras, seguras y duraderas. Ceranatto® es una solución desarrollada para la realidad constructiva de Colombia, respaldada por Cerámica Italia y diseñada para transformar los espacios con alto desempeño y estética de vanguardia.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout-group#centroayuda-ceranatto": {
+    "children": [
+      "disclosure-layout#centroayuda-ceranatto-1",
+      "disclosure-layout#centroayuda-ceranatto-2",
+      "disclosure-layout#centroayuda-ceranatto-3",
+      "disclosure-layout#centroayuda-ceranatto-4",
+      "disclosure-layout#centroayuda-ceranatto-5",
+      "disclosure-layout#centroayuda-ceranatto-6",
+      "disclosure-layout#centroayuda-ceranatto-7",
+      "disclosure-layout#centroayuda-ceranatto-8",
+      "disclosure-layout#centroayuda-ceranatto-9",
+      "disclosure-layout#centroayuda-ceranatto-10",
+      "disclosure-layout#centroayuda-ceranatto-11",
+      "disclosure-layout#centroayuda-ceranatto-12",
+      "disclosure-layout#centroayuda-ceranatto-13",
+      "disclosure-layout#centroayuda-ceranatto-14",
+      "disclosure-layout#centroayuda-ceranatto-15"
+    ]
+  },
+  "flex-layout.row#centroayuda-cat-banos": {
+    "title": "Centro de ayuda - Baños y sanitarios",
+    "children": [
+      "flex-layout.col#centroayuda-cat-banos"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCat",
+      "fullWidth": true,
+      "htmlId": "banos"
+    }
+  },
+  "flex-layout.col#centroayuda-cat-banos": {
+    "children": [
+      "rich-text#centroayuda-cat-banos-titulo",
+      "disclosure-layout-group#centroayuda-banos"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCatCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#centroayuda-cat-banos-titulo": {
+    "props": {
+      "text": "## Baños y sanitarios",
+      "blockClass": "centroAyudaCatTitle"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-1": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-1",
+      "disclosure-content#centroayuda-banos-1"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-1": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-1-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-1-q": {
+    "props": {
+      "text": "### ¿Qué es la tecnología Rimless 360° y por qué es más higiénica?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-1": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-1-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-1-a": {
+    "props": {
+      "text": "La tecnología Rimless 360° elimina el aro interior que tienen los sanitarios tradicionales y distribuye el agua en 360° por toda la superficie interna de la taza en cada descarga. Sin ese aro, desaparecen las zonas de difícil acceso donde se acumulan bacterias, sarro y cal: la limpieza es completa, visible y más rápida. Los sanitarios Cerámica Italia con Rimless 360° —como el Báltico, Támesis, Celta, Fratelo, Tirso, Lazio y Volga— garantizan una higiene superior con menos esfuerzo de limpieza frente a modelos convencionales. Ideal para familias con niños y proyectos hoteleros donde la higiene es prioritaria.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-2": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-2",
+      "disclosure-content#centroayuda-banos-2"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-2": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-2-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-2-q": {
+    "props": {
+      "text": "### ¿Cuál es la diferencia entre un sanitario con anillo de cera y uno sin anillo (Rimless)?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-2": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-2-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-2-a": {
+    "props": {
+      "text": "La diferencia está en el sistema de sellado de la conexión entre el sanitario y el desagüe del piso, no en el interior de la taza. El anillo de cera es el elemento de instalación estándar que sella esa unión: todos los sanitarios Cerámica Italia lo incluyen en la caja. Aparte, algunos modelos tienen anillo cerrado esmaltado en el borde interior de la taza (para distribución uniforme del agua), mientras que los modelos Rimless no tienen ese aro en la taza, lo que mejora la higiene. Ambos sistemas usan anillo de cera para instalación; la diferencia Rimless vs. anillo cerrado afecta la limpieza interna, no la instalación.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-3": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-3",
+      "disclosure-content#centroayuda-banos-3"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-3": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-3-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-3-q": {
+    "props": {
+      "text": "### ¿Qué diferencia hay entre un sanitario one-piece y uno de dos piezas?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-3": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-3-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-3-a": {
+    "props": {
+      "text": "Un sanitario one-piece tiene el tanque y la taza fabricados en una sola pieza de cerámica, sin unión visible entre ambos. Esto elimina las juntas donde se acumula suciedad, facilita la limpieza exterior y da un acabado más estético y contemporáneo. Los sanitarios de dos piezas tienen tanque y taza separados, unidos durante la instalación, lo que genera una junta en la parte trasera propensa a acumular humedad y bacterias. Toda la línea de sanitarios Cerámica Italia es one-piece, combinando diseño, higiene y durabilidad superior frente a los modelos tradicionales de dos piezas.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-4": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-4",
+      "disclosure-content#centroayuda-banos-4"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-4": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-4-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-4-q": {
+    "props": {
+      "text": "### ¿Cuánta agua consume un sanitario de doble descarga y cuánto se ahorra?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-4": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-4-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-4-a": {
+    "props": {
+      "text": "Los sanitarios de doble descarga Cerámica Italia consumen entre 3 y 4 litros en descarga parcial (para líquidos) y 6 litros en descarga completa (para sólidos), frente a los 8-12 litros de los sanitarios convencionales. Esto representa un ahorro de hasta el 50% en el consumo de agua del baño. El modelo Elba Eco va más lejos con solo 3 litros en descarga parcial y 4.5 en completa —el más eficiente de la línea—, mientras que el Lazio HG usa 3 y 6 litros. Una familia de 4 personas puede ahorrar hasta 200-240 litros de agua al día con este sistema frente a sanitarios de 9 litros.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-5": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-5",
+      "disclosure-content#centroayuda-banos-5"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-5": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-5-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-5-q": {
+    "props": {
+      "text": "### ¿Qué es la capacidad de arrastre de un sanitario y cuál es la diferencia entre modelos?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-5": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-5-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-5-a": {
+    "props": {
+      "text": "La capacidad de arrastre es la cantidad máxima (en gramos) que un sanitario puede evacuar en una sola descarga. El promedio de evacuación humana es de 150-180 gramos, por lo que cualquier modelo Cerámica Italia supera ampliamente ese umbral. El Elba Eco tiene la mayor capacidad de la línea con 900 gramos, seguido del Celta con 800 g, el Cantábrico y Volga con 700 g, el Báltico y Fratelo con 650 g, y el Tirso y Lazio con 600 g. Mayor capacidad de arrastre significa menos probabilidad de atascos y mayor eficiencia por descarga, lo que es especialmente relevante para proyectos hoteleros o de alta rotación.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-6": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-6",
+      "disclosure-content#centroayuda-banos-6"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-6": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-6-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-6-q": {
+    "props": {
+      "text": "### ¿Cuál es la presión de agua mínima necesaria para instalar un sanitario Cerámica Italia?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-6": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-6-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-6-a": {
+    "props": {
+      "text": "Los sanitarios Cerámica Italia requieren una presión estática de agua entre 20 y 80 PSI para funcionar correctamente. La presión mínima recomendada para garantizar la activación del sistema de doble descarga es de 8 PSI dinámicos durante la descarga. En redes residenciales colombianas la presión habitual oscila entre 20 y 60 PSI, por lo que la mayoría de instalaciones no requieren ajustes adicionales. En edificios de altura donde la presión baja considerablemente, se recomienda verificar con el instalador antes de elegir el modelo.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-7": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-7",
+      "disclosure-content#centroayuda-banos-7"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-7": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-7-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-7-q": {
+    "props": {
+      "text": "### ¿Qué es la medida rough-in y cómo sé cuál necesito?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-7": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-7-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-7-a": {
+    "props": {
+      "text": "El rough-in es la distancia desde la pared terminada hasta el centro del desagüe en el piso. Todos los sanitarios de piso de Cerámica Italia tienen rough-in de 30.5 cm (12 pulgadas), que es la medida estándar en Colombia y Latinoamérica. Para verificarlo en un baño existente, medir desde la pared hasta el centro del tornillo de fijación del sanitario actual. Si esa medida es 30.5 cm, cualquier modelo de la línea CISA es compatible sin necesidad de modificar la instalación. El único que maneja instalación diferente es el Cantábrico Suspendido, que requiere cisterna empotrada en pared.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-8": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-8",
+      "disclosure-content#centroayuda-banos-8"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-8": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-8-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-8-q": {
+    "props": {
+      "text": "### ¿Qué diferencia hay entre un sanitario de piso y uno suspendido? ¿Cuál conviene instalar?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-8": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-8-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-8-a": {
+    "props": {
+      "text": "Un sanitario de piso se instala directamente sobre el suelo con su propio tanque visible; uno suspendido (como el Cantábrico de Cerámica Italia) se monta en la pared con la cisterna oculta dentro de una estructura, dejando solo la taza visible. El suspendido ofrece una estética más minimalista, facilita la limpieza del piso al no tener contacto con él, y permite ajustar la altura entre 40 y 50 cm según el usuario. La desventaja es que requiere obra adicional para construir o adaptar la pared que aloja la cisterna, por lo que es más indicado para proyectos nuevos o remodelaciones integrales. Los sanitarios de piso one-piece son la opción más práctica para renovaciones sin obra de pared.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-9": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-9",
+      "disclosure-content#centroayuda-banos-9"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-9": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-9-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-9-q": {
+    "props": {
+      "text": "### ¿Qué sanitario es mejor para baños pequeños?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-9": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-9-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-9-a": {
+    "props": {
+      "text": "Para baños con espacio reducido, el Celta Blanco (695 mm de largo) y el Sena Blanco (620 mm) son las opciones más compactas de la línea Cerámica Italia. El Sena destaca porque, a pesar de ser el más corto de la línea, tiene una altura confortable de 43 cm, ideal para adultos mayores. El Cantábrico Suspendido también es una solución para baños pequeños, ya que al no tocar el piso y eliminar el tanque visible, genera sensación de mayor espacio aunque su taza mide 370 mm. Para renovaciones sin obra de pared, el Celta one-piece es la opción más recomendada en espacios limitados.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-10": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-10",
+      "disclosure-content#centroayuda-banos-10"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-10": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-10-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-10-q": {
+    "props": {
+      "text": "### ¿Cuál es el sanitario ideal para adultos mayores o personas con movilidad reducida?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-10": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-10-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-10-a": {
+    "props": {
+      "text": "El Sanitario Sena de Cerámica Italia es el modelo diseñado específicamente para este perfil: alcanza 44-45 cm de altura con asiento (contra el estándar de 38-42 cm del mercado colombiano), reduciendo el esfuerzo físico al sentarse y levantarse. Esta mayor altura es especialmente beneficiosa para personas con problemas de rodillas, cadera o movilidad reducida, y para proyectos que buscan accesibilidad universal. El Cantábrico Suspendido es otra opción, ya que su altura es ajustable entre 40 y 50 cm, permitiendo personalizarla según las necesidades de cada usuario.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-11": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-11",
+      "disclosure-content#centroayuda-banos-11"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-11": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-11-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-11-q": {
+    "props": {
+      "text": "### ¿Qué sanitario elegir si busco un diseño diferente y contemporáneo?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-11": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-11-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-11-a": {
+    "props": {
+      "text": "Para proyectos que buscan diferenciación, Cerámica Italia ofrece dos opciones de alto impacto visual: el Tirso MJ, el único sanitario de taza cuadrada de la línea, con líneas rectas y arquitectónicas que transforman cualquier baño contemporáneo; y los modelos Támesis en acabado mate (Negro, Gris y Blanco Mate), que rompen con el acabado brillante tradicional y disimulam huellas y ralladuras. Para proyectos minimalistas que eliminan el tanque visible, el Cantábrico Suspendido es la opción más depurada. Todos mantienen tecnología Rimless 360° y sistema de doble descarga.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-12": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-12",
+      "disclosure-content#centroayuda-banos-12"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-12": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-12-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-12-q": {
+    "props": {
+      "text": "### ¿Cómo se limpia correctamente un sanitario Cerámica Italia sin dañar el esmalte?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-12": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-12-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-12-a": {
+    "props": {
+      "text": "Para limpiar correctamente un sanitario Cerámica Italia usar paño suave o esponja no abrasiva con detergente neutro o limpiador específico para cerámica vitrificada. Evitar completamente: ácido clorhídrico, cloro concentrado, solventes, abrasivos en polvo y estropajos metálicos, ya que dañan el esmalte irreversiblemente. Para eliminar sarro o cal, usar un limpiador de pH neutro o ligeramente ácido aplicado con paño, nunca estropajo. El asiento se limpia con paño húmedo y jabón neutro; no sumergir. No colocar pastillas de cloro dentro del tanque. Se recomienda limpieza superficial diaria y profunda semanal para conservar el brillo del esmalte y el rendimiento del sistema Rimless.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-banos-13": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-banos-13",
+      "disclosure-content#centroayuda-banos-13"
+    ]
+  },
+  "disclosure-trigger#centroayuda-banos-13": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-13-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-banos-13-q": {
+    "props": {
+      "text": "### ¿Qué normas técnicas cumplen los sanitarios Cerámica Italia y qué garantizan?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-banos-13": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-banos-13-a"
+    ]
+  },
+  "rich-text#centroayuda-banos-13-a": {
+    "props": {
+      "text": "Los sanitarios Cerámica Italia cumplen tres normas técnicas internacionales: ASME A112.19.2-2013/CSA B45.1-13 (estándar norteamericano y canadiense que certifica dimensionamiento, resistencia estructural y rendimiento hidráulico), NTP 333.028-1993 (norma técnica peruana de referencia regional para sanitarios) y NTC 920 (norma técnica colombiana de calidad para aparatos sanitarios). Estas certificaciones garantizan que el producto cumple exigencias de dimensionamiento, resistencia a impacto, consumo de agua y calidad del esmalte, siendo válidas para proyectos residenciales, hoteleros y de construcción en Colombia. El modelo Tirso MJ cumple ASME y NTC 920 (sin NTP 333.028).",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout-group#centroayuda-banos": {
+    "children": [
+      "disclosure-layout#centroayuda-banos-1",
+      "disclosure-layout#centroayuda-banos-2",
+      "disclosure-layout#centroayuda-banos-3",
+      "disclosure-layout#centroayuda-banos-4",
+      "disclosure-layout#centroayuda-banos-5",
+      "disclosure-layout#centroayuda-banos-6",
+      "disclosure-layout#centroayuda-banos-7",
+      "disclosure-layout#centroayuda-banos-8",
+      "disclosure-layout#centroayuda-banos-9",
+      "disclosure-layout#centroayuda-banos-10",
+      "disclosure-layout#centroayuda-banos-11",
+      "disclosure-layout#centroayuda-banos-12",
+      "disclosure-layout#centroayuda-banos-13"
+    ]
+  },
+  "flex-layout.row#centroayuda-cat-tiendas": {
+    "title": "Centro de ayuda - Tiendas y puntos de fábrica",
+    "children": [
+      "flex-layout.col#centroayuda-cat-tiendas"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCat",
+      "fullWidth": true,
+      "htmlId": "tiendas"
+    }
+  },
+  "flex-layout.col#centroayuda-cat-tiendas": {
+    "children": [
+      "rich-text#centroayuda-cat-tiendas-titulo",
+      "disclosure-layout-group#centroayuda-tiendas"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCatCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#centroayuda-cat-tiendas-titulo": {
+    "props": {
+      "text": "## Tiendas y puntos de fábrica",
+      "blockClass": "centroAyudaCatTitle"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-1": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-1",
+      "disclosure-content#centroayuda-tiendas-1"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-1": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-1-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-1-q": {
+    "props": {
+      "text": "### ¿Qué productos y servicios encuentro en las salas de ventas de Cerámica Italia?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-1": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-1-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-1-a": {
+    "props": {
+      "text": "En los Puntos de Fábrica y Salas de Ventas de Cerámica Italia encuentras un catálogo completo para la remodelación y acabados de tu hogar o proyecto de construcción. Nuestros asesores expertos te brindarán asesoría en diseño de interiores para que elijas entre una amplia variedad de:\n\n* Cerámica para pisos y revestimientos para paredes.\n* Porcelanatos y baldosas decorativas de alta resistencia.\n* Griferías modernas, sanitarios, lavamanos y mobiliario para baño.\n* Soluciones integrales en acabados y materiales para construcción.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-2": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-2",
+      "disclosure-content#centroayuda-tiendas-2"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-2": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-2-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-2-q": {
+    "props": {
+      "text": "### ¿Dónde comprar cerámica en Bogotá? (Puntos de Fábrica)",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-2": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-2-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-2-a": {
+    "props": {
+      "text": "Contamos con 5 salas de venta estratégicamente ubicadas en Bogotá para cubrir el área urbana y sus zonas aledañas:\n\n* Bogotá Norte:\n  * *Dirección:* Autopista Norte 137-78 de Sur a Norte, Costado Oriental.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Autopista%20Norte%20137-78%20de%20Sur%20a%20Norte%2C%20Costado%20Oriental%2C%20Bogot%C3%A1%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 9:00 AM a 5:30 PM | Sábados de 9:00 AM a 4:00 PM.\n  * *Teléfono:* 317 638 6436 / 317 435 0078.\n  * *Área de cobertura/despacho:* Suba, Usaquén, Cajicá, Cota, Chía, Zipaquirá, La Calera y Sopó.\n* Bogotá Sur (La Alquería):\n  * *Dirección:* Calle 38 A # 52C - 88, Barrio La Alquería (Edificio Rojo frente a Metro).\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Calle%2038%20A%20%23%2052C%20-%2088%2C%20Barrio%20La%20Alquer%C3%ADa%20%28Edificio%20Rojo%20frente%20a%20Metro%29%2C%20Bogot%C3%A1%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 9:00 AM a 5:30 PM | Sábados de 9:00 AM a 4:00 PM.\n  * *Teléfono:* 322 913 8175 / 317 638 4651.\n  * *Área de cobertura/despacho:* Soacha, Mosquera, Madrid, Sibaté, Funza, y localidades del sur de Bogotá.\n* Bogotá 104 (San Patricio):\n  * *Dirección:* Avenida 19 Calle 104-20, Zona D, Barrio San Patricio, Usaquén.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Avenida%2019%20Calle%20104-20%2C%20Zona%20D%2C%20Barrio%20San%20Patricio%2C%20Usaqu%C3%A9n%2C%20Bogot%C3%A1%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 9:00 AM a 6:00 PM | Sábados de 9:00 AM a 4:00 PM.\n  * *Teléfono:* 317 641 0057 / 318 811 9203.\n* Bogotá Calle 72 (Engativá):\n  * *Dirección:* Avenida Calle 72 # 82-17, Urbanización La Clarita, Engativá.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Avenida%20Calle%2072%20%23%2082-17%2C%20Urbanizaci%C3%B3n%20La%20Clarita%2C%20Engativ%C3%A1%2C%20Bogot%C3%A1%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 9:00 AM a 5:30 PM | Sábados de 9:00 AM a 4:00 PM.\n  * *Teléfono:* 317 513 8708.\n* Bogotá Suba:\n  * *Dirección:* Calle 139 # 109-03, Villa María, Suba.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Calle%20139%20%23%20109-03%2C%20Villa%20Mar%C3%ADa%2C%20Suba%2C%20Bogot%C3%A1%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 9:00 AM a 5:30 PM | Sábados de 9:00 AM a 4:00 PM.\n  * *Teléfono:* 318 811 9203 / 317 641 0057.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-3": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-3",
+      "disclosure-content#centroayuda-tiendas-3"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-3": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-3-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-3-q": {
+    "props": {
+      "text": "### ¿Dónde comprar cerámica en Medellín? (Puntos de Fábrica y Showroom)",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-3": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-3-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-3-a": {
+    "props": {
+      "text": "En la capital de Antioquia disponemos de un Punto de Fábrica oficial y un Showroom exclusivo de alto diseño:\n\n* Sala de Ventas Medellín CC IDEO:\n  * *Dirección:* Carrera 42 No. 75 - 83, Locales 159 y 160, Centro Comercial IDEO.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Carrera%2042%20No.%2075%20-%2083%2C%20Locales%20159%20y%20160%2C%20Centro%20Comercial%20IDEO%2C%20Medell%C3%ADn%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 9:00 AM a 6:00 PM | Sábados de 9:00 AM a 5:00 PM.\n  * *Teléfono:* 317 365 3354 / 317 433 5512.\n  * *Área de cobertura:* Envigado, Sabaneta, Itagüí, La Estrella, Rionegro y Llanogrande.\n* Showroom Ceramia Medellín (Diseño Exclusivo):\n  * *Dirección:* Carrera 42 # 3 Sur - 81, Oficina 1315, Torre 2, Distrito de Negocios Milla de Oro, El Poblado.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Carrera%2042%20%23%203%20Sur%20-%2081%2C%20Oficina%201315%2C%20Torre%202%2C%20Distrito%20de%20Negocios%20Milla%20de%20Oro%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 9:00 AM a 6:00 PM | Sábados de 9:00 AM a 5:00 PM.\n  * *Teléfono:* 321 377 1918.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-4": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-4",
+      "disclosure-content#centroayuda-tiendas-4"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-4": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-4-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-4-q": {
+    "props": {
+      "text": "### ¿Dónde comprar cerámica en Cali? (Punto de Fábrica)",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-4": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-4-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-4-a": {
+    "props": {
+      "text": "* Sala de Ventas Cali CC IDEO:\n  * *Dirección:* Carrera 1 No. 62-80, Centro Comercial IDEO, Local 104.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Carrera%201%20No.%2062-80%2C%20Centro%20Comercial%20IDEO%2C%20Local%20104%2C%20Cali%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 9:00 AM a 6:00 PM | Sábados de 9:00 AM a 5:00 PM.\n  * *Teléfono:* 317 433 1090.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-5": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-5",
+      "disclosure-content#centroayuda-tiendas-5"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-5": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-5-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-5-q": {
+    "props": {
+      "text": "### ¿Dónde comprar cerámica en Barranquilla? (Puntos de Fábrica)",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-5": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-5-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-5-a": {
+    "props": {
+      "text": "Atendemos las necesidades de remodelación de la Costa Atlántica a través de tres puntos de venta autorizados en Barranquilla:\n\n* Barranquilla Ciudad Jardín:\n  * *Dirección:* Carrera 43 # 80-18, Barrio Ciudad Jardín.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Carrera%2043%20%23%2080-18%2C%20Barrio%20Ciudad%20Jard%C3%ADn%2C%20Barranquilla%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 8:30 AM a 12:30 PM y de 2:00 PM a 5:30 PM | Sábados de 9:00 AM a 1:30 PM.\n  * *Teléfono:* 316 350 7795.\n* Barranquilla Calle 30:\n  * *Dirección:* Calle 30, Carrera 25-59, Local 1, Barrio Montes.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Calle%2030%2C%20Carrera%2025-59%2C%20Local%201%2C%20Barrio%20Montes%2C%20Barranquilla%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 8:30 AM a 5:00 PM | Sábados de 9:00 AM a 1:30 PM.\n  * *Teléfono:* 317 659 4499.\n* Barranquilla Torcoroma:\n  * *Dirección:* Carrera 51B # 84-94, Centro Comercial Torcoroma, Locales 1, 2 y 3, Barrio Alto Prado (frente a la Iglesia de Torcoroma).\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Carrera%2051B%20%23%2084-94%2C%20Centro%20Comercial%20Torcoroma%2C%20Locales%201%2C%202%20y%203%2C%20Barrio%20Alto%20Prado%20%28frente%20a%20la%20Iglesia%20de%20Torcoroma%29%2C%20Barranquilla%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 8:30 AM a 12:30 PM y de 2:00 PM a 5:30 PM | Sábados de 9:00 AM a 1:30 PM.\n  * *Teléfono:* 320 656 0709 / 321 377 1918.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-6": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-6",
+      "disclosure-content#centroayuda-tiendas-6"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-6": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-6-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-6-q": {
+    "props": {
+      "text": "### ¿Dónde comprar cerámica en Bucaramanga y Floridablanca? (Puntos de Fábrica y Outlets)",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-6": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-6-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-6-a": {
+    "props": {
+      "text": "* Bucaramanga Ricaurte:\n  * *Dirección:* Calle 61 # 17F-30, Barrio Ricaurte.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Calle%2061%20%23%2017F-30%2C%20Barrio%20Ricaurte%2C%20Bucaramanga%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 8:30 AM a 12:00 PM y de 2:00 PM a 6:00 PM | Sábados de 9:00 AM a 1:30 PM.\n  * *Teléfono:* 317 435 0335.\n* Outlet Floridablanca:\n  * *Dirección:* Carrera 33 # 108-49, Barrio Caldas, Floridablanca (Santander).\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Carrera%2033%20%23%20108-49%2C%20Barrio%20Caldas%2C%20Floridablanca%20%28Santander%29%2C%20Bucaramanga%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 8:00 AM a 12:00 PM y de 2:00 PM a 5:30 PM | Sábados de 8:30 AM a 1:00 PM.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-7": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-7",
+      "disclosure-content#centroayuda-tiendas-7"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-7": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-7-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-7-q": {
+    "props": {
+      "text": "### ¿Dónde comprar cerámica en Cúcuta? (Puntos de Fábrica)",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-7": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-7-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-7-a": {
+    "props": {
+      "text": "Nuestra sede de origen cuenta con salas de exhibición de última generación:\n\n* Sala de Ventas Av. Libertadores:\n  * *Dirección:* Avenida Libertadores No. 2N-134.\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Avenida%20Libertadores%20No.%202N-134%2C%20C%C3%BAcuta%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 8:30 AM a 12:00 PM y de 2:00 PM a 6:00 PM | Sábados de 9:00 AM a 2:30 PM.\n  * *Teléfono:* 317 435 0048.\n* Sala de Ventas Quinta Vélez:\n  * *Dirección:* Avenida 2E # 11-36, Local 9, Barrio Quinta Vélez (Esquina del Holiday Inn).\n  * [Ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Cer%C3%A1mica%20Italia%2C%20Avenida%202E%20%23%2011-36%2C%20Local%209%2C%20Barrio%20Quinta%20V%C3%A9lez%20%28Esquina%20del%20Holiday%20Inn%29%2C%20C%C3%BAcuta%2C%20Colombia)\n  * *Horario:* Lunes a Viernes de 8:30 AM a 12:00 PM y de 2:00 PM a 6:00 PM | Sábados de 9:00 AM a 2:30 PM.\n  * *Teléfono:* 317 427 8275.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-8": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-8",
+      "disclosure-content#centroayuda-tiendas-8"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-8": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-8-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-8-q": {
+    "props": {
+      "text": "### ¿En qué otras ciudades de Colombia hay salas de venta de Cerámica Italia?",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-8": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-8-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-8-a": {
+    "props": {
+      "text": "Llegamos a los principales rincones de Colombia a través de nuestros puntos de fábrica propios:\n\n* Pereira: Carrera 7 No. 33-49 Esquina, Barrio Primero de Febrero.\n  * *Horario:* Lunes a Viernes de 9:00 AM a 5:30 PM | Sábados de 9:00 AM a 1:30 PM.\n  * *Teléfono:* 317 646 5722.\n* Cartagena: Calle 30 # 34-27, Avenida Pedro Heredia, Alcibia.\n  * *Horario:* Lunes a Viernes de 8:30 AM a 5:00 PM | Sábados de 9:00 AM a 1:30 PM.\n  * *Teléfono:* 321 377 3247 / 317 644 2877.\n* Montería: Calle 41 No. 15E - 13, Barrio Mora (Frente al Hotel Florida Sinú).\n  * *Horario:* Lunes a Viernes de 8:00 AM a 12:00 PM y de 2:00 PM a 5:30 PM | Sábados de 8:00 AM a 12:30 PM.\n  * *Teléfono:* 321 502 4802 / 320 565 0706.\n* Valledupar: Calle 7D N° 9-09, Barrio San Carlos.\n  * *Horario:* Lunes a Viernes de 8:30 AM a 12:00 PM y de 2:00 PM a 6:00 PM | Sábados de 8:00 AM a 12:30 PM.\n  * *Teléfono:* 312 660 4136.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout#centroayuda-tiendas-9": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#centroayuda-tiendas-9",
+      "disclosure-content#centroayuda-tiendas-9"
+    ]
+  },
+  "disclosure-trigger#centroayuda-tiendas-9": {
+    "props": {
+      "as": "div",
+      "blockClass": "centroAyudaQuestion"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-9-q",
+      "disclosure-state-indicator#centroayuda"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-9-q": {
+    "props": {
+      "text": "### ¿Dónde puedo reclamar mis compras físicas o virtuales? (Centros Logísticos)",
+      "blockClass": "centroAyudaQ"
+    }
+  },
+  "disclosure-content#centroayuda-tiendas-9": {
+    "props": {
+      "blockClass": "centroAyudaAnswer"
+    },
+    "children": [
+      "rich-text#centroayuda-tiendas-9-a"
+    ]
+  },
+  "rich-text#centroayuda-tiendas-9-a": {
+    "props": {
+      "text": "Si compraste en nuestras salas físicas o mediante el canal digital, puedes programar la recogida directa de tus materiales en nuestros Centros Logísticos nacionales:\n\n* Bogotá / Tenjo: Km 6.3 Autopista Bogotá - Medellín (Entrada Festo), Tenjo. Parque Industrial Quadratto, Bodega DHL.\n  * *Horario:* Lunes a Viernes: 1:00 PM a 4:00 PM | Sábados: 8:00 AM a 10:00 AM.\n* Medellín: Carrera 49A # 98A SUR - 228, La Estrella, Antioquia.\n  * *Horario:* Lunes a Viernes: 9:00 AM a 2:00 PM | Sábados: 9:00 AM a 11:00 AM.\n* Cali: Calle 62 # 1N-00, Bodegas 4 y 5 Calima.\n  * *Horario:* Lunes a Viernes: 9:00 AM a 11:30 AM y 1:00 PM a 4:30 PM | Sábados: 9:00 AM a 11:30 AM.\n* Barranquilla: Vía 40 # 85-999, Parque Logístico Logika, Bodega #6.\n  * *Horario:* Lunes a Viernes: 8:00 AM a 4:30 PM | Sábados: 8:00 AM a 11:00 AM.\n* Bucaramanga: Km 4 Anillo Vial, Vía Floridablanca - Girón, Bodega 2 (Bodegas Colmuebles).\n  * *Horario:* Lunes a Viernes: 9:30 AM a 11:30 AM y 2:00 PM a 4:30 PM | Sábados: 9:00 AM a 11:00 AM.\n* Cúcuta: Calle 15 # 2N-134, Avenida Libertadores (Junto a Prafos Club).\n  * *Horario:* Lunes a Viernes: 7:30 AM a 11:20 AM y 1:30 PM a 4:50 PM | Sábados: 7:00 AM a 12:50 PM.\n* Pereira: Calle 94 # 14-73, Centro Empresarial La Villa, Bodega 11.\n  * *Horario:* Lunes a Viernes: 8:00 AM a 12:00 PM y 2:00 PM a 4:30 PM | Sábados: 8:30 AM a 12:00 PM.",
+      "blockClass": "centroAyudaA"
+    }
+  },
+  "disclosure-layout-group#centroayuda-tiendas": {
+    "children": [
+      "disclosure-layout#centroayuda-tiendas-1",
+      "disclosure-layout#centroayuda-tiendas-2",
+      "disclosure-layout#centroayuda-tiendas-3",
+      "disclosure-layout#centroayuda-tiendas-4",
+      "disclosure-layout#centroayuda-tiendas-5",
+      "disclosure-layout#centroayuda-tiendas-6",
+      "disclosure-layout#centroayuda-tiendas-7",
+      "disclosure-layout#centroayuda-tiendas-8",
+      "disclosure-layout#centroayuda-tiendas-9"
+    ]
+  },
+  "disclosure-state-indicator#centroayuda": {
+    "props": {
+      "Show": "icon-caret#centroayuda-down",
+      "Hide": "icon-caret#centroayuda-up"
+    }
+  },
+  "icon-caret#centroayuda-down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#centroayuda-up": {
+    "props": {
+      "orientation": "up"
+    }
+  },
+  "flex-layout.row#centroayuda-cta": {
+    "title": "Centro de ayuda - CTA contacto",
+    "children": [
+      "flex-layout.col#centroayuda-cta-col"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCta",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#centroayuda-cta-col": {
+    "children": [
+      "rich-text#centroayuda-cta-titulo",
+      "rich-text#centroayuda-cta-sub",
+      "flex-layout.row#centroayuda-cta-botones"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCtaBox",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#centroayuda-cta-titulo": {
+    "props": {
+      "text": "## ¿No encontraste tu respuesta?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "centroAyudaCtaTitulo"
+    }
+  },
+  "rich-text#centroayuda-cta-sub": {
+    "props": {
+      "text": "Nuestro equipo te asesora en la línea nacional **018000 111 568** o visítanos en cualquiera de nuestras salas de venta.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "centroAyudaCtaSub"
+    }
+  },
+  "flex-layout.row#centroayuda-cta-botones": {
+    "children": [
+      "link#centroayuda-btn-contacto",
+      "link#centroayuda-btn-tiendas"
+    ],
+    "props": {
+      "blockClass": "centroAyudaCtaBotones",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "colGap": 4
+    }
+  },
+  "link#centroayuda-btn-contacto": {
+    "props": {
+      "href": "/contacto",
+      "label": "Escríbenos",
+      "displayMode": "button",
+      "blockClass": "centroAyudaBtnPrimary"
+    }
+  },
+  "link#centroayuda-btn-tiendas": {
+    "props": {
+      "href": "/nuestras-tiendas",
+      "label": "Ver tiendas en el mapa",
+      "displayMode": "button",
+      "blockClass": "centroAyudaBtnGhost"
+    }
+  }
 }

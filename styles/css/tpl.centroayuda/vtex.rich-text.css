@@ -1,0 +1,119 @@
+/* ============================================================
+ * CENTRO DE AYUDA · Tipografía (vtex.rich-text)
+ * Scoped a blockClass "centroAyuda*".
+ * ============================================================ */
+
+/* Hero */
+.headingLevel1--centroAyudaHeroTitulo {
+  margin: 0;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.15;
+  color: #3f3f40;
+}
+
+.paragraph--centroAyudaHeroLead {
+  margin: 0.6rem 0 0;
+  font-family: 'NeutraText', -apple-system, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #4a4a4b;
+}
+
+/* Título de cada tema: acento de marca a la izquierda */
+.headingLevel2--centroAyudaCatTitle {
+  margin: 1rem 0 0.75rem;
+  padding-left: 0.85rem;
+  border-left: 4px solid #ED1B24;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  color: #3f3f40;
+}
+
+/* Pregunta (H3 dentro del trigger) */
+.headingLevel3--centroAyudaQ {
+  margin: 0;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #3f3f40;
+  text-align: left;
+  transition: color 0.2s ease;
+}
+
+/* Respuesta */
+.paragraph--centroAyudaA {
+  margin: 0 0 0.75rem;
+  font-family: 'NeutraText', -apple-system, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4a4a4b;
+  text-align: left;
+}
+
+.listItem--centroAyudaA {
+  margin: 0.25rem 0;
+  font-family: 'NeutraText', -apple-system, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #4a4a4b;
+  text-align: left;
+}
+
+/* Enlaces dentro de respuestas (p.ej. "Ver en Google Maps") */
+.link--centroAyudaA {
+  color: #ED1B24;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link--centroAyudaA:hover {
+  text-decoration: underline;
+}
+
+/* CTA final */
+.headingLevel2--centroAyudaCtaTitulo {
+  margin: 0 0 0.5rem;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #3f3f40;
+}
+
+.paragraph--centroAyudaCtaSub {
+  margin: 0 0 0.75rem;
+  font-family: 'NeutraText', -apple-system, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #4a4a4b;
+}
+
+.strong--centroAyudaCtaSub {
+  color: #ED1B24;
+}
+
+@media (min-width: 64rem) {
+  .headingLevel1--centroAyudaHeroTitulo {
+    font-size: 2.375rem;
+  }
+
+  .paragraph--centroAyudaHeroLead {
+    font-size: 1.0625rem;
+  }
+
+  .headingLevel2--centroAyudaCatTitle {
+    font-size: 1.625rem;
+  }
+
+  .headingLevel3--centroAyudaQ {
+    font-size: 1.0625rem;
+  }
+}
