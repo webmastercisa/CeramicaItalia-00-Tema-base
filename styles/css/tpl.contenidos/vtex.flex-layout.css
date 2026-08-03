@@ -1,0 +1,237 @@
+/* ============================================================
+ * TPL-CONTENIDOS · Layout (vtex.flex-layout)
+ * Scoped a blockClass "tplContenidos*". Paleta: rojo #ED1B24 ·
+ * tinta #3f3f40 · negro #0d0d0d · línea #e3e4e6 · fondo #f9f9f9
+ * ============================================================ */
+
+/* ─── HERO: la imagen la pone el stack (editable en Site Editor);
+   esta fila apilada aporta el oscurecido para contraste ─── */
+.flexRow--tplContenidosHero .flexRowContent--tplContenidosHero {
+  padding: 0;
+}
+
+/* Degradado con máximo a la izquierda (como tpl-ceranatto): zona de
+   lectura oscura bajo el texto, imagen despejada a la derecha */
+.flexRow--tplContenidosHeroContent {
+  height: 100%;
+  background: linear-gradient(to right, rgba(13, 13, 13, 0.88) 0%, rgba(13, 13, 13, 0.62) 40%, rgba(13, 13, 13, 0.12) 78%, rgba(13, 13, 13, 0) 100%);
+}
+
+/* Doble clase: gana al ".flexRowContent{justify-content:center}" global */
+.flexRow--tplContenidosHeroContent .flexRowContent--tplContenidosHeroContent {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexCol--tplContenidosHeroCol {
+  max-width: 36rem;
+  margin-right: auto; /* ancla el bloque de texto a la izquierda */
+  text-align: left;
+}
+
+.flexRow--tplContenidosHeroMeta .flexRowContent--tplContenidosHeroMeta {
+  justify-content: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ─── BARRA DE CONFIANZA (oscura, 4 items) ─── */
+.flexRow--tplContenidosStats {
+  background-color: #0d0d0d;
+}
+
+.flexRow--tplContenidosStats .flexRowContent--tplContenidosStats {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+/* ─── PORTAFOLIO ─── */
+.flexRow--tplContenidosProductos {
+  scroll-margin-top: 140px; /* compensa el header sticky del tema */
+}
+
+.flexRow--tplContenidosProductos .flexRowContent--tplContenidosProductos {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.flexCol--tplContenidosProductosCol {
+  width: 100%;
+}
+
+/* Botón "Ver más" de las cards SOLO en esta plantilla: fondo rojo y
+   letras blancas (identidad), hover invertido. Scoped al handle propio:
+   no afecta las cards del resto del sitio. */
+.flexRow--tplContenidosProductos :global(.vtex-button) {
+  background-color: #ED1B24;
+  border: 1px solid #ED1B24;
+  color: #ffffff;
+}
+
+.flexRow--tplContenidosProductos :global(.vtex-button):hover {
+  background-color: #ffffff;
+  border-color: #ED1B24;
+  color: #ED1B24;
+}
+
+.flexRow--tplContenidosProductos :global(.vtex-button__label) {
+  color: inherit;
+}
+
+/* ─── MANIFIESTO (oscuro) ─── */
+.flexRow--tplContenidosManifiesto {
+  background-color: #0d0d0d;
+}
+
+.flexRow--tplContenidosManifiesto .flexRowContent--tplContenidosManifiesto {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* ─── FORMULARIO ─── */
+.flexRow--tplContenidosFormulario {
+  background-color: #f9f9f9;
+  border-top: 3px solid #0d0d0d;
+  scroll-margin-top: 140px;
+}
+
+.flexRow--tplContenidosFormulario .flexRowContent--tplContenidosFormulario {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* ─── BLOG ─── */
+.flexRow--tplContenidosBlog {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e3e4e6;
+}
+
+.flexRow--tplContenidosBlog .flexRowContent--tplContenidosBlog {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.flexCol--tplContenidosBlogCol {
+  width: 100%;
+}
+
+/* Carrusel del blog — mismo comportamiento que el slider de
+   landing/renovacion.html (.blogs-track): pista horizontal con
+   3 tarjetas visibles en escritorio, 2 en tablet y 1 con "peek" en
+   móvil (flex-basis 80%, como .blog-card de la fuente). Se navega con
+   arrastre/gesto/rueda y scroll-snap encaja cada tarjeta; la barra
+   fina roja hace de indicador (equivalente CSS de los dots).
+   Handles verificados en el SSR de producción del blog. */
+.flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-listFlex) {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.75rem;
+}
+
+.flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-listFlex)::-webkit-scrollbar {
+  height: 4px;
+}
+
+.flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-listFlex)::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-listFlex)::-webkit-scrollbar-thumb {
+  background: #ED1B24;
+  border-radius: 2px;
+}
+
+.flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-listFlexItem) {
+  flex: 0 0 calc(33.333% - 12px);
+  max-width: calc(33.333% - 12px);
+  scroll-snap-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tarjeta: mismo lenguaje que .blog-card de la fuente (borde, hover
+   con elevación) */
+.flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-teaserContainer) {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid #e3e4e6;
+  transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
+}
+
+.flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-teaserContainer):hover {
+  border-color: #0d0d0d;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 63.99rem) {
+  .flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-listFlexItem) {
+    flex: 0 0 calc(50% - 9px);
+    max-width: calc(50% - 9px);
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .flexCol--tplContenidosBlogCol :global(.vtex-wordpress-integration-2-x-listFlexItem) {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+
+.flexRow--tplContenidosBlogCta .flexRowContent--tplContenidosBlogCta {
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+
+/* ─── CTA FINAL (oscura) ─── */
+.flexRow--tplContenidosCta {
+  background-color: #0d0d0d;
+}
+
+.flexRow--tplContenidosCta .flexRowContent--tplContenidosCta {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  justify-content: center;
+}
+
+.flexCol--tplContenidosCtaCol {
+  text-align: center;
+}
+
+.flexRow--tplContenidosCtaBotones .flexRowContent--tplContenidosCtaBotones {
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+/* ─── Responsive: columnas del manifiesto y formulario apilan en
+   mobile por el comportamiento nativo de flex-layout; solo ajustes ─── */
+@media (max-width: 47.99rem) {
+  .flexRow--tplContenidosHeroContent .flexRowContent--tplContenidosHeroContent {
+    padding: 1.75rem 1rem;
+  }
+
+  .flexRow--tplContenidosManifiesto .flexRowContent--tplContenidosManifiesto,
+  .flexRow--tplContenidosFormulario .flexRowContent--tplContenidosFormulario {
+    padding: 2rem 1rem;
+  }
+}

@@ -172,6 +172,13 @@
     "isSitemapEntry": true
   },
 
+  "store.custom#tpl-contenidos":
+  {
+    "path": "/tpl-contenidos",
+    "title": "Nueva Serie Renovación 2026 | Cerámica Italia",
+    "blockId": "store.custom#tpl-contenidos",
+    "isSitemapEntry": false
+  },
 
   "store.custom#tpl-categoria": { "path": "/tpl-categoria/:slug" }
 

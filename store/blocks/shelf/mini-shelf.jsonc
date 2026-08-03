@@ -107,19 +107,19 @@
     "children": [
       "stack-layout#vitrinaMini",
       "product-summary-name",
-      "flex-layout.row#btn-price"
+      "flex-layout.col#btn-price-mini"
     ]
   },
-  "flex-layout.row#btn-price": {
+  /* Columna: precio y botón apilados, una línea cada uno
+     (un flex-layout.row los repartía 50/50 en la misma línea) */
+  "flex-layout.col#btn-price-mini": {
     "children": [
       "SellingPriceWithTax", // CustomApp
-      // "product-selling-price#summary",
       "add-to-cart-button#miniShelf"
     ],
     "props": {
-      "blockClass": [
-        "btn-price"
-      ]
+      "blockClass": "btn-price-mini",
+      "preventVerticalStretch": true
     }
   },
   // Cambiando stack layout -Mini vitrina
@@ -236,8 +236,11 @@
     }
   },
 
+  /* Mismo patrón que add-to-cart-button#btnshelf-revestimmmientos:
+     texto real vía prop (centrado nativo, sin hacks de ::after) */
   "add-to-cart-button#miniShelf": {
     "props": {
+      "text": "Ver más",
       "onClickBehavior": "go-to-product-page",
       "addToCartFeedback": "customEvent",
       "customPixelEventId": "add-to-cart-button"

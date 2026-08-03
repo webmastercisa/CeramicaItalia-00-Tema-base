@@ -659,55 +659,30 @@
   padding-left: 10px;
 }
 
-.flexRow--miniShelf-two :global(.vtex-button),
-.flexRow--miniShelf-one :global(.vtex-button) {
-  display: flex;
-  align-items: center;
-  font-size: 10px;
-  border: 0;
-  color: black;
-  background: #FFF;
-}
-
-.flexRow--miniShelf-two :global(.vtex-button__label),
-.flexRow--miniShelf-one :global(.vtex-button__label) {
-  padding: 0;
-  margin-left: -33px;
-  margin-top: -20px;
-}
-
-.flexRow--miniShelf-two :global(.vtex-flex-layout-0-x-flexRow--btn-price),
-.flexRow--miniShelf-one :global(.vtex-flex-layout-0-x-flexRow--btn-price) {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.flexRow--miniShelf-two :global(.vtex-add-to-cart-button-0-x-buttonText)::before,
-.flexRow--miniShelf-one :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
-  height: 0 !important;
-  width: 0 !important;
-}
-
+/* Botón migrado al patrón existente de las vitrinas: texto real
+   "Ver más" vía prop del bloque (centrado nativo) — eliminados los
+   hacks legacy: botón blanco, label con márgenes negativos
+   (-33px/-20px, causa del texto descentrado), font-size:0 y ::after */
 .flexRow--miniShelf-two :global(.vtex-add-to-cart-button-0-x-buttonText),
 .flexRow--miniShelf-one :global(.vtex-add-to-cart-button-0-x-buttonText) {
-  font-size: 0;
-}
-
-.flexRow--miniShelf-two :global(.vtex-add-to-cart-button-0-x-buttonText)::after,
-.flexRow--miniShelf-one :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
-  content: '+Detalles';
-  /* font-family: 'Neutra Display'; */
   font-family: 'NeutraTextAltBold';
-  font-size: 15px;
-  color: #ED1B24;
-  font-weight: 500;
-  width: 20px;
+  font-size: 14px;
 }
 
-.flexRow--miniShelf-two :global(.vtex-flex-layout-0-x-flexRow--btn-price),
-.flexRow--miniShelf-one :global(.vtex-flex-layout-0-x-flexRow--btn-price) {
+/* Botón solo texto (sin icono de carrito), como en el listado de
+   productos: se oculta el ::before que inyecta el CSS global de
+   add-to-cart-button */
+.flexRow--miniShelf-two :global(.vtex-add-to-cart-button-0-x-buttonText)::before,
+.flexRow--miniShelf-one :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
+  display: none;
+}
+
+/* Precio y botón apilados: la columna reemplaza a la antigua fila
+   btn-price (que los repartía 50/50 en una sola línea de 35px) */
+.flexCol--btn-price-mini {
   width: 100%;
-  height: 35px;
+  row-gap: 6px;
+  padding-top: 4px;
 }
 
 .flexRow--miniShelf-two :global(.vtex-stack-layout-0-x-stackItem--wishlistHeart),
@@ -724,9 +699,33 @@
 }
 
 
+/* Unificación 2026-08: mismo botón que el resto de cards del sitio
+   (rojo/letras blancas, hover invertido). Geometría ajustada a su
+   fila: el .vtex-button trae min-height 40px (min-h-regular) dentro
+   de una fila de 35px — se iguala para que no desborde. */
 .flexRow--miniShelf-two :global(.vtex-button),
 .flexRow--miniShelf-one :global(.vtex-button) {
-  background-color: transparent;
+  background-color: #ED1B24;
+  border: 1px solid #ED1B24;
+  border-radius: 100px; /* pastilla, como se ve en la card */
+  color: #FFFFFF;
+  height: 35px;
+  min-height: 0;
+  padding: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.flexRow--miniShelf-two :global(.vtex-button):hover,
+.flexRow--miniShelf-one :global(.vtex-button):hover {
+  background-color: #FFFFFF;
+  color: #ED1B24;
+}
+
+/* El label interno trae ph6 (2rem por lado): imposible en ~90px */
+.flexRow--miniShelf-two :global(.vtex-button__label),
+.flexRow--miniShelf-one :global(.vtex-button__label) {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .flexRow--miniShelf-two :global(.vtex-store-icons-0-x-expandIcon) .flexRow--miniShelf-one :global(.vtex-store-icons-0-x-expandIcon) {

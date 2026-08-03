@@ -2,12 +2,14 @@
 .input_price{
     display: flex;
 }
+
 .container_input{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 250px;
 }
+
 .input_text{
     color: #686868;
     font-weight: 700;
@@ -229,20 +231,25 @@
  margin-bottom: 5px;
  width: 100%;
 }
+
+/* Unificación 2026-08: reposo rojo con letras e icono blancos, hover
+   invertido. El icono del SVG usa fill="currentColor": sigue solo al
+   color del texto en ambos estados.  */
 .btn_free{
     /* width: 235px; */
     width: 100%;
-    background-color: #fff;
+    background-color: #ED1B24;
     border: 1px solid #ED1B24;
     border-radius: 100px;
     height: 48px;
-    color: #ED1B24;
+    color: #fff;
     cursor: pointer;
     transition: color .25s ease-in-out,background-color .25s ease-in-out;
 }
+
 .btn_free:hover{
-    background-color: #ED1B24;
-    color: #fff;
+    background-color: #fff;
+    color: #ED1B24;
     transition: color .25s ease-in-out,background-color .25s ease-in-out;
 }
 .btn_free_content{
