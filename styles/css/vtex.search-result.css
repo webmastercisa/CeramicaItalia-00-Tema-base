@@ -316,23 +316,30 @@
   z-index: 99999;
 }
 
+/* Unificación 2026-08: botón de card en reposo ROJO con letras
+   blancas (identidad de marca); hover invertido blanco/rojo */
 .gallery :global(.vtex-button) {
+  background: #ED1B24;
+  color: #FFF;
+  border: 1px solid #ED1B24;
+}
+
+.gallery :global(.vtex-button):hover {
   background: #FFF;
   color: #ED1B24;
   border: 1px solid #ED1B24;
 }
 
-.gallery :global(.vtex-button):hover {
-  background: #ED1B24;
-  color: #FFF;
-  border: 1px solid #ED1B24;
+/* Reposo rojo: carrito blanco · hover blanco: carrito rojo */
+.gallery :global(.vtex-button) ::before {
+  background-image: url(assets/ico/cartShelfWhite.svg);
 }
 
 .gallery :global(.vtex-button):hover ::before {
   content: '';
   display: flex;
   padding: 0;
-  background-image: url(assets/ico/cartShelfWhite.svg);
+  background-image: url(assets/ico/cartShelf_w.svg);
 }
 
 .gallery :global(.vtex-add-to-cart-button-0-x-buttonText) {

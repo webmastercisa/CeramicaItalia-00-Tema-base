@@ -226,12 +226,26 @@
   max-height: 520px;
 }
 
+/* Tarjeta de las mini-vitrinas del home: contenedor redondeado con
+   mini-sombra (mismo patrón que .slide--shelf-destacados--visible) */
+.slide--slider-miniShelf--visible {
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px #00000026;
+  padding: 10px;
+  margin-bottom: 4px;
+  margin-top: 5px;
+  border-radius: 15px;
+  overflow: hidden; /* recorta cualquier elemento que sangre en el borde */
+}
 
+
+/* Unificación 2026-08: botón de card en reposo ROJO con letras
+   blancas (identidad de marca); hover invertido blanco/rojo */
 .slide--shelf-productos-relacionados :global(.vtex-button),
 .slide--shelf-general :global(.vtex-button),
 .slide--shelf-destacados :global(.vtex-button) {
-  background: #FFF;
-  color: #ED1B24;
+  background: #ED1B24;
+  color: #FFF;
   border: 1px solid #ED1B24;
 }
 
@@ -248,19 +262,29 @@
 .slide--shelf-productos-relacionados :global(.vtex-button):hover,
 .slide--shelf-general :global(.vtex-button):hover,
 .slide--shelf-destacados :global(.vtex-button):hover {
-  background: #ED1B24;
-  color: #FFF;
+  background: #FFF;
+  color: #ED1B24;
 }
 
 
+/* Hover con fondo blanco: carrito rojo */
 .slide--shelf-productos-relacionados :global(.vtex-button):hover ::before,
 .slide--shelf-general :global(.vtex-button):hover ::before,
 .slide--shelf-destacados :global(.vtex-button):hover ::before {
   content: '';
   display: flex;
   padding: 0;
-  background-image: url(assets/ico/cartShelfWhite.svg);
+  background-image: url(assets/ico/cartShelf_w.svg);
 
+}
+
+/* Reposo con fondo rojo: carrito blanco */
+.slide--shelf-productos-relacionados :global(.vtex-button) ::before,
+.slide--shelf-general :global(.vtex-button) ::before,
+.slide--shelf-destacados :global(.vtex-button) ::before,
+.slide--shelf-cocinas :global(.vtex-button) ::before,
+.slide--shelf-lo-nuevo :global(.vtex-button) ::before {
+  background-image: url(assets/ico/cartShelfWhite.svg);
 }
 
 
@@ -285,9 +309,9 @@
 }
 
 .sliderLayoutContainer--shelf-cocinas :global(.vtex-button) {
-  background: #FFF;
+  background: #ED1B24;
   border: 1px solid #ED1B24;
-  color: #ED1B24;
+  color: #FFF;
 }
 
 .sliderLayoutContainer--shelf-cocinas :global(.vtex-add-to-cart-button-0-x-buttonText) {
@@ -313,22 +337,22 @@
 
 
 .slide--shelf-cocinas :global(.vtex-button):hover {
-  background: #ED1B24;
-  color: #FFF;
+  background: #FFF;
+  color: #ED1B24;
 }
 
 .slide--shelf-cocinas :global(.vtex-button):hover ::before {
   content: '';
   display: flex;
   padding: 0;
-  background-image: url(assets/ico/cartShelfWhite.svg);
+  background-image: url(assets/ico/cartShelf_w.svg);
 
 }
 
 .sliderLayoutContainer--shelf-lo-nuevo :global(.vtex-button) {
-  background: #FFF;
+  background: #ED1B24;
   border: 1px solid #ED1B24;
-  color: #ED1B24;
+  color: #FFF;
 }
 
 .sliderLayoutContainer--shelf-lo-nuevo :global(.vtex-add-to-cart-button-0-x-buttonText) {
@@ -349,15 +373,15 @@
 }
 
 .slide--shelf-lo-nuevo :global(.vtex-button):hover {
-  background: #ED1B24;
-  color: #FFF;
+  background: #FFF;
+  color: #ED1B24;
 }
 
 .slide--shelf-lo-nuevo :global(.vtex-button):hover ::before {
   content: '';
   display: flex;
   padding: 0;
-  background-image: url(assets/ico/cartShelfWhite.svg);
+  background-image: url(assets/ico/cartShelf_w.svg);
 
 }
 

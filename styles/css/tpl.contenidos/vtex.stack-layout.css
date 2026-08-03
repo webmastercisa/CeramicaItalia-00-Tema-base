@@ -1,0 +1,16 @@
+/* ============================================================
+ * TPL-CONTENIDOS · Hero apilado (vtex.stack-layout)
+ * La imagen (primer hijo) da el alto; la fila de contenido
+ * (segundo hijo) se estira para cubrirla completa.
+ * ============================================================ */
+
+.stackContainer--tplContenidosHero {
+  width: 100%;
+}
+
+.stackItem--tplContenidosHero {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

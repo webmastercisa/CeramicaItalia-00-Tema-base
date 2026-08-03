@@ -1,0 +1,95 @@
+/* ============================================================
+ * TPL-CONTENIDOS · Botones (vtex.store-link)
+ * Identidad del tema: pill 999px · fondo rojo #ED1B24 · texto
+ * blanco · hover invertido (blanco/rojo) · foco visible.
+ * ============================================================ */
+
+/* Base compartida */
+.link--tplContenidosBtnPrimary,
+.link--tplContenidosBtnSecundary,
+.link--tplContenidosBtnGhost,
+.link--tplContenidosBtnGhostDark {
+  display: inline-block;
+  padding: 0.8rem 1.9rem;
+  border-radius: 999px;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+/* Foco visible accesible (nunca outline:none sin reemplazo) */
+.link--tplContenidosBtnPrimary:focus,
+.link--tplContenidosBtnSecundary:focus,
+.link--tplContenidosBtnGhost:focus,
+.link--tplContenidosBtnGhostDark:focus {
+  outline: 2px solid #ED1B24;
+  outline-offset: 2px;
+}
+
+/* Primario: rojo corporativo */
+.link--tplContenidosBtnPrimary {
+  border: 1px solid #ED1B24;
+  background-color: #ED1B24;
+  color: #ffffff;
+}
+
+.link--tplContenidosBtnPrimary:hover {
+  background-color: #ffffff;
+  color: #ED1B24;
+  transform: scale(1.03);
+}
+
+/* Primario: rojo corporativo */
+.link--tplContenidosBtnSecundary {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #ED1B24;
+}
+
+.link--tplContenidosBtnSecundary:hover {
+  background-color: #ED1B24;
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+
+/* Ghost sobre fondos claros */
+.link--tplContenidosBtnGhost {
+  border: 1px solid #3f3f40;
+  background-color: transparent;
+  color: #3f3f40;
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.link--tplContenidosBtnGhost:hover {
+  background-color: #3f3f40;
+  color: #ffffff;
+}
+
+/* Ghost sobre fondos oscuros (CTA final) */
+.link--tplContenidosBtnGhostDark {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.link--tplContenidosBtnGhostDark:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Labels internos de displayMode "button" */
+.link--tplContenidosBtnPrimary .label--tplContenidosBtnPrimary,
+.link--tplContenidosBtnSecundary  .label--tplContenidosBtnSecundary,
+.link--tplContenidosBtnGhost .label--tplContenidosBtnGhost,
+.link--tplContenidosBtnGhostDark .label--tplContenidosBtnGhostDark {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}

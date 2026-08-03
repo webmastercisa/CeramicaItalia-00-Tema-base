@@ -1,0 +1,724 @@
+{
+  /* ============================================================
+   *  PLANTILLA — TPL-CONTENIDOS
+   *  Cerámica Italia · Landing "Nueva Serie Renovación 2026"
+   *  Ruta: /tpl-contenidos (ver store/routes.json)
+   *  Estilos: styles/css/tpl.contenidos/*.css
+   *  Contenido: adaptado de landing/renovacion.html
+   *  Estructura de referencia: hero/trust de tpl-ceranatto,
+   *  actualizada al patrón vigente del tema (hero con stack-layout
+   *  → imagen EDITABLE en Site Editor).
+   *
+   *  Paleta: rojo #ED1B24 · tinta #3f3f40 · negro #000 · línea #e3e4e6
+   *  Convención: IDs "contenidos-*" / blockClass "tplContenidos*"
+   *  (camelCase: requisito del cruce blockClass↔CSS del validador
+   *  y convención del tema; conserva el prefijo pedido).
+   *
+   *  DEPENDENCIA ADMIN (única): el formulario usa vtex.store-form
+   *  contra Master Data — crear entidad CO / schema RENOVACION2026
+   *  con los campos de abajo y "publicJsonSchema": true en v-security
+   *  (sin él, el SSR de la página cae con 422 — ver
+   *  docs/TPL-CERANATTO.md y scripts/masterdata_schema.py check).
+   * ============================================================ */
+
+  "store.custom#tpl-contenidos": {
+    "blocks": [
+      "flex-layout.row#contenidos-hero",
+      "flex-layout.row#contenidos-stats",
+      "search-result-layout.customQuery#contenidos",
+      "flex-layout.row#contenidos-manifiesto",
+      //"flex-layout.row#contenidos-formulario",
+      "flex-layout.row#contenidos-blog",
+      "flex-layout.row#contenidos-cta"
+    ]
+  },
+
+  /* ══════════════ HERO (adapta ceranatto-hero al patrón stack) ══════════════ */
+
+  "flex-layout.row#contenidos-hero": {
+    "title": "Contenidos - Hero",
+    "children": ["stack-layout#contenidos-hero"],
+    "props": {
+      "blockClass": "tplContenidosHero",
+      "fullWidth": true
+    }
+  },
+
+  "stack-layout#contenidos-hero": {
+    "title": "Hero - Imagen + contenido",
+    "children": [
+      "image#contenidos-hero-img",
+      "flex-layout.row#contenidos-hero-content"
+    ],
+    "props": {
+      "blockClass": "tplContenidosHero"
+    }
+  },
+
+  /* Imagen del hero — cambiar desde Site Editor (placeholder: la misma
+     foto que usa landing/renovacion.html) */
+  "image#contenidos-hero-img": {
+    "title": "Hero - Imagen de fondo (editable)",
+    "props": {
+      "src": "https://images.unsplash.com/photo-1604014238170-4def1e4e6fcf?w=1600&h=900&fit=crop&auto=format&q=80",
+      "alt": "",
+      "blockClass": "tplContenidosHeroImg"
+    }
+  },
+
+  "flex-layout.row#contenidos-hero-content": {
+    "children": ["flex-layout.col#contenidos-hero-col"],
+    "props": {
+      "blockClass": "tplContenidosHeroContent",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#contenidos-hero-col": {
+    "children": [
+      "rich-text#contenidos-hero-eyebrow",
+      "rich-text#contenidos-hero-titulo",
+      "rich-text#contenidos-hero-tagline",
+      "rich-text#contenidos-hero-lead",
+      "flex-layout.row#contenidos-hero-botones",
+      "flex-layout.row#contenidos-hero-meta"
+    ],
+    "props": {
+      "blockClass": "tplContenidosHeroCol",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "rich-text#contenidos-hero-eyebrow": {
+    "props": {
+      "text": "Nueva Serie · Renovación 2026",
+      "blockClass": "tplContenidosEyebrow"
+    }
+  },
+
+  /* Único H1 de la página — justificado a la izquierda (mejor lectura
+     y contraste sobre el degradado, como el hero de tpl-ceranatto) */
+  "rich-text#contenidos-hero-titulo": {
+    "title": "Hero - Título (H1)",
+    "props": {
+      "text": "# Todo gran espacio comienza mucho antes de ser construido. **Comienza en la naturaleza.**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tplContenidosHeroTitulo"
+    }
+  },
+
+  "rich-text#contenidos-hero-tagline": {
+    "props": {
+      "text": "La naturaleza lo creó. Italia lo perfeccionó. \n Tú creas el espacio.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tplContenidosHeroTagline"
+    }
+  },
+
+  "rich-text#contenidos-hero-lead": {
+    "props": {
+      "text": "Cerámica Italia toma esa inspiración y, junto al diseño italiano, la transforma en superficies capaces de permanecer durante años, conservando la esencia de lo natural con una estética superior.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tplContenidosHeroLead"
+    }
+  },
+
+  "flex-layout.row#contenidos-hero-botones": {
+    "children": ["link#contenidos-btn-portafolio", "link#contenidos-btn-muestra"],
+    "props": {
+      "blockClass": "tplContenidosHeroBotones",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "colGap": 4
+    }
+  },
+
+  "link#contenidos-btn-portafolio": {
+    "props": {
+      "href": "#portafolio",
+      "label": "Ver portafolio",
+      "displayMode": "button",
+      "blockClass": "tplContenidosBtnPrimary"
+    }
+  },
+
+  "link#contenidos-btn-muestra": {
+    "props": {
+      "href": "#formulario",
+      "label": "Solicitar muestra",
+      "displayMode": "button",
+      "blockClass": "tplContenidosBtnSecundary"
+    }
+  },
+
+  "flex-layout.row#contenidos-hero-meta": {
+    "children": [
+      "rich-text#contenidos-hero-meta-1",
+      "rich-text#contenidos-hero-meta-2",
+      "rich-text#contenidos-hero-meta-3"
+    ],
+    "props": {
+      "blockClass": "tplContenidosHeroMeta",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "colGap": 6
+    }
+  },
+
+  "rich-text#contenidos-hero-meta-1": {
+    "props": { "text": "**27** \n Nuevos productos", "blockClass": "tplContenidosHeroMetaItem" }
+  },
+  "rich-text#contenidos-hero-meta-2": {
+    "props": { "text": "**4** \n Formatos", "blockClass": "tplContenidosHeroMetaItem" }
+  },
+  "rich-text#contenidos-hero-meta-3": {
+    "props": { "text": "**2** \n Series exclusivas", "blockClass": "tplContenidosHeroMetaItem" }
+  },
+
+  /* ══════════════ CONFIANZA (adapta ceranatto-trust: barra oscura) ══════════════ */
+
+  "flex-layout.row#contenidos-stats": {
+    "title": "Contenidos - Barra de confianza",
+    "children": [
+      "rich-text#contenidos-stat-1",
+      "rich-text#contenidos-stat-2",
+      "rich-text#contenidos-stat-3",
+      "rich-text#contenidos-stat-4"
+    ],
+    "props": {
+      "blockClass": "tplContenidosStats",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#contenidos-stat-1": {
+    "props": { "text": "**27** \n Maneras de imaginar tu hogar", "blockClass": "tplContenidosStat" }
+  },
+  "rich-text#contenidos-stat-2": {
+    "props": { "text": "**4** \n Formatos exclusivos", "blockClass": "tplContenidosStat" }
+  },
+  "rich-text#contenidos-stat-3": {
+    "props": { "text": "**Cristal Lux** \n La naturaleza perfeccionada · Interior", "blockClass": "tplContenidosStat" }
+  },
+  "rich-text#contenidos-stat-4": {
+    "props": { "text": "**Zona Dual** \n Sin fronteras · Interior · Exterior", "blockClass": "tplContenidosStat" }
+  },
+
+  /* ══════════════ PORTAFOLIO — colección 172 (dinámica) ══════════════
+   * customQuery muestra TODOS los productos de la colección en una sola
+   * carga (maxItemsPerPage 50 > tamaño de la colección; sin infinite
+   * scroll). Cards: product-summary.shelf del tema, que YA incluye
+   * product-highlights#collection (la etiqueta con datos reales:
+   * colecciones marcadas como destacado en el admin — así se muestran
+   * "Cristal Lux" / "Zona Dual" sin hardcodear nada por SKU). */
+
+  "search-result-layout.customQuery#contenidos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 50,
+        "queryField": "172", // ID de la colección Renovación 2026
+        "mapField": "productClusterIds",
+        "facetsBehavior": "static"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#contenidos",
+      "search-result-layout.mobile#contenidos",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop#contenidos": {
+    "children": ["flex-layout.row#contenidos-productos"],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "search-result-layout.mobile#contenidos": {
+    "children": ["flex-layout.row#contenidos-productos"],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  /* Fila compartida desktop/mobile (precedente: #searchbread en la búsqueda) */
+  "flex-layout.row#contenidos-productos": {
+    "children": ["flex-layout.col#contenidos-productos"],
+    "props": {
+      "blockClass": "tplContenidosProductos",
+      "fullWidth": true,
+      "htmlId": "portafolio"
+    }
+  },
+
+  "flex-layout.col#contenidos-productos": {
+    "children": [
+      "rich-text#contenidos-productos-eyebrow",
+      "rich-text#contenidos-productos-titulo",
+      "search-content#contenidos"
+    ],
+    "props": {
+      "blockClass": "tplContenidosProductosCol",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#contenidos-productos-eyebrow": {
+    "props": { "text": "Portafolio · Renovación 2026", "blockClass": "tplContenidosEyebrow" }
+  },
+
+  "rich-text#contenidos-productos-titulo": {
+    "props": {
+      "text": "## Creamos 27 maneras de imaginar tu hogar",
+      "blockClass": "tplContenidosSectionTitle"
+    }
+  },
+
+  "search-content#contenidos": {
+    "blocks": ["gallery#contenidos", "not-found"]
+  },
+
+  /* 4 por fila en escritorio (la última fila alinea 3 sin romperse:
+     cada card ocupa 25% y la fila queda alineada a la izquierda);
+     2 en tablet; 2 en móvil — el patrón del propio diseño de
+     renovacion.html ("SIEMPRE 2 columnas en mobile") y del tema. */
+  "gallery#contenidos": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "desktop": 4,
+            "tablet": 2,
+            "phone": 2
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf"
+    }
+  },
+
+  /* ══════════════ MANIFIESTO (sección oscura de campaña) ══════════════ */
+
+  "flex-layout.row#contenidos-manifiesto": {
+    "title": "Contenidos - Manifiesto",
+    "children": [
+      "flex-layout.col#contenidos-manifiesto-poema",
+      "flex-layout.col#contenidos-manifiesto-cuerpo"
+    ],
+    "props": {
+      "blockClass": "tplContenidosManifiesto",
+      "fullWidth": true,
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#contenidos-manifiesto-poema": {
+    "children": [
+      "rich-text#contenidos-manifiesto-poema",
+      "rich-text#contenidos-manifiesto-tagline"
+    ],
+    "props": {
+      "blockClass": "tplContenidosManifiestoPoema",
+      "width": "42%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "rich-text#contenidos-manifiesto-poema": {
+    "props": {
+      "text": "Todo gran espacio comienza \n *mucho antes de ser construido.* \n\n Comienza en una montaña. \n *En una veta de madera.* \n *En una roca moldeada durante miles de años.* \n\n **La naturaleza crea las formas más extraordinarias.**",
+      "blockClass": "tplContenidosManifiestoPoemaTexto"
+    }
+  },
+
+  "rich-text#contenidos-manifiesto-tagline": {
+    "props": {
+      "text": "### La naturaleza lo creó. Italia lo perfeccionó. \n Tú creas el espacio.",
+      "blockClass": "tplContenidosManifiestoTagline"
+    }
+  },
+
+  "flex-layout.col#contenidos-manifiesto-cuerpo": {
+    "children": ["rich-text#contenidos-manifiesto-cuerpo"],
+    "props": {
+      "blockClass": "tplContenidosManifiestoCuerpo",
+      "width": "58%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "rich-text#contenidos-manifiesto-cuerpo": {
+    "props": {
+      "text": "Cerámica Italia toma esa inspiración y, junto al diseño italiano, la transforma en superficies capaces de **permanecer durante años, conservando la esencia de lo natural con una estética superior.**\n\nPorque un espacio memorable no nace de copiar la naturaleza. *Nace de perfeccionarla.*\n\nNo transformamos únicamente una casa. **Transformamos una inspiración natural en el escenario donde ocurrirá tu vida.**\n\nNo todas las personas imaginan el mismo hogar. Por eso no creamos un diseño. **Creamos una colección completa.** Series **Cristal Lux** y **Zona Dual** en pisos y paredes, en cuatro formatos: 60×60, 60×120, 80×80 y 80×160 cm.",
+      "blockClass": "tplContenidosManifiestoCuerpoTexto"
+    }
+  },
+
+  /* ══════════════ FORMULARIO (vtex.store-form → Master Data) ══════════════
+   * Mismo patrón que store/blocks/forms/contacto.jsonc (form + form-input
+   * con pointer al schema + form-submit + form-success). Los radios toman
+   * sus opciones del enum del schema RENOVACION2026 (ver cabecera). */
+
+  "flex-layout.row#contenidos-formulario": {
+    "title": "Contenidos - Formulario",
+    "children": [
+      "flex-layout.col#contenidos-form-intro",
+      "flex-layout.col#contenidos-form-col"
+    ],
+    "props": {
+      "blockClass": "tplContenidosFormulario",
+      "fullWidth": true,
+      "htmlId": "formulario",
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#contenidos-form-intro": {
+    "children": [
+      "rich-text#contenidos-form-eyebrow",
+      "rich-text#contenidos-form-titulo",
+      "rich-text#contenidos-form-texto",
+      "rich-text#contenidos-form-vp-1",
+      "rich-text#contenidos-form-vp-2",
+      "rich-text#contenidos-form-vp-3"
+    ],
+    "props": {
+      "blockClass": "tplContenidosFormIntro",
+      "width": "45%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#contenidos-form-eyebrow": {
+    "props": { "text": "Nueva Serie · Renovación 2026", "blockClass": "tplContenidosEyebrow" }
+  },
+
+  "rich-text#contenidos-form-titulo": {
+    "props": {
+      "text": "## ¿Cómo imaginas tu próximo espacio?",
+      "blockClass": "tplContenidosSectionTitle"
+    }
+  },
+
+  "rich-text#contenidos-form-texto": {
+    "props": {
+      "text": "No todas las personas imaginan el mismo hogar. Cuéntanos quién eres y un asesor especializado de Cerámica Italia te ayudará a encontrar tu manera de crearlo.",
+      "blockClass": "tplContenidosLede"
+    }
+  },
+
+  "rich-text#contenidos-form-vp-1": {
+    "props": {
+      "text": "**Muestras físicas en tu proyecto** \n Recibe en tu obra o showroom las referencias que te interesan del portafolio 2026.",
+      "blockClass": "tplContenidosFormVp"
+    }
+  },
+  "rich-text#contenidos-form-vp-2": {
+    "props": {
+      "text": "**Cita con asesor especializado** \n Te acompañamos en la elección de la superficie perfecta para tu espacio.",
+      "blockClass": "tplContenidosFormVp"
+    }
+  },
+  "rich-text#contenidos-form-vp-3": {
+    "props": {
+      "text": "**27 productos exclusivos 2026** \n Cristal Lux y Zona Dual disponibles ahora en nuestras salas de toda Colombia.",
+      "blockClass": "tplContenidosFormVp"
+    }
+  },
+
+  "flex-layout.col#contenidos-form-col": {
+    "children": ["form#contenidos"],
+    "props": {
+      "blockClass": "tplContenidosFormCol",
+      "width": "55%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "form#contenidos": {
+    "props": {
+      "entity": "CO",
+      "schema": "RENOVACION2026",
+      "blockClass": "tplContenidosForm"
+    },
+    "children": [
+      "form-input.text#contenidos-nombre",
+      "flex-layout.row#contenidos-form-fila-contacto",
+      "form-input.radiogroup#contenidos-tipo-cliente",
+      "form-input.radiogroup#contenidos-ayuda",
+      "flex-layout.row#contenidos-form-fila-ciudad",
+      "form-input.checkbox#contenidos-agreement",
+      "form-submit#contenidos"
+    ],
+    "blocks": ["form-success#contenidos"]
+  },
+
+  "form-input.text#contenidos-nombre": {
+    "props": {
+      "pointer": "#/properties/nameAndLastname",
+      "label": "Nombre completo",
+      "placeholder": "Ej. María García"
+    }
+  },
+
+  "flex-layout.row#contenidos-form-fila-contacto": {
+    "children": ["form-input.text#contenidos-telefono", "form-input.text#contenidos-email"],
+    "props": {
+      "blockClass": "tplContenidosFormFila",
+      "preserveLayoutOnMobile": false,
+      "colGap": 4
+    }
+  },
+
+  "form-input.text#contenidos-telefono": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "label": "Teléfono",
+      "placeholder": "310 000 0000"
+    }
+  },
+
+  "form-input.text#contenidos-email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "Correo electrónico",
+      "placeholder": "correo@ejemplo.com"
+    }
+  },
+
+  "form-input.radiogroup#contenidos-tipo-cliente": {
+    "props": {
+      "pointer": "#/properties/clientType",
+      "label": "¿Qué tipo de cliente eres?"
+    }
+  },
+
+  "form-input.radiogroup#contenidos-ayuda": {
+    "props": {
+      "pointer": "#/properties/helpType",
+      "label": "¿Cómo podemos ayudarte?"
+    }
+  },
+
+  "flex-layout.row#contenidos-form-fila-ciudad": {
+    "children": ["form-input.text#contenidos-ciudad", "form-input.text#contenidos-sala"],
+    "props": {
+      "blockClass": "tplContenidosFormFila",
+      "preserveLayoutOnMobile": false,
+      "colGap": 4
+    }
+  },
+
+  "form-input.text#contenidos-ciudad": {
+    "props": {
+      "pointer": "#/properties/city",
+      "label": "¿En qué ciudad te encuentras?",
+      "placeholder": "Ej. Bogotá"
+    }
+  },
+
+  "form-input.text#contenidos-sala": {
+    "props": {
+      "pointer": "#/properties/store",
+      "label": "¿En qué sala compras habitualmente?",
+      "placeholder": "Ej. Sala Norte Bogotá"
+    }
+  },
+
+  "form-input.checkbox#contenidos-agreement": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "Al enviar este formulario, autorizo el tratamiento de mis datos personales de acuerdo con la política de privacidad."
+    }
+  },
+
+  "form-submit#contenidos": {
+    "props": {
+      "label": "Quiero conocer la renovación"
+    }
+  },
+
+  "form-success#contenidos": {
+    "children": ["rich-text#contenidos-form-success"]
+  },
+
+  "rich-text#contenidos-form-success": {
+    "props": {
+      "text": "## ¡Gracias! Ya recibimos tu solicitud. \n\n Un asesor de Cerámica Italia se pondrá en contacto contigo muy pronto.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplContenidosFormSuccess"
+    }
+  },
+
+  /* ══════════════ BLOG (módulo existente: vtex.wordpress-integration) ══════════════
+   * Mismo mecanismo que store/blocks/blog/blog.jsonc — artículos
+   * dinámicos desde el WordPress conectado, sin hardcodear. */
+
+  "flex-layout.row#contenidos-blog": {
+    "title": "Contenidos - Blog",
+    "children": ["flex-layout.col#contenidos-blog-col"],
+    "props": {
+      "blockClass": "tplContenidosBlog",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#contenidos-blog-col": {
+    "children": [
+      "rich-text#contenidos-blog-eyebrow",
+      "rich-text#contenidos-blog-titulo",
+      "blog-latest-posts-preview.wordpress-latest-posts-preview#contenidos",
+      "flex-layout.row#contenidos-blog-cta"
+    ],
+    "props": {
+      "blockClass": "tplContenidosBlogCol",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#contenidos-blog-eyebrow": {
+    "props": { "text": "Blog · Inspiración", "blockClass": "tplContenidosEyebrow" }
+  },
+
+  "rich-text#contenidos-blog-titulo": {
+    "props": {
+      "text": "## Contenido para tus proyectos",
+      "blockClass": "tplContenidosSectionTitle"
+    }
+  },
+
+  "blog-latest-posts-preview.wordpress-latest-posts-preview#contenidos": {
+    "props": {
+      "numberOfPosts": 3,
+      "showDates": true,
+      "showCategories": true,
+      "useTextOverlays": true
+    }
+  },
+
+  "flex-layout.row#contenidos-blog-cta": {
+    "children": ["link#contenidos-btn-blog"],
+    "props": {
+      "blockClass": "tplContenidosBlogCta",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "link#contenidos-btn-blog": {
+    "props": {
+      "href": "/blog",
+      "label": "Ver más contenidos",
+      "displayMode": "button",
+      "blockClass": "tplContenidosBtnGhost"
+    }
+  },
+
+  /* ══════════════ CTA FINAL (sección oscura) ══════════════ */
+
+  "flex-layout.row#contenidos-cta": {
+    "title": "Contenidos - CTA final",
+    "children": ["flex-layout.col#contenidos-cta-col"],
+    "props": {
+      "blockClass": "tplContenidosCta",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#contenidos-cta-col": {
+    "children": [
+      "rich-text#contenidos-cta-eyebrow",
+      "rich-text#contenidos-cta-titulo",
+      "rich-text#contenidos-cta-tagline",
+      "rich-text#contenidos-cta-sub",
+      "flex-layout.row#contenidos-cta-botones"
+    ],
+    "props": {
+      "blockClass": "tplContenidosCtaCol",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#contenidos-cta-eyebrow": {
+    "props": {
+      "text": "Nueva Serie · Renovación 2026",
+      "blockClass": ["tplContenidosEyebrow", "tplContenidosEyebrowCentro"]
+    }
+  },
+
+  "rich-text#contenidos-cta-titulo": {
+    "props": {
+      "text": "## Creamos 27 maneras **de imaginar tu hogar.**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplContenidosCtaTitulo"
+    }
+  },
+
+  "rich-text#contenidos-cta-tagline": {
+    "props": {
+      "text": "La naturaleza lo creó · Italia lo perfeccionó · Tú creas el espacio",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplContenidosCtaTagline"
+    }
+  },
+
+  "rich-text#contenidos-cta-sub": {
+    "props": {
+      "text": "Solicita tus muestras, agenda una cita con un asesor o visita nuestras salas. Tu próximo espacio memorable comienza aquí.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplContenidosCtaSub"
+    }
+  },
+
+  "flex-layout.row#contenidos-cta-botones": {
+    "children": ["link#contenidos-btn-muestras-cta", "link#contenidos-btn-showroom"],
+    "props": {
+      "blockClass": "tplContenidosCtaBotones",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "colGap": 4
+    }
+  },
+
+  "link#contenidos-btn-muestras-cta": {
+    "props": {
+      "href": "#formulario",
+      "label": "Solicitar muestras",
+      "displayMode": "button",
+      "blockClass": "tplContenidosBtnPrimary"
+    }
+  },
+
+  "link#contenidos-btn-showroom": {
+    "props": {
+      "href": "/nuestras-tiendas",
+      "label": "Encontrar showroom",
+      "displayMode": "button",
+      "blockClass": "tplContenidosBtnGhostDark"
+    }
+  }
+}
