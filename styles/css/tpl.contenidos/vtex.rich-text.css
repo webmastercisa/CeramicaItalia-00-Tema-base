@@ -48,6 +48,20 @@
   color: #ED1B24;
 }
 
+.strong--tplContenidosHeroTagline {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.italic--tplContenidosHeroTagline {
+  color: #ED1B24;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+
+
+
 .paragraph--tplContenidosHeroLead {
   margin: 0 0 1.25rem;
   font-family: 'NeutraText', sans-serif;
@@ -145,6 +159,22 @@
   font-family: 'NeutraText', sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
+
+.strong--tplContenidosManifiestoTagline {
+	color: #ED1B24;
+  font-size: 2rem;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-weight: 800;
+}
+
+.italic--tplContenidosManifiestoTagline {
+  color: rgba(255, 255, 255, 0.9);
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
 
 .paragraph--tplContenidosManifiestoCuerpoTexto {
   margin: 0 0 1rem;

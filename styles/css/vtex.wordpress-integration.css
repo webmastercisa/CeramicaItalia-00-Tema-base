@@ -25,7 +25,6 @@
 }
 
 
-
 /* =========================================================
    2. Contenedores principales
    ========================================================= */
@@ -190,15 +189,13 @@
   background: #ed1b24;
   color: #ffffff;
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 
-
 .teaserSeparator  {  color: #c8c1ba;}
-.teaserDate       {  color: #dedede;}
-
+.teaserDate       {  color: #eee;}
 
 /* =========================================================
    7. Títulos y extractos
@@ -810,17 +807,21 @@
  * La posición (bottom/left) la pone la app inline: no se toca.
  * ============================================================ */
 .teaserTextOverlay {
-  padding: 0.7rem 05rem;
-  max-width: 92%;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background-color: rgba(55, 0, 0, 0.55);
+  bottom: 2% !important;
+  left: 2% !important;
+  padding: 0.7rem 0.19rem;
+  max-width: 96%;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(13, 13, 13, 0.55);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
-@supports (backdrop-filter: blur(5px)) {
+@supports (backdrop-filter: blur(4px)) {
   .teaserTextOverlay {
-    background-color: rgba(55, 0, 0, 0.55);
+    background-color: rgba(77, 77, 77, 0.33);
     backdrop-filter: blur(4px) saturate(120%);
   }
 }
+
+

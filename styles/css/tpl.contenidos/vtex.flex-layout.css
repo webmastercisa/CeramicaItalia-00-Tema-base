@@ -28,7 +28,7 @@
 }
 
 .flexCol--tplContenidosHeroCol {
-  max-width: 36rem;
+  max-width: 45rem;
   margin-right: auto; /* ancla el bloque de texto a la izquierda */
   text-align: left;
 }
@@ -67,6 +67,111 @@
 
 .flexCol--tplContenidosProductosCol {
   width: 100%;
+}
+
+/* ─── FILTROS CHIPS (Uso + Tamaño) ───
+   Handles verificados en el SSR de /pisos. Se ocultan los 13 grupos
+   del motor salvo uso/tamano; cada item se estiliza como pastilla.
+   El checkbox del styleguide se conserva pequeño: VTEX lo pinta con
+   action-primary (rojo) al marcar — es el indicador de estado. */
+.flexRow--tplContenidosFiltros .flexRowContent--tplContenidosFiltros {
+  justify-content: flex-start;
+  padding: 0 0 1.25rem;
+}
+
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filter__container) {
+  display: none;
+  border: 0;
+}
+
+/* Grupo = una fila: etiqueta a la izquierda + chips en línea (como la
+   barra de filtros del modelo renovacion.html) */
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filter__container--uso),
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filter__container--tamano) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Sin colapsable: se anula el toggle y se oculta el caret */
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterTitle) {
+  border: 0;
+  padding: 0;
+  flex-shrink: 0;
+  min-width: 6.5rem;
+  pointer-events: none;
+}
+
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterIcon) {
+  display: none;
+}
+
+/* Renombre de las etiquetas (los nombres reales del catálogo son
+   "Uso" y "Tamaño"): texto original a tamaño 0 y el rótulo se pinta
+   con ::before — mismo patrón de content que usa el tema */
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterTitleSpan) {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterTitleSpan)::before {
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #727273;
+}
+
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filter__container--uso) :global(.vtex-search-result-3-x-filterTitleSpan)::before {
+  content: 'APLICACIÓN';
+}
+
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filter__container--tamano) :global(.vtex-search-result-3-x-filterTitleSpan)::before {
+  content: 'FORMATO';
+}
+
+/* Chips en línea */
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterContent) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  flex: 1;
+}
+
+/* Mobile: como el modelo, la etiqueta se oculta para ahorrar espacio
+   y los chips ocupan la fila completa */
+@media (max-width: 47.99rem) {
+  .flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterTitle) {
+    display: none;
+  }
+}
+
+/* Item = pastilla (gana al w-100 de Tachyons por doble especificidad) */
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterItem) {
+  width: auto;
+  margin: 0;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid #e3e4e6;
+  border-radius: 999px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterItem):hover {
+  border-color: #ED1B24;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Si el runtime marca el item seleccionado, pastilla llena de marca
+   (refuerzo defensivo: el checkbox rojo ya indica el estado) */
+.flexRow--tplContenidosFiltros :global(.vtex-search-result-3-x-filterItem--selected) {
+  border-color: #ED1B24;
+  background-color: rgba(237, 27, 36, 0.08);
 }
 
 /* Botón "Ver más" de las cards SOLO en esta plantilla: fondo rojo y
