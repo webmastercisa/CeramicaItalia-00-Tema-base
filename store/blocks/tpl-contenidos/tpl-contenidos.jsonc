@@ -111,7 +111,7 @@
 
   "rich-text#contenidos-hero-tagline": {
     "props": {
-      "text": "La naturaleza lo creó. Italia lo perfeccionó. \n Tú creas el espacio.",
+      "text": "La naturaleza lo creó.\nItalia lo perfeccionó.",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
       "blockClass": "tplContenidosHeroTagline"
@@ -269,11 +269,40 @@
     "children": [
       "rich-text#contenidos-productos-eyebrow",
       "rich-text#contenidos-productos-titulo",
+      "flex-layout.row#contenidos-filtros",
       "search-content#contenidos"
     ],
     "props": {
       "blockClass": "tplContenidosProductosCol",
       "preventVerticalStretch": true
+    }
+  },
+
+  /* ── FILTROS tipo chips (Uso + Tamaño) ──
+     filter-navigator.v3 nativo dentro del contexto del customQuery.
+     El motor devuelve 13 grupos de facets para la colección: el CSS
+     scoped muestra SOLO uso y tamano y convierte los items en
+     pastillas. layout "desktop" evita el drawer en móvil (chips
+     inline en todos los tamaños). Cero bloques compartidos tocados. */
+
+  "flex-layout.row#contenidos-filtros": {
+    "children": ["filter-navigator.v3#contenidos"],
+    "props": {
+      "blockClass": "tplContenidosFiltros",
+      "fullWidth": true
+    }
+  },
+
+  "filter-navigator.v3#contenidos": {
+    "props": {
+      "layout": "desktop",
+      "showTitle": false,
+      "initiallyCollapsed": false,
+      "openFiltersMode": "many",
+      "preventRouteChange": true,
+      "fullWidth": true,
+      "updateOnFilterSelectionOnMobile": true,
+      "blockClass": "tplContenidosFiltros"
     }
   },
 
@@ -343,17 +372,18 @@
 
   "rich-text#contenidos-manifiesto-poema": {
     "props": {
-      "text": "Todo gran espacio comienza \n *mucho antes de ser construido.* \n\n Comienza en una montaña. \n *En una veta de madera.* \n *En una roca moldeada durante miles de años.* \n\n **La naturaleza crea las formas más extraordinarias.**",
+      "text": "Antes de ser un piso, \n *fue una veta de madera creciendo por siglos.* \n\n Antes de ser una pared, \n *fue una roca formándose por generaciones.* \n\n Antes de ser tu casa, \n *fue una idea de la tierra.*",
       "blockClass": "tplContenidosManifiestoPoemaTexto"
     }
   },
 
   "rich-text#contenidos-manifiesto-tagline": {
     "props": {
-      "text": "### La naturaleza lo creó. Italia lo perfeccionó. \n Tú creas el espacio.",
+      "text": "### La naturaleza lo creó.\n **Italia lo perfeccionó**.",
       "blockClass": "tplContenidosManifiestoTagline"
     }
   },
+
 
   "flex-layout.col#contenidos-manifiesto-cuerpo": {
     "children": ["rich-text#contenidos-manifiesto-cuerpo"],
