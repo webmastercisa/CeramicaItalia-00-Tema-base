@@ -1,0 +1,25 @@
+/* ============================================================
+ * TPL-PETS · Imágenes (vtex.store-components)
+ * Altos en px, nunca vh (zoom: 85% global del tema).
+ * ============================================================ */
+
+.imageElement--tplPetsHeroImg {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+/* Cards de colección (proporción 4:3 aprox. del prototipo) */
+.imageElement--tplPetsColImg {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+@media (max-width: 47.99rem) {
+  .imageElement--tplPetsHeroImg {
+    height: 500px; /* el hero mobile apila texto + botones */
+  }
+}

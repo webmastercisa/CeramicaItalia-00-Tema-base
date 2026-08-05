@@ -1,0 +1,64 @@
+/* ============================================================
+ * TPL-PETS · Formulario (vtex.store-form)
+ * Tarjeta blanca con acento rojo sobre la sección oscura; el botón
+ * de envío toma la identidad de marca vía :global(.vtex-button)
+ * bajo handle propio (patrón verificado del tema). El campo oculto
+ * idorigen no renderiza UI (input type="hidden" nativo del bloque).
+ * ============================================================ */
+
+.form--tplPetsForm {
+  background-color: #ffffff;
+  border: 1px solid #e3e4e6;
+  border-top: 3px solid #ED1B24;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de envío: pill rojo corporativo con hover invertido */
+.form--tplPetsForm :global(.vtex-button) {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid #ED1B24;
+  background-color: #ED1B24;
+  color: #ffffff;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.form--tplPetsForm :global(.vtex-button):hover {
+  background-color: #ffffff;
+  color: #ED1B24;
+}
+
+.form--tplPetsForm :global(.vtex-button):focus {
+  outline: 2px solid #ED1B24;
+  outline-offset: 2px;
+}
+
+/* Labels de los campos: inputs de texto y dropdown (clases del
+   styleguide verificadas en el SSR de /contacto y en el código
+   fuente de vtex/styleguide; la doble clase del selector gana al
+   c-on-base de Tachyons) */
+.form--tplPetsForm :global(.vtex-input__label),
+.form--tplPetsForm :global(.vtex-dropdown__label) {
+  color: #DEDEDE;
+}
+
+/* Botón de envío al 100% del contenedor: los DOS wrappers nativos de
+   store-form (formSubmitContainer > formSubmitButton) encogen al
+   contenido — sin esto, el width:100% del .vtex-button no tiene
+   efecto (verificado en el SSR de /contacto) */
+.form--tplPetsForm :global(.vtex-store-form-0-x-formSubmitContainer),
+.form--tplPetsForm :global(.vtex-store-form-0-x-formSubmitButton) {
+  width: 100%;
+}
+
+@media (min-width: 64rem) {
+  .form--tplPetsForm {
+    padding: 2.25rem 2rem;
+  }
+}

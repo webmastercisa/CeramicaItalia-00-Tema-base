@@ -1,0 +1,379 @@
+/* ============================================================
+ * TPL-PETS · Tipografía (vtex.rich-text)
+ * Scoped a blockClass "tplPets*". Tipos de marca:
+ * NeutraTextAltBold (títulos/CTAs) · NeutraText (cuerpo)
+ * ============================================================ */
+
+/* Eyebrow (rojo, mayúsculas, tracking) + variantes centrada y clara */
+.paragraph--tplPetsEyebrow {
+  margin: 0 0 0.6rem;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #ED1B24;
+}
+
+.paragraph--tplPetsEyebrowCentro {
+  text-align: center;
+}
+
+/* Sobre fondos oscuros el rojo corporativo pierde contraste: tono
+   claro equivalente (mismo recurso del prototipo) */
+.paragraph--tplPetsEyebrowClara {
+  color: #ff6b6b;
+}
+
+/* ── HERO ── */
+.headingLevel1--tplPetsHeroTitulo {
+  margin: 0 0 0.5rem;
+  font-family: 'NeutraText', -apple-system, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+.strong--tplPetsHeroTitulo {
+  display: block;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-weight: 700;
+}
+
+.paragraph--tplPetsHeroTagline {
+  margin: 0 0 1rem;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.35;
+  color: #ED1B24;
+}
+
+.italic--tplPetsHeroTagline {
+  color: rgba(255, 255, 255, 0.9);
+  font-style: normal;
+}
+
+.paragraph--tplPetsHeroLead {
+  margin: 0 0 1.25rem;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ── BARRA DE CONFIANZA ── */
+.paragraph--tplPetsTrustItem {
+  margin: 0;
+  padding: 0 0.75rem;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.strong--tplPetsTrustItem {
+  display: block;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-size: 0.9375rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: #ffffff;
+}
+
+/* ── Títulos de sección + variante clara (sobre oscuro) ── */
+.headingLevel2--tplPetsSectionTitle {
+  margin: 0 0 1.25rem;
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  /*
+  
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-size: 1.5rem;
+  */
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+
+  line-height: 1.2;
+  color: #3f3f40;
+}
+
+.headingLevel2--tplPetsSectionTitleClara {
+  color: #ffffff;
+}
+
+.paragraph--tplPetsLede {
+  margin: 0 0 1.5rem;
+  max-width: 55rem;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #4a4a4b;
+}
+
+/* ── MIEDOS: cards ──
+   La caja va en el CONTENEDOR del rich-text (el emoji es un h3 propio
+   para poder escalarlo; h3 y párrafo son hermanos dentro de la card).
+   Clase doblada: gana al ".container{display:flex;width:80%}" global
+   del CSS raíz. */
+.container--tplPetsMiedo.container--tplPetsMiedo {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  padding: 1.4rem 1.25rem;
+  background-color: #f9f9f9;
+  border: 1px solid #e3e4e6;
+  border-top: 3px solid #ED1B24;
+  border-radius: 4px;
+}
+
+/* Emoji 3× el tamaño del cuerpo (13px → ~39px) */
+.headingLevel3--tplPetsMiedo {
+  margin: 0 0 0.75rem;
+  font-size: 2.4375rem;
+  line-height: 1;
+}
+
+.paragraph--tplPetsMiedo {
+  margin: 0;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.65;
+  color: #727273;
+}
+
+.strong--tplPetsMiedo {
+  display: block;
+  margin: 0 0 0.5rem;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-size: 0.9375rem;
+  color: #3f3f40;
+}
+
+/* ── COLECCIONES: nombre sobre el degradado ── */
+.paragraph--tplPetsColNombre {
+  margin: 0 0 0.75rem;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.strong--tplPetsColNombre {
+  display: block;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+/* ── 6 RAZONES: cards (correspondencia con .feature-item del
+   prototipo: número rojo con línea + titular con em rojo + cuerpo
+   #666 + tag chip). La caja va en el CONTENEDOR (número h4, titular
+   h3 y párrafos son hermanos); clase doblada para ganar al
+   ".container{display:flex;width:80%}" global del CSS raíz. */
+.container--tplPetsFeature.container--tplPetsFeature {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  padding: 2.25rem 2rem;
+  background-color: #ffffff;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.container--tplPetsFeature.container--tplPetsFeature:hover {
+  background-color: #F7F7F7;
+}
+
+/* Número ("01 Brillo permanente"): rojo, mayúsculas, con línea al
+   estilo .feature-number::after del prototipo */
+.headingLevel4--tplPetsFeature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 1rem;
+  font-family: sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ED1B24;
+}
+
+.headingLevel4--tplPetsFeature::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #EDEDED;
+}
+
+/* Titular (.feature-headline): negro, con el énfasis en rojo */
+.headingLevel3--tplPetsFeature {
+  margin: 0 0 0.75rem;
+  font-family: sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #1A1A1A;
+}
+
+.headingLevel3--tplPetsFeature .italic--tplPetsFeature {
+  color: #ED1B24;
+  font-style: normal;
+}
+
+/* Cuerpo (.feature-body) */
+.paragraph--tplPetsFeature {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  color: #666666;
+}
+
+/* Tag (.feature-tag): el párrafo final en cursiva se pinta como chip */
+.paragraph--tplPetsFeature .italic--tplPetsFeature {
+  display: inline-block;
+  margin-top: 0.875rem;
+  padding: 0.25rem 0.7rem;
+  background-color: #F7F7F7;
+  border: 1px solid #EDEDED;
+  border-radius: 20px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+/* ── TESTIMONIOS: cards con estrellas vía ::before ── */
+.paragraph--tplPetsTestimonio {
+  height: 100%;
+  margin: 0;
+  padding: 1.6rem 1.5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #e3e4e6;
+  border-radius: 4px;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: #727273;
+}
+
+.paragraph--tplPetsTestimonio::before {
+  content: '★★★★★';
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: #ED1B24;
+}
+
+.italic--tplPetsTestimonio {
+  color: #4a4a4b;
+}
+
+.strong--tplPetsTestimonio {
+  display: block;
+  margin-top: 0.9rem;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-size: 0.8125rem;
+  color: #3f3f40;
+}
+
+/* ── FAQ ── */
+.headingLevel3--tplPetsFaqQ {
+  margin: 0;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  color: #3f3f40;
+  transition: color 0.2s ease;
+}
+
+.paragraph--tplPetsFaqA {
+  margin: 0;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: #727273;
+}
+
+/* ── CTA (sobre banner rojo) ── */
+.headingLevel2--tplPetsCtaTitulo {
+  margin: 0 0 0.5rem;
+  font-family: 'NeutraText', sans-serif;
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.strong--tplPetsCtaTitulo {
+  display: block;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  font-weight: 700;
+}
+
+.paragraph--tplPetsCtaSub {
+  margin: 0 auto 1.25rem;
+  max-width: 32rem;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ── FORMULARIO (sobre oscuro) ── */
+.paragraph--tplPetsFormTexto {
+  margin: 0 auto 1.75rem;
+  max-width: 32rem;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.paragraph--tplPetsFormDisclaimer {
+  margin: 0.9rem 0 0;
+  font-family: 'NeutraText', sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.6;
+  color: #9b9b9c;
+}
+
+/* Mensaje de éxito: se muestra directo sobre la sección oscura
+   (el form no tiene tarjeta propia — ver nota en vtex.flex-layout.css) */
+.headingLevel2--tplPetsFormSuccess {
+  margin: 0 0 0.5rem;
+  font-family: 'NeutraTextAltBold', 'NeutraText', sans-serif;
+  color: #ffffff;
+}
+
+.paragraph--tplPetsFormSuccess {
+  font-family: 'NeutraText', sans-serif;
+  color: #DEDEDE;
+}
+
+/* ── Escritorio ── */
+@media (min-width: 64rem) {
+  .headingLevel1--tplPetsHeroTitulo {
+    font-size: 2.75rem;
+  }
+
+  .headingLevel2--tplPetsCtaTitulo {
+    font-size: 2.25rem;
+  }
+}

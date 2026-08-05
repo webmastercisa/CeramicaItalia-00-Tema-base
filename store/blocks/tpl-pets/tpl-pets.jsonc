@@ -1,0 +1,1252 @@
+{
+  /* ============================================================
+   *  PLANTILLA — TPL-PETS
+   *  Cerámica Italia · Landing "Ceranatto Pet-Friendly"
+   *  Ruta: /tpl-pets (ver store/routes.json)
+   *  Estilos: styles/css/tpl.pets/*.css
+   *  Contenido: adaptado de landing/landing_PETS_v2.html
+   *  Base estructural: tpl-contenidos (hero stack editable, portafolio
+   *  customQuery, blog carrusel, CTA) + acordeón FAQ de centro-ayuda.
+   *
+   *  Secciones: hero · confianza (5) · miedos (4 cards) · colecciones
+   *  (3 cards) · productos (colección 179 Ceranatto) · 6 razones ·
+   *  blog (oscuro) · testimonios · FAQ · CTA rojo · formulario.
+   *
+   *  Paleta: rojo #ED1B24 · tinta #3f3f40 · negro #0d0d0d · línea #e3e4e6
+   *  Convención: IDs "pets-*" / blockClass "tplPets*"
+   *
+   *  FORMULARIO → Master Data: entidad FI / schema FORMINFO
+   *  (definición: scripts/schemas/FI-FORMINFO.json). Campos usados:
+   *  nombrecompleto · telefono · mail · ciudad · tipomascota (enum) ·
+   *  idorigen (OCULTO, inputType "hidden" con value "1" — mecanismo
+   *  verificado en el código fuente de vtex.store-form: HiddenInput
+   *  renderiza <input type="hidden"> sin label). Campos del schema NO
+   *  usados en esta landing: documento, sala, listapreguntas,
+   *  tipocliente, text1-3.
+   *  GOTCHA CRÍTICO: el schema debe existir en Master Data con
+   *  "publicJsonSchema": true en v-security — sin él, el SSR de TODA
+   *  la página cae con 422 (verificar: scripts/masterdata_schema.py).
+   *
+   *  JSON-LD (FAQPage + Product) para /tpl-pets: store.global.js
+   *  (mismo mecanismo que centro-de-ayuda).
+   * ============================================================ */
+
+  "store.custom#tpl-pets": {
+    "blocks": [
+      "flex-layout.row#pets-hero",
+      "flex-layout.row#pets-trust",
+      "flex-layout.row#pets-miedos",
+      "flex-layout.row#pets-colecciones",
+      "search-result-layout.customQuery#pets",
+      "flex-layout.row#pets-features",
+      "flex-layout.row#pets-blog",
+      "flex-layout.row#pets-testimonios",
+      "flex-layout.row#pets-faq",
+      "flex-layout.row#pets-cta",
+      "flex-layout.row#pets-formulario"
+    ]
+  },
+
+  /* ══════════════ HERO (patrón stack: imagen editable en Site Editor) ══════════════ */
+
+  "flex-layout.row#pets-hero": {
+    "title": "Pets - Hero",
+    "children": ["stack-layout#pets-hero"],
+    "props": {
+      "blockClass": "tplPetsHero",
+      "fullWidth": true
+    }
+  },
+
+  "stack-layout#pets-hero": {
+    "title": "Hero - Imagen + contenido",
+    "children": [
+      "image#pets-hero-img",
+      "flex-layout.row#pets-hero-content"
+    ],
+    "props": {
+      "blockClass": "tplPetsHero"
+    }
+  },
+
+  "image#pets-hero-img": {
+    "title": "Hero - Imagen de fondo (editable)",
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/4da063da-0d77-436d-934f-d90b8cee11e2___e71cceef2873693e3a64a173474be5fb.webp",
+      "alt": "Mascota descansando sobre Ceranatto® pet-friendly",
+      "blockClass": "tplPetsHeroImg"
+    }
+  },
+
+  "flex-layout.row#pets-hero-content": {
+    "children": ["flex-layout.col#pets-hero-col"],
+    "props": {
+      "blockClass": "tplPetsHeroContent",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#pets-hero-col": {
+    "children": [
+      "rich-text#pets-hero-eyebrow",
+      "rich-text#pets-hero-titulo",
+      "rich-text#pets-hero-tagline",
+      "rich-text#pets-hero-lead",
+      "flex-layout.row#pets-hero-botones"
+    ],
+    "props": {
+      "blockClass": "tplPetsHeroCol",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "rich-text#pets-hero-eyebrow": {
+    "props": {
+      "text": "🐾 Ceranatto Pet-Friendly",
+      "blockClass": "tplPetsEyebrow"
+    }
+  },
+
+  /* Único H1 de la página */
+  "rich-text#pets-hero-titulo": {
+    "title": "Hero - Título (H1)",
+    "props": {
+      "text": "# **El mejor piso para mascotas en Colombia ya existe.**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tplPetsHeroTitulo"
+    }
+  },
+
+  "rich-text#pets-hero-tagline": {
+    "props": {
+      "text": "Tu hogar, su territorio. — *Elegante para ti. Resistente para él.*",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tplPetsHeroTagline"
+    }
+  },
+
+  /* GEO: bloque de respuesta directa autocontenido (~60 palabras) */
+  "rich-text#pets-hero-lead": {
+    "props": {
+      "text": "Con Ceranatto, tu mascota es dueña de su territorio — no una amenaza para él. Pisos brillantes que no se rayan aunque corran sin parar. Superficie suave al tacto, jamás rugosa, para que sus paticas estén protegidas. Resistencia al deslizamiento gracias a la Zona Dual de Ceranatto. Fácil de limpiar, resistente al agua y al manchado. Tu hogar, su territorio.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tplPetsHeroLead"
+    }
+  },
+
+  "flex-layout.row#pets-hero-botones": {
+    "children": ["link#pets-btn-productos", "link#pets-btn-asesoria"],
+    "props": {
+      "blockClass": "tplPetsHeroBotones",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "colGap": 4
+    }
+  },
+
+  "link#pets-btn-productos": {
+    "props": {
+      "href": "#productos",
+      "label": "Ver productos Ceranatto",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnPrimary"
+    }
+  },
+
+  "link#pets-btn-asesoria": {
+    "props": {
+      "href": "#asesoria",
+      "label": "Solicitar asesoría gratis",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnGhostDark"
+    }
+  },
+
+  /* ══════════════ CONFIANZA (barra oscura, 5 beneficios) ══════════════ */
+
+  "flex-layout.row#pets-trust": {
+    "title": "Pets - Barra de confianza",
+    "children": [
+      "rich-text#pets-trust-1",
+      "rich-text#pets-trust-2",
+      "rich-text#pets-trust-3",
+      "rich-text#pets-trust-4",
+      "rich-text#pets-trust-5"
+    ],
+    "props": {
+      "blockClass": "tplPetsTrust",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#pets-trust-1": {
+    "props": { "text": "**✨ Brillante para siempre** \n No se raya aunque corran sin parar", "blockClass": "tplPetsTrustItem" }
+  },
+  "rich-text#pets-trust-2": {
+    "props": { "text": "**🐾 Suave para sus paticas** \n Sin rugosidad que lastime sus almohadillas", "blockClass": "tplPetsTrustItem" }
+  },
+  "rich-text#pets-trust-3": {
+    "props": { "text": "**🛡️ Zona Dual antideslizante** \n Cero caídas · protege sus articulaciones", "blockClass": "tplPetsTrustItem" }
+  },
+  "rich-text#pets-trust-4": {
+    "props": { "text": "**💧 Resistente al agua y manchas** \n Fácil limpieza total sin esfuerzo", "blockClass": "tplPetsTrustItem" }
+  },
+  "rich-text#pets-trust-5": {
+    "props": { "text": "**🛒 Compra online** \n Envío a toda Colombia", "blockClass": "tplPetsTrustItem" }
+  },
+
+  /* ══════════════ MIEDOS (el verdadero conflicto · 4 cards) ══════════════ */
+
+  "flex-layout.row#pets-miedos": {
+    "title": "Pets - Lo que de verdad sientes",
+    "children": ["flex-layout.col#pets-miedos-col"],
+    "props": {
+      "blockClass": "tplPetsMiedos",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#pets-miedos-col": {
+    "children": [
+      "rich-text#pets-miedos-eyebrow",
+      "rich-text#pets-miedos-titulo",
+      "rich-text#pets-miedos-lede",
+      "flex-layout.row#pets-miedos-cards"
+    ],
+    "props": {
+      "blockClass": "tplPetsMiedosCol",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-miedos-eyebrow": {
+    "props": { "text": "Lo que de verdad sientes", "blockClass": "tplPetsEyebrow" }
+  },
+
+  "rich-text#pets-miedos-titulo": {
+    "props": {
+      "text": "## Tu mascota no es una amenaza. Es la dueña de un territorio que merece lo mejor.",
+      "blockClass": "tplPetsSectionTitle"
+    }
+  },
+
+  "rich-text#pets-miedos-lede": {
+    "props": {
+      "text": "El 67% de los hogares colombianos convive con al menos una mascota (Pet Food Institute, 2025). Y la mayoría no tiene miedo de que el piso se raye — tiene miedo de que su compañero se lastime, se caiga, o que vivir en un hogar elegante sea incompatible con dejarle correr libre. Ceranatto elimina ese conflicto de raíz.",
+      "blockClass": "tplPetsLede"
+    }
+  },
+
+  "flex-layout.row#pets-miedos-cards": {
+    "children": [
+      "rich-text#pets-miedo-1",
+      "rich-text#pets-miedo-2",
+      "rich-text#pets-miedo-3",
+      "rich-text#pets-miedo-4"
+    ],
+    "props": {
+      "blockClass": "tplPetsMiedosCards",
+      "colGap": 4,
+      "preserveLayoutOnMobile": false
+    }
+  },
+
+  "rich-text#pets-miedo-1": {
+    "props": {
+      "text": "### 😰 \n **¿Y si se resbala y se cae?** \n Un piso muy liso es peligroso para perros, especialmente razas grandes. Las caídas repetidas dañan caderas, rodillas y columna. La Zona Dual de Ceranatto proporciona el coeficiente de fricción exacto para que tu mascota corra, frene y gire con seguridad total.",
+      "blockClass": "tplPetsMiedo"
+    }
+  },
+  "rich-text#pets-miedo-2": {
+    "props": {
+      "text": "### 🐾 \n **¿El piso va a lastimar sus paticas?** \n Los pisos rugosos o abrasivos dañan las almohadillas de las patas con el roce diario. Ceranatto tiene acabado suave al tacto — no rugoso — que protege las almohadillas sin importar cuánto camine o corra tu perro o gato sobre él.",
+      "blockClass": "tplPetsMiedo"
+    }
+  },
+  "rich-text#pets-miedo-3": {
+    "props": {
+      "text": "### ✨ \n **¿Puedo tener pisos brillantes con mascota?** \n Con Ceranatto, sí. Los pisos Ceranatto mantienen su brillo original porque no se rayan con las garras. Tu mascota puede correr libremente por la sala y el piso seguirá brillante, elegante y en perfecto estado — sin que tengas que elegir entre belleza y libertad para ella.",
+      "blockClass": "tplPetsMiedo"
+    }
+  },
+  "rich-text#pets-miedo-4": {
+    "props": {
+      "text": "### 🧹 \n **¿El mantenimiento es complicado?** \n Ceranatto es resistente al agua y al manchado. Su superficie no porosa repele líquidos y manchas sin penetrar el material. El pelo de mascota se recoge con escoba o aspiradora en segundos. La limpieza diaria con trapeador húmedo es todo lo que necesitas.",
+      "blockClass": "tplPetsMiedo"
+    }
+  },
+
+  /* ══════════════ COLECCIONES (3 cards con imagen editable) ══════════════ */
+
+  "flex-layout.row#pets-colecciones": {
+    "title": "Pets - Colecciones Ceranatto",
+    "children": ["flex-layout.col#pets-colecciones-col"],
+    "props": {
+      "blockClass": "tplPetsColecciones",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#pets-colecciones-col": {
+    "children": [
+      "rich-text#pets-colecciones-eyebrow",
+      "rich-text#pets-colecciones-titulo",
+      "flex-layout.row#pets-colecciones-cards"
+    ],
+    "props": {
+      "blockClass": "tplPetsColeccionesCol",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-colecciones-eyebrow": {
+    "props": {
+      "text": "Colecciones Ceranatto",
+      "blockClass": ["tplPetsEyebrow", "tplPetsEyebrowCentro"]
+    }
+  },
+
+  "rich-text#pets-colecciones-titulo": {
+    "props": {
+      "text": "## Elige la colección perfecta para tu hogar y tu mascota",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsSectionTitle"
+    }
+  },
+
+  "flex-layout.row#pets-colecciones-cards": {
+    "children": [
+      "stack-layout#pets-col-cristal",
+      "stack-layout#pets-col-natural",
+      "stack-layout#pets-col-verticale"
+    ],
+    "props": {
+      "blockClass": "tplPetsColeccionesCards",
+      "colGap": 4,
+      "preserveLayoutOnMobile": false
+    }
+  },
+
+  "stack-layout#pets-col-cristal": {
+    "children": ["image#pets-col-cristal-img", "flex-layout.col#pets-col-cristal-overlay"],
+    "props": { "blockClass": "tplPetsColCard" }
+  },
+  "image#pets-col-cristal-img": {
+    "title": "Colección Cristal Lux - Imagen (editable)",
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/4da063da-0d77-436d-934f-d90b8cee11e2___e71cceef2873693e3a64a173474be5fb.webp",
+      "alt": "Colección Cristal Lux de Ceranatto — Ceranatto® efecto mármol apto para mascotas",
+      "blockClass": "tplPetsColImg"
+    }
+  },
+  "flex-layout.col#pets-col-cristal-overlay": {
+    "children": ["rich-text#pets-col-cristal-nombre", "link#pets-col-cristal-btn"],
+    "props": {
+      "blockClass": "tplPetsColOverlay",
+      "verticalAlign": "bottom",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#pets-col-cristal-nombre": {
+    "props": {
+      "text": "**Cristal Lux** \n Efecto mármol · Resistente a garras",
+      "blockClass": "tplPetsColNombre"
+    }
+  },
+  "link#pets-col-cristal-btn": {
+    "props": {
+      "href": "/tpl-listaproductos",
+      "label": "Ver colección →",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnMini"
+    }
+  },
+
+  "stack-layout#pets-col-natural": {
+    "children": ["image#pets-col-natural-img", "flex-layout.col#pets-col-natural-overlay"],
+    "props": { "blockClass": "tplPetsColCard" }
+  },
+  "image#pets-col-natural-img": {
+    "title": "Colección Natural Touch - Imagen (editable)",
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/13b022e1-0b00-4920-82d6-62661dc42f23___b8836aaaaf99d1c5aa8b19a3d1ebba5b.png",
+      "alt": "Colección Natural Touch — Ceranatto® efecto madera pet-friendly",
+      "blockClass": "tplPetsColImg"
+    }
+  },
+  "flex-layout.col#pets-col-natural-overlay": {
+    "children": ["rich-text#pets-col-natural-nombre", "link#pets-col-natural-btn"],
+    "props": {
+      "blockClass": "tplPetsColOverlay",
+      "verticalAlign": "bottom",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#pets-col-natural-nombre": {
+    "props": {
+      "text": "**Natural Touch** \n Efecto madera · Antideslizante",
+      "blockClass": "tplPetsColNombre"
+    }
+  },
+  "link#pets-col-natural-btn": {
+    "props": {
+      "href": "/tpl-listaproductos",
+      "label": "Ver colección →",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnMini"
+    }
+  },
+
+  "stack-layout#pets-col-verticale": {
+    "children": ["image#pets-col-verticale-img", "flex-layout.col#pets-col-verticale-overlay"],
+    "props": { "blockClass": "tplPetsColCard" }
+  },
+  "image#pets-col-verticale-img": {
+    "title": "Colección Verticale - Imagen (editable)",
+    "props": {
+      "src": "https://ceramicaitalia.vtexassets.com/assets/vtex.file-manager-graphql/images/e781e87a-13c7-42c3-b636-68096aaffa91___892efe6770554b7e92a993ccdc7f6c74.webp",
+      "alt": "Colección Verticale — Ceranatto® contemporáneo para hogares con mascotas",
+      "blockClass": "tplPetsColImg"
+    }
+  },
+  "flex-layout.col#pets-col-verticale-overlay": {
+    "children": ["rich-text#pets-col-verticale-nombre", "link#pets-col-verticale-btn"],
+    "props": {
+      "blockClass": "tplPetsColOverlay",
+      "verticalAlign": "bottom",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#pets-col-verticale-nombre": {
+    "props": {
+      "text": "**Verticale** \n Diseño contemporáneo · Fácil limpieza",
+      "blockClass": "tplPetsColNombre"
+    }
+  },
+  "link#pets-col-verticale-btn": {
+    "props": {
+      "href": "/tpl-listaproductos",
+      "label": "Ver colección →",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnMini"
+    }
+  },
+
+  /* ══════════════ PRODUCTOS — colección 179 (Ceranatto, dinámica) ══════════════
+   * customQuery muestra 8 productos (2 filas de 4) como vitrina curada;
+   * el botón nativo "Mostrar más" se oculta por CSS y el CTA lleva al
+   * catálogo completo (/tpl-listaproductos). Cards: product-summary.shelf
+   * del tema (botón rojo/blanco scoped bajo el handle propio). */
+
+  "search-result-layout.customQuery#pets": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 8,
+        "queryField": "179", // ID de la colección Ceranatto (misma que tpl-listaproductos)
+        "mapField": "productClusterIds",
+        "facetsBehavior": "static"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#pets",
+      "search-result-layout.mobile#pets",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop#pets": {
+    "children": ["flex-layout.row#pets-productos"],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "search-result-layout.mobile#pets": {
+    "children": ["flex-layout.row#pets-productos"],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  /* Fila compartida desktop/mobile */
+  "flex-layout.row#pets-productos": {
+    "children": ["flex-layout.col#pets-productos"],
+    "props": {
+      "blockClass": "tplPetsProductos",
+      "fullWidth": true,
+      "htmlId": "productos"
+    }
+  },
+
+  "flex-layout.col#pets-productos": {
+    "children": [
+      "rich-text#pets-productos-eyebrow",
+      "rich-text#pets-productos-titulo",
+      "search-content#pets",
+      "flex-layout.row#pets-productos-cta"
+    ],
+    "props": {
+      "blockClass": "tplPetsProductosCol",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-productos-eyebrow": {
+    "props": { "text": "Ceranatto Pet-Friendly", "blockClass": "tplPetsEyebrow" }
+  },
+
+  "rich-text#pets-productos-titulo": {
+    "props": {
+      "text": "## Ceranattos recomendados para hogares con mascotas",
+      "blockClass": "tplPetsSectionTitle"
+    }
+  },
+
+  "search-content#pets": {
+    "blocks": ["gallery#pets", "not-found"]
+  },
+
+  "gallery#pets": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "desktop": 4,
+            "tablet": 2,
+            "phone": 2
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf"
+    }
+  },
+
+  "flex-layout.row#pets-productos-cta": {
+    "children": ["link#pets-btn-catalogo"],
+    "props": {
+      "blockClass": "tplPetsProductosCta",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "link#pets-btn-catalogo": {
+    "props": {
+      "href": "/tpl-listaproductos",
+      "label": "Ver catálogo completo Ceranatto →",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnPrimary"
+    }
+  },
+
+  /* ══════════════ 6 RAZONES (features 3×2) ══════════════ */
+
+  "flex-layout.row#pets-features": {
+    "title": "Pets - Seis razones",
+    "children": ["flex-layout.col#pets-features-col"],
+    "props": {
+      "blockClass": "tplPetsFeatures",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#pets-features-col": {
+    "children": [
+      "rich-text#pets-features-eyebrow",
+      "rich-text#pets-features-titulo",
+      "flex-layout.row#pets-features-fila-1",
+      "flex-layout.row#pets-features-fila-2"
+    ],
+    "props": {
+      "blockClass": "tplPetsFeaturesCol",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-features-eyebrow": {
+    "props": {
+      "text": "Lo que Ceranatto hace por tu mascota",
+      "blockClass": ["tplPetsEyebrow", "tplPetsEyebrowCentro"]
+    }
+  },
+
+  "rich-text#pets-features-titulo": {
+    "props": {
+      "text": "## Seis razones para dejarla correr sin miedo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsSectionTitle"
+    }
+  },
+
+  "flex-layout.row#pets-features-fila-1": {
+    "children": ["rich-text#pets-feature-1", "rich-text#pets-feature-2", "rich-text#pets-feature-3"],
+    "props": {
+      "blockClass": "tplPetsFeaturesFila",
+      "colGap": 4,
+      "preserveLayoutOnMobile": false
+    }
+  },
+
+  "flex-layout.row#pets-features-fila-2": {
+    "children": ["rich-text#pets-feature-4", "rich-text#pets-feature-5", "rich-text#pets-feature-6"],
+    "props": {
+      "blockClass": "tplPetsFeaturesFila",
+      "colGap": 4,
+      "preserveLayoutOnMobile": false
+    }
+  },
+
+  "rich-text#pets-feature-1": {
+    "props": {
+      "text": "#### 01 Brillo permanente \n ### Tus pisos *siguen brillantes* aunque corra todo el día \n Ceranatto® tiene una dureza superficial que supera la de las garras de perros y gatos. El resultado: un piso que conserva su brillo original sin importar cuántos años lleve tu mascota correteando sobre él. Deja de pedirle que camine despacio. \n\n *✨ No se raya*",
+      "blockClass": "tplPetsFeature"
+    }
+  },
+  "rich-text#pets-feature-2": {
+    "props": {
+      "text": "#### 02 Zona Dual \n ### Tecnología *antideslizante* que cuida sus articulaciones \n La Zona Dual de Ceranatto proporciona el coeficiente de fricción exacto para que tu mascota frene, gire y corra sin resbalar. Los resbalones repetidos causan displasia de cadera y lesiones articulares en razas grandes. Ceranatto los elimina por completo. \n\n *🛡️ Zona Dual antideslizante*",
+      "blockClass": "tplPetsFeature"
+    }
+  },
+  "rich-text#pets-feature-3": {
+    "props": {
+      "text": "#### 03 Suavidad \n ### *Suave al tacto*, nunca rugoso — sus paticas lo agradecen \n Un piso demasiado rugoso desgasta las almohadillas de las patas con el roce diario. Ceranatto tiene acabado liso y suave al tacto: protege las almohadillas de tu perro o gato mientras camina, juega o descansa sobre él. Su salud también está en cada m². \n\n *🐾 Protege sus almohadillas*",
+      "blockClass": "tplPetsFeature"
+    }
+  },
+  "rich-text#pets-feature-4": {
+    "props": {
+      "text": "#### 04 Impermeabilidad \n ### *Resistente al agua* y al manchado total \n La superficie no porosa de Ceranatto impide que líquidos, orina y manchas penetren el material. Los accidentes de mascotas — y son inevitables — se limpian completamente con agua y jabón neutro, sin rastros permanentes ni absorción de olores. Total tranquilidad. \n\n *💧 Impermeable 100%*",
+      "blockClass": "tplPetsFeature"
+    }
+  },
+  "rich-text#pets-feature-5": {
+    "props": {
+      "text": "#### 05 Limpieza fácil \n ### El pelo de mascota desaparece *en menos de 5 minutos* \n La superficie lisa de Ceranatto no atrapa el pelo de mascotas. Escoba, aspiradora o trapeador húmedo: cualquiera funciona en segundos. No hay juntas profundas donde se acumule suciedad. El mantenimiento diario con Ceranatto es tan simple que ni lo notarás. \n\n *🧹 Limpieza en segundos*",
+      "blockClass": "tplPetsFeature"
+    }
+  },
+  "rich-text#pets-feature-6": {
+    "props": {
+      "text": "#### 06 Elegancia \n ### Un hogar *elegante y brillante* — sin sacrificar nada \n Ceranatto tiene colecciones con acabados que imitan mármol, madera y piedra natural en formatos hasta 60×120 cm. Tener una mascota ya no significa elegir entre belleza y practicidad. Ceranatto te da las dos. Tu hogar, el más elegante del barrio — y el territorio favorito de tu mascota. \n\n *🎨 Diseño premium*",
+      "blockClass": "tplPetsFeature"
+    }
+  },
+
+  /* ══════════════ BLOG (oscuro · vtex.wordpress-integration) ══════════════
+   * Carrusel CSS con scroll-snap (mismo patrón verificado de
+   * tpl-contenidos), scoped bajo el handle propio. */
+
+  "flex-layout.row#pets-blog": {
+    "title": "Pets - Blog",
+    "children": ["flex-layout.col#pets-blog-col"],
+    "props": {
+      "blockClass": "tplPetsBlog",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#pets-blog-col": {
+    "children": [
+      "rich-text#pets-blog-eyebrow",
+      "rich-text#pets-blog-titulo",
+      "blog-latest-posts-preview.wordpress-latest-posts-preview#pets",
+      "flex-layout.row#pets-blog-cta"
+    ],
+    "props": {
+      "blockClass": "tplPetsBlogCol",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-blog-eyebrow": {
+    "props": {
+      "text": "Guías para pet parents",
+      "blockClass": ["tplPetsEyebrow", "tplPetsEyebrowClara"]
+    }
+  },
+
+  "rich-text#pets-blog-titulo": {
+    "props": {
+      "text": "## Todo lo que necesitas saber sobre pisos pet-friendly",
+      "blockClass": ["tplPetsSectionTitle", "tplPetsSectionTitleClara"]
+    }
+  },
+
+  "blog-latest-posts-preview.wordpress-latest-posts-preview#pets": {
+    "props": {
+      "numberOfPosts": 6,
+      "showDates": true,
+      "showCategories": true,
+      "useTextOverlays": true
+    }
+  },
+
+  "flex-layout.row#pets-blog-cta": {
+    "children": ["link#pets-btn-blog"],
+    "props": {
+      "blockClass": "tplPetsBlogCta",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "link#pets-btn-blog": {
+    "props": {
+      "href": "/blog",
+      "label": "Ver todos los artículos pet-friendly →",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnGhostDark"
+    }
+  },
+
+  /* ══════════════ TESTIMONIOS (3 cards) ══════════════
+   * Las estrellas rojas se pintan con ::before en el CSS (no van en el
+   * texto). Testimonios editoriales de la campaña — editables en Site
+   * Editor como cualquier rich-text. */
+
+  "flex-layout.row#pets-testimonios": {
+    "title": "Pets - Testimonios",
+    "children": ["flex-layout.col#pets-testimonios-col"],
+    "props": {
+      "blockClass": "tplPetsTestimonios",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#pets-testimonios-col": {
+    "children": [
+      "rich-text#pets-testimonios-eyebrow",
+      "rich-text#pets-testimonios-titulo",
+      "flex-layout.row#pets-testimonios-cards"
+    ],
+    "props": {
+      "blockClass": "tplPetsTestimoniosCol",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-testimonios-eyebrow": {
+    "props": {
+      "text": "Lo que dicen los pet parents",
+      "blockClass": ["tplPetsEyebrow", "tplPetsEyebrowCentro"]
+    }
+  },
+
+  "rich-text#pets-testimonios-titulo": {
+    "props": {
+      "text": "## Familias colombianas que ya eligieron la libertad",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsSectionTitle"
+    }
+  },
+
+  "flex-layout.row#pets-testimonios-cards": {
+    "children": [
+      "rich-text#pets-testimonio-1",
+      "rich-text#pets-testimonio-2",
+      "rich-text#pets-testimonio-3"
+    ],
+    "props": {
+      "blockClass": "tplPetsTestimoniosCards",
+      "colGap": 4,
+      "preserveLayoutOnMobile": false
+    }
+  },
+
+  "rich-text#pets-testimonio-1": {
+    "props": {
+      "text": "*\"Tenemos dos labradores y llevábamos años buscando un piso que aguantara su energía. Con Ceranatto llevamos 14 meses y luce igual al primer día. Por fin dejé de decirles 'no corran en la sala'.\"* \n **Marcela R.** \n Bogotá · 2 labradores retriever ⭐ Compra verificada",
+      "blockClass": "tplPetsTestimonio"
+    }
+  },
+  "rich-text#pets-testimonio-2": {
+    "props": {
+      "text": "*\"Mi gato persa tiene las garras más afiladas que he visto. Antes tenía pánico de renovar el piso. El asesor me mostró Ceranatto Tivoli y el resultado es increíble. Limpio, resistente y bellísimo.\"* \n **Carlos E.** \n Medellín · Gato persa ⭐ Compra verificada",
+      "blockClass": "tplPetsTestimonio"
+    }
+  },
+  "rich-text#pets-testimonio-3": {
+    "props": {
+      "text": "*\"Mi golden tiene displasia y el vet me dijo que necesitaba piso antideslizante. Ceranatto cumplió exactamente eso. Además compré en línea y llegó perfectamente empacado. Muy buen servicio.\"* \n **Valeria T.** \n Cali · Golden retriever con displasia ⭐ Compra online verificada",
+      "blockClass": "tplPetsTestimonio"
+    }
+  },
+
+  /* ══════════════ FAQ (acordeón vtex.disclosure-layout) ══════════════
+   * Mismo patrón que centro-de-ayuda (teclado y aria nativos).
+   * El JSON-LD FAQPage con estas mismas 6 preguntas se inyecta desde
+   * store.global.js SOLO en /tpl-pets. */
+
+  "flex-layout.row#pets-faq": {
+    "title": "Pets - Preguntas frecuentes",
+    "children": ["flex-layout.col#pets-faq-col"],
+    "props": {
+      "blockClass": "tplPetsFaq",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#pets-faq-col": {
+    "children": [
+      "rich-text#pets-faq-eyebrow",
+      "rich-text#pets-faq-titulo",
+      "disclosure-layout-group#pets-faq"
+    ],
+    "props": {
+      "blockClass": "tplPetsFaqCol",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-faq-eyebrow": {
+    "props": {
+      "text": "Preguntas frecuentes",
+      "blockClass": ["tplPetsEyebrow", "tplPetsEyebrowCentro"]
+    }
+  },
+
+  "rich-text#pets-faq-titulo": {
+    "props": {
+      "text": "## Todo lo que los pet parents preguntan antes de elegir su piso",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsSectionTitle"
+    }
+  },
+
+  "disclosure-layout-group#pets-faq": {
+    "children": [
+      "disclosure-layout#pets-faq-1",
+      "disclosure-layout#pets-faq-2",
+      "disclosure-layout#pets-faq-3",
+      "disclosure-layout#pets-faq-4",
+      "disclosure-layout#pets-faq-5",
+      "disclosure-layout#pets-faq-6"
+    ]
+  },
+
+  "disclosure-layout#pets-faq-1": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#pets-faq-1", "disclosure-content#pets-faq-1"]
+  },
+  "disclosure-trigger#pets-faq-1": {
+    "props": { "as": "div", "blockClass": "tplPetsFaqQuestion" },
+    "children": ["rich-text#pets-faq-1-q", "disclosure-state-indicator#pets"]
+  },
+  "rich-text#pets-faq-1-q": {
+    "props": {
+      "text": "### ¿Cuál es el mejor piso para hogares con mascotas en Colombia?",
+      "blockClass": "tplPetsFaqQ"
+    }
+  },
+  "disclosure-content#pets-faq-1": {
+    "props": { "blockClass": "tplPetsFaqAnswer" },
+    "children": ["rich-text#pets-faq-1-a"]
+  },
+  "rich-text#pets-faq-1-a": {
+    "props": {
+      "text": "Ceranatto® es el mejor piso para hogares con mascotas en Colombia porque resiste los arañazos de garras, es impermeable, fácil de limpiar y antideslizante para proteger las articulaciones del animal. Ceranatto de Cerámica Italia S.A. está especialmente recomendado para pet parents colombianos por combinar alta resistencia técnica con diseño elegante disponible en múltiples colecciones y formatos.",
+      "blockClass": "tplPetsFaqA"
+    }
+  },
+
+  "disclosure-layout#pets-faq-2": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#pets-faq-2", "disclosure-content#pets-faq-2"]
+  },
+  "disclosure-trigger#pets-faq-2": {
+    "props": { "as": "div", "blockClass": "tplPetsFaqQuestion" },
+    "children": ["rich-text#pets-faq-2-q", "disclosure-state-indicator#pets"]
+  },
+  "rich-text#pets-faq-2-q": {
+    "props": {
+      "text": "### ¿El piso Ceranatto resiste los arañazos de un perro?",
+      "blockClass": "tplPetsFaqQ"
+    }
+  },
+  "disclosure-content#pets-faq-2": {
+    "props": { "blockClass": "tplPetsFaqAnswer" },
+    "children": ["rich-text#pets-faq-2-a"]
+  },
+  "rich-text#pets-faq-2-a": {
+    "props": {
+      "text": "Sí, Ceranatto resiste los arañazos de perros y gatos bajo condiciones normales de uso doméstico. Está fabricado en alta densidad con dureza superficial superior a 7 en la escala Mohs. Las garras de razas grandes como labradores, pastores alemanes o rottweilers no generan rayaduras visibles en la superficie de Ceranatto.",
+      "blockClass": "tplPetsFaqA"
+    }
+  },
+
+  "disclosure-layout#pets-faq-3": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#pets-faq-3", "disclosure-content#pets-faq-3"]
+  },
+  "disclosure-trigger#pets-faq-3": {
+    "props": { "as": "div", "blockClass": "tplPetsFaqQuestion" },
+    "children": ["rich-text#pets-faq-3-q", "disclosure-state-indicator#pets"]
+  },
+  "rich-text#pets-faq-3-q": {
+    "props": {
+      "text": "### ¿Es Ceranatto antideslizante para mascotas?",
+      "blockClass": "tplPetsFaqQ"
+    }
+  },
+  "disclosure-content#pets-faq-3": {
+    "props": { "blockClass": "tplPetsFaqAnswer" },
+    "children": ["rich-text#pets-faq-3-a"]
+  },
+  "rich-text#pets-faq-3-a": {
+    "props": {
+      "text": "Sí, la línea Ceranatto incluye referencias antideslizantes aptas para mascotas. Un piso antideslizante es especialmente importante para perros medianos y grandes, ya que los resbalones repetidos pueden causar displasia de cadera y lesiones articulares. En los showrooms de Cerámica Italia puedes consultar qué referencias de Ceranatto tienen el mayor coeficiente de fricción para hogares con animales de compañía.",
+      "blockClass": "tplPetsFaqA"
+    }
+  },
+
+  "disclosure-layout#pets-faq-4": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#pets-faq-4", "disclosure-content#pets-faq-4"]
+  },
+  "disclosure-trigger#pets-faq-4": {
+    "props": { "as": "div", "blockClass": "tplPetsFaqQuestion" },
+    "children": ["rich-text#pets-faq-4-q", "disclosure-state-indicator#pets"]
+  },
+  "rich-text#pets-faq-4-q": {
+    "props": {
+      "text": "### ¿Puedo comprar Ceranatto pet-friendly en línea en Colombia?",
+      "blockClass": "tplPetsFaqQ"
+    }
+  },
+  "disclosure-content#pets-faq-4": {
+    "props": { "blockClass": "tplPetsFaqAnswer" },
+    "children": ["rich-text#pets-faq-4-a"]
+  },
+  "rich-text#pets-faq-4-a": {
+    "props": {
+      "text": "Sí, puedes comprar Ceranatto en línea en ceramicaitalia.com con envío a toda Colombia. La tienda online de Cerámica Italia S.A. permite ver el catálogo completo de Ceranatto, comparar referencias, agregar al carrito y gestionar el envío. También puedes solicitar muestras o asesoría gratuita por WhatsApp antes de realizar tu compra.",
+      "blockClass": "tplPetsFaqA"
+    }
+  },
+
+  "disclosure-layout#pets-faq-5": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#pets-faq-5", "disclosure-content#pets-faq-5"]
+  },
+  "disclosure-trigger#pets-faq-5": {
+    "props": { "as": "div", "blockClass": "tplPetsFaqQuestion" },
+    "children": ["rich-text#pets-faq-5-q", "disclosure-state-indicator#pets"]
+  },
+  "rich-text#pets-faq-5-q": {
+    "props": {
+      "text": "### ¿Qué piso recomiendan los veterinarios para casas con perros?",
+      "blockClass": "tplPetsFaqQ"
+    }
+  },
+  "disclosure-content#pets-faq-5": {
+    "props": { "blockClass": "tplPetsFaqAnswer" },
+    "children": ["rich-text#pets-faq-5-a"]
+  },
+  "rich-text#pets-faq-5-a": {
+    "props": {
+      "text": "Los veterinarios recomiendan pisos duros, no porosos y antideslizantes para hogares con perros. Ceranatto® cumple estos tres criterios: es higiénico (no acumula bacterias ni ácaros como las alfombras), tiene versiones antideslizantes que protegen articulaciones, y es fácil de desinfectar. Desaconsejan la madera que absorbe líquidos y olores, y las alfombras que acumulan pelo y bacterias.",
+      "blockClass": "tplPetsFaqA"
+    }
+  },
+
+  "disclosure-layout#pets-faq-6": {
+    "props": { "animated": true },
+    "children": ["disclosure-trigger#pets-faq-6", "disclosure-content#pets-faq-6"]
+  },
+  "disclosure-trigger#pets-faq-6": {
+    "props": { "as": "div", "blockClass": "tplPetsFaqQuestion" },
+    "children": ["rich-text#pets-faq-6-q", "disclosure-state-indicator#pets"]
+  },
+  "rich-text#pets-faq-6-q": {
+    "props": {
+      "text": "### ¿Cuánto cuesta el piso Ceranatto en Colombia?",
+      "blockClass": "tplPetsFaqQ"
+    }
+  },
+  "disclosure-content#pets-faq-6": {
+    "props": { "blockClass": "tplPetsFaqAnswer" },
+    "children": ["rich-text#pets-faq-6-a"]
+  },
+  "rich-text#pets-faq-6-a": {
+    "props": {
+      "text": "El precio de Ceranatto varía según el formato, colección y referencia. En la tienda online de Cerámica Italia puedes ver precios actualizados por m², comparar colecciones y aprovechar descuentos vigentes. También puedes visitar los showrooms en Bogotá, Medellín, Cali y Barranquilla para asesoría sin costo.",
+      "blockClass": "tplPetsFaqA"
+    }
+  },
+
+  "disclosure-state-indicator#pets": {
+    "props": {
+      "Show": "icon-caret#pets-down",
+      "Hide": "icon-caret#pets-up"
+    }
+  },
+  "icon-caret#pets-down": {
+    "props": { "orientation": "down" }
+  },
+  "icon-caret#pets-up": {
+    "props": { "orientation": "up" }
+  },
+
+  /* ══════════════ CTA (banner rojo) ══════════════ */
+
+  "flex-layout.row#pets-cta": {
+    "title": "Pets - CTA final",
+    "children": ["flex-layout.col#pets-cta-col"],
+    "props": {
+      "blockClass": "tplPetsCta",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#pets-cta-col": {
+    "children": [
+      "rich-text#pets-cta-titulo",
+      "rich-text#pets-cta-sub",
+      "flex-layout.row#pets-cta-botones"
+    ],
+    "props": {
+      "blockClass": "tplPetsCtaCol",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-cta-titulo": {
+    "props": {
+      "text": "## Tu hogar ya está listo para ser **el territorio de toda la familia.**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsCtaTitulo"
+    }
+  },
+
+  "rich-text#pets-cta-sub": {
+    "props": {
+      "text": "Compra Ceranatto online o visita el showroom más cercano en Colombia. Asesoría gratuita, sin compromiso.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsCtaSub"
+    }
+  },
+
+  "flex-layout.row#pets-cta-botones": {
+    "children": ["link#pets-btn-catalogo-cta", "link#pets-btn-showroom"],
+    "props": {
+      "blockClass": "tplPetsCtaBotones",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "colGap": 4
+    }
+  },
+
+  "link#pets-btn-catalogo-cta": {
+    "props": {
+      "href": "/tpl-listaproductos",
+      "label": "Ver catálogo online →",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnSecundary"
+    }
+  },
+
+  "link#pets-btn-showroom": {
+    "props": {
+      "href": "/nuestras-tiendas",
+      "label": "Encontrar showroom",
+      "displayMode": "button",
+      "blockClass": "tplPetsBtnGhostDark"
+    }
+  },
+
+  /* ══════════════ FORMULARIO (vtex.store-form → Master Data FI/FORMINFO) ══════════════ */
+
+  "flex-layout.row#pets-formulario": {
+    "title": "Pets - Formulario de asesoría",
+    "children": ["flex-layout.col#pets-form-col"],
+    "props": {
+      "blockClass": "tplPetsFormulario",
+      "fullWidth": true,
+      "htmlId": "asesoria"
+    }
+  },
+
+  "flex-layout.col#pets-form-col": {
+    "children": [
+      "rich-text#pets-form-eyebrow",
+      "rich-text#pets-form-titulo",
+      "rich-text#pets-form-texto",
+      "form#pets"
+    ],
+    "props": {
+      "blockClass": "tplPetsFormCol",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#pets-form-eyebrow": {
+    "props": {
+      "text": "¿Tienes mascotas y estás remodelando?",
+      "blockClass": ["tplPetsEyebrow", "tplPetsEyebrowCentro", "tplPetsEyebrowClara"]
+    }
+  },
+
+  "rich-text#pets-form-titulo": {
+    "props": {
+      "text": "## Habla con un asesor Ceranatto®",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["tplPetsSectionTitle", "tplPetsSectionTitleClara"]
+    }
+  },
+
+  "rich-text#pets-form-texto": {
+    "props": {
+      "text": "Cuéntanos sobre tu hogar y tu mascota. Te contactamos en menos de 24 horas con la recomendación perfecta.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsFormTexto"
+    }
+  },
+
+  /* OJO: el bloque form NO acepta blockClass (verificado en Form.tsx:
+     renderiza <form> sin clase) — sus estilos van scoped bajo
+     .flexCol--tplPetsFormCol en vtex.flex-layout.css */
+  "form#pets": {
+    "props": {
+      "entity": "FI",
+      "schema": "FORMINFO"
+    },
+    "children": [
+      "form-input.text#pets-nombre",
+      "flex-layout.row#pets-form-fila-contacto",
+      "flex-layout.row#pets-form-fila-detalle",
+      "form-input.text#pets-idorigen",
+      "form-submit#pets",
+      "rich-text#pets-form-disclaimer"
+    ],
+    "blocks": ["form-success#pets"]
+  },
+
+  "form-input.text#pets-nombre": {
+    "props": {
+      "pointer": "#/properties/nombrecompleto",
+      "label": "Nombre completo",
+      "placeholder": "Ej. María García"
+    }
+  },
+
+  "flex-layout.row#pets-form-fila-contacto": {
+    "children": ["form-input.text#pets-telefono", "form-input.text#pets-mail"],
+    "props": {
+      "blockClass": "tplPetsFormFila",
+      "preserveLayoutOnMobile": false,
+      "colGap": 4
+    }
+  },
+
+  "form-input.text#pets-telefono": {
+    "props": {
+      "pointer": "#/properties/telefono",
+      "label": "Teléfono / WhatsApp",
+      "placeholder": "310 000 0000"
+    }
+  },
+
+  "form-input.text#pets-mail": {
+    "props": {
+      "pointer": "#/properties/mail",
+      "label": "Correo electrónico",
+      "placeholder": "correo@ejemplo.com"
+    }
+  },
+
+  "flex-layout.row#pets-form-fila-detalle": {
+    "children": ["form-input.text#pets-ciudad", "form-input.dropdown#pets-mascota"],
+    "props": {
+      "blockClass": "tplPetsFormFila",
+      "preserveLayoutOnMobile": false,
+      "colGap": 4
+    }
+  },
+
+  "form-input.text#pets-ciudad": {
+    "props": {
+      "pointer": "#/properties/ciudad",
+      "label": "¿En qué ciudad?",
+      "placeholder": "Ej. Bogotá"
+    }
+  },
+
+  /* Opciones desde el enum "tipomascota" del schema FORMINFO */
+  "form-input.dropdown#pets-mascota": {
+    "props": {
+      "pointer": "#/properties/tipomascota",
+      "label": "¿Qué mascota tienes?"
+    }
+  },
+
+  /* Campo INVISIBLE con valor fijo "1": identifica esta landing como
+     origen del registro. inputType "hidden" renderiza un
+     <input type="hidden"> sin label (verificado en Input.tsx de
+     vtex.store-form) y envía "value" al hacer submit. */
+  "form-input.text#pets-idorigen": {
+    "props": {
+      "pointer": "#/properties/idorigen",
+      "inputType": "hidden",
+      "value": "1"
+    }
+  },
+
+  "form-submit#pets": {
+    "props": {
+      "label": "Quiero asesoría gratuita →"
+    }
+  },
+
+  "rich-text#pets-form-disclaimer": {
+    "props": {
+      "text": "Al enviar aceptas que Cerámica Italia S.A. te contacte para brindarte asesoría. No compartimos tu información con terceros.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsFormDisclaimer"
+    }
+  },
+
+  "form-success#pets": {
+    "children": ["rich-text#pets-form-success"]
+  },
+
+  "rich-text#pets-form-success": {
+    "props": {
+      "text": "## ¡Gracias! Ya recibimos tu solicitud. \n\n Un asesor Ceranatto se pondrá en contacto contigo en menos de 24 horas.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tplPetsFormSuccess"
+    }
+  }
+}

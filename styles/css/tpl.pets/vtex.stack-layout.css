@@ -1,0 +1,30 @@
+/* ============================================================
+ * TPL-PETS · Apilados (vtex.stack-layout)
+ * Hero: la imagen (primer hijo) da el alto; la fila de contenido
+ * se estira para cubrirla. Cards de colección: mismo principio con
+ * esquinas redondeadas.
+ * ============================================================ */
+
+.stackContainer--tplPetsHero {
+  width: 100%;
+}
+
+.stackItem--tplPetsHero {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.stackContainer--tplPetsColCard {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stackItem--tplPetsColCard {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
