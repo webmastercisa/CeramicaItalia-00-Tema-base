@@ -1,0 +1,383 @@
+/* ============================================================
+ * TPL-PETS · Layout (vtex.flex-layout)
+ * Scoped a blockClass "tplPets*". Paleta: rojo #ED1B24 ·
+ * tinta #3f3f40 · negro #0d0d0d · línea #e3e4e6 · fondo #f9f9f9
+ * ============================================================ */
+
+/* ─── HERO: la imagen la pone el stack (editable en Site Editor);
+   esta fila apilada aporta el oscurecido para contraste ─── */
+.flexRow--tplPetsHero .flexRowContent--tplPetsHero {
+  padding: 0;
+}
+
+/* Degradado con máximo a la izquierda: zona de lectura oscura bajo el
+   texto, imagen despejada a la derecha */
+.flexRow--tplPetsHeroContent {
+  height: 100%;
+  background: linear-gradient(to right, rgba(13, 13, 13, 0.88) 0%, rgba(13, 13, 13, 0.62) 40%, rgba(13, 13, 13, 0.12) 78%, rgba(13, 13, 13, 0) 100%);
+}
+
+/* Doble clase: gana al ".flexRowContent{justify-content:center}" global */
+.flexRow--tplPetsHeroContent .flexRowContent--tplPetsHeroContent {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexCol--tplPetsHeroCol {
+  max-width: 45rem;
+  margin-right: auto; /* ancla el bloque de texto a la izquierda */
+  text-align: left;
+}
+
+/* ─── BARRA DE CONFIANZA (oscura, 5 beneficios) ─── */
+.flexRow--tplPetsTrust {
+  background-color: #0d0d0d;
+  border-top: 3px solid #ED1B24;
+}
+
+.flexRow--tplPetsTrust .flexRowContent--tplPetsTrust {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.1rem 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+/* ─── MIEDOS (sección clara con 4 cards) ─── */
+.flexRow--tplPetsMiedos .flexRowContent--tplPetsMiedos {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.flexCol--tplPetsMiedosCol {
+  width: 100%;
+}
+
+.flexRow--tplPetsMiedosCards .flexRowContent--tplPetsMiedosCards {
+  align-items: stretch;
+}
+
+/* ─── COLECCIONES ─── */
+.flexRow--tplPetsColecciones {
+  background-color: #f9f9f9;
+  border-top: 1px solid #e3e4e6;
+}
+
+.flexRow--tplPetsColecciones .flexRowContent--tplPetsColecciones {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.flexCol--tplPetsColeccionesCol {
+  width: 100%;
+}
+
+.flexRow--tplPetsColeccionesCards .flexRowContent--tplPetsColeccionesCards {
+  align-items: stretch;
+}
+
+/* Overlay de cada card: degradado inferior para legibilidad del
+   nombre; el botón "Ver colección" es el target de clic */
+.flexCol--tplPetsColOverlay {
+  height: 100%;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* ─── PRODUCTOS (colección 179) ─── */
+.flexRow--tplPetsProductos {
+  scroll-margin-top: 140px; /* compensa el header sticky del tema */
+}
+
+.flexRow--tplPetsProductos .flexRowContent--tplPetsProductos {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.flexCol--tplPetsProductosCol {
+  width: 100%;
+}
+
+/* Botón "Ver más" de las cards SOLO en esta plantilla: identidad
+   rojo/blanco con hover invertido, scoped al handle propio */
+.flexRow--tplPetsProductos :global(.vtex-button) {
+  background-color: #ED1B24;
+  border: 1px solid #ED1B24;
+  color: #ffffff;
+}
+
+.flexRow--tplPetsProductos :global(.vtex-button):hover {
+  background-color: #ffffff;
+  border-color: #ED1B24;
+  color: #ED1B24;
+}
+
+.flexRow--tplPetsProductos :global(.vtex-button__label) {
+  color: inherit;
+}
+
+/* Vitrina curada de 8: se oculta el "Mostrar más" nativo — el CTA
+   "Ver catálogo completo" lleva al listado completo */
+.flexRow--tplPetsProductos :global(.vtex-search-result-3-x-buttonShowMore) {
+  display: none;
+}
+
+.flexRow--tplPetsProductosCta .flexRowContent--tplPetsProductosCta {
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+/* ─── 6 RAZONES ─── */
+.flexRow--tplPetsFeatures {
+  background-color: #ffffff;
+  border-top: 1px solid #e3e4e6;
+}
+
+.flexRow--tplPetsFeatures .flexRowContent--tplPetsFeatures {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.flexCol--tplPetsFeaturesCol {
+  width: 100%;
+}
+
+.flexRow--tplPetsFeaturesFila .flexRowContent--tplPetsFeaturesFila {
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+
+/* ─── BLOG (sección oscura, carrusel scroll-snap) ─── */
+.flexRow--tplPetsBlog {
+  background-color: #0d0d0d;
+}
+
+.flexRow--tplPetsBlog .flexRowContent--tplPetsBlog {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.flexCol--tplPetsBlogCol {
+  width: 100%;
+}
+
+/* Carrusel del blog — pista horizontal con 3 tarjetas visibles en
+   escritorio, 2 en tablet y 1 con "peek" en móvil; scroll-snap encaja
+   cada tarjeta y la barra fina roja hace de indicador. Mismo patrón
+   verificado de tpl-contenidos (handles del SSR real del blog). */
+.flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-listFlex) {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.75rem;
+}
+
+.flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-listFlex)::-webkit-scrollbar {
+  height: 4px;
+}
+
+.flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-listFlex)::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-listFlex)::-webkit-scrollbar-thumb {
+  background: #ED1B24;
+  border-radius: 2px;
+}
+
+.flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-listFlexItem) {
+  flex: 0 0 calc(33.333% - 12px);
+  max-width: calc(33.333% - 12px);
+  scroll-snap-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tarjeta sobre fondo oscuro: borde translúcido + elevación al hover */
+.flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-teaserContainer) {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
+}
+
+.flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-teaserContainer):hover {
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 63.99rem) {
+  .flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-listFlexItem) {
+    flex: 0 0 calc(50% - 9px);
+    max-width: calc(50% - 9px);
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .flexCol--tplPetsBlogCol :global(.vtex-wordpress-integration-2-x-listFlexItem) {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+
+.flexRow--tplPetsBlogCta .flexRowContent--tplPetsBlogCta {
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+
+/* ─── TESTIMONIOS ─── */
+.flexRow--tplPetsTestimonios .flexRowContent--tplPetsTestimonios {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.flexCol--tplPetsTestimoniosCol {
+  width: 100%;
+}
+
+.flexRow--tplPetsTestimoniosCards .flexRowContent--tplPetsTestimoniosCards {
+  align-items: stretch;
+}
+
+/* ─── FAQ ─── */
+.flexRow--tplPetsFaq {
+  background-color: #f9f9f9;
+  border-top: 1px solid #e3e4e6;
+}
+
+.flexRow--tplPetsFaq .flexRowContent--tplPetsFaq {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+  justify-content: center;
+}
+
+.flexCol--tplPetsFaqCol {
+  width: 100%;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+/* ─── CTA (banner rojo) ─── */
+.flexRow--tplPetsCta {
+  background-color: #ED1B24;
+}
+
+.flexRow--tplPetsCta .flexRowContent--tplPetsCta {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  justify-content: center;
+}
+
+.flexCol--tplPetsCtaCol {
+  text-align: center;
+}
+
+.flexRow--tplPetsCtaBotones .flexRowContent--tplPetsCtaBotones {
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+/* ─── FORMULARIO (sección oscura, columna centrada) ─── */
+.flexRow--tplPetsFormulario {
+  background-color: #0d0d0d;
+  scroll-margin-top: 140px;
+}
+
+.flexRow--tplPetsFormulario .flexRowContent--tplPetsFormulario {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  justify-content: center;
+}
+
+.flexCol--tplPetsFormCol {
+  width: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.flexRow--tplPetsFormFila .flexRowContent--tplPetsFormFila {
+  align-items: flex-start;
+  margin-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+/* ── Estilos del formulario store-form ──
+   VERIFICADO (SSR de /contacto + Form.tsx del app): el bloque "form"
+   de vtex.store-form NO emite handle ni blockClass — renderiza un
+   <form> sin clase. Por eso todo va scoped bajo ESTA columna del
+   tema, no bajo un ".form--*" (patrón muerto). */
+
+/* Labels de inputs y dropdown legibles sobre la sección oscura
+   (clases del styleguide verificadas; doble handle gana al c-on-base
+   de Tachyons) */
+.flexCol--tplPetsFormCol :global(.vtex-input__label),
+.flexCol--tplPetsFormCol :global(.vtex-dropdown__label) {
+  color: #DEDEDE;
+}
+
+/* Botón de envío al 100% del contenedor con la identidad de marca:
+   pill rojo, hover invertido, foco visible */
+.flexCol--tplPetsFormCol :global(.vtex-store-form-0-x-formSubmitContainer),
+.flexCol--tplPetsFormCol :global(.vtex-store-form-0-x-formSubmitButton) {
+  width: 100%;
+}
+
+.flexCol--tplPetsFormCol :global(.vtex-button) {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid #ED1B24;
+  background-color: #ED1B24;
+  color: #ffffff;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.flexCol--tplPetsFormCol :global(.vtex-button__label) {
+  color: inherit;
+}
+
+.flexCol--tplPetsFormCol :global(.vtex-button):hover {
+  background-color: #ffffff;
+  color: #ED1B24;
+}
+
+.flexCol--tplPetsFormCol :global(.vtex-button):focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 47.99rem) {
+  .flexRow--tplPetsHeroContent .flexRowContent--tplPetsHeroContent {
+    padding: 1.75rem 1rem;
+  }
+
+  .flexRow--tplPetsCta .flexRowContent--tplPetsCta,
+  .flexRow--tplPetsFormulario .flexRowContent--tplPetsFormulario {
+    padding: 2rem 1rem;
+  }
+}

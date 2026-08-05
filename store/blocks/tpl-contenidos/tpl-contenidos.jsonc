@@ -27,7 +27,7 @@
       "flex-layout.row#contenidos-stats",
       "search-result-layout.customQuery#contenidos",
       "flex-layout.row#contenidos-manifiesto",
-      //"flex-layout.row#contenidos-formulario",
+      "flex-layout.row#contenidos-formulario",
       "flex-layout.row#contenidos-blog",
       "flex-layout.row#contenidos-cta"
     ]
@@ -485,16 +485,17 @@
 
   "form#contenidos": {
     "props": {
-      "entity": "CO",
-      "schema": "RENOVACION2026",
+      "entity": "FI",
+      "schema": "FORMINFO",
       "blockClass": "tplContenidosForm"
     },
     "children": [
       "form-input.text#contenidos-nombre",
       "flex-layout.row#contenidos-form-fila-contacto",
-      "form-input.radiogroup#contenidos-tipo-cliente",
-      "form-input.radiogroup#contenidos-ayuda",
+      "form-input.dropdown#contenidos-tipo-cliente",
+      "form-input.text#contenidos-ayuda",
       "flex-layout.row#contenidos-form-fila-ciudad",
+      //"form-input.checkbox#contenidos-agreement",
       "form-input.checkbox#contenidos-agreement",
       "form-submit#contenidos"
     ],
@@ -503,7 +504,7 @@
 
   "form-input.text#contenidos-nombre": {
     "props": {
-      "pointer": "#/properties/nameAndLastname",
+      "pointer": "#/properties/nombrecompleto",
       "label": "Nombre completo",
       "placeholder": "Ej. María García"
     }
@@ -520,7 +521,7 @@
 
   "form-input.text#contenidos-telefono": {
     "props": {
-      "pointer": "#/properties/phone",
+      "pointer": "#/properties/telefono",
       "label": "Teléfono",
       "placeholder": "310 000 0000"
     }
@@ -528,28 +529,29 @@
 
   "form-input.text#contenidos-email": {
     "props": {
-      "pointer": "#/properties/email",
+      "pointer": "#/properties/mail",
       "label": "Correo electrónico",
       "placeholder": "correo@ejemplo.com"
     }
   },
 
-  "form-input.radiogroup#contenidos-tipo-cliente": {
+  //"form-input.radiogroup#contenidos-tipo-cliente":
+  "form-input.dropdown#contenidos-tipo-cliente": {
     "props": {
-      "pointer": "#/properties/clientType",
+      "pointer": "#/properties/tipocliente",
       "label": "¿Qué tipo de cliente eres?"
     }
   },
 
-  "form-input.radiogroup#contenidos-ayuda": {
+  "form-input.text#contenidos-ayuda": {
     "props": {
-      "pointer": "#/properties/helpType",
+      "pointer": "#/properties/nota",
       "label": "¿Cómo podemos ayudarte?"
     }
   },
 
   "flex-layout.row#contenidos-form-fila-ciudad": {
-    "children": ["form-input.text#contenidos-ciudad", "form-input.text#contenidos-sala"],
+    "children": ["form-input.text#contenidos-ciudad", "form-input.dropdown#contenidos-sala"],
     "props": {
       "blockClass": "tplContenidosFormFila",
       "preserveLayoutOnMobile": false,
@@ -559,15 +561,15 @@
 
   "form-input.text#contenidos-ciudad": {
     "props": {
-      "pointer": "#/properties/city",
+      "pointer": "#/properties/ciudad",
       "label": "¿En qué ciudad te encuentras?",
       "placeholder": "Ej. Bogotá"
     }
   },
 
-  "form-input.text#contenidos-sala": {
+  "form-input.dropdown#contenidos-sala": {
     "props": {
-      "pointer": "#/properties/store",
+      "pointer": "#/properties/sala",
       "label": "¿En qué sala compras habitualmente?",
       "placeholder": "Ej. Sala Norte Bogotá"
     }
@@ -575,7 +577,7 @@
 
   "form-input.checkbox#contenidos-agreement": {
     "props": {
-      "pointer": "#/properties/agreement",
+      "pointer": "#/properties/aceptaterminos",
       "label": "Al enviar este formulario, autorizo el tratamiento de mis datos personales de acuerdo con la política de privacidad."
     }
   },

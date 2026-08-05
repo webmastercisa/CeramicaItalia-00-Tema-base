@@ -1,0 +1,97 @@
+/* ============================================================
+ * TPL-PETS · Botones (vtex.store-link)
+ * Identidad del tema: pill 999px · fondo rojo #ED1B24 · texto
+ * blanco · hover invertido (blanco/rojo) · foco visible.
+ * ============================================================ */
+
+/* Base compartida */
+.link--tplPetsBtnPrimary,
+.link--tplPetsBtnSecundary,
+.link--tplPetsBtnGhostDark,
+.link--tplPetsBtnMini {
+  display: inline-block;
+  padding: 0.8rem 1.9rem;
+  border-radius: 999px;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+/* Foco visible accesible (nunca outline:none sin reemplazo) */
+.link--tplPetsBtnPrimary:focus,
+.link--tplPetsBtnSecundary:focus,
+.link--tplPetsBtnGhostDark:focus,
+.link--tplPetsBtnMini:focus {
+  outline: 2px solid #ED1B24;
+  outline-offset: 2px;
+}
+
+/* Primario: rojo corporativo → hover invertido */
+.link--tplPetsBtnPrimary {
+  border: 1px solid #ED1B24;
+  background-color: #ED1B24;
+  color: #ffffff;
+}
+
+.link--tplPetsBtnPrimary:hover {
+  background-color: #ffffff;
+  color: #ED1B24;
+  transform: scale(1.03);
+}
+
+/* Secundario: blanco/rojo → hover rojo/blanco (funciona sobre el
+   banner rojo del CTA: el borde blanco mantiene el contorno) */
+.link--tplPetsBtnSecundary {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #ED1B24;
+}
+
+.link--tplPetsBtnSecundary:hover {
+  background-color: #ED1B24;
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+/* Ghost sobre fondos oscuros (hero, blog, CTA) */
+.link--tplPetsBtnGhostDark {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.link--tplPetsBtnGhostDark:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Mini: pill compacta de las cards de colección */
+.link--tplPetsBtnMini {
+  padding: 0.45rem 1.1rem;
+  font-size: 0.75rem;
+  border: 1px solid #ED1B24;
+  background-color: #ED1B24;
+  color: #ffffff;
+  align-self: flex-start;
+}
+
+.link--tplPetsBtnMini:hover {
+  background-color: #ffffff;
+  color: #ED1B24;
+}
+
+/* Labels internos de displayMode "button" */
+.link--tplPetsBtnPrimary .label--tplPetsBtnPrimary,
+.link--tplPetsBtnSecundary .label--tplPetsBtnSecundary,
+.link--tplPetsBtnGhostDark .label--tplPetsBtnGhostDark,
+.link--tplPetsBtnMini .label--tplPetsBtnMini {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}

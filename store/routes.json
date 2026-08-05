@@ -179,6 +179,15 @@
     "blockId": "store.custom#tpl-contenidos",
     "isSitemapEntry": false
   },
+	
+	"store.custom#tpl-pets":
+  {
+    "path": "/tpl-pets",
+    "title": "Piso para mascotas en Colombia | Ceranatto Pet-Friendly",
+    "blockId": "store.custom#tpl-pets",
+    "isSitemapEntry": false
+  },
+	
 
   "store.custom#tpl-categoria": { "path": "/tpl-categoria/:slug" }
 
