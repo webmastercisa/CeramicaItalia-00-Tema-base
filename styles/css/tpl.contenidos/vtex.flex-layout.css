@@ -335,6 +335,13 @@
     padding: 1.75rem 1rem;
   }
 
+  /* Botones del hero: si no caben lado a lado, el segundo baja de
+     fila completa (nunca partir el label en dos líneas) */
+  .flexRow--tplContenidosHeroBotones .flexRowContent--tplContenidosHeroBotones {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
   .flexRow--tplContenidosManifiesto .flexRowContent--tplContenidosManifiesto,
   .flexRow--tplContenidosFormulario .flexRowContent--tplContenidosFormulario {
     padding: 2rem 1rem;

@@ -115,3 +115,16 @@
     display: none;
   }
 }
+
+/* Mobile: pills del hero compactas y en una sola línea (la fila ya
+   hace flex-wrap: si no caben lado a lado, el segundo botón baja de
+   fila en vez de partir el label — preventivo del bug visto en
+   tpl-contenidos 2026-08-06) */
+@media (max-width: 47.99rem) {
+  .link--spmBtnPrimary,
+  .link--spmBtnGhost {
+    padding: 12px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}

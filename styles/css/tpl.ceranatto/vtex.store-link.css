@@ -108,4 +108,16 @@
   .link--ceranattoNavBtn {
     display: none;
   }
+
+  /* Pills compactas y en una sola línea (la fila del hero ya hace
+     flex-wrap: si no caben lado a lado, el segundo botón baja de
+     fila en vez de partir el label — preventivo del bug visto en
+     tpl-contenidos 2026-08-06) */
+  .link--ceranattoBtnPrimary,
+  .link--ceranattoBtnGhost,
+  .link--ceranattoBtnDarkGhost {
+    padding: 0.75rem 1.3rem;
+    font-size: 0.8125rem;
+    white-space: nowrap;
+  }
 }

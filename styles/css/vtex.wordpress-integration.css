@@ -195,7 +195,8 @@
 }
 
 .teaserSeparator  {  color: #c8c1ba;}
-.teaserDate       {  color: #eee;}
+.teaserDate       {  color: #dedede;}
+
 
 /* =========================================================
    7. Títulos y extractos
@@ -809,7 +810,7 @@
 .teaserTextOverlay {
   bottom: 2% !important;
   left: 2% !important;
-  padding: 0.7rem 0.19rem;
+  padding: 0.7rem 0.9rem;
   max-width: 96%;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -823,5 +824,3 @@
     backdrop-filter: blur(4px) saturate(120%);
   }
 }
-
-

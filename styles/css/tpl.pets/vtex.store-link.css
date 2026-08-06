@@ -95,3 +95,17 @@
   font-weight: inherit;
   color: inherit;
 }
+
+/* Mobile: pills compactas y SIEMPRE en una sola línea (con el padding
+   de escritorio, dos botones lado a lado parten el label en dos
+   líneas — bug detectado en tpl-contenidos 2026-08-06; la fila del
+   hero además hace wrap en vtex.flex-layout.css) */
+@media (max-width: 47.99rem) {
+  .link--tplPetsBtnPrimary,
+  .link--tplPetsBtnSecundary,
+  .link--tplPetsBtnGhostDark {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8125rem;
+    white-space: nowrap;
+  }
+}

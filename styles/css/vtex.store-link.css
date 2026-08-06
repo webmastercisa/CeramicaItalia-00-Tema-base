@@ -111,7 +111,7 @@
 }
 
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
 {
 
   .link--mundialBtnPrimary,
@@ -124,4 +124,96 @@
     font-size: 14px;
     padding: 12px 24px;
   }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BOTÓN GHOST CORPORATIVO (reutilizable en cualquier plantilla)
+   Uso: bloque link con displayMode "button" y blockClass
+   "cisaBtnGhost" (fondos claros) o "cisaBtnGhostDark" (fondos
+   oscuros). Paleta: rojo #ED1B24 · negro #0d0d0d · blanco.
+   Reposo transparente con contorno; hover se llena con elevación
+   suave y sombra tintada; foco visible accesible.
+   ══════════════════════════════════════════════════════════════ */
+.link--cisaBtnGhost,
+.link--cisaBtnGhostDark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 999px;
+  background-color: transparent;
+  font-family: 'NeutraTextAltBold', 'NeutraText', -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease,
+    border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+/* Ghost sobre fondos claros: contorno y letras rojas */
+.link--cisaBtnGhost {
+  border: 1.5px solid #ED1B24;
+  color: #ED1B24;
+}
+
+.link--cisaBtnGhost:hover {
+  background-color: #ED1B24;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(237, 27, 36, 0.28);
+}
+
+.link--cisaBtnGhost:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(237, 27, 36, 0.22);
+}
+
+.link--cisaBtnGhost:focus {
+  outline: 2px solid #ED1B24;
+  outline-offset: 3px;
+}
+
+/* Ghost sobre fondos oscuros: contorno blanco translúcido que se
+   enciende al hover y se llena de blanco con letras rojas */
+.link--cisaBtnGhostDark {
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  color: #ffffff;
+}
+
+.link--cisaBtnGhostDark:hover {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #ED1B24;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+.link--cisaBtnGhostDark:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.link--cisaBtnGhostDark:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Labels internos de displayMode "button" */
+.link--cisaBtnGhost .label--cisaBtnGhost,
+.link--cisaBtnGhostDark .label--cisaBtnGhostDark {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/* Instancia: enlace a la política en el form HV (trabaja-con-nosotros)
+   — ocupa el ancho completo de la columna, como los campos */
+.link--politicaHv {
+  display: block;
+  width: 100%;
+  margin: 0.25rem 0 0.75rem;
 }

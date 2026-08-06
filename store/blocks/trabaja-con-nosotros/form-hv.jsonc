@@ -88,7 +88,9 @@
           "flex-layout.col#col3-form-hv": {
             "children": [
                 "form-input.text#vacant-hv",
-                "form-input.textarea#comments-hv"
+                "form-input.textarea#comments-hv",
+                "form-input.checkbox#acepta-hv",
+                "link#politica-hv"
             ],
             "props": {
               "blockClass": ["col3-form-hv"]
@@ -200,6 +202,25 @@
               "placeholder": "Vacante a la que aspiras",
               "label": false,
               "blockClass": "CampoFormulario"
+            }
+          },
+
+          "form-input.checkbox#acepta-hv": {
+            "props": {
+              "pointer": "#/properties/aceptaterminos",
+              "label": "Al enviar este formulario, autorizo el tratamiento de mis datos personales de acuerdo con la política de privacidad."
+            }
+          },
+
+          /* Enlace a la política de tratamiento de datos — target _blank
+             para no perder lo diligenciado en el formulario */
+          "link#politica-hv": {
+            "props": {
+              "href": "/terminos-legales",
+              "label": "Política de tratamiento de datos",
+              "displayMode": "button",
+              "target": "_blank",
+              "blockClass": ["cisaBtnGhost", "politicaHv"]
             }
           },
 
