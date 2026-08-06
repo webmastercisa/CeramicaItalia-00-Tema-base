@@ -377,3 +377,25 @@
     font-size: 2.25rem;
   }
 }
+
+/* ── Mobile: el hero apila su contenido en absoluto dentro del alto
+   fijo de la imagen (stack) — tipografía compacta para caber sin
+   desbordarse sobre la barra de confianza (mismo bug detectado en
+   tpl-contenidos 2026-08-06; calibrada con el alto de 540px en
+   vtex.store-components.css) ── */
+@media (max-width: 47.99rem) {
+  .headingLevel1--tplPetsHeroTitulo {
+    font-size: 1.5rem;
+  }
+
+  .paragraph--tplPetsHeroTagline {
+    font-size: 0.8125rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .paragraph--tplPetsHeroLead {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+}

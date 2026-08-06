@@ -276,3 +276,32 @@
     font-size: 2.5rem;
   }
 }
+
+/* Mobile: el hero apila TODO su contenido en absoluto dentro del alto
+   fijo de la imagen (stack) — tipografía compacta para caber sin
+   desbordarse sobre la barra de confianza (bug visto 2026-08-06;
+   calibrada junto con el alto de 600px en vtex.store-components.css) */
+@media (max-width: 47.99rem) {
+  .headingLevel1--tplContenidosHeroTitulo {
+    font-size: 1.5rem;
+  }
+
+  .paragraph--tplContenidosHeroTagline {
+    font-size: 0.8125rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .paragraph--tplContenidosHeroLead {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .paragraph--tplContenidosHeroMetaItem {
+    font-size: 0.625rem;
+  }
+
+  .strong--tplContenidosHeroMetaItem {
+    font-size: 1.375rem;
+  }
+}

@@ -20,6 +20,10 @@
 
 @media (max-width: 47.99rem) {
   .imageElement--tplPetsHeroImg {
-    height: 500px; /* el hero mobile apila texto + botones */
+    /* El hero mobile apila el contenido en ABSOLUTO sobre la imagen:
+       si el contenido supera este alto se desborda sobre la barra de
+       confianza (bug visto en tpl-contenidos 2026-08-06). Calibrado
+       con la tipografía compacta móvil + margen de seguridad. */
+    height: 540px;
   }
 }

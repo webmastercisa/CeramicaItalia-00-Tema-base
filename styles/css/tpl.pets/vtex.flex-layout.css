@@ -376,6 +376,13 @@
     padding: 1.75rem 1rem;
   }
 
+  /* Botones del hero: si no caben lado a lado, el segundo baja de
+     fila completa (nunca partir el label en dos líneas) */
+  .flexRow--tplPetsHeroBotones .flexRowContent--tplPetsHeroBotones {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
   .flexRow--tplPetsCta .flexRowContent--tplPetsCta,
   .flexRow--tplPetsFormulario .flexRowContent--tplPetsFormulario {
     padding: 2rem 1rem;
